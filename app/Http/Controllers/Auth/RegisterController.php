@@ -71,14 +71,14 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
         \Mailchimp::subscribe('a7a4c235b6', $data['email'], ['FNAME' => $data['name'], 'LNAME' => $data['last_name']], false);
-        $this->sendThankYouMail($data);
+        //$this->sendThankYouMail($data);
         $user = User::create([
             'name' => $data['name']." ".$data['last_name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
             'position' => $data['pos'],
             'company' => $data['company'],
-            'contact_no' => $data['mobile'],
+            'contact_no' => "0123",
             'user_roles_id' => $data['role'],
         ]);
         event(new Registered($user));

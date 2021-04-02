@@ -1,6 +1,6 @@
 <head>
 		<meta charset="UTF-8">
-		<title>WRC 2021</title>
+		<title>Thriving Through Covid</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<!-- google fonts -->
@@ -60,16 +60,16 @@ body, html {
     background-color:rgba(255,255,255,0.3);
 }
 #myImage_zone1{
-    width:32%;
-    height:62%;
-    top:17%;
-    left:57.5%;
+    width:36%;
+    height:25%;
+    top:66.5%;
+    left:32%;
 }
 #myImage_zone2{
-    width:15%;
-    height:7%;
-    top:79%;
-    left:66%;
+    width:11%;
+    height:5%;
+    top:93.5%;
+    left:44.5%;
 }
 #myImage_zone3{
    width:15%;
@@ -77,6 +77,15 @@ body, html {
     top:35%;
     left:52%;
 }
+
+
+#fname_zone{
+    width:18%;
+    height:4%;
+    top:17%;
+    left:57.5%;
+}
+
 .btn-circle {
 				width: 70px;
 				height: 70px;
@@ -88,15 +97,20 @@ body, html {
 
 input, select {
   display: block;
-  width: 90%;
-  border: 1px solid #ebebeb;
-  padding: 11px 20px;
+  width: 95%;
+  height: 5%;
+  padding: 1.6vh 1.4vh;
   box-sizing: border-box;
   font-family: 'Montserrat';
   font-weight: 500;
   font-size: 13px; }
   input:focus, select:focus {
-    border: 1px solid #f0f4c9d;
+    outline: none;
+}
+input
+{
+    background: transparent;
+    border: none;
 }
 
 label {
@@ -112,14 +126,13 @@ label {
 <body>
 
 <div id="bg">
-    <img src="{{ asset('img') }}/register.jpg" class="stretch" alt="" />
+    <img src="{{ asset('img') }}/ttc/REGISTER PAGE.jpg" class="stretch" alt="" />
     <div id="myImage_zone1" class="divInImage">
     <div class="signup-form">
                     <form method="POST" class="register-form" id="register-form" action="{{ route('register') }}">
                     @csrf
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="name">First Name :</label>
                                 <input type="text" name="name" id="name" required/>
                                 @error('name')
                                     <span class="invalid-feedback" role="alert">
@@ -128,53 +141,47 @@ label {
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <label for="father_name">Last  Name :</label>
-                                <input type="text" name="last_name" id="last_name" required/>
+                                <input style="position: relative; left: 91.5%" type="text" name="last_name" id="last_name" required/>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label for="email">Email:</label>
-                            <input type="text" name="email" id="email" required/>
-                            @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                        </div>
-						 <div class="form-group">
-                            <label for="confir_email">Confirm Email:</label>
-                            <input type="text" name="confirm_email" id="confir_email" required/>
-                        </div>
-                        <div class="form-group">
-                            <label for="mobile">Mobile Number:</label>
-                            <input type="text" name="mobile" id="mobile" required/>
-                        </div>
-                        
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="company">Company:</label>
                                 <input type="text" name="company" id="company" required/>
                             </div>
                             <div class="form-group">
-                                <label for="pos">Position/Title:</label>
-                                <input type="text" name="pos" id="pos" required/>
+                                <input style="position: relative; left: 91.5%" type="text" name="pos" id="pos" required/>
                             </div>
                         </div>
-                        
-                        <div class="form-group">
-                            <label for="password">Password :</label>
-                            <input type="password" name="password" id="password" required>
-                            @error('password')
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" name="email" id="email" required/>
+                                @error('email')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                            </div>
+                            <div class="form-group">
+                                <input style="position: relative; left: 91.5%" type="text" name="confirm_email" id="confir_email" required/>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="password" name="password" id="password" required>
+                                @error('password')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
+                            </div>
+                        
+                            <div class="form-group">
+                                <input style="position: relative; left: 91.5%" type="password" name="password-confirm" id="password-confirm"  required/>
+                            </div>
                         </div>
-                       
-                        <div class="form-group">
-                            <label for="password-confirm">Confirm Password:</label>
-                            <input type="password" name="password-confirm" id="password-confirm"  required/>
-                        </div>
+
+                        
+
                         <input type="text" name="role" id="role" value="2" style="display: none"/>
                     </form>
                 </div>
