@@ -20,19 +20,21 @@
 
   <!-- Main Stylesheet File -->
   <link href="{{ asset('schedule') }}/css/style.css" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
   
 <style>
 body, html {
-  height: 100%;
   margin: 0;
 }
 
 #bg {
   /* The image used */
   /* background-image: url("{{ asset('img') }}/login.jpg"); */
-
+  max-height: 100vh !important;
+	overflow-y: auto !important;
   width: 100%; 
-    height: 100%; 
+    /* height: 100%;  */
     position: fixed; 
     left: 0px; 
     top: 0px; 
@@ -40,8 +42,9 @@ body, html {
 }
 
 .stretch {
+
     width:100%;
-    height:100%;
+    /* height:600%; */
     z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
 }
 .divInImage {
@@ -62,22 +65,28 @@ body, html {
 #myImage_zone1{
     width:36%;
     height:25%;
-    top:66.5%;
-    left:32%;
+    top:403%;
+    left:28%;
 }
 #myImage_zone2{
-    width:11%;
-    height:5%;
-    top:93.5%;
-    left:44.5%;
+    width:18%;
+    height:8.5%;
+    top:441.5%;
+    left:40.5%;
 }
 #myImage_zone3{
-   width:15%;
-    height:15%;
-    top:35%;
-    left:52%;
+   width:18%;
+    height:8.5%;
+    top:136%;
+    left:40.5%;
 }
 
+#myImage_zone4{
+   width:18%;
+    height:8.5%;
+    top:264%;
+    left:40.5%;
+}
 
 #fname_zone{
     width:18%;
@@ -97,9 +106,11 @@ body, html {
 
 input, select {
   display: block;
-  width: 95%;
+  width: 97%;
   height: 5%;
   padding: 1.6vh 1.4vh;
+  margin-bottom:11.5%;
+  margin-right:30%;
   box-sizing: border-box;
   font-family: 'Montserrat';
   font-weight: 500;
@@ -126,7 +137,7 @@ label {
 <body>
 
 <div id="bg">
-    <img src="{{ asset('img') }}/ttc/REGISTER PAGE.jpg" class="stretch" alt="" />
+    <img src="{{ asset('img') }}/ttc/REGISTER PAGE4.jpg" class="stretch" alt="" />
     <div id="myImage_zone1" class="divInImage">
     <div class="signup-form">
                     <form method="POST" class="register-form" id="register-form" action="{{ route('register') }}">
@@ -141,7 +152,7 @@ label {
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <input style="position: relative; left: 91.5%" type="text" name="last_name" id="last_name" required/>
+                                <input style="position: relative; left: 122%" type="text" name="last_name" id="last_name" required/>
                             </div>
                         </div>
                         <div class="form-row">
@@ -149,7 +160,7 @@ label {
                                 <input type="text" name="company" id="company" required/>
                             </div>
                             <div class="form-group">
-                                <input style="position: relative; left: 91.5%" type="text" name="pos" id="pos" required/>
+                                <input style="position: relative; left: 122%" type="text" name="pos" id="pos" required/>
                             </div>
                         </div>
                         <div class="form-row">
@@ -162,7 +173,7 @@ label {
                                     @enderror
                             </div>
                             <div class="form-group">
-                                <input style="position: relative; left: 91.5%" type="text" name="confirm_email" id="confir_email" required/>
+                                <input style="position: relative; left: 122%" type="text" name="confirm_email" id="confir_email" required/>
                             </div>
                         </div>
                         <div class="form-row">
@@ -176,7 +187,7 @@ label {
                             </div>
                         
                             <div class="form-group">
-                                <input style="position: relative; left: 91.5%" type="password" name="password-confirm" id="password-confirm"  required/>
+                                <input style="position: relative; left: 122%" type="password" name="password-confirm" id="password-confirm"  required/>
                             </div>
                         </div>
 
@@ -187,6 +198,18 @@ label {
                 </div>
     </div>
     <a id="myImage_zone2" onclick="event.preventDefault();document.getElementById('register-form').submit();"></a>
+    <a id="myImage_zone3" onclick="event.preventDefault();scrollSmoothToBottom('bg');"></a>
+    <a id="myImage_zone4" onclick="event.preventDefault();scrollSmoothToBottom('bg');"></a>
 </div>
 
 </body>
+
+<script>
+function scrollSmoothToBottom (id) {
+   var div = document.getElementById(id);
+   $('#' + id).animate({
+      scrollTop: div.scrollHeight - div.clientHeight
+   }, 500);
+}
+
+</script>

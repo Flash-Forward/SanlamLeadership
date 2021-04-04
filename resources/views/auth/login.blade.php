@@ -86,20 +86,22 @@ body, html {
 			}
 
             input, select {
+                height: 3.5vh;
   display: block;
-  margin-bottom:13%;
+  margin-bottom:15%;
+  margin-left:5%;
   padding: 1.6vh 1.4vh;
   box-sizing: border-box;
   font-family: 'Montserrat';
   font-weight: 500;
   font-size: 13px; }
   input:focus, select:focus {
-    outline: none;
+    outline: none !important;
 }
 input
 {
-    background: transparent;
-    border: none;
+    background: transparent !important;
+    border: none !important;
 }
 </style>
 
@@ -108,7 +110,7 @@ input
 <body>
 
 <div id="bg">
-    <img src="{{ asset('img') }}/ttc/LOGIN PAGE.jpg" class="stretch" alt="" />
+    <img src="{{ asset('img') }}/ttc/LOGIN PAGE4.jpg" class="stretch" alt="" />
     <div id="myImage_zone1" class="divInImage">
         <div class="signup-form">
             <form method="POST" class="login-form" id="login-form" action="{{ route('login') }}">
