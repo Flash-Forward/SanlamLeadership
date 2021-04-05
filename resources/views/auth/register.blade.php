@@ -54,10 +54,12 @@ body, html {
 #overviewText{
     color: #ffffff !important;
     position: relative;
-    top: 5%;
+    top: 2%;
     text-align: center;
-    font-size: 93%;
-  width: 100%; 
+    margin-right:5% !important;
+    margin-left:5% !important;
+    font-size: 91%;
+  width: 90%; 
     height: 100%; 
 }
 
@@ -97,9 +99,9 @@ img{
 }
 
 .speakerImg{
-    margin-top: 10%;
-    width: 275px; 
-    height: 93px; 
+    margin-top: 7%;
+    width: 345px; 
+    height: 116px; 
 }
 
 #whatYouWillLearnBg{
@@ -173,23 +175,33 @@ li{
 
 #bannerLogo {
   /* The image used */
-  background-image: url("{{ asset('img') }}/ttc/logo.png");
+  /* background-image: url("{{ asset('img') }}/ttc/logo.png");
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: fixed; */
   /* background-color: #ffffff; */
   /* background-size: cover; */
-  background-position: 0% 30%; 
-  background-size: 100% 25%;
+  /* background-position: 0% 30%; 
+  background-size: 100% 25%; */
+  position: relative;
+  top: 29%;
   width: 100%; 
-    height: 45%; 
+    height: 25%;
+    background-color:rgba(0,0,0,0.8); 
     
+}
+.logoImg{
+    width: 100%;
+    height: 100%;
+    /* position: absolute; */
+    /* z-index: -1; */
 }
 
 #bannerDate {
   /* The image used */
+  position: relative;
   background-color: #053a5b;
   color: #ffffff !important;
-  
+  top: 25%;
   width: 100%; 
     height: 15%; 
     
@@ -272,10 +284,10 @@ and (max-width : 500px) {
                 border: 2px solid black;
             }
             label {
-            font-size: 14px;
+            font-size: 16px;
             font-weight: bold;
             color: #ffffff !important;
-            font-family: 'Montserrat';
+            /* font-family: 'Montserrat'; */
             margin-left:5%;
             margin-bottom: 2px;
             display: block; }
@@ -358,9 +370,9 @@ input
 }
 
 label {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
-  font-family: 'Montserrat';
+  /* font-family: 'Montserrat'; */
   margin-bottom: 0px;
   display: block; }
 </style>
@@ -370,8 +382,11 @@ label {
 <body>
 <div id="bgMobile">
     <div id="bannerBg">
-    <img src="{{ asset('img') }}/ttc/genbg.jpg" class="bgImg" alt="" />
-        <div id="bannerLogo"></div>
+        <img src="{{ asset('img') }}/ttc/bannerbg1.jpg" class="bgImg" alt="" />
+        <div id="bannerLogo">
+        <img src="{{ asset('img') }}/ttc/logo.png" class="logoImg" alt="" />
+        </div>
+        
         <div id="bannerDate">
             <div id="bannerText">
                 <b>Date: 8th April 2021</b>
@@ -386,7 +401,7 @@ label {
             <b>
                 Life is not meant to be struggle; we’re meant to THRIVE.. in all areas of our life. Join us for an exhilarating FREE Virtual Event featuring some of SA’s most successful entrepreneurs who will be sharing their inspiring stories, secrets and techniques of how they pivoted their businesses during COVID, which left them better off than prior to the pandemic. You will learn how to spot the gaps in the market, adjust your service offerings to cater for the demand as well as implement bullet proof marketing techniques to generate more revenue. 
             </b>
-            <br><br><br>
+            <br><br>
             <b>
             During this event, there will be an array of virtual talks from dynamic entrepreneurs. speakers and business experts on how they have not only survived the pandemic, but managed to scale their organisations and THRIVE. This event is NOT for everyone! It is only for entrepreneurs or aspiring business owners who are serious about thriving and skyrocketing their business through these uncertain times.This event will be hosted on the WE-LINK Virtual Conferencing Platform; the first ever proudly South African LIVE virtual platform. Register now! Limited spots available.
             </b>
@@ -448,14 +463,6 @@ label {
                     <div class="form-group">
                     <label for="last_name">Last Name:</label>
                         <input type="text" name="last_name" id="last_name" required/>
-                    </div>
-                    <div class="form-group">
-                    <label for="company">Company:</label>
-                        <input type="text" name="company" id="company" required/>
-                    </div>
-                    <div class="form-group">
-                    <label for="pos">Position:</label>
-                        <input type="text" name="pos" id="pos" required/>
                     </div>
                     <div class="form-group">
                     <label for="email">Email:</label>
