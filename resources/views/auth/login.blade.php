@@ -29,7 +29,8 @@ body, html {
 #bg {
   /* The image used */
   /* background-image: url("{{ asset('img') }}/login.jpg"); */
-
+  max-height: 100vh !important;
+	overflow-y: auto !important;
   width: 100%; 
     height: 100%; 
     position: fixed; 
@@ -40,7 +41,7 @@ body, html {
 
 .stretch {
     width:100%;
-    height:100%;
+    height:935px;
     z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
 }
 .divInImage {
@@ -61,13 +62,13 @@ body, html {
 #myImage_zone1{
     width:32%;
     height:14.5%;
-    top:67.5%;
+    top:630px;
     left:39%;
 }
 #myImage_zone2{
     width:11%;
-    height:5%;
-    top:84.5%;
+    height:36px;
+    top:795px;
     left:44.5%;
 }
 #myImage_zone3{
@@ -86,9 +87,9 @@ body, html {
 			}
 
             input, select {
-                height: 3.5vh;
+                height: 34px;
   display: block;
-  margin-bottom:15%;
+  margin-bottom:42px;
   margin-left:5%;
   padding: 1.6vh 1.4vh;
   box-sizing: border-box;

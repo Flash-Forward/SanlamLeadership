@@ -19,7 +19,7 @@
   <link href="{{ asset('schedule') }}/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
-  <link href="{{ asset('schedule') }}/css/style.css" rel="stylesheet">
+  <!-- <link href="{{ asset('schedule') }}/css/style.css" rel="stylesheet"> -->
 
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
   
@@ -30,7 +30,6 @@ body, html {
 
 #bg {
   /* The image used */
-  /* background-image: url("{{ asset('img') }}/login.jpg"); */
   max-height: 100vh !important;
 	overflow-y: auto !important;
   width: 100%; 
@@ -41,11 +40,89 @@ body, html {
     
 }
 
+#bannerBg {
+  /* The image used */
+  background-image: url("{{ asset('img') }}/ttc/bannerbg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center; 
+  width: 100%; 
+    height: 100%; 
+    
+}
+
+#bannerLogo {
+  /* The image used */
+  background-image: url("{{ asset('img') }}/ttc/logo1.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* background-color: #ffffff; */
+  /* background-size: cover; */
+  background-position: 0% 30%; 
+  background-size: 100% 25%;
+  width: 100%; 
+    height: 45%; 
+    
+}
+
+#bannerDate {
+  /* The image used */
+  background-color: #053a5b;
+  color: #ffffff !important;
+  
+  width: 100%; 
+    height: 15%; 
+    
+    
+}
+#bannerText{
+    position: relative;
+    top: 15%;
+    text-align: center;
+    font-size: 200%
+}
+#bgMobile {
+  /* The image used */
+  /* max-height: 100vh !important;
+	overflow-y: auto !important; */
+  width: 100%; 
+    height: 100%; 
+    position: fixed; 
+    display:none;
+    
+}
+
+#bgMobile a {
+    /* border:1px solid #fff; */
+    display:block;
+    position:absolute;
+    background-color:rgba(0,0,0,0.1);
+}
+#bgMobile a:hover {
+    background-color:rgba(255,255,255,0.3);
+}
+
 .stretch {
 
     width:100%;
-    /* height:600%; */
+    height:4271px;
     z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
+}
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 500px) {
+
+
+        #bgMobile {
+            display:block !important;
+        }
+
+        #bg {
+
+            display:none;
+            
+        }
 }
 .divInImage {
     /* border:1px solid #fff; */
@@ -65,26 +142,26 @@ body, html {
 #myImage_zone1{
     width:36%;
     height:25%;
-    top:403%;
+    top:3785px;
     left:28%;
 }
 #myImage_zone2{
     width:18%;
-    height:8.5%;
-    top:441.5%;
+    height:78px;
+    top:4146px;
     left:40.5%;
 }
 #myImage_zone3{
    width:18%;
-    height:8.5%;
-    top:136%;
+    height:78px;
+    top:1280px;
     left:40.5%;
 }
 
 #myImage_zone4{
    width:18%;
-    height:8.5%;
-    top:264%;
+    height:78px;
+    top:2480px;
     left:40.5%;
 }
 
@@ -107,9 +184,9 @@ body, html {
 input, select {
   display: block;
   width: 97%;
-  height: 5%;
+  height: 32px;
   padding: 1.6vh 1.4vh;
-  margin-bottom:11.5%;
+  margin-bottom:42px;
   margin-right:30%;
   box-sizing: border-box;
   font-family: 'Montserrat';
@@ -135,7 +212,18 @@ label {
 </head>
 
 <body>
-
+<div id="bgMobile">
+    <div id="bannerBg">
+        <div id="bannerLogo"></div>
+        <div id="bannerDate">
+            <div id="bannerText">
+                <b>Date: 8th April 2021</b>
+                <br>
+                <b>Time: 18:00 - 20:30</b>
+            </div>
+        </div>
+    </div>
+</div>
 <div id="bg">
     <img src="{{ asset('img') }}/ttc/REGISTER PAGE4.jpg" class="stretch" alt="" />
     <div id="myImage_zone1" class="divInImage">
