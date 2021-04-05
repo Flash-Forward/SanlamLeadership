@@ -54,7 +54,7 @@ body, html {
 #overviewText{
     color: #ffffff !important;
     position: relative;
-    top: 2%;
+    top: 5%;
     text-align: center;
     margin-right:5% !important;
     margin-left:5% !important;
@@ -168,7 +168,7 @@ li{
   background-size: cover;
   background-position: center;  */
   width: 100%; 
-    height: 100%; 
+    /* height: 100%;  */
     position: relative;
     
 }
@@ -183,7 +183,7 @@ li{
   /* background-position: 0% 30%; 
   background-size: 100% 25%; */
   position: relative;
-  top: 29%;
+  top: 5%;
   width: 100%; 
     height: 25%;
     background-color:rgba(0,0,0,0.8); 
@@ -201,7 +201,7 @@ li{
   position: relative;
   background-color: #053a5b;
   color: #ffffff !important;
-  top: 25%;
+  top: 5%;
   width: 100%; 
     height: 15%; 
     
@@ -209,7 +209,7 @@ li{
 }
 #bannerText{
     position: relative;
-    top: 15%;
+    top: 5%;
     text-align: center;
     font-size: 200%
 }
