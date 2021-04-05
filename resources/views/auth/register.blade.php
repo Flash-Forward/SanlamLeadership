@@ -41,11 +41,11 @@ body, html {
 }
 
 #overviewBg{
-    background-image: url("{{ asset('img') }}/ttc/genbg.jpg");
+    /* background-image: url("{{ asset('img') }}/ttc/genbg.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position: center; 
+  background-position: center;  */
   width: 100%; 
     height: 100%; 
     position: relative;
@@ -56,7 +56,7 @@ body, html {
     position: relative;
     top: 5%;
     text-align: center;
-    font-size: 100%
+    font-size: 93%;
   width: 100%; 
     height: 100%; 
 }
@@ -76,11 +76,11 @@ img{
 
 
 #speakersBg{
-    background-image: url("{{ asset('img') }}/ttc/genbg.jpg");
+    /* background-image: url("{{ asset('img') }}/ttc/genbg.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position: center; 
+  background-position: center;  */
   width: 100%; 
     height: 100%; 
     position: relative;
@@ -103,11 +103,11 @@ img{
 }
 
 #whatYouWillLearnBg{
-    background-image: url("{{ asset('img') }}/ttc/genbg.jpg");
+    /* background-image: url("{{ asset('img') }}/ttc/genbg.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position: center; 
+  background-position: center;  */
   width: 100%; 
     height: 100%; 
     position: relative;
@@ -127,8 +127,8 @@ img{
     color: #ffffff !important;
     position: relative;
     top: 5%;
-    text-align: center;
-    font-size: 150%;
+    text-align: left;
+    font-size: 125%;
   width: 100%; 
     height: 60%; 
 }
@@ -138,11 +138,11 @@ li{
 }
 
 #registerBg{
-    background-image: url("{{ asset('img') }}/ttc/genbg.jpg");
+    /* background-image: url("{{ asset('img') }}/ttc/genbg.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position: center; 
+  background-position: center;  */
   width: 100%; 
     height: 100%; 
     position: relative;
@@ -160,11 +160,11 @@ li{
 
 #bannerBg {
   /* The image used */
-  background-image: url("{{ asset('img') }}/ttc/bannerbg.jpg");
+  /* background-image: url("{{ asset('img') }}/ttc/bannerbg.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position: center; 
+  background-position: center;  */
   width: 100%; 
     height: 100%; 
     position: relative;
@@ -228,6 +228,14 @@ li{
     height:4271px;
     z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
 }
+.bgImg{
+    object-fit: cover; /* Do not scale the image */
+  object-position: center; /* Center the image within the element */
+    width:inherit; 
+    height:inherit;
+    position: absolute;
+    z-index: -1;
+}
 /* Smartphones (portrait) ----------- */
 @media only screen 
 and (max-width : 500px) {
@@ -245,7 +253,7 @@ and (max-width : 500px) {
         input, select {
             display: block;
             width: 97%;
-            height: 32px;
+            height: 16px !important;
             padding: 1.6vh 1.4vh;
             margin-top:0%;
             margin-bottom:0% !important;
@@ -360,6 +368,7 @@ label {
 <body>
 <div id="bgMobile">
     <div id="bannerBg">
+    <img src="{{ asset('img') }}/ttc/bannerbg.jpg" class="bgImg" alt="" />
         <div id="bannerLogo"></div>
         <div id="bannerDate">
             <div id="bannerText">
@@ -370,6 +379,7 @@ label {
         </div>
     </div>
     <div id="overviewBg">
+    <img src="{{ asset('img') }}/ttc/genbg.jpg" class="bgImg" alt="" />
         <div id="overviewText">
             <b>
                 Life is not meant to be struggle; we’re meant to THRIVE.. in all areas of our life. Join us for an exhilarating FREE Virtual Event featuring some of SA’s most successful entrepreneurs who will be sharing their inspiring stories, secrets and techniques of how they pivoted their businesses during COVID, which left them better off than prior to the pandemic. You will learn how to spot the gaps in the market, adjust your service offerings to cater for the demand as well as implement bullet proof marketing techniques to generate more revenue. 
@@ -382,6 +392,7 @@ label {
         <a id="regNowBtn" onclick="event.preventDefault();scrollToRegMobile();"><img src="{{ asset('img') }}/ttc/regbtn.png" class="regBtn" alt="" /></a>
     </div>
     <div id="speakersBg">
+    <img src="{{ asset('img') }}/ttc/genbg.jpg" class="bgImg" alt="" />
         <div id="speakersText">
             <b>
                 MEET THE SPEAKERS
@@ -394,6 +405,7 @@ label {
         <a id="regNowBtn" onclick="event.preventDefault();scrollToRegMobile();"><img src="{{ asset('img') }}/ttc/regbtn.png" class="regBtn" alt="" /></a>
     </div>
     <div id="whatYouWillLearnBg">
+    <img src="{{ asset('img') }}/ttc/genbg.jpg" class="bgImg" alt="" />
         <div id="whatYouWillLearnHeader">
             <b>
                 WHAT YOU WILL LEARN
@@ -413,6 +425,7 @@ label {
         </div>
     </div>
     <div id="registerBg">
+    <img src="{{ asset('img') }}/ttc/genbg.jpg" class="bgImg" alt="" />
         <div id="registerHeader">
             <b>
                 REGISTER

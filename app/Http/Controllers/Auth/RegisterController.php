@@ -71,7 +71,7 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
         \Mailchimp::subscribe('42b81fd5f2', $data['email'], ['FNAME' => $data['name'], 'LNAME' => $data['last_name']], false);
-        //$this->sendThankYouMail($data);
+        $this->sendThankYouMail($data);
         $user = User::create([
             'name' => $data['name']." ".$data['last_name'],
             'email' => $data['email'],
@@ -96,16 +96,16 @@ class RegisterController extends Controller
         {
             $filename = "invite.ics";
             $meeting_duration = (3600 / 2); // 2 hours
-            $meetingstamp = strtotime( "2021-03-18 08:30:00" . " UTC");
-            $meetingstampEnd = strtotime( "2021-03-19 18:00:00" . " UTC");
+            $meetingstamp = strtotime( "2021-04-08 18:00:00" . " UTC");
+            $meetingstampEnd = strtotime( "2021-04-08 20:30:00" . " UTC");
             $dtstart = gmdate('Ymd\THis\Z', $meetingstamp);
             $dtend =  gmdate('Ymd\THis\Z', $meetingstampEnd);
             $todaystamp = gmdate('Ymd\THis\Z');
             $uid = date('Ymd').'T'.date('His').'-'.rand().'@flash-forward.co.za';
-            $description = "Meeting";
-            $location = "https://wrc.welink.live";
-            $titulo_invite = "WRC Conference";
-            $organizer = "CN=WeLink:wrc@welink.live";
+            $description = "Thriving Through Covid";
+            $location = "https://ttc.welink.live/login";
+            $titulo_invite = "Thriving Through Covid";
+            $organizer = "CN=WeLink:ttc@flash-forward.co.za";
             
             // ICS
             $mail[0]  = "BEGIN:VCALENDAR";
@@ -133,10 +133,10 @@ class RegisterController extends Controller
             $buyerOrDelegateInvite = implode("\r\n", $mail);
             header("text/calendar");
             
-            $message->subject("Thank You For Registering For The WRC Conference");
+            $message->subject("Thank You For Registering!");
             $message->to($data["email"]);
             $message->attachData($buyerOrDelegateInvite, $filename, array('mime' => "text/calendar"));
-            $message->from('wrc@welink.live','WRC');
+            //$message->from('wrc@welink.live','WRC');
         });
     }
 
