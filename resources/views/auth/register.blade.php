@@ -147,6 +147,7 @@ li{
   background-position: center;  */
   width: 100%; 
     height: 100%; 
+    max-height: 80%;
     position: relative;
 }
 
@@ -183,7 +184,7 @@ li{
   /* background-position: 0% 30%; 
   background-size: 100% 25%; */
   position: relative;
-  top: 5%;
+  top: 8%;
   width: 100%; 
     height: 25%;
     background-color:rgba(0,0,0,0.8); 
@@ -245,6 +246,14 @@ li{
   object-position: center; /* Center the image within the element */
     width:inherit; 
     height:inherit;
+    position: absolute;
+    z-index: -1;
+}
+
+.bgImgL{
+    object-fit: cover; /* Do not scale the image */
+  object-position: center; /* Center the image within the element */
+    width:inherit; 
     position: absolute;
     z-index: -1;
 }
@@ -382,7 +391,7 @@ label {
 <body>
 <div id="bgMobile">
     <div id="bannerBg">
-        <img src="{{ asset('img') }}/ttc/bannerbg1.jpg" class="bgImg" alt="" />
+        <img src="{{ asset('img') }}/ttc/bannerbg1.jpg" class="bgImgL" alt="" />
         <div id="bannerLogo">
         <img src="{{ asset('img') }}/ttc/logo.png" class="logoImg" alt="" />
         </div>
