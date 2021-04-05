@@ -40,6 +40,124 @@ body, html {
     
 }
 
+#overviewBg{
+    background-image: url("{{ asset('img') }}/ttc/genbg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center; 
+  width: 100%; 
+    height: 100%; 
+    position: relative;
+}
+
+#overviewText{
+    color: #ffffff !important;
+    position: relative;
+    top: 5%;
+    text-align: center;
+    font-size: 100%
+  width: 100%; 
+    height: 100%; 
+}
+
+#regNowBtn{
+    position: absolute;
+    bottom: 2%;
+    left: 24%;
+    width: 52%; 
+    height: 7%; 
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+
+#speakersBg{
+    background-image: url("{{ asset('img') }}/ttc/genbg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center; 
+  width: 100%; 
+    height: 100%; 
+    position: relative;
+}
+
+#speakersText{
+    color: #ffffff !important;
+    position: relative;
+    top: 5%;
+    text-align: center;
+    font-size: 300%;
+  width: 100%; 
+    height: 100%; 
+}
+
+.speakerImg{
+    margin-top: 10%;
+    width: 100%; 
+    height: 15%; 
+}
+
+#whatYouWillLearnBg{
+    background-image: url("{{ asset('img') }}/ttc/genbg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center; 
+  width: 100%; 
+    height: 100%; 
+    position: relative;
+}
+
+#whatYouWillLearnHeader{
+    color: #ffffff !important;
+    position: relative;
+    top: 5%;
+    text-align: center;
+    font-size: 300%;
+  width: 100%; 
+    height: 20%; 
+}
+
+#whatYouWillLearnText{
+    color: #ffffff !important;
+    position: relative;
+    top: 5%;
+    text-align: center;
+    font-size: 150%;
+  width: 100%; 
+    height: 60%; 
+}
+
+li{
+    padding-top: 3%;
+}
+
+#registerBg{
+    background-image: url("{{ asset('img') }}/ttc/genbg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center; 
+  width: 100%; 
+    height: 100%; 
+    position: relative;
+}
+
+#registerHeader{
+    color: #ffffff !important;
+    position: relative;
+    top: 5%;
+    text-align: center;
+    font-size: 300%;
+  width: 100%; 
+    height: 20%; 
+}
+
 #bannerBg {
   /* The image used */
   background-image: url("{{ asset('img') }}/ttc/bannerbg.jpg");
@@ -49,6 +167,7 @@ body, html {
   background-position: center; 
   width: 100%; 
     height: 100%; 
+    position: relative;
     
 }
 
@@ -84,8 +203,8 @@ body, html {
 }
 #bgMobile {
   /* The image used */
-  /* max-height: 100vh !important;
-	overflow-y: auto !important; */
+  max-height: 100vh !important;
+	overflow-y: auto !important;
   width: 100%; 
     height: 100%; 
     position: fixed; 
@@ -123,6 +242,33 @@ and (max-width : 500px) {
             display:none;
             
         }
+        input, select {
+            display: block;
+            width: 97%;
+            height: 32px;
+            padding: 1.6vh 1.4vh;
+            margin-top:0%;
+            margin-bottom:0% !important;
+            margin-right:0% !important;
+            box-sizing: border-box;
+            font-family: 'Montserrat';
+            font-weight: 500;
+            font-size: 13px; }
+            input:focus, select:focus {
+                outline: 2px dashed blue;
+            }
+            input
+            {
+                background: #ffffff !important;
+                border: 2px solid black;
+            }
+            label {
+            font-size: 14px;
+            font-weight: bold;
+            color: #ffffff !important;
+            font-family: 'Montserrat';
+            margin-bottom: 2px;
+            display: block; }
 }
 .divInImage {
     /* border:1px solid #fff; */
@@ -205,7 +351,7 @@ label {
   font-size: 14px;
   font-weight: bold;
   font-family: 'Montserrat';
-  margin-bottom: 2px;
+  margin-bottom: 0px;
   display: block; }
 </style>
 
@@ -223,7 +369,115 @@ label {
             </div>
         </div>
     </div>
+    <div id="overviewBg">
+        <div id="overviewText">
+            <b>
+                Life is not meant to be struggle; we’re meant to THRIVE.. in all areas of our life. Join us for an exhilarating FREE Virtual Event featuring some of SA’s most successful entrepreneurs who will be sharing their inspiring stories, secrets and techniques of how they pivoted their businesses during COVID, which left them better off than prior to the pandemic. You will learn how to spot the gaps in the market, adjust your service offerings to cater for the demand as well as implement bullet proof marketing techniques to generate more revenue. 
+            </b>
+            <br><br><br>
+            <b>
+            During this event, there will be an array of virtual talks from dynamic entrepreneurs. speakers and business experts on how they have not only survived the pandemic, but managed to scale their organisations and THRIVE. This event is NOT for everyone! It is only for entrepreneurs or aspiring business owners who are serious about thriving and skyrocketing their business through these uncertain times.This event will be hosted on the WE-LINK Virtual Conferencing Platform; the first ever proudly South African LIVE virtual platform. Register now! Limited spots available.
+            </b>
+        </div>
+        <a id="regNowBtn" onclick="event.preventDefault();scrollToRegMobile();"><img src="{{ asset('img') }}/ttc/regbtn.png" class="regBtn" alt="" /></a>
+    </div>
+    <div id="speakersBg">
+        <div id="speakersText">
+            <b>
+                MEET THE SPEAKERS
+            </b>
+            <img src="{{ asset('img') }}/ttc/speaker1.png" class="speakerImg" alt="" />
+            <img src="{{ asset('img') }}/ttc/speaker3.png" class="speakerImg" alt="" />
+            <img src="{{ asset('img') }}/ttc/speaker2.png" class="speakerImg" alt="" />
+        </div>
+        
+        <a id="regNowBtn" onclick="event.preventDefault();scrollToRegMobile();"><img src="{{ asset('img') }}/ttc/regbtn.png" class="regBtn" alt="" /></a>
+    </div>
+    <div id="whatYouWillLearnBg">
+        <div id="whatYouWillLearnHeader">
+            <b>
+                WHAT YOU WILL LEARN
+            </b>
+        </div>
+        <div id="whatYouWillLearnText">
+            <ul>
+                <li>How to Skyrocket your Business during uncertain times</li>
+                <li>How to Increase your Turnover</li>
+                <li>How to identify gaps in the current market</li>
+                <li>How to pivot your service offerings to cater for the demand</li>
+                <li>How to implement Bulletproof Marketing Campaigns</li>
+                <li>How to develop a Winning Mindset</li>
+                <li>How to keep your clients coming back for more</li>
+                <li>How to start a thriving business during COVID</li>
+            </ul> 
+        </div>
+    </div>
+    <div id="registerBg">
+        <div id="registerHeader">
+            <b>
+                REGISTER
+            </b>
+        </div>
+        <div class="signup-form" style="top:10%;">
+            <form method="POST" class="register-form" id="mregister-form" action="{{ route('register') }}">
+            @csrf
+                    <div class="form-group">
+                        <label for="name">First Name:</label>
+                        <input type="text" name="name" id="name" required/>
+                        @error('name')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                    </div>
+                    <div class="form-group">
+                    <label for="last_name">Last Name:</label>
+                        <input type="text" name="last_name" id="last_name" required/>
+                    </div>
+                    <div class="form-group">
+                    <label for="company">Company:</label>
+                        <input type="text" name="company" id="company" required/>
+                    </div>
+                    <div class="form-group">
+                    <label for="pos">Position:</label>
+                        <input type="text" name="pos" id="pos" required/>
+                    </div>
+                    <div class="form-group">
+                    <label for="email">Email:</label>
+                        <input type="text" name="email" id="email" required/>
+                        @error('email')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                    </div>
+                    <div class="form-group">
+                    <label for="confir_email">Confirm Email:</label>
+                        <input type="text" name="confirm_email" id="confir_email" required/>
+                    </div>
+                    <div class="form-group">
+                    <label for="password">Password:</label>
+                        <input type="password" name="password" id="password" required>
+                        @error('password')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                    </div>
+                
+                    <div class="form-group">
+                    <label for="password-confirm">Confirm Password:</label>
+                        <input type="password" name="password-confirm" id="password-confirm"  required/>
+                    </div>
+
+                <input type="text" name="role" id="role" value="2" style="display: none"/>
+            </form>
+        </div>
+        <a id="regNowBtn" onclick="event.preventDefault();document.getElementById('mregister-form').submit();"><img src="{{ asset('img') }}/ttc/regbtn.png" class="regBtn" alt="" /></a>
+    </div>
 </div>
+
+
 <div id="bg">
     <img src="{{ asset('img') }}/ttc/REGISTER PAGE4.jpg" class="stretch" alt="" />
     <div id="myImage_zone1" class="divInImage">
@@ -298,6 +552,12 @@ function scrollSmoothToBottom (id) {
    $('#' + id).animate({
       scrollTop: div.scrollHeight - div.clientHeight
    }, 500);
+}
+
+function scrollToRegMobile(){
+    document
+    .getElementById("registerBg")
+    .scrollIntoView({ behavior: "smooth" });
 }
 
 </script>
