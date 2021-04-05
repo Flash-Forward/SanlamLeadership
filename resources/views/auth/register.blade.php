@@ -98,8 +98,8 @@ img{
 
 .speakerImg{
     margin-top: 10%;
-    width: 100%; 
-    height: 15%; 
+    width: 275px; 
+    height: 93px; 
 }
 
 #whatYouWillLearnBg{
@@ -173,7 +173,7 @@ li{
 
 #bannerLogo {
   /* The image used */
-  background-image: url("{{ asset('img') }}/ttc/logo1.png");
+  background-image: url("{{ asset('img') }}/ttc/logo.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   /* background-color: #ffffff; */
@@ -252,9 +252,10 @@ and (max-width : 500px) {
         }
         input, select {
             display: block;
-            width: 97%;
+            width: 90% !important;
             height: 16px !important;
             padding: 1.6vh 1.4vh;
+            margin-left:5%;
             margin-top:0%;
             margin-bottom:0% !important;
             margin-right:0% !important;
@@ -275,6 +276,7 @@ and (max-width : 500px) {
             font-weight: bold;
             color: #ffffff !important;
             font-family: 'Montserrat';
+            margin-left:5%;
             margin-bottom: 2px;
             display: block; }
 }
@@ -368,7 +370,7 @@ label {
 <body>
 <div id="bgMobile">
     <div id="bannerBg">
-    <img src="{{ asset('img') }}/ttc/bannerbg.jpg" class="bgImg" alt="" />
+    <img src="{{ asset('img') }}/ttc/genbg.jpg" class="bgImg" alt="" />
         <div id="bannerLogo"></div>
         <div id="bannerDate">
             <div id="bannerText">
