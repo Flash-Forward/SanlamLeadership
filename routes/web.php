@@ -19,6 +19,10 @@ Route::get('/', function () {
 Auth::routes(['verify' => true]);
 //Auth::routes();
 
+Route::get('/thankyou', function () {
+    return view('thankyou');
+})->name('thankyou');
+
 
 Route::get('/sregister', [App\Http\Controllers\Auth\RegisterController::class, 'speaker'])->name('sregister');
 
@@ -53,5 +57,6 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('/help', function () {
         return view('help');
     })->name('help');
+
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 });
