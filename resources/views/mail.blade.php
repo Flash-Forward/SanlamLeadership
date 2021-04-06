@@ -519,7 +519,7 @@ Join us for an exciting virtual event featuring spirited businesspersons who wil
                         <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
                         
                             <div style="text-align: center;"><strong>Click here to join the event:<br>
-<a href="http://ttc.welink.live/login" target="_blank">http://ttc.welink.live/login</a></strong></div>
+<a href="https://thtc.welink.live/login" target="_blank">https://thtc.welink.live/login</a></strong></div>
 
                         </td>
                     </tr>
