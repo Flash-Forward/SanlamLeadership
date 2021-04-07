@@ -35,7 +35,7 @@ class LoginController extends Controller
             return '/speaker';
             break;
           case '2':
-            return '/home';
+            return '/lobby';
             break; 
       
           default:

@@ -1,6 +1,6 @@
 <head>
 		<meta charset="UTF-8">
-		<title>WRC 2021</title>
+		<title>Thriving Through Covid</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<!-- google fonts -->
@@ -32,7 +32,7 @@ body, html {
 
   width: 100%; 
     height: 100%; 
-    position: fixed; 
+    position: relative; 
     left: 0px; 
     top: 0px; 
     
@@ -90,8 +90,39 @@ body, html {
 
 <body>
 
+<nav class="navbar navbar-expand-sm bg-dark">
+
+  <!-- Links -->
+  <a href="#" class="navbar-left" style="margin-right: 3%;"><img src="{{ asset('img') }}/ttc/latest/logo.png"></a>
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="{{ route('lobby') }}">Lobby</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{{ route('innovator') }}">Schedule</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{{ route('exhibition') }}">Exhibition Hall</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{{ route('breakaway') }}">Breakaway Rooms</a>
+    </li>
+
+  </ul>
+
+  <ul class="navbar-nav ml-auto">
+		<li class="nav-item">
+		<a class="nav-link"  href="{{ route('logout') }}" onclick="event.preventDefault();
+       document.getElementById('logout-form').submit();">Log Out</a>
+		</li>
+	</ul>
+
+</nav>
+<form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
 <div id="bg">
-    <img src="{{ asset('img') }}/networkingmiddle.jpg" class="stretch" alt="" />
+    <img src="{{ asset('img') }}/ttc/latest/speakers.jpg" class="stretch" alt="" />
     <a id="myImage_zone1" href="{{ route('networkingroom') }}"></a>
 
 </div>

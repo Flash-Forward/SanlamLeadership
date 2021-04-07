@@ -111,7 +111,7 @@ input
 <body>
 
 <div id="bg">
-    <img src="{{ asset('img') }}/ttc/LOGIN PAGE4.jpg" class="stretch" alt="" />
+    <img src="{{ asset('img') }}/ttc/LOGIN PAGE6.jpg" class="stretch" alt="" />
     <div id="myImage_zone1" class="divInImage">
         <div class="signup-form">
             <form method="POST" class="login-form" id="login-form" action="{{ route('login') }}">
@@ -151,8 +151,8 @@ input
             </form>
         </div>
     </div>
-    <a id="myImage_zone2" onclick="event.preventDefault();alert('EVENT HAS NOT OPENED YET. PLEASE COME BACK ON THE 7TH TO LOGIN');"></a>
-    <!-- <a id="myImage_zone2" onclick="event.preventDefault();document.getElementById('login-form').submit();"></a> -->
+    <!-- <a id="myImage_zone2" onclick="event.preventDefault();alert('EVENT HAS NOT OPENED YET. PLEASE COME BACK ON THE 7TH TO LOGIN');"></a> -->
+    <a id="myImage_zone2" onclick="event.preventDefault();document.getElementById('login-form').submit();"></a>
 </div>
 
 </body>

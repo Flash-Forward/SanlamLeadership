@@ -33,6 +33,9 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('/breakawayroom', function () {
         return view('conference.breakaway');
     })->name('breakawayroom');
+    Route::get('/breakawayroom/2', function () {
+        return view('conference.breakaway2');
+    })->name('breakawayroom2');
     Route::get('/networkingroom', function () {
         return view('conference.networking');
     })->name('networkingroom');
@@ -58,5 +61,18 @@ Route::group(['middleware' => ['auth']], function() {
         return view('help');
     })->name('help');
 
-    Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+    Route::get('/exhibitor/1', function () {
+        return view('conference.flashforward');
+    })->name('flashforward');
+    Route::get('/exhibitor/2', function () {
+        return view('conference.wizzardly');
+    })->name('wizzardly');
+    Route::get('/exhibitor/3', function () {
+        return view('conference.alchemy');
+    })->name('alchemy');
+
+    //Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+    Route::get('/home', function () {
+        return view('lobby');
+    })->name('home');
 });

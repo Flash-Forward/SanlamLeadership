@@ -1,6 +1,6 @@
 <head>
 		<meta charset="UTF-8">
-		<title>WRC 2021</title>
+		<title>Thriving Through Covid</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<!-- google fonts -->
@@ -32,7 +32,7 @@ body, html {
 
   width: 100%; 
     height: 100%; 
-    position: fixed; 
+    position: relative; 
     left: 0px; 
     top: 0px; 
     
@@ -41,7 +41,7 @@ body, html {
 .stretch {
     width:100%;
     height:100%;
-    z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
+    
 }
 .divInImage {
     /* border:1px solid #fff; */
@@ -61,14 +61,14 @@ body, html {
 #myImage_zone1{
     width:15.5%;
     height:7%;
-    top:58.5%;
-    left:15%;
+    top:75.5%;
+    left:17%;
 }
 #myImage_zone2{
-    width:15%;
-    height:15%;
-    top:35%;
-    left:33%;
+    width:15.5%;
+    height:7%;
+    top:75.5%;
+    left:68%;
 }
 #myImage_zone3{
    width:15%;
@@ -89,10 +89,41 @@ body, html {
 </head>
 
 <body>
+<nav class="navbar navbar-expand-sm bg-dark">
 
+  <!-- Links -->
+  <a href="#" class="navbar-left" style="margin-right: 3%;"><img src="{{ asset('img') }}/ttc/latest/logo.png"></a>
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="{{ route('lobby') }}">Lobby</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{{ route('innovator') }}">Schedule</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{{ route('exhibition') }}">Exhibition Hall</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{{ route('breakaway') }}">Breakaway Rooms</a>
+    </li>
+
+  </ul>
+
+  <ul class="navbar-nav ml-auto">
+		<li class="nav-item">
+		<a class="nav-link"  href="{{ route('logout') }}" onclick="event.preventDefault();
+       document.getElementById('logout-form').submit();">Log Out</a>
+		</li>
+	</ul>
+
+</nav>
+<form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
 <div id="bg">
-    <img src="{{ asset('img') }}/breakawaymiddle.jpg" class="stretch" alt="" />
+    <img src="{{ asset('img') }}/ttc/latest/breakaway.jpg" class="stretch" alt="" />
     <a id="myImage_zone1" href="{{ route('breakawayroom') }}"></a>
+    <a id="myImage_zone2" href="{{ route('breakawayroom2') }}"></a>
     <!-- <a id="myImage_zone2" onclick="event.preventDefault();document.getElementById('login-form').submit();"></a> -->
 </div>
 <script>

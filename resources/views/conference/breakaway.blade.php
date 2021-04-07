@@ -1,6 +1,6 @@
 <head>
 		<meta charset="UTF-8">
-		<title>WRC 2021</title>
+		<title>Thriving Through Covid</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<!-- google fonts -->
@@ -23,13 +23,28 @@ body, html {
     position: fixed; 
     left: 0px; 
     top: 0px; 
+	
     
+}
+
+.header {
+	width: 100%;
+	position: fixed; 
+	top: 4%;
+	
+  padding: 10px 16px;
+  color: #f1f1f1;
+  text-align: center;
+}
+
+h2{
+	font-size: 48px !important;
 }
 
 .stretch {
     width:100%;
     height:100%;
-    z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
+   
 }
 .divInImage {
     /* border:1px solid #fff; */
@@ -67,16 +82,46 @@ body, html {
 
 
 <body>
+
 <div id="bg">
-    <img src="{{ asset('img') }}/breakawayend.jpg" class="stretch" alt="" />
-	<div id="myImage_zone1" class="divInImage">
-	<iframe allow="microphone; camera" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%;" src="https://webinar.anymeeting.com/569-725-462" frameborder="0"></iframe>
-	</div>
+    <img src="{{ asset('img') }}/ttc/latest/background.jpg" class="stretch" alt="" />
+	<div id="myImage_zone1" class="divInImage"></div>
     <!-- <a id="myImage_zone1" href="{{ route('room') }}"></a>
     <a id="myImage_zone2" href="{{ route('exhibition') }}"></a>
     <a id="myImage_zone3"></a> -->
     <!-- <a id="myImage_zone2" onclick="event.preventDefault();document.getElementById('login-form').submit();"></a> -->
 </div>
+<div class="header" id="myHeader">
+  <h2>BREAKAWAY ROOM 1</h2>
+</div> 
+<script type='text/javascript'>
+	var _options = {
+		'_license_key':'384-062-592',
+		'_role_token':'',
+		'_registration_token':'',
+		'_widget_containerID':'myImage_zone1',
+		'_widget_width':'100%',
+		'_widget_height':'100%',
+	};
+	(function() {
+		!function(i){
+			i.Widget=function(c){
+				'function'==typeof c&&i.Widget.__cbs.push(c),
+				i.Widget.initialized&&(i.Widget.__cbs.forEach(function(i){i()}),
+				i.Widget.__cbs=[])
+			},
+			i.Widget.__cbs=[]
+		}(window);
+		var ab = document.createElement('script'); 
+		ab.type = 'text/javascript'; 
+		ab.async = true;
+		ab.src = 'https://embed.livewebinar.com/em?t='+_options['_license_key']+'&'+Object.keys(_options).reduce(function(a,k){
+				a.push(k+'='+encodeURIComponent(_options[k]));
+				return a
+			},[]).join('&');
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ab, s);
+	})();
+</script>
 <!-- <script src="https://embed.clickmeeting.com/embed_conference.html?r=1716098224950816&l=2e2b9099269534c54309a70060383c9f"></script> -->
 <script>
 function redirectToLobby(){

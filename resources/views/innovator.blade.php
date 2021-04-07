@@ -1,6 +1,6 @@
 <head>
 		<meta charset="UTF-8">
-		<title>WRC 2021</title>
+		<title>Thriving Through Covid</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<!-- google fonts -->
@@ -20,7 +20,7 @@ body, html {
 
   width: 100%; 
     height: 100%; 
-    position: fixed; 
+    position: relative; 
     left: 0px; 
     top: 0px; 
     
@@ -47,10 +47,22 @@ body, html {
     background-color:rgba(255,255,255,0.3);
 }
 #myImage_zone1{
-    width:80%;
-    height:80%;
-    top:16%;
-    left:10%;
+    width:11.5%;
+    height:7%;
+    top:32%;
+    left:75.9%;
+}
+#myImage_zone2{
+    width:11.5%;
+    height:7%;
+    top:46%;
+    left:75.9%;
+}
+#myImage_zone3{
+    width:11.5%;
+    height:7%;
+    top:59%;
+    left:75.9%;
 }
 
 .btn-circle {
@@ -67,16 +79,42 @@ body, html {
 
 
 <body>
+<nav class="navbar navbar-expand-sm bg-dark">
+
+  <!-- Links -->
+  <a href="#" class="navbar-left" style="margin-right: 3%;"><img src="{{ asset('img') }}/ttc/latest/logo.png"></a>
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="{{ route('lobby') }}">Lobby</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{{ route('innovator') }}">Schedule</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{{ route('exhibition') }}">Exhibition Hall</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{{ route('breakaway') }}">Breakaway Rooms</a>
+    </li>
+
+  </ul>
+
+  <ul class="navbar-nav ml-auto">
+		<li class="nav-item">
+		<a class="nav-link"  href="{{ route('logout') }}" onclick="event.preventDefault();
+       document.getElementById('logout-form').submit();">Log Out</a>
+		</li>
+	</ul>
+
+</nav>
+<form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
 <div id="bg">
-    <img src="{{ asset('img') }}/innovatorend.jpg" class="stretch" alt="" />
-	<div id="myImage_zone1" class="divInImage">
-
-    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/36YnV9STBqc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-	</div>
-    <!-- <a id="myImage_zone1" href="{{ route('room') }}"></a>
-    <a id="myImage_zone2" href="{{ route('exhibition') }}"></a>
-    <a id="myImage_zone3"></a> -->
+    <img src="{{ asset('img') }}/ttc/latest/schedule.jpg" class="stretch" alt="" />
+    <a id="myImage_zone1" href="{{ route('room') }}"></a>
+    <a id="myImage_zone2" href="{{ route('breakawayroom') }}"></a>
+    <a id="myImage_zone3" href="{{ route('breakawayroom2') }}"></a>
     <!-- <a id="myImage_zone2" onclick="event.preventDefault();document.getElementById('login-form').submit();"></a> -->
 </div>
 <!-- <script src="https://embed.clickmeeting.com/embed_conference.html?r=1716098224950816&l=2e2b9099269534c54309a70060383c9f"></script> -->

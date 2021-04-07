@@ -1,6 +1,6 @@
 <head>
 		<meta charset="UTF-8">
-		<title>WRC 2021</title>
+		<title>Thriving Through Covid</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<!-- google fonts -->
@@ -19,7 +19,6 @@
   <link href="{{ asset('schedule') }}/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
-  <link href="{{ asset('schedule') }}/css/style.css" rel="stylesheet">
 <style>
 body, html {
   height: 100%;
@@ -29,19 +28,19 @@ body, html {
 #bg {
   /* The image used */
   /* background-image: url("{{ asset('img') }}/login.jpg"); */
-
   width: 100%; 
     height: 100%; 
-    position: fixed; 
     left: 0px; 
     top: 0px; 
+    position: relative;
+    /* z-index: -1; Ensure div tag stays behind content; -999 might work, too. */
     
 }
 
 .stretch {
     width:100%;
     height:100%;
-    z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
+
 }
 .divInImage {
     /* border:1px solid #fff; */
@@ -60,20 +59,20 @@ body, html {
 }
 #mainRoom{
     width:16%;
-    height:15.5%;
+    height:13.5%;
     top:50.5%;
     left:42%;
 }
 #exhibitionHall{
     width:15%;
-    height:15%;
-    top:35%;
+    height:13%;
+    top:37%;
     left:33%;
 }
 #breakawayRooms{
    width:15%;
-    height:15%;
-    top:35%;
+    height:13%;
+    top:37%;
     left:52%;
 }
 #innovatorsCafe{
@@ -91,14 +90,14 @@ body, html {
 #helpDesk{
    width:17%;
     height:21%;
-    top:64%;
+    top:60%;
     left:19%;
 }
 
 #schedule{
    width:3%;
     height:30%;
-    top:61%;
+    top:59%;
     left:71.5%;
 }
 .btn-circle {
@@ -115,15 +114,47 @@ body, html {
 
 <body>
 
+<nav class="navbar navbar-expand-sm bg-dark">
+
+  <!-- Links -->
+  <a href="#" class="navbar-left" style="margin-right: 3%;"><img src="{{ asset('img') }}/ttc/latest/logo.png"></a>
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="{{ route('lobby') }}">Lobby</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{{ route('innovator') }}">Schedule</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{{ route('exhibition') }}">Exhibition Hall</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{{ route('breakaway') }}">Breakaway Rooms</a>
+    </li>
+
+  </ul>
+
+  <ul class="navbar-nav ml-auto">
+		<li class="nav-item">
+		<a class="nav-link"  href="{{ route('logout') }}" onclick="event.preventDefault();
+       document.getElementById('logout-form').submit();">Log Out</a>
+		</li>
+	</ul>
+
+</nav>
+<form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+
 <div id="bg">
-    <img src="{{ asset('img') }}/lobby.jpg" class="stretch" alt="" />
+    <img src="{{ asset('img') }}/ttc/latest/lobby.jpg" class="stretch" alt="" />
     <a id="mainRoom" href="{{ route('room') }}"></a>
     <a id="exhibitionHall" href="{{ route('exhibition') }}"></a>
     <a id="breakawayRooms" href="{{ route('breakaway') }}"></a>
     <a id="innovatorsCafe" href="{{ route('innovator') }}"></a>
     <a id="networkLounges" href="{{ route('networking') }}"></a>
-    <a id="helpDesk" href="{{ route('help') }}"></a>
-    <a id="schedule" href="{{ route('breakaway') }}"></a>
+    <a id="helpDesk" onclick="Tawk_API.toggle();"></a>
+    <a id="schedule" href="{{ route('innovator') }}"></a>
     <!-- <a id="myImage_zone2" onclick="event.preventDefault();document.getElementById('login-form').submit();"></a> -->
 </div>
 

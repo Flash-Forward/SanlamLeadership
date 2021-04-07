@@ -398,7 +398,7 @@ label {
         
         <div id="bannerDate">
             <div id="bannerText">
-                <b>Date: 8th April 2021</b>
+                <b>Date: 15th April 2021</b>
                 <br>
                 <b>Time: 18:00 - 20:30</b>
             </div>
@@ -510,7 +510,7 @@ label {
 
 
 <div id="bg">
-    <img src="{{ asset('img') }}/ttc/REGISTER PAGE4.jpg" class="stretch" alt="" />
+    <img src="{{ asset('img') }}/ttc/REGISTER PAGE6.jpg" class="stretch" alt="" />
     <div id="myImage_zone1" class="divInImage">
     <div class="signup-form">
                     <form method="POST" class="register-form" id="register-form" action="{{ route('register') }}">
