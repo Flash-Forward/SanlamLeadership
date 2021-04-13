@@ -59,15 +59,15 @@ body, html {
     background-color:rgba(255,255,255,0.3);
 }
 #myImage_zone1{
-    width:15.5%;
-    height:7%;
-    top:75.5%;
-    left:17%;
+    width:12.5%;
+    height:6%;
+    top:72.5%;
+    left:21%;
 }
 #myImage_zone2{
-    width:15.5%;
-    height:7%;
-    top:75.5%;
+    width:12.5%;
+    height:6%;
+    top:72.5%;
     left:68%;
 }
 #myImage_zone3{
@@ -121,7 +121,7 @@ body, html {
                                         @csrf
                                     </form>
 <div id="bg">
-    <img src="{{ asset('img') }}/ttc/latest/breakaway.jpg" class="stretch" alt="" />
+    <img src="{{ asset('img') }}/ttc/latest/breakaway1.jpg" class="stretch" alt="" />
     <a id="myImage_zone1" href="{{ route('breakawayroom') }}"></a>
     <a id="myImage_zone2" href="{{ route('breakawayroom2') }}"></a>
     <!-- <a id="myImage_zone2" onclick="event.preventDefault();document.getElementById('login-form').submit();"></a> -->

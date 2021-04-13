@@ -49,19 +49,19 @@ body, html {
 #myImage_zone1{
     width:11.5%;
     height:7%;
-    top:32%;
+    top:40%;
     left:75.9%;
 }
 #myImage_zone2{
     width:11.5%;
     height:7%;
-    top:46%;
+    top:54%;
     left:75.9%;
 }
 #myImage_zone3{
     width:11.5%;
     height:7%;
-    top:59%;
+    top:67%;
     left:75.9%;
 }
 
@@ -111,7 +111,7 @@ body, html {
                                         @csrf
                                     </form>
 <div id="bg">
-    <img src="{{ asset('img') }}/ttc/latest/schedule.jpg" class="stretch" alt="" />
+    <img src="{{ asset('img') }}/ttc/latest/schedule1.jpg" class="stretch" alt="" />
     <a id="myImage_zone1" href="{{ route('room') }}"></a>
     <a id="myImage_zone2" href="{{ route('breakawayroom') }}"></a>
     <a id="myImage_zone3" href="{{ route('breakawayroom2') }}"></a>

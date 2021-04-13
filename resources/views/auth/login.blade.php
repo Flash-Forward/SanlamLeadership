@@ -62,13 +62,13 @@ body, html {
 #myImage_zone1{
     width:32%;
     height:14.5%;
-    top:630px;
+    top:640px;
     left:39%;
 }
 #myImage_zone2{
     width:11%;
     height:36px;
-    top:795px;
+    top:805px;
     left:44.5%;
 }
 #myImage_zone3{
@@ -111,7 +111,7 @@ input
 <body>
 
 <div id="bg">
-    <img src="{{ asset('img') }}/ttc/LOGIN PAGE6.jpg" class="stretch" alt="" />
+    <img src="{{ asset('img') }}/ttc/LOGIN PAGE8.jpg" class="stretch" alt="" />
     <div id="myImage_zone1" class="divInImage">
         <div class="signup-form">
             <form method="POST" class="login-form" id="login-form" action="{{ route('login') }}">

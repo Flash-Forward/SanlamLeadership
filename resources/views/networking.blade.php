@@ -122,7 +122,7 @@ body, html {
                                         @csrf
                                     </form>
 <div id="bg">
-    <img src="{{ asset('img') }}/ttc/latest/speakers.jpg" class="stretch" alt="" />
+    <img src="{{ asset('img') }}/ttc/latest/speakers1.jpg" class="stretch" alt="" />
     <a id="myImage_zone1" href="{{ route('networkingroom') }}"></a>
 
 </div>
