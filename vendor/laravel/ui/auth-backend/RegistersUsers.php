@@ -18,7 +18,8 @@ trait RegistersUsers
      */
     public function showRegistrationForm()
     {
-        return view('auth.register');
+        return redirect()->away('https://www.wizzardlymedia.com/Thrivinginpandemic');
+        //return view('auth.register');
     }
 
     /**

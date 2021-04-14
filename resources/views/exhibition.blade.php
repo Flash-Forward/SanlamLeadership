@@ -81,6 +81,7 @@ body, html {
     top:60.5%;
     left:31%;
     border-radius: 35px;
+    perspective: 100px;
 }
 #myImage_zone4{
     width:17%;
