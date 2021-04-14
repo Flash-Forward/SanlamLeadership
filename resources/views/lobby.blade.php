@@ -147,11 +147,11 @@ body, html {
                                     </form>
 
 <div id="bg">
-    <img src="{{ asset('img') }}/ttc/latest/lobby2.jpg" class="stretch" alt="" />
+    <img src="{{ asset('img') }}/ttc/latest/lobby3.jpg" class="stretch" alt="" />
     <a id="mainRoom" href="{{ route('room') }}"></a>
     <a id="exhibitionHall" href="{{ route('exhibition') }}"></a>
     <a id="breakawayRooms" href="{{ route('breakaway') }}"></a>
-    <a id="innovatorsCafe" href="{{ route('innovator') }}"></a>
+    <a id="innovatorsCafe" href="{{ route('networkingroom') }}"></a>
     <a id="networkLounges" href="{{ route('networking') }}"></a>
     <a id="helpDesk" onclick="Tawk_API.toggle();"></a>
     <a id="schedule" href="{{ route('innovator') }}"></a>
