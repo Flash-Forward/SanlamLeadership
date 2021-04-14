@@ -123,7 +123,7 @@ body, html {
                                     </form>
 <div id="bg">
     <img src="{{ asset('img') }}/ttc/latest/speakers1.jpg" class="stretch" alt="" />
-    <a id="myImage_zone1" href="{{ route('networkingroom') }}"></a>
+    <!-- <a id="myImage_zone1" href="{{ route('networkingroom') }}"></a> -->
 
 </div>
 <script>
