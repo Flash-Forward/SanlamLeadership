@@ -24,6 +24,7 @@
 body, html {
   height: 100%;
   margin: 0;
+  overflow: hidden;
 }
 
 #bg {
@@ -82,19 +83,23 @@ body, html {
 				padding: 10px 16px;
 				border-radius: 35px;
 				font-size: 24px;
+        margin: 7px;
 				line-height: 1.33;
 			}
+      nav li a {
+    color: #000051;
+}
 </style>
 
 </head>
 
 <body>
 
-<nav class="navbar navbar-expand-sm bg-dark">
+<nav class="navbar navbar-expand-sm bg-light">
 
   <!-- Links -->
   <a href="#" class="navbar-left" style="margin-right: 3%;"><img src="{{ asset('img') }}/ttc/latest/logo.png"></a>
-  <ul class="navbar-nav">
+  <ul class="navbar-nav ml-auto">
     <li class="nav-item active">
       <a class="nav-link" href="{{ route('lobby') }}">Lobby</a>
     </li>
@@ -107,22 +112,19 @@ body, html {
     <li class="nav-item">
       <a class="nav-link" href="{{ route('breakaway') }}">Breakaway Rooms</a>
     </li>
-
-  </ul>
-
-  <ul class="navbar-nav ml-auto">
 		<li class="nav-item">
 		<a class="nav-link"  href="{{ route('logout') }}" onclick="event.preventDefault();
        document.getElementById('logout-form').submit();">Log Out</a>
 		</li>
-	</ul>
+  </ul>
+
 
 </nav>
 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                         @csrf
                                     </form>
 <div id="bg">
-    <img src="{{ asset('img') }}/ttc/latest/speakers1.jpg" class="stretch" alt="" />
+    <img src="{{ asset('img') }}/ttc/latest/speakers2.jpg" class="stretch" alt="" />
     <!-- <a id="myImage_zone1" href="{{ route('networkingroom') }}"></a> -->
 
 </div>

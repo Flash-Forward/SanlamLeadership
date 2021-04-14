@@ -74,6 +74,7 @@ h2{
 				padding: 10px 16px;
 				border-radius: 35px;
 				font-size: 24px;
+				margin: 7px;
 				line-height: 1.33;
 			}
 </style>
@@ -102,6 +103,7 @@ h2{
 		'_widget_containerID':'myImage_zone1',
 		'_widget_width':'100%',
 		'_widget_height':'100%',
+		'_nickname':'{{ Auth::user()->name }}',
 	};
 	(function() {
 		!function(i){

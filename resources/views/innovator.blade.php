@@ -12,6 +12,7 @@
 body, html {
   height: 100%;
   margin: 0;
+  overflow: hidden;
 }
 
 #bg {
@@ -41,28 +42,31 @@ body, html {
     /* border:1px solid #fff; */
     display:block;
     position:absolute;
-    background-color:rgba(0,0,0,0);
+    background-color:rgba(0,0,0,0.1);
 }
 #bg a:hover {
-    background-color:rgba(255,255,255,0);
+    background-color:rgba(255,255,255,0.3);
 }
 #myImage_zone1{
-    width:11.5%;
+    width:11.8%;
     height:7%;
-    top:40%;
-    left:75.9%;
+    top:39.6%;
+    left:76.2%;
+    border-radius: 10px;
 }
 #myImage_zone2{
-    width:11.5%;
+    width:11.8%;
     height:7%;
-    top:54%;
-    left:75.9%;
+    top:53.8%;
+    left:76.2%;
+    border-radius: 10px;
 }
 #myImage_zone3{
-    width:11.5%;
+    width:11.8%;
     height:7%;
     top:67%;
-    left:75.9%;
+    left:76.2%;
+    border-radius: 10px;
 }
 
 .btn-circle {
@@ -71,19 +75,23 @@ body, html {
 				padding: 10px 16px;
 				border-radius: 35px;
 				font-size: 24px;
+        margin: 7px;
 				line-height: 1.33;
 			}
+      nav li a {
+    color: #000051;
+}
 </style>
 
 	</head>
 
 
 <body>
-<nav class="navbar navbar-expand-sm bg-dark">
+<nav class="navbar navbar-expand-sm bg-light">
 
   <!-- Links -->
   <a href="#" class="navbar-left" style="margin-right: 3%;"><img src="{{ asset('img') }}/ttc/latest/logo.png"></a>
-  <ul class="navbar-nav">
+  <ul class="navbar-nav ml-auto">
     <li class="nav-item active">
       <a class="nav-link" href="{{ route('lobby') }}">Lobby</a>
     </li>
@@ -96,22 +104,19 @@ body, html {
     <li class="nav-item">
       <a class="nav-link" href="{{ route('breakaway') }}">Breakaway Rooms</a>
     </li>
-
-  </ul>
-
-  <ul class="navbar-nav ml-auto">
 		<li class="nav-item">
 		<a class="nav-link"  href="{{ route('logout') }}" onclick="event.preventDefault();
        document.getElementById('logout-form').submit();">Log Out</a>
 		</li>
-	</ul>
+  </ul>
+
 
 </nav>
 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                         @csrf
                                     </form>
 <div id="bg">
-    <img src="{{ asset('img') }}/ttc/latest/schedule1.jpg" class="stretch" alt="" />
+    <img src="{{ asset('img') }}/ttc/latest/schedule2.jpg" class="stretch" alt="" />
     <a id="myImage_zone1" href="{{ route('room') }}"></a>
     <a id="myImage_zone2" href="{{ route('breakawayroom') }}"></a>
     <a id="myImage_zone3" href="{{ route('breakawayroom2') }}"></a>

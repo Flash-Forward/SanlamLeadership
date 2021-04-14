@@ -24,6 +24,7 @@
 body, html {
   height: 100%;
   margin: 0;
+  overflow: hidden;
 }
 
 #bg {
@@ -54,10 +55,10 @@ body, html {
     /* border:1px solid #fff; */
     display:block;
     position:absolute;
-    background-color:rgba(0,0,0,0);
+    background-color:rgba(0,0,0,0.1);
 }
 #bg a:hover {
-    background-color:rgba(255,255,255,0);
+    background-color:rgba(255,255,255,0.3);
 }
 
 #myImage_zone1{
@@ -65,24 +66,28 @@ body, html {
     height:15%;
     top:40.5%;
     left:33.5%;
+    border-radius: 35px;
 }
 #myImage_zone2{
    width:15%;
     height:15%;
     top:40.5%;
     left:51%;
+    border-radius: 35px;
 }
 #myImage_zone3{
-    width:17%;
+    width:17.3%;
     height:18%;
     top:60.5%;
-    left:31.5%;
+    left:31%;
+    border-radius: 35px;
 }
 #myImage_zone4{
     width:17%;
     height:18%;
     top:60.5%;
     left:51.5%;
+    border-radius: 35px;
 }
 
 .btn-circle {
@@ -91,18 +96,22 @@ body, html {
 				padding: 10px 16px;
 				border-radius: 35px;
 				font-size: 24px;
+        margin: 7px;
 				line-height: 1.33;
 			}
+      nav li a {
+    color: #000051;
+}
 </style>
 
 </head>
 
 <body>
-<nav class="navbar navbar-expand-sm bg-dark">
+<nav class="navbar navbar-expand-sm bg-light">
 
   <!-- Links -->
   <a href="#" class="navbar-left" style="margin-right: 3%;"><img src="{{ asset('img') }}/ttc/latest/logo.png"></a>
-  <ul class="navbar-nav">
+  <ul class="navbar-nav ml-auto">
     <li class="nav-item active">
       <a class="nav-link" href="{{ route('lobby') }}">Lobby</a>
     </li>
@@ -115,15 +124,12 @@ body, html {
     <li class="nav-item">
       <a class="nav-link" href="{{ route('breakaway') }}">Breakaway Rooms</a>
     </li>
-
-  </ul>
-
-  <ul class="navbar-nav ml-auto">
 		<li class="nav-item">
 		<a class="nav-link"  href="{{ route('logout') }}" onclick="event.preventDefault();
        document.getElementById('logout-form').submit();">Log Out</a>
 		</li>
-	</ul>
+  </ul>
+
 
 </nav>
 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
