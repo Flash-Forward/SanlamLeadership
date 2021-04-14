@@ -41,10 +41,10 @@ body, html {
     /* border:1px solid #fff; */
     display:block;
     position:absolute;
-    background-color:rgba(0,0,0,0.1);
+    background-color:rgba(0,0,0,0);
 }
 #bg a:hover {
-    background-color:rgba(255,255,255,0.3);
+    background-color:rgba(255,255,255,0);
 }
 #myImage_zone1{
     width:11.5%;

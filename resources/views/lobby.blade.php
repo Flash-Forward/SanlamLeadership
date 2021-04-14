@@ -52,10 +52,10 @@ body, html {
     /* border:1px solid #fff; */
     display:block;
     position:absolute;
-    background-color:rgba(0,0,0,0.1);
+    background-color:rgba(0,0,0,0);
 }
 #bg a:hover {
-    background-color:rgba(255,255,255,0.3);
+    background-color:rgba(255,255,255,0);
 }
 #mainRoom{
     width:16%;
@@ -147,7 +147,7 @@ body, html {
                                     </form>
 
 <div id="bg">
-    <img src="{{ asset('img') }}/ttc/latest/lobby3.jpg" class="stretch" alt="" />
+    <img src="{{ asset('img') }}/ttc/latest/lobby4.jpg" class="stretch" alt="" />
     <a id="mainRoom" href="{{ route('room') }}"></a>
     <a id="exhibitionHall" href="{{ route('exhibition') }}"></a>
     <a id="breakawayRooms" href="{{ route('breakaway') }}"></a>
