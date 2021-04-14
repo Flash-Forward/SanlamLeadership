@@ -55,6 +55,7 @@ body, html {
     background-color:rgba(0,0,0,0);
 }
 #bg a:hover {
+  cursor: pointer;
     background-color:rgba(255,255,255,0);
 }
 #mainRoom{

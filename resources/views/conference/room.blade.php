@@ -128,4 +128,5 @@ function redirectToLobby(){
 <div style="position: fixed; bottom: 0; left:0; width:70px;">
 	<button id="homeButton" type="button" class="btn btn-primary btn-circle" onclick="redirectToLobby();"><i class="fa fa-home"></i>
 </div>
+
 </body>
