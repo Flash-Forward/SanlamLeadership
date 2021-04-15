@@ -23,9 +23,9 @@ Route::get('/thankyou', function () {
     return view('thankyou');
 })->name('thankyou');
 
-Route::get('/test', function () {
-    return view('auth.login3');
-})->name('test');
+Route::get('/mobile', function () {
+    return view('devicenotsupported');
+})->name('mobile');
 
 
 Route::get('/sregister', [App\Http\Controllers\Auth\RegisterController::class, 'speaker'])->name('sregister');
@@ -46,6 +46,7 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('/lobby', function () {
         return view('lobby');
     })->name('lobby');
+
     Route::get('/speaker', function () {
         return view('speaker.landing');
     })->name('speaker');
