@@ -185,7 +185,7 @@ iframe{
                                     </form>
 
 <div id="overlay">
-<iframe width="80%" height="80%" src="https://www.youtube.com/embed/C1tR6gn89sg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="80%" height="80%" src="https://www.youtube.com/embed/C1tR6gn89sg" title="YouTube video player" class="yt_player_iframe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   <div style="position: fixed; top: 0; right:1%; width:70px;">
 	<button id="homeButton" type="button" class="btn btn-danger btn-circle" onclick="off();"><i class="fa fa-times"></i>
 </div>
@@ -223,7 +223,22 @@ function on() {
 
 function off() {
   {{session(['startvideo' => '1'])}}
+    //if I want i can set scope to a specific region
+var myScope = document.getElementById('overlay');      
+//otherwise set scope as the entire document
+//var myScope = document;
+
+//if there is an iframe inside maybe embedded multimedia video/audio, we should reload so it stops playing
+var iframes = myScope.getElementsByTagName("iframe");
+if (iframes != null) {
+    for (var i = 0; i < iframes.length; i++) {
+        iframes[i].src = iframes[i].src; //causes a reload so it stops playing, music, video, etc.
+    }
+}
   document.getElementById("overlay").style.display = "none";
+
+
+
 } 
 </script>
 
