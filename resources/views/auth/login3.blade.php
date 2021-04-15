@@ -162,11 +162,11 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
         window.location = "/mobile";
 }
 function login(){
-    var name = document.getElementById('fname').value;
-    var email = document.getElementById('email2').value;
-    if(name != "Wayne" || email != "wayne@flash-forward.co.za")
-        alert('THE EVENT ONLY STARTS ON THE 15th OF APRIL - 6PM');
-    else
+    // var name = document.getElementById('fname').value;
+    // var email = document.getElementById('email2').value;
+    // if(name != "Wayne" || email != "wayne@flash-forward.co.za")
+    //     alert('THE EVENT ONLY STARTS ON THE 15th OF APRIL - 6PM');
+    // else
         document.getElementById('login-form').submit();
 }
 </script>
