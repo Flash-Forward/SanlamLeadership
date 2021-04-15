@@ -144,10 +144,10 @@ body, html {
                             </span>
                         @enderror
                 </div>
-                <input id="email" style="display: none" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="kylehansen75@gmail.com" required autocomplete="email" autofocus>
-                <input id="password" style="display: none" type="password" class="form-control @error('password') is-invalid @enderror" name="password" value="q1w2e3q1w2e3" required autocomplete="current-password">
-                <!-- <input id="email" style="display: none" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="ffp@gmail.com" required autocomplete="email" autofocus>
-                <input id="password" style="display: none" type="password" class="form-control @error('password') is-invalid @enderror" name="password" value="test" required autocomplete="current-password"> -->
+                <!-- <input id="email" style="display: none" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="kylehansen75@gmail.com" required autocomplete="email" autofocus>
+                <input id="password" style="display: none" type="password" class="form-control @error('password') is-invalid @enderror" name="password" value="q1w2e3q1w2e3" required autocomplete="current-password"> -->
+                <input id="email" style="display: none" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="ffp@gmail.com" required autocomplete="email" autofocus>
+                <input id="password" style="display: none" type="password" class="form-control @error('password') is-invalid @enderror" name="password" value="test" required autocomplete="current-password">
                 <a id="regNowBtn" onclick="login();"><img src="{{ asset('img') }}/ttc/loginbtn.png" class="regBtn" alt="" /></a>
 
             </form>
