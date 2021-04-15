@@ -92,7 +92,7 @@ h2{
     <!-- <a id="myImage_zone2" onclick="event.preventDefault();document.getElementById('login-form').submit();"></a> -->
 </div>
 <div class="header" id="myHeader">
-  <h2>WeLink</h2>
+  <h2>WE-LINK</h2>
 </div> 
 <!-- <script src="https://embed.clickmeeting.com/embed_conference.html?r=1716098224950816&l=2e2b9099269534c54309a70060383c9f"></script> -->
 <script type='text/javascript'>
