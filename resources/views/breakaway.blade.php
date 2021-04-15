@@ -98,7 +98,7 @@ body, html {
 				line-height: 1.33;
 			}
       nav li a {
-    color: #000051;
+    color: #000000;
 }
 </style>
 
@@ -108,7 +108,7 @@ body, html {
 <nav class="navbar navbar-expand-sm bg-light">
 
   <!-- Links -->
-  <a href="#" class="navbar-left" style="margin-right: 3%;"><img src="{{ asset('img') }}/ttc/latest/logo.png"></a>
+  <a href="#" class="navbar-left" style="margin-right: 3%; margin-left: 3%;"><img src="{{ asset('img') }}/ttc/latest/logo.png"></a>
   <ul class="navbar-nav ml-auto">
     <li class="nav-item active">
       <a class="nav-link" href="{{ route('lobby') }}">Lobby</a>

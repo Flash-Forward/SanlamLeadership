@@ -64,36 +64,42 @@ body, html {
     height:13.5%;
     top:50.5%;
     left:42.3%;
+    /* border-radius: 35px; */
 }
 #exhibitionHall{
     width:15%;
     height:13%;
     top:37%;
     left:33.3%;
+    /* border-radius: 35px; */
 }
 #breakawayRooms{
    width:15%;
     height:13%;
     top:37%;
     left:52.3%;
+    /* border-radius: 35px; */
 }
 #innovatorsCafe{
    width:17%;
     height:15%;
     top:40%;
     left:0%;
+    border-radius: 35px;
 }
 #networkLounges{
    width:17%;
     height:15%;
     top:40%;
     left:83%;
+    border-radius: 35px;
 }
 #helpDesk{
    width:17%;
-    height:21%;
-    top:60%;
+    height:20%;
+    top:61%;
     left:19%;
+    border-radius: 35px;
 }
 
 #schedule{
@@ -113,7 +119,7 @@ body, html {
 			}
 
       nav li a {
-    color: #000051;
+    color: #000000;
 }
 
 </style>

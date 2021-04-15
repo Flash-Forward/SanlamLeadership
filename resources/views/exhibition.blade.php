@@ -76,19 +76,18 @@ body, html {
     border-radius: 35px;
 }
 #myImage_zone3{
-    width:17.3%;
-    height:18%;
+    width:17%;
+    height:18.2%;
     top:60.5%;
-    left:31%;
-    border-radius: 35px;
-    perspective: 100px;
+    left:31.2%;
+    border-radius: 60px;
 }
 #myImage_zone4{
     width:17%;
     height:18%;
     top:60.5%;
     left:51.5%;
-    border-radius: 35px;
+    border-radius: 60px;
 }
 
 .btn-circle {
@@ -101,7 +100,7 @@ body, html {
 				line-height: 1.33;
 			}
       nav li a {
-    color: #000051;
+    color: #000000;
 }
 </style>
 
@@ -111,7 +110,7 @@ body, html {
 <nav class="navbar navbar-expand-sm bg-light">
 
   <!-- Links -->
-  <a href="#" class="navbar-left" style="margin-right: 3%;"><img src="{{ asset('img') }}/ttc/latest/logo.png"></a>
+  <a href="#" class="navbar-left" style="margin-right: 3%; margin-left: 3%;"><img src="{{ asset('img') }}/ttc/latest/logo.png"></a>
   <ul class="navbar-nav ml-auto">
     <li class="nav-item active">
       <a class="nav-link" href="{{ route('lobby') }}">Lobby</a>

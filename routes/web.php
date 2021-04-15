@@ -23,6 +23,10 @@ Route::get('/thankyou', function () {
     return view('thankyou');
 })->name('thankyou');
 
+Route::get('/test', function () {
+    return view('auth.login3');
+})->name('test');
+
 
 Route::get('/sregister', [App\Http\Controllers\Auth\RegisterController::class, 'speaker'])->name('sregister');
 

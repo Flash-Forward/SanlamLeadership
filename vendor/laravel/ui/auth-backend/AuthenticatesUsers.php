@@ -18,7 +18,7 @@ trait AuthenticatesUsers
      */
     public function showLoginForm()
     {
-        return view('auth.login');
+        return view('auth.login3');
     }
 
     /**
@@ -125,7 +125,9 @@ trait AuthenticatesUsers
      */
     protected function authenticated(Request $request, $user)
     {
-        //
+        $request->session()->put('fname', $request->input('fname'));
+        $request->session()->put('lname', $request->input('lname'));
+        $request->session()->put('mail', $request->input('email2'));
     }
 
     /**

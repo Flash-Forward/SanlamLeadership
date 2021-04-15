@@ -103,7 +103,7 @@ h2{
 		'_widget_containerID':'myImage_zone1',
 		'_widget_width':'100%',
 		'_widget_height':'100%',
-		'_nickname':'{{ Auth::user()->name }}',
+		'_nickname':'{{ Session::get("fname")." ".Session::get("lname") }}',
 	};
 	(function() {
 		!function(i){
