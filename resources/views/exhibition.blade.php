@@ -137,7 +137,7 @@ body, html {
                                     </form>
 <div id="bg">
     <img src="{{ asset('img') }}/ttc/latest/exhall.jpg" class="stretch" alt="" />
-    <!-- <a id="myImage_zone1" href="{{ route('networkingroom') }}"></a> -->
+    <a id="myImage_zone1" href="{{ route('welink') }}"></a>
     <a id="myImage_zone2" href="{{ route('wizzardly') }}"></a>
     <a id="myImage_zone3" href="{{ route('flashforward') }}"></a>
     <a id="myImage_zone4" href="{{ route('alchemy') }}"></a>

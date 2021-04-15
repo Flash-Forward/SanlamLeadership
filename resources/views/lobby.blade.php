@@ -122,6 +122,33 @@ body, html {
     color: #000000;
 }
 
+iframe{
+  margin-top: 5%;
+}
+#overlay {
+  text-align:center;
+  vertical-align: middle;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed; /* Sit on top of the page content */
+  @if(session('startvideo', '0') == '0')
+  display: block; /* Hidden by default */
+  @else
+  display: none;
+  @endif
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.9); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
 </style>
 
 </head>
@@ -157,6 +184,12 @@ body, html {
                                         @csrf
                                     </form>
 
+<div id="overlay">
+<iframe width="80%" height="80%" src="https://www.youtube.com/embed/C1tR6gn89sg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <div style="position: fixed; top: 0; right:1%; width:70px;">
+	<button id="homeButton" type="button" class="btn btn-danger btn-circle" onclick="off();"><i class="fa fa-times"></i>
+</div>
+</div> 
 <div id="bg">
     <img src="{{ asset('img') }}/ttc/latest/lobby4.jpg" class="stretch" alt="" />
     <a id="mainRoom" href="{{ route('room') }}"></a>
@@ -179,6 +212,19 @@ s1.charset='UTF-8';
 s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
+
+
+
+
+
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  {{session(['startvideo' => '1'])}}
+  document.getElementById("overlay").style.display = "none";
+} 
 </script>
 
 </body>

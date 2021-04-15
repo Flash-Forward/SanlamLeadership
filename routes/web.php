@@ -44,6 +44,8 @@ Route::group(['middleware' => ['auth']], function() {
         return view('conference.networking');
     })->name('networkingroom');
     Route::get('/lobby', function () {
+        // dd(session()->all());
+
         return view('lobby');
     })->name('lobby');
 
@@ -75,6 +77,9 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('/exhibitor/3', function () {
         return view('conference.alchemy');
     })->name('alchemy');
+    Route::get('/exhibitor/4', function () {
+        return view('conference.welink');
+    })->name('welink');
 
     //Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::get('/home', function () {
