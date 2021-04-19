@@ -14,7 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return redirect()->away('https://www.wizzardlymedia.com/Thrivinginpandemic');
+    return view('auth.register');
+    // return redirect()->away('https://www.wizzardlymedia.com/Thrivinginpandemic');
 });
 Auth::routes(['verify' => true]);
 //Auth::routes();
