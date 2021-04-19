@@ -1,6 +1,6 @@
 <head>
 		<meta charset="UTF-8">
-		<title>Thriving Through Covid</title>
+		<title>BryteSA</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<!-- google fonts -->
@@ -169,7 +169,7 @@ li{
   background-size: cover;
   background-position: center;  */
   width: 100%; 
-    /* height: 100%;  */
+    height: 35%; 
     position: relative;
     
 }
@@ -244,8 +244,8 @@ li{
 .bgImg{
     object-fit: cover; /* Do not scale the image */
   object-position: center; /* Center the image within the element */
-    width:inherit; 
-    height:inherit;
+    width:100%; 
+    height:100%;
     position: absolute;
     z-index: -1;
 }
@@ -253,8 +253,9 @@ li{
 .bgImgL{
     object-fit: cover; /* Do not scale the image */
   object-position: center; /* Center the image within the element */
-    width:inherit; 
-    position: absolute;
+    width:inherit;
+    height:inherit;
+    position: relative;
     z-index: -1;
 }
 /* Smartphones (portrait) ----------- */
@@ -369,14 +370,7 @@ input, select {
   font-family: 'Montserrat';
   font-weight: 500;
   font-size: 13px; }
-  input:focus, select:focus {
-    outline: none;
-}
-input
-{
-    background: transparent;
-    border: none;
-}
+
 
 label {
   font-size: 16px;
@@ -391,10 +385,7 @@ label {
 <body>
 <div id="bgMobile">
     <div id="bannerBg">
-        <img src="{{ asset('img') }}/ttc/bannerbg1.jpg" class="bgImgL" alt="" />
-        <div id="bannerLogo">
-        <img src="{{ asset('img') }}/ttc/logo.png" class="logoImg" alt="" />
-        </div>
+        <img src="{{ asset('img') }}/bryte/banner.jpg" class="bgImgL" alt="" />
         
         <div id="bannerDate">
             <div id="bannerText">
@@ -405,174 +396,72 @@ label {
         </div>
     </div>
     <div id="overviewBg">
-    <img src="{{ asset('img') }}/ttc/genbg.jpg" class="bgImg" alt="" />
+    <img src="{{ asset('img') }}/bryte/background.jpg" class="bgImg" alt="" />
+        <br>
         <div id="overviewText">
             <b>
-                Life is not meant to be struggle; we’re meant to THRIVE.. in all areas of our life. Join us for an exhilarating FREE Virtual Event featuring some of SA’s most successful entrepreneurs who will be sharing their inspiring stories, secrets and techniques of how they pivoted their businesses during COVID, which left them better off than prior to the pandemic. You will learn how to spot the gaps in the market, adjust your service offerings to cater for the demand as well as implement bullet proof marketing techniques to generate more revenue. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pulvinar mi et dignissim porta. Sed in lacinia lectus. Sed felis odio, vehicula non mattis non, bibendum nec purus. Nulla tincidunt nibh sit amet sapien scelerisque sollicitudin. Donec eu aliquam neque. Praesent id sollicitudin urna, eu iaculis nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut vitae mauris pulvinar, luctus ante ac, euismod justo. Maecenas nec odio eleifend, ornare tortor vel, rhoncus sem. Cras hendrerit pharetra lacinia. Phasellus arcu turpis, consectetur a cursus id, ultricies vel diam. 
             </b>
             <br><br>
             <b>
-            During this event, there will be an array of virtual talks from dynamic entrepreneurs. speakers and business experts on how they have not only survived the pandemic, but managed to scale their organisations and THRIVE. This event is NOT for everyone! It is only for entrepreneurs or aspiring business owners who are serious about thriving and skyrocketing their business through these uncertain times.This event will be hosted on the WE-LINK Virtual Conferencing Platform; the first ever proudly South African LIVE virtual platform. Register now! Limited spots available.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pulvinar mi et dignissim porta. Sed in lacinia lectus. Sed felis odio, vehicula non mattis non, bibendum nec purus. Nulla tincidunt nibh sit amet sapien scelerisque sollicitudin. Donec eu aliquam neque. Praesent id sollicitudin urna, eu iaculis nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut vitae mauris pulvinar, luctus ante ac, euismod justo. Maecenas nec odio eleifend, ornare tortor vel, rhoncus sem. Cras hendrerit pharetra lacinia. Phasellus arcu turpis, consectetur a cursus id, ultricies vel diam. 
             </b>
-        </div>
-        <a id="regNowBtn" onclick="event.preventDefault();scrollToRegMobile();"><img src="{{ asset('img') }}/ttc/regbtn.png" class="regBtn" alt="" /></a>
-    </div>
-    <div id="speakersBg">
-    <img src="{{ asset('img') }}/ttc/genbg.jpg" class="bgImg" alt="" />
-        <div id="speakersText">
+            <br><br>
             <b>
-                MEET THE SPEAKERS
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pulvinar mi et dignissim porta. Sed in lacinia lectus. Sed felis odio, vehicula non mattis non, bibendum nec purus. Nulla tincidunt nibh sit amet sapien scelerisque sollicitudin. Donec eu aliquam neque. Praesent id sollicitudin urna, eu iaculis nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut vitae mauris pulvinar, luctus ante ac, euismod justo. Maecenas nec odio eleifend, ornare tortor vel, rhoncus sem. Cras hendrerit pharetra lacinia. Phasellus arcu turpis, consectetur a cursus id, ultricies vel diam. 
             </b>
-            <img src="{{ asset('img') }}/ttc/speaker1.png" class="speakerImg" alt="" />
-            <img src="{{ asset('img') }}/ttc/speaker3.png" class="speakerImg" alt="" />
-            <img src="{{ asset('img') }}/ttc/speaker2.png" class="speakerImg" alt="" />
-        </div>
-        
-        <a id="regNowBtn" onclick="event.preventDefault();scrollToRegMobile();"><img src="{{ asset('img') }}/ttc/regbtn.png" class="regBtn" alt="" /></a>
-    </div>
-    <div id="whatYouWillLearnBg">
-    <img src="{{ asset('img') }}/ttc/genbg.jpg" class="bgImg" alt="" />
-        <div id="whatYouWillLearnHeader">
+            <br><br>
             <b>
-                WHAT YOU WILL LEARN
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pulvinar mi et dignissim porta. Sed in lacinia lectus. Sed felis odio, vehicula non mattis non, bibendum nec purus. Nulla tincidunt nibh sit amet sapien scelerisque sollicitudin. Donec eu aliquam neque. Praesent id sollicitudin urna, eu iaculis nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut vitae mauris pulvinar, luctus ante ac, euismod justo. Maecenas nec odio eleifend, ornare tortor vel, rhoncus sem. Cras hendrerit pharetra lacinia. Phasellus arcu turpis, consectetur a cursus id, ultricies vel diam. 
             </b>
         </div>
-        <div id="whatYouWillLearnText">
-            <ul>
-                <li>How to Skyrocket your Business during uncertain times</li>
-                <li>How to Increase your Turnover</li>
-                <li>How to identify gaps in the current market</li>
-                <li>How to pivot your service offerings to cater for the demand</li>
-                <li>How to implement Bulletproof Marketing Campaigns</li>
-                <li>How to develop a Winning Mindset</li>
-                <li>How to keep your clients coming back for more</li>
-                <li>How to start a thriving business during COVID</li>
-            </ul> 
-        </div>
-    </div>
-    <div id="registerBg">
-    <img src="{{ asset('img') }}/ttc/genbg.jpg" class="bgImg" alt="" />
-        <div id="registerHeader">
-            <b>
-                REGISTER
-            </b>
-        </div>
-        <div class="signup-form" style="top:10%;">
-            <form method="POST" class="register-form" id="mregister-form" action="{{ route('register') }}">
-            @csrf
-                    <div class="form-group">
-                        <label for="name">First Name:</label>
-                        <input type="text" name="name" id="name" required/>
-                        @error('name')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                        @enderror
-                    </div>
-                    <div class="form-group">
-                    <label for="last_name">Last Name:</label>
-                        <input type="text" name="last_name" id="last_name" required/>
-                    </div>
-                    <div class="form-group">
-                    <label for="email">Email:</label>
-                        <input type="text" name="email" id="email" required/>
-                        @error('email')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                            @enderror
-                    </div>
-                    <div class="form-group">
-                    <label for="confir_email">Confirm Email:</label>
-                        <input type="text" name="confirm_email" id="confir_email" required/>
-                    </div>
-                    <div class="form-group">
-                    <label for="password">Password:</label>
-                        <input type="password" name="password" id="password" required>
-                        @error('password')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                        @enderror
-                    </div>
-                
-                    <div class="form-group">
-                    <label for="password-confirm">Confirm Password:</label>
-                        <input type="password" name="password-confirm" id="password-confirm"  required/>
-                    </div>
-
-                <input type="text" name="role" id="role" value="2" style="display: none"/>
-            </form>
-        </div>
-        <a id="regNowBtn" onclick="event.preventDefault();document.getElementById('mregister-form').submit();"><img src="{{ asset('img') }}/ttc/regbtn.png" class="regBtn" alt="" /></a>
+        <br>
+        <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+        <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
+        <br>
+        <!-- <a id="regNowBtn" onclick="event.preventDefault();scrollToRegMobile();"><img src="{{ asset('img') }}/ttc/regbtn.png" class="regBtn" alt="" /></a> -->
     </div>
 </div>
 
 
 <div id="bg">
-    <img src="{{ asset('img') }}/ttc/REGISTER PAGE6.jpg" class="stretch" alt="" />
-    <div id="myImage_zone1" class="divInImage">
-    <div class="signup-form">
-                    <form method="POST" class="register-form" id="register-form" action="{{ route('register') }}">
-                    @csrf
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="text" name="name" id="name" required/>
-                                @error('name')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                            <div class="form-group">
-                                <input style="position: relative; left: 122%" type="text" name="last_name" id="last_name" required/>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="text" name="company" id="company" required/>
-                            </div>
-                            <div class="form-group">
-                                <input style="position: relative; left: 122%" type="text" name="pos" id="pos" required/>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="text" name="email" id="email" required/>
-                                @error('email')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                    @enderror
-                            </div>
-                            <div class="form-group">
-                                <input style="position: relative; left: 122%" type="text" name="confirm_email" id="confir_email" required/>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="password" name="password" id="password" required>
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        
-                            <div class="form-group">
-                                <input style="position: relative; left: 122%" type="password" name="password-confirm" id="password-confirm"  required/>
-                            </div>
-                        </div>
-
-                        
-
-                        <input type="text" name="role" id="role" value="2" style="display: none"/>
-                    </form>
-                </div>
+    <div id="bannerBg">
+        <img src="{{ asset('img') }}/bryte/banner.jpg" class="bgImgL" alt="" />
+        
+        <div id="bannerDate">
+            <div id="bannerText">
+                <b>Date: 15th April 2021</b>
+                <br>
+                <b>Time: 18:00 - 20:30</b>
+            </div>
+        </div>
     </div>
-    <a id="myImage_zone2" onclick="event.preventDefault();document.getElementById('register-form').submit();"></a>
-    <a id="myImage_zone3" onclick="event.preventDefault();scrollSmoothToBottom('bg');"></a>
-    <a id="myImage_zone4" onclick="event.preventDefault();scrollSmoothToBottom('bg');"></a>
+    <div id="overviewBg">
+    <img src="{{ asset('img') }}/bryte/background.jpg" class="bgImg" alt="" />
+        <br>
+        <div id="overviewText">
+            <b>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pulvinar mi et dignissim porta. Sed in lacinia lectus. Sed felis odio, vehicula non mattis non, bibendum nec purus. Nulla tincidunt nibh sit amet sapien scelerisque sollicitudin. Donec eu aliquam neque. Praesent id sollicitudin urna, eu iaculis nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut vitae mauris pulvinar, luctus ante ac, euismod justo. Maecenas nec odio eleifend, ornare tortor vel, rhoncus sem. Cras hendrerit pharetra lacinia. Phasellus arcu turpis, consectetur a cursus id, ultricies vel diam. 
+            </b>
+            <br><br>
+            <b>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pulvinar mi et dignissim porta. Sed in lacinia lectus. Sed felis odio, vehicula non mattis non, bibendum nec purus. Nulla tincidunt nibh sit amet sapien scelerisque sollicitudin. Donec eu aliquam neque. Praesent id sollicitudin urna, eu iaculis nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut vitae mauris pulvinar, luctus ante ac, euismod justo. Maecenas nec odio eleifend, ornare tortor vel, rhoncus sem. Cras hendrerit pharetra lacinia. Phasellus arcu turpis, consectetur a cursus id, ultricies vel diam. 
+            </b>
+            <br><br>
+            <b>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pulvinar mi et dignissim porta. Sed in lacinia lectus. Sed felis odio, vehicula non mattis non, bibendum nec purus. Nulla tincidunt nibh sit amet sapien scelerisque sollicitudin. Donec eu aliquam neque. Praesent id sollicitudin urna, eu iaculis nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut vitae mauris pulvinar, luctus ante ac, euismod justo. Maecenas nec odio eleifend, ornare tortor vel, rhoncus sem. Cras hendrerit pharetra lacinia. Phasellus arcu turpis, consectetur a cursus id, ultricies vel diam. 
+            </b>
+            <br><br>
+            <b>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pulvinar mi et dignissim porta. Sed in lacinia lectus. Sed felis odio, vehicula non mattis non, bibendum nec purus. Nulla tincidunt nibh sit amet sapien scelerisque sollicitudin. Donec eu aliquam neque. Praesent id sollicitudin urna, eu iaculis nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut vitae mauris pulvinar, luctus ante ac, euismod justo. Maecenas nec odio eleifend, ornare tortor vel, rhoncus sem. Cras hendrerit pharetra lacinia. Phasellus arcu turpis, consectetur a cursus id, ultricies vel diam. 
+            </b>
+        </div>
+        <br>
+        <button type="button" class="btn btn-primary btn-lg btn-block">REGISTER: SOUTH AFRICA</button>
+        <button type="button" class="btn btn-secondary btn-lg btn-block">REGISTER: BOTSWANA</button>
+        <br>
+        <!-- <a id="regNowBtn" onclick="event.preventDefault();scrollToRegMobile();"><img src="{{ asset('img') }}/ttc/regbtn.png" class="regBtn" alt="" /></a> -->
+    </div>
 </div>
 
 </body>

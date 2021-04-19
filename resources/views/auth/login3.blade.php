@@ -1,6 +1,6 @@
 <head>
 		<meta charset="UTF-8">
-		<title>Thriving Through Covid</title>
+		<title>BryteSA</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<!-- google fonts -->
@@ -41,7 +41,7 @@ body, html {
 
 .stretch {
     width:100%;
-    height:100%;
+    /* height:100%; */
     z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
 }
 .divInImage {
@@ -60,6 +60,8 @@ body, html {
     background-color:rgba(255,255,255,0.3);
 }
 #banner{
+    object-fit: cover; /* Do not scale the image */
+  object-position: center; /* Center the image within the element */
     width:100%;
     height:50%;
     position: relative;
@@ -120,23 +122,13 @@ body, html {
 </head>
 
 <body>
-<div id="banner"><img src="{{ asset('img') }}/ttc/banner.jpg" class="stretch" alt="" /></div>
+<div id="banner"><img src="{{ asset('img') }}/bryte/banner.jpg" class="stretch" alt="" /></div>
 <div class="signup-form">
             <form method="POST" class="login-form" id="login-form" action="{{ route('login') }}">
             @csrf
-                <div class="form-row">
-                    <div class="form-group">
-                            <label for="fname">{{ __('First Name') }}</label>
-                            <input id="fname" type="text" name="fname" required autofocus>
-                    </div>
-                    <div class="form-group">
-                            <label for="lname">{{ __('Last Name') }}</label>
-                            <input id="lname" type="text" name="lname" required autofocus>
-                    </div>
-                </div>
                 <div class="form-group">
-                <label for="email2">{{ __('E-Mail Address') }}</label>
-                        <input id="email2" type="email" class="form-control @error('email') is-invalid @enderror" name="email2" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                <label for="email">{{ __('E-Mail Address') }}</label>
+                        <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
                         @error('email')
                             <span class="invalid-feedback" role="alert">
@@ -144,11 +136,29 @@ body, html {
                             </span>
                         @enderror
                 </div>
-                <!-- <input id="email" style="display: none" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="kylehansen75@gmail.com" required autocomplete="email" autofocus>
-                <input id="password" style="display: none" type="password" class="form-control @error('password') is-invalid @enderror" name="password" value="q1w2e3q1w2e3" required autocomplete="current-password"> -->
-                <input id="email" style="display: none" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="ffp@gmail.com" required autocomplete="email" autofocus>
-                <input id="password" style="display: none" type="password" class="form-control @error('password') is-invalid @enderror" name="password" value="test" required autocomplete="current-password">
-                <a id="regNowBtn" onclick="login();"><img src="{{ asset('img') }}/ttc/loginbtn.png" class="regBtn" alt="" /></a>
+                
+
+                <div class="form-group">
+                <label for="password">{{ __('Password') }}</label>
+                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" value="test" required autocomplete="current-password">
+
+                        @error('password')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                </div>
+                <button type="button" onclick="login();" class="btn btn-success">{{ __('Login') }}</button>
+
+                <div class="form-group row mb-1">
+                    <div class="col-md-8">
+                        @if (Route::has('password.request'))
+                            <a class="btn btn-link" href="{{ route('password.request') }}">
+                                {{ __('Forgot Your Password?') }}
+                            </a>
+                        @endif
+                    </div>
+                </div>
 
             </form>
         </div>
@@ -162,10 +172,9 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
         window.location = "/mobile";
 }
 function login(){
-    var name = document.getElementById('fname').value;
-    var email = document.getElementById('email2').value;
-    if(name != "Wayne" || email != "wayne@flash-forward.co.za")
-        alert('THIS EVENT HAS ENDED');
+    var email = document.getElementById('email').value;
+    if(email != "wayne@flash-forward.co.za")
+        alert('THIS EVENT HAS NOT STARTED');
     else
         document.getElementById('login-form').submit();
 }
