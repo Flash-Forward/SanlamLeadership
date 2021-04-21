@@ -129,6 +129,9 @@ body, html {
 #page3{
     display: none;
 }
+#page4{
+    display: none;
+}
 </style>
 
 </head>
@@ -203,22 +206,83 @@ body, html {
 
                 <div id="page2">
                     <div class="form-group">
-                    <label for="check-form">{{ __('Would you like a lunch voucher?') }}</label>
-                        <div class="form-check" name="check-form">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                Yes
-                            </label>
+                        <label for="check-form">{{ __('Would you like a lunch voucher?') }}</label>
+                        <div class="form-check form-switch" name="check-form">
+                            <input class="form-check-input" type="checkbox" id="voucherCheck" onclick="showVoucherOptions()">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Yes</label>
+                        </div>
+                    </div>
+                    <div id="voucherOptions" style="display:none">
+                        <div class="form-group">
+                            <label for="check-form-voucher">{{ __('Which lunch voucher would you prefer?') }}</label>
+                            <div class="form-check form-switch" name="check-form-voucher">
+                                <div class="form-group">
+                                <input class="form-check-input" type="checkbox" id="uberEatsCheck">
+                                <label class="form-check-label" for="uberEatsCheck">UberEats</label>
+                                </div>
+                                <input class="form-check-input" type="checkbox" id="mrDCheck">
+                                <label class="form-check-label" for="mrDCheck">Mr. Delivery</label>
                             </div>
-                            <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                            <label class="form-check-label" for="flexCheckChecked">
-                                No
-                            </label>
                         </div>
                     </div>
                     <button type="button" onclick="showPage1();" class="btn btn-danger">{{ __('Back') }}</button>
                     <button type="button" onclick="showPage3();" class="btn btn-success">{{ __('Next') }}</button>
+                </div>
+
+                <div id="page3">
+                    <div class="form-group">
+                        <label for="check-form">{{ __('Which of our breakaway rooms would you be interested in attending?') }}</label>
+                        <div class="form-check form-switch" name="check-form">
+                            <div class="form-group">
+                                <input class="form-check-input" type="checkbox" id="breakaway1">
+                                <label class="form-check-label" for="breakaway1">Life</label>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-check-input" type="checkbox" id="breakaway2">
+                                <label class="form-check-label" for="breakaway2">Underwriting</label>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-check-input" type="checkbox" id="breakaway3">
+                                <label class="form-check-label" for="breakaway3">Claims</label>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-check-input" type="checkbox" id="breakaway4">
+                                <label class="form-check-label" for="breakaway4">Product</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" onclick="showPage2();" class="btn btn-danger">{{ __('Back') }}</button>
+                    <button type="button" onclick="showPage4();" class="btn btn-success">{{ __('Next') }}</button>
+                </div>
+
+                <div id="page4">
+                    <div class="form-group">
+                        <label for="check-form">{{ __('Would you like to extend this invitation to any of your colleagues within your organisation?') }}</label>
+                        <div class="form-check form-switch" name="check-form">
+                            <input class="form-check-input" type="checkbox" id="inviteCheck" onclick="showInvite()">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Yes</label>
+                        </div>
+                    </div>
+                    <div id="invitationExtend" style="display:none">
+                        <div class="form-group">
+                            <label for="inviteDetails">{{ __('Please provide us with your colleagues details:') }}</label>
+                            <div name="inviteDetails" id="inviteDetails">
+                                <div class="form-group row">
+                                    <div class="form-group">
+                                    <label for="email">Full Name</label>
+                                            <input id="fname" type="fname" class="form-control @error('fname') is-invalid @enderror" name="fname" value="{{ old('fname') }}" required autocomplete="fname" autofocus>
+                                    </div>
+                                    <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input id="lname" type="lname" class="form-control @error('lname') is-invalid @enderror" name="lname" value="{{ old('lname') }}" required autocomplete="lname" autofocus>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" onclick="addInvite();" class="btn btn-success">{{ __('Add Invite') }}</button>
+                        </div>
+                    </div>
+                    <button type="button" onclick="showPage3();" class="btn btn-danger">{{ __('Back') }}</button>
+                    <button type="button" class="btn btn-success">{{ __('Submit') }}</button>
                 </div>
             </form>
         </div>
@@ -226,6 +290,35 @@ body, html {
 </body>
 
 <script>
+function addInvite(){
+    var invitationExtend = document.getElementById("inviteDetails");
+    invitationExtend.innerHTML += '<div class="form-group row"><div class="form-group"><label for="email">Full Name</label><input id="fname" type="fname" class="form-control @error("fname") is-invalid @enderror" name="fname" value="{{ old("fname") }}" required autocomplete="fname" autofocus></div><div class="form-group"><label for="email">Email Address</label><input id="lname" type="lname" class="form-control @error("lname") is-invalid @enderror" name="lname" value="{{ old("lname") }}" required autocomplete="lname" autofocus></div></div>';
+}
+function showVoucherOptions(){
+    var checkBox = document.getElementById("voucherCheck");
+  // Get the output text
+  var voucherOptions = document.getElementById("voucherOptions");
+
+  // If the checkbox is checked, display the output text
+  if (checkBox.checked == true){
+    voucherOptions.style.display = "block";
+  } else {
+    voucherOptions.style.display = "none";
+  }
+}
+
+function showInvite(){
+    var checkBox = document.getElementById("inviteCheck");
+  // Get the output text
+  var invitationExtend = document.getElementById("invitationExtend");
+
+  // If the checkbox is checked, display the output text
+  if (checkBox.checked == true){
+    invitationExtend.style.display = "block";
+  } else {
+    invitationExtend.style.display = "none";
+  }
+}
 
 function showPage1(){
     document.getElementById("page1").style.display = "block";
@@ -235,11 +328,17 @@ function showPage1(){
 function showPage2(){
     document.getElementById("page2").style.display = "block";
     document.getElementById("page1").style.display = "none";
+    document.getElementById("page3").style.display = "none";
 }
 
 function showPage3(){
     document.getElementById("page3").style.display = "block";
     document.getElementById("page2").style.display = "none";
+    document.getElementById("page4").style.display = "none";
+}
+function showPage4(){
+    document.getElementById("page4").style.display = "block";
+    document.getElementById("page3").style.display = "none";
 }
 
 if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent) 
