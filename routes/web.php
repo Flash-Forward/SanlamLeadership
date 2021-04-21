@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('auth.register');
     // return redirect()->away('https://www.wizzardlymedia.com/Thrivinginpandemic');
 });
+Route::get('/register/sa', function () {
+    return view('auth.register2');
+    // return redirect()->away('https://www.wizzardlymedia.com/Thrivinginpandemic');
+});
 Auth::routes(['verify' => true]);
 //Auth::routes();
 
