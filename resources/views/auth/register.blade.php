@@ -378,6 +378,12 @@ label {
   /* font-family: 'Montserrat'; */
   margin-bottom: 0px;
   display: block; }
+
+#regButtons{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
 </style>
 
 </head>
@@ -457,8 +463,12 @@ label {
             </b>
         </div>
         <br>
-        <button type="button" class="btn btn-primary btn-lg btn-block">REGISTER: SOUTH AFRICA</button>
-        <button type="button" class="btn btn-secondary btn-lg btn-block">REGISTER: BOTSWANA</button>
+        <div id="regButtons" class="btn-group">
+            <button type="button" onclick="window.location.href='/register/sa'" class="btn btn-primary btn-lg">REGISTER: SOUTH AFRICA</button>
+            <button type="button"  onclick="window.location.href='/register/ba'" class="btn btn-secondary btn-lg">REGISTER: BOTSWANA</button>
+        </div>
+        <br>
+        <br>
         <br>
         <!-- <a id="regNowBtn" onclick="event.preventDefault();scrollToRegMobile();"><img src="{{ asset('img') }}/ttc/regbtn.png" class="regBtn" alt="" /></a> -->
     </div>

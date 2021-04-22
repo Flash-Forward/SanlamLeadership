@@ -15,14 +15,16 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('auth.register');
-    // return redirect()->away('https://www.wizzardlymedia.com/Thrivinginpandemic');
 });
 Route::get('/register/sa', function () {
     return view('auth.register2');
-    // return redirect()->away('https://www.wizzardlymedia.com/Thrivinginpandemic');
-});
+})->name('register.sa');
+
+Route::get('/register/ba', function () {
+    return view('auth.register3');
+})->name('register.ba');
+
 Auth::routes(['verify' => true]);
-//Auth::routes();
 
 Route::get('/thankyou', function () {
     return view('thankyou');

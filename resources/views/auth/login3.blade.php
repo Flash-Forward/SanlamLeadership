@@ -41,7 +41,7 @@ body, html {
 
 .stretch {
     width:100%;
-    /* height:100%; */
+    height:100%;
     z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
 }
 .divInImage {
@@ -63,7 +63,7 @@ body, html {
     object-fit: cover; /* Do not scale the image */
   object-position: center; /* Center the image within the element */
     width:100%;
-    height:50%;
+    height:60%;
     position: relative;
 }
 #myImage_zone2{
@@ -122,7 +122,7 @@ body, html {
 </head>
 
 <body>
-<div id="banner"><img src="{{ asset('img') }}/bryte/banner.jpg" class="stretch" alt="" /></div>
+<div id="banner"><img src="{{ asset('img') }}/bryte/loginbanner.jpg" class="stretch" alt="" /></div>
 <div class="signup-form">
             <form method="POST" class="login-form" id="login-form" action="{{ route('login') }}">
             @csrf
