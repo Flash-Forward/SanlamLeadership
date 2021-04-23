@@ -132,6 +132,11 @@ body, html {
 #page4{
     display: none;
 }
+
+.form-check-label {
+    margin-bottom: 0;
+    margin-top: 2%;
+}
 </style>
 
 </head>
@@ -208,7 +213,7 @@ body, html {
                     <div class="form-group">
                         <label for="check-form">{{ __('Would you like a lunch voucher?') }}</label>
                         <div class="form-check form-switch" name="check-form">
-                            <input class="form-check-input" type="checkbox" id="voucherCheck" onclick="showVoucherOptions()">
+                            <input class="form-check-input" type="checkbox" id="voucherCheck" onclick="">
                             <label class="form-check-label" for="flexSwitchCheckDefault">Yes</label>
                         </div>
                     </div>
@@ -235,19 +240,11 @@ body, html {
                         <div class="form-check form-switch" name="check-form">
                             <div class="form-group">
                                 <input class="form-check-input" type="checkbox" id="breakaway1">
-                                <label class="form-check-label" for="breakaway1">Life</label>
+                                <label class="form-check-label" for="breakaway1">Launching Bonds and Guarantees</label>
                             </div>
                             <div class="form-group">
                                 <input class="form-check-input" type="checkbox" id="breakaway2">
-                                <label class="form-check-label" for="breakaway2">Underwriting</label>
-                            </div>
-                            <div class="form-group">
-                                <input class="form-check-input" type="checkbox" id="breakaway3">
-                                <label class="form-check-label" for="breakaway3">Claims</label>
-                            </div>
-                            <div class="form-group">
-                                <input class="form-check-input" type="checkbox" id="breakaway4">
-                                <label class="form-check-label" for="breakaway4">Product</label>
+                                <label class="form-check-label" for="breakaway2">Bespoke Solutions for the Hospitality Sector Claims – Our Shop Window</label>
                             </div>
                         </div>
                     </div>
