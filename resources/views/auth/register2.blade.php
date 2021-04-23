@@ -132,6 +132,11 @@ body, html {
 #page4{
     display: none;
 }
+
+.form-check-label {
+    margin-bottom: 0;
+    margin-top: 2%;
+}
 </style>
 
 </head>
@@ -207,7 +212,7 @@ body, html {
                 <div id="page2">
                     <div class="form-group">
                         <label for="check-form">{{ __('Would you like a lunch voucher?') }}</label>
-                        <div class="form-check form-switch" name="check-form">
+                        <div class="form-check" name="check-form">
                             <input class="form-check-input" type="checkbox" id="voucherCheck" onclick="showVoucherOptions()">
                             <label class="form-check-label" for="flexSwitchCheckDefault">Yes</label>
                         </div>

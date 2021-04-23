@@ -52,7 +52,7 @@ body, html {
 }
 
 #overviewText{
-    color: #ffffff !important;
+    color: #000000 !important;
     position: relative;
     top: 5%;
     text-align: center;
@@ -169,7 +169,7 @@ li{
   background-size: cover;
   background-position: center;  */
   width: 100%; 
-    height: 35%; 
+    height: 30%; 
     position: relative;
     
 }
@@ -246,6 +246,7 @@ li{
   object-position: center; /* Center the image within the element */
     width:100%; 
     height:100%;
+    opacity: 0.8;
     position: absolute;
     z-index: -1;
 }
@@ -254,7 +255,7 @@ li{
     object-fit: cover; /* Do not scale the image */
   object-position: center; /* Center the image within the element */
     width:inherit;
-    height:inherit;
+    height:260;
     position: relative;
     z-index: -1;
 }
@@ -443,7 +444,8 @@ label {
         </div>
     </div>
     <div id="overviewBg">
-    <img src="{{ asset('img') }}/bryte/background.jpg" class="bgImg" alt="" />
+    <img src="{{ asset('img') }}/bryte/landingbg.jpg" class="bgImg" alt="" />
+        <br>
         <br>
         <div id="overviewText">
             <b>
@@ -462,6 +464,9 @@ label {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pulvinar mi et dignissim porta. Sed in lacinia lectus. Sed felis odio, vehicula non mattis non, bibendum nec purus. Nulla tincidunt nibh sit amet sapien scelerisque sollicitudin. Donec eu aliquam neque. Praesent id sollicitudin urna, eu iaculis nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut vitae mauris pulvinar, luctus ante ac, euismod justo. Maecenas nec odio eleifend, ornare tortor vel, rhoncus sem. Cras hendrerit pharetra lacinia. Phasellus arcu turpis, consectetur a cursus id, ultricies vel diam. 
             </b>
         </div>
+        <br>
+        <br>
+        <br>
         <br>
         <div id="regButtons" class="btn-group">
             <button type="button" onclick="window.location.href='/register/sa'" class="btn btn-primary btn-lg">REGISTER: SOUTH AFRICA</button>
