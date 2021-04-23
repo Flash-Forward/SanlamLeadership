@@ -58,7 +58,7 @@ body, html {
     text-align: center;
     margin-right:5% !important;
     margin-left:5% !important;
-    font-size: 91%;
+    font-size: 24px;
   width: 90%; 
     height: 100%; 
 }
@@ -437,7 +437,7 @@ label {
         
         <div id="bannerDate">
             <div id="bannerText">
-                <b>Date: 15th April 2021</b>
+                <b>Date: 25th May 2021</b>
                 <br>
                 <b>Time: 18:00 - 20:30</b>
             </div>
@@ -449,21 +449,22 @@ label {
         <br>
         <div id="overviewText">
             <b>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pulvinar mi et dignissim porta. Sed in lacinia lectus. Sed felis odio, vehicula non mattis non, bibendum nec purus. Nulla tincidunt nibh sit amet sapien scelerisque sollicitudin. Donec eu aliquam neque. Praesent id sollicitudin urna, eu iaculis nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut vitae mauris pulvinar, luctus ante ac, euismod justo. Maecenas nec odio eleifend, ornare tortor vel, rhoncus sem. Cras hendrerit pharetra lacinia. Phasellus arcu turpis, consectetur a cursus id, ultricies vel diam. 
+            Thank you for joining us for our first, Business Partner Conference, focusing on a range of risk realities. We are delighted to bring to you several, renowned thought leaders who will share robust insights, interesting perspectives.            
             </b>
             <br><br>
-            <b>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pulvinar mi et dignissim porta. Sed in lacinia lectus. Sed felis odio, vehicula non mattis non, bibendum nec purus. Nulla tincidunt nibh sit amet sapien scelerisque sollicitudin. Donec eu aliquam neque. Praesent id sollicitudin urna, eu iaculis nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut vitae mauris pulvinar, luctus ante ac, euismod justo. Maecenas nec odio eleifend, ornare tortor vel, rhoncus sem. Cras hendrerit pharetra lacinia. Phasellus arcu turpis, consectetur a cursus id, ultricies vel diam. 
-            </b>
-            <br><br>
-            <b>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pulvinar mi et dignissim porta. Sed in lacinia lectus. Sed felis odio, vehicula non mattis non, bibendum nec purus. Nulla tincidunt nibh sit amet sapien scelerisque sollicitudin. Donec eu aliquam neque. Praesent id sollicitudin urna, eu iaculis nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut vitae mauris pulvinar, luctus ante ac, euismod justo. Maecenas nec odio eleifend, ornare tortor vel, rhoncus sem. Cras hendrerit pharetra lacinia. Phasellus arcu turpis, consectetur a cursus id, ultricies vel diam. 
-            </b>
-            <br><br>
-            <b>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pulvinar mi et dignissim porta. Sed in lacinia lectus. Sed felis odio, vehicula non mattis non, bibendum nec purus. Nulla tincidunt nibh sit amet sapien scelerisque sollicitudin. Donec eu aliquam neque. Praesent id sollicitudin urna, eu iaculis nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut vitae mauris pulvinar, luctus ante ac, euismod justo. Maecenas nec odio eleifend, ornare tortor vel, rhoncus sem. Cras hendrerit pharetra lacinia. Phasellus arcu turpis, consectetur a cursus id, ultricies vel diam. 
-            </b>
         </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
         <br>
         <br>
         <br>
