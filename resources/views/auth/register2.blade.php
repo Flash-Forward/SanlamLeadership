@@ -287,7 +287,7 @@ body, html {
                         </div>
                     </div>
                     <button type="button" onclick="showPage3();" class="btn btn-danger">{{ __('Back') }}</button>
-                    <button type="button" class="btn btn-success">{{ __('Submit') }}</button>
+                    <button type="button" onclick="submitForm();" class="btn btn-success">{{ __('Submit') }}</button>
                 </div>
             </form>
         </div>
@@ -295,6 +295,11 @@ body, html {
 </body>
 
 <script>
+
+function submitForm(){
+    window.location = "{{ route('thankyou') }}";
+}
+
 function addInvite(){
     var invitationExtend = document.getElementById("inviteDetails");
     invitationExtend.innerHTML += '<div class="form-group row"><div class="form-group"><label for="email">Full Name</label><input id="fname" type="fname" class="form-control @error("fname") is-invalid @enderror" name="fname" value="{{ old("fname") }}" required autocomplete="fname" autofocus></div><div class="form-group"><label for="email">Email Address</label><input id="lname" type="lname" class="form-control @error("lname") is-invalid @enderror" name="lname" value="{{ old("lname") }}" required autocomplete="lname" autofocus></div></div>';

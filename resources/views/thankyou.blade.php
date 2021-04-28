@@ -5,7 +5,7 @@
         height: 100%;
     }
     .bg{
-        background-image: url("{{ asset('img') }}/ttc/genbg.jpg");
+        background-image: url("{{ asset('img') }}/bryte/background.jpg");
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
@@ -19,7 +19,7 @@
         width: 50%;
         /* height: 50%; */
         position: absolute;
-        top: 40%;
+        top: 35%;
         left: 25%;
     }
 
