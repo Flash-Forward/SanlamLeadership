@@ -26,17 +26,12 @@ body, html {
   margin: 0;
 }
 
-#bg {
-  /* The image used */
-  /* background-image: url("{{ asset('img') }}/login.jpg"); */
-  max-height: 100vh !important;
-	overflow-y: auto !important;
-  width: 100%; 
-    height: 100%; 
-    position: fixed; 
-    left: 0px; 
-    top: 0px; 
-    
+
+
+#bg{
+    background: url("{{ asset('img') }}/bryte/regbg.jpg");
+    background-size: cover;
+  height: 100%;
 }
 
 .stretch {
@@ -50,20 +45,12 @@ body, html {
     position:absolute;
     /* background-color:rgba(0,0,0,0.1); */
 }
-#bg a {
-    /* border:1px solid #fff; */
-    display:block;
-    position:absolute;
-    background-color:rgba(0,0,0,0.1);
-}
-#bg a:hover {
-    background-color:rgba(255,255,255,0.3);
-}
+
 #banner{
     object-fit: cover; /* Do not scale the image */
   object-position: center; /* Center the image within the element */
     width:100%;
-    height:50%;
+    height:45%;
     position: relative;
 }
 #myImage_zone2{
@@ -79,7 +66,7 @@ body, html {
     left:52%;
 }
 .signup-form{
-    margin-top: 4%;
+
     display: flex;
   justify-content: center;
   align-items: center;
@@ -137,13 +124,24 @@ body, html {
     margin-bottom: 0;
     margin-top: 2%;
 }
+.right-input{
+    margin-left: 5px !important;
+}
+
+.bryte-button{
+    background-color: #004d73 !important;
+    border-color: #004d73 !important;
+    color: #ffffff !important;
+}
 </style>
 
 </head>
 
 <body>
+<div id="bg">
 <div id="banner"><img src="{{ asset('img') }}/bryte/banner.jpg" class="stretch" alt="" /></div>
 <div class="signup-form">
+    
             <form method="POST" class="login-form" id="login-form" action="{{ route('login') }}">
             @csrf
             <div id="page1">
@@ -160,7 +158,7 @@ body, html {
                     </div>
                     <div class="form-group">
                     <label for="email">{{ __('Last Name') }}</label>
-                    <input id="lname" type="lname" class="form-control @error('lname') is-invalid @enderror" name="lname" value="{{ old('lname') }}" required autocomplete="lname" autofocus>
+                    <input id="lname" type="lname" class="right-input form-control @error('lname') is-invalid @enderror" name="lname" value="{{ old('lname') }}" required autocomplete="lname" autofocus>
 
                     @error('email')
                         <span class="invalid-feedback" role="alert">
@@ -168,7 +166,7 @@ body, html {
                         </span>
                     @enderror
                     </div>
-                    </div>
+                </div>
 
 
                     <div class="form-group row">
@@ -181,19 +179,7 @@ body, html {
                         </span>
                     @enderror
                     </div>
-                    
                     <div class="form-group row">
-                    <div class="form-group">
-                    <label for="email">{{ __('Email Address') }}</label>
-                            <input id="fname" type="fname" class="form-control @error('fname') is-invalid @enderror" name="fname" value="{{ old('fname') }}" required autocomplete="fname" autofocus>
-
-                            @error('email')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                            @enderror
-                    </div>
-                    <div class="form-group">
                     <label for="email">{{ __('Mobile Number') }}</label>
                     <input id="lname" type="lname" class="form-control @error('lname') is-invalid @enderror" name="lname" value="{{ old('lname') }}" required autocomplete="lname" autofocus>
 
@@ -203,10 +189,31 @@ body, html {
                         </span>
                     @enderror
                     </div>
+                    
+                    <div class="form-group row">
+                    <label for="email">{{ __('Email Address') }}</label>
+                            <input id="fname" type="fname" class="form-control @error('fname') is-invalid @enderror" name="fname" value="{{ old('fname') }}" required autocomplete="fname" autofocus>
+
+                            @error('email')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                    </div>
+
+                    <div class="form-group row">
+                    <label for="email">{{ __('Password') }}</label>
+                            <input id="fname" type="password" class="form-control @error('fname') is-invalid @enderror" name="fname" value="{{ old('fname') }}" required autocomplete="fname" autofocus>
+
+                            @error('email')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
                     </div>
 
 
-                    <button type="button" onclick="showPage2();" class="btn btn-success">{{ __('Next') }}</button>
+                    <button type="button" onclick="showPage2();" class="btn bryte-button">{{ __('Next') }}</button>
                 </div>
 
                 <div id="page2">
@@ -215,6 +222,10 @@ body, html {
                         <div class="form-check" name="check-form">
                             <input class="form-check-input" type="checkbox" id="voucherCheck" onclick="showVoucherOptions()">
                             <label class="form-check-label" for="flexSwitchCheckDefault">Yes</label>
+                            <div class="form-group">
+                                <input class="form-check-input" type="checkbox" id="uberEatsCheck">
+                                <label class="form-check-label" for="uberEatsCheck">No</label>
+                                </div>
                         </div>
                     </div>
                     <div id="voucherOptions" style="display:none">
@@ -230,8 +241,8 @@ body, html {
                             </div>
                         </div>
                     </div>
-                    <button type="button" onclick="showPage1();" class="btn btn-danger">{{ __('Back') }}</button>
-                    <button type="button" onclick="showPage3();" class="btn btn-success">{{ __('Next') }}</button>
+                    <button type="button" onclick="showPage1();" class="btn bryte-button">{{ __('Back') }}</button>
+                    <button type="button" onclick="showPage3();" class="btn bryte-button">{{ __('Next') }}</button>
                 </div>
 
                 <div id="page3">
@@ -256,8 +267,8 @@ body, html {
                             </div>
                         </div>
                     </div>
-                    <button type="button" onclick="showPage2();" class="btn btn-danger">{{ __('Back') }}</button>
-                    <button type="button" onclick="showPage4();" class="btn btn-success">{{ __('Next') }}</button>
+                    <button type="button" onclick="showPage2();" class="btn bryte-button">{{ __('Back') }}</button>
+                    <button type="button" onclick="showPage4();" class="btn bryte-button">{{ __('Next') }}</button>
                 </div>
 
                 <div id="page4">
@@ -266,6 +277,10 @@ body, html {
                         <div class="form-check form-switch" name="check-form">
                             <input class="form-check-input" type="checkbox" id="inviteCheck" onclick="showInvite()">
                             <label class="form-check-label" for="flexSwitchCheckDefault">Yes</label>
+                            <div class="form-group">
+                                <input class="form-check-input" type="checkbox" id="uberEatsCheck">
+                                <label class="form-check-label" for="uberEatsCheck">No</label>
+                                </div>
                         </div>
                     </div>
                     <div id="invitationExtend" style="display:none">
@@ -286,11 +301,12 @@ body, html {
                             <button type="button" onclick="addInvite();" class="btn btn-success">{{ __('Add Invite') }}</button>
                         </div>
                     </div>
-                    <button type="button" onclick="showPage3();" class="btn btn-danger">{{ __('Back') }}</button>
-                    <button type="button" onclick="submitForm();" class="btn btn-success">{{ __('Submit') }}</button>
+                    <button type="button" onclick="showPage3();" class="btn bryte-button">{{ __('Back') }}</button>
+                    <button type="button" onclick="submitForm();" class="btn bryte-button">{{ __('Submit') }}</button>
                 </div>
             </form>
         </div>
+    </div>    
 
 </body>
 

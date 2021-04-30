@@ -31,7 +31,7 @@
 					<div class="col-md-12">
 						<div class="block">
 							<h1><img src="{{ asset('landing') }}/img/WRC logo_50-2.png" width="460" height="118" alt=""/></h1>
-							<h1>Welcome Attendee</h1>
+							<h1>Welcome to the Business Partner Conference</h1>
 							<h2>Content About the event with all relevant info incl. dates and times.</h2>
 							<div class="buttons">
 								<a href="{{ route('register') }}" class="btn btn-learn">Register</a>

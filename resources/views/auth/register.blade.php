@@ -31,8 +31,9 @@
 					<div class="col-md-12">
 						<div class="block">
 							<h1><img src="{{ asset('img') }}/bryte/logo.png" width="460" height="150" alt=""/></h1>
-							<h1><b>Welcome Attendee</b></h1>
-							<h2>Thank you for joining us for our first, Business Partner Conference, focusing on a range of risk realities. We are delighted to bring to you several, renowned thought leaders who will share robust insights, interesting perspectives.</h2>
+							<h1><b>Welcome to the Business Partner Conference</b></h1>
+							<h2>Tuesday, 22nd June 2021 10:00 – 16:00</h2>
+							<h3>Thank you for joining us for our first ever Business Partner Conference! The conference will focus on a range of risk realities and we are delighted to present to you several renowned thought leaders who will share robust insights and interesting perspectives.</h3>
 							<div class="buttons">
 								<a href="{{ route('register.sa') }}" class="btn btn-learn">Register: South Africa</a>
                                 <a href="{{ route('register.ba') }}" class="btn btn-learn">Register: Botswana</a>

@@ -63,7 +63,7 @@ body, html {
     object-fit: cover; /* Do not scale the image */
   object-position: center; /* Center the image within the element */
     width:100%;
-    height:60%;
+    height:52%;
     position: relative;
 }
 #myImage_zone2{
@@ -117,12 +117,23 @@ body, html {
     width: inherit !important;
     height: inherit !important;
 }
+#bg{
+    background: url("{{ asset('img') }}/bryte/regbg.jpg");
+    background-size: cover;
+  height: 100%;
+}
+.bryte-button{
+    background-color: #004d73 !important;
+    border-color: #004d73 !important;
+    color: #ffffff !important;
+}
 </style>
 
 </head>
 
 <body>
-<div id="banner"><img src="{{ asset('img') }}/bryte/loginbanner.jpg" class="stretch" alt="" /></div>
+<div id="bg">
+<div id="banner"><img src="{{ asset('img') }}/bryte/loginbanners.jpg" class="stretch" alt="" /></div>
 <div class="signup-form">
             <form method="POST" class="login-form" id="login-form" action="{{ route('login') }}">
             @csrf
@@ -148,7 +159,7 @@ body, html {
                             </span>
                         @enderror
                 </div>
-                <button type="button" onclick="login();" class="btn btn-success">{{ __('Login') }}</button>
+                <button type="button" onclick="login();" class="btn bryte-button">{{ __('Login') }}</button>
 
                 <div class="form-group row mb-1">
                     <div class="col-md-8">
@@ -161,6 +172,8 @@ body, html {
                 </div>
 
             </form>
+        </div>
+
         </div>
 
 </body>
