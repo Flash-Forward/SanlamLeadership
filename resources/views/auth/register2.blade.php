@@ -29,10 +29,11 @@ body, html {
 
 
 #bg{
-    background: url("{{ asset('img') }}/bryte/regbg.jpg");
+    background: url("{{ asset('img') }}/bryte/bg3d.jpg");
     background-size: cover;
-  height: 100%;
+  height: 105%;
 }
+
 
 .stretch {
     width:100%;
@@ -50,9 +51,11 @@ body, html {
     object-fit: cover; /* Do not scale the image */
   object-position: center; /* Center the image within the element */
     width:100%;
-    height:45%;
     position: relative;
+    text-align: center;
 }
+
+
 #myImage_zone2{
     width:11%;
     height:36px;
@@ -66,10 +69,27 @@ body, html {
     left:52%;
 }
 .signup-form{
-
+    color: #ffffff;
     display: flex;
   justify-content: center;
   align-items: center;
+  
+}
+
+#login-form{
+    padding-left: 1%;
+    padding-right: 1%;
+    background: rgba(0, 0, 0, 0.50);
+    border-radius: 35px;
+}
+
+
+h1 {
+    /* text-decoration: underline;
+  text-decoration-color: #dac057; */
+  position: relative;
+  top: 1.5%;
+    color: #004d73;
 }
 .btn-circle {
 				width: 70px;
@@ -82,11 +102,12 @@ body, html {
 
             input, select {
                 height: 34px;
-                /* width: 30% !important; */
+                width: 100% !important;
   display: block;
   /* margin-bottom:42px; */
-  /* margin-left:5%; */
+  margin-left:5%;
   padding: 1.6vh 1.4vh;
+  margin: 0 !important;
   box-sizing: border-box;
   font-weight: 500;
   font-size: 13px; }
@@ -124,7 +145,7 @@ body, html {
     margin-top: 2%;
 }
 .right-input{
-    margin-left: 5px !important;
+    /* margin-left: 10px !important; */
 }
 
 .bryte-button{
@@ -132,13 +153,22 @@ body, html {
     border-color: #004d73 !important;
     color: #ffffff !important;
 }
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 0;
+    margin-left: 0;
+}
 </style>
 
 </head>
 
 <body>
 <div id="bg">
-<div id="banner"><img src="{{ asset('img') }}/bryte/banner.jpg" class="stretch" alt="" /></div>
+<div id="banner"><img src="{{ asset('img') }}/bryte/banner.jpg" class="stretch" alt="" /><h1><b>REGISTRATION</b></h1></div>
+<hr>
 <div class="signup-form">
     
             <form method="POST" class="login-form" id="login-form" action="{{ route('login') }}">
@@ -156,7 +186,7 @@ body, html {
                             @enderror
                     </div>
                     <div class="form-group">
-                    <label for="email">{{ __('Last Name') }}</label>
+                    <label for="email" class="right-input">{{ __('Last Name') }}</label>
                     <input id="lname" type="lname" class="right-input form-control @error('lname') is-invalid @enderror" name="lname" value="{{ old('lname') }}" required autocomplete="lname" autofocus>
 
                     @error('email')
@@ -303,9 +333,14 @@ body, html {
                     <button type="button" onclick="showPage3();" class="btn bryte-button">{{ __('Back') }}</button>
                     <button type="button" onclick="submitForm();" class="btn bryte-button">{{ __('Submit') }}</button>
                 </div>
+                <br>
             </form>
+
         </div>
-    </div>    
+
+    </div>   
+
+
 
 </body>
 
