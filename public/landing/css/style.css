@@ -212,10 +212,11 @@ header .navbar {
    Home page style
    ================= */
 #banner {
-  background: url('../img/banner.jpg');
+  background: url('../img/bg1.jpg');
   background-size: cover;
   padding: 250px 0;
   position: relative;
+  text-align: center;
 }
 #banner:before {
   position: absolute;
@@ -242,7 +243,7 @@ header .navbar {
   padding-bottom: 25px;
   font-size: 30px;
   font-weight: 100;
-  color: #004d73;
+  color: #dac057;
 }
 #banner .block h3 {
   font-size: 18px;
