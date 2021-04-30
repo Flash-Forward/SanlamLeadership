@@ -80,7 +80,6 @@ body, html {
   /* margin-left:5%; */
   padding: 1.6vh 1.4vh;
   box-sizing: border-box;
-  font-family: 'Montserrat';
   font-weight: 500;
   font-size: 13px; }
 
