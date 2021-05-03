@@ -59,6 +59,7 @@ body, html {
     left:52%;
 }
 .signup-form{
+    color: #ffffff;
     display: flex;
   justify-content: center;
   align-items: center;
@@ -92,7 +93,7 @@ body, html {
 }
 
 #bg{
-    background: url("{{ asset('img') }}/bryte/regbg.jpg");
+    background: url("{{ asset('img') }}/bryte/bg2d.jpg");
     background-size: cover;
   height: 100%;
 }

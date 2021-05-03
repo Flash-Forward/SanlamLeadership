@@ -25,12 +25,12 @@
 	<body id="top">
 	
 	<div class="wrapper">
-		<section id="banner">
+		<section id="banner1">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
 						<div class="block">
-							<h1><img src="{{ asset('img') }}/bryte/logo.png" width="460" height="150" alt=""/></h1>
+							<h1><img src="{{ asset('img') }}/bryte/logo.png" width="35%" alt=""/></h1>
 							<h1><b>Thank you!</b></h1>
 							<h2><b>You have successfully completed your registration for Bryte’s Business Partner Conference 2021.</b></h2>
 							<h3>We have sent you an email confirming

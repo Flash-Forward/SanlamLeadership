@@ -31,7 +31,7 @@ body, html {
 #bg{
     background: url("{{ asset('img') }}/bryte/bg3d.jpg");
     background-size: cover;
-  height: 105%;
+  height: 108%;
 }
 
 
@@ -79,6 +79,8 @@ body, html {
 #login-form{
     padding-left: 1%;
     padding-right: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
     background: rgba(0, 0, 0, 0.50);
     border-radius: 35px;
 }
