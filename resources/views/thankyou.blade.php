@@ -20,13 +20,22 @@
 		<link rel="stylesheet" href="{{ asset('landing') }}/css/icon.css">
 		<link rel="stylesheet" href="{{ asset('landing') }}/css/style.css">
 		<link rel="stylesheet" href="{{ asset('landing') }}/css/responsive.css">
+		<style>
+			.greyBox{
+				width: 55% !important;
+				height: 60% !important;
+				padding: 2%;
+				background-color: rgba(0,0,0,0.70);
+				border-radius: 10px;
 
+			}
+		</style>
 	</head>
 	<body id="top">
 	
 	<div class="wrapper">
 		<section id="banner1">
-			<div class="container">
+			<div class="container greyBox">
 				<div class="row">
 					<div class="col-md-12">
 						<div class="block">

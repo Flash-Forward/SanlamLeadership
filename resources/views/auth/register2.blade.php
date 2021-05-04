@@ -169,7 +169,7 @@ h1 {
 
 <body>
 <div id="bg">
-<div id="banner"><img src="{{ asset('img') }}/bryte/banner.jpg" class="stretch" alt="" /><h1><b>REGISTRATION</b></h1></div>
+<div id="banner"><img src="{{ asset('img') }}/bryte/banner.jpg" class="stretch" alt="" /><h1 style="top: 10px; position: relative;"><b>REGISTRATION</b></h1></div>
 <hr>
 <div class="signup-form">
     
