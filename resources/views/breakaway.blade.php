@@ -191,26 +191,31 @@ h2{
 <div id="bg">
     <img src="{{ asset('img') }}/bryte/background.jpg" class="stretch" alt="" />
     <div id="myImage_zone1" class="divInImage">
+      <h2><b>ROOM 1</b></h2>
       <a class="stretch" href="{{ route('breakawayroom') }}"></a>
       <img src="{{ asset('img') }}/bryte/breakawayroom.png" class="stretch" alt="" />
       <button type="button" class="btn bryte-button">{{ __('Enter Room') }}</button>
     </div>
     <div id="myImage_zone2" class="divInImage">
+      <h2><b>ROOM 2</b></h2>
       <a class="stretch" href="{{ route('breakawayroom') }}"></a>
       <img src="{{ asset('img') }}/bryte/breakawayroom.png" class="stretch" alt="" />
       <button type="button" class="btn bryte-button">{{ __('Enter Room') }}</button>
     </div>
     <div id="myImage_zone3" class="divInImage">
+      <h2><b>ROOM 3</b></h2>
       <a class="stretch" href="{{ route('breakawayroom') }}"></a>
       <img src="{{ asset('img') }}/bryte/breakawayroom.png" class="stretch" alt="" />
       <button type="button" class="btn bryte-button">{{ __('Enter Room') }}</button>
     </div>
     <div id="myImage_zone4" class="divInImage">
+      <h2><b>ROOM 4</b></h2>
       <a class="stretch" href="{{ route('breakawayroom') }}"></a>
       <img src="{{ asset('img') }}/bryte/breakawayroom.png" class="stretch" alt="" />
       <button type="button" class="btn bryte-button">{{ __('Enter Room') }}</button>
     </div>
     <div id="myImage_zone5" class="divInImage">
+      <h2><b>ROOM 5</b></h2>
       <a class="stretch" href="{{ route('breakawayroom') }}"></a>
       <img src="{{ asset('img') }}/bryte/breakawayroom.png" class="stretch" alt="" />
       <button type="button" class="btn bryte-button">{{ __('Enter Room') }}</button>
