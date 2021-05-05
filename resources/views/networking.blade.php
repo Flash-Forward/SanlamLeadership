@@ -70,8 +70,8 @@ body, html {
   flex-direction: column;
   /* background: url("{{ asset('img') }}/bryte/breakawayroom.png"); */
   background-size: cover;
-  width:35.2%;
-    height:38%;
+  width:32.2%;
+    height:33%;
     top:15.5%;
     left:15.4%;
     border-radius: 35px;
@@ -82,8 +82,8 @@ body, html {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width:35.2%;
-    height:38%;
+  width:32.2%;
+    height:33%;
     top:52.5%;
     left:32%;
     border-radius: 35px;
@@ -94,8 +94,8 @@ body, html {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width:35.2%;
-    height:38%;
+  width:32.2%;
+    height:33%;
     top:15.5%;
     left:50%;
     border-radius: 35px;
@@ -191,16 +191,21 @@ h2{
 <div id="bg">
     <img src="{{ asset('img') }}/bryte/background.jpg" class="stretch" alt="" />
     <div id="myImage_zone1" class="divInImage">
+    <h2><b>LOUNGE 1</b></h2>
       <a class="stretch" href="{{ route('breakawayroom') }}"></a>
       <img src="{{ asset('img') }}/bryte/networkinglounge.png" class="stretch" alt="" />
       <button type="button" class="btn bryte-button">{{ __('Enter Room') }}</button>
     </div>
     <div id="myImage_zone2" class="divInImage">
+    <h2><b>LOUNGE 3</b></h2>
+
       <a class="stretch" href="{{ route('breakawayroom') }}"></a>
       <img src="{{ asset('img') }}/bryte/networkinglounge.png" class="stretch" alt="" />
       <button type="button" class="btn bryte-button">{{ __('Enter Room') }}</button>
     </div>
     <div id="myImage_zone3" class="divInImage">
+    <h2><b>LOUNGE 2</b></h2>
+
       <a class="stretch" href="{{ route('breakawayroom') }}"></a>
       <img src="{{ asset('img') }}/bryte/networkinglounge.png" class="stretch" alt="" />
       <button type="button" class="btn bryte-button">{{ __('Enter Room') }}</button>
