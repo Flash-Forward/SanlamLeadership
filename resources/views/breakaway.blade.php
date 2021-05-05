@@ -1,6 +1,6 @@
 <head>
 		<meta charset="UTF-8">
-		<title>Thriving Through Covid</title>
+		<title>BryteSA</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<!-- google fonts -->
@@ -46,46 +46,83 @@ body, html {
 }
 .divInImage {
     /* border:1px solid #fff; */
+
     display:block;
     position:absolute;
     /* background-color:rgba(0,0,0,0.1); */
 }
+
 #bg a {
     /* border:1px solid #fff; */
     display:block;
     position:absolute;
     background-color:rgba(0,0,0,0.1);
+    border-radius: 35px;
 }
 #bg a:hover {
     background-color:rgba(255,255,255,0.3);
 }
+
 #myImage_zone1{
-    width:12.8%;
-    height:5.3%;
-    top:72.5%;
-    left:21%;
-    border-radius: 35px;
-}
-#myImage_zone2{
-  width:12.8%;
-    height:5.3%;
-    top:72.5%;
-    left:68.3%;
-    border-radius: 35px;
-}
-#myImage_zone3{
-  width:37.2%;
-    height:30%;
-    top:40.5%;
-    left:9.4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* background: url("{{ asset('img') }}/bryte/breakawayroom.png"); */
+  background-size: cover;
+  width:28.2%;
+    height:33%;
+    top:15.5%;
+    left:3.4%;
     border-radius: 35px;
 }
 
+#myImage_zone2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width:28.2%;
+    height:33%;
+    top:15.5%;
+    left:36%;
+    border-radius: 35px;
+}
+
+#myImage_zone3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width:28.2%;
+    height:33%;
+    top:15.5%;
+    left:68%;
+    border-radius: 35px;
+}
 #myImage_zone4{
-  width:37.2%;
-    height:30%;
-    top:40.5%;
-    left:56%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-size: cover;
+  width:28.2%;
+    height:33%;
+    top:52.5%;
+    left:18.4%;
+    border-radius: 35px;
+}
+
+#myImage_zone5{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-size: cover;
+  width:28.2%;
+    height:33%;
+    top:52.5%;
+    left:52.4%;
     border-radius: 35px;
 }
 .btn-circle {
@@ -100,6 +137,24 @@ body, html {
       nav li a {
     color: #000000;
 }
+h2{
+	font-size: 48px !important;
+  color: #f1f1f1 !important;
+}
+.header {
+	width: 100%;
+	position: fixed; 
+	top: 10%;
+	
+  padding: 10px 16px;
+  color: #f1f1f1 !important;
+  text-align: center;
+}
+.bryte-button{
+    background-color: #004d73 !important;
+    border-color: #004d73 !important;
+    color: #ffffff !important;
+}
 </style>
 
 </head>
@@ -108,7 +163,7 @@ body, html {
 <nav class="navbar navbar-expand-sm bg-light">
 
   <!-- Links -->
-  <a href="#" class="navbar-left" style="margin-right: 3%; margin-left: 3%;"><img src="{{ asset('img') }}/ttc/latest/logo2.png"></a>
+  <a href="#" class="navbar-left" style="margin-right: 3%; margin-left: 3%;"><img src="{{ asset('img') }}/bryte/logo3.png"></a>
   <ul class="navbar-nav ml-auto">
     <li class="nav-item active">
       <a class="nav-link" href="{{ route('lobby') }}">Lobby</a>
@@ -134,13 +189,37 @@ body, html {
                                         @csrf
                                     </form>
 <div id="bg">
-    <img src="{{ asset('img') }}/ttc/latest/breakaway1.jpg" class="stretch" alt="" />
-    <a id="myImage_zone1" href="{{ route('breakawayroom') }}"></a>
-    <a id="myImage_zone3" href="{{ route('breakawayroom') }}"></a>
-    <a id="myImage_zone2" href="{{ route('breakawayroom2') }}"></a>
-    <a id="myImage_zone4" href="{{ route('breakawayroom2') }}"></a>
+    <img src="{{ asset('img') }}/bryte/background.jpg" class="stretch" alt="" />
+    <div id="myImage_zone1" class="divInImage">
+      <a class="stretch" href="{{ route('breakawayroom') }}"></a>
+      <img src="{{ asset('img') }}/bryte/breakawayroom.png" class="stretch" alt="" />
+      <button type="button" class="btn bryte-button">{{ __('Enter Room') }}</button>
+    </div>
+    <div id="myImage_zone2" class="divInImage">
+      <a class="stretch" href="{{ route('breakawayroom') }}"></a>
+      <img src="{{ asset('img') }}/bryte/breakawayroom.png" class="stretch" alt="" />
+      <button type="button" class="btn bryte-button">{{ __('Enter Room') }}</button>
+    </div>
+    <div id="myImage_zone3" class="divInImage">
+      <a class="stretch" href="{{ route('breakawayroom') }}"></a>
+      <img src="{{ asset('img') }}/bryte/breakawayroom.png" class="stretch" alt="" />
+      <button type="button" class="btn bryte-button">{{ __('Enter Room') }}</button>
+    </div>
+    <div id="myImage_zone4" class="divInImage">
+      <a class="stretch" href="{{ route('breakawayroom') }}"></a>
+      <img src="{{ asset('img') }}/bryte/breakawayroom.png" class="stretch" alt="" />
+      <button type="button" class="btn bryte-button">{{ __('Enter Room') }}</button>
+    </div>
+    <div id="myImage_zone5" class="divInImage">
+      <a class="stretch" href="{{ route('breakawayroom') }}"></a>
+      <img src="{{ asset('img') }}/bryte/breakawayroom.png" class="stretch" alt="" />
+      <button type="button" class="btn bryte-button">{{ __('Enter Room') }}</button>
+    </div>
     <!-- <a id="myImage_zone2" onclick="event.preventDefault();document.getElementById('login-form').submit();"></a> -->
 </div>
+<div class="header" id="myHeader">
+  <h2>BREAKAWAY ROOMS</h2>
+</div> 
 <script>
 function redirectToLobby(){
 	window.location.href = "{{ route('lobby') }}";

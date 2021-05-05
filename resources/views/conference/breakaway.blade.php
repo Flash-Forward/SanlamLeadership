@@ -1,6 +1,6 @@
 <head>
 		<meta charset="UTF-8">
-		<title>Thriving Through Covid</title>
+		<title>BryteSA</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<!-- google fonts -->
@@ -23,28 +23,13 @@ body, html {
     position: fixed; 
     left: 0px; 
     top: 0px; 
-	
     
-}
-
-.header {
-	width: 100%;
-	position: fixed; 
-	top: 4%;
-	
-  padding: 10px 16px;
-  color: #f1f1f1;
-  text-align: center;
-}
-
-h2{
-	font-size: 48px !important;
 }
 
 .stretch {
     width:100%;
     height:100%;
-   
+    z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
 }
 .divInImage {
     /* border:1px solid #fff; */
@@ -77,15 +62,28 @@ h2{
 				margin: 7px;
 				line-height: 1.33;
 			}
+
+			.header {
+	width: 100%;
+	position: fixed; 
+	top: 4%;
+	
+  padding: 10px 16px;
+  color: #f1f1f1;
+  text-align: center;
+}
+
+h2{
+	font-size: 48px !important;
+}
 </style>
 
 	</head>
 
 
 <body>
-
 <div id="bg">
-    <img src="{{ asset('img') }}/ttc/latest/background.jpg" class="stretch" alt="" />
+    <img src="{{ asset('img') }}/bryte/background.jpg" class="stretch" alt="" />
 	<div id="myImage_zone1" class="divInImage"></div>
     <!-- <a id="myImage_zone1" href="{{ route('room') }}"></a>
     <a id="myImage_zone2" href="{{ route('exhibition') }}"></a>
@@ -93,11 +91,11 @@ h2{
     <!-- <a id="myImage_zone2" onclick="event.preventDefault();document.getElementById('login-form').submit();"></a> -->
 </div>
 <div class="header" id="myHeader">
-  <h2>BREAKAWAY ROOM 1</h2>
+  <h2>BREAKAWAY ROOM</h2>
 </div> 
 <script type='text/javascript'>
 	var _options = {
-		'_license_key':'384-062-592',
+		'_license_key':'119-477-198',
 		'_role_token':'',
 		'_registration_token':'',
 		'_widget_containerID':'myImage_zone1',
@@ -124,7 +122,6 @@ h2{
 		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ab, s);
 	})();
 </script>
-<!-- <script src="https://embed.clickmeeting.com/embed_conference.html?r=1716098224950816&l=2e2b9099269534c54309a70060383c9f"></script> -->
 <script>
 function redirectToLobby(){
 	window.location.href = "{{ route('lobby') }}";
@@ -133,4 +130,5 @@ function redirectToLobby(){
 <div style="position: fixed; bottom: 0; left:0; width:70px;">
 	<button id="homeButton" type="button" class="btn btn-primary btn-circle" onclick="redirectToLobby();"><i class="fa fa-home"></i>
 </div>
+
 </body>

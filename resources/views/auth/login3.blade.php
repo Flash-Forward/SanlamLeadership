@@ -185,10 +185,10 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
         window.location = "/mobile";
 }
 function login(){
-    var email = document.getElementById('email').value;
-    if(email != "wayne@flash-forward.co.za")
-        alert('THIS EVENT HAS NOT STARTED');
-    else
+    // var email = document.getElementById('email').value;
+    // if(email != "wayne@flash-forward.co.za")
+    //     alert('THIS EVENT HAS NOT STARTED');
+    // else
         document.getElementById('login-form').submit();
 }
 </script>

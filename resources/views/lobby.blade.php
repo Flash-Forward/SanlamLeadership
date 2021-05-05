@@ -1,6 +1,6 @@
 <head>
 		<meta charset="UTF-8">
-		<title>Thriving Through Covid</title>
+		<title>BryteSA</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<!-- google fonts -->
@@ -158,7 +158,7 @@ iframe{
 <nav class="navbar navbar-expand-sm bg-light">
 
   <!-- Links -->
-  <a href="#" class="navbar-left" style="margin-right: 3%; margin-left: 3%;"><img src="{{ asset('img') }}/ttc/latest/logo2.png"></a>
+  <a href="#" class="navbar-left" style="margin-right: 3%; margin-left: 3%;"><img src="{{ asset('img') }}/bryte/logo3.png"></a>
   <ul class="navbar-nav ml-auto">
     <li class="nav-item active">
       <a class="nav-link" href="{{ route('lobby') }}">Lobby</a>
@@ -188,10 +188,10 @@ iframe{
 <iframe width="80%" height="80%" src="https://www.youtube.com/embed/C1tR6gn89sg" title="YouTube video player" class="yt_player_iframe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   <div style="position: fixed; top: 0; right:1%; width:70px;">
 	<button id="homeButton" type="button" class="btn btn-danger btn-circle" onclick="off();"><i class="fa fa-times"></i>
-</div>
+  </div>
 </div> 
 <div id="bg">
-    <img src="{{ asset('img') }}/ttc/latest/lobby4.jpg" class="stretch" alt="" />
+    <img src="{{ asset('img') }}/bryte/lobby.jpg" class="stretch" alt="" />
     <a id="mainRoom" href="{{ route('room') }}"></a>
     <a id="exhibitionHall" href="{{ route('exhibition') }}"></a>
     <a id="breakawayRooms" href="{{ route('breakaway') }}"></a>

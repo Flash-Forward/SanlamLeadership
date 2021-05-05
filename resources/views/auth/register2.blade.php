@@ -267,8 +267,12 @@ h1 {
                                 <input class="form-check-input" type="checkbox" id="uberEatsCheck">
                                 <label class="form-check-label" for="uberEatsCheck">UberEats</label>
                                 </div>
+                                <div class="form-group">
                                 <input class="form-check-input" type="checkbox" id="mrDCheck">
                                 <label class="form-check-label" for="mrDCheck">Mr. Delivery</label>
+                                </div>
+                                <input class="form-check-input" type="checkbox" id="naCheck">
+                                <label class="form-check-label" for="naCheck">Neither available in my area</label>
                             </div>
                         </div>
                     </div>

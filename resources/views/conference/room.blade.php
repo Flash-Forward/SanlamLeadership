@@ -1,6 +1,6 @@
 <head>
 		<meta charset="UTF-8">
-		<title>Thriving Through Covid</title>
+		<title>BryteSA</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<!-- google fonts -->
@@ -83,7 +83,7 @@ h2{
 
 <body>
 <div id="bg">
-    <img src="{{ asset('img') }}/ttc/latest/background.jpg" class="stretch" alt="" />
+    <img src="{{ asset('img') }}/bryte/background.jpg" class="stretch" alt="" />
 	<div id="myImage_zone1" class="divInImage"></div>
     <!-- <a id="myImage_zone1" href="{{ route('room') }}"></a>
     <a id="myImage_zone2" href="{{ route('exhibition') }}"></a>
