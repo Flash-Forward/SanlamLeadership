@@ -101,9 +101,12 @@ body, html {
   /* margin-left:5%; */
   padding: 1.6vh 1.4vh;
   box-sizing: border-box;
-  font-family: 'Montserrat';
   font-weight: 500;
   font-size: 13px; }
+
+  label{
+    font-weight: bold;
+  }
 
   #regNowBtn{
       position: relative;
@@ -127,6 +130,18 @@ body, html {
     border-color: #004d73 !important;
     color: #ffffff !important;
 }
+#registration-header > h1
+{
+	font-weight: bold;
+	text-align: center;
+	padding: 10px 0;
+	background-color: #eee;
+	mix-blend-mode: multiply;
+	width: 100%;
+	position: relative;
+	top: 15px;
+	text-transform: uppercase;
+}
 </style>
 
 </head>
@@ -134,6 +149,7 @@ body, html {
 <body>
 <div id="bg">
 <div id="banner"><img src="{{ asset('img') }}/bryte/loginbanners.jpg" class="stretch" alt="" /></div>
+<div id="registration-header"><h1>Login</h1></div>
 <div class="signup-form">
             <form method="POST" class="login-form" id="login-form" action="{{ route('login') }}">
             @csrf

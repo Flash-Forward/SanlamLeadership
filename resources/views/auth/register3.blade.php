@@ -127,7 +127,10 @@ position: relative;
     /* justify-content: center; */
     /* align-items: center; */
     background-color: rgba(0,0,0,0.70);
-    padding: 5%;
+    padding-top: 2%;
+    padding-right: 2%;
+    padding-left: 2%;
+    padding-bottom: 0 !important;
     position: relative;
     top: 15px;
     transform: translateX(0);
@@ -165,6 +168,7 @@ input.larger {
 .signup-form  label
 {
 	color: #ccc;
+    font-size: 16px;
 }
 
 .btn-circle {
