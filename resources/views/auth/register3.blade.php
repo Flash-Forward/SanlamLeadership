@@ -181,7 +181,7 @@ input.larger {
 			}
 
             input, select {
-                height: 34px;
+                height: 45px;
                 width: 100% !important;
   display: block;
   /* margin-bottom:42px; */
