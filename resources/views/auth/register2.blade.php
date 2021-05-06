@@ -26,14 +26,59 @@ body, html {
   margin: 0;
 }
 
-
-
-#bg{
-    background: url("{{ asset('img') }}/bryte/bg3d.jpg");
-    background-size: cover;
-  height: 108%;
+#registration-header > h1
+{
+	font-weight: bold;
+	text-align: center;
+	padding: 10px 0;
+	background-color: #eee;
+	mix-blend-mode: multiply;
+	width: 100%;
+	position: relative;
+	top: 15px;
+	text-transform: uppercase;
 }
 
+h2
+{
+	font-weight: bold;
+	text-align: center;
+	padding: 10px 0;
+	background-color: #eee;
+	mix-blend-mode: multiply;
+	width: 100%;
+	position: relative;
+	text-transform: uppercase;
+    border-radius: 10px;
+}
+
+h2.question
+{
+	font-weight: bold;
+	text-align: center;
+	padding: 10px 0;
+	background-color: #004d73 !important;
+	mix-blend-mode: normal !important;
+	width: 100%;
+	position: relative;
+	text-transform: uppercase;
+    border-radius: 10px;
+}
+
+#bg 
+{
+position: relative;
+    background-image: url("{{ asset('img') }}/bryte/bg2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    max-height: 200vh !important;
+    /* overflow-y: auto !important; */
+    width: 100%;
+    height: 125vh;
+    left: 0px;
+    top: 0px;
+}
 
 .stretch {
     width:100%;
@@ -46,16 +91,23 @@ body, html {
     position:absolute;
     /* background-color:rgba(0,0,0,0.1); */
 }
-
-#banner{
-    object-fit: cover; /* Do not scale the image */
-  object-position: center; /* Center the image within the element */
-    width:100%;
-    position: relative;
-    text-align: center;
+#bg a {
+    /* border:1px solid #fff; */
+    display:block;
+    position:absolute;
+    background-color:rgba(0,0,0,0.1);
 }
-
-
+#bg a:hover {
+    background-color:rgba(255,255,255,0.3);
+}
+#banner
+{
+	object-fit: cover; /* Do not scale the image */
+	object-position: center; /* Center the image within the element */
+	width:100%;
+	text-align: center;
+	text-transform: uppercase;
+}
 #myImage_zone2{
     width:11%;
     height:36px;
@@ -68,31 +120,53 @@ body, html {
     top:35%;
     left:52%;
 }
-.signup-form{
-    color: #ffffff;
-    display: flex;
-  justify-content: center;
-  align-items: center;
-  
+.signup-form
+{
+    /* margin-top: 4%; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    background-color: rgba(0,0,0,0.70);
+    padding: 5%;
+    position: relative;
+    top: 15px;
+    transform: translateX(0);
+    left: 10%;
+    width: 80% !important;
+	border-radius: 10px;
 }
-
-#login-form{
-    padding-left: 1%;
-    padding-right: 1%;
+.signup-form-steps
+{
+    /* margin-top: 4%; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    background-color: rgba(0,0,0,0.70);
     padding-top: 1%;
-    padding-bottom: 1%;
-    background: rgba(0, 0, 0, 0.50);
-    border-radius: 35px;
+    padding-right: 1%;
+    padding-left: 1%;
+    padding-bottom: 0 !important;
+    position: relative;
+    top: 15px;
+    transform: translateX(0);
+    left: 20%;
+    width: 60% !important;
+	border-radius: 10px;
+}
+.signup-form-steps  label
+{
+	color: #ccc;
 }
 
-
-h1 {
-    /* text-decoration: underline;
-  text-decoration-color: #dac057; */
-  position: relative;
-  top: 1.5%;
-    color: #004d73;
+input.larger {
+        width: 25px;
+        height: 25px;
+      }
+.signup-form  label
+{
+	color: #ccc;
 }
+
 .btn-circle {
 				width: 70px;
 				height: 70px;
@@ -107,9 +181,8 @@ h1 {
                 width: 100% !important;
   display: block;
   /* margin-bottom:42px; */
-  margin-left:5%;
+  /* margin-left:5%; */
   padding: 1.6vh 1.4vh;
-  margin: 0 !important;
   box-sizing: border-box;
   font-weight: 500;
   font-size: 13px; }
@@ -146,8 +219,9 @@ h1 {
     margin-bottom: 0;
     margin-top: 2%;
 }
+
 .right-input{
-    /* margin-left: 10px !important; */
+    margin-left: 5px !important;
 }
 
 .bryte-button{
@@ -155,14 +229,86 @@ h1 {
     border-color: #004d73 !important;
     color: #ffffff !important;
 }
-.row {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: 0;
-    margin-left: 0;
+
+
+/* START OF NICE CHECKBOX */
+
+.inputGroup {
+	 background-color: #fff;
+	 display: block;
+	 margin: 10px 0;
+	 position: relative;
 }
+ .inputGroup label {
+	 padding: 12px 30px;
+	 width: 100%;
+	 display: block;
+	 text-align: left;
+	 color: #3c454c;
+	 cursor: pointer;
+	 position: relative;
+	 z-index: 2;
+	 transition: color 200ms ease-in;
+	 overflow: hidden;
+}
+ .inputGroup label:before {
+	 width: 10px;
+	 height: 10px;
+	 border-radius: 50%;
+	 content: '';
+	 background-color: #dac057;
+	 position: absolute;
+	 left: 50%;
+	 top: 50%;
+	 transform: translate(-50%, -50%) scale3d(1, 1, 1);
+	 transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+	 opacity: 0;
+	 z-index: -1;
+}
+ .inputGroup label:after {
+	 width: 32px;
+	 height: 32px;
+	 content: '';
+	 border: 2px solid #d1d7dc;
+	 background-color: #fff;
+	 background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.414 11L4 12.414l5.414 5.414L20.828 6.414 19.414 5l-10 10z' fill='%23fff' fill-rule='nonzero'/%3E%3C/svg%3E ");
+	 background-repeat: no-repeat;
+	 background-position: 2px 3px;
+	 border-radius: 50%;
+	 z-index: 2;
+	 position: absolute;
+	 right: 30px;
+	 top: 50%;
+	 transform: translateY(-50%);
+	 cursor: pointer;
+	 transition: all 200ms ease-in;
+}
+ .inputGroup input:checked ~ label {
+	 color: #fff;
+}
+ .inputGroup input:checked ~ label:before {
+	 transform: translate(-50%, -50%) scale3d(110, 110, 1);
+	 opacity: 1;
+}
+ .inputGroup input:checked ~ label:after {
+	 background-color: #004d73;
+	 border-color: #004d73;
+}
+ .inputGroup input {
+	 width: 32px;
+	 height: 32px;
+	 order: 1;
+	 z-index: 2;
+	 position: absolute;
+	 right: 30px;
+	 top: 50%;
+	 transform: translateY(-50%);
+	 cursor: pointer;
+	 visibility: hidden;
+}
+
+/*  */
+
 </style>
 
 </head>
@@ -171,173 +317,206 @@ h1 {
 <div id="bg">
 <div id="banner"><img src="{{ asset('img') }}/bryte/banner.jpg" class="stretch" alt="" /><h1 style="top: 10px; position: relative;"><b>REGISTRATION</b></h1></div>
 <hr>
-<div class="signup-form">
+<div id="sign-up-form-div" class="signup-form">
     
             <form method="POST" class="login-form" id="login-form" action="{{ route('login') }}">
             @csrf
-            <div id="page1">
-                <div class="form-group row">
-                    <div class="form-group">
-                    <label for="email">{{ __('First Name') }}</label>
-                            <input id="fname" type="fname" class="form-control @error('fname') is-invalid @enderror" name="fname" value="{{ old('fname') }}" required autocomplete="fname" autofocus>
+                <div id="page1">
+                    <div class="container-fluid">
+                        <!-- First Row - First Name & Surname -->
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <label for="edtName">First Name</label>
+                                <input type="text" class="form-control" placeholder="First Name" id="edtName" name="edtName"/>
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                 <label for="edtSurname">Surname</label>
+                                <input type="text" class="form-control" placeholder="Surname" id="edtSurname" name="edtSurname"/>
 
-                            @error('email')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                            @enderror
-                    </div>
-                    <div class="form-group">
-                    <label for="email" class="right-input">{{ __('Last Name') }}</label>
-                    <input id="lname" type="lname" class="right-input form-control @error('lname') is-invalid @enderror" name="lname" value="{{ old('lname') }}" required autocomplete="lname" autofocus>
-
-                    @error('email')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                    @enderror
-                    </div>
-                </div>
-
-
-                    <div class="form-group row">
-                    <label for="email">{{ __('Company Name') }}</label>
-                    <input id="lname" type="lname" class="form-control @error('lname') is-invalid @enderror" name="lname" value="{{ old('lname') }}" required autocomplete="lname" autofocus>
-
-                    @error('email')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                    @enderror
-                    </div>
-                    <div class="form-group row">
-                    <label for="email">{{ __('Mobile Number') }}</label>
-                    <input id="lname" type="lname" class="form-control @error('lname') is-invalid @enderror" name="lname" value="{{ old('lname') }}" required autocomplete="lname" autofocus>
-
-                    @error('email')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                    @enderror
-                    </div>
-                    
-                    <div class="form-group row">
-                    <label for="email">{{ __('Email Address') }}</label>
-                            <input id="fname" type="fname" class="form-control @error('fname') is-invalid @enderror" name="fname" value="{{ old('fname') }}" required autocomplete="fname" autofocus>
-
-                            @error('email')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                            @enderror
-                    </div>
-
-                    <div class="form-group row">
-                    <label for="email">{{ __('Password') }}</label>
-                            <input id="fname" type="password" class="form-control @error('fname') is-invalid @enderror" name="fname" value="{{ old('fname') }}" required autocomplete="fname" autofocus>
-
-                            @error('email')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                            @enderror
-                    </div>
-
-
-                    <button type="button" onclick="showPage2();" class="btn bryte-button">{{ __('Next') }}</button>
-                </div>
-
-                <div id="page2">
-                    <div class="form-group">
-                        <label for="check-form">{{ __('Would you like a lunch voucher?') }}</label>
-                        <div class="form-check" name="check-form">
-                            <input class="form-check-input" type="checkbox" id="voucherCheck" onclick="showVoucherOptions()">
-                            <label class="form-check-label" for="flexSwitchCheckDefault">Yes</label>
-                            <div class="form-group">
-                                <input class="form-check-input" type="checkbox" id="uberEatsCheck">
-                                <label class="form-check-label" for="uberEatsCheck">No</label>
-                                </div>
+                            </div>
                         </div>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label for="edtCName">Company Name</label>
+                                <input type="text" class="form-control" placeholder="Company Name" id="edtCName" name="edtCName"/>
+                                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label for="edtMNum">Mobile Number</label>
+                                <input type="text" class="form-control" placeholder="Mobile Number" id="edtMNum" name="edtMNum"/>
+                                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label for="edtEmail">Email Address</label>
+                                <input type="email" class="form-control" placeholder="Email Address" id="edtEmail" name="edtEmail"/>
+                                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label for="edtPass">Password</label>
+                                <input type="password" class="form-control" placeholder="Password" id="edtPass" name="edtPass"/>
+                                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 form-group">
+                                <button type="button" onclick="showPage2();" class="btn bryte-button">{{ __('Next') }}</button>
+
+                            </div>
+                        </div>
+                        
                     </div>
-                    <div id="voucherOptions" style="display:none">
-                        <div class="form-group">
-                            <label for="check-form-voucher">{{ __('Which lunch voucher would you prefer?') }}</label>
-                            <div class="form-check form-switch" name="check-form-voucher">
-                                <div class="form-group">
-                                <input class="form-check-input" type="checkbox" id="uberEatsCheck">
-                                <label class="form-check-label" for="uberEatsCheck">UberEats</label>
+
+
+                </div>
+                <div id="page2">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <h2 class="question" style="color: #fff;">Would you like a lunch voucher?</h2>
+                            </div>
+                        </div>
+                        <!-- <div class="row justify-content-center"> -->
+                        <div class="inputGroup">
+                            <input id="voucherRadio1" name="voucherRadio" type="radio" onclick="showVoucherOptions()"/>
+                            <label for="voucherRadio1">Yes</label>
+                        </div>
+
+                        <!-- </div> -->
+                        <!-- <div class="row justify-content-center"> -->
+                        <div class="inputGroup">
+                            <input id="voucherRadio2" name="voucherRadio" type="radio" onclick="showVoucherOptions()"/>
+                            <label for="voucherRadio2">No</label>
+                        </div>
+                        <div id="voucherOptions" style="display:none">
+                            <div class="row">
+                                <div class="col-sm-12 form-group">
+                                    <h2 class="question" style="color: #fff; margin-top: 3%;">Which lunch voucher would you prefer?</h2>
                                 </div>
-                                <div class="form-group">
-                                <input class="form-check-input" type="checkbox" id="mrDCheck">
-                                <label class="form-check-label" for="mrDCheck">Mr. Delivery</label>
-                                </div>
-                                <input class="form-check-input" type="checkbox" id="naCheck">
-                                <label class="form-check-label" for="naCheck">Neither available in my area</label>
+                            </div>
+                            <div class="inputGroup">
+                                <input id="voucherRadio3" name="voucherRadio1" type="radio"/>
+                                <label for="voucherRadio3">UberEats</label>
+                            </div>
+
+                            <!-- </div> -->
+                            <!-- <div class="row justify-content-center"> -->
+                            <div class="inputGroup">
+                                <input id="voucherRadio4" name="voucherRadio1" type="radio"/>
+                                <label for="voucherRadio4">Mr. Delivery</label>
+                            </div>
+                            <div class="inputGroup">
+                                <input id="voucherRadio5" name="voucherRadio1" type="radio"/>
+                                <label for="voucherRadio5">Neither available in my area</label>
+                            </div>
+                        </div>
+                        <!-- </div> -->
+                        <div class="row justify-content-center" style="margin-top:3.5%;">
+                            <div class="form-group">
+                                <button type="button" onclick="showPage1();" class="btn bryte-button">{{ __('Back') }}</button>
+                                <button type="button" onclick="showPage3();" class="btn bryte-button">{{ __('Next') }}</button>
                             </div>
                         </div>
                     </div>
-                    <button type="button" onclick="showPage1();" class="btn bryte-button">{{ __('Back') }}</button>
-                    <button type="button" onclick="showPage3();" class="btn bryte-button">{{ __('Next') }}</button>
                 </div>
 
                 <div id="page3">
-                    <div class="form-group">
-                        <label for="check-form">{{ __('Which of our breakaway rooms would you be interested in attending?') }}</label>
-                        <div class="form-check form-switch" name="check-form">
-                            <div class="form-group">
-                                <input class="form-check-input" type="checkbox" id="breakaway1">
-                                <label class="form-check-label" for="breakaway1">Life</label>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <h2 class="question" style="color: #fff;">Which of our breakaway rooms would you be interested in attending?</h2>
                             </div>
+                        </div>
+                        <!-- <div class="row justify-content-center"> -->
+                        <div class="inputGroup">
+                            <input id="checkbox1" name="checkbox1" type="checkbox"/>
+                            <label for="checkbox1">Life</label>
+                        </div>
+
+                        <!-- </div> -->
+                        <!-- <div class="row justify-content-center"> -->
+                        <div class="inputGroup">
+                            <input id="checkbox2" name="checkbox2" type="checkbox"/>
+                            <label for="checkbox2">Underwriting</label>
+                        </div>
+                        <div class="inputGroup">
+                            <input id="checkbox3" name="checkbox3" type="checkbox"/>
+                            <label for="checkbox3">Claims</label>
+                        </div>
+                        <div class="inputGroup">
+                            <input id="checkbox4" name="checkbox4" type="checkbox"/>
+                            <label for="checkbox4">Product</label>
+                        </div>
+                        <!-- </div> -->
+                        <div class="row justify-content-center" style="margin-top:3.5%;">
                             <div class="form-group">
-                                <input class="form-check-input" type="checkbox" id="breakaway2">
-                                <label class="form-check-label" for="breakaway2">Underwriting</label>
-                            </div>
-                            <div class="form-group">
-                                <input class="form-check-input" type="checkbox" id="breakaway3">
-                                <label class="form-check-label" for="breakaway3">Claims</label>
-                            </div>
-                            <div class="form-group">
-                                <input class="form-check-input" type="checkbox" id="breakaway4">
-                                <label class="form-check-label" for="breakaway4">Product</label>
+                                <button type="button" onclick="showPage2();" class="btn bryte-button">{{ __('Back') }}</button>
+                                <button type="button" onclick="showPage4();" class="btn bryte-button">{{ __('Next') }}</button>
                             </div>
                         </div>
                     </div>
-                    <button type="button" onclick="showPage2();" class="btn bryte-button">{{ __('Back') }}</button>
-                    <button type="button" onclick="showPage4();" class="btn bryte-button">{{ __('Next') }}</button>
                 </div>
 
                 <div id="page4">
-                    <div class="form-group">
-                        <label for="check-form">{{ __('Would you like to extend this invitation to any of your colleagues within your organisation?') }}</label>
-                        <div class="form-check form-switch" name="check-form">
-                            <input class="form-check-input" type="checkbox" id="inviteCheck" onclick="showInvite()">
-                            <label class="form-check-label" for="flexSwitchCheckDefault">Yes</label>
-                            <div class="form-group">
-                                <input class="form-check-input" type="checkbox" id="uberEatsCheck">
-                                <label class="form-check-label" for="uberEatsCheck">No</label>
-                                </div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <h2 class="question" style="color: #fff;">Would you like to extend this invitation to any of your colleagues within your organisation?</h2>
+                            </div>
                         </div>
-                    </div>
-                    <div id="invitationExtend" style="display:none">
-                        <div class="form-group">
-                            <label for="inviteDetails">{{ __('Please provide us with your colleagues details:') }}</label>
-                            <div name="inviteDetails" id="inviteDetails">
-                                <div class="form-group row">
-                                    <div class="form-group">
-                                    <label for="email">Full Name</label>
-                                            <input id="fname" type="fname" class="form-control @error('fname') is-invalid @enderror" name="fname" value="{{ old('fname') }}" required autocomplete="fname" autofocus>
+                        <!-- <div class="row justify-content-center"> -->
+                        <div class="inputGroup">
+                            <input id="radio3" name="radio" type="radio" onclick="showInvite()"/>
+                            <label for="radio3">Yes</label>
+                        </div>
+
+                        <!-- </div> -->
+                        <!-- <div class="row justify-content-center"> -->
+                        <div class="inputGroup">
+                            <input id="radio4" name="radio" type="radio" onclick="showInvite()"/>
+                            <label for="radio4">No</label>
+                        </div>
+                        <!-- </div> -->
+
+                        <div id="invitationExtend" style="display:none">
+                            <div class="row">
+                                <div class="col-sm-12 form-group">
+                                    <h2 class="question" style="color: #fff; margin-top: 3%;">Please provide us with your colleagues details:</h2>
+                                </div>
+                            </div>
+                            <div id="inviteDetails">
+                                <div class="row">
+                                    <div class="col-sm-6 form-group">
+                                        <label for="edtName">Full Name</label>
+                                        <input type="text" class="form-control" placeholder="First Name" id="edtName" name="edtName"/>
+                                        
                                     </div>
-                                    <div class="form-group">
-                                    <label for="email">Email Address</label>
-                                    <input id="lname" type="lname" class="form-control @error('lname') is-invalid @enderror" name="lname" value="{{ old('lname') }}" required autocomplete="lname" autofocus>
+                                    <div class="col-sm-6 form-group">
+                                        <label for="edtSurname">Email Address</label>
+                                        <input type="text" class="form-control" placeholder="Surname" id="edtSurname" name="edtSurname"/>
+                                        
                                     </div>
                                 </div>
                             </div>
-                            <button type="button" onclick="addInvite();" class="btn btn-success">{{ __('Add Invite') }}</button>
+                            <div class="row justify-content-center">
+                                <div class="form-group">
+                                    <button type="button" onclick="addInvite();" class="btn bryte-button">{{ __('Add Invite') }}</button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center" style="margin-top:3.5%;">
+                            <div class="form-group">
+                                <button type="button" onclick="showPage3();" class="btn bryte-button">{{ __('Back') }}</button>
+                                <button type="button" onclick="submitForm();" class="btn bryte-button">{{ __('Submit') }}</button>
+                            </div>
                         </div>
                     </div>
-                    <button type="button" onclick="showPage3();" class="btn bryte-button">{{ __('Back') }}</button>
-                    <button type="button" onclick="submitForm();" class="btn bryte-button">{{ __('Submit') }}</button>
                 </div>
                 <br>
             </form>
@@ -356,12 +535,9 @@ function submitForm(){
     window.location = "{{ route('thankyou') }}";
 }
 
-function addInvite(){
-    var invitationExtend = document.getElementById("inviteDetails");
-    invitationExtend.innerHTML += '<div class="form-group row"><div class="form-group"><label for="email">Full Name</label><input id="fname" type="fname" class="form-control @error("fname") is-invalid @enderror" name="fname" value="{{ old("fname") }}" required autocomplete="fname" autofocus></div><div class="form-group"><label for="email">Email Address</label><input id="lname" type="lname" class="form-control @error("lname") is-invalid @enderror" name="lname" value="{{ old("lname") }}" required autocomplete="lname" autofocus></div></div>';
-}
+
 function showVoucherOptions(){
-    var checkBox = document.getElementById("voucherCheck");
+    var checkBox = document.getElementById("voucherRadio1");
   // Get the output text
   var voucherOptions = document.getElementById("voucherOptions");
 
@@ -373,8 +549,14 @@ function showVoucherOptions(){
   }
 }
 
+
+function addInvite(){
+    var invitationExtend = document.getElementById("inviteDetails");
+    invitationExtend.innerHTML += '<div class="row"><div class="col-sm-6 form-group"><label for="edtName">Full Name</label><input type="text" class="form-control" placeholder="First Name" id="edtName" name="edtName"/></div><div class="col-sm-6 form-group"><label for="edtSurname">Email Address</label><input type="text" class="form-control" placeholder="Surname" id="edtSurname" name="edtSurname"/></div></div>';
+}
+
 function showInvite(){
-    var checkBox = document.getElementById("inviteCheck");
+    var checkBox = document.getElementById("radio3");
   // Get the output text
   var invitationExtend = document.getElementById("invitationExtend");
 
@@ -389,12 +571,15 @@ function showInvite(){
 function showPage1(){
     document.getElementById("page1").style.display = "block";
     document.getElementById("page2").style.display = "none";
+    document.getElementById("sign-up-form-div").className = "signup-form";
 }
 
 function showPage2(){
     document.getElementById("page2").style.display = "block";
     document.getElementById("page1").style.display = "none";
     document.getElementById("page3").style.display = "none";
+    document.getElementById("sign-up-form-div").className = "signup-form-steps";
+
 }
 
 function showPage3(){

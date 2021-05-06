@@ -52,6 +52,19 @@ h2
     border-radius: 10px;
 }
 
+h2.question
+{
+	font-weight: bold;
+	text-align: center;
+	padding: 10px 0;
+	background-color: #004d73 !important;
+	mix-blend-mode: normal !important;
+	width: 100%;
+	position: relative;
+	text-transform: uppercase;
+    border-radius: 10px;
+}
+
 #bg 
 {
 position: relative;
@@ -122,6 +135,33 @@ position: relative;
     width: 80% !important;
 	border-radius: 10px;
 }
+.signup-form-steps
+{
+    /* margin-top: 4%; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    background-color: rgba(0,0,0,0.70);
+    padding-top: 1%;
+    padding-right: 1%;
+    padding-left: 1%;
+    padding-bottom: 0 !important;
+    position: relative;
+    top: 15px;
+    transform: translateX(0);
+    left: 20%;
+    width: 60% !important;
+	border-radius: 10px;
+}
+.signup-form-steps  label
+{
+	color: #ccc;
+}
+
+input.larger {
+        width: 25px;
+        height: 25px;
+      }
 .signup-form  label
 {
 	color: #ccc;
@@ -138,7 +178,7 @@ position: relative;
 
             input, select {
                 height: 34px;
-                /* width: 30% !important; */
+                width: 100% !important;
   display: block;
   /* margin-bottom:42px; */
   /* margin-left:5%; */
@@ -190,6 +230,85 @@ position: relative;
     color: #ffffff !important;
 }
 
+
+/* START OF NICE CHECKBOX */
+
+.inputGroup {
+	 background-color: #fff;
+	 display: block;
+	 margin: 10px 0;
+	 position: relative;
+}
+ .inputGroup label {
+	 padding: 12px 30px;
+	 width: 100%;
+	 display: block;
+	 text-align: left;
+	 color: #3c454c;
+	 cursor: pointer;
+	 position: relative;
+	 z-index: 2;
+	 transition: color 200ms ease-in;
+	 overflow: hidden;
+}
+ .inputGroup label:before {
+	 width: 10px;
+	 height: 10px;
+	 border-radius: 50%;
+	 content: '';
+	 background-color: #dac057;
+	 position: absolute;
+	 left: 50%;
+	 top: 50%;
+	 transform: translate(-50%, -50%) scale3d(1, 1, 1);
+	 transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+	 opacity: 0;
+	 z-index: -1;
+}
+ .inputGroup label:after {
+	 width: 32px;
+	 height: 32px;
+	 content: '';
+	 border: 2px solid #d1d7dc;
+	 background-color: #fff;
+	 background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.414 11L4 12.414l5.414 5.414L20.828 6.414 19.414 5l-10 10z' fill='%23fff' fill-rule='nonzero'/%3E%3C/svg%3E ");
+	 background-repeat: no-repeat;
+	 background-position: 2px 3px;
+	 border-radius: 50%;
+	 z-index: 2;
+	 position: absolute;
+	 right: 30px;
+	 top: 50%;
+	 transform: translateY(-50%);
+	 cursor: pointer;
+	 transition: all 200ms ease-in;
+}
+ .inputGroup input:checked ~ label {
+	 color: #fff;
+}
+ .inputGroup input:checked ~ label:before {
+	 transform: translate(-50%, -50%) scale3d(110, 110, 1);
+	 opacity: 1;
+}
+ .inputGroup input:checked ~ label:after {
+	 background-color: #004d73;
+	 border-color: #004d73;
+}
+ .inputGroup input {
+	 width: 32px;
+	 height: 32px;
+	 order: 1;
+	 z-index: 2;
+	 position: absolute;
+	 right: 30px;
+	 top: 50%;
+	 transform: translateY(-50%);
+	 cursor: pointer;
+	 visibility: hidden;
+}
+
+/*  */
+
 </style>
 
 </head>
@@ -199,7 +318,7 @@ position: relative;
 
 <div id="bg">
 <div id="registration-header"><h1>Registration</h1></div>
-<div class="signup-form">
+<div id="sign-up-form-div" class="signup-form">
             <form method="POST" class="login-form" id="login-form" action="{{ route('login') }}">
             @csrf
             <div id="page1">
@@ -209,12 +328,11 @@ position: relative;
                             <div class="col-sm-6 form-group">
                                 <label for="edtName">First Name</label>
                                 <input type="text" class="form-control" placeholder="First Name" id="edtName" name="edtName"/>
-                                
                             </div>
                             <div class="col-sm-6 form-group">
                                  <label for="edtSurname">Surname</label>
                                 <input type="text" class="form-control" placeholder="Surname" id="edtSurname" name="edtSurname"/>
-                                
+
                             </div>
                         </div>
                         <div class="row">
@@ -261,56 +379,55 @@ position: relative;
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-sm-12 form-group">
-                                <h2 style="">Would you like a lunch voucher?</h2>
+                                <h2 class="question" style="color: #fff;">Would you like a lunch voucher?</h2>
                             </div>
                         </div>
-                        <div class="row justify-content-center">
-                            <div class="col-sm-1 form-group">
-                                <input class="form-check-input" type="checkbox" id="voucherCheck" onclick="">
-                                <label class="form-check-label" for="flexSwitchCheckDefault">Yes</label>
-                            </div>
+                        <!-- <div class="row justify-content-center"> -->
+                        <div class="inputGroup">
+                            <input id="radio1" name="radio" type="radio"/>
+                            <label for="radio1">Yes</label>
                         </div>
-                        <div class="row justify-content-center">
-                            <div class="col-sm-1 form-group">
-                                <input class="form-check-input" type="checkbox" id="uberEatsCheck">
-                                <label class="form-check-label" for="uberEatsCheck">No</label>
-                            </div>
+
+                        <!-- </div> -->
+                        <!-- <div class="row justify-content-center"> -->
+                        <div class="inputGroup">
+                            <input id="radio2" name="radio" type="radio"/>
+                            <label for="radio2">No</label>
                         </div>
-                        <div class="row">
-                            <div class="col-sm-11 form-group">
+                        <!-- </div> -->
+                        <div class="row justify-content-center" style="margin-top:3.5%;">
+                            <div class="form-group">
                                 <button type="button" onclick="showPage1();" class="btn bryte-button">{{ __('Back') }}</button>
-                            </div>
-                            <div class="col-sm-1 form-group">
                                 <button type="button" onclick="showPage3();" class="btn bryte-button">{{ __('Next') }}</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
+
                 <div id="page3">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-sm-12 form-group">
-                                <h2 style="">Which of our breakaway rooms would you be interested in attending?</h2>
+                                <h2 class="question" style="color: #fff;">Which of our breakaway rooms would you be interested in attending?</h2>
                             </div>
                         </div>
-                        <div class="row justify-content-center">
-                            <div class="col-sm-3 form-group">
-                                <input class="form-check-input" type="checkbox" id="voucherCheck" onclick="">
-                                <label class="form-check-label" for="flexSwitchCheckDefault">Launching Bonds and Guarantees</label>
-                            </div>
+                        <!-- <div class="row justify-content-center"> -->
+                        <div class="inputGroup">
+                            <input id="checkbox1" name="checkbox1" type="checkbox"/>
+                            <label for="checkbox1">Launching Bonds and Guarantees</label>
                         </div>
-                        <div class="row justify-content-center">
-                            <div class="col-sm-3 form-group">
-                                <input class="form-check-input" type="checkbox" id="uberEatsCheck">
-                                <label class="form-check-label" for="uberEatsCheck">Bespoke Solutions for the Hospitality Sector Claims – Our Shop Window</label>
-                            </div>
+
+                        <!-- </div> -->
+                        <!-- <div class="row justify-content-center"> -->
+                        <div class="inputGroup">
+                            <input id="checkbox2" name="checkbox2" type="checkbox"/>
+                            <label for="checkbox2">Bespoke Solutions for the Hospitality Sector Claims – Our Shop Window</label>
                         </div>
-                        <div class="row">
-                            <div class="col-sm-11 form-group">
+                        <!-- </div> -->
+                        <div class="row justify-content-center" style="margin-top:3.5%;">
+                            <div class="form-group">
                                 <button type="button" onclick="showPage2();" class="btn bryte-button">{{ __('Back') }}</button>
-                            </div>
-                            <div class="col-sm-1 form-group">
                                 <button type="button" onclick="showPage4();" class="btn bryte-button">{{ __('Next') }}</button>
                             </div>
                         </div>
@@ -321,26 +438,27 @@ position: relative;
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-sm-12 form-group">
-                                <h2 style="">Would you like to extend this invitation to any of your colleagues within your organisation?</h2>
+                                <h2 class="question" style="color: #fff;">Would you like to extend this invitation to any of your colleagues within your organisation?</h2>
                             </div>
                         </div>
-                        <div class="row justify-content-center">
-                            <div class="col-sm-1 form-group">
-                                <input class="form-check-input" type="checkbox" id="inviteCheck" onclick="showInvite()">
-                                <label class="form-check-label" for="flexSwitchCheckDefault">Yes</label>
-                            </div>
+                        <!-- <div class="row justify-content-center"> -->
+                        <div class="inputGroup">
+                            <input id="radio3" name="radio" type="radio" onclick="showInvite()"/>
+                            <label for="radio3">Yes</label>
                         </div>
-                        <div class="row justify-content-center">
-                            <div class="col-sm-1 form-group">
-                                <input class="form-check-input" type="checkbox" id="uberEatsCheck">
-                                <label class="form-check-label" for="uberEatsCheck">No</label>
-                            </div>
+
+                        <!-- </div> -->
+                        <!-- <div class="row justify-content-center"> -->
+                        <div class="inputGroup">
+                            <input id="radio4" name="radio" type="radio" onclick="showInvite()"/>
+                            <label for="radio4">No</label>
                         </div>
+                        <!-- </div> -->
 
                         <div id="invitationExtend" style="display:none">
                             <div class="row">
                                 <div class="col-sm-12 form-group">
-                                    <h2 style="">Please provide us with your colleagues details:</h2>
+                                    <h2 class="question" style="color: #fff; margin-top: 3%;">Please provide us with your colleagues details:</h2>
                                 </div>
                             </div>
                             <div id="inviteDetails">
@@ -357,18 +475,16 @@ position: relative;
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-sm-11 form-group">
+                            <div class="row justify-content-center">
+                                <div class="form-group">
                                     <button type="button" onclick="addInvite();" class="btn bryte-button">{{ __('Add Invite') }}</button>
 
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-sm-11 form-group">
+                        <div class="row justify-content-center" style="margin-top:3.5%;">
+                            <div class="form-group">
                                 <button type="button" onclick="showPage3();" class="btn bryte-button">{{ __('Back') }}</button>
-                            </div>
-                            <div class="col-sm-1 form-group">
                                 <button type="button" onclick="submitForm();" class="btn bryte-button">{{ __('Submit') }}</button>
                             </div>
                         </div>
@@ -403,7 +519,7 @@ function showVoucherOptions(){
 }
 
 function showInvite(){
-    var checkBox = document.getElementById("inviteCheck");
+    var checkBox = document.getElementById("radio3");
   // Get the output text
   var invitationExtend = document.getElementById("invitationExtend");
 
@@ -418,12 +534,15 @@ function showInvite(){
 function showPage1(){
     document.getElementById("page1").style.display = "block";
     document.getElementById("page2").style.display = "none";
+    document.getElementById("sign-up-form-div").className = "signup-form";
 }
 
 function showPage2(){
     document.getElementById("page2").style.display = "block";
     document.getElementById("page1").style.display = "none";
     document.getElementById("page3").style.display = "none";
+    document.getElementById("sign-up-form-div").className = "signup-form-steps";
+
 }
 
 function showPage3(){
