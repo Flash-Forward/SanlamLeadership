@@ -34,6 +34,13 @@ Route::get('/mobile', function () {
     return view('devicenotsupported');
 })->name('mobile');
 
+Route::get('/lobby2', function () {
+    return view('lobby2');
+})->name('lobby2');
+
+Route::get('/exhibition', function () {
+    return view('exhibition');
+})->name('exhibition');
 
 Route::get('/sregister', [App\Http\Controllers\Auth\RegisterController::class, 'speaker'])->name('sregister');
 
@@ -59,9 +66,7 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('/speaker', function () {
         return view('speaker.landing');
     })->name('speaker');
-    Route::get('/exhibition', function () {
-        return view('exhibition');
-    })->name('exhibition');
+
     Route::get('/breakaway', function () {
         return view('breakaway');
     })->name('breakaway');

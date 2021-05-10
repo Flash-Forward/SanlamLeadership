@@ -26,18 +26,6 @@ body, html {
   margin: 0;
 }
 
-#registration-header > h1
-{
-	font-weight: bold;
-	text-align: center;
-	padding: 10px 0;
-	background-color: #eee;
-	mix-blend-mode: multiply;
-	width: 100%;
-	position: relative;
-	top: 15px;
-	text-transform: uppercase;
-}
 
 h2
 {
@@ -126,7 +114,7 @@ position: relative;
     /* display: flex; */
     /* justify-content: center; */
     /* align-items: center; */
-    background-color: rgba(0,0,0,0.70);
+    background-color: rgba(50,50,50,0.50);
     padding-top: 2%;
     padding-right: 2%;
     padding-left: 2%;
@@ -144,7 +132,7 @@ position: relative;
     /* display: flex; */
     /* justify-content: center; */
     /* align-items: center; */
-    background-color: rgba(0,0,0,0.70);
+    background-color: rgba(50,50,50,0.50);
     padding-top: 1%;
     padding-right: 1%;
     padding-left: 1%;
@@ -313,14 +301,26 @@ input.larger {
 
 /*  */
 
+#registration-header > h1
+{
+	font-weight: bold;
+	text-align: center;
+	padding: 10px 0;
+	background-color: #eee;
+	mix-blend-mode: multiply;
+	width: 100%;
+	position: relative;
+	top: 15px;
+	text-transform: uppercase;
+}
 </style>
 
 </head>
 
 <body>
+<div id="banner"><img src="{{ asset('img') }}/bryte/banner.jpg" class="stretch" alt="" /></div>
 <div id="bg">
-<div id="banner"><img src="{{ asset('img') }}/bryte/banner.jpg" class="stretch" alt="" /><h1 style="top: 10px; position: relative;"><b>REGISTRATION</b></h1></div>
-<hr>
+<div id="registration-header"><h1>Registration</h1></div>
 <div id="sign-up-form-div" class="signup-form">
     
             <form method="POST" class="login-form" id="login-form" action="{{ route('login') }}">

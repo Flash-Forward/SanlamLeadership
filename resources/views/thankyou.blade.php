@@ -25,7 +25,7 @@
 				width: 55% !important;
 				height: 60% !important;
 				padding: 2%;
-				background-color: rgba(0,0,0,0.70);
+				background-color: rgba(100,100,100,0.50);
 				border-radius: 10px;
 
 			}
@@ -39,10 +39,10 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="block">
-							<h1><img src="{{ asset('img') }}/bryte/logo.png" width="35%" alt=""/></h1>
+							<h1><img src="{{ asset('img') }}/bryte/logo2.png" width="35%" alt=""/></h1>
 							<h1><b>Thank you!</b></h1>
 							<h2><b>You have successfully completed your registration for Bryte’s Business Partner Conference 2021.</b></h2>
-							<h3>We have sent you an email confirming
+							<h3  style="color: #000000;">We have sent you an email confirming
 your registration and advising on the next steps. Remember to check both
 your inbox and spam or junk folders.</h3>
                         <br>
