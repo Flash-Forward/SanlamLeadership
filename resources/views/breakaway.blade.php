@@ -71,7 +71,7 @@ body, html {
   /* background: url("{{ asset('img') }}/bryte/breakawayroom.png"); */
   background-size: cover;
   width:28.2%;
-    height:33%;
+    height:30%;
     top:15.5%;
     left:3.4%;
     border-radius: 35px;
@@ -83,7 +83,7 @@ body, html {
   justify-content: center;
   flex-direction: column;
   width:28.2%;
-    height:33%;
+    height:30%;
     top:15.5%;
     left:36%;
     border-radius: 35px;
@@ -95,7 +95,7 @@ body, html {
   justify-content: center;
   flex-direction: column;
   width:28.2%;
-    height:33%;
+    height:30%;
     top:15.5%;
     left:68%;
     border-radius: 35px;
@@ -107,7 +107,7 @@ body, html {
   flex-direction: column;
   background-size: cover;
   width:28.2%;
-    height:33%;
+    height:30%;
     top:52.5%;
     left:18.4%;
     border-radius: 35px;
@@ -120,7 +120,7 @@ body, html {
   flex-direction: column;
   background-size: cover;
   width:28.2%;
-    height:33%;
+    height:30%;
     top:52.5%;
     left:52.4%;
     border-radius: 35px;
