@@ -67,10 +67,10 @@ Route::group(['middleware' => ['auth']], function() {
         return view('speaker.landing');
     })->name('speaker');
 
-    // Route::get('/breakaway', function () {
-    //     return view('breakaway');
-    // })->name('breakaway');
-    Route::get('/breakaway', [App\Http\Controllers\RoomController::class, 'breakawayRoom'])->name('breakaway');
+    Route::get('/breakaway', function () {
+        return view('breakaway');
+    })->name('breakaway');
+    //Route::get('/breakaway', [App\Http\Controllers\RoomController::class, 'breakawayRoom'])->name('breakaway');
     Route::get('/innovator', function () {
         return view('innovator');
     })->name('innovator');

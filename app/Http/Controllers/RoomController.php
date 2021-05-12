@@ -13,7 +13,7 @@ class RoomController extends Controller
         $bg = $config::where("key", "general_background")->first();
         //dd($bg->value);
         return view('breakaway', [
-            'bg' => $bg->value
+            'bg' => $bg
         ]);
     }
 }
