@@ -221,7 +221,7 @@ header .navbar {
 #banner:before {
   position: absolute;
   z-index: 99;
-  background: rgba(0, 0, 0, 0.10);
+  background: rgba(0, 0, 0, 0);
   top: 0;
   left: 0;
   right: 0;
@@ -243,7 +243,7 @@ header .navbar {
   padding-bottom: 25px;
   font-size: 30px;
   font-weight: 100;
-  color: #dac057;
+  color: #bda23a;
 }
 #banner .block h3 {
   font-size: 18px;
@@ -251,8 +251,8 @@ header .navbar {
   font-weight: 300;
 }
 #banner .block .btn-learn {
-  border: 1px solid #fff;
-  color: #fff;
+  border: 2px solid #004d73;
+  color: #004d73;
   border-radius: 25px;
   margin: 0 7px;
   padding: 10px 22px;
@@ -260,8 +260,9 @@ header .navbar {
   transition: 0.3s;
 }
 #banner .block .btn-learn:hover {
-  border-color: #004d73;
-  color: #004d73;
+  background-color: #004d73;
+  border-color: #ffffff;
+  color: #ffffff;
 }
 #banner .block .buttons {
   margin-top: 40px;
@@ -305,7 +306,7 @@ header .navbar {
 
 
 #banner1 {
-  background: url('../img/bg2.jpg');
+  background: url('../img/bg3.jpg');
   background-size: cover;
   padding: 250px 0;
   position: relative;
@@ -314,7 +315,7 @@ header .navbar {
 #banner1:before {
   position: absolute;
   z-index: 99;
-  background: rgba(0, 0, 0, 0.20);
+  background: rgba(0, 0, 0, 0);
   top: 0;
   left: 0;
   right: 0;
@@ -336,7 +337,7 @@ header .navbar {
   padding-bottom: 25px;
   font-size: 30px;
   font-weight: 100;
-  color: #dac057;
+  color: #bda23a;
 }
 #banner1 .block h3 {
   font-size: 18px;
@@ -344,8 +345,8 @@ header .navbar {
   font-weight: 300;
 }
 #banner1 .block .btn-learn {
-  border: 1px solid #fff;
-  color: #fff;
+  border: 1px solid #dac057;
+  color: #dac057;
   border-radius: 25px;
   margin: 0 7px;
   padding: 10px 22px;

@@ -20,24 +20,12 @@
 
   <!-- Main Stylesheet File -->
   <link href="{{ asset('schedule') }}/css/style.css" rel="stylesheet">
-<style>
+  <style>
 body, html {
   height: 100%;
   margin: 0;
 }
 
-#registration-header > h1
-{
-	font-weight: bold;
-	text-align: center;
-	padding: 10px 0;
-	background-color: #eee;
-	mix-blend-mode: multiply;
-	width: 100%;
-	position: relative;
-	top: 15px;
-	text-transform: uppercase;
-}
 
 h2
 {
@@ -68,14 +56,14 @@ h2.question
 #bg 
 {
 position: relative;
-    background-image: url("{{ asset('img') }}/bryte/bg3.jpg");
+    background-image: url("{{ asset('img') }}/bryte/bg2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     max-height: 200vh !important;
     /* overflow-y: auto !important; */
     width: 100%;
-    height: 125vh;
+    height: 80vh;
     left: 0px;
     top: 0px;
 }
@@ -126,7 +114,7 @@ position: relative;
     /* display: flex; */
     /* justify-content: center; */
     /* align-items: center; */
-    background-color: rgba(0,0,0,0.70);
+    background-color: rgba(255,255,255,0.70);
     padding-top: 2%;
     padding-right: 2%;
     padding-left: 2%;
@@ -134,8 +122,8 @@ position: relative;
     position: relative;
     top: 15px;
     transform: translateX(0);
-    left: 10%;
-    width: 80% !important;
+    left: 25%;
+    width: 50% !important;
 	border-radius: 10px;
 }
 .signup-form-steps
@@ -144,7 +132,7 @@ position: relative;
     /* display: flex; */
     /* justify-content: center; */
     /* align-items: center; */
-    background-color: rgba(0,0,0,0.70);
+    background-color: rgba(255,255,255,0.70);
     padding-top: 1%;
     padding-right: 1%;
     padding-left: 1%;
@@ -152,13 +140,14 @@ position: relative;
     position: relative;
     top: 15px;
     transform: translateX(0);
-    left: 20%;
-    width: 60% !important;
+    left: 25%;
+    width: 50% !important;
 	border-radius: 10px;
 }
 .signup-form-steps  label
 {
-	color: #ccc;
+    font-weight:bold;
+	color: #000;
 }
 
 input.larger {
@@ -167,7 +156,8 @@ input.larger {
       }
 .signup-form  label
 {
-	color: #ccc;
+    font-weight:bold;
+	color: #000;
     font-size: 16px;
 }
 
@@ -238,7 +228,7 @@ input.larger {
 /* START OF NICE CHECKBOX */
 
 .inputGroup {
-	 background-color: #fff;
+	 background-color: #ccc;
 	 display: block;
 	 margin: 10px 0;
 	 position: relative;
@@ -313,6 +303,17 @@ input.larger {
 
 /*  */
 
+#registration-header > h1
+{
+	font-weight: bold;
+	text-align: center;
+	padding: 10px 0;
+	mix-blend-mode: multiply;
+	width: 100%;
+	position: relative;
+	top: 15px;
+	text-transform: uppercase;
+}
 </style>
 
 </head>
