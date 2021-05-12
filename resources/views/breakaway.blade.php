@@ -189,6 +189,8 @@ h2{
                                         @csrf
                                     </form>
 <div id="bg">
+    <!-- <img src="data:image/jpeg;base64, {{ $bg ?? '' }}" class="stretch" alt="" /> -->
+
     <img src="{{ asset('img') }}/bryte/background.jpg" class="stretch" alt="" />
     <div id="myImage_zone1" class="divInImage">
       <h2><b>ROOM 1</b></h2>

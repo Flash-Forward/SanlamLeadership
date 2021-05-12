@@ -346,7 +346,7 @@ iframe{
 
     <div id="networkLoungesHeadingArea" class="divInImage">
         <div id="networkLoungesHeadingText">
-            NETWORKING LOUNGE
+            SCHEDULE
         </div>
     </div>
     <a id="networkLounges" href="{{ route('networking') }}"></a>

@@ -60,7 +60,7 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('/lobby', function () {
         // dd(session()->all());
 
-        return view('lobby');
+        return view('lobby2');
     })->name('lobby');
 
     Route::get('/speaker', function () {
@@ -70,6 +70,7 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('/breakaway', function () {
         return view('breakaway');
     })->name('breakaway');
+    // Route::get('/breakaway', [App\Http\Controllers\RoomController::class, 'breakawayRoom'])->name('breakaway');
     Route::get('/innovator', function () {
         return view('innovator');
     })->name('innovator');
