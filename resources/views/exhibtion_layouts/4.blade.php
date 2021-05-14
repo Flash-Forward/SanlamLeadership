@@ -120,9 +120,9 @@ height: 83%;
 
 #myImage_zone2{
 
-  grid-column-start: 8;
+  grid-column-start: 9;
 grid-column-end: 16;
-grid-row-start: 2;
+grid-row-start: 3;
 grid-row-end: 10;
 
     width: 100%;
@@ -133,8 +133,8 @@ grid-row-end: 10;
 
 #myImage_zone3{
   grid-column-start: 16;
-grid-column-end: 24;
-grid-row-start: 2;
+grid-column-end: 23;
+grid-row-start: 3;
 grid-row-end: 10;
 
     width: 100%;
@@ -143,15 +143,26 @@ grid-row-end: 10;
 }
 #myImage_zone4{
 
-grid-column-start: 12;
-grid-column-end: 20;
+grid-column-start: 9;
+grid-column-end: 16;
 grid-row-start: 10;
-grid-row-end: 18;
+grid-row-end: 17;
 
   width: 100%;
   height: 100%;
   border-radius: 35px;
   
+}
+
+#myImage_zone5{
+grid-column-start: 16;
+grid-column-end: 23;
+grid-row-start: 10;
+grid-row-end: 17;
+
+  width: 100%;
+  height: 100%;
+  border-radius: 35px;
 }
 
 
@@ -254,6 +265,13 @@ h2{
           </div>
         </div>
 
+        <div id="myImage_zone5" class="divInImage">
+          <a class="stretch standLink" href="{{ route('breakawayroom') }}"></a>
+          <img src="{{ asset('img') }}/bryte/exstand.png" class="stretch standImage" alt="" />
+          <div class="standlogo">
+            <img src="{{ asset('img') }}/bryte/coke.webp" class="stretch roundLogo" alt="" />
+          </div>
+        </div>
 
 
 

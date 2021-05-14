@@ -36,7 +36,7 @@ h2
 	mix-blend-mode: multiply;
 	width: 100%;
 	position: relative;
-	text-transform: uppercase;
+	text-transform: none;
     border-radius: 10px;
 }
 
@@ -49,7 +49,7 @@ h2.question
 	mix-blend-mode: normal !important;
 	width: 100%;
 	position: relative;
-	text-transform: uppercase;
+	text-transform: none;
     border-radius: 10px;
 }
 
@@ -312,7 +312,7 @@ input.larger {
 	width: 100%;
 	position: relative;
 	top: 15px;
-	text-transform: uppercase;
+	text-transform: none;
 }
 </style>
 
@@ -331,7 +331,7 @@ input.larger {
                         <!-- First Row - First Name & Surname -->
                         <div class="row">
                             <div class="col-sm-6 form-group">
-                                <label for="edtName">First Name</label>
+                                <label for="edtName">First name</label>
                                 <input type="text" class="form-control" placeholder="First Name" id="edtName" name="edtName"/>
                             </div>
                             <div class="col-sm-6 form-group">
@@ -342,21 +342,21 @@ input.larger {
                         </div>
                         <div class="row">
                             <div class="col-sm-12 form-group">
-                                <label for="edtCName">Company Name</label>
+                                <label for="edtCName">Company name</label>
                                 <input type="text" class="form-control" placeholder="Company Name" id="edtCName" name="edtCName"/>
                                 
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-12 form-group">
-                                <label for="edtMNum">Mobile Number</label>
+                                <label for="edtMNum">Mobile number</label>
                                 <input type="text" class="form-control" placeholder="Mobile Number" id="edtMNum" name="edtMNum"/>
                                 
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-12 form-group">
-                                <label for="edtEmail">Email Address</label>
+                                <label for="edtEmail">Email address</label>
                                 <input type="email" class="form-control" placeholder="Email Address" id="edtEmail" name="edtEmail"/>
                                 
                             </div>
@@ -406,18 +406,18 @@ input.larger {
                             </div>
                             <div class="inputGroup">
                                 <input id="voucherRadio3" name="voucherRadio1" type="radio"/>
-                                <label for="voucherRadio3">UberEats</label>
+                                <label for="voucherRadio3">Uber Eats</label>
                             </div>
 
                             <!-- </div> -->
                             <!-- <div class="row justify-content-center"> -->
                             <div class="inputGroup">
                                 <input id="voucherRadio4" name="voucherRadio1" type="radio"/>
-                                <label for="voucherRadio4">Mr. Delivery</label>
+                                <label for="voucherRadio4">Mr D Food</label>
                             </div>
                             <div class="inputGroup">
                                 <input id="voucherRadio5" name="voucherRadio1" type="radio"/>
-                                <label for="voucherRadio5">Neither available in my area</label>
+                                <label for="voucherRadio5">Neither is available in my area</label>
                             </div>
                         </div>
                         <!-- </div> -->
@@ -434,7 +434,7 @@ input.larger {
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-sm-12 form-group">
-                                <h2 class="question" style="color: #fff;">Which of our breakaway rooms would you be interested in attending?</h2>
+                                <h2 class="question" style="color: #fff;">Which of our breakaway rooms would you be interested in visiting?</h2>
                             </div>
                         </div>
                         <!-- <div class="row justify-content-center"> -->
@@ -471,7 +471,7 @@ input.larger {
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-sm-12 form-group">
-                                <h2 class="question" style="color: #fff;">Would you like to extend this invitation to any of your colleagues within your organisation?</h2>
+                                <h2 class="question" style="color: #fff;">Would you like to extend this invitation to any colleagues within your organisation?</h2>
                             </div>
                         </div>
                         <!-- <div class="row justify-content-center"> -->
