@@ -208,7 +208,7 @@ body, html {
    width:10%;
     height:43%;
     top:7%;
-    left:18.6%;
+    left:19.6%;
 }
 
 #rightBanner{
@@ -234,10 +234,10 @@ body, html {
   border-radius:50% 50% 0 0 ;
 }
 #middleBanner{
-   width:35%;
-    height:25%;
+   width:34%;
+    height:26%;
     top:7%;
-    left:32%;
+    left:33%;
 }
 .btn-circle {
 				width: 70px;
