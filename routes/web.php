@@ -42,6 +42,13 @@ Route::get('/exhibition', function () {
     return view('exhibition');
 })->name('exhibition');
 
+Route::get('/exhibition/layouts', function () {
+    return view('exhibitionLayouts');
+})->name('exhibitionLayouts');
+
+
+Route::get('/exhibition/layouts/{stands}', [App\Http\Controllers\RoomController::class, 'exhibitionHall'])->name('exhibition.layouts');
+
 Route::get('/sregister', [App\Http\Controllers\Auth\RegisterController::class, 'speaker'])->name('sregister');
 
 Route::group(['middleware' => ['auth']], function() {

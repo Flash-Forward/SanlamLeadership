@@ -16,4 +16,8 @@ class RoomController extends Controller
             'bg' => $bg
         ]);
     }
+
+    public function exhibitionHall($stands){
+        return view('exhibition_layouts.'.$stands);
+    }
 }

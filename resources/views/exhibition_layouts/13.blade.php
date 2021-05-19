@@ -104,8 +104,8 @@ body, html {
 
 #floorSpace{
   display: grid;
-    grid-template-columns: repeat(30, 1fr);
-    grid-template-rows: repeat(30, 1vw);
+    grid-template-columns: repeat(60, 1fr);
+    grid-template-rows: repeat(60, 1vw);
     grid-gap: 15px;
     position:absolute;
     /* transform: perspective(600px) rotateX(22deg);
@@ -120,9 +120,9 @@ height: 83%;
 
 #myImage_zone2{
 
-  grid-column-start: 6;
-grid-column-end: 10;
-grid-row-start: 3;
+  grid-column-start: 9;
+grid-column-end: 18;
+grid-row-start: 2;
 grid-row-end: 7;
 
     width: 100%;
@@ -132,9 +132,9 @@ grid-row-end: 7;
 }
 
 #myImage_zone3{
-  grid-column-start: 10;
-grid-column-end: 14;
-grid-row-start: 3;
+  grid-column-start: 18;
+grid-column-end: 27;
+grid-row-start: 2;
 grid-row-end: 7;
 
     width: 100%;
@@ -142,9 +142,9 @@ grid-row-end: 7;
     border-radius: 35px;
 }
 #myImage_zone4{
-  grid-column-start: 14;
-grid-column-end: 18;
-grid-row-start: 3;
+  grid-column-start: 27;
+grid-column-end: 36;
+grid-row-start: 2;
 grid-row-end: 7;
     width: 100%;
     height: 100%;
@@ -152,9 +152,9 @@ grid-row-end: 7;
 }
 
 #myImage_zone5{
-  grid-column-start: 18;
-grid-column-end: 22;
-grid-row-start: 3;
+  grid-column-start: 36;
+grid-column-end: 45;
+grid-row-start: 2;
 grid-row-end: 7;
     width: 100%;
     height: 100%;
@@ -162,9 +162,9 @@ grid-row-end: 7;
 }
 
 #myImage_zone6{
-  grid-column-start: 22;
-grid-column-end: 26;
-grid-row-start: 3;
+  grid-column-start: 45;
+grid-column-end: 54;
+grid-row-start: 2;
 grid-row-end: 7;
 
     width: 100%;
@@ -174,10 +174,10 @@ grid-row-end: 7;
 
 #myImage_zone7{
 
-grid-column-start: 6;
-grid-column-end: 10;
-grid-row-start: 7;
-grid-row-end: 11;
+  grid-column-start: 9;
+grid-column-end: 18;
+grid-row-start: 8;
+grid-row-end: 13;
 
   width: 100%;
   height: 100%;
@@ -186,40 +186,40 @@ grid-row-end: 11;
 }
 
 #myImage_zone8{
-grid-column-start: 10;
-grid-column-end: 14;
-grid-row-start: 7;
-grid-row-end: 11;
+  grid-column-start: 18;
+grid-column-end: 27;
+grid-row-start: 8;
+grid-row-end: 13;
 
   width: 100%;
   height: 100%;
   border-radius: 35px;
 }
 #myImage_zone9{
-grid-column-start: 14;
-grid-column-end: 18;
-grid-row-start: 7;
-grid-row-end: 11;
+  grid-column-start: 27;
+grid-column-end: 36;
+grid-row-start: 8;
+grid-row-end: 13;
   width: 100%;
   height: 100%;
   border-radius: 35px;
 }
 
 #myImage_zone10{
-grid-column-start: 18;
-grid-column-end: 22;
-grid-row-start: 7;
-grid-row-end: 11;
+  grid-column-start: 36;
+grid-column-end: 45;
+grid-row-start: 8;
+grid-row-end: 13;
   width: 100%;
   height: 100%;
   border-radius: 35px;
 }
 
 #myImage_zone11{
-grid-column-start: 22;
-grid-column-end: 26;
-grid-row-start: 7;
-grid-row-end: 11;
+  grid-column-start: 45;
+grid-column-end: 54;
+grid-row-start: 8;
+grid-row-end: 13;
 
   width: 100%;
   height: 100%;
@@ -227,40 +227,30 @@ grid-row-end: 11;
 }
 
 #myImage_zone12{
-grid-column-start: 8;
-grid-column-end: 12;
-grid-row-start: 11;
-grid-row-end: 15;
+  grid-column-start: 18;
+grid-column-end: 27;
+grid-row-start: 14;
+grid-row-end: 19;
 
   width: 100%;
   height: 100%;
   border-radius: 35px;
 }
 #myImage_zone13{
-grid-column-start: 12;
-grid-column-end: 16;
-grid-row-start: 11;
-grid-row-end: 15;
+  grid-column-start: 27;
+grid-column-end: 36;
+grid-row-start: 14;
+grid-row-end: 19;
   width: 100%;
   height: 100%;
   border-radius: 35px;
 }
 
 #myImage_zone14{
-grid-column-start: 16;
-grid-column-end: 20;
-grid-row-start: 11;
-grid-row-end: 15;
-  width: 100%;
-  height: 100%;
-  border-radius: 35px;
-}
-
-#myImage_zone15{
-grid-column-start: 20;
-grid-column-end: 24;
-grid-row-start: 11;
-grid-row-end: 15;
+  grid-column-start: 36;
+grid-column-end: 45;
+grid-row-start: 14;
+grid-row-end: 19;
   width: 100%;
   height: 100%;
   border-radius: 35px;
@@ -431,14 +421,6 @@ h2{
         </div>
 
         <div id="myImage_zone14" class="divInImage">
-          <a class="stretch standLink" href="{{ route('breakawayroom') }}"></a>
-          <img src="{{ asset('img') }}/bryte/exstand.png" class="stretch standImage" alt="" />
-          <div class="standlogo">
-            <img src="{{ asset('img') }}/bryte/coke.webp" class="stretch roundLogo" alt="" />
-          </div>
-        </div>
-
-        <div id="myImage_zone15" class="divInImage">
           <a class="stretch standLink" href="{{ route('breakawayroom') }}"></a>
           <img src="{{ asset('img') }}/bryte/exstand.png" class="stretch standImage" alt="" />
           <div class="standlogo">
