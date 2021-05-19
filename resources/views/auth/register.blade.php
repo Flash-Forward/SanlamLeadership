@@ -39,7 +39,7 @@
 				<div class="row justify-content-center">
 					<div class="col-md-12">
 						<div class="block">
-							<h1><img src="{{ asset('img') }}/bryte/logo.png" width="32%" alt="" style="position: relative; top: 10px;"/></h1>
+							<h1><img src="{{ asset('img') }}/bryte/logo.png" width="35%" alt="" style="position: relative; margin-bottom: 2%;"/></h1>
 							<h1><b>Welcome to the Business Partner Conference</b></h1>
 							<h2><b>Tuesday, 22 June 2021 10:00 – 16:00</b></h2>
 							<h3 style="color: #000000;">Thank you for joining us for our first ever Business Partner Conference! The conference will focus on a range of risk realities and we are delighted to present to you several renowned thought leaders who will share robust insights and interesting perspectives.</h3>

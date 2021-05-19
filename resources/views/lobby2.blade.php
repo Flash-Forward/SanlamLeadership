@@ -344,7 +344,7 @@ iframe{
     </div>
     <a id="breakawayRooms" href="{{ route('breakaway') }}"></a>
 
-    <div id="networkLoungesHeadingArea" class="divInImage">
+    <!-- <div id="networkLoungesHeadingArea" class="divInImage">
         <div id="networkLoungesHeadingText">
             SCHEDULE
         </div>
@@ -356,7 +356,7 @@ iframe{
             SCHEDULE
         </div>
     </div>
-    <a id="innovatorsCafe" href="{{ route('networkingroom') }}"></a>
+    <a id="innovatorsCafe" href="{{ route('networkingroom') }}"></a> -->
 
     <div id="leftBanner" class="divInImage">
     <img src="{{ asset('img') }}/bryte/sidelobbybanner.jpg" class="stretch" alt="" />

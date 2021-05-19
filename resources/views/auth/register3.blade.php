@@ -24,6 +24,7 @@
 body, html {
   height: 100%;
   margin: 0;
+  font-family: 'Arial', serif;
 }
 
 
@@ -51,6 +52,7 @@ h2.question
 	position: relative;
 	text-transform: none;
     border-radius: 10px;
+    font-size: 1.5vw;
 }
 
 #bg 
@@ -332,7 +334,7 @@ input.larger {
                         <div class="row">
                             <div class="col-sm-6 form-group">
                                 <label for="edtName">First name</label>
-                                <input type="text" class="form-control" placeholder="First Name" id="edtName" name="edtName"/>
+                                <input type="text" class="form-control" placeholder="First name" id="edtName" name="edtName"/>
                             </div>
                             <div class="col-sm-6 form-group">
                                  <label for="edtSurname">Surname</label>
@@ -343,21 +345,21 @@ input.larger {
                         <div class="row">
                             <div class="col-sm-12 form-group">
                                 <label for="edtCName">Company name</label>
-                                <input type="text" class="form-control" placeholder="Company Name" id="edtCName" name="edtCName"/>
+                                <input type="text" class="form-control" placeholder="Company name" id="edtCName" name="edtCName"/>
                                 
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-12 form-group">
                                 <label for="edtMNum">Mobile number</label>
-                                <input type="text" class="form-control" placeholder="Mobile Number" id="edtMNum" name="edtMNum"/>
+                                <input type="text" class="form-control" placeholder="Mobile number" id="edtMNum" name="edtMNum"/>
                                 
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-12 form-group">
                                 <label for="edtEmail">Email address</label>
-                                <input type="email" class="form-control" placeholder="Email Address" id="edtEmail" name="edtEmail"/>
+                                <input type="email" class="form-control" placeholder="Email address" id="edtEmail" name="edtEmail"/>
                                 
                             </div>
                         </div>
@@ -470,12 +472,12 @@ input.larger {
                                 <div class="row">
                                     <div class="col-sm-6 form-group">
                                         <label for="edtName">Full name</label>
-                                        <input type="text" class="form-control" placeholder="First Name" id="edtName" name="edtName"/>
+                                        <input type="text" class="form-control" placeholder="Full name" id="edtName" name="edtName"/>
                                         
                                     </div>
                                     <div class="col-sm-6 form-group">
                                         <label for="edtSurname">Email address</label>
-                                        <input type="text" class="form-control" placeholder="Surname" id="edtSurname" name="edtSurname"/>
+                                        <input type="text" class="form-control" placeholder="Email address" id="edtSurname" name="edtSurname"/>
                                         
                                     </div>
                                 </div>
@@ -508,7 +510,7 @@ function submitForm(){
 }
 function addInvite(){
     var invitationExtend = document.getElementById("inviteDetails");
-    invitationExtend.innerHTML += '<div class="row"><div class="col-sm-6 form-group"><label for="edtName">Full Name</label><input type="text" class="form-control" placeholder="First Name" id="edtName" name="edtName"/></div><div class="col-sm-6 form-group"><label for="edtSurname">Email Address</label><input type="text" class="form-control" placeholder="Surname" id="edtSurname" name="edtSurname"/></div></div>';
+    invitationExtend.innerHTML += '<div class="row"><div class="col-sm-6 form-group"><label for="edtName">Full name</label><input type="text" class="form-control" placeholder="Full name" id="edtName" name="edtName"/></div><div class="col-sm-6 form-group"><label for="edtSurname">Email address</label><input type="text" class="form-control" placeholder="Email address" id="edtSurname" name="edtSurname"/></div></div>';
 }
 function showVoucherOptions(){
     var checkBox = document.getElementById("voucherCheck");
