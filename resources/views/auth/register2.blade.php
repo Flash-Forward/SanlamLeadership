@@ -18,6 +18,8 @@
     <link href="{{ asset('schedule') }}/lib/venobox/venobox.css" rel="stylesheet">
     <link href="{{ asset('schedule') }}/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
     <!-- Main Stylesheet File -->
     <link href="{{ asset('schedule') }}/css/style.css" rel="stylesheet">
     <style>
@@ -343,7 +345,7 @@
         </div>
         <div id="sign-up-form-div" class="signup-form">
 
-            <form method="POST" class="login-form" id="login-form" action="{{ route('login') }}">
+            <form method="POST" class="login-form" id="login-form" action="{{ route('register') }}">
                 @csrf
                 <div id="page1">
                     <div class="container-fluid">
@@ -387,6 +389,7 @@
 
                             </div>
                         </div>
+                        <input type="text" name="country" id="country" value="sa" style="display: none"/>
                         <div class="row">
                             <div class="col-sm-4 form-group">
                                 <button type="button" onclick="showPage2();" class="btn bryte-button">{{ __('Next') }}</button>
@@ -424,19 +427,19 @@
                                 </div>
                             </div>
                             <div class="inputGroup">
-                                <input id="voucherRadio3" name="voucherRadio1" type="radio" />
-                                <label for="voucherRadio3">Uber Eats</label>
+                                <input id="uberEats" name="uberEats" type="radio" />
+                                <label for="uberEats">Uber Eats</label>
                             </div>
 
                             <!-- </div> -->
                             <!-- <div class="row justify-content-center"> -->
                             <div class="inputGroup">
-                                <input id="voucherRadio4" name="voucherRadio1" type="radio" />
-                                <label for="voucherRadio4">Mr D Food</label>
+                                <input id="mrDFood" name="mrDFood" type="radio" />
+                                <label for="mrDFood">Mr D Food</label>
                             </div>
                             <div class="inputGroup">
-                                <input id="voucherRadio5" name="voucherRadio1" type="radio" />
-                                <label for="voucherRadio5">Neither is available in my area</label>
+                                <input id="noVoucher" name="noVoucher" type="radio" />
+                                <label for="noVoucher">Neither is available in my area</label>
                             </div>
                         </div>
                         <!-- </div> -->
@@ -458,23 +461,23 @@
                         </div>
                         <!-- <div class="row justify-content-center"> -->
                         <div class="inputGroup">
-                            <input id="checkbox1" name="checkbox1" type="checkbox" />
-                            <label for="checkbox1">Life</label>
+                            <input id="lifeRoom" name="lifeRoom" type="checkbox" />
+                            <label for="lifeRoom">Life</label>
                         </div>
 
                         <!-- </div> -->
                         <!-- <div class="row justify-content-center"> -->
                         <div class="inputGroup">
-                            <input id="checkbox2" name="checkbox2" type="checkbox" />
-                            <label for="checkbox2">Underwriting</label>
+                            <input id="underwritingRoom" name="underwritingRoom" type="checkbox" />
+                            <label for="underwritingRoom">Underwriting</label>
                         </div>
                         <div class="inputGroup">
-                            <input id="checkbox3" name="checkbox3" type="checkbox" />
-                            <label for="checkbox3">Claims</label>
+                            <input id="claimsRoom" name="claimsRoom" type="checkbox" />
+                            <label for="claimsRoom">Claims</label>
                         </div>
                         <div class="inputGroup">
-                            <input id="checkbox4" name="checkbox4" type="checkbox" />
-                            <label for="checkbox4">Product</label>
+                            <input id="productRoom" name="productRoom" type="checkbox" />
+                            <label for="productRoom">Product</label>
                         </div>
                         <!-- </div> -->
                         <div class="row justify-content-center" style="margin-top:3.5%;">
@@ -516,13 +519,13 @@
                             <div id="inviteDetails">
                                 <div class="row">
                                     <div class="col-sm-6 form-group">
-                                        <label for="edtName">Full name</label>
-                                        <input type="text" class="form-control" placeholder="Full name" id="edtName" name="edtName" />
+                                        <label for="edtName1">Full name</label>
+                                        <input type="text" class="form-control" placeholder="Full name" id="edtName1" name="edtName1" />
 
                                     </div>
                                     <div class="col-sm-6 form-group">
-                                        <label for="edtSurname">Email address</label>
-                                        <input type="text" class="form-control" placeholder="Email address" id="edtSurname" name="edtSurname" />
+                                        <label for="edtSurname1">Email address</label>
+                                        <input type="text" class="form-control" placeholder="Email address" id="edtSurname1" name="edtSurname1" />
 
                                     </div>
                                 </div>
@@ -537,7 +540,7 @@
                         <div class="row justify-content-center" style="margin-top:3.5%;">
                             <div class="form-group">
                                 <button type="button" onclick="showPage3();" class="btn bryte-button">{{ __('Back') }}</button>
-                                <button type="button" onclick="submitForm();" class="btn bryte-button">{{ __('Submit') }}</button>
+                                <button type="submit"  class="btn bryte-button">{{ __('Submit') }}</button>
                             </div>
                         </div>
                     </div>
@@ -555,7 +558,8 @@
 
 <script>
     function submitForm() {
-        window.location = "{{ route('thankyou') }}";
+
+        
     }
 
 
@@ -572,10 +576,12 @@
         }
     }
 
-
+    var invite_num = 2;
     function addInvite() {
+        
         var invitationExtend = document.getElementById("inviteDetails");
-        invitationExtend.innerHTML += '<div class="row"><div class="col-sm-6 form-group"><label for="edtName">Full name</label><input type="text" class="form-control" placeholder="Full name" id="edtName" name="edtName"/></div><div class="col-sm-6 form-group"><label for="edtSurname">Email address</label><input type="text" class="form-control" placeholder="Email address" id="edtSurname" name="edtSurname"/></div></div>';
+        invitationExtend.innerHTML += '<div class="row"><div class="col-sm-6 form-group"><label for="edtName'+invite_num+'">Full name</label><input type="text" class="form-control" placeholder="Full name" id="edtName'+invite_num+'" name="edtName'+invite_num+'"/></div><div class="col-sm-6 form-group"><label for="edtSurname'+invite_num+'">Email address</label><input type="text" class="form-control" placeholder="Email address" id="edtSurname'+invite_num+'" name="edtSurname'+invite_num+'"/></div></div>';
+        invite_num++;
     }
 
     function showInvite() {

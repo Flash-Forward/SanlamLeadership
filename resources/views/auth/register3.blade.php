@@ -326,7 +326,7 @@ input.larger {
 <div id="bg">
 <div id="registration-header"><h1>Registration</h1></div>
 <div id="sign-up-form-div" class="signup-form">
-            <form method="POST" class="login-form" id="login-form" action="{{ route('login') }}">
+            <form method="POST" class="login-form" id="login-form" action="{{ route('register') }}">
             @csrf
             <div id="page1">
                     <div class="container-fluid">
@@ -370,6 +370,8 @@ input.larger {
                                 
                             </div>
                         </div>
+                        <input type="text" name="country" id="country" value="ba" style="display: none"/>
+
                         <div class="row">
                             <div class="col-sm-4 form-group">
                                 <button type="button" onclick="showPage2();" class="btn bryte-button">{{ __('Next') }}</button>
@@ -408,19 +410,19 @@ input.larger {
                                 </div>
                             </div>
                             <div class="inputGroup">
-                                <input id="voucherRadio3" name="voucherRadio1" type="radio"/>
-                                <label for="voucherRadio3">Uber Eats</label>
+                                <input id="uberEats" name="uberEats" type="radio" />
+                                <label for="uberEats">Uber Eats</label>
                             </div>
 
                             <!-- </div> -->
                             <!-- <div class="row justify-content-center"> -->
                             <div class="inputGroup">
-                                <input id="voucherRadio4" name="voucherRadio1" type="radio"/>
-                                <label for="voucherRadio4">Mr D Food</label>
+                                <input id="mrDFood" name="mrDFood" type="radio" />
+                                <label for="mrDFood">Mr D Food</label>
                             </div>
                             <div class="inputGroup">
-                                <input id="voucherRadio5" name="voucherRadio1" type="radio"/>
-                                <label for="voucherRadio5">Neither is available in my area</label>
+                                <input id="noVoucher" name="noVoucher" type="radio" />
+                                <label for="noVoucher">Neither is available in my area</label>
                             </div>
                         </div>
                         <!-- </div> -->
@@ -444,15 +446,15 @@ input.larger {
                         </div>
                         <!-- <div class="row justify-content-center"> -->
                         <div class="inputGroup">
-                            <input id="checkbox1" name="checkbox1" type="checkbox"/>
-                            <label for="checkbox1">Launching Bonds and Guarantees</label>
+                            <input id="launchBondsGuar" name="launchBondsGuar" type="checkbox"/>
+                            <label for="launchBondsGuar">Launching Bonds and Guarantees</label>
                         </div>
 
                         <!-- </div> -->
                         <!-- <div class="row justify-content-center"> -->
                         <div class="inputGroup">
-                            <input id="checkbox2" name="checkbox2" type="checkbox"/>
-                            <label for="checkbox2">Bespoke solutions for claims in the hospitality sector – Our shop window</label>
+                            <input id="bespokeSol" name="bespokeSol" type="checkbox"/>
+                            <label for="bespokeSol">Bespoke solutions for claims in the hospitality sector – Our shop window</label>
                         </div>
                         <!-- </div> -->
                         <div class="row justify-content-center" style="margin-top:3.5%;">
@@ -494,14 +496,14 @@ input.larger {
                             <div id="inviteDetails">
                                 <div class="row">
                                     <div class="col-sm-6 form-group">
-                                        <label for="edtName">Full name</label>
-                                        <input type="text" class="form-control" placeholder="Full name" id="edtName" name="edtName"/>
-                                        
+                                        <label for="edtName1">Full name</label>
+                                        <input type="text" class="form-control" placeholder="Full name" id="edtName1" name="edtName1" />
+
                                     </div>
                                     <div class="col-sm-6 form-group">
-                                        <label for="edtSurname">Email address</label>
-                                        <input type="text" class="form-control" placeholder="Email address" id="edtSurname" name="edtSurname"/>
-                                        
+                                        <label for="edtSurname1">Email address</label>
+                                        <input type="text" class="form-control" placeholder="Email address" id="edtSurname1" name="edtSurname1" />
+
                                     </div>
                                 </div>
                             </div>
@@ -515,7 +517,7 @@ input.larger {
                         <div class="row justify-content-center" style="margin-top:3.5%;">
                             <div class="form-group">
                                 <button type="button" onclick="showPage3();" class="btn bryte-button">{{ __('Back') }}</button>
-                                <button type="button" onclick="submitForm();" class="btn bryte-button">{{ __('Submit') }}</button>
+                                <button type="submit" class="btn bryte-button">{{ __('Submit') }}</button>
                             </div>
                         </div>
                     </div>
@@ -531,10 +533,13 @@ input.larger {
 function submitForm(){
     window.location = "{{ route('thankyou') }}";
 }
-function addInvite(){
-    var invitationExtend = document.getElementById("inviteDetails");
-    invitationExtend.innerHTML += '<div class="row"><div class="col-sm-6 form-group"><label for="edtName">Full name</label><input type="text" class="form-control" placeholder="Full name" id="edtName" name="edtName"/></div><div class="col-sm-6 form-group"><label for="edtSurname">Email address</label><input type="text" class="form-control" placeholder="Email address" id="edtSurname" name="edtSurname"/></div></div>';
-}
+var invite_num = 2;
+    function addInvite() {
+        
+        var invitationExtend = document.getElementById("inviteDetails");
+        invitationExtend.innerHTML += '<div class="row"><div class="col-sm-6 form-group"><label for="edtName'+invite_num+'">Full name</label><input type="text" class="form-control" placeholder="Full name" id="edtName'+invite_num+'" name="edtName'+invite_num+'"/></div><div class="col-sm-6 form-group"><label for="edtSurname'+invite_num+'">Email address</label><input type="text" class="form-control" placeholder="Email address" id="edtSurname'+invite_num+'" name="edtSurname'+invite_num+'"/></div></div>';
+        invite_num++;
+    }
 function showVoucherOptions(){
     var checkBox = document.getElementById("voucherRadio1");
   // Get the output text
