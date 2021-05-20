@@ -391,15 +391,37 @@ input.larger {
                         </div>
                         <!-- <div class="row justify-content-center"> -->
                         <div class="inputGroup">
-                            <input id="radio1" name="radio" type="radio"/>
-                            <label for="radio1">Yes</label>
+                            <input id="voucherRadio1" name="voucherRadio" type="radio" onclick="showVoucherOptions()"/>
+                            <label for="voucherRadio1">Yes</label>
                         </div>
 
                         <!-- </div> -->
                         <!-- <div class="row justify-content-center"> -->
                         <div class="inputGroup">
-                            <input id="radio2" name="radio" type="radio"/>
-                            <label for="radio2">No</label>
+                            <input id="voucherRadio2" name="voucherRadio" type="radio" onclick="showVoucherOptions()"/>
+                            <label for="voucherRadio2">No</label>
+                        </div>
+                        <div id="voucherOptions" style="display:none">
+                            <div class="row">
+                                <div class="col-sm-12 form-group">
+                                    <h2 class="question" style="color: #fff; margin-top: 3%;">Which lunch voucher would you prefer?</h2>
+                                </div>
+                            </div>
+                            <div class="inputGroup">
+                                <input id="voucherRadio3" name="voucherRadio1" type="radio"/>
+                                <label for="voucherRadio3">Uber Eats</label>
+                            </div>
+
+                            <!-- </div> -->
+                            <!-- <div class="row justify-content-center"> -->
+                            <div class="inputGroup">
+                                <input id="voucherRadio4" name="voucherRadio1" type="radio"/>
+                                <label for="voucherRadio4">Mr D Food</label>
+                            </div>
+                            <div class="inputGroup">
+                                <input id="voucherRadio5" name="voucherRadio1" type="radio"/>
+                                <label for="voucherRadio5">Neither is available in my area</label>
+                            </div>
                         </div>
                         <!-- </div> -->
                         <div class="row justify-content-center" style="margin-top:3.5%;">
@@ -410,6 +432,7 @@ input.larger {
                         </div>
                     </div>
                 </div>
+
 
 
                 <div id="page3">
@@ -513,7 +536,7 @@ function addInvite(){
     invitationExtend.innerHTML += '<div class="row"><div class="col-sm-6 form-group"><label for="edtName">Full name</label><input type="text" class="form-control" placeholder="Full name" id="edtName" name="edtName"/></div><div class="col-sm-6 form-group"><label for="edtSurname">Email address</label><input type="text" class="form-control" placeholder="Email address" id="edtSurname" name="edtSurname"/></div></div>';
 }
 function showVoucherOptions(){
-    var checkBox = document.getElementById("voucherCheck");
+    var checkBox = document.getElementById("voucherRadio1");
   // Get the output text
   var voucherOptions = document.getElementById("voucherOptions");
 
@@ -544,13 +567,73 @@ function showPage1(){
     document.getElementById("sign-up-form-div").className = "signup-form";
 }
 
-function showPage2(){
-    document.getElementById("page2").style.display = "block";
-    document.getElementById("page1").style.display = "none";
-    document.getElementById("page3").style.display = "none";
-    document.getElementById("sign-up-form-div").className = "signup-form-steps";
+function showPage2() {
+        var validated = 1;
+        var fName = document.getElementById("edtName");
+        if (fName) {
+            if (fName.value == "") {
+                fName.style.background = "#FFCCCC";
+                validated = 0;
+            } else {
+                fName.style.background = "#FFFFFF";
+                validated = 1;
+            }
 
-}
+            var SName = document.getElementById("edtSurname");
+            if (SName.value == "") {
+                SName.style.background = "#FFCCCC";
+                validated = 0;
+            } else {
+                SName.style.background = "#FFFFFF";
+                validated = 1;
+            }
+
+            var CName = document.getElementById("edtCName");
+            if (CName.value == "") {
+                CName.style.background = "#FFCCCC";
+                validated = 0;
+            } else {
+                CName.style.background = "#FFFFFF";
+                validated = 1;
+            }
+
+            var MNum = document.getElementById("edtMNum");
+            if (MNum.value == "") {
+                MNum.style.background = "#FFCCCC";
+                validated = 0;
+            } else {
+                MNum.style.background = "#FFFFFF";
+                validated = 1;
+            }
+
+            var Email = document.getElementById("edtEmail");
+            if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(Email.value)) {
+                Email.style.background = "#FFFFFF";
+                validated = 1;
+            } else {
+                Email.style.background = "#FFCCCC";
+                validated = 0;
+            }
+
+            var Pass = document.getElementById("edtPass");
+            if (Pass.value == "") {
+                Pass.style.background = "#FFCCCC";
+                validated = 0;
+            } else {
+                Pass.style.background = "#FFFFFF";
+                validated = 1;
+            }
+        }
+
+
+        if (validated) {
+            document.getElementById("page2").style.display = "block";
+            document.getElementById("page1").style.display = "none";
+            document.getElementById("page3").style.display = "none";
+            document.getElementById("sign-up-form-div").className = "signup-form-steps";
+        }
+
+    }
 
 function showPage3(){
     document.getElementById("page3").style.display = "block";

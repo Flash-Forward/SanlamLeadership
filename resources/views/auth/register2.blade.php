@@ -1,373 +1,390 @@
 <head>
-		<meta charset="UTF-8">
-		<title>BryteSA</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		
-		<!-- google fonts -->
+    <meta charset="UTF-8">
+    <title>BryteSA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<!-- Css link -->
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+    <!-- google fonts -->
 
-  <!-- Bootstrap CSS File -->
-  <link href="{{ asset('schedule') }}/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Css link -->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
 
-  <!-- Libraries CSS Files -->
-  <link href="{{ asset('schedule') }}/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="{{ asset('schedule') }}/lib/animate/animate.min.css" rel="stylesheet">
-  <link href="{{ asset('schedule') }}/lib/venobox/venobox.css" rel="stylesheet">
-  <link href="{{ asset('schedule') }}/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS File -->
+    <link href="{{ asset('schedule') }}/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Main Stylesheet File -->
-  <link href="{{ asset('schedule') }}/css/style.css" rel="stylesheet">
-<style>
-body, html {
-  height: 100%;
-  margin: 0;
-  font-family: 'Arial', serif;
-}
+    <!-- Libraries CSS Files -->
+    <link href="{{ asset('schedule') }}/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="{{ asset('schedule') }}/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="{{ asset('schedule') }}/lib/venobox/venobox.css" rel="stylesheet">
+    <link href="{{ asset('schedule') }}/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-
-h2
-{
-	font-weight: bold;
-	text-align: center;
-	padding: 10px 0;
-	background-color: #eee;
-	mix-blend-mode: multiply;
-	width: 100%;
-	position: relative;
-	text-transform: none;
-    border-radius: 10px;
-}
-
-h2.question
-{
-	font-weight: bold;
-	text-align: center;
-	padding: 10px 0;
-	background-color: #004d73 !important;
-	mix-blend-mode: normal !important;
-	width: 100%;
-	position: relative;
-	text-transform: none;
-    border-radius: 10px;
-    font-size: 1.5vw;
-}
-
-#bg 
-{
-position: relative;
-    background-image: url("{{ asset('img') }}/bryte/bg2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    max-height: 200vh !important;
-    /* overflow-y: auto !important; */
-    width: 100%;
-    height: 80vh;
-    left: 0px;
-    top: 0px;
-}
-
-.stretch {
-    width:100%;
-    /* height:100%; */
-    z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
-}
-.divInImage {
-    /* border:1px solid #fff; */
-    display:block;
-    position:absolute;
-    /* background-color:rgba(0,0,0,0.1); */
-}
-#bg a {
-    /* border:1px solid #fff; */
-    display:block;
-    position:absolute;
-    background-color:rgba(0,0,0,0.1);
-}
-#bg a:hover {
-    background-color:rgba(255,255,255,0.3);
-}
-#banner
-{
-	object-fit: cover; /* Do not scale the image */
-	object-position: center; /* Center the image within the element */
-	width:100%;
-	text-align: center;
-	text-transform: uppercase;
-}
-#myImage_zone2{
-    width:11%;
-    height:36px;
-    top:805px;
-    left:44.5%;
-}
-#myImage_zone3{
-   width:15%;
-    height:15%;
-    top:35%;
-    left:52%;
-}
-.signup-form
-{
-    /* margin-top: 4%; */
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    background-color: rgba(255,255,255,0.70);
-    padding-top: 2%;
-    padding-right: 2%;
-    padding-left: 2%;
-    padding-bottom: 0 !important;
-    position: relative;
-    top: 15px;
-    transform: translateX(0);
-    left: 25%;
-    width: 50% !important;
-	border-radius: 10px;
-}
-.signup-form-steps
-{
-    /* margin-top: 4%; */
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    background-color: rgba(255,255,255,0.70);
-    padding-top: 1%;
-    padding-right: 1%;
-    padding-left: 1%;
-    padding-bottom: 0 !important;
-    position: relative;
-    top: 15px;
-    transform: translateX(0);
-    left: 25%;
-    width: 50% !important;
-	border-radius: 10px;
-}
-.signup-form-steps  label
-{
-    font-weight:bold;
-	color: #000;
-}
-
-input.larger {
-        width: 25px;
-        height: 25px;
-      }
-.signup-form  label
-{
-    font-weight:bold;
-	color: #000;
-    font-size: 16px;
-}
-
-.btn-circle {
-				width: 70px;
-				height: 70px;
-				padding: 10px 16px;
-				border-radius: 35px;
-				font-size: 24px;
-				line-height: 1.33;
-			}
-
-            input, select {
-                height: 45px;
-                width: 100% !important;
-  display: block;
-  /* margin-bottom:42px; */
-  /* margin-left:5%; */
-  padding: 1.6vh 1.4vh;
-  box-sizing: border-box;
-  font-weight: 500;
-  font-size: 13px; }
-
-  #regNowBtn{
-      position: relative;
-    left: 18%;
-    display: block;
-    width: 80%; 
-    height: 20%; 
-}
-
-.regBtn{
-    width: inherit !important;
-    height: inherit !important;
-}
-
-#page1{
-    display: block;
-}
-
-#page2{
-    display: none;
-}
-
-#page3{
-    display: none;
-}
-#page4{
-    display: none;
-}
-
-.form-check-label {
-    margin-bottom: 0;
-    margin-top: 2%;
-}
-
-.right-input{
-    margin-left: 5px !important;
-}
-
-.bryte-button{
-    background-color: #004d73 !important;
-    border-color: #004d73 !important;
-    color: #ffffff !important;
-}
+    <!-- Main Stylesheet File -->
+    <link href="{{ asset('schedule') }}/css/style.css" rel="stylesheet">
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Arial', serif;
+        }
 
 
-/* START OF NICE CHECKBOX */
+        h2 {
+            font-weight: bold;
+            text-align: center;
+            padding: 10px 0;
+            background-color: #eee;
+            mix-blend-mode: multiply;
+            width: 100%;
+            position: relative;
+            text-transform: none;
+            border-radius: 10px;
+        }
 
-.inputGroup {
-	 background-color: #ccc;
-	 display: block;
-	 margin: 10px 0;
-	 position: relative;
-}
- .inputGroup label {
-	 padding: 12px 30px;
-	 width: 100%;
-	 display: block;
-	 text-align: left;
-	 color: #3c454c;
-	 cursor: pointer;
-	 position: relative;
-	 z-index: 2;
-	 transition: color 200ms ease-in;
-	 overflow: hidden;
-}
- .inputGroup label:before {
-	 width: 10px;
-	 height: 10px;
-	 border-radius: 50%;
-	 content: '';
-	 background-color: #dac057;
-	 position: absolute;
-	 left: 50%;
-	 top: 50%;
-	 transform: translate(-50%, -50%) scale3d(1, 1, 1);
-	 transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
-	 opacity: 0;
-	 z-index: -1;
-}
- .inputGroup label:after {
-	 width: 32px;
-	 height: 32px;
-	 content: '';
-	 border: 2px solid #d1d7dc;
-	 background-color: #fff;
-	 background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.414 11L4 12.414l5.414 5.414L20.828 6.414 19.414 5l-10 10z' fill='%23fff' fill-rule='nonzero'/%3E%3C/svg%3E ");
-	 background-repeat: no-repeat;
-	 background-position: 2px 3px;
-	 border-radius: 50%;
-	 z-index: 2;
-	 position: absolute;
-	 right: 30px;
-	 top: 50%;
-	 transform: translateY(-50%);
-	 cursor: pointer;
-	 transition: all 200ms ease-in;
-}
- .inputGroup input:checked ~ label {
-	 color: #fff;
-}
- .inputGroup input:checked ~ label:before {
-	 transform: translate(-50%, -50%) scale3d(110, 110, 1);
-	 opacity: 1;
-}
- .inputGroup input:checked ~ label:after {
-	 background-color: #004d73;
-	 border-color: #004d73;
-}
- .inputGroup input {
-	 width: 32px;
-	 height: 32px;
-	 order: 1;
-	 z-index: 2;
-	 position: absolute;
-	 right: 30px;
-	 top: 50%;
-	 transform: translateY(-50%);
-	 cursor: pointer;
-	 visibility: hidden;
-}
+        h2.question {
+            font-weight: bold;
+            text-align: center;
+            padding: 10px 0;
+            background-color: #004d73 !important;
+            mix-blend-mode: normal !important;
+            width: 100%;
+            position: relative;
+            text-transform: none;
+            border-radius: 10px;
+            font-size: 1.5vw;
+        }
 
-/*  */
+        #bg {
+            position: relative;
+            background-image: url("{{ asset('img') }}/bryte/bg2.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            max-height: 200vh !important;
+            /* overflow-y: auto !important; */
+            width: 100%;
+            height: 80vh;
+            left: 0px;
+            top: 0px;
+        }
 
-#registration-header > h1
-{
-	font-weight: bold;
-	text-align: center;
-	padding: 10px 0;
-	mix-blend-mode: multiply;
-	width: 100%;
-	position: relative;
-	top: 15px;
-	text-transform: none;
-}
-</style>
+        .stretch {
+            width: 100%;
+            /* height:100%; */
+            z-index: -1;
+            /* Ensure div tag stays behind content; -999 might work, too. */
+        }
+
+        .divInImage {
+            /* border:1px solid #fff; */
+            display: block;
+            position: absolute;
+            /* background-color:rgba(0,0,0,0.1); */
+        }
+
+        #bg a {
+            /* border:1px solid #fff; */
+            display: block;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        #bg a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        #banner {
+            object-fit: cover;
+            /* Do not scale the image */
+            object-position: center;
+            /* Center the image within the element */
+            width: 100%;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        #myImage_zone2 {
+            width: 11%;
+            height: 36px;
+            top: 805px;
+            left: 44.5%;
+        }
+
+        #myImage_zone3 {
+            width: 15%;
+            height: 15%;
+            top: 35%;
+            left: 52%;
+        }
+
+        .signup-form {
+            /* margin-top: 4%; */
+            /* display: flex; */
+            /* justify-content: center; */
+            /* align-items: center; */
+            background-color: rgba(255, 255, 255, 0.70);
+            padding-top: 2%;
+            padding-right: 2%;
+            padding-left: 2%;
+            padding-bottom: 0 !important;
+            position: relative;
+            top: 15px;
+            transform: translateX(0);
+            left: 25%;
+            width: 50% !important;
+            border-radius: 10px;
+        }
+
+        .signup-form-steps {
+            /* margin-top: 4%; */
+            /* display: flex; */
+            /* justify-content: center; */
+            /* align-items: center; */
+            background-color: rgba(255, 255, 255, 0.70);
+            padding-top: 1%;
+            padding-right: 1%;
+            padding-left: 1%;
+            padding-bottom: 0 !important;
+            position: relative;
+            top: 15px;
+            transform: translateX(0);
+            left: 25%;
+            width: 50% !important;
+            border-radius: 10px;
+        }
+
+        .signup-form-steps label {
+            font-weight: bold;
+            color: #000;
+        }
+
+        input.larger {
+            width: 25px;
+            height: 25px;
+        }
+
+        .signup-form label {
+            font-weight: bold;
+            color: #000;
+            font-size: 16px;
+        }
+
+        .btn-circle {
+            width: 70px;
+            height: 70px;
+            padding: 10px 16px;
+            border-radius: 35px;
+            font-size: 24px;
+            line-height: 1.33;
+        }
+
+        input,
+        select {
+            height: 45px;
+            width: 100% !important;
+            display: block;
+            /* margin-bottom:42px; */
+            /* margin-left:5%; */
+            padding: 1.6vh 1.4vh;
+            box-sizing: border-box;
+            font-weight: 500;
+            font-size: 13px;
+        }
+
+        #regNowBtn {
+            position: relative;
+            left: 18%;
+            display: block;
+            width: 80%;
+            height: 20%;
+        }
+
+        .regBtn {
+            width: inherit !important;
+            height: inherit !important;
+        }
+
+        #page1 {
+            display: block;
+        }
+
+        #page2 {
+            display: none;
+        }
+
+        #page3 {
+            display: none;
+        }
+
+        #page4 {
+            display: none;
+        }
+
+        .form-check-label {
+            margin-bottom: 0;
+            margin-top: 2%;
+        }
+
+        .right-input {
+            margin-left: 5px !important;
+        }
+
+        .bryte-button {
+            background-color: #004d73 !important;
+            border-color: #004d73 !important;
+            color: #ffffff !important;
+        }
+
+
+        /* START OF NICE CHECKBOX */
+
+        .inputGroup {
+            background-color: #ccc;
+            display: block;
+            margin: 10px 0;
+            position: relative;
+        }
+
+        .inputGroup label {
+            padding: 12px 30px;
+            width: 100%;
+            display: block;
+            text-align: left;
+            color: #3c454c;
+            cursor: pointer;
+            position: relative;
+            z-index: 2;
+            transition: color 200ms ease-in;
+            overflow: hidden;
+        }
+
+        .inputGroup label:before {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            content: '';
+            background-color: #dac057;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%) scale3d(1, 1, 1);
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+            opacity: 0;
+            z-index: -1;
+        }
+
+        .inputGroup label:after {
+            width: 32px;
+            height: 32px;
+            content: '';
+            border: 2px solid #d1d7dc;
+            background-color: #fff;
+            background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.414 11L4 12.414l5.414 5.414L20.828 6.414 19.414 5l-10 10z' fill='%23fff' fill-rule='nonzero'/%3E%3C/svg%3E ");
+            background-repeat: no-repeat;
+            background-position: 2px 3px;
+            border-radius: 50%;
+            z-index: 2;
+            position: absolute;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            transition: all 200ms ease-in;
+        }
+
+        .inputGroup input:checked~label {
+            color: #fff;
+        }
+
+        .inputGroup input:checked~label:before {
+            transform: translate(-50%, -50%) scale3d(110, 110, 1);
+            opacity: 1;
+        }
+
+        .inputGroup input:checked~label:after {
+            background-color: #004d73;
+            border-color: #004d73;
+        }
+
+        .inputGroup input {
+            width: 32px;
+            height: 32px;
+            order: 1;
+            z-index: 2;
+            position: absolute;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            visibility: hidden;
+        }
+
+        /*  */
+
+        #registration-header>h1 {
+            font-weight: bold;
+            text-align: center;
+            padding: 10px 0;
+            mix-blend-mode: multiply;
+            width: 100%;
+            position: relative;
+            top: 15px;
+            text-transform: none;
+        }
+    </style>
 
 </head>
 
 <body>
-<div id="banner"><img src="{{ asset('img') }}/bryte/banner.jpg" class="stretch" alt="" /></div>
-<div id="bg">
-<div id="registration-header"><h1>Registration</h1></div>
-<div id="sign-up-form-div" class="signup-form">
-    
+    <div id="banner"><img src="{{ asset('img') }}/bryte/banner.jpg" class="stretch" alt="" /></div>
+    <div id="bg">
+        <div id="registration-header">
+            <h1>Registration</h1>
+        </div>
+        <div id="sign-up-form-div" class="signup-form">
+
             <form method="POST" class="login-form" id="login-form" action="{{ route('login') }}">
-            @csrf
+                @csrf
                 <div id="page1">
                     <div class="container-fluid">
                         <!-- First Row - First Name & Surname -->
                         <div class="row">
                             <div class="col-sm-6 form-group">
                                 <label for="edtName">First name</label>
-                                <input type="text" class="form-control" placeholder="First name" id="edtName" name="edtName"/>
+                                <input type="text" class="form-control" placeholder="First name" id="edtName" name="edtName" />
                             </div>
                             <div class="col-sm-6 form-group">
-                                 <label for="edtSurname">Surname</label>
-                                <input type="text" class="form-control" placeholder="Surname" id="edtSurname" name="edtSurname"/>
+                                <label for="edtSurname">Surname</label>
+                                <input type="text" class="form-control" placeholder="Surname" id="edtSurname" name="edtSurname" />
 
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-12 form-group">
                                 <label for="edtCName">Company name</label>
-                                <input type="text" class="form-control" placeholder="Company name" id="edtCName" name="edtCName"/>
-                                
+                                <input type="text" class="form-control" placeholder="Company name" id="edtCName" name="edtCName" />
+
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-12 form-group">
                                 <label for="edtMNum">Mobile number</label>
-                                <input type="text" class="form-control" placeholder="Mobile number" id="edtMNum" name="edtMNum"/>
-                                
+                                <input type="text" class="form-control" placeholder="Mobile number" id="edtMNum" name="edtMNum" />
+
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-12 form-group">
                                 <label for="edtEmail">Email address</label>
-                                <input type="email" class="form-control" placeholder="Email address" id="edtEmail" name="edtEmail"/>
-                                
+                                <input type="email" class="form-control" placeholder="Email address" id="edtEmail" name="edtEmail" />
+
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-12 form-group">
                                 <label for="edtPass">Password</label>
-                                <input type="password" class="form-control" placeholder="Password" id="edtPass" name="edtPass"/>
-                                
+                                <input type="password" class="form-control" placeholder="Password" id="edtPass" name="edtPass" />
+
                             </div>
                         </div>
                         <div class="row">
@@ -376,7 +393,7 @@ input.larger {
 
                             </div>
                         </div>
-                        
+
                     </div>
 
 
@@ -390,14 +407,14 @@ input.larger {
                         </div>
                         <!-- <div class="row justify-content-center"> -->
                         <div class="inputGroup">
-                            <input id="voucherRadio1" name="voucherRadio" type="radio" onclick="showVoucherOptions()"/>
+                            <input id="voucherRadio1" name="voucherRadio" type="radio" onclick="showVoucherOptions()" />
                             <label for="voucherRadio1">Yes</label>
                         </div>
 
                         <!-- </div> -->
                         <!-- <div class="row justify-content-center"> -->
                         <div class="inputGroup">
-                            <input id="voucherRadio2" name="voucherRadio" type="radio" onclick="showVoucherOptions()"/>
+                            <input id="voucherRadio2" name="voucherRadio" type="radio" onclick="showVoucherOptions()" />
                             <label for="voucherRadio2">No</label>
                         </div>
                         <div id="voucherOptions" style="display:none">
@@ -407,18 +424,18 @@ input.larger {
                                 </div>
                             </div>
                             <div class="inputGroup">
-                                <input id="voucherRadio3" name="voucherRadio1" type="radio"/>
+                                <input id="voucherRadio3" name="voucherRadio1" type="radio" />
                                 <label for="voucherRadio3">Uber Eats</label>
                             </div>
 
                             <!-- </div> -->
                             <!-- <div class="row justify-content-center"> -->
                             <div class="inputGroup">
-                                <input id="voucherRadio4" name="voucherRadio1" type="radio"/>
+                                <input id="voucherRadio4" name="voucherRadio1" type="radio" />
                                 <label for="voucherRadio4">Mr D Food</label>
                             </div>
                             <div class="inputGroup">
-                                <input id="voucherRadio5" name="voucherRadio1" type="radio"/>
+                                <input id="voucherRadio5" name="voucherRadio1" type="radio" />
                                 <label for="voucherRadio5">Neither is available in my area</label>
                             </div>
                         </div>
@@ -441,22 +458,22 @@ input.larger {
                         </div>
                         <!-- <div class="row justify-content-center"> -->
                         <div class="inputGroup">
-                            <input id="checkbox1" name="checkbox1" type="checkbox"/>
+                            <input id="checkbox1" name="checkbox1" type="checkbox" />
                             <label for="checkbox1">Life</label>
                         </div>
 
                         <!-- </div> -->
                         <!-- <div class="row justify-content-center"> -->
                         <div class="inputGroup">
-                            <input id="checkbox2" name="checkbox2" type="checkbox"/>
+                            <input id="checkbox2" name="checkbox2" type="checkbox" />
                             <label for="checkbox2">Underwriting</label>
                         </div>
                         <div class="inputGroup">
-                            <input id="checkbox3" name="checkbox3" type="checkbox"/>
+                            <input id="checkbox3" name="checkbox3" type="checkbox" />
                             <label for="checkbox3">Claims</label>
                         </div>
                         <div class="inputGroup">
-                            <input id="checkbox4" name="checkbox4" type="checkbox"/>
+                            <input id="checkbox4" name="checkbox4" type="checkbox" />
                             <label for="checkbox4">Product</label>
                         </div>
                         <!-- </div> -->
@@ -478,14 +495,14 @@ input.larger {
                         </div>
                         <!-- <div class="row justify-content-center"> -->
                         <div class="inputGroup">
-                            <input id="radio3" name="radio" type="radio" onclick="showInvite()"/>
+                            <input id="radio3" name="radio" type="radio" onclick="showInvite()" />
                             <label for="radio3">Yes</label>
                         </div>
 
                         <!-- </div> -->
                         <!-- <div class="row justify-content-center"> -->
                         <div class="inputGroup">
-                            <input id="radio4" name="radio" type="radio" onclick="showInvite()"/>
+                            <input id="radio4" name="radio" type="radio" onclick="showInvite()" />
                             <label for="radio4">No</label>
                         </div>
                         <!-- </div> -->
@@ -500,13 +517,13 @@ input.larger {
                                 <div class="row">
                                     <div class="col-sm-6 form-group">
                                         <label for="edtName">Full name</label>
-                                        <input type="text" class="form-control" placeholder="Full name" id="edtName" name="edtName"/>
-                                        
+                                        <input type="text" class="form-control" placeholder="Full name" id="edtName" name="edtName" />
+
                                     </div>
                                     <div class="col-sm-6 form-group">
                                         <label for="edtSurname">Email address</label>
-                                        <input type="text" class="form-control" placeholder="Email address" id="edtSurname" name="edtSurname"/>
-                                        
+                                        <input type="text" class="form-control" placeholder="Email address" id="edtSurname" name="edtSurname" />
+
                                     </div>
                                 </div>
                             </div>
@@ -530,80 +547,146 @@ input.larger {
 
         </div>
 
-    </div>   
+    </div>
 
 
 
 </body>
 
 <script>
-
-function submitForm(){
-    window.location = "{{ route('thankyou') }}";
-}
-
-
-function showVoucherOptions(){
-    var checkBox = document.getElementById("voucherRadio1");
-  // Get the output text
-  var voucherOptions = document.getElementById("voucherOptions");
-
-  // If the checkbox is checked, display the output text
-  if (checkBox.checked == true){
-    voucherOptions.style.display = "block";
-  } else {
-    voucherOptions.style.display = "none";
-  }
-}
+    function submitForm() {
+        window.location = "{{ route('thankyou') }}";
+    }
 
 
-function addInvite(){
-    var invitationExtend = document.getElementById("inviteDetails");
-    invitationExtend.innerHTML += '<div class="row"><div class="col-sm-6 form-group"><label for="edtName">Full name</label><input type="text" class="form-control" placeholder="Full name" id="edtName" name="edtName"/></div><div class="col-sm-6 form-group"><label for="edtSurname">Email address</label><input type="text" class="form-control" placeholder="Email address" id="edtSurname" name="edtSurname"/></div></div>';
-}
+    function showVoucherOptions() {
+        var checkBox = document.getElementById("voucherRadio1");
+        // Get the output text
+        var voucherOptions = document.getElementById("voucherOptions");
 
-function showInvite(){
-    var checkBox = document.getElementById("radio3");
-  // Get the output text
-  var invitationExtend = document.getElementById("invitationExtend");
+        // If the checkbox is checked, display the output text
+        if (checkBox.checked == true) {
+            voucherOptions.style.display = "block";
+        } else {
+            voucherOptions.style.display = "none";
+        }
+    }
 
-  // If the checkbox is checked, display the output text
-  if (checkBox.checked == true){
-    invitationExtend.style.display = "block";
-  } else {
-    invitationExtend.style.display = "none";
-  }
-}
 
-function showPage1(){
-    document.getElementById("page1").style.display = "block";
-    document.getElementById("page2").style.display = "none";
-    document.getElementById("sign-up-form-div").className = "signup-form";
-}
+    function addInvite() {
+        var invitationExtend = document.getElementById("inviteDetails");
+        invitationExtend.innerHTML += '<div class="row"><div class="col-sm-6 form-group"><label for="edtName">Full name</label><input type="text" class="form-control" placeholder="Full name" id="edtName" name="edtName"/></div><div class="col-sm-6 form-group"><label for="edtSurname">Email address</label><input type="text" class="form-control" placeholder="Email address" id="edtSurname" name="edtSurname"/></div></div>';
+    }
 
-function showPage2(){
-    document.getElementById("page2").style.display = "block";
-    document.getElementById("page1").style.display = "none";
-    document.getElementById("page3").style.display = "none";
-    document.getElementById("sign-up-form-div").className = "signup-form-steps";
+    function showInvite() {
+        var checkBox = document.getElementById("radio3");
+        // Get the output text
+        var invitationExtend = document.getElementById("invitationExtend");
 
-}
+        // If the checkbox is checked, display the output text
+        if (checkBox.checked == true) {
+            invitationExtend.style.display = "block";
+        } else {
+            invitationExtend.style.display = "none";
+        }
+    }
 
-function showPage3(){
-    document.getElementById("page3").style.display = "block";
-    document.getElementById("page2").style.display = "none";
-    document.getElementById("page4").style.display = "none";
-}
-function showPage4(){
-    document.getElementById("page4").style.display = "block";
-    document.getElementById("page3").style.display = "none";
-}
 
-function login(){
-    var email = document.getElementById('email').value;
-    if(email != "wayne@flash-forward.co.za")
-        alert('THIS EVENT HAS NOT STARTED');
-    else
-        document.getElementById('login-form').submit();
-}
+    function showPage1() {
+
+
+
+        document.getElementById("page1").style.display = "block";
+        document.getElementById("page2").style.display = "none";
+        document.getElementById("sign-up-form-div").className = "signup-form";
+
+
+    }
+
+    function showPage2() {
+        var validated = 1;
+        var fName = document.getElementById("edtName");
+        if (fName) {
+            if (fName.value == "") {
+                fName.style.background = "#FFCCCC";
+                validated = 0;
+            } else {
+                fName.style.background = "#FFFFFF";
+                validated = 1;
+            }
+
+            var SName = document.getElementById("edtSurname");
+            if (SName.value == "") {
+                SName.style.background = "#FFCCCC";
+                validated = 0;
+            } else {
+                SName.style.background = "#FFFFFF";
+                validated = 1;
+            }
+
+            var CName = document.getElementById("edtCName");
+            if (CName.value == "") {
+                CName.style.background = "#FFCCCC";
+                validated = 0;
+            } else {
+                CName.style.background = "#FFFFFF";
+                validated = 1;
+            }
+
+            var MNum = document.getElementById("edtMNum");
+            if (MNum.value == "") {
+                MNum.style.background = "#FFCCCC";
+                validated = 0;
+            } else {
+                MNum.style.background = "#FFFFFF";
+                validated = 1;
+            }
+
+            var Email = document.getElementById("edtEmail");
+            if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(Email.value)) {
+                Email.style.background = "#FFFFFF";
+                validated = 1;
+            } else {
+                Email.style.background = "#FFCCCC";
+                validated = 0;
+            }
+
+            var Pass = document.getElementById("edtPass");
+            if (Pass.value == "") {
+                Pass.style.background = "#FFCCCC";
+                validated = 0;
+            } else {
+                Pass.style.background = "#FFFFFF";
+                validated = 1;
+            }
+        }
+
+
+        if (validated) {
+            document.getElementById("page2").style.display = "block";
+            document.getElementById("page1").style.display = "none";
+            document.getElementById("page3").style.display = "none";
+            document.getElementById("sign-up-form-div").className = "signup-form-steps";
+        }
+
+    }
+
+    function showPage3() {
+        document.getElementById("page3").style.display = "block";
+        document.getElementById("page2").style.display = "none";
+        document.getElementById("page4").style.display = "none";
+    }
+
+    function showPage4() {
+        document.getElementById("page4").style.display = "block";
+        document.getElementById("page3").style.display = "none";
+    }
+
+    function login() {
+        var email = document.getElementById('email').value;
+        if (email != "wayne@flash-forward.co.za")
+            alert('THIS EVENT HAS NOT STARTED');
+        else
+            document.getElementById('login-form').submit();
+    }
 </script>
