@@ -410,18 +410,18 @@ input.larger {
                                 </div>
                             </div>
                             <div class="inputGroup">
-                                <input id="uberEats" name="uberEats" type="radio" />
+                                <input id="uberEats" name="voucherChoiceRadio" type="radio"  onclick="showNextAfterVoucherPick()"/>
                                 <label for="uberEats">Uber Eats</label>
                             </div>
 
                             <!-- </div> -->
                             <!-- <div class="row justify-content-center"> -->
                             <div class="inputGroup">
-                                <input id="mrDFood" name="mrDFood" type="radio" />
+                                <input id="mrDFood" name="voucherChoiceRadio" type="radio"  onclick="showNextAfterVoucherPick()"/>
                                 <label for="mrDFood">Mr D Food</label>
                             </div>
                             <div class="inputGroup">
-                                <input id="noVoucher" name="noVoucher" type="radio" />
+                                <input id="noVoucher" name="voucherChoiceRadio" type="radio"  onclick="showNextAfterVoucherPick()"/>
                                 <label for="noVoucher">Neither is available in my area</label>
                             </div>
                         </div>
@@ -429,7 +429,7 @@ input.larger {
                         <div class="row justify-content-center" style="margin-top:3.5%;">
                             <div class="form-group">
                                 <button type="button" onclick="showPage1();" class="btn bryte-button">{{ __('Back') }}</button>
-                                <button type="button" onclick="showPage3();" class="btn bryte-button">{{ __('Next') }}</button>
+                                <button id="page2Next" type="button" onclick="showPage3();" class="btn bryte-button" style="display: none;">{{ __('Next') }}</button>
                             </div>
                         </div>
                     </div>
@@ -540,6 +540,9 @@ var invite_num = 2;
         invitationExtend.innerHTML += '<div class="row"><div class="col-sm-6 form-group"><label for="edtName'+invite_num+'">Full name</label><input type="text" class="form-control" placeholder="Full name" id="edtName'+invite_num+'" name="edtName'+invite_num+'"/></div><div class="col-sm-6 form-group"><label for="edtSurname'+invite_num+'">Email address</label><input type="text" class="form-control" placeholder="Email address" id="edtSurname'+invite_num+'" name="edtSurname'+invite_num+'"/></div></div>';
         invite_num++;
     }
+function showNextAfterVoucherPick(){
+    document.getElementById("page2Next").style.display = "inline-block";
+}
 function showVoucherOptions(){
     var checkBox = document.getElementById("voucherRadio1");
   // Get the output text
@@ -548,8 +551,10 @@ function showVoucherOptions(){
   // If the checkbox is checked, display the output text
   if (checkBox.checked == true){
     voucherOptions.style.display = "block";
+    document.getElementById("page2Next").style.display = "none";
   } else {
     voucherOptions.style.display = "none";
+    document.getElementById("page2Next").style.display = "inline-block";
   }
 }
 
@@ -581,7 +586,7 @@ function showPage2() {
                 validated = 0;
             } else {
                 fName.style.background = "#FFFFFF";
-                validated = 1;
+               // validated = 1;
             }
 
             var SName = document.getElementById("edtSurname");
@@ -590,7 +595,7 @@ function showPage2() {
                 validated = 0;
             } else {
                 SName.style.background = "#FFFFFF";
-                validated = 1;
+                //validated = 1;
             }
 
             var CName = document.getElementById("edtCName");
@@ -599,22 +604,22 @@ function showPage2() {
                 validated = 0;
             } else {
                 CName.style.background = "#FFFFFF";
-                validated = 1;
+                //validated = 1;
             }
 
             var MNum = document.getElementById("edtMNum");
             if (MNum.value == "") {
                 MNum.style.background = "#FFCCCC";
-                validated = 0;
+                //validated = 0;
             } else {
                 MNum.style.background = "#FFFFFF";
-                validated = 1;
+                //validated = 1;
             }
 
             var Email = document.getElementById("edtEmail");
             if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(Email.value)) {
                 Email.style.background = "#FFFFFF";
-                validated = 1;
+                //validated = 1;
             } else {
                 Email.style.background = "#FFCCCC";
                 validated = 0;
@@ -626,7 +631,7 @@ function showPage2() {
                 validated = 0;
             } else {
                 Pass.style.background = "#FFFFFF";
-                validated = 1;
+                //validated = 1;
             }
         }
 
