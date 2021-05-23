@@ -669,13 +669,7 @@ function showPage2() {
             }
         }
 
-
-        if (validated) {
-            document.getElementById("page2").style.display = "block";
-            document.getElementById("page1").style.display = "none";
-            document.getElementById("page3").style.display = "none";
-            document.getElementById("sign-up-form-div").className = "signup-form-steps";
-        }
+        return validated;
 
     }
 
