@@ -40,7 +40,7 @@ class RoomController extends Controller
 
 
 
-        //dd($bg->value);
+       
         return view('auth.register', [
             'logo' => $logo,
             'headingColor' => $headingColor,

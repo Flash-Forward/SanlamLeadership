@@ -33,13 +33,13 @@
 				padding-bottom: 5px;
 				font-size: 50px;
 				font-weight: 100;
-				color: {{$headingColor->value}};
+				color: {{$headingColor->value ?? '' }};
 			}
 			#banner .block h2 {
 			padding-bottom: 25px;
 			font-size: 30px;
 			font-weight: 100;
-			color: {{$subHeadingColor->value}};;
+			color: {{$subHeadingColor->value ?? '' }};
 			}
 		</style>
 	</head>
