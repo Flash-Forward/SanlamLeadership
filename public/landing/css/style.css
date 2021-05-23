@@ -233,18 +233,7 @@ header .navbar {
   z-index: 999;
   color: #fff;
 }
-#banner .block h1 {
-    padding-bottom: 5px;
-    font-size: 50px;
-    font-weight: 100;
-    color: #004d73;
-}
-#banner .block h2 {
-  padding-bottom: 25px;
-  font-size: 30px;
-  font-weight: 100;
-  color: #bda23a;
-}
+
 #banner .block h3 {
   font-size: 18px;
   line-height: 30px;

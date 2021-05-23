@@ -29,6 +29,18 @@
 				border-radius: 10px;
 
 			}
+			#banner .block h1 {
+				padding-bottom: 5px;
+				font-size: 50px;
+				font-weight: 100;
+				color: {{$headingColor->value}};
+			}
+			#banner .block h2 {
+			padding-bottom: 25px;
+			font-size: 30px;
+			font-weight: 100;
+			color: {{$subHeadingColor->value}};;
+			}
 		</style>
 	</head>
 	<body id="top">
@@ -39,10 +51,10 @@
 				<div class="row justify-content-center">
 					<div class="col-md-12">
 						<div class="block">
-							<h1><img src="{{ asset('img') }}/bryte/logo.png" width="35%" alt="" style="position: relative; margin-bottom: 2%;"/></h1>
-							<h1><b>Welcome to the Business Partner Conference</b></h1>
-							<h2><b>Tuesday, 22 June 2021 10:00 – 16:00</b></h2>
-							<h3 style="color: #000000;">Thank you for joining us for our first ever Business Partner Conference! The conference will focus on a range of risk realities and we are delighted to present to you several renowned thought leaders who will share robust insights and interesting perspectives.</h3>
+							<h1><img src="{{ $logo->value ?? '' }}" width="35%" alt="" style="position: relative; margin-bottom: 2%;"/></h1>
+							<h1><b>{{$headingContent->value}}</b></h1>
+							<h2><b>{{$subHeadingContent->value}}</b></h2>
+							<h3 style="color: #000000;">{{$mainContent->value}}</h3>
 							<div class="buttons">
 								<a href="{{ route('register.sa') }}" class="btn btn-learn">Register: South Africa</a>
                                 <a href="{{ route('register.ba') }}" class="btn btn-learn">Register: Botswana</a>

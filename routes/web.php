@@ -13,9 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('auth.register');
-});
+Route::get('/', [App\Http\Controllers\RoomController::class, 'landingPage'])->name('landing');
+
+Route::get('/register/check', [App\Http\Controllers\RoomController::class, 'checkEmail'])->name('email.check');
+
+
 Route::get('/register/sa', function () {
     return view('auth.register2');
 })->name('register.sa');
@@ -38,16 +40,16 @@ Route::get('/lobby2', function () {
     return view('lobby2');
 })->name('lobby2');
 
-Route::get('/exhibition', function () {
-    return view('exhibition');
-})->name('exhibition');
+// Route::get('/exhibition', function () {
+//     return view('exhibition');
+// })->name('exhibition');
 
 Route::get('/exhibition/layouts', function () {
     return view('exhibitionLayouts');
 })->name('exhibitionLayouts');
 
 
-Route::get('/exhibition/layouts/{stands}', [App\Http\Controllers\RoomController::class, 'exhibitionHall'])->name('exhibition.layouts');
+Route::get('/exhibition/layouts/{stands}', [App\Http\Controllers\RoomController::class, 'exhibitionHallTest'])->name('exhibition.layouts');
 
 Route::get('/sregister', [App\Http\Controllers\Auth\RegisterController::class, 'speaker'])->name('sregister');
 
@@ -64,11 +66,11 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('/networkingroom', function () {
         return view('conference.networking');
     })->name('networkingroom');
-    Route::get('/lobby', function () {
-        // dd(session()->all());
+    // Route::get('/lobby', function () {
+    //     // dd(session()->all());
 
-        return view('lobby2');
-    })->name('lobby');
+    //     return view('lobby2');
+    // })->name('lobby');
 
     Route::get('/speaker', function () {
         return view('speaker.landing');
@@ -77,7 +79,9 @@ Route::group(['middleware' => ['auth']], function() {
     // Route::get('/breakaway', function () {
     //     return view('breakaway');
     // })->name('breakaway');
+    Route::get('/lobby', [App\Http\Controllers\RoomController::class, 'mainLobby'])->name('lobby');
     Route::get('/breakaway', [App\Http\Controllers\RoomController::class, 'breakawayRoom'])->name('breakaway');
+    Route::get('/exhibition', [App\Http\Controllers\RoomController::class, 'exhibitionHall'])->name('exhibition');
     Route::get('/innovator', function () {
         return view('innovator');
     })->name('innovator');

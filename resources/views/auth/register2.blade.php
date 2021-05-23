@@ -20,6 +20,9 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.9/dist/sweetalert2.all.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@9.17.2/dist/sweetalert2.min.css">
+
     <!-- Main Stylesheet File -->
     <link href="{{ asset('schedule') }}/css/style.css" rel="stylesheet">
     <style>
@@ -392,7 +395,7 @@
                         <input type="text" name="country" id="country" value="sa" style="display: none"/>
                         <div class="row">
                             <div class="col-sm-4 form-group">
-                                <button type="button" onclick="showPage2();" class="btn bryte-button">{{ __('Next') }}</button>
+                                <button type="button" onclick="checkEmail();" class="btn bryte-button">{{ __('Next') }}</button>
 
                             </div>
                         </div>
@@ -557,9 +560,34 @@
 </body>
 
 <script>
-    function submitForm() {
-
-        
+const swalWithBootstrapButtons = Swal.mixin({
+  customClass: {
+    confirmButton: 'btn bryte-button',
+    cancelButton: 'btn bryte-button'
+  },
+  buttonsStyling: false
+})
+    function checkEmail(){
+        var Email = document.getElementById("edtEmail");
+        $.ajax({
+            url: '{{ route("email.check") }}?e='+Email.value,
+            type: "get",
+            success: function (data) {
+                if (showPage2() && data == "1") {
+                    document.getElementById("page2").style.display = "block";
+                    document.getElementById("page1").style.display = "none";
+                    document.getElementById("page3").style.display = "none";
+                    document.getElementById("sign-up-form-div").className = "signup-form-steps";
+                }else{
+                    swalWithBootstrapButtons.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: data,
+                        //footer: '<a href>Why do I have this issue?</a>'
+                    })
+                }
+            }
+        });
     }
 
     function showNextAfterVoucherPick(){
@@ -670,14 +698,8 @@ function showVoucherOptions(){
                 //validated = 1;
             }
         }
+        return validated;
 
-
-        if (validated) {
-            document.getElementById("page2").style.display = "block";
-            document.getElementById("page1").style.display = "none";
-            document.getElementById("page3").style.display = "none";
-            document.getElementById("sign-up-form-div").className = "signup-form-steps";
-        }
 
     }
 

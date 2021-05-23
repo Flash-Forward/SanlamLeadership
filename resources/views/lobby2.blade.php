@@ -323,51 +323,62 @@ iframe{
 </div> 
 <div id="bg">
     <img src="{{ asset('img') }}/bryte/lobbyb.jpg" class="stretch" alt="" />
+
+    @if($room_two_name->value != "NONE")
     <div id="mainRoomHeadingArea" class="divInImage">
         <div id="mainRoomHeadingText">
-            MAIN ROOM
+            {{$room_three_name->value}}
         </div>
     </div>
     <a id="mainRoom" href="{{ route('room') }}"></a>
+    @endif
 
+    @if($room_two_name->value != "NONE")
     <div id="exhibitionHallHeadingArea" class="divInImage">
         <div id="exhibitionHallHeadingText">
-            EXHIBITION HALL
+        {{$room_two_name->value}}
         </div>
     </div>
     <a id="exhibitionHall" href="{{ route('exhibition') }}"></a>
+    @endif
 
+    @if($room_four_name->value != "NONE")
     <div id="breakawayRoomsHeadingArea" class="divInImage">
         <div id="breakawayRoomsHeadingText">
-            BREAKAWAY ROOMS
+        {{$room_four_name->value}}
         </div>
     </div>
     <a id="breakawayRooms" href="{{ route('breakaway') }}"></a>
+    @endif
 
-    <!-- <div id="networkLoungesHeadingArea" class="divInImage">
+    @if($room_five_name->value != "NONE")
+    <div id="networkLoungesHeadingArea" class="divInImage">
         <div id="networkLoungesHeadingText">
-            SCHEDULE
+        {{$room_five_name->value}}
         </div>
     </div>
     <a id="networkLounges" href="{{ route('networking') }}"></a>
+    @endif
 
+    @if($room_one_name->value != "NONE")
     <div id="innovatorsCafeHeadingArea" class="divInImage">
         <div id="innovatorsCafeHeadingText">
-            SCHEDULE
+        {{$room_one_name->value}}
         </div>
     </div>
-    <a id="innovatorsCafe" href="{{ route('networkingroom') }}"></a> -->
+    <a id="innovatorsCafe" href="{{ route('networkingroom') }}"></a>
+    @endif
 
     <div id="leftBanner" class="divInImage">
-    <img src="{{ asset('img') }}/bryte/sidelobbybanner.jpg" class="stretch" alt="" />
+    <img src="{{ $left_banner->value ?? '' }}" class="stretch" alt="" />
     </div>
 
     <div id="rightBanner" class="divInImage">
-    <img src="{{ asset('img') }}/bryte/sidelobbybanner.jpg" class="stretch" alt="" />
+    <img src="{{ $right_banner->value ?? '' }}" class="stretch" alt="" />
     </div>
 
     <div id="middleBanner" class="divInImage">
-    <img src="{{ asset('img') }}/bryte/loginbanner.png" class="stretch" alt="" />
+    <img src="{{ $middle_banner->value ?? '' }}" class="stretch" alt="" />
     </div>
     
     <a id="helpDesk" onclick="Tawk_API.toggle();"></a>

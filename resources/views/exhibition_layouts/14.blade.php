@@ -338,7 +338,7 @@ h2{
           <a class="stretch standLink" href="{{ route('breakawayroom') }}"></a>
           <img src="{{ asset('img') }}/bryte/exstand.png" class="stretch standImage" alt="" />
           <div class="standlogo">
-            <img src="{{ asset('img') }}/bryte/coke.webp" class="stretch roundLogo" alt="" />
+            <img src="{{ asset('img') }}/bryte/exhibitors/atum.png" class="stretch roundLogo" alt="" />
           </div>
         </div>
 
@@ -346,7 +346,7 @@ h2{
           <a class="stretch standLink" href="{{ route('breakawayroom') }}"></a>
           <img src="{{ asset('img') }}/bryte/exstand.png" class="stretch standImage" alt="" />
           <div class="standlogo">
-            <img src="{{ asset('img') }}/bryte/coke.webp" class="stretch roundLogo" alt="" />
+            <img src="{{ asset('img') }}/bryte/exhibitors/bryte.jpg" class="stretch roundLogo" alt="" />
           </div>
         </div>
 
@@ -354,7 +354,7 @@ h2{
           <a class="stretch standLink" href="{{ route('breakawayroom') }}"></a>
           <img src="{{ asset('img') }}/bryte/exstand.png" class="stretch standImage" alt="" />
           <div class="standlogo">
-            <img src="{{ asset('img') }}/bryte/coke.webp" class="stretch roundLogo" alt="" />
+            <img src="{{ asset('img') }}/bryte/exhibitors/camum.png" class="stretch roundLogo" alt="" />
           </div>
         </div>
 
@@ -362,7 +362,7 @@ h2{
           <a class="stretch standLink" href="{{ route('breakawayroom') }}"></a>
           <img src="{{ asset('img') }}/bryte/exstand.png" class="stretch standImage" alt="" />
           <div class="standlogo">
-            <img src="{{ asset('img') }}/bryte/coke.webp" class="stretch roundLogo" alt="" />
+            <img src="{{ asset('img') }}/bryte/exhibitors/gilela.png" class="stretch roundLogo" alt="" />
           </div>
         </div>
 
@@ -370,7 +370,7 @@ h2{
           <a class="stretch standLink" href="{{ route('breakawayroom') }}"></a>
           <img src="{{ asset('img') }}/bryte/exstand.png" class="stretch standImage" alt="" />
           <div class="standlogo">
-            <img src="{{ asset('img') }}/bryte/logo3.png" class="stretch roundLogo" alt="" />
+            <img src="{{ asset('img') }}/bryte/exhibitors/impac.png" class="stretch roundLogo" alt="" />
           </div>
         </div>
 
@@ -378,7 +378,7 @@ h2{
           <a class="stretch standLink" href="{{ route('breakawayroom') }}"></a>
           <img src="{{ asset('img') }}/bryte/exstand.png" class="stretch standImage" alt="" />
           <div class="standlogo">
-            <img src="{{ asset('img') }}/bryte/nestle.jpeg" class="stretch roundLogo" alt="" />
+            <img src="{{ asset('img') }}/bryte/exhibitors/pcbs.jpg" class="stretch roundLogo" alt="" />
           </div>
         </div>
 
@@ -386,7 +386,7 @@ h2{
           <a class="stretch standLink" href="{{ route('breakawayroom') }}"></a>
           <img src="{{ asset('img') }}/bryte/exstand.png" class="stretch standImage" alt="" />
           <div class="standlogo">
-            <img src="{{ asset('img') }}/bryte/coke.webp" class="stretch roundLogo" alt="" />
+            <img src="{{ asset('img') }}/bryte/exhibitors/phish.PNG" class="stretch roundLogo" alt="" />
           </div>
         </div>
 
@@ -394,7 +394,7 @@ h2{
           <a class="stretch standLink" href="{{ route('breakawayroom') }}"></a>
           <img src="{{ asset('img') }}/bryte/exstand.png" class="stretch standImage" alt="" />
           <div class="standlogo">
-            <img src="{{ asset('img') }}/bryte/coke.webp" class="stretch roundLogo" alt="" />
+            <img src="{{ asset('img') }}/bryte/exhibitors/rsi.jpg" class="stretch roundLogo" alt="" />
           </div>
         </div>
 
@@ -402,7 +402,7 @@ h2{
           <a class="stretch standLink" href="{{ route('breakawayroom') }}"></a>
           <img src="{{ asset('img') }}/bryte/exstand.png" class="stretch standImage" alt="" />
           <div class="standlogo">
-            <img src="{{ asset('img') }}/bryte/coke.webp" class="stretch roundLogo" alt="" />
+            <img src="{{ asset('img') }}/bryte/exhibitors/smartlegal.png" class="stretch roundLogo" alt="" />
           </div>
         </div>
 
@@ -410,7 +410,7 @@ h2{
           <a class="stretch standLink" href="{{ route('breakawayroom') }}"></a>
           <img src="{{ asset('img') }}/bryte/exstand.png" class="stretch standImage" alt="" />
           <div class="standlogo">
-            <img src="{{ asset('img') }}/bryte/coke.webp" class="stretch roundLogo" alt="" />
+            <img src="{{ asset('img') }}/bryte/exhibitors/trum.png" class="stretch roundLogo" alt="" />
           </div>
         </div>
 
@@ -418,7 +418,7 @@ h2{
           <a class="stretch standLink" href="{{ route('breakawayroom') }}"></a>
           <img src="{{ asset('img') }}/bryte/exstand.png" class="stretch standImage" alt="" />
           <div class="standlogo">
-            <img src="{{ asset('img') }}/bryte/coke.webp" class="stretch roundLogo" alt="" />
+            <img src="{{ asset('img') }}/bryte/exhibitors/vapsure.png" class="stretch roundLogo" alt="" />
           </div>
         </div>
 
@@ -426,7 +426,7 @@ h2{
           <a class="stretch standLink" href="{{ route('breakawayroom') }}"></a>
           <img src="{{ asset('img') }}/bryte/exstand.png" class="stretch standImage" alt="" />
           <div class="standlogo">
-            <img src="{{ asset('img') }}/bryte/coke.webp" class="stretch roundLogo" alt="" />
+            <img src="{{ asset('img') }}/bryte/exhibitors/zigora.png" class="stretch roundLogo" alt="" />
           </div>
         </div>
 
