@@ -320,6 +320,71 @@ input.larger {
 	top: 15px;
 	text-transform: none;
 }
+@media only screen 
+            and (max-width : 500px) {
+                .signup-form {
+            /* margin-top: 4%; */
+            /* display: flex; */
+            /* justify-content: center; */
+            /* align-items: center; */
+            background-color: rgba(255, 255, 255, 0.70);
+            padding-top: 2%;
+            padding-right: 2%;
+            padding-left: 2%;
+            padding-bottom: 0 !important;
+            position: relative;
+            top: 15px;
+            transform: translateX(0);
+            left: 10%;
+            width: 80% !important;
+            border-radius: 10px;
+        }
+
+        .signup-form-steps {
+            /* margin-top: 4%; */
+            /* display: flex; */
+            /* justify-content: center; */
+            /* align-items: center; */
+            background-color: rgba(255, 255, 255, 0.70);
+            padding-top: 1%;
+            padding-right: 1%;
+            padding-left: 1%;
+            padding-bottom: 0 !important;
+            position: relative;
+            top: 15px;
+            transform: translateX(0);
+            left: 10%;
+            width: 80% !important;
+            border-radius: 10px;
+        }
+
+        h2
+{
+	font-weight: bold;
+	text-align: center;
+	padding: 10px 0;
+	background-color: #eee;
+	mix-blend-mode: multiply;
+	width: 100%;
+	position: relative;
+	text-transform: none;
+    border-radius: 10px;
+}
+
+h2.question
+{
+	font-weight: bold;
+	text-align: center;
+	padding: 10px 0;
+	background-color: #004d73 !important;
+	mix-blend-mode: normal !important;
+	width: 100%;
+	position: relative;
+	text-transform: none;
+    border-radius: 10px;
+    font-size: 5vw;
+}
+            }
 </style>
 
 </head>

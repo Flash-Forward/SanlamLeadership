@@ -41,6 +41,19 @@
 			font-weight: 100;
 			color: {{$subHeadingColor->value ?? '' }};
 			}
+
+			@media only screen 
+            and (max-width : 500px) {
+				.greyBox{
+				width: 80% !important;
+				height: 60% !important;
+				padding: 2%;
+				background-color: rgba(255,255,255,0.50);
+				border-radius: 10px;
+
+			}
+
+			}
 		</style>
 	</head>
 	<body id="top">
