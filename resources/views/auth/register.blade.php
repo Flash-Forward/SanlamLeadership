@@ -21,6 +21,13 @@
 		<link rel="stylesheet" href="{{ asset('landing') }}/css/style.css">
 		<link rel="stylesheet" href="{{ asset('landing') }}/css/responsive.css">
 		<style>
+		#banner {
+  background: url('{{$bgL->value}}');
+  background-size: cover;
+  padding: 250px 0;
+  position: relative;
+  text-align: center;
+}
 			.topLogo{
 				width: 35%;
 				position: relative; 

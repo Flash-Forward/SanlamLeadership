@@ -17,6 +17,9 @@ class RoomController extends Controller
 
         $email = $request->get('e');
 
+        if($email == "")
+            return "Email field is empty.";
+
         $res = User::where("email", $email)->first();
         if($res)
             return "This email has already been registered.";
@@ -30,6 +33,8 @@ class RoomController extends Controller
     }
 
     public function landingPage(config $config){
+        $bgL = $config::where("key", "landing_background")->first();
+
         $logo = $config::where("key", "landing_logo")->first();
         $headingColor = $config::where("key", "heading_color")->first();
         $headingContent = $config::where("key", "heading_content")->first();
@@ -42,6 +47,7 @@ class RoomController extends Controller
 
        
         return view('auth.register', [
+            'bgL' => $bgL,
             'logo' => $logo,
             'headingColor' => $headingColor,
             'headingContent' => $headingContent,
