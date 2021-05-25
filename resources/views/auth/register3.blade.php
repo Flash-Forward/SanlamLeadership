@@ -322,6 +322,20 @@ input.larger {
 }
 @media only screen 
             and (max-width : 500px) {
+                #bg 
+{
+position: relative;
+    background-image: url("{{ asset('img') }}/bryte/bg2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    max-height: 200vh !important;
+    /* overflow-y: auto !important; */
+    width: 100%;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+}
                 .signup-form {
             /* margin-top: 4%; */
             /* display: flex; */

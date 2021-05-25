@@ -23,7 +23,7 @@ class RoomController extends Controller
         
         $res = RegisterWhitelist::where("email", $email)->first();
         if(!$res)
-            return "This email has not been invited to the Bryte Business Partner Conference. Please contact Roxanne";
+            return "This email has not been invited to the Bryte Business Partner Conference. Please contact Roxanne : Roxanne.Ho-Tong@brytesa.com";
         
         return "1";
 
