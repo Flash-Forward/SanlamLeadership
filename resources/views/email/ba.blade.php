@@ -477,20 +477,24 @@
                         <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
                         
                             <div style="text-align: center;"><span style="font-size:16px"><font face="arial, helvetica neue, helvetica, sans-serif">Dear&nbsp;{{$name}}</font></span><br>
-<br>
-Thank you for registering to attend the <strong>Bryte Business Partner Conference</strong>, taking place on <strong>Tuesday the</strong>&nbsp;<strong>22 June, from 10:00 to 16:30.</strong><br>
-<br>
-We are excited to host you at our annual event, where we will be sharing robust, expert insights and discussing trends that will shape the insurance landscape in 2021. You will also have access to various breakaway rooms, including one specific to our Botswana market, where you can engage on specific risk management offerings and interact with our specialists. In addition, our exhibitor stand will provide an opportunity for seamless engagement with Bryte’s UMA partners and specialist lines experts.<br>
-<br>
-Below is the link you will use to access the platform on 22 June 2021. <strong>Please keep this email in a safe and easy to find place as you will need the link below to join</strong>. We ask that you please dial in at least 15 minutes ahead of the official start time. Ahead of the event, you will also receive a video user guide to help you navigate the virtual platform.<br>
+							<br>
+Thank you for registering to attend the <strong>Bryte Business Partner Conference</strong> on <strong>Tuesday,</strong> <strong>22 June. </strong><br>
+&nbsp;<br>
+We are excited to host you at our annual event. From <strong>10:00 – 12:30</strong>, we will be sharing robust, expert insights and discussing trends that will shape the insurance landscape in 2021.<br>
+&nbsp;<br>
+<strong>From 12:30</strong>, you will have access to various breakaway rooms including one specific to our Botswana market, where you can engage on specific risk management offerings and interact with our specialists. Our exhibitor stands will provide an opportunity for seamless engagement with our UMA partners and specialist lines experts.<br>
+&nbsp;<br>
+Below is the link you will use to access the platform on <strong>22 June 2021</strong>. You will need to install either Google Chrome or Mozilla Firefox browsers to access the platform.<br>
+&nbsp;<br>
+<strong>Please keep this email as you will need the link below to join</strong>. We ask that you access the platform at least 15 minutes ahead of the official start time. Ahead of the event, you will also receive a video user guide to help you navigate the virtual platform.<br>
 &nbsp;<br>
 <a href="https://bryte.welink.live/login">https://bryte.welink.live/login</a><br>
+<br>
+<strong>Please note that your invite is unique to you, so if any of your colleagues would like to attend, please contact </strong><a href="mailto:events@brytesa.com"><strong>events@brytesa.com</strong></a><strong> to extend an invitation to them</strong>.<br>
 &nbsp;<br>
-<strong>Please note that your invite is unique to you, so if any of your colleagues would like to attend, please contact events@brytesa.com to extend an invitation to them</strong>.<br>
+Remember, lunch is on us! We will be sending your lunch voucher and hope you will join us at our virtual lunch table.<br>
 &nbsp;<br>
-Remember, lunch is on us! We will be sending you your lunch voucher and hope you will join us at our virtual lunch table.<br>
-&nbsp;<br>
-We can’t wait to see you there!</div>
+We can't wait to see you there!<br>&nbsp;</div>
 
                         </td>
                     </tr>
@@ -532,7 +536,7 @@ We can’t wait to see you there!</div>
                             <em>Copyright © 2021, Bryte Insurance Company LTD , All rights reserved.</em><br>
 <br>
 <strong>Our mailing address is:</strong><br>
-bryte@flash-forward.co.za<br>
+events@brytesa.com<br>
 <br>
 Want to change how you receive these emails?<br>
 You can <a href="*|UPDATE_PROFILE|*">update your preferences</a> or <a href="*|UNSUB|*">unsubscribe from this list</a>.<br>
