@@ -21,6 +21,11 @@
 		<link rel="stylesheet" href="{{ asset('landing') }}/css/style.css">
 		<link rel="stylesheet" href="{{ asset('landing') }}/css/responsive.css">
 		<style>
+					.topLogo{
+				width: 35%;
+				position: relative; 
+				margin-bottom: 2%;
+			}
 			.greyBox{
 				width: 55% !important;
 				height: 60% !important;
@@ -40,6 +45,11 @@
 				border-radius: 10px;
 
 			}
+			.topLogo{
+				width: 70%;
+				position: relative; 
+				margin-bottom: 2%;
+			}
 
 			}
 		</style>
@@ -52,7 +62,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="block">
-							<h1><img src="{{ asset('img') }}/bryte/logo.png" width="35%" alt=""  style="position: relative; margin-bottom: 2%;"/></h1>
+							<h1><img src="{{ asset('img') }}/bryte/logo.png" class="topLogo" alt="" /></h1>
 							<h1><b>Thank you!</b></h1>
 							<h2><b>You have successfully completed your registration for Bryte’s Business Partner Conference 2021.</b></h2>
 							<h3  style="color: #000000;">We have sent you an email confirming

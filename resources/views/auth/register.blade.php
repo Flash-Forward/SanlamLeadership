@@ -21,6 +21,11 @@
 		<link rel="stylesheet" href="{{ asset('landing') }}/css/style.css">
 		<link rel="stylesheet" href="{{ asset('landing') }}/css/responsive.css">
 		<style>
+			.topLogo{
+				width: 35%;
+				position: relative; 
+				margin-bottom: 2%;
+			}
 			.greyBox{
 				width: 55% !important;
 				height: 60% !important;
@@ -52,6 +57,11 @@
 				border-radius: 10px;
 
 			}
+			.topLogo{
+				width: 70%;
+				position: relative; 
+				margin-bottom: 2%;
+			}
 
 			}
 		</style>
@@ -64,7 +74,7 @@
 				<div class="row justify-content-center">
 					<div class="col-md-12">
 						<div class="block">
-							<h1><img src="{{ $logo->value ?? '' }}" width="35%" alt="" style="position: relative; margin-bottom: 2%;"/></h1>
+							<h1><img src="{{ $logo->value ?? '' }}" class="topLogo" alt=""/></h1>
 							<h1><b>{{$headingContent->value}}</b></h1>
 							<h2><b>{{$subHeadingContent->value}}</b></h2>
 							<h3 style="color: #000000;">{{$mainContent->value}}</h3>
