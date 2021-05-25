@@ -42,7 +42,7 @@ class SendBryteMail extends Mailable  implements ShouldQueue
         $dtend =  gmdate('Ymd\THis\Z', $meetingstampEnd);
         $todaystamp = gmdate('Ymd\THis\Z');
         $uid = date('Ymd') . 'T' . date('His') . '-' . rand() . '@flash-forward.co.za';
-        $description = "Bryte: Business Partner Conference";
+        $description = 'Please click here to login to the Bryte Business Partner Conference"\n" https://bryte.welink.live/login';
         $location = "https://bryte.welink.live/login";
         $titulo_invite = "Bryte: Business Partner Conference";
         $organizer = "CN=WeLink:bryte@flash-forward.co.za";
