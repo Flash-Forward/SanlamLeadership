@@ -434,7 +434,7 @@ h2{
           <a class="stretch standLink" href="{{ route('breakawayroom') }}"></a>
           <img src="{{ asset('img') }}/bryte/exstand.png" class="stretch standImage" alt="" />
           <div class="standlogo">
-            <img src="{{ asset('img') }}/bryte/coke.webp" class="stretch roundLogo" alt="" />
+            <img src="{{ asset('img') }}/bryte/exhibitors/bryte.jpg" class="stretch roundLogo" alt="" />
           </div>
         </div>
 
@@ -442,7 +442,7 @@ h2{
           <a class="stretch standLink" href="{{ route('breakawayroom') }}"></a>
           <img src="{{ asset('img') }}/bryte/exstand.png" class="stretch standImage" alt="" />
           <div class="standlogo">
-            <img src="{{ asset('img') }}/bryte/coke.webp" class="stretch roundLogo" alt="" />
+            <img src="{{ asset('img') }}/bryte/exhibitors/tracker2.png" class="stretch roundLogo" alt="" />
           </div>
         </div>
 
