@@ -54,9 +54,9 @@ class SendBryteMail extends Mailable  implements ShouldQueue
         $mail[3] = "CALSCALE:GREGORIAN";
         $mail[4] = "METHOD:REQUEST";
         $mail[5] = "BEGIN:VEVENT";
-        $mail[6] = "DTSTART;TZID=Africa/Johannesburg:" . $dtstart;
-        $mail[7] = "DTEND;TZID=Africa/Johannesburg:" . $dtend;
-        $mail[8] = "DTSTAMP;TZID=Africa/Johannesburg:" . $todaystamp;
+        $mail[6] = "DTSTART;TZID=Africa/Johannesburg:" . substr($dtstart, 0, -1);
+        $mail[7] = "DTEND;TZID=Africa/Johannesburg:" . substr($dtend, 0, -1);
+        $mail[8] = "DTSTAMP;TZID=Africa/Johannesburg:" . substr($todaystamp, 0, -1);
         $mail[9] = "UID:" . $uid;
         $mail[10] = "ORGANIZER;" . $organizer;
         $mail[11] = "CREATED:" . $todaystamp;

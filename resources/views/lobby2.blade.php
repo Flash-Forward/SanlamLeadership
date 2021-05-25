@@ -205,15 +205,15 @@ body, html {
 }
 
 #leftBanner{
-   width:10%;
-    height:43%;
+   width:9vw;
+    height:22.5vw;
     top:7%;
-    left:19.6%;
+    left:20.2%;
 }
 
 #rightBanner{
-   width:10%;
-    height:43%;
+  width:9vw;
+    height:22.5vw;
     top:7%;
     left:70.6%;
 }
@@ -234,8 +234,8 @@ body, html {
   border-radius:50% 50% 0 0 ;
 }
 #middleBanner{
-   width:34%;
-    height:26%;
+   width:34vw;
+    height:11.2vw;
     top:7%;
     left:33%;
 }
