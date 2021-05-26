@@ -467,7 +467,7 @@ h2.question
                         <div class="row">
                             <div class="col-sm-12 form-group">
                                 <label for="edtPass">Password</label>
-                                <input type="password" class="form-control" placeholder="Password" id="edtPass" name="edtPass"/>
+                                <input type="password" class="form-control" placeholder="Please create a password that you will use on the day of the event to login to the Virtual Platform" id="edtPass" name="edtPass"/>
                                 
                             </div>
                         </div>
