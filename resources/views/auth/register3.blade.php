@@ -494,14 +494,14 @@ h2.question
                         </div>
                         <!-- <div class="row justify-content-center"> -->
                         <div class="inputGroup">
-                            <input id="voucherRadio1" name="voucherRadio" type="radio" onclick="showVoucherOptions()"/>
+                            <input id="voucherRadio1" name="voucherRadio" type="radio" onclick="showVoucherOptions()" value="YES"/>
                             <label for="voucherRadio1">Yes</label>
                         </div>
 
                         <!-- </div> -->
                         <!-- <div class="row justify-content-center"> -->
                         <div class="inputGroup">
-                            <input id="voucherRadio2" name="voucherRadio" type="radio" onclick="showVoucherOptions()"/>
+                            <input id="voucherRadio2" name="voucherRadio" type="radio" onclick="showVoucherOptions()" value="NO"/>
                             <label for="voucherRadio2">No</label>
                         </div>
                         <div id="voucherOptions" style="display:none">
@@ -511,18 +511,18 @@ h2.question
                                 </div>
                             </div>
                             <div class="inputGroup">
-                                <input id="uberEats" name="voucherChoiceRadio" type="radio"  onclick="showNextAfterVoucherPick()"/>
+                                <input id="uberEats" name="voucherChoiceRadio" type="radio"  onclick="showNextAfterVoucherPick()" value="UBER"/>
                                 <label for="uberEats">Uber Eats</label>
                             </div>
 
                             <!-- </div> -->
                             <!-- <div class="row justify-content-center"> -->
                             <div class="inputGroup">
-                                <input id="mrDFood" name="voucherChoiceRadio" type="radio"  onclick="showNextAfterVoucherPick()"/>
+                                <input id="mrDFood" name="voucherChoiceRadio" type="radio"  onclick="showNextAfterVoucherPick()" value="MRD"/>
                                 <label for="mrDFood">Mr D Food</label>
                             </div>
                             <div class="inputGroup">
-                                <input id="noVoucher" name="voucherChoiceRadio" type="radio"  onclick="showNextAfterVoucherPick()"/>
+                                <input id="noVoucher" name="voucherChoiceRadio" type="radio"  onclick="showNextAfterVoucherPick()" value="NEITHER"/>
                                 <label for="noVoucher">Neither is available in my area</label>
                             </div>
                         </div>
