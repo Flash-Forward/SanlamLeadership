@@ -121,7 +121,7 @@ body, html {
     height: inherit !important;
 }
 #bg{
-    background: url("{{ asset('img') }}/bryte/regbg.jpg");
+    background: url("{{ asset('img') }}/bryte/bg3.jpg");
     background-size: cover;
   height: 100%;
 }

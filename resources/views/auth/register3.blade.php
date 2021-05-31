@@ -675,18 +675,20 @@ function showNextAfterVoucherPick(){
     document.getElementById("page2Next").style.display = "inline-block";
 }
 function showVoucherOptions(){
-    var checkBox = document.getElementById("voucherRadio1");
-  // Get the output text
-  var voucherOptions = document.getElementById("voucherOptions");
-
-  // If the checkbox is checked, display the output text
-  if (checkBox.checked == true){
-    voucherOptions.style.display = "block";
-    document.getElementById("page2Next").style.display = "none";
-  } else {
-    voucherOptions.style.display = "none";
     document.getElementById("page2Next").style.display = "inline-block";
-  }
+
+//     var checkBox = document.getElementById("voucherRadio1");
+//   // Get the output text
+//   var voucherOptions = document.getElementById("voucherOptions");
+
+//   // If the checkbox is checked, display the output text
+//   if (checkBox.checked == true){
+//     voucherOptions.style.display = "block";
+//     document.getElementById("page2Next").style.display = "none";
+//   } else {
+//     voucherOptions.style.display = "none";
+//     document.getElementById("page2Next").style.display = "inline-block";
+//   }
 }
 
 function showInvite(){

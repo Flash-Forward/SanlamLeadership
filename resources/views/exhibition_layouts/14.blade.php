@@ -70,8 +70,8 @@ body, html {
   flex-direction: column;
   /* background: url("{{ asset('img') }}/bryte/breakawayroom.png"); */
   background-size: cover;
-  width:80%;
-    height:80%;
+  width:80vw;
+    height:80vh;
     top:10%;
     left:10%;
     border-radius: 35px;
