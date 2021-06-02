@@ -706,6 +706,14 @@ function showVoucherOptions(){
     document.getElementById("page2Next").style.display = "inline-block";
   }
 }
+$(document).ready(function() {
+  $(window).keydown(function(event){
+    if(event.keyCode == 13) {
+      event.preventDefault();
+      return false;
+    }
+  });
+});
 
     var invite_num = 2;
     function addInvite() {

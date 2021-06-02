@@ -554,13 +554,14 @@ h2.question
                         <!-- </div> -->
                         <!-- <div class="row justify-content-center"> -->
                         <div class="inputGroup">
-                            <input id="claimsProc" name="claimsProc" type="checkbox"/>
-                            <label for="claimsProc">Bespoke Solutions for the Hospitality Sector</label>
+                            <input id="bespokeSol" name="bespokeSol" type="checkbox"/>
+                            <label for="bespokeSol">Bespoke Solutions for the Hospitality Sector</label>
                         </div>
                         <div class="inputGroup">
-                            <input id="bespokeSol" name="bespokeSol" type="checkbox"/>
-                            <label for="bespokeSol">Claims and Procurement</label>
+                            <input id="claimsProc" name="claimsProc" type="checkbox"/>
+                            <label for="claimsProc">Claims and Procurement</label>
                         </div>
+
                         <!-- </div> -->
                         <div class="row justify-content-center" style="margin-top:3.5%;">
                             <div class="form-group">
@@ -668,6 +669,14 @@ const swalWithBootstrapButtons = Swal.mixin({
 function submitForm(){
     window.location = "{{ route('thankyou') }}";
 }
+$(document).ready(function() {
+  $(window).keydown(function(event){
+    if(event.keyCode == 13) {
+      event.preventDefault();
+      return false;
+    }
+  });
+});
 var invite_num = 2;
     function addInvite() {
         
