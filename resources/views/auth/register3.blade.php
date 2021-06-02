@@ -548,14 +548,18 @@ h2.question
                         <!-- <div class="row justify-content-center"> -->
                         <div class="inputGroup">
                             <input id="launchBondsGuar" name="launchBondsGuar" type="checkbox"/>
-                            <label for="launchBondsGuar">Launching Bonds and Guarantees</label>
+                            <label for="launchBondsGuar">New Product offering - Bonds & Guarantees</label>
                         </div>
 
                         <!-- </div> -->
                         <!-- <div class="row justify-content-center"> -->
                         <div class="inputGroup">
+                            <input id="claimsProc" name="claimsProc" type="checkbox"/>
+                            <label for="claimsProc">Bespoke Solutions for the Hospitality Sector</label>
+                        </div>
+                        <div class="inputGroup">
                             <input id="bespokeSol" name="bespokeSol" type="checkbox"/>
-                            <label for="bespokeSol">Bespoke solutions for claims in the hospitality sector – Our shop window</label>
+                            <label for="bespokeSol">Claims and Procurement</label>
                         </div>
                         <!-- </div> -->
                         <div class="row justify-content-center" style="margin-top:3.5%;">

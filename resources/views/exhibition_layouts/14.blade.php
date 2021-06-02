@@ -106,7 +106,7 @@ body, html {
   display: grid;
     grid-template-columns: repeat(60, 1fr);
     grid-template-rows: repeat(60, 1vw);
-    grid-gap: 15px;
+    grid-gap: 16px;
     position:absolute;
     /* transform: perspective(600px) rotateX(22deg);
     backface-visibility: visible;
@@ -434,7 +434,7 @@ h2{
           <a class="stretch standLink" href="{{ route('breakawayroom') }}"></a>
           <img src="{{ asset('img') }}/bryte/exstand2.png" class="stretch standImage" alt="" />
           <div class="standlogo">
-            <img src="{{ asset('img') }}/bryte/exhibitors/bryte.jpg" class="stretch roundLogo" alt="" />
+            <img src="{{ asset('img') }}/bryte/exhibitors/brytehosp.jpg" class="stretch roundLogo" alt="" />
           </div>
         </div>
 
