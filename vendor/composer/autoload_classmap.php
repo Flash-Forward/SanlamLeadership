@@ -29,6 +29,8 @@ return array(
     'App\\Http\\Middleware\\VerifyCsrfToken' => $baseDir . '/app/Http/Middleware/VerifyCsrfToken.php',
     'App\\Jobs\\SendEmailJob' => $baseDir . '/app/Jobs/SendEmailJob.php',
     'App\\Mail\\SendBryteMail' => $baseDir . '/app/Mail/SendBryteMail.php',
+    'App\\Models\\Exhibitor' => $baseDir . '/app/Models/Exhibitor.php',
+    'App\\Models\\RegisterWhitelist' => $baseDir . '/app/Models/RegisterWhitelist.php',
     'App\\Models\\User' => $baseDir . '/app/Models/User.php',
     'App\\Models\\config' => $baseDir . '/app/Models/config.php',
     'App\\Models\\room' => $baseDir . '/app/Models/room.php',

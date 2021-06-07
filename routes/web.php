@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/schedule/1', [App\Http\Controllers\RoomController::class, 'schedule'])->name('schedule');
+
 Route::get('/', [App\Http\Controllers\RoomController::class, 'landingPage'])->name('landing');
 
 Route::get('/register/check', [App\Http\Controllers\RoomController::class, 'checkEmail'])->name('email.check');
@@ -52,11 +54,14 @@ Route::get('/exhibition/layouts', function () {
 Route::get('/exhibition/layouts/{stands}', [App\Http\Controllers\RoomController::class, 'exhibitionHallTest'])->name('exhibition.layouts');
 
 Route::get('/sregister', [App\Http\Controllers\Auth\RegisterController::class, 'speaker'])->name('sregister');
+Route::group(['middleware' => ['auth', 'role:1']], function() {
 
-Route::group(['middleware' => ['auth']], function() {
-    Route::get('/room', function () {
-        return view('conference.room');
-    })->name('room');
+    Route::get('/speaker/{order?}', [App\Http\Controllers\RoomController::class, 'conference'])->name('speaker');
+
+});
+Route::group(['middleware' => ['auth', 'role:2']], function() {
+    Route::get('/room/{order?}', [App\Http\Controllers\RoomController::class, 'conference'])->name('room');
+
     Route::get('/breakawayroom', function () {
         return view('conference.breakaway');
     })->name('breakawayroom');
@@ -66,19 +71,7 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('/networkingroom', function () {
         return view('conference.networking');
     })->name('networkingroom');
-    // Route::get('/lobby', function () {
-    //     // dd(session()->all());
 
-    //     return view('lobby2');
-    // })->name('lobby');
-
-    Route::get('/speaker', function () {
-        return view('speaker.landing');
-    })->name('speaker');
-
-    // Route::get('/breakaway', function () {
-    //     return view('breakaway');
-    // })->name('breakaway');
     Route::get('/lobby', [App\Http\Controllers\RoomController::class, 'mainLobby'])->name('lobby');
     Route::get('/breakaway', [App\Http\Controllers\RoomController::class, 'breakawayRoom'])->name('breakaway');
     Route::get('/exhibition', [App\Http\Controllers\RoomController::class, 'exhibitionHall'])->name('exhibition');
@@ -88,25 +81,5 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('/networking', function () {
         return view('networking');
     })->name('networking');
-    Route::get('/help', function () {
-        return view('help');
-    })->name('help');
 
-    Route::get('/exhibitor/1', function () {
-        return view('conference.flashforward');
-    })->name('flashforward');
-    Route::get('/exhibitor/2', function () {
-        return view('conference.wizzardly');
-    })->name('wizzardly');
-    Route::get('/exhibitor/3', function () {
-        return view('conference.alchemy');
-    })->name('alchemy');
-    Route::get('/exhibitor/4', function () {
-        return view('conference.welink');
-    })->name('welink');
-
-    //Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-    Route::get('/home', function () {
-        return view('lobby');
-    })->name('home');
 });

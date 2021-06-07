@@ -1,0 +1,466 @@
+body, html 
+{
+  height: 100%;
+  margin: 0;
+}
+
+/** SCHARED **/
+/**
+{
+**/
+/**
+}
+**/
+
+/** REGISTRATION FORM **/
+/**
+{
+**/
+#nav-tab {margin-top:10px;}
+#registration-header > h1
+{
+	font-weight: bold;
+	text-align: center;
+	padding: 10px 0;
+	background-color: #eee;
+	mix-blend-mode: multiply;
+	width: 100%;
+	position: relative;
+	top: 15px;
+	text-transform: uppercase;
+}
+
+#bg 
+{
+position: relative;
+    background-image: url(/images/bg3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    max-height: 200vh !important;
+    /* overflow-y: auto !important; */
+    width: 100%;
+    height: 125vh;
+    left: 0px;
+    top: 0px;
+}
+
+.stretch {
+    width:100%;
+    /* height:100%; */
+    z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
+}
+.divInImage {
+    /* border:1px solid #fff; */
+    display:block;
+    position:absolute;
+    /* background-color:rgba(0,0,0,0.1); */
+}
+#bg a {
+    /* border:1px solid #fff; */
+    display:block;
+    position:absolute;
+    background-color:rgba(0,0,0,0.1);
+}
+#bg a:hover {
+    background-color:rgba(255,255,255,0.3);
+}
+#banner
+{
+	object-fit: cover; /* Do not scale the image */
+	object-position: center; /* Center the image within the element */
+	width:100%;
+	text-align: center;
+	text-transform: uppercase;
+}
+#myImage_zone2{
+    width:11%;
+    height:36px;
+    top:805px;
+    left:44.5%;
+}
+#myImage_zone3{
+   width:15%;
+    height:15%;
+    top:35%;
+    left:52%;
+}
+.signup-form
+{
+    /* margin-top: 4%; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    background-color: rgba(0,0,0,0.70);
+    padding: 5%;
+    position: relative;
+    top: 15px;
+    transform: translateX(0);
+    left: 10%;
+    width: 80% !important;
+	border-radius: 10px;
+}
+.signup-form  label
+{
+	color: #ccc;
+}
+
+.btn-circle 
+{
+	width: 70px;
+	height: 70px;
+	padding: 10px 16px;
+	border-radius: 35px;
+	font-size: 24px;
+	line-height: 1.33;
+}
+
+input, select 
+{
+	height: 34px;
+	/* width: 30% !important; */
+  display: block;
+  /* margin-bottom:42px; */
+  /* margin-left:5%; */
+  padding: 1.6vh 1.4vh;
+  box-sizing: border-box;
+  font-family: "Arial", "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+  #regNowBtn{
+      position: relative;
+    left: 18%;
+    display: block;
+    width: 80%; 
+    height: 20%; 
+}
+
+.regBtn{
+    width: inherit !important;
+    height: inherit !important;
+}
+/**
+}
+**/
+
+/**SCHEDULE **/
+/**
+{
+**/
+table#schedule-container
+{
+	width:100%;
+}
+.schedule-heading
+{
+	background-color:rgba(138,95,57,0.50);
+	mix-blend-mode: multiply;
+}
+.schedule-title
+{
+	text-transform: uppercase;
+	text-align: center;
+}
+.schedule-col-heading
+{
+	background-color:rgba(38,220,59,0.3);
+	mix-blend-mode: multiply;
+}
+.schedule-col-title
+{
+	text-transform: uppercase;
+    padding-left: 1em;
+    padding-top: 1em;
+}
+.schedule-row-data
+{
+	background-color:rgba(249,249,251,0.74);
+	padding-top: 5px;
+}
+
+.data-alt
+{
+	background-color:rgba(247,241,90,0.9);
+}
+
+.schedule-inner-data
+{
+	background-color:rgba(220,15,193,0.35);
+}
+
+.schedule-inner-data.data-alt
+{
+	background-color:rgba(8,176,17,0.35);
+}
+
+.schedule-col-data
+{
+	padding-left: 1em;
+}
+
+.room-fold
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 95%;
+    background-image: url(/images/room-fold-02.png);
+    background-position: 0 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* border: thin red solid; */
+    z-index: 999 !important;
+    /* transform: rotate(-90deg);*/
+}
+
+.room-strip
+{
+	position: relative;
+	padding: 0 !important;
+}
+
+p.room-name
+{
+	margin:0;
+	font-size: 14px;
+	font-style: italic;
+}
+
+td.schedule-col-data  a
+{
+	background-color: transparent !important;
+	margin: auto;
+	display: block;	
+}
+
+.schedule-col-data ul
+{
+	list-style: decimal-leading-zero;
+	text-align: left;
+	margin-left: -0.8em;
+}
+
+.schedule-col-data ul li
+{
+	font-size:12px;
+}
+
+div.border-r {border-right: thin #0e1b4d solid;}
+div.border-l {border-left: thin #0e1b4d solid;}
+
+nav.inner-tab
+{
+	line-height: 3px !important;
+    margin-top: 0;
+}
+
+div.room-card
+{
+    background-color: aliceblue;
+    padding: 0 10px;
+    border-radius: 15px;
+    margin: 0 10px;
+}
+
+div.speaker-item
+{
+	border: 1px #eee solid;
+	background-color: rgba(0, 77, 115, 0.1) !important;
+	border-radius: 5px;
+	margin: 5px;
+}
+
+div.topic-item
+{
+	border: 1px #eee solid;
+	background-color: rgba(0, 77, 115, 0.1) !important;
+	border-radius: 5px;
+	margin: 5px;
+}
+
+div.tab-content
+{
+    padding-bottom: 35px;
+    padding-top: 0;
+    margin-top: -15px;
+}
+
+img.speaker-pic
+{
+	height: 150px;
+    width: auto;
+    margin: 5px -10px;
+    justify-content: center;
+}
+
+img.topic v -pic
+{
+	height: 70px;
+    width: auto;
+    margin: 5px -10px;
+    justify-content: center;
+}
+
+.room-card h2.mb-0
+{
+	background-color: #eee;
+	border: thin silver solid !important;
+	margin-bottom: 6px !important;
+}
+
+h2.mb-0 a.room-card
+{
+    /*margin: 0 -5px 1px 18px;*/
+    background-color: #eee;
+	padding: 8px !important;	
+}
+
+.accordion .accordion-wrapper .card-body{color: #0e1b4d; }
+
+/*
+when card collapsed:
+.accordion .accordion-wrapper .card-header h2 a::after
+
+when card expanded:
+.accordion .accordion-wrapper .card-header h2 a.collapsed::after {
+*/
+
+.accordion .accordion-wrapper {padding: 22px 40px 22px 0;}
+
+.accordion .accordion-wrapper .card-header h2 a::after
+{
+	content: "\f078";
+	font-size:22px !important;
+	color:#dac057;
+	transform: rotate(-180deg);
+}
+
+.accordion .accordion-wrapper .card-header h2 a.collapsed::after
+{
+	content: "\f078";
+	font-size:22px !important;
+	color:#004d73;
+	transform: rotate(-0deg);
+}
+
+/*h2.mb-0 a.room-card::after*/
+.accordion .accordion-wrapper .card-header h2 a.room-card::after
+{
+	content: "\f078";
+	transform: rotate(0deg);
+	color:#dac057;
+	font-size:16px !important;
+}
+
+/*h2.mb-0 a.room-card.collapsed::after*/
+.accordion .accordion-wrapper .card-header h2 a.room-card.collapsed::after
+{
+	content: "\f078";
+	transform: rotate(180deg);
+	color:#004d73;
+	font-size:16px !important;
+	top: 30%;
+}
+
+div.join-link
+{
+	background-color: #004d73;
+	color: white !important;
+    text-align: center;
+    margin: auto;
+    border-radius: 8px;
+	padding: 5px 0;
+	border: 2px #eee solid;
+}
+
+div.interval-item
+{
+	color: #004d73;
+    font-size: 16px;
+    font-weight: 800;
+	padding: 25px 30px 25px 0px;
+}
+
+div.card-break
+{
+	margin: 0 12px;
+	position: absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.accordion>.card>.interval-item
+{
+	background-color: rgba(218, 192, 87, 0.5);
+    border-radius: 10px;
+}
+
+.card-header-image
+{
+	width: 150px;
+    height: 100px;
+    background-size: cover;
+    background-position: center center;
+	background-repeat: no-repeat;
+	border: thin #eae7f4 solid;
+    border-radius: 12px;
+	margin: 6px 6px;
+}
+
+.accordion .accordion-wrapper .card-header a.btn-link.collapsed
+{
+	/*border-bottom: 1px solid #eae7f4;*/
+}
+
+.accordion .accordion-wrapper .card:not(.room-card):not(.interval-item)
+{
+	box-shadow: 4px 4px 7px #004d73;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	background: none;
+	border: 0;
+}
+
+.accordion .accordion-wrapper .card:hover:not(.room-card):not(.interval-item)
+{
+	transform: scale(1.03);
+}
+
+.accordion .nav-tabs 
+{
+    margin-bottom: 2px !important;
+	justify-content: center;
+}
+
+span.speaker
+{
+    font-size: 15px;
+    margin-bottom: 15px;
+    font-weight: normal;
+    line-height: initial;
+}
+
+div.speaker-pic
+{
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 150px;
+    margin-top: 12px;
+    border-radius: 7px;
+	background-color: rgba(218, 192, 87, 0.5);
+}
+	
+@media only screen and (min-width: 276px) and (max-width: 576px)
+{
+	nav.inner-tab{line-height: 15px !important;}
+}
+
+/**
+}
+**/

@@ -202,7 +202,7 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 }
 function login(){
     var email = document.getElementById('email').value;
-    if(email != "ffp@gmail.com")
+    if(email != "ffp@gmail.com" && email != 'wade@atu.co.za' && email != 'cavanzyl@tracker.co.za' && email != 'scrowder@tracker.co.za' && email != 'swatt@tracker.co.za')
         alert('THIS EVENT HAS NOT STARTED');
     else
         document.getElementById('login-form').submit();

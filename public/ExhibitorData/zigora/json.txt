@@ -1,0 +1,5 @@
+{
+  "website": "www.zigora.co.za",
+  "email": "g.blane@zigora.co.za,a.algera@zigora.co.za",
+  "brochure": "zigora/zigora.pdf"
+}

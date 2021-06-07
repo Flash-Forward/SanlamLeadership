@@ -15,14 +15,14 @@ class Role {
 
     switch ($user->user_roles_id) {
         case '1':
-          return redirect('/speaker');
+          return redirect('/speaker/100');
           break;
         case '2':
-          return redirect('/home');
+          return redirect('/lobby');
           break; 
     
         default:
-          return redirect('/home'); 
+          return redirect('/lobby'); 
         break;
       }
   }

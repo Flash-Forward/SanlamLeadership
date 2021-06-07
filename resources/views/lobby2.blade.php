@@ -330,7 +330,7 @@ iframe{
             {{$room_three_name->value}}
         </div>
     </div>
-    <a id="mainRoom" href="{{ route('room') }}"></a>
+    <a id="mainRoom" href="{{ route('room', ['order'=>99]) }}"></a>
     @endif
 
     @if($room_two_name->value != "NONE")
@@ -382,7 +382,7 @@ iframe{
     </div>
     
     <a id="helpDesk" onclick="Tawk_API.toggle();"></a>
-    <a id="schedule" href="{{ route('innovator') }}"></a>
+    <a id="schedule" href="{{ route('schedule') }}"></a>
     <!-- <a id="myImage_zone2" onclick="event.preventDefault();document.getElementById('login-form').submit();"></a> -->
 </div>
 

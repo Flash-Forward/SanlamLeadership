@@ -1,0 +1,208 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+/** SCHARED **/
+/**
+{
+**/
+/**
+}
+**/
+
+/** REGISTRATION FORM **/
+/**
+{
+**/
+#registration-header > h1
+{
+	font-weight: bold;
+	text-align: center;
+	padding: 10px 0;
+	background-color: #eee;
+	mix-blend-mode: multiply;
+	width: 100%;
+	position: relative;
+	top: 15px;
+	text-transform: uppercase;
+}
+
+#bg 
+{
+position: relative;
+    background-image: url(/images/bg3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    max-height: 200vh !important;
+    /* overflow-y: auto !important; */
+    width: 100%;
+    height: 125vh;
+    left: 0px;
+    top: 0px;
+}
+
+.stretch {
+    width:100%;
+    /* height:100%; */
+    z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
+}
+.divInImage {
+    /* border:1px solid #fff; */
+    display:block;
+    position:absolute;
+    /* background-color:rgba(0,0,0,0.1); */
+}
+#bg a {
+    /* border:1px solid #fff; */
+    display:block;
+    position:absolute;
+    background-color:rgba(0,0,0,0.1);
+}
+#bg a:hover {
+    background-color:rgba(255,255,255,0.3);
+}
+#banner
+{
+	object-fit: cover; /* Do not scale the image */
+	object-position: center; /* Center the image within the element */
+	width:100%;
+	text-align: center;
+	text-transform: uppercase;
+}
+#myImage_zone2{
+    width:11%;
+    height:36px;
+    top:805px;
+    left:44.5%;
+}
+#myImage_zone3{
+   width:15%;
+    height:15%;
+    top:35%;
+    left:52%;
+}
+.signup-form
+{
+    /* margin-top: 4%; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    background-color: rgba(0,0,0,0.70);
+    padding: 5%;
+    position: relative;
+    top: 15px;
+    transform: translateX(0);
+    left: 10%;
+    width: 80% !important;
+	border-radius: 10px;
+}
+.signup-form  label
+{
+	color: #ccc;
+}
+
+.btn-circle {
+				width: 70px;
+				height: 70px;
+				padding: 10px 16px;
+				border-radius: 35px;
+				font-size: 24px;
+				line-height: 1.33;
+			}
+
+            input, select {
+                height: 34px;
+                /* width: 30% !important; */
+  display: block;
+  /* margin-bottom:42px; */
+  /* margin-left:5%; */
+  padding: 1.6vh 1.4vh;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 13px; }
+
+  #regNowBtn{
+      position: relative;
+    left: 18%;
+    display: block;
+    width: 80%; 
+    height: 20%; 
+}
+
+.regBtn{
+    width: inherit !important;
+    height: inherit !important;
+}
+/**
+}
+**/
+
+/**SCHEDULE **/
+/**
+{
+**/
+.schedule-heading
+{
+	background-color:rgba(138,95,57,0.50);
+	mix-blend-mode: multiply;
+}
+.schedule-title
+{
+	text-transform: uppercase;
+	text-align: center;
+	margin: auto;
+	display: block;
+}
+.schedule-col-heading
+{
+	background-color:rgba(38,220,59,0.3);
+	mix-blend-mode: multiply;
+}
+.schedule-col-title
+{
+	text-transform: uppercase;
+	margin: auto;
+	display: block;
+	padding-left: 1em;
+}
+.schedule-row-data
+{
+	background-color:rgba(249,249,251,0.74);
+	padding-top: 5px;
+}
+
+.data-alt
+{
+	background-color:rgba(247,241,90,0.74);
+}
+
+.schedule-col-data
+{
+	padding-left: 1em;
+	margin: auto;
+	display: block;
+}
+
+div.schedule-col-data  a
+{
+	background-color: transparent !important;
+	margin: auto;
+	display: block;	
+}
+
+.schedule-col-data ul
+{
+	list-style: decimal-leading-zero;
+	text-align: left;
+	margin-left: -0.8em;
+}
+
+div.border-r {border-right: thin #0e1b4d solid;}
+div.border-l {border-left: thin #0e1b4d solid;}
+
+/**
+}
+**/

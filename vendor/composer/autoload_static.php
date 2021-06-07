@@ -546,6 +546,8 @@ class ComposerStaticInit81dec36da44586cff433b295bcf8bc0c
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
         'App\\Jobs\\SendEmailJob' => __DIR__ . '/../..' . '/app/Jobs/SendEmailJob.php',
         'App\\Mail\\SendBryteMail' => __DIR__ . '/../..' . '/app/Mail/SendBryteMail.php',
+        'App\\Models\\Exhibitor' => __DIR__ . '/../..' . '/app/Models/Exhibitor.php',
+        'App\\Models\\RegisterWhitelist' => __DIR__ . '/../..' . '/app/Models/RegisterWhitelist.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Models\\config' => __DIR__ . '/../..' . '/app/Models/config.php',
         'App\\Models\\room' => __DIR__ . '/../..' . '/app/Models/room.php',

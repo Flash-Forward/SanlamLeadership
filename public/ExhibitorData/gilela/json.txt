@@ -1,0 +1,5 @@
+{
+  "website": "www.gilela.com",
+  "email": "mbambo@gilela.co.za,zolile@gilela.co.za,siza@gilela.co.za",
+  "brochure": "gilela/gilela.pdf"
+}

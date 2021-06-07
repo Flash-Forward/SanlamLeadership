@@ -23,7 +23,7 @@ class RedirectIfAuthenticated
       
           switch ($role) {
             case '1':
-              return '/speaker';
+              return '/speaker/100';
               break;
             case '2':
               return '/home';
