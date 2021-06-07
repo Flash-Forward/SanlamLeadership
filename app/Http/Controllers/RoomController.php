@@ -848,6 +848,8 @@ public $rows =	[
 
     public function conference(config $config, $order)
     {        
+		$backRoute = "NONE";
+
         if($order == '100'){
             $backRoute = "NONE";
             $speaker = Speaker::where('users_id', \Auth::user()->id)->first();
