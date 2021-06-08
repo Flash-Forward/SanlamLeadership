@@ -755,7 +755,7 @@ public $rows =	[
 			{
 				$html .= '	<div class="'.$cardCls.'">
 								<div class="'.$cardHdrCls.'" id="'.$hdrId.'">
-									<div class="row">
+									<div class="row interval-row">
 										<div class="col-sm-2">
 											<div class="card-break"><h2>BREAK</h2></div>
 										</div>
