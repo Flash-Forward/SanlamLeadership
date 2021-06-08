@@ -155,6 +155,9 @@ body, html {
     left:0%;
     border-radius: 35px;
 }
+video {
+  object-fit: fill;
+}
 #innovatorsCafeHeadingText{
     text-shadow: 0px 1px, 1px 0px #f8f8f8, 2px 1.5px #131313;
   font-weight: 450;
@@ -162,6 +165,34 @@ body, html {
   text-align: center;
   line-height: 1.00;
     color: #f8f8f8;
+}
+#rightVideoInner{
+   width:13.3vw;
+    height:15.2vh;
+    top:42%;
+    left:85.1%;
+    border-radius: 35px;
+}
+#rightVideo{
+   width:16.4vw;
+    height:22vh;
+    top:38%;
+    left:83.6%;
+    border-radius: 35px;
+}
+#leftVideoInner{
+  width:13.3vw;
+    height:15.2vh;
+    top:42%;
+    left:1.7%;
+    border-radius: 35px;
+}
+#leftVideo{
+  width:16.4vw;
+    height:22vh;
+    top:38%;
+    left:0.2%;
+    border-radius: 35px;
 }
 
 #networkLounges{
@@ -204,6 +235,13 @@ body, html {
     left:71.6%;
 }
 
+#leftBannerHolder{
+  width:11vw;
+    height:26.5vw;
+    top:0.5%;
+    left:19.2%;
+}
+
 #leftBanner{
    width:9vw;
     height:22.5vw;
@@ -216,6 +254,12 @@ body, html {
     height:22.5vw;
     top:7%;
     left:70.6%;
+}
+#rightBannerHolder{
+  width:11vw;
+    height:26.5vw;
+    top:0.5%;
+    left:69.6%;
 }
 #middleBanner:after, 
 #middleBanner:before {
@@ -369,8 +413,34 @@ iframe{
     <a id="innovatorsCafe" href="{{ route('networkingroom') }}"></a>
     @endif
 
+    <div id="rightVideo" class="divInImage">
+    <img src="{{ asset('img') }}/bryte/screen.png" class="stretch" alt="" />
+    </div>
+    <div id="rightVideoInner" class="divInImage">
+    <video width="100%" height="100%" autoplay loop muted>
+    <source src="{{ asset('vid') }}/bryte.mp4" type="video/mp4" />
+    </video>
+    </div>
+
+    <div id="leftVideo" class="divInImage">
+    <img src="{{ asset('img') }}/bryte/screen.png" class="stretch" alt="" />
+    </div>
+    <div id="leftVideoInner" class="divInImage">
+    <video width="100%" height="100%" autoplay loop muted>
+    <source src="{{ asset('vid') }}/bryte.mp4" type="video/mp4" />
+    </video>
+    </div>
+
+    <div id="leftBannerHolder" class="divInImage">
+    <img src="{{ asset('img') }}/bryte/emptybanner.png" class="stretch" alt="" />
+    </div>
+
     <div id="leftBanner" class="divInImage">
     <img src="{{ $left_banner->value ?? '' }}" class="stretch" alt="" />
+    </div>
+
+    <div id="rightBannerHolder" class="divInImage">
+    <img src="{{ asset('img') }}/bryte/emptybanner.png" class="stretch" alt="" />
     </div>
 
     <div id="rightBanner" class="divInImage">

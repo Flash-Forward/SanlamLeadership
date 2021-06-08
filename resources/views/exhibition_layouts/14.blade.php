@@ -83,7 +83,7 @@ body, html {
   width:100%;
     height:65%;
     border-radius: 10px;
-    opacity: 0.75;
+    opacity: 0.85;
   position: absolute;
     z-index: 2;
 }
@@ -102,167 +102,118 @@ body, html {
   z-index: 3;
 }
 
-#floorSpace{
-  display: grid;
-    grid-template-columns: repeat(120, 1fr);
-    grid-template-rows: repeat(120, 1vw);
-    grid-gap: 16px;
-    position:absolute;
-    /* transform: perspective(600px) rotateX(22deg);
-    backface-visibility: visible;
-  perspective-origin: 150% 150%; */
-top: 15%;
-left: 10%;
-width: 77%;
-height: 83%;
-  /* background-color:rgba(0,0,0,0.5); */
-}
+
 
 #myImage_zone2{
 
-  grid-column-start: 9;
-grid-column-end: 20;
-grid-row-start: 2;
-grid-row-end: 7;
-
-    width: 100%;
-    height: 100%;
-    border-radius: 35px;
+  width: 8.2vw;
+    height: 8.2vw;
+    top:20%;
+    left:20.5%;
+  border-radius: 35px;
     
 }
 
 #myImage_zone3{
-  grid-column-start: 21;
-grid-column-end: 32;
-grid-row-start: 2;
-grid-row-end: 7;
-
-    width: 100%;
-    height: 100%;
+  width: 8.2vw;
+    height: 8.2vw;
+    top:20%;
+    left:32.2%;
     border-radius: 35px;
 }
 #myImage_zone4{
-  grid-column-start: 33;
-grid-column-end: 44;
-grid-row-start: 2;
-grid-row-end: 7;
-    width: 100%;
-    height: 100%;
+  width: 8.2vw;
+    height: 8.2vw;
+    top:20%;
+    left:44%;
     border-radius: 35px;
 }
 
 #myImage_zone5{
-  grid-column-start: 45;
-grid-column-end: 56;
-grid-row-start: 2;
-grid-row-end: 7;
-    width: 100%;
-    height: 100%;
+  width: 8.2vw;
+    height: 8.2vw;
+    top:20%;
+    left:55.8%;
     border-radius: 35px;
 }
 
 #myImage_zone6{
-  grid-column-start: 57;
-grid-column-end: 68;
-grid-row-start: 2;
-grid-row-end: 7;
-
-    width: 100%;
-    height: 100%;
+  width: 8.2vw;
+    height: 8.2vw;
+    top:20%;
+    left:67.6%;
     border-radius: 35px;
 }
 
 #myImage_zone7{
 
-  grid-column-start: 9;
-grid-column-end: 20;
-grid-row-start: 7;
-grid-row-end: 12;
-
-  width: 100%;
-  height: 100%;
+  width: 8.2vw;
+    height: 8.2vw;
+    top:43%;
+    left:20.5%;
   border-radius: 35px;
   
 }
 
 #myImage_zone8{
-  grid-column-start: 21;
-grid-column-end: 32;
-grid-row-start: 7;
-grid-row-end: 12;
-
-  width: 100%;
-  height: 100%;
-  border-radius: 35px;
+  width: 8.2vw;
+    height: 8.2vw;
+    top:43%;
+    left:32.2%;
+    border-radius: 35px;
 }
 #myImage_zone9{
-  grid-column-start: 33;
-grid-column-end: 44;
-grid-row-start: 7;
-grid-row-end: 12;
-  width: 100%;
-  height: 100%;
-  border-radius: 35px;
+  width: 8.2vw;
+    height: 8.2vw;
+    top:43%;
+    left:44%;
+    border-radius: 35px;
 }
 
 #myImage_zone10{
-  grid-column-start: 45;
-grid-column-end: 56;
-grid-row-start: 7;
-grid-row-end: 12;
-  width: 100%;
-  height: 100%;
-  border-radius: 35px;
+  width: 8.2vw;
+    height: 8.2vw;
+    top:43%;
+    left:55.8%;
+    border-radius: 35px;
 }
 
 #myImage_zone11{
-  grid-column-start: 57;
-grid-column-end: 68;
-grid-row-start: 7;
-grid-row-end: 12;
-
-  width: 100%;
-  height: 100%;
-  border-radius: 35px;
+  width: 8.2vw;
+    height: 8.2vw;
+    top:43%;
+    left:67.6%;
+    border-radius: 35px;
 }
 
 #myImage_zone12{
-  grid-column-start: 15;
-grid-column-end: 26;
-grid-row-start: 12;
-grid-row-end: 17;
-
-  width: 100%;
-  height: 100%;
+  width: 8.2vw;
+    height: 8.2vw;
+    top:66%;
+    left:26%;
   border-radius: 35px;
 }
 #myImage_zone13{
-  grid-column-start: 27;
-grid-column-end: 38;
-grid-row-start: 12;
-grid-row-end: 17;
-  width: 100%;
-  height: 100%;
+  width: 8.2vw;
+    height: 8.2vw;
+    top:66%;
+    left:38%;
   border-radius: 35px;
 }
 
 #myImage_zone14{
-  grid-column-start: 39;
-grid-column-end: 50;
-grid-row-start: 12;
-grid-row-end: 17;
-  width: 100%;
-  height: 100%;
+  width: 8.2vw;
+    height: 8.2vw;
+    top:66%;
+    left:50%;
   border-radius: 35px;
 }
 
 #myImage_zone15{
-  grid-column-start: 51;
-grid-column-end: 62;
-grid-row-start: 12;
-grid-row-end: 17;
-  width: 100%;
-  height: 100%;
+  width: 8.2vw;
+    height: 8.2vw;
+    top:66%;
+    left:61.8%;
   border-radius: 35px;
 }
 .btn-circle {
@@ -332,20 +283,18 @@ h2{
     <img src="{{ asset('img') }}/bryte/background.jpg" class="stretch" alt="" />
 
     <div id="exhibitionHallBg" class="divInImage">
-      <img src="{{ asset('img') }}/bryte/exhall2.png" class="stretch" alt="" />
-      <div id="floorSpace">
+      <img src="{{ asset('img') }}/bryte/exhallgrey.png" class="stretch" alt="" />
       @foreach($exhibitors as $item)
         @if($item->order < '99')
         <div id="myImage_zone{{$item->order + 2}}" class="divInImage">
           <a class="stretch standLink" href="{{ route('room', ['order'=>$item->order]) }}"></a>
-          <img src="{{ asset('img') }}/bryte/exstand2.png" class="stretch standImage" alt="" />
+          <img src="{{ asset('img') }}/bryte/exstand3.png" class="stretch standImage" alt="" />
           <div class="standlogo">
             <img src="{{$item->logo}}" class="stretch roundLogo" alt="" />
           </div>
         </div>
         @endif
       @endforeach
-      </div>
     </div>
 
 

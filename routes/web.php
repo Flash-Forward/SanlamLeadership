@@ -18,6 +18,9 @@ Route::get('/schedule/1', [App\Http\Controllers\RoomController::class, 'schedule
 Route::get('/', [App\Http\Controllers\RoomController::class, 'landingPage'])->name('landing');
 
 Route::get('/register/check', [App\Http\Controllers\RoomController::class, 'checkEmail'])->name('email.check');
+//Route::get('/exhibition/test', [App\Http\Controllers\RoomController::class, 'exhibitionHall']);
+//Route::get('/lobby/test', [App\Http\Controllers\RoomController::class, 'mainLobby']);
+
 
 
 Route::get('/register/sa', function () {
