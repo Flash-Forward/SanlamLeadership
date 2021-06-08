@@ -9,7 +9,7 @@ use App\Models\Exhibitor;
 use App\Models\Speaker;
 
 
-define('NO_IMAGE', public_path().'/img/schedule/nopic.png');
+define('NO_IMAGE', url('/').'/img/schedule/nopic.png');
 define ('SHOW_EXPAND_HELP', false);
 
 
@@ -32,7 +32,7 @@ public $rows =	[
 					[
 						[	//Row 2
 							'title'			=> 'Session 1',
-							'image'			=> '/images/schedule-icons/SET C-01.jpg',
+							'image'			=> '/img/schedule/SET C-01.jpg',
 							'start_time'	=> '12:30',
 							'end_time'		=> '13:30',
 							'interval'		=>	false,
@@ -49,17 +49,17 @@ public $rows =	[
 																			such as email, phone no, website, etc.
 																			*/
 																			[
-																				'pic'			=> '/images/profile/Reynier-Rautenbach.jpg',
+																				'pic'			=> '/img/schedule/profile/Reynier-Rautenbach.jpg',
 																				'name'			=> 'Reynier Rautenbach', 
 																				'designation'	=> ' Head: General Claims'
 																			], 
 																			[
-																				'pic'			=> '/images/profile/Ellen-Engelbrecht.jpg',
+																				'pic'			=> '/img/schedule/profile/Ellen-Engelbrecht.jpg',
 																				'name'			=> 'Ellen Engelbrecht', 
 																				'designation'	=> 'Head: Claims Operations'																					
 																			], 
 																			[
-																				'pic'			=> '/images/profile/Kishore-Maharaj.jpg',
+																				'pic'			=> '/img/schedule/profile/Kishore-Maharaj.jpg',
 																				'name'			=> 'Kishore Maharaj', 
 																				'designation'	=> 'Head: Group Services'
 																			]
@@ -77,17 +77,17 @@ public $rows =	[
 																			such as email, phone no, website, etc.
 																			*/
 																			[
-																				'pic'			=> '/images/profile/Sedick-Isaacs.jpg',
+																				'pic'			=> '/img/schedule/profile/Sedick-Isaacs.jpg',
 																				'name'			=> 'Sedick Isaacs', 
 																				'designation'	=> 'Head: Business Support Service'
 																			], 
 																			[
-																				'pic'			=> '/images/profile/Shupikayi-Kasayi.jpg',
+																				'pic'			=> '/img/schedule/profile/Shupikayi-Kasayi.jpg',
 																				'name'			=> 'Shupikayi Kasayi', 
 																				'designation'	=> 'Head: Centre of Excellence'																					
 																			], 
 																			[
-																				'pic'			=> '/images/profile/Robert-Hodgkiss.jpg',
+																				'pic'			=> '/img/schedule/profile/Robert-Hodgkiss.jpg',
 																				'name'			=> 'Rob Hodgkiss', 
 																				'designation'	=> 'Head: Risk Engineering'
 																			]
@@ -100,12 +100,12 @@ public $rows =	[
 														'link'			=>	'#',
 														'speakers'		=> 	[
 																				[
-																					'pic'			=> '/images/profile/Pieter-Pieterse.jpg',
+																					'pic'			=> '/img/schedule/profile/Pieter-Pieterse.jpg',
 																					'name'			=> 'Pieter Pieterse', 
 																					'designation'	=> 'Regional Manager: Free State Region'
 																				], 
 																				[
-																					'pic'			=> '/images/profile/Eddie-Mc-Kenzie.jpg',
+																					'pic'			=> '/img/schedule/profile/Eddie-Mc-Kenzie.jpg',
 																					'name'			=> 'Eddie Mc Kenzie', 
 																					'designation'	=> 'BDM Production Underwriter'																					
 																				]
@@ -118,7 +118,7 @@ public $rows =	[
 														'link'			=>	'#',
 														'speakers'		=> 	[
 																				[
-																					'pic'			=> '/images/profile/Moroesi-Mokhabi.jpg',
+																					'pic'			=> '/img/schedule/profile/Moroesi-Mokhabi.jpg',
 																					'name'			=> 'Moroesi Mokhabi', 
 																					'designation'	=> 'Business Consultant'
 																				]
@@ -131,12 +131,12 @@ public $rows =	[
 														'link'			=>	'#',
 														'speakers'		=> 	[
 																				[
-																					'pic'			=> '/images/profile/Dziki-Nganunu.jpg',
+																					'pic'			=> '/img/schedule/profile/Dziki-Nganunu.jpg',
 																					'name'			=> 'Dziki Nganunu', 
 																					'designation'	=> 'Chief Executive Officer: Botswana'
 																				],
 																				[
-																					'pic'			=> '/images/profile/Lukas-Marquart.jpg',
+																					'pic'			=> '/img/schedule/profile/Lukas-Marquart.jpg',
 																					'name'			=> 'Lukas Marquart', 
 																					'designation'	=> 'Director: PCBS Construction & Customs'
 																				]
@@ -146,14 +146,14 @@ public $rows =	[
 						],
 						[	//Break 1
 							'title'			=> 'break',
-							'image'			=> '/images/schedule-icons/seal-01.jpg',
+							'image'			=> '/img/schedule/seal-01.jpg',
 							'start_time'	=> '13:30',
 							'end_time'		=> '13:45',
 							'interval'		=>	true
 						],
 						[	//Row 3
 							'title'			=> 'Session 2',
-							'image'			=> '/images/schedule-icons/SET C-02.jpg',
+							'image'			=> '/img/schedule/SET C-02.jpg',
 							'start_time'	=> '13:45',
 							'end_time'		=> '14:45',
 							'interval'		=>	false,
@@ -170,17 +170,17 @@ public $rows =	[
 																			such as email, phone no, website, etc.
 																			*/
 																			[
-																				'pic'			=> '/images/profile/Reynier-Rautenbach.jpg',
+																				'pic'			=> '/img/schedule/profile/Reynier-Rautenbach.jpg',
 																				'name'			=> 'Reynier Rautenbach', 
 																				'designation'	=> ' Head: General Claims'
 																			], 
 																			[
-																				'pic'			=> '/images/profile/Ellen-Engelbrecht.jpg',
+																				'pic'			=> '/img/schedule/profile/Ellen-Engelbrecht.jpg',
 																				'name'			=> 'Ellen Engelbrecht', 
 																				'designation'	=> 'Head: Claims Operationsr'																					
 																			], 
 																			[
-																				'pic'			=> '/images/profile/Kishore-Maharaj.jpg',
+																				'pic'			=> '/img/schedule/profile/Kishore-Maharaj.jpg',
 																				'name'			=> 'Kishore Maharaj', 
 																				'designation'	=> 'Head: Group Services'
 																			]
@@ -198,17 +198,17 @@ public $rows =	[
 																			such as email, phone no, website, etc.
 																			*/
 																			[
-																				'pic'			=> '/images/profile/Sedick-Isaacs.jpg',
+																				'pic'			=> '/img/schedule/profile/Sedick-Isaacs.jpg',
 																				'name'			=> 'Sedick Isaacs', 
 																				'designation'	=> 'Head: Business Support Service'
 																			], 
 																			[
-																				'pic'			=> '/images/profile/Shupikayi-Kasayi.jpg',
+																				'pic'			=> '/img/schedule/profile/Shupikayi-Kasayi.jpg',
 																				'name'			=> 'Shupikayi Kasayi', 
 																				'designation'	=> 'Head: Centre of Excellence'																					
 																			], 
 																			[
-																				'pic'			=> '/images/profile/Robert-Hodgkiss.jpg',
+																				'pic'			=> '/img/schedule/profile/Robert-Hodgkiss.jpg',
 																				'name'			=> 'Rob Hodgkiss', 
 																				'designation'	=> 'Head: Risk Engineering'
 																			]
@@ -221,12 +221,12 @@ public $rows =	[
 														'link'			=>	'#',
 														'speakers'		=> 	[
 																				[
-																					'pic'			=> '/images/profile/Pieter-Pieterse.jpg',
+																					'pic'			=> '/img/schedule/profile/Pieter-Pieterse.jpg',
 																					'name'			=> 'Pieter Pieterse', 
 																					'designation'	=> 'Regional Manager: Free State Region'
 																				], 
 																				[
-																					'pic'			=> '/images/profile/Eddie-Mc-Kenzie.jpg',
+																					'pic'			=> '/img/schedule/profile/Eddie-Mc-Kenzie.jpg',
 																					'name'			=> 'Eddie Mc Kenzie', 
 																					'designation'	=> 'BDM Production Underwriter'																					
 																				]
@@ -239,7 +239,7 @@ public $rows =	[
 														'link'			=>	'#',
 														'speakers'		=> 	[
 																				[
-																					'pic'			=> '/images/profile/Moroesi-Mokhabi.jpg',
+																					'pic'			=> '/img/schedule/profile/Moroesi-Mokhabi.jpg',
 																					'name'			=> 'Moroesi Mokhabi', 
 																					'designation'	=> 'Business Consultant'
 																				]
@@ -252,12 +252,12 @@ public $rows =	[
 														'link'			=>	'#',
 														'speakers'		=> 	[
 																				[
-																					'pic'			=> '/images/profile/Akanyang-Masole.jpg',
+																					'pic'			=> '/img/schedule/profile/Akanyang-Masole.jpg',
 																					'name'			=> 'Akanyang Masole', 
 																					'designation'	=> 'Production Underwriting Manager'
 																				],
 																				[
-																					'pic'			=> '/images/profile/Lukas-Marquart.jpg',
+																					'pic'			=> '/img/schedule/profile/Lukas-Marquart.jpg',
 																					'name'			=> 'Lukas Marquart', 
 																					'designation'	=> 'Director: PCBS Construction & Customs'
 																				]
@@ -267,14 +267,14 @@ public $rows =	[
 						],
 						[	//Break 2
 							'title'			=> 'break',
-							'image'			=> '/images/schedule-icons/seal-01.jpg',
+							'image'			=> '/img/schedule/seal-01.jpg',
 							'start_time'	=> '14:45',
 							'end_time'		=> '15:00',
 							'interval'		=>	true
 						],						
 						[	//Row 4
 							'title'			=> 'Session 3',
-							'image'			=> '/images/schedule-icons/SET C-03.jpg',
+							'image'			=> '/img/schedule/SET C-03.jpg',
 							'start_time'	=> '15:00',
 							'end_time'		=> '16:00',
 							'interval'		=>	false,
@@ -291,17 +291,17 @@ public $rows =	[
 																			such as email, phone no, website, etc.
 																			*/
 																			[
-																				'pic'			=> '/images/profile/Reynier-Rautenbach.jpg',
+																				'pic'			=> '/img/schedule/profile/Reynier-Rautenbach.jpg',
 																				'name'			=> 'Reynier Rautenbach', 
 																				'designation'	=> ' Head: General Claims'
 																			], 
 																			[
-																				'pic'			=> '/images/profile/Ellen-Engelbrecht.jpg',
+																				'pic'			=> '/img/schedule/profile/Ellen-Engelbrecht.jpg',
 																				'name'			=> 'Ellen Engelbrecht', 
 																				'designation'	=> 'Head: Claims Operations'																					
 																			], 
 																			[
-																				'pic'			=> '/images/profile/Kishore-Maharaj.jpg',
+																				'pic'			=> '/img/schedule/profile/Kishore-Maharaj.jpg',
 																				'name'			=> 'Kishore Maharaj', 
 																				'designation'	=> 'Head: Group Services'
 																			]
@@ -319,17 +319,17 @@ public $rows =	[
 																			such as email, phone no, website, etc.
 																			*/
 																			[
-																				'pic'			=> '/images/profile/Sedick-Isaacs.jpg',
+																				'pic'			=> '/img/schedule/profile/Sedick-Isaacs.jpg',
 																				'name'			=> 'Sedick Isaacs', 
 																				'designation'	=> 'Head: Business Support Service'
 																			], 
 																			[
-																				'pic'			=> '/images/profile/Shupikayi-Kasayi.jpg',
+																				'pic'			=> '/img/schedule/profile/Shupikayi-Kasayi.jpg',
 																				'name'			=> 'Shupikayi Kasayi', 
 																				'designation'	=> 'Head: Centre of Excellence'																					
 																			], 
 																			[
-																				'pic'			=> '/images/profile/Robert-Hodgkiss.jpg',
+																				'pic'			=> '/img/schedule/profile/Robert-Hodgkiss.jpg',
 																				'name'			=> 'Rob Hodgkiss', 
 																				'designation'	=> 'Head: Risk Engineering'
 																			]
@@ -342,12 +342,12 @@ public $rows =	[
 														'link'			=>	'#',
 														'speakers'		=> 	[
 																				[
-																					'pic'			=> '/images/profile/Pieter-Pieterse.jpg',
+																					'pic'			=> '/img/schedule/profile/Pieter-Pieterse.jpg',
 																					'name'			=> 'Pieter Pieterse', 
 																					'designation'	=> 'Regional Manager: Free State Region'
 																				], 
 																				[
-																					'pic'			=> '/images/profile/Eddie-Mc-Kenzie.jpg',
+																					'pic'			=> '/img/schedule/profile/Eddie-Mc-Kenzie.jpg',
 																					'name'			=> 'Eddie Mc Kenzie', 
 																					'designation'	=> 'BDM Production Underwriter'																					
 																				]
@@ -360,7 +360,7 @@ public $rows =	[
 														'link'			=>	'#',
 														'speakers'		=> 	[
 																				[
-																					'pic'			=> '/images/profile/Moroesi-Mokhabi.jpg',
+																					'pic'			=> '/img/schedule/profile/Moroesi-Mokhabi.jpg',
 																					'name'			=> 'Moroesi Mokhabi', 
 																					'designation'	=> 'Business Consultant'
 																				]
@@ -373,7 +373,7 @@ public $rows =	[
 														'link'			=>	'#',
 														'speakers'		=> 	[
 																				[
-																					'pic'			=> '/images/profile/John-Heldsinger.jpg',
+																					'pic'			=> '/img/schedule/profile/John-Heldsinger.jpg',
 																					'name'			=> 'John Heldsinger', 
 																					'designation'	=> 'Claims Manager'
 																				]
@@ -534,7 +534,7 @@ public $rows =	[
 		foreach($room['speakers'] as $speaker)
 		{
 			$spkrimg = isset($speaker['pic']) ? $speaker['pic'] : null;
-			$pic = is_file(__DIR__.$spkrimg) ? $spkrimg : NO_IMAGE;
+			$pic = url('/').$spkrimg;
 			$html .= '							<div class="col-sm-3 speaker-item">
 													<div class="row text-center">
 														<div class="col-sm-12">
@@ -569,8 +569,8 @@ public $rows =	[
 		
 		$rmimg = isset($room['image']) ? $room['image'] : null;
 
-		if (is_file(__DIR__.$rmimg))
-			$imgAttr = 'class="card-header-image" style="background-image:url(\''.$image.'\')"';
+		// if (is_file(public_path().$rmimg))
+		// 	$imgAttr = 'class="card-header-image" style="background-image:url(\''.url('/').$rmimg.'\')"';
 		
 		$ridx = $id.$idx;
 
@@ -723,7 +723,7 @@ public $rows =	[
 		foreach($sessions as $session)
 		{
 			$sesspic = isset($session['image']) ? $session['image'] : null;
-			$image = is_file(__DIR__.$sesspic) ? $sesspic : NO_IMAGE;
+			$image = url('/').$sesspic;
 
 			$show = $sidx ? '' : ''; //'show'; //first tab active on page load, and expanded.
 			$sidx++;

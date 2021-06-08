@@ -202,7 +202,16 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 }
 function login(){
     var email = document.getElementById('email').value;
-    if(email != "ffp@gmail.com" && email != 'wade@atu.co.za' && email != 'cavanzyl@tracker.co.za' && email != 'scrowder@tracker.co.za' && email != 'swatt@tracker.co.za' && email != 'claims@gmail.com' && email != 'main@gmail.com' && email != 'underwriting@gmail.com' && email != 'product@gmail.com' && email != 'brytelife@gmail.com' && email != 'bryterisk@gmail.com' )
+    if(email != "ffp@gmail.com" && email != 'wade@atu.co.za' && email != 'cavanzyl@tracker.co.za' && email != 'scrowder@tracker.co.za' && email != 'swatt@tracker.co.za' && email != 'claims@gmail.com' && email != 'main@gmail.com' && email != 'underwriting@gmail.com' && email != 'product@gmail.com' 
+        && email != 'brytelife@gmail.com' && email != 'bryterisk@gmail.com' 
+        && email != 'francois@smartlegal.co.za'  && email != 'rene.stassen@brytesa.com'  
+        && email != 'tracy@smartlegal.co.za'  && email != 'lwandi@smartlegal.co.za' 
+        && email != 'glen@risksolutions.co.za' && email != 'chantelle@risksolutions.co.za'
+         && email != 'sonja@risksolutions.co.za' && email != 'sonja@risksolutions.co.za'
+          && email != 'g.blane@zigora.co.za' && email != 'a.algera@zigora.co.za' 
+          && email != 'mbambo@gilela.co.za' && email != 'zolile@gilela.co.za' 
+          && email != 'siza@gilela.co.za' && email != 'lukas@pcbs.co.za'
+           && email != 'joey@pcbs.co.za' && email != 'jessica.van.der.westhuizen@brytesa.com' && email != 'lana.mizen@brytesa.com' && email != 'rene.stassen@brytesa.com' )
         alert('THIS EVENT HAS NOT STARTED');
     else
         document.getElementById('login-form').submit();
