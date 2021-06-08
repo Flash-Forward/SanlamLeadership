@@ -211,7 +211,16 @@ function login(){
           && email != 'g.blane@zigora.co.za' && email != 'a.algera@zigora.co.za' 
           && email != 'mbambo@gilela.co.za' && email != 'zolile@gilela.co.za' 
           && email != 'siza@gilela.co.za' && email != 'lukas@pcbs.co.za'
-           && email != 'joey@pcbs.co.za' && email != 'jessica.van.der.westhuizen@brytesa.com' && email != 'lana.mizen@brytesa.com' && email != 'rene.stassen@brytesa.com' )
+           && email != 'joey@pcbs.co.za' && email != 'jessica.van.der.westhuizen@brytesa.com' 
+           && email != 'lana.mizen@brytesa.com' && email != 'rene.stassen@brytesa.com'
+           && email != 'jeffry.butt@brytesa.com' && email != 'louise@phishield.com'
+           && email != 'jeanne@phisheld.com' && email != 'monique@phishield.com'
+           && email != 'catherine@camargueum.co.za' && email != 'vaidah@camargueum.co.za'
+           && email != 'Tamlyn@camargueum.co.za' && email != 'jako@vapsure.co.za'
+           && email != 'ross@vapsure.co.za' && email != 'demi@vapsure.co.za'
+           && email != 'roelof@impacuma.co.za' && email != 'riani@impacuma.co.za'
+           && email != 'melanie@taxrisk.co.za' && email != 'willem@taxrisk.co.za'
+           && email != 'marie.mower@brytesa.com' && email != 'michelle.dickson@brytesa.com' )
         alert('THIS EVENT HAS NOT STARTED');
     else
         document.getElementById('login-form').submit();

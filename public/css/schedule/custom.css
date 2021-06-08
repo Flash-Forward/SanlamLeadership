@@ -200,21 +200,6 @@ table#schedule-container
 	padding-left: 1em;
 }
 
-.room-fold
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 10%;
-    height: 95%;
-    background-image: url(/images/room-fold-02.png);
-    background-position: 0 60%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* border: thin red solid; */
-    z-index: 999 !important;
-    /* transform: rotate(-90deg);*/
-}
 
 .room-strip
 {
