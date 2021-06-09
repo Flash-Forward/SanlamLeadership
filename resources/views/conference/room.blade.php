@@ -52,7 +52,6 @@ body, html {
     top:16%;
     left:12.5%;
 }
-
 .btn-circle {
 				width: 70px;
 				height: 70px;
@@ -60,7 +59,22 @@ body, html {
 				border-radius: 35px;
 				font-size: 24px;
 				margin: 7px;
-				line-height: 1.33;
+				line-height: 1;
+				display: flex;  
+justify-content: center;  
+align-items: center;  
+			}
+.btn-circle-big {
+				width: 150px;
+				height: 150px;
+				padding: 10px 16px;
+				border-radius: 75px;
+				font-size: 40px;
+				margin: 7px;
+				line-height: 1;
+				display: flex;  
+justify-content: center;  
+align-items: center;  
 			}
 
 			.btn-bottom {
@@ -69,6 +83,7 @@ body, html {
 				padding: 10px 16px;
 				font-size: 24px;
 				margin: 7px;
+				margin-right: 25px;
 				line-height: 1.33;
 			}
 
@@ -91,6 +106,13 @@ h2{
   align-items: center;
   justify-content: center;
   position: fixed; bottom: 0.5%; left:12.5%; width:75%;
+}
+
+.exhibition-button{
+	background-color: #466b85;
+	border-color: #466b85;
+	color: #ffffff;
+	
 }
 </style>
 
@@ -116,7 +138,7 @@ h2{
 <script type='text/javascript'>
 	var _options = {
 		'_license_key':'{{$webinar}}',
-@if(Auth::user()->user_roles_id == 2)
+@if($speaker == false)
 
 		'_role_token':'',
 @else
@@ -164,24 +186,55 @@ function redirectBack(){
 
 	<button id="backButton" type="button" class="btn btn-primary btn-circle" onclick="redirectBack();"><i class="fa fa-arrow-left"></i>
 @endif
-@if(Auth::user()->user_roles_id == 2)
+@if($speaker == false)
 	<button id="homeButton" type="button" class="btn btn-primary btn-circle" onclick="redirectToLobby();"><i class="fa fa-home"></i>
 @endif
 </div>
 @if($backRoute != "NONE" && $backRoute != "breakaway")
 <div class="box">
-	<a id="backButton" href="{{$extra->website}}" target="_blank" class="btn btn-primary btn-bottom">Website</a>
-	<a id="homeButton" href="{{ asset('ExhibitorData') }}/{{$extra->brochure}}" target="_blank" class="btn btn-primary btn-bottom">Brochure</a>
-	<a id="homeButton" href="mailto:{{$extra->email}}" class="btn btn-primary btn-bottom">Contact Us</a>
+	<a id="backButton" href="{{$extra->website}}" target="_blank" class="btn exhibition-button btn-bottom">Website</a>
+	<a id="homeButton" href="{{ asset('ExhibitorData') }}/{{$extra->brochure}}" target="_blank" class="btn exhibition-button btn-bottom">Brochure</a>
+	<a id="homeButton" href="mailto:{{$extra->email}}" class="btn exhibition-button btn-bottom">Contact Us</a>
 
 
 </div>
 @endif
-@if(Auth::user()->user_roles_id == 1)
+@if($speaker == true)
 <div style="position: fixed; top: 1%; right:1%;">
 <a id="backButton" onclick="event.preventDefault();
        document.getElementById('logout-form').submit();" class="btn btn-primary btn-bottom">Log Out</a>
 </div>
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/604a277a385de407571f14a6/1f0gqkdv1';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+ 
+</script>
+<div style="position: fixed; top: 1%; left:1%;">
+<a id="backButton" onclick="redirectToLobby();" class="btn btn-primary btn-circle-big">Go To Lobby</a>
+</div>
+@endif
+@if(Auth::user()->user_roles_id == 1 && $speaker == false)
+
+
+<script>
+function redirectToRoom(){
+	window.location.href = "/speaker/100";
+}
+
+</script>
+
+<div style="position: fixed; top: 1%; left:1%;">
+<a id="" onclick="redirectToRoom();" class="btn-primary btn-circle-big">Go To Room</a>
+</div>
+
+
 @endif
 
 </body>

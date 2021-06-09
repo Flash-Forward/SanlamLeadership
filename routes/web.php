@@ -62,7 +62,7 @@ Route::group(['middleware' => ['auth', 'role:1']], function() {
     Route::get('/speaker/{order?}', [App\Http\Controllers\RoomController::class, 'conference'])->name('speaker');
 
 });
-Route::group(['middleware' => ['auth', 'role:2']], function() {
+Route::group(['middleware' => ['auth']], function() {
     Route::get('/room/{order?}', [App\Http\Controllers\RoomController::class, 'conference'])->name('room');
 
     Route::get('/breakawayroom', function () {

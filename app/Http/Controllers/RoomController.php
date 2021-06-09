@@ -31,6 +31,51 @@ public $rows =	[
 					'sessions'			=>
 					[
 						[	//Row 2
+							'title'			=> 'Plenary Session',
+							'image'			=> '/img/schedule/SET C-01.jpg',
+							'start_time'	=> '10:30',
+							'end_time'		=> '12:00',
+							'interval'		=>	false,
+							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
+													[	//Room 1 - Claims
+														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
+														'room_desc'		=> 	'Plenary Session',
+														'room_info'		=> 	'Who We Are and What We Do',
+														'link'			=>	'#',
+														'speakers'		=> 	[	
+																			/*
+																			Ideally also a table and this array should hold the user id's.
+																			Having a table means we have access to any other relevant data if necessary,
+																			such as email, phone no, website, etc.
+																			*/
+																			[
+																				'pic'			=> '/img/schedule/profile/Reynier-Rautenbach.jpg',
+																				'name'			=> 'Reynier Rautenbach', 
+																				'designation'	=> ' Head: General Claims'
+																			], 
+																			[
+																				'pic'			=> '/img/schedule/profile/Ellen-Engelbrecht.jpg',
+																				'name'			=> 'Ellen Engelbrecht', 
+																				'designation'	=> 'Head: Claims Operations'																					
+																			], 
+																			[
+																				'pic'			=> '/img/schedule/profile/Kishore-Maharaj.jpg',
+																				'name'			=> 'Kishore Maharaj', 
+																				'designation'	=> 'Head: Group Services'
+																			]
+																		]
+													],
+													
+												]
+						],
+						[	//Break 1
+							'title'			=> 'Lunch',
+							'image'			=> '/img/schedule/seal-01.jpg',
+							'start_time'	=> '12:00',
+							'end_time'		=> '12:30',
+							'interval'		=>	true
+						],
+						[	//Row 2
 							'title'			=> 'Session 1',
 							'image'			=> '/img/schedule/SET C-01.jpg',
 							'start_time'	=> '12:30',
@@ -849,12 +894,12 @@ public $rows =	[
     public function conference(config $config, $order)
     {        
 		$backRoute = "NONE";
-
+		$speaker = false;
         if($order == '100'){
             $backRoute = "NONE";
             $speaker = Speaker::where('users_id', \Auth::user()->id)->first();
             $exhibitor = Exhibitor::where('id', $speaker->exhibitors_id)->first();
-
+			$speaker = true;
         }else{
             $exhibitor = Exhibitor::where('order', $order)->first();
 
@@ -876,7 +921,8 @@ public $rows =	[
             'heading' => $heading,
             'webinar' => $webinar,
             'extra' => $extra,
-            'backRoute' => $backRoute
+            'backRoute' => $backRoute,
+			'speaker' => $speaker
         ]);
     }
 

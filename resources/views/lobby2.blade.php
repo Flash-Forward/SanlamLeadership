@@ -277,6 +277,12 @@ video {
   bottom:-10px;
   border-radius:50% 50% 0 0 ;
 }
+#middleBannerHolder{
+   width:41.5vw;
+    height:16.6vw;
+    top:0.5%;
+    left:29.3%;
+}
 #middleBanner{
    width:34vw;
     height:11.2vw;
@@ -323,6 +329,20 @@ iframe{
   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
   cursor: pointer; /* Add a pointer on hover */
 }
+
+.btn-circle-big {
+				width: 150px;
+				height: 150px;
+				padding: 10px 16px;
+				border-radius: 75px;
+				font-size: 40px;
+				margin: 7px;
+				line-height: 1;
+				display: flex;  
+justify-content: center;  
+align-items: center; 
+color: #ffffff !important; 
+			}
 
 </style>
 
@@ -447,6 +467,10 @@ iframe{
     <img src="{{ $right_banner->value ?? '' }}" class="stretch" alt="" />
     </div>
 
+    <div id="middleBannerHolder" class="divInImage">
+    <img src="{{ asset('img') }}/bryte/screen.png" class="stretch" alt="" />
+    </div>
+
     <div id="middleBanner" class="divInImage">
     <img src="{{ $middle_banner->value ?? '' }}" class="stretch" alt="" />
     </div>
@@ -495,6 +519,20 @@ if (iframes != null) {
 
 } 
 </script>
+
+@if(Auth::user()->user_roles_id == 1)
+
+<<script>
+function redirectToRoom(){
+	window.location.href = "/speaker/100";
+}
+
+</script>
+
+<div style="position: fixed; top: 8%; left:1%;">
+<a id="" onclick="redirectToRoom();" class="btn-primary btn-circle-big">Go To Room</a>
+</div>
+@endif
 
 </body>
 

@@ -15,7 +15,7 @@ class Role {
 
     switch ($user->user_roles_id) {
         case '1':
-          return redirect('/speaker/100');
+          return redirect('/lobby');
           break;
         case '2':
           return redirect('/lobby');

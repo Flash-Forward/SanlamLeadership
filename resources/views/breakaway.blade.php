@@ -137,6 +137,20 @@ body, html {
       nav li a {
     color: #000000;
 }
+.btn-circle-big {
+				width: 150px;
+				height: 150px;
+				padding: 10px 16px;
+				border-radius: 75px;
+				font-size: 40px;
+				margin: 7px;
+				line-height: 1;
+				display: flex;  
+justify-content: center;  
+align-items: center; 
+color: #ffffff !important; 
+			}
+
 h2{
 	font-size: 48px !important;
   color: #f1f1f1 !important;
@@ -235,6 +249,19 @@ function redirectToLobby(){
 <div style="position: fixed; bottom: 0; left:0; width:70px;">
 	<button id="homeButton" type="button" class="btn btn-primary btn-circle" onclick="redirectToLobby();"><i class="fa fa-home"></i>
 </div>
+@if(Auth::user()->user_roles_id == 1)
+
+<<script>
+function redirectToRoom(){
+	window.location.href = "/speaker/100";
+}
+
+</script>
+
+<div style="position: fixed; top: 8%; left:1%;">
+<a id="" onclick="redirectToRoom();" class="btn-primary btn-circle-big">Go To Room</a>
+</div>
+@endif
 
 </body>
 

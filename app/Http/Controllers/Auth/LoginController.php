@@ -32,7 +32,7 @@ class LoginController extends Controller
         $role = Auth::user()->user_roles_id; 
         switch ($role) {
           case '1':
-            return '/speaker/100';
+            return '/lobby';
             break;
           case '2':
             return '/lobby';

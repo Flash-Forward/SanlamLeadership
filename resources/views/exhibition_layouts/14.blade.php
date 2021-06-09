@@ -88,6 +88,176 @@ body, html {
     z-index: 2;
 }
 
+.standColor2{
+  background-color: #052b48;
+  border-radius: 25px;
+  top:0%;
+    left:0%;
+  width:100%;
+    height:71%;
+  position: absolute;
+
+    /* border-radius: 10px; */
+
+}
+.standColor3{
+  background-color: #004d73;
+  border-radius: 25px;
+  top:0%;
+    left:0%;
+  width:100%;
+    height:71%;
+  position: absolute;
+
+    /* border-radius: 10px; */
+
+}
+.standColor4{
+  background-color: #4d4b40;
+  border-radius: 25px;
+  top:0%;
+    left:0%;
+  width:100%;
+    height:71%;
+  position: absolute;
+
+    /* border-radius: 10px; */
+
+}
+
+.standColor5{
+  background-color: #0a578a;
+  border-radius: 25px;
+  top:0%;
+    left:0%;
+  width:100%;
+    height:71%;
+  position: absolute;
+
+    /* border-radius: 10px; */
+
+}
+.standColor6{
+  background-color: #a02629;
+  border-radius: 25px;
+  top:0%;
+    left:0%;
+  width:100%;
+    height:71%;
+  position: absolute;
+
+    /* border-radius: 10px; */
+
+}
+.standColor7{
+  background-color: #303048;
+  border-radius: 25px;
+  top:0%;
+    left:0%;
+  width:100%;
+    height:71%;
+  position: absolute;
+
+    /* border-radius: 10px; */
+
+}
+.standColor8{
+  background-color: #00ccff;
+  border-radius: 25px;
+  top:0%;
+    left:0%;
+  width:100%;
+    height:71%;
+  position: absolute;
+
+    /* border-radius: 10px; */
+
+}
+.standColor9{
+  background-color: #4091ae;
+  border-radius: 25px;
+  top:0%;
+    left:0%;
+  width:100%;
+    height:71%;
+  position: absolute;
+
+    /* border-radius: 10px; */
+
+}
+.standColor10{
+  background-color: #1a1062;
+  border-radius: 25px;
+  top:0%;
+    left:0%;
+  width:100%;
+    height:71%;
+  position: absolute;
+
+    /* border-radius: 10px; */
+
+}
+.standColor11{
+  background-color: #006a72;
+  border-radius: 25px;
+  top:0%;
+    left:0%;
+  width:100%;
+    height:71%;
+  position: absolute;
+
+    /* border-radius: 10px; */
+
+}
+.standColor12{
+  background-color: #23c0f0;
+  border-radius: 25px;
+  top:0%;
+    left:0%;
+  width:100%;
+    height:71%;
+  position: absolute;
+
+    /* border-radius: 10px; */
+
+}
+.standColor13{
+  background-color: #0a1760;
+  border-radius: 25px;
+  top:0%;
+    left:0%;
+  width:100%;
+    height:71%;
+  position: absolute;
+
+    /* border-radius: 10px; */
+
+}
+.standColor14{
+  background-color: #dbc059;
+  border-radius: 25px;
+  top:0%;
+    left:0%;
+  width:100%;
+    height:71%;
+  position: absolute;
+
+    /* border-radius: 10px; */
+
+}
+.standColor15{
+  background-color: #e31d1a;
+  border-radius: 25px;
+  top:0%;
+    left:0%;
+  width:100%;
+    height:71%;
+  position: absolute;
+
+    /* border-radius: 10px; */
+
+}
+
 .roundlogo{
     border-radius: 25px;
 }
@@ -246,6 +416,20 @@ h2{
     border-color: #004d73 !important;
     color: #ffffff !important;
 }
+.btn-circle-big {
+				width: 150px;
+				height: 150px;
+				padding: 10px 16px;
+				border-radius: 75px;
+				font-size: 40px;
+				margin: 7px;
+				line-height: 1;
+				display: flex;  
+justify-content: center;  
+align-items: center; 
+color: #ffffff !important; 
+			}
+
 </style>
 
 </head>
@@ -283,12 +467,13 @@ h2{
     <img src="{{ asset('img') }}/bryte/background.jpg" class="stretch" alt="" />
 
     <div id="exhibitionHallBg" class="divInImage">
-      <img src="{{ asset('img') }}/bryte/exhallgrey.png" class="stretch" alt="" />
+      <img src="{{ asset('img') }}/bryte/exhall4.png" class="stretch" alt="" />
       @foreach($exhibitors as $item)
         @if($item->order < '99')
         <div id="myImage_zone{{$item->order + 2}}" class="divInImage">
           <a class="stretch standLink" href="{{ route('room', ['order'=>$item->order]) }}"></a>
           <img src="{{ asset('img') }}/bryte/exstand3.png" class="stretch standImage" alt="" />
+          <div class="standColor{{$item->order + 2}}"></div>
           <div class="standlogo">
             <img src="{{$item->logo}}" class="stretch roundLogo" alt="" />
           </div>
@@ -306,10 +491,24 @@ h2{
 function redirectToLobby(){
 	window.location.href = "{{ route('lobby') }}";
 }
+
 </script>
 <div style="position: fixed; bottom: 1%; left:1%; width:70px;">
 	<button id="homeButton" type="button" class="btn btn-primary btn-circle" onclick="redirectToLobby();"><i class="fa fa-home"></i>
 </div>
+@if(Auth::user()->user_roles_id == 1)
+<script>
+function redirectToRoom(){
+	window.location.href = "/speaker/100";
+}
+
+</script>
+
+<div style="position: fixed; top: 8%; left:1%;">
+<a id="" onclick="redirectToRoom();" class="btn-primary btn-circle-big">Go To Room</a>
+</div>
+
+@endif
 
 </body>
 
