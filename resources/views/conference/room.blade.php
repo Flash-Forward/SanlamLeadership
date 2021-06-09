@@ -109,8 +109,8 @@ h2{
 }
 
 .exhibition-button{
-	background-color: #466b85;
-	border-color: #466b85;
+	background-color: #021f2c;
+	border-color: #021f2c;
 	color: #ffffff;
 	
 }
