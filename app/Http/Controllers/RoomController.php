@@ -41,7 +41,7 @@ public $rows =	[
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
 														'room_desc'		=> 	'Plenary Session',
 														'room_info'		=> 	'Who We Are and What We Do',
-														'link'			=>	'#',
+														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
 																			/*
 																			Ideally also a table and this array should hold the user id's.
@@ -86,7 +86,7 @@ public $rows =	[
 														'room_name'		=> 	'Room 1', //ideally a table and this should be an id referencing that row
 														'room_desc'		=> 	'Claims',
 														'room_info'		=> 	'Who We Are and What We Do',
-														'link'			=>	'#',
+														'link'			=>	'/room/101',
 														'speakers'		=> 	[	
 																			/*
 																			Ideally also a table and this array should hold the user id's.
@@ -114,7 +114,7 @@ public $rows =	[
 														'room_name'		=> 	'Room 2',
 														'room_desc'		=> 	'Underwriting',
 														'room_info'		=> 	'Policy Insights and Managing Risks',
-														'link'			=>	'#',
+														'link'			=>	'/room/102',
 														'speakers'		=> 	[	
 																			/*
 																			Ideally also a table and this array should hold the user id's.
@@ -142,7 +142,7 @@ public $rows =	[
 														'room_name'		=> 	'Room 3',
 														'room_desc'		=> 	'Product',
 														'room_info'		=> 	'Agri Offering',
-														'link'			=>	'#',
+														'link'			=>	'/room/103',
 														'speakers'		=> 	[
 																				[
 																					'pic'			=> '/img/schedule/profile/Pieter-Pieterse.jpg',
@@ -160,7 +160,7 @@ public $rows =	[
 														'room_name'		=> 	'Room 4',
 														'room_desc'		=> 	'Bryte Life',
 														'room_info'		=> 	'Bryte Life Offering',
-														'link'			=>	'#',
+														'link'			=>	'/room/104',
 														'speakers'		=> 	[
 																				[
 																					'pic'			=> '/img/schedule/profile/Moroesi-Mokhabi.jpg',
@@ -173,7 +173,7 @@ public $rows =	[
 														'room_name'		=> 	'Room 5',
 														'room_desc'		=> 	'Bryte Risk Services Botswana',
 														'room_info'		=> 	'New Product offering - Bonds & Guarantees',
-														'link'			=>	'#',
+														'link'			=>	'/room/105',
 														'speakers'		=> 	[
 																				[
 																					'pic'			=> '/img/schedule/profile/Dziki-Nganunu.jpg',
@@ -207,7 +207,7 @@ public $rows =	[
 														'room_name'		=> 	'Room 1', //ideally a table and this should be an id referencing that row
 														'room_desc'		=> 	'Claims',
 														'room_info'		=> 	'Who We Are and What We Do',
-														'link'			=>	'#',
+														'link'			=>	'/room/101',
 														'speakers'		=> 	[	
 																			/*
 																			Ideally also a table and this array should hold the user id's.
@@ -235,7 +235,7 @@ public $rows =	[
 														'room_name'		=> 	'Room 2',
 														'room_desc'		=> 	'Underwriting',
 														'room_info'		=> 	'Policy Insights and Managing Risks',
-														'link'			=>	'#',
+														'link'			=>	'/room/102',
 														'speakers'		=> 	[	
 																			/*
 																			Ideally also a table and this array should hold the user id's.
@@ -263,7 +263,7 @@ public $rows =	[
 														'room_name'		=> 	'Room 3',
 														'room_desc'		=> 	'Product',
 														'room_info'		=> 	'Agri Offering',
-														'link'			=>	'#',
+														'link'			=>	'/room/103',
 														'speakers'		=> 	[
 																				[
 																					'pic'			=> '/img/schedule/profile/Pieter-Pieterse.jpg',
@@ -281,7 +281,7 @@ public $rows =	[
 														'room_name'		=> 	'Room 4',
 														'room_desc'		=> 	'Bryte Life',
 														'room_info'		=> 	'Bryte Life Offering',
-														'link'			=>	'#',
+														'link'			=>	'/room/104',
 														'speakers'		=> 	[
 																				[
 																					'pic'			=> '/img/schedule/profile/Moroesi-Mokhabi.jpg',
@@ -294,7 +294,7 @@ public $rows =	[
 														'room_name'		=> 	'Room 5',
 														'room_desc'		=> 	'Bryte Risk Services Botswana',
 														'room_info'		=> 	'Bespoke Solutions for the Hospitality Sector',
-														'link'			=>	'#',
+														'link'			=>	'/room/105',
 														'speakers'		=> 	[
 																				[
 																					'pic'			=> '/img/schedule/profile/Akanyang-Masole.jpg',
@@ -328,7 +328,7 @@ public $rows =	[
 														'room_name'		=> 	'Room 1', //ideally a table and this should be an id referencing that row
 														'room_desc'		=> 	'Claims',
 														'room_info'		=> 	'Who We Are and What We Do',
-														'link'			=>	'#',
+														'link'			=>	'/room/101',
 														'speakers'		=> 	[	
 																			/*
 																			Ideally also a table and this array should hold the user id's.
@@ -356,7 +356,7 @@ public $rows =	[
 														'room_name'		=> 	'Room 2',
 														'room_desc'		=> 	'Underwriting',
 														'room_info'		=> 	'Policy Insights and Managing Risks',
-														'link'			=>	'#',
+														'link'			=>	'/room/102',
 														'speakers'		=> 	[	
 																			/*
 																			Ideally also a table and this array should hold the user id's.
@@ -384,7 +384,7 @@ public $rows =	[
 														'room_name'		=> 	'Room 3',
 														'room_desc'		=> 	'Product',
 														'room_info'		=> 	'Agri Offering',
-														'link'			=>	'#',
+														'link'			=>	'/room/103',
 														'speakers'		=> 	[
 																				[
 																					'pic'			=> '/img/schedule/profile/Pieter-Pieterse.jpg',
@@ -402,7 +402,7 @@ public $rows =	[
 														'room_name'		=> 	'Room 4',
 														'room_desc'		=> 	'Bryte Life',
 														'room_info'		=> 	'Bryte Life Offering',
-														'link'			=>	'#',
+														'link'			=>	'/room/104',
 														'speakers'		=> 	[
 																				[
 																					'pic'			=> '/img/schedule/profile/Moroesi-Mokhabi.jpg',
@@ -415,7 +415,7 @@ public $rows =	[
 														'room_name'		=> 	'Room 5',
 														'room_desc'		=> 	'Bryte Risk Services Botswana',
 														'room_info'		=> 	'Claims and Procurement',
-														'link'			=>	'#',
+														'link'			=>	'/room/105',
 														'speakers'		=> 	[
 																				[
 																					'pic'			=> '/img/schedule/profile/John-Heldsinger.jpg',
@@ -621,7 +621,7 @@ public $rows =	[
 
 		$ctrlId ='room-collapse'.$ridx;
 		$hdrId	='room-heading'.$ridx;
-		$onclick = 'onClick="alert(\'Will join '.$room['room_name'].'\')"';
+		$onclick = 'onClick="redirectRoom(\''.$room['link'].'\');"';
 		
 		
 		$calDate		= strtotime($eventDate);

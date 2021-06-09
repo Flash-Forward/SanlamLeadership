@@ -121,9 +121,10 @@ body, html {
     height: inherit !important;
 }
 #bg{
-    background: url("{{ asset('img') }}/bryte/bg3.jpg");
+    background: url("{{ asset('img') }}/bryte/bg3d.jpg");
     background-size: cover;
   height: 100%;
+  color: #ffffff;
 }
 .bryte-button{
     background-color: #004d73 !important;
@@ -135,8 +136,8 @@ body, html {
 	font-weight: bold;
 	text-align: center;
 	padding: 10px 0;
-	background-color: #eee;
-	mix-blend-mode: multiply;
+	/* background-color: #eee; */
+	/* mix-blend-mode: multiply; */
 	width: 100%;
 	position: relative;
 	top: 15px;
@@ -180,7 +181,7 @@ body, html {
                 <div class="form-group row mb-1">
                     <div class="col-md-8">
                         @if (Route::has('password.request'))
-                            <a class="btn btn-link" href="{{ route('password.request') }}">
+                            <a class="btn btn-link" href="{{ route('password.request') }}" style="color: #ffffff">
                                 {{ __('Forgot Your Password?') }}
                             </a>
                         @endif
