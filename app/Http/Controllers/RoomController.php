@@ -32,7 +32,7 @@ public $rows =	[
 					[
 						[	//Row 2
 							'title'			=> 'Plenary Session',
-							'image'			=> '/img/schedule/SET C-01.jpg',
+							'image'			=> '/img/schedule/final-main.jpg',
 							'start_time'	=> '10:30',
 							'end_time'		=> '12:00',
 							'interval'		=>	false,
@@ -40,30 +40,90 @@ public $rows =	[
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
 														'room_desc'		=> 	'Plenary Session',
-														'room_info'		=> 	'Who We Are and What We Do',
+														'room_info'		=> 	'Plenary Session',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
-																			/*
-																			Ideally also a table and this array should hold the user id's.
-																			Having a table means we have access to any other relevant data if necessary,
-																			such as email, phone no, website, etc.
-																			*/
-																			[
-																				'pic'			=> '/img/schedule/profile/Reynier-Rautenbach.jpg',
-																				'name'			=> 'Reynier Rautenbach', 
-																				'designation'	=> ' Head: General Claims'
-																			], 
-																			[
-																				'pic'			=> '/img/schedule/profile/Ellen-Engelbrecht.jpg',
-																				'name'			=> 'Ellen Engelbrecht', 
-																				'designation'	=> 'Head: Claims Operations'																					
-																			], 
-																			[
-																				'pic'			=> '/img/schedule/profile/Kishore-Maharaj.jpg',
-																				'name'			=> 'Kishore Maharaj', 
-																				'designation'	=> 'Head: Group Services'
-																			]
-																		]
+															/*
+															Ideally also a table and this array should hold the user id's.
+															Having a table means we have access to any other relevant data if necessary,
+															such as email, phone no, website, etc.
+															*/
+															[
+																'pic'			=> '/img/schedule/profile/Noeleen-Maholwana-Sangqu.jpg',
+																'name'			=> 'Noeleen Maholwana-Sangqu', 
+																'designation'	=> ' Veteran TV and Radio Host'
+															], 
+															[
+																'pic'			=> '/img/schedule/profile/Edwyn-ONeill.jpg',
+																'name'			=> 'Edwyn O\'Neill', 
+																'designation'	=> 'Chief Executive Officer, Bryte'																					
+															], 
+															[
+																'pic'			=> '/img/schedule/profile/JP-Blignaut.jpg',
+																'name'			=> 'JP Blignaut', 
+																'designation'	=> 'Chief Underwriting Officer, Bryte'
+															],
+															[
+																'pic'			=> '/img/schedule/profile/Cloud-Saungweme.jpg',
+																'name'			=> 'Cloud Saungweme', 
+																'designation'	=> 'Chief Claims Officer, Bryte'										
+															],
+															[
+																'pic'			=> '/img/schedule/profile/Chris-Grieve.jpg',
+																'name'			=> 'Chris Grieve', 
+																'designation'	=> 'Executive Head: Broker Distribution, Bryte'													
+															],
+															[
+																'pic'			=> '/img/schedule/profile/Collin-Molepe.jpg',
+																'name'			=> 'Collin Molepe', 
+																'designation'	=> ' Deputy Chief Executive Officer, Bryte'
+															],
+															[
+																'pic'			=> '/img/schedule/profile/Dziki-Nganunu.jpg',
+																'name'			=> 'Dziki Nganunu', 
+																'designation'	=> 'Chief Executive Officer, Bryte Risk Services Botswana'
+															],
+															[
+																'pic'			=> '/img/schedule/profile/JP-Landman.jpg',
+																'name'			=> 'JP Landman', 
+																'designation'	=> 'Political-Economic Trend Analyst'
+															],
+															[
+																'pic'			=> '/img/schedule/profile/Yulandi-van-Dyk.jpg',
+																'name'			=> 'Yulandi van Dyk', 
+																'designation'	=> 'Chief Financial Officer, Bryte'
+															],
+															[
+																'pic'			=> '/img/schedule/profile/Dr-Thabi-Leoka.jpg',
+																'name'			=> 'Dr Thabi Leoka', 
+																'designation'	=> ''
+															],
+															[
+																'pic'			=> '/img/schedule/profile/Lesego-Tlhabi.jpg',
+																'name'			=> 'Lesego Tlhabi', 
+																'designation'	=> ''
+															],
+															[
+																'pic'			=> '/img/schedule/profile/Nicholas-Francis.jpg',
+																'name'			=> 'Nicholas Francis', 
+																'designation'	=> ''
+															],
+															[
+																'pic'			=> '/img/schedule/profile/Wim-Morland.jpg',
+																'name'			=> 'Wim Morland', 
+																'designation'	=> 'Executive Head: Insurance Partnerships, Bryte'
+															],
+															[
+																'pic'			=> '/img/schedule/profile/Sedick-Isaacs.jpg',
+																'name'			=> 'Sedick Isaacs', 
+																'designation'	=> 'Head: Business Support Service'
+															],
+															[
+																'pic'			=> '/img/schedule/profile/Kim-Polley.jpg',
+																'name'			=> 'Kim Polley', 
+																'designation'	=> ''
+															]
+														]
 													],
 													
 												]
@@ -77,7 +137,7 @@ public $rows =	[
 						],
 						[	//Row 2
 							'title'			=> 'Session 1',
-							'image'			=> '/img/schedule/SET C-01.jpg',
+							'image'			=> '/img/schedule/final-01.jpg',
 							'start_time'	=> '12:30',
 							'end_time'		=> '13:30',
 							'interval'		=>	false,
@@ -198,7 +258,7 @@ public $rows =	[
 						],
 						[	//Row 3
 							'title'			=> 'Session 2',
-							'image'			=> '/img/schedule/SET C-02.jpg',
+							'image'			=> '/img/schedule/final-02.jpg',
 							'start_time'	=> '13:45',
 							'end_time'		=> '14:45',
 							'interval'		=>	false,
@@ -319,7 +379,7 @@ public $rows =	[
 						],						
 						[	//Row 4
 							'title'			=> 'Session 3',
-							'image'			=> '/img/schedule/SET C-03.jpg',
+							'image'			=> '/img/schedule/final-03.jpg',
 							'start_time'	=> '15:00',
 							'end_time'		=> '16:00',
 							'interval'		=>	false,

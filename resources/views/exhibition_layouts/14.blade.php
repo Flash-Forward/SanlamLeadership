@@ -417,14 +417,16 @@ h2{
     color: #ffffff !important;
 }
 .btn-circle-big {
-				width: 150px;
-				height: 150px;
+				width: 170px;
+				height: 170px;
 				padding: 10px 16px;
-				border-radius: 75px;
+				border-radius: 85px;
 				font-size: 40px;
 				margin: 7px;
 				line-height: 1;
 				display: flex;  
+  text-align: center;
+
 justify-content: center;  
 align-items: center; 
 color: #ffffff !important; 
@@ -444,7 +446,7 @@ color: #ffffff !important;
       <a class="nav-link" href="{{ route('lobby') }}">Lobby</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="{{ route('innovator') }}">Schedule</a>
+      <a class="nav-link" href="{{ route('schedule') }}">Schedule</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="{{ route('exhibition') }}">Exhibition Hall</a>
@@ -505,7 +507,7 @@ function redirectToRoom(){
 </script>
 
 <div style="position: fixed; top: 8%; left:1%;">
-<a id="" onclick="redirectToRoom();" class="btn-primary btn-circle-big">Go To Room</a>
+<a id="" onclick="redirectToRoom();" class="btn-primary btn-circle-big">Join My Room</a>
 </div>
 
 @endif

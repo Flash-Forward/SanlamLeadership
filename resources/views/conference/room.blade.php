@@ -49,7 +49,7 @@ body, html {
 #myImage_zone1{
     width:75%;
     height:75%;
-    top:16%;
+    top:13.2%;
     left:12.5%;
 }
 .btn-circle {
@@ -64,17 +64,20 @@ body, html {
 justify-content: center;  
 align-items: center;  
 			}
-.btn-circle-big {
-				width: 150px;
-				height: 150px;
+			.btn-circle-big {
+				width: 170px;
+				height: 170px;
 				padding: 10px 16px;
-				border-radius: 75px;
+				border-radius: 85px;
 				font-size: 40px;
 				margin: 7px;
 				line-height: 1;
 				display: flex;  
+  text-align: center;
+
 justify-content: center;  
-align-items: center;  
+align-items: center; 
+color: #ffffff !important; 
 			}
 
 			.btn-bottom {
@@ -105,7 +108,7 @@ h2{
   display: flex;
   align-items: center;
   justify-content: center;
-  position: fixed; bottom: 0.5%; left:12.5%; width:75%;
+  position: fixed; bottom: 2%; left:12.5%; width:75%;
 }
 
 .exhibition-button{
@@ -217,7 +220,7 @@ s0.parentNode.insertBefore(s1,s0);
  
 </script>
 <div style="position: fixed; top: 1%; left:1%;">
-<a id="backButton" onclick="redirectToLobby();" class="btn btn-primary btn-circle-big">Go To Lobby</a>
+<a id="backButton" onclick="redirectToLobby();" class="btn btn-primary btn-circle-big">Back To Lobby</a>
 </div>
 @endif
 @if(Auth::user()->user_roles_id == 1 && $speaker == false)
@@ -231,7 +234,7 @@ function redirectToRoom(){
 </script>
 
 <div style="position: fixed; top: 1%; left:1%;">
-<a id="" onclick="redirectToRoom();" class="btn-primary btn-circle-big">Go To Room</a>
+<a id="" onclick="redirectToRoom();" class="btn-primary btn-circle-big">Join My Room</a>
 </div>
 
 

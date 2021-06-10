@@ -142,6 +142,7 @@ body, html {
 	position: relative;
 	top: 15px;
 	text-transform: uppercase;
+    color: #ffffff;
 }
 </style>
 
@@ -221,7 +222,13 @@ function login(){
            && email != 'ross@vapsure.co.za' && email != 'demi@vapsure.co.za'
            && email != 'roelof@impacuma.co.za' && email != 'riani@impacuma.co.za'
            && email != 'melanie@taxrisk.co.za' && email != 'willem@taxrisk.co.za'
-           && email != 'marie.mower@brytesa.com' && email != 'michelle.dickson@brytesa.com' )
+           && email != 'marie.mower@brytesa.com' && email != 'michelle.dickson@brytesa.com'
+           && email != 'reynier.rautenbach@brytesa.com' && email != 'ellen.engelbrecht@brytesa.com'
+           && email != 'kishore.maharaj@brytesa.com' && email != 'sedick.isaacs@brytesa.com'
+           && email != 'shupikayi.kasayi@brytesa.com' && email != 'robert.hodgkiss@brytesa.com'
+           && email != 'pieter.pieterse@brytesa.com' && email != 'eddie.mckenzie@brytesa.com'
+           && email != 'moroesi.mokhabi@brytesa.com' && email != 'dziki.nganunu@bryte.co.bw'
+           && email != 'akanyang.masole@bryte.co.bw' && email != 'john.heldsinger@bryte.co.bw' )
         alert('THIS EVENT HAS NOT STARTED');
     else
         document.getElementById('login-form').submit();

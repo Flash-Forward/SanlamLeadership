@@ -243,17 +243,17 @@ video {
 }
 
 #leftBanner{
-   width:9vw;
-    height:22.5vw;
-    top:7%;
-    left:20.2%;
+  width:9.7vw;
+    height:22.8vw;
+    top:12%;
+    left:5.6%;
 }
 
 #rightBanner{
-  width:9vw;
-    height:22.5vw;
-    top:7%;
-    left:70.6%;
+  width:9.7vw;
+    height:22.8vw;
+    top:12%;
+    left:5.6%;
 }
 #rightBannerHolder{
   width:11vw;
@@ -285,9 +285,9 @@ video {
 }
 #middleBanner{
    width:34vw;
-    height:11.2vw;
-    top:7%;
-    left:33%;
+    height:11.4vw;
+    top:18.6%;
+    left:9%;
 }
 .btn-circle {
 				width: 70px;
@@ -331,14 +331,16 @@ iframe{
 }
 
 .btn-circle-big {
-				width: 150px;
-				height: 150px;
+				width: 170px;
+				height: 170px;
 				padding: 10px 16px;
-				border-radius: 75px;
+				border-radius: 85px;
 				font-size: 40px;
 				margin: 7px;
 				line-height: 1;
 				display: flex;  
+  text-align: center;
+
 justify-content: center;  
 align-items: center; 
 color: #ffffff !important; 
@@ -359,7 +361,7 @@ color: #ffffff !important;
       <a class="nav-link" href="{{ route('lobby') }}">Lobby</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="{{ route('innovator') }}">Schedule</a>
+      <a class="nav-link" href="{{ route('schedule') }}">Schedule</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="{{ route('exhibition') }}">Exhibition Hall</a>
@@ -453,27 +455,30 @@ color: #ffffff !important;
 
     <div id="leftBannerHolder" class="divInImage">
     <img src="{{ asset('img') }}/bryte/emptybanner.png" class="stretch" alt="" />
+      <div id="leftBanner" class="divInImage">
+      <img src="{{ $left_banner->value ?? '' }}" class="stretch" alt="" />
+      </div>
     </div>
 
-    <div id="leftBanner" class="divInImage">
-    <img src="{{ $left_banner->value ?? '' }}" class="stretch" alt="" />
-    </div>
+
 
     <div id="rightBannerHolder" class="divInImage">
     <img src="{{ asset('img') }}/bryte/emptybanner.png" class="stretch" alt="" />
+      <div id="rightBanner" class="divInImage">
+      <img src="{{ $right_banner->value ?? '' }}" class="stretch" alt="" />
+      </div>
     </div>
 
-    <div id="rightBanner" class="divInImage">
-    <img src="{{ $right_banner->value ?? '' }}" class="stretch" alt="" />
-    </div>
+
 
     <div id="middleBannerHolder" class="divInImage">
     <img src="{{ asset('img') }}/bryte/screen.png" class="stretch" alt="" />
+      <div id="middleBanner" class="divInImage">
+      <img src="{{ $middle_banner->value ?? '' }}" class="stretch" alt="" />
+      </div>
     </div>
 
-    <div id="middleBanner" class="divInImage">
-    <img src="{{ $middle_banner->value ?? '' }}" class="stretch" alt="" />
-    </div>
+
     
     <a id="helpDesk" onclick="Tawk_API.toggle();"></a>
     <a id="schedule" href="{{ route('schedule') }}"></a>
@@ -530,7 +535,7 @@ function redirectToRoom(){
 </script>
 
 <div style="position: fixed; top: 8%; left:1%;">
-<a id="" onclick="redirectToRoom();" class="btn-primary btn-circle-big">Go To Room</a>
+<a id="" onclick="redirectToRoom();" class="btn-primary btn-circle-big">Join My Room</a>
 </div>
 @endif
 
