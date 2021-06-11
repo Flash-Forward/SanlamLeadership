@@ -18,6 +18,11 @@
   <link href="{{ asset('schedule') }}/lib/venobox/venobox.css" rel="stylesheet">
   <link href="{{ asset('schedule') }}/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.9/dist/sweetalert2.all.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@9.17.2/dist/sweetalert2.min.css">
+
   <!-- Main Stylesheet File -->
 <style>
 body, html {
@@ -346,6 +351,12 @@ align-items: center;
 color: #ffffff !important; 
 			}
 
+      .bryte-button {
+            background-color: #004d73 !important;
+            border-color: #004d73 !important;
+            color: #ffffff !important;
+        }
+
 </style>
 
 </head>
@@ -364,10 +375,10 @@ color: #ffffff !important;
       <a class="nav-link" href="{{ route('schedule') }}">Schedule</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="{{ route('exhibition') }}">Exhibition Hall</a>
+      <a class="nav-link"  onclick="checkRoom('room_two_open_time', '/exhibition');">Exhibition Hall</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="{{ route('breakaway') }}">Breakaway Rooms</a>
+      <a class="nav-link"  onclick="checkRoom('room_four_open_time', '/breakaway');">Breakaway Rooms</a>
     </li>
 		<li class="nav-item">
 		<a class="nav-link"  href="{{ route('logout') }}" onclick="event.preventDefault();
@@ -390,13 +401,13 @@ color: #ffffff !important;
 <div id="bg">
     <img src="{{ asset('img') }}/bryte/lobbyb.jpg" class="stretch" alt="" />
 
-    @if($room_two_name->value != "NONE")
+    @if($room_three_name->value != "NONE")
     <div id="mainRoomHeadingArea" class="divInImage">
         <div id="mainRoomHeadingText">
             {{$room_three_name->value}}
         </div>
     </div>
-    <a id="mainRoom" href="{{ route('room', ['order'=>99]) }}"></a>
+    <a id="mainRoom"  onclick="checkRoom('room_three_open_time', '/room/99');"></a>
     @endif
 
     @if($room_two_name->value != "NONE")
@@ -405,7 +416,7 @@ color: #ffffff !important;
         {{$room_two_name->value}}
         </div>
     </div>
-    <a id="exhibitionHall" href="{{ route('exhibition') }}"></a>
+    <a id="exhibitionHall"  onclick="checkRoom('room_two_open_time', '/exhibition');"></a>
     @endif
 
     @if($room_four_name->value != "NONE")
@@ -414,7 +425,7 @@ color: #ffffff !important;
         {{$room_four_name->value}}
         </div>
     </div>
-    <a id="breakawayRooms" href="{{ route('breakaway') }}"></a>
+    <a id="breakawayRooms" onclick="checkRoom('room_four_open_time', '/breakaway');"></a>
     @endif
 
     @if($room_five_name->value != "NONE")
@@ -496,9 +507,33 @@ s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
 
+const swalWithBootstrapButtons = Swal.mixin({
+  customClass: {
+    confirmButton: 'btn bryte-button',
+    cancelButton: 'btn bryte-button'
+  },
+  buttonsStyling: false
+})
 
-
-
+function checkRoom(room, route){
+        $.ajax({
+            url: '{{ route("room.check") }}?r='+room,
+            type: "get",
+            success: function (data) {
+                if (data == "1") {
+	                window.location.href = route;
+                    
+                }else{
+                    swalWithBootstrapButtons.fire({
+                        icon: 'error',
+                        title: 'This Room Is Closed',
+                        text: 'Opens at '+data,
+                        //footer: '<a href>Why do I have this issue?</a>'
+                    })
+                }
+            }
+        });
+    }
 
 function on() {
   document.getElementById("overlay").style.display = "block";

@@ -20,6 +20,10 @@
 
   <!-- Main Stylesheet File -->
   <link href="{{ asset('schedule') }}/css/style.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.9/dist/sweetalert2.all.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@9.17.2/dist/sweetalert2.min.css">
 <style>
 body, html {
   height: 100%;
@@ -332,10 +336,10 @@ h2{
       <a class="nav-link" href="{{ route('innovator') }}">Schedule</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="{{ route('exhibition') }}">Exhibition Hall</a>
+      <a class="nav-link"  onclick="checkRoom('room_two_open_time', '/exhibition');">Exhibition Hall</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="{{ route('breakaway') }}">Breakaway Rooms</a>
+      <a class="nav-link"  onclick="checkRoom('room_four_open_time', '/breakaway');">Breakaway Rooms</a>
     </li>
 		<li class="nav-item">
 		<a class="nav-link"  href="{{ route('logout') }}" onclick="event.preventDefault();

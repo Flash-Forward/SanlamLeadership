@@ -491,6 +491,16 @@ public $rows =	[
 			]
 		];
 
+	public function checkRoom(Request $request){
+		date_default_timezone_set('Africa/Johannesburg');
+        $room = $request->get('r');
+		$time = Config::where("key", $room)->first()->value;
+		if (date('H:i') >= date('H:i', strtotime($time)))
+			return "1";
+		return $time;
+	}
+	
+
     public function checkEmail(Request $request){
 
         $email = $request->get('e');
@@ -681,7 +691,10 @@ public $rows =	[
 
 		$ctrlId ='room-collapse'.$ridx;
 		$hdrId	='room-heading'.$ridx;
-		$onclick = 'onClick="redirectRoom(\''.$room['link'].'\');"';
+		if($room['link'] == '/room/99')
+			$onclick = 'onClick="checkRoom(\'room_three_open_time\', \''.$room['link'].'\');"';
+		else
+			$onclick = 'onClick="checkRoom(\'room_two_open_time\', \''.$room['link'].'\');"';
 		
 		
 		$calDate		= strtotime($eventDate);
