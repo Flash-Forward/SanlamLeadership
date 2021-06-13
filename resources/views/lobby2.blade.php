@@ -241,27 +241,27 @@ video {
 }
 
 #leftBannerHolder{
-  width:11vw;
+  width:10.5vw;
     height:26.5vw;
     top:0.5%;
     left:19.2%;
 }
 
 #leftBanner{
-  width:9.7vw;
+  width:9.2vw;
     height:22.8vw;
     top:12%;
     left:5.6%;
 }
 
 #rightBanner{
-  width:9.7vw;
+  width:9.2vw;
     height:22.8vw;
     top:12%;
     left:5.6%;
 }
 #rightBannerHolder{
-  width:11vw;
+  width:10.5vw;
     height:26.5vw;
     top:0.5%;
     left:69.6%;

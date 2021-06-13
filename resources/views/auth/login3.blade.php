@@ -183,7 +183,7 @@ body, html {
                     <div class="col-md-8">
                         @if (Route::has('password.request'))
                             <a class="btn btn-link" href="{{ route('password.request') }}" style="color: #ffffff">
-                                {{ __('Forgot Your Password?') }}
+                                {{ __('Forgot your password?') }}
                             </a>
                         @endif
                     </div>

@@ -48,6 +48,11 @@ body, html {
     height:100%;
     
 }
+.stretch-link {
+    width:100%;
+    height:110%;
+    
+}
 .divInImage {
     /* border:1px solid #fff; */
 
@@ -158,7 +163,7 @@ color: #ffffff !important;
 			}
 
 h2{
-	font-size: 48px !important;
+	font-size: 2vw !important;
   color: #f1f1f1 !important;
 }
 .header {
@@ -174,6 +179,19 @@ h2{
     background-color: #004d73 !important;
     border-color: #004d73 !important;
     color: #ffffff !important;
+}
+.top-half{
+  display: flex;  
+  text-align: center;
+
+justify-content: center;  
+align-items: center; 
+flex-direction: column;
+
+  height: 90%;
+}
+.room-heading{
+  margin: 0;
 }
 </style>
 
@@ -213,34 +231,50 @@ h2{
 
     <!-- <img src="{{ asset('img') }}/bryte/background.jpg" class="stretch" alt="" /> -->
     <div id="myImage_zone1" class="divInImage">
-      <h2><b>ROOM 1</b></h2>
-      <a class="stretch" href="{{ route('room', ['order'=>101]) }}"></a>
-      <img src="{{ asset('img') }}/bryte/breakawayroom.png" class="" style="width: 100%;" alt="" />
-      <button type="button" class="btn bryte-button">{{ __('Enter Room') }}</button>
+      <div class="top-half">
+        <h2 class="room-heading"><b>ROOM 1</b></h2>
+        <span style="color:#ffffff;"><b>Claims</b></span>
+        <a class="stretch-link" href="{{ route('room', ['order'=>101]) }}"></a>
+        <img src="{{ asset('img') }}/bryte/breakawayroom.png" class="" style="width: 100%;" alt="" />
+      </div>
+
+      <button type="button" style="top: 3vh; position: relative;" class="btn bryte-button">{{ __('Enter Room') }}</button>
     </div>
     <div id="myImage_zone2" class="divInImage">
-      <h2><b>ROOM 2</b></h2>
-      <a class="stretch" href="{{ route('room', ['order'=>102]) }}"></a>
-      <img src="{{ asset('img') }}/bryte/breakawayroom.png" class="" style="width: 100%;" alt="" />
-      <button type="button" class="btn bryte-button">{{ __('Enter Room') }}</button>
+      <div class="top-half">
+        <h2 class="room-heading"><b>ROOM 2</b></h2>
+        <span style="color:#ffffff;"><b>Underwriting</b></span>
+        <a class="stretch-link" href="{{ route('room', ['order'=>102]) }}"></a>
+        <img src="{{ asset('img') }}/bryte/breakawayroom.png" class="" style="width: 100%;" alt="" />
+      </div>
+      <button type="button" style="top: 3vh; position: relative;" class="btn bryte-button">{{ __('Enter Room') }}</button>
     </div>
     <div id="myImage_zone3" class="divInImage">
-      <h2><b>ROOM 3</b></h2>
-      <a class="stretch" href="{{ route('room', ['order'=>103]) }}"></a>
-      <img src="{{ asset('img') }}/bryte/breakawayroom.png" class="" style="width: 100%;" alt="" />
-      <button type="button" class="btn bryte-button">{{ __('Enter Room') }}</button>
+      <div class="top-half">
+        <h2 class="room-heading"><b>ROOM 3</b></h2>
+        <span style="color:#ffffff;"><b>Product</b></span>
+        <a class="stretch-link" href="{{ route('room', ['order'=>103]) }}"></a>
+        <img src="{{ asset('img') }}/bryte/breakawayroom.png" class="" style="width: 100%;" alt="" />
+      </div>
+      <button type="button" style="top: 3vh; position: relative;" class="btn bryte-button">{{ __('Enter Room') }}</button>
     </div>
     <div id="myImage_zone4" class="divInImage">
-      <h2><b>ROOM 4</b></h2>
-      <a class="stretch" href="{{ route('room', ['order'=>104]) }}"></a>
-      <img src="{{ asset('img') }}/bryte/breakawayroom.png" class="" style="width: 100%;" alt="" />
-      <button type="button" class="btn bryte-button">{{ __('Enter Room') }}</button>
+      <div class="top-half">
+        <h2 class="room-heading"><b>ROOM 4</b></h2>
+        <span style="color:#ffffff;"><b>Bryte Life</b></span>
+        <a class="stretch-link" href="{{ route('room', ['order'=>104]) }}"></a>
+        <img src="{{ asset('img') }}/bryte/breakawayroom.png" class="" style="width: 100%;" alt="" />
+      </div>
+      <button type="button" style="top: 3vh; position: relative;" class="btn bryte-button">{{ __('Enter Room') }}</button>
     </div>
     <div id="myImage_zone5" class="divInImage">
-      <h2><b>ROOM 5</b></h2>
-      <a class="stretch" href="{{ route('room', ['order'=>105]) }}"></a>
-      <img src="{{ asset('img') }}/bryte/breakawayroom.png" class="" style="width: 100%;" alt="" />
-      <button type="button" class="btn bryte-button">{{ __('Enter Room') }}</button>
+    <div class="top-half">
+        <h2 class="room-heading"><b>ROOM 5</b></h2>
+        <span style="color:#ffffff;"><b>Bryte Risk Services Botswana</b></span>
+        <a class="stretch-link" href="{{ route('room', ['order'=>105]) }}"></a>
+        <img src="{{ asset('img') }}/bryte/breakawayroom.png" class="" style="width: 100%;" alt="" />
+      </div>
+      <button type="button" style="top: 3vh; position: relative;" class="btn bryte-button">{{ __('Enter Room') }}</button>
     </div>
     <!-- <a id="myImage_zone2" onclick="event.preventDefault();document.getElementById('login-form').submit();"></a> -->
 </div>

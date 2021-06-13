@@ -53,6 +53,34 @@
 	<script src="{{ asset('js') }}/schedule/ics.deps.min.js"></script>
 	<script src="{{ asset('js') }}/schedule/ics.min.js"></script>		
 	<main>
+	<nav class="navbar navbar-expand-sm bg-light" style="color: #000000 !important;">
+
+  <!-- Links -->
+  <a href="#" class="navbar-left" style="margin-right: 3%; margin-left: 3%;"><img src="{{ asset('img') }}/bryte/logo3.png"></a>
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item active">
+      <a class="nav-link" href="{{ route('lobby') }}" style="color: #000000 !important;">Lobby</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{{ route('schedule') }}" style="color: #000000 !important;">Schedule</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link"  onclick="checkRoom('room_two_open_time', '/exhibition');" style="color: #000000 !important;">Exhibition Hall</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link"  onclick="checkRoom('room_four_open_time', '/breakaway');" style="color: #000000 !important;">Breakaway Rooms</a>
+    </li>
+		<li class="nav-item">
+		<a class="nav-link"  href="{{ route('logout') }}" style="color: #000000 !important;" onclick="event.preventDefault();
+       document.getElementById('logout-form').submit();">Log Out</a>
+		</li>
+  </ul>
+
+
+</nav>
+<form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
 		<div id="banner"><img src="{{ asset('img') }}/bryte/banner.jpg" class="stretch" alt="" /></div>
 		<section class="accordion fix">
 			<div class="container">

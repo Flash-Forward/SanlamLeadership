@@ -31,7 +31,7 @@ public $rows =	[
 					'sessions'			=>
 					[
 						[	//Row 2
-							'title'			=> 'Plenary Session',
+							'title'			=> 'Main Event',
 							'image'			=> '/img/schedule/final-main.jpg',
 							'start_time'	=> '10:30',
 							'end_time'		=> '12:00',
@@ -39,8 +39,8 @@ public $rows =	[
 							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Plenary Session',
-														'room_info'		=> 	'Plenary Session',
+														'room_desc'		=> 	'Main Event',
+														'room_info'		=> 	'Join our Executive team, who will be sharing robust, expert insights and discussing trends that will shape the insurance landscape in 2021.',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
 															/*
@@ -48,11 +48,7 @@ public $rows =	[
 															Having a table means we have access to any other relevant data if necessary,
 															such as email, phone no, website, etc.
 															*/
-															[
-																'pic'			=> '/img/schedule/profile/Noeleen-Maholwana-Sangqu.jpg',
-																'name'			=> 'Noeleen Maholwana-Sangqu', 
-																'designation'	=> ' Veteran TV and Radio Host'
-															], 
+ 
 															[
 																'pic'			=> '/img/schedule/profile/Edwyn-ONeill.jpg',
 																'name'			=> 'Edwyn O\'Neill', 
@@ -83,30 +79,16 @@ public $rows =	[
 																'name'			=> 'Dziki Nganunu', 
 																'designation'	=> 'Chief Executive Officer, Bryte Risk Services Botswana'
 															],
-															[
-																'pic'			=> '/img/schedule/profile/JP-Landman.jpg',
-																'name'			=> 'JP Landman', 
-																'designation'	=> 'Political-Economic Trend Analyst'
-															],
+
 															[
 																'pic'			=> '/img/schedule/profile/Yulandi-van-Dyk.jpg',
 																'name'			=> 'Yulandi van Dyk', 
 																'designation'	=> 'Chief Financial Officer, Bryte'
 															],
 															[
-																'pic'			=> '/img/schedule/profile/Dr-Thabi-Leoka.jpg',
-																'name'			=> 'Dr Thabi Leoka', 
-																'designation'	=> ''
-															],
-															[
-																'pic'			=> '/img/schedule/profile/Lesego-Tlhabi.jpg',
-																'name'			=> 'Lesego Tlhabi', 
-																'designation'	=> ''
-															],
-															[
 																'pic'			=> '/img/schedule/profile/Nicholas-Francis.jpg',
 																'name'			=> 'Nicholas Francis', 
-																'designation'	=> ''
+																'designation'	=> 'Chief Marketing Officer, Bryte'
 															],
 															[
 																'pic'			=> '/img/schedule/profile/Wim-Morland.jpg',
@@ -119,9 +101,31 @@ public $rows =	[
 																'designation'	=> 'Head: Business Support Service'
 															],
 															[
+																'pic'			=> '/img/schedule/profile/Noeleen-Maholwana-Sangqu.jpg',
+																'name'			=> 'Noeleen Maholwana-Sangqu', 
+																'designation'	=> ' Veteran TV and Radio Host'
+															],
+															[
+																'pic'			=> '/img/schedule/profile/Coconut-Kelz.jpg',
+																'name'			=> 'Coconut Kelz', 
+																'designation'	=> 'Comedian and current Co-Host of Trending SA'
+															],
+															[
+																'pic'			=> '/img/schedule/profile/Dr-Thabi-Leoka.jpg',
+																'name'			=> 'Dr Thabi Leoka', 
+																'designation'	=> 'Independent Economist and Board Member of Corruption Watch'
+															],
+
+															[
+																'pic'			=> '/img/schedule/profile/JP-Landman.jpg',
+																'name'			=> 'JP Landman', 
+																'designation'	=> 'Political-Economic Trend Analyst'
+															],
+
+															[
 																'pic'			=> '/img/schedule/profile/Kim-Polley.jpg',
 																'name'			=> 'Kim Polley', 
-																'designation'	=> ''
+																'designation'	=> 'Managing Partner, Instinctif Partners Africa'
 															]
 														]
 													],
@@ -145,7 +149,7 @@ public $rows =	[
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Room 1', //ideally a table and this should be an id referencing that row
 														'room_desc'		=> 	'Claims',
-														'room_info'		=> 	'Who We Are and What We Do',
+														'room_info'		=> 	'You will be introduced to our skilled team as they provide insight on our claims value proposition and their response to the pandemic.',
 														'link'			=>	'/room/101',
 														'speakers'		=> 	[	
 																			/*
@@ -173,7 +177,7 @@ public $rows =	[
 													[	//Room 2 - Underwriting														
 														'room_name'		=> 	'Room 2',
 														'room_desc'		=> 	'Underwriting',
-														'room_info'		=> 	'Policy Insights and Managing Risks',
+														'room_info'		=> 	'We will share our key underwriting insights and how we can assist you to proactively manage risk for businesses.',
 														'link'			=>	'/room/102',
 														'speakers'		=> 	[	
 																			/*
@@ -201,7 +205,7 @@ public $rows =	[
 													[	//Room 3 - Product														
 														'room_name'		=> 	'Room 3',
 														'room_desc'		=> 	'Product',
-														'room_info'		=> 	'Agri Offering',
+														'room_info'		=> 	'Our team of professionals will share how our unique cover provides for many risks and challenges faced by the local agricultural sector.',
 														'link'			=>	'/room/103',
 														'speakers'		=> 	[
 																				[
@@ -219,7 +223,7 @@ public $rows =	[
 													[	//Room 4 - Bryte Life														
 														'room_name'		=> 	'Room 4',
 														'room_desc'		=> 	'Bryte Life',
-														'room_info'		=> 	'Bryte Life Offering',
+														'room_info'		=> 	'Join our Life team for an informative update about the tailored and affordable funeral cover products for individuals and the all-important SME customer segment.',
 														'link'			=>	'/room/104',
 														'speakers'		=> 	[
 																				[
@@ -232,7 +236,7 @@ public $rows =	[
 													[	//Room 5 - Bryte Risk Services Botswana
 														'room_name'		=> 	'Room 5',
 														'room_desc'		=> 	'Bryte Risk Services Botswana',
-														'room_info'		=> 	'New Product offering - Bonds & Guarantees',
+														'room_info'		=> 	'Bryte Botswana CEO Dziki Nganunu and his team share updates about the business, including the launch of a Guarantee product and also share details about claims, underwriting, and operational improvements.',
 														'link'			=>	'/room/105',
 														'speakers'		=> 	[
 																				[
@@ -266,7 +270,7 @@ public $rows =	[
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Room 1', //ideally a table and this should be an id referencing that row
 														'room_desc'		=> 	'Claims',
-														'room_info'		=> 	'Who We Are and What We Do',
+														'room_info'		=> 	'You will be introduced to our skilled team as they provide insight on our claims value proposition and their response to the pandemic.',
 														'link'			=>	'/room/101',
 														'speakers'		=> 	[	
 																			/*
@@ -294,7 +298,7 @@ public $rows =	[
 													[	//Room 2 - Underwriting														
 														'room_name'		=> 	'Room 2',
 														'room_desc'		=> 	'Underwriting',
-														'room_info'		=> 	'Policy Insights and Managing Risks',
+														'room_info'		=> 	'We will share our key underwriting insights and how we can assist you to proactively manage risk for businesses.',
 														'link'			=>	'/room/102',
 														'speakers'		=> 	[	
 																			/*
@@ -322,7 +326,7 @@ public $rows =	[
 													[	//Room 3 - Product														
 														'room_name'		=> 	'Room 3',
 														'room_desc'		=> 	'Product',
-														'room_info'		=> 	'Agri Offering',
+														'room_info'		=> 	'Our team of professionals will share how our unique cover provides for many risks and challenges faced by the local agricultural sector.',
 														'link'			=>	'/room/103',
 														'speakers'		=> 	[
 																				[
@@ -340,7 +344,7 @@ public $rows =	[
 													[	//Room 4 - Bryte Life														
 														'room_name'		=> 	'Room 4',
 														'room_desc'		=> 	'Bryte Life',
-														'room_info'		=> 	'Bryte Life Offering',
+														'room_info'		=> 	'Join our Life team for an informative update about the tailored and affordable funeral cover products for individuals and the all-important SME customer segment.',
 														'link'			=>	'/room/104',
 														'speakers'		=> 	[
 																				[
@@ -353,7 +357,7 @@ public $rows =	[
 													[	//Room 5 - Bryte Risk Services Botswana
 														'room_name'		=> 	'Room 5',
 														'room_desc'		=> 	'Bryte Risk Services Botswana',
-														'room_info'		=> 	'Bespoke Solutions for the Hospitality Sector',
+														'room_info'		=> 	'Bryte Botswana CEO Dziki Nganunu and his team share updates about the business, including the launch of a Guarantee product and also share details about claims, underwriting, and operational improvements.',
 														'link'			=>	'/room/105',
 														'speakers'		=> 	[
 																				[
@@ -387,7 +391,7 @@ public $rows =	[
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Room 1', //ideally a table and this should be an id referencing that row
 														'room_desc'		=> 	'Claims',
-														'room_info'		=> 	'Who We Are and What We Do',
+														'room_info'		=> 	'You will be introduced to our skilled team as they provide insight on our claims value proposition and their response to the pandemic.',
 														'link'			=>	'/room/101',
 														'speakers'		=> 	[	
 																			/*
@@ -415,7 +419,7 @@ public $rows =	[
 													[	//Room 2 - Underwriting														
 														'room_name'		=> 	'Room 2',
 														'room_desc'		=> 	'Underwriting',
-														'room_info'		=> 	'Policy Insights and Managing Risks',
+														'room_info'		=> 	'We will share our key underwriting insights and how we can assist you to proactively manage risk for businesses.',
 														'link'			=>	'/room/102',
 														'speakers'		=> 	[	
 																			/*
@@ -443,7 +447,7 @@ public $rows =	[
 													[	//Room 3 - Product														
 														'room_name'		=> 	'Room 3',
 														'room_desc'		=> 	'Product',
-														'room_info'		=> 	'Agri Offering',
+														'room_info'		=> 	'Our team of professionals will share how our unique cover provides for many risks and challenges faced by the local agricultural sector.',
 														'link'			=>	'/room/103',
 														'speakers'		=> 	[
 																				[
@@ -461,7 +465,7 @@ public $rows =	[
 													[	//Room 4 - Bryte Life														
 														'room_name'		=> 	'Room 4',
 														'room_desc'		=> 	'Bryte Life',
-														'room_info'		=> 	'Bryte Life Offering',
+														'room_info'		=> 	'Join our Life team for an informative update about the tailored and affordable funeral cover products for individuals and the all-important SME customer segment.',
 														'link'			=>	'/room/104',
 														'speakers'		=> 	[
 																				[
@@ -474,7 +478,7 @@ public $rows =	[
 													[	//Room 5 - Bryte Risk Services Botswana
 														'room_name'		=> 	'Room 5',
 														'room_desc'		=> 	'Bryte Risk Services Botswana',
-														'room_info'		=> 	'Claims and Procurement',
+														'room_info'		=> 	'Bryte Botswana CEO Dziki Nganunu and his team share updates about the business, including the launch of a Guarantee product and also share details about claims, underwriting, and operational improvements.',
 														'link'			=>	'/room/105',
 														'speakers'		=> 	[
 																				[
@@ -694,7 +698,7 @@ public $rows =	[
 		if($room['link'] == '/room/99')
 			$onclick = 'onClick="checkRoom(\'room_three_open_time\', \''.$room['link'].'\');"';
 		else
-			$onclick = 'onClick="checkRoom(\'room_two_open_time\', \''.$room['link'].'\');"';
+			$onclick = 'onClick="checkRoom(\'room_four_open_time\', \''.$room['link'].'\');"';
 		
 		
 		$calDate		= strtotime($eventDate);
@@ -719,7 +723,7 @@ public $rows =	[
 					var '.$nm.' = ics();
 					var strt_'.$nm.' = new Date('.$eY.', '.$em.', '.$ed.', '.$sH.', '.$si.', 0, 0);
 					var end_'.$nm.'  = new Date('.$eY.', '.$em.', '.$ed.', '.$eH.', '.$eM.', 0, 0);
-					'.$nm.'.addEvent(\''.$room['room_desc'].'\', \''.$room['room_info'].'\', \''.$room['room_name'].'\', strt_'.$nm.', end_'.$nm.');
+					'.$nm.'.addEvent(\''.$room['room_desc'].'\', \''.$room['room_info'].'\', \'https://bryte.welink.live'.$room['link'].'\', strt_'.$nm.', end_'.$nm.');
 				</script>';
 		$addevent = 'onClick="'.$nm.'.download(\''.$room['room_desc'].' - '.$room['room_name'].'\');"';
 		
