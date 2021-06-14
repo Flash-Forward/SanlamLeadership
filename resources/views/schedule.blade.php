@@ -46,6 +46,15 @@
 				font-size: 24px;
 				line-height: 1.33;
 			}
+			li{
+        cursor: pointer;
+    }
+
+	/* main{
+		background-image: url("{{ asset('img') }}/bryte/bg3.jpg");
+		background-size: cover;
+
+	} */
 
 		</style>
 	</head>
@@ -139,9 +148,7 @@ function checkRoom(room, route){
                     
                 }else{
                     swalWithBootstrapButtons.fire({
-                        icon: 'error',
-                        title: 'This Room Is Closed',
-                        text: 'Opens at '+data,
+                        title: 'This room opens at '+data,
                         //footer: '<a href>Why do I have this issue?</a>'
                     })
                 }

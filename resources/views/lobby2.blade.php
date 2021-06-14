@@ -175,28 +175,28 @@ video {
    width:13.3vw;
     height:15.2vh;
     top:42%;
-    left:85.1%;
+    left:84.5%;
     border-radius: 35px;
 }
 #rightVideo{
    width:16.4vw;
     height:22vh;
     top:38%;
-    left:83.6%;
+    left:83%;
     border-radius: 35px;
 }
 #leftVideoInner{
   width:13.3vw;
     height:15.2vh;
     top:42%;
-    left:1.7%;
+    left:2.3%;
     border-radius: 35px;
 }
 #leftVideo{
   width:16.4vw;
     height:22vh;
     top:38%;
-    left:0.2%;
+    left:0.8%;
     border-radius: 35px;
 }
 
@@ -357,6 +357,10 @@ color: #ffffff !important;
             color: #ffffff !important;
         }
 
+        li{
+        cursor: pointer;
+    }
+
 </style>
 
 </head>
@@ -483,7 +487,7 @@ color: #ffffff !important;
 
 
     <div id="middleBannerHolder" class="divInImage">
-    <img src="{{ asset('img') }}/bryte/screen.png" class="stretch" alt="" />
+    <img src="{{ asset('img') }}/bryte/bannermid.png" class="stretch" alt="" />
       <div id="middleBanner" class="divInImage">
       <img src="{{ $middle_banner->value ?? '' }}" class="stretch" alt="" />
       </div>
@@ -525,9 +529,7 @@ function checkRoom(room, route){
                     
                 }else{
                     swalWithBootstrapButtons.fire({
-                        icon: 'error',
-                        title: 'This Room Is Closed',
-                        text: 'Opens at '+data,
+                        title: 'This room opens at '+data,
                         //footer: '<a href>Why do I have this issue?</a>'
                     })
                 }

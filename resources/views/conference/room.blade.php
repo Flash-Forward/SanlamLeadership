@@ -115,8 +115,15 @@ h2{
 	background-color: #021f2c;
 	border-color: #021f2c;
 	color: #ffffff;
+	transition: all .2s ease-in-out;
 	
 }
+.exhibition-button:hover{
+	transform: scale(1.1);
+	color: #ccc;
+}
+/* .grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); } */
 </style>
 
 	</head>
@@ -195,9 +202,9 @@ function redirectBack(){
 </div>
 @if($backRoute != "NONE" && $backRoute != "breakaway")
 <div class="box">
-	<a id="backButton" href="{{$extra->website}}" target="_blank" class="btn exhibition-button btn-bottom">Website</a>
-	<a id="homeButton" href="{{ asset('ExhibitorData') }}/{{$extra->brochure}}" target="_blank" class="btn exhibition-button btn-bottom">Brochure</a>
-	<a id="homeButton" href="mailto:{{$extra->email}}" class="btn exhibition-button btn-bottom">Contact Us</a>
+	<a id="backButton" href="{{$extra->website}}" target="_blank" class="btn exhibition-button btn-bottom grow">Website</a>
+	<a id="homeButton" href="{{ asset('ExhibitorData') }}/{{$extra->brochure}}" target="_blank" class="btn exhibition-button btn-bottom grow">Brochure</a>
+	<a id="homeButton" href="mailto:{{$extra->email}}" class="btn exhibition-button btn-bottom grow">Contact Us</a>
 
 
 </div>

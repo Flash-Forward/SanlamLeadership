@@ -193,6 +193,9 @@ flex-direction: column;
 .room-heading{
   margin: 0;
 }
+li{
+        cursor: pointer;
+    }
 </style>
 
 </head>
@@ -302,10 +305,8 @@ function checkRoom(room, route){
 	                window.location.href = route;
                     
                 }else{
-                    swalWithBootstrapButtons.fire({
-                        icon: 'error',
-                        title: 'This Room Is Closed',
-                        text: 'Opens at '+data,
+                  swalWithBootstrapButtons.fire({
+                        title: 'This room opens at '+data,
                         //footer: '<a href>Why do I have this issue?</a>'
                     })
                 }

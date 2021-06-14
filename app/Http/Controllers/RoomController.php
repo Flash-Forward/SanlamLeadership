@@ -55,14 +55,14 @@ public $rows =	[
 																'designation'	=> 'Chief Executive Officer, Bryte'																					
 															], 
 															[
-																'pic'			=> '/img/schedule/profile/JP-Blignaut.jpg',
-																'name'			=> 'JP Blignaut', 
-																'designation'	=> 'Chief Underwriting Officer, Bryte'
-															],
-															[
 																'pic'			=> '/img/schedule/profile/Cloud-Saungweme.jpg',
 																'name'			=> 'Cloud Saungweme', 
 																'designation'	=> 'Chief Claims Officer, Bryte'										
+															],
+															[
+																'pic'			=> '/img/schedule/profile/Ncumisa-Mtshali.jpg',
+																'name'			=> 'Ncumisa Mtshali', 
+																'designation'	=> 'Head: Human Resources, Bryte'
 															],
 															[
 																'pic'			=> '/img/schedule/profile/Chris-Grieve.jpg',
@@ -91,15 +91,21 @@ public $rows =	[
 																'designation'	=> 'Chief Marketing Officer, Bryte'
 															],
 															[
+																'pic'			=> '/img/schedule/profile/Sedick-Isaacs.jpg',
+																'name'			=> 'Sedick Isaacs', 
+																'designation'	=> 'Head: Business Support Service'
+															],
+															[
 																'pic'			=> '/img/schedule/profile/Wim-Morland.jpg',
 																'name'			=> 'Wim Morland', 
 																'designation'	=> 'Executive Head: Insurance Partnerships, Bryte'
 															],
 															[
-																'pic'			=> '/img/schedule/profile/Sedick-Isaacs.jpg',
-																'name'			=> 'Sedick Isaacs', 
-																'designation'	=> 'Head: Business Support Service'
+																'pic'			=> '/img/schedule/profile/David-Chow.jpg',
+																'name'			=> 'David Chow', 
+																'designation'	=> 'Engineering Manager, Bryte'
 															],
+
 															[
 																'pic'			=> '/img/schedule/profile/Noeleen-Maholwana-Sangqu.jpg',
 																'name'			=> 'Noeleen Maholwana-Sangqu', 
@@ -126,7 +132,14 @@ public $rows =	[
 																'pic'			=> '/img/schedule/profile/Kim-Polley.jpg',
 																'name'			=> 'Kim Polley', 
 																'designation'	=> 'Managing Partner, Instinctif Partners Africa'
-															]
+															],
+															[
+																'pic'			=> '/img/schedule/profile/Uzair-Essack.jpg',
+																'name'			=> 'Uzair Essack', 
+																'designation'	=> 'Managing Director, Riyp'
+															],
+
+
 														]
 													],
 													
@@ -244,11 +257,6 @@ public $rows =	[
 																					'name'			=> 'Dziki Nganunu', 
 																					'designation'	=> 'Chief Executive Officer: Botswana'
 																				],
-																				[
-																					'pic'			=> '/img/schedule/profile/Lukas-Marquart.jpg',
-																					'name'			=> 'Lukas Marquart', 
-																					'designation'	=> 'Director: PCBS Construction & Customs'
-																				]
 																		]
 													],
 												]
@@ -365,11 +373,6 @@ public $rows =	[
 																					'name'			=> 'Akanyang Masole', 
 																					'designation'	=> 'Production Underwriting Manager'
 																				],
-																				[
-																					'pic'			=> '/img/schedule/profile/Lukas-Marquart.jpg',
-																					'name'			=> 'Lukas Marquart', 
-																					'designation'	=> 'Director: PCBS Construction & Customs'
-																				]
 																		]
 													],
 												]
@@ -662,7 +665,7 @@ public $rows =	[
 													</div>
 													<div class="row text-center">
 														<div class="col-sm-12" style="margin:auto;">
-															<h5 class="speaker">'.$speaker['name'].'</h5>
+															<h5 class="speaker" style=\'margin-top: 5px; margin-bottom: 2px;\'>'.$speaker['name'].'</h5>
 															<span class="speaker">'.$speaker['designation'].'</span>
 														</div>
 													</div>
