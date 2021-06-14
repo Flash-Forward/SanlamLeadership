@@ -65,10 +65,10 @@ justify-content: center;
 align-items: center;  
 			}
 			.btn-circle-big {
-				width: 170px;
-				height: 170px;
+				width: 180px;
+				height: 180px;
 				padding: 10px 16px;
-				border-radius: 85px;
+				border-radius: 90px;
 				font-size: 40px;
 				margin: 7px;
 				line-height: 1;
@@ -241,7 +241,7 @@ function redirectToRoom(){
 </script>
 
 <div style="position: fixed; top: 1%; left:1%;">
-<a id="" onclick="redirectToRoom();" class="btn-primary btn-circle-big">Join My Room</a>
+<a id="" onclick="redirectToRoom();" class="btn-primary btn-circle-big">Join My Room / Stand</a>
 </div>
 
 
