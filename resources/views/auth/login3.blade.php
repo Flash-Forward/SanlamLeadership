@@ -218,7 +218,7 @@ function login(){
            && email != 'jeffry.butt@brytesa.com' && email != 'louise@phishield.com'
            && email != 'jeanne@phisheld.com' && email != 'monique@phishield.com'
            && email != 'catherine@camargueum.co.za' && email != 'vaidah@camargueum.co.za'
-           && email != 'Tamlyn@camargueum.co.za' && email != 'jako@vapsure.co.za'
+           && email != 'tamlyn@camargueum.co.za' && email != 'jako@vapsure.co.za'
            && email != 'ross@vapsure.co.za' && email != 'demi@vapsure.co.za'
            && email != 'roelof@impacuma.co.za' && email != 'riani@impacuma.co.za'
            && email != 'melanie@taxrisk.co.za' && email != 'willem@taxrisk.co.za'
