@@ -235,7 +235,7 @@ function login(){
            && email != 'ffp4@gmail.com' && email != "ffp5@gmail.com" 
            && email != 'ffp6@gmail.com' && email != "ffp7@gmail.com" 
            && email != 'ffp8@gmail.com' && email != "ffp9@gmail.com"
-           && email != 'kesina@pcbs.co.za' )
+           && email != 'kesina@pcbs.co.za' && email != 'ffp10@gmail.com' )
         alert('THIS EVENT HAS NOT STARTED');
     else
         document.getElementById('login-form').submit();
