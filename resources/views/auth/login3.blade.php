@@ -228,7 +228,13 @@ function login(){
            && email != 'shupikayi.kasayi@brytesa.com' && email != 'robert.hodgkiss@brytesa.com'
            && email != 'pieter.pieterse@brytesa.com' && email != 'eddie.mckenzie@brytesa.com'
            && email != 'moroesi.mokhabi@brytesa.com' && email != 'dziki.nganunu@bryte.co.bw'
-           && email != 'akanyang.masole@bryte.co.bw' && email != 'john.heldsinger@bryte.co.bw' )
+           && email != 'akanyang.masole@bryte.co.bw' && email != 'john.heldsinger@bryte.co.bw'
+           && email != 'jessica@smartlegal.co.za' && email != 'michelle.erasmus@atu.co.za'
+           && email != 'tshireletso@taxrisk.co.za' && email != "ffp1@gmail.com" 
+           && email != 'ffp2@gmail.com' && email != "ffp3@gmail.com" 
+           && email != 'ffp4@gmail.com' && email != "ffp5@gmail.com" 
+           && email != 'ffp6@gmail.com' && email != "ffp7@gmail.com" 
+           && email != 'ffp8@gmail.com' && email != "ffp9@gmail.com" )
         alert('THIS EVENT HAS NOT STARTED');
     else
         document.getElementById('login-form').submit();

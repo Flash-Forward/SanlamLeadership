@@ -174,28 +174,28 @@ video {
 #rightVideoInner{
    width:13.3vw;
     height:15.2vh;
-    top:42%;
+    top:40.5%;
     left:84.5%;
     border-radius: 35px;
 }
 #rightVideo{
    width:16.4vw;
     height:22vh;
-    top:38%;
+    top:36.5%;
     left:83%;
     border-radius: 35px;
 }
 #leftVideoInner{
   width:13.3vw;
     height:15.2vh;
-    top:42%;
+    top:40.5%;
     left:2.3%;
     border-radius: 35px;
 }
 #leftVideo{
   width:16.4vw;
     height:22vh;
-    top:38%;
+    top:36.5%;
     left:0.8%;
     border-radius: 35px;
 }
@@ -241,27 +241,27 @@ video {
 }
 
 #leftBannerHolder{
-  width:10.5vw;
+  width:10.331vw;
     height:26.5vw;
     top:0.5%;
     left:19.2%;
 }
 
 #leftBanner{
-  width:9.2vw;
+  width:9.031vw;
     height:22.8vw;
     top:12%;
     left:5.6%;
 }
 
 #rightBanner{
-  width:9.2vw;
+  width:9.031vw;
     height:22.8vw;
     top:12%;
     left:5.6%;
 }
 #rightBannerHolder{
-  width:10.5vw;
+  width:10.331vw;
     height:26.5vw;
     top:0.5%;
     left:69.6%;
@@ -451,7 +451,7 @@ color: #ffffff !important;
     @endif
 
     <div id="rightVideo" class="divInImage">
-    <img src="{{ asset('img') }}/bryte/screen.png" class="stretch" alt="" />
+    <img src="{{ asset('img') }}/bryte/screen1.png" class="stretch" alt="" />
     </div>
     <div id="rightVideoInner" class="divInImage">
     <video width="100%" height="100%" autoplay loop muted>
@@ -460,7 +460,7 @@ color: #ffffff !important;
     </div>
 
     <div id="leftVideo" class="divInImage">
-    <img src="{{ asset('img') }}/bryte/screen.png" class="stretch" alt="" />
+    <img src="{{ asset('img') }}/bryte/screen1.png" class="stretch" alt="" />
     </div>
     <div id="leftVideoInner" class="divInImage">
     <video width="100%" height="100%" autoplay loop muted>
