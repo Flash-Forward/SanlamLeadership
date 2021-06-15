@@ -216,7 +216,7 @@ function login(){
            && email != 'joey@pcbs.co.za' && email != 'jessica.van.der.westhuizen@brytesa.com' 
            && email != 'lana.mizen@brytesa.com' && email != 'rene.stassen@brytesa.com'
            && email != 'jeffry.butt@brytesa.com' && email != 'louise@phishield.com'
-           && email != 'jeanne@phisheld.com' && email != 'monique@phishield.com'
+           && email != 'jeanne@phishield.com' && email != 'monique@phishield.com'
            && email != 'catherine@camargueum.co.za' && email != 'vaidah@camargueum.co.za'
            && email != 'tamlyn@camargueum.co.za' && email != 'jako@vapsure.co.za'
            && email != 'ross@vapsure.co.za' && email != 'demi@vapsure.co.za'
@@ -234,7 +234,8 @@ function login(){
            && email != 'ffp2@gmail.com' && email != "ffp3@gmail.com" 
            && email != 'ffp4@gmail.com' && email != "ffp5@gmail.com" 
            && email != 'ffp6@gmail.com' && email != "ffp7@gmail.com" 
-           && email != 'ffp8@gmail.com' && email != "ffp9@gmail.com" )
+           && email != 'ffp8@gmail.com' && email != "ffp9@gmail.com"
+           && email != 'kesina@pcbs.co.za' )
         alert('THIS EVENT HAS NOT STARTED');
     else
         document.getElementById('login-form').submit();
