@@ -107,7 +107,7 @@ public $rows =	[
 															],
 
 															[
-																'pic'			=> '/img/schedule/profile/Noeleen-Maholwana-Sangqu.jpg',
+																'pic'			=> '/img/schedule/profile/Noeleen-Maholwana-Sangqu.png',
 																'name'			=> 'Noeleen Maholwana-Sangqu', 
 																'designation'	=> ' Veteran TV and Radio Host'
 															],
@@ -117,7 +117,7 @@ public $rows =	[
 																'designation'	=> 'Comedian and current Co-Host of Trending SA'
 															],
 															[
-																'pic'			=> '/img/schedule/profile/Dr-Thabi-Leoka.jpg',
+																'pic'			=> '/img/schedule/profile/Dr-Thabi-Leoka.png',
 																'name'			=> 'Dr Thabi Leoka', 
 																'designation'	=> 'Independent Economist and Board Member of Corruption Watch'
 															],
@@ -151,6 +151,14 @@ public $rows =	[
 							'start_time'	=> '12:00',
 							'end_time'		=> '12:30',
 							'interval'		=>	true
+						],
+						[	//Break 1
+							'title'			=> 'BREAKAWAY OPEN',
+							'image'			=> '/img/schedule/seal-01.jpg',
+							'start_time'	=> '12:00',
+							'end_time'		=> '00:00',
+							'interval'		=>	true,
+							'alert'         => true
 						],
 						[	//Row 2
 							'title'			=> 'Session 1',
@@ -227,7 +235,7 @@ public $rows =	[
 																					'designation'	=> 'Regional Manager: Free State Region'
 																				], 
 																				[
-																					'pic'			=> '/img/schedule/profile/Eddie-Mc-Kenzie.jpg',
+																					'pic'			=> '/img/schedule/profile/Eddie-Mc-Kenzie.png',
 																					'name'			=> 'Eddie Mc Kenzie', 
 																					'designation'	=> 'BDM Production Underwriter'																					
 																				]
@@ -343,7 +351,7 @@ public $rows =	[
 																					'designation'	=> 'Regional Manager: Free State Region'
 																				], 
 																				[
-																					'pic'			=> '/img/schedule/profile/Eddie-Mc-Kenzie.jpg',
+																					'pic'			=> '/img/schedule/profile/Eddie-Mc-Kenzie.png',
 																					'name'			=> 'Eddie Mc Kenzie', 
 																					'designation'	=> 'BDM Production Underwriter'																					
 																				]
@@ -459,7 +467,7 @@ public $rows =	[
 																					'designation'	=> 'Regional Manager: Free State Region'
 																				], 
 																				[
-																					'pic'			=> '/img/schedule/profile/Eddie-Mc-Kenzie.jpg',
+																					'pic'			=> '/img/schedule/profile/Eddie-Mc-Kenzie.png',
 																					'name'			=> 'Eddie Mc Kenzie', 
 																					'designation'	=> 'BDM Production Underwriter'																					
 																				]
@@ -709,9 +717,9 @@ public $rows =	[
 		$calEndTime 	= strtotime($endTime);
 		
 		//calendar event START date & time:
-		$em = date('m', $calDate); 	//month
-		$ed = date('d', $calDate);	//day
-		$eY = date('Y', $calDate);	//year
+		$em = 5; 	//month
+		$ed = 22;	//day
+		$eY = 2021;	//year
 		
 		$sH = date('H', $calStrtTime); 	//Hour
 		$si = date('i', $calStrtTime); 	//minute
@@ -731,7 +739,7 @@ public $rows =	[
 		$addevent = 'onClick="'.$nm.'.download(\''.$room['room_desc'].' - '.$room['room_name'].'\');"';
 		
 		$html  .='<div class="card room-card">
-					<div class="container-fluid card-header" id="'.$hdrId.'">					
+					<div style="background: none !important;" class="container-fluid card-header" id="'.$hdrId.'">					
 						<div class="row">
 							<div class="col-sm-2">
 								<div '.$imgAttr.'></div>
@@ -863,40 +871,78 @@ public $rows =	[
 							<p>'.$session['title'].'</p>';	
 			
 			*/
-			$plainLnk = '	<p></p>
-			<span>'.$session['start_time'].' - '.$session['end_time'].'</span>
-							<p></p>';	
+			if(isset($session['alert'])){
+				$plainLnk = '	<p></p>
+				<span>'.$session['start_time'].'</span>
+								<p></p>';	
+			}else{
+				$plainLnk = '	<p></p>
+				<span>'.$session['start_time'].' - '.$session['end_time'].'</span>
+								<p></p>';	
+			}
+
 			
 			$btnAttrs = 'class="btn-link collapsed" data-toggle="collapse" data-target="#'.$ctrlId.'" 
 				aria-expanded="false" aria-controls="'.$ctrlId.'"';
 			$expndLnk = '<a href="#" '.$btnAttrs.'>'.$plainLnk .'</a>';
+			if(isset($session['alert']))
+				$expndBtn	= $session['interval'] ? '<div class="interval-item-alert">'.$plainLnk.'</div>'  : $expndLnk;
+			else
+				$expndBtn	= $session['interval'] ? '<div class="interval-item">'.$plainLnk.'</div>'  : $expndLnk;
 
-			$expndBtn	= $session['interval'] ? '<div class="interval-item">'.$plainLnk.'</div>'  : $expndLnk;
 			$cardHdrCls = $session['interval'] ? 'card-header interval-item' : 'card-header';
 			$cardCls 	= $session['interval'] ? 'card interval-item' : 'card';
 			$cardImg	= $session['interval'] ? '' : '<div class="card-header-image" style="background-image:url(\''.$image.'\')"></div>';
+
+			$onclick = 'onClick="checkRoom(\'room_four_open_time\', \'/breakaway\');"';
 			
 			if ($session['interval'])
 			{
-				$html .= '	<div class="'.$cardCls.'">
-								<div class="'.$cardHdrCls.'" id="'.$hdrId.'">
-									<div class="row interval-row">
-										<div class="col-sm-2">
-											<div class="card-break"><h2>BREAK</h2></div>
-										</div>
-										<div class="col-sm-9">	
-											<h2 class="mb-0">
-												'.$expndBtn.'
-											</h2>
-										</div>
-									</div>
-								</div>
-								<div id="'.$ctrlId.'" class="collapse '.$show.'" aria-labelledby="'.$hdrId.'" data-parent="#'.$accId.'">
-									<div class="card-body">												
-										'.$this->getRooms($session, $itemId, $eventDate).'
-									</div>
-								</div>
-							</div>';
+				if(isset($session['alert'])){
+					$html .= '	<div class="'.$cardCls.'-alert">
+					<div class="'.$cardHdrCls.'-alert" id="'.$hdrId.'">
+						<div class="row interval-row-alert">
+							<div class="col-sm-4">
+								<div class="card-break"><h2>Breakaway Rooms Open</h2></div>
+							</div>
+							<div class="col-sm-4">	
+								<h2 class="mb-0" style="color:#ffffff;">
+									'.$expndBtn.'
+								</h2>
+							</div>
+							<div class="col-sm-2 join-link" style="height: 60%; text-align: center;" '.$onclick.'>
+							Join
+							</div>
+						</div>
+					</div>
+					<div id="'.$ctrlId.'" class="collapse '.$show.'" aria-labelledby="'.$hdrId.'" data-parent="#'.$accId.'">
+						<div class="card-body">												
+							'.$this->getRooms($session, $itemId, $eventDate).'
+						</div>
+					</div>
+				</div>';
+				}else{
+					$html .= '	<div class="'.$cardCls.'">
+					<div class="'.$cardHdrCls.'" id="'.$hdrId.'">
+						<div class="row interval-row">
+							<div class="col-sm-2">
+								<div class="card-break"><h2>BREAK</h2></div>
+							</div>
+							<div class="col-sm-9">	
+								<h2 class="mb-0">
+									'.$expndBtn.'
+								</h2>
+							</div>
+						</div>
+					</div>
+					<div id="'.$ctrlId.'" class="collapse '.$show.'" aria-labelledby="'.$hdrId.'" data-parent="#'.$accId.'">
+						<div class="card-body">												
+							'.$this->getRooms($session, $itemId, $eventDate).'
+						</div>
+					</div>
+				</div>';
+				}
+
 			}
 			else
 			{

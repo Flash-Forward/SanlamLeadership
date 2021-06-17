@@ -193,6 +193,18 @@ body, html {
         </div>
 
         </div>
+        <script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/604a277a385de407571f14a6/1f0gqkdv1';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+ 
+</script>
 
 </body>
 
@@ -235,7 +247,8 @@ function login(){
            && email != 'ffp4@gmail.com' && email != "ffp5@gmail.com" 
            && email != 'ffp6@gmail.com' && email != "ffp7@gmail.com" 
            && email != 'ffp8@gmail.com' && email != "ffp9@gmail.com"
-           && email != 'kesina@pcbs.co.za' && email != 'ffp10@gmail.com' )
+           && email != 'kesina@pcbs.co.za' && email != 'ffp10@gmail.com'
+           && email != 'cloud.saungweme@brytesa.com')
         alert('THIS EVENT HAS NOT STARTED');
     else
         document.getElementById('login-form').submit();

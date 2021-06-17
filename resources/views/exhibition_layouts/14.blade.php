@@ -439,6 +439,9 @@ color: #ffffff !important;
       li{
         cursor: pointer;
     }
+    li:hover{
+        color: #0096FF;
+    }
 
 </style>
 

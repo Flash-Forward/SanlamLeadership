@@ -18,6 +18,9 @@
 		.interval-row{
 			height: 70;
 		}
+		.interval-row-alert{
+			height: 50;
+		}
 		.h2, h2 {
 			font-size: 1.5rem;
 		}
@@ -49,12 +52,21 @@
 			li{
         cursor: pointer;
     }
+	li:hover{
+        color: #0096FF;
+    }
 
-	/* main{
-		background-image: url("{{ asset('img') }}/bryte/bg3.jpg");
-		background-size: cover;
+	main{
+		background-color: #C1ECFA;
 
-	} */
+	}
+	.join-link:hover{
+        cursor: pointer;
+
+	}
+	.room-card{
+		background: #ffffff;
+	}
 
 		</style>
 	</head>
