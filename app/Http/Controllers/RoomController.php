@@ -1104,7 +1104,10 @@ public $rows =	[
     public function conference(config $config, $order)
     {        
 		$backRoute = "NONE";
+		$biggerScreen = false;
 		$speaker = false;
+		if($order == '99')
+			$biggerScreen = true;
         if($order == '100'){
             $backRoute = "NONE";
             $speaker = Speaker::where('users_id', \Auth::user()->id)->first();
@@ -1127,6 +1130,7 @@ public $rows =	[
         if($order < 99)
             $backRoute = "exhibition";
         return view('conference.room', [
+			'biggerScreen' => $biggerScreen,
             'bg' => $bg,
             'heading' => $heading,
             'webinar' => $webinar,

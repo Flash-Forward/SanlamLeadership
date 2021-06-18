@@ -46,12 +46,21 @@ body, html {
 #bg a:hover {
     background-color:rgba(255,255,255,0.3);
 }
+@if($biggerScreen)
+#myImage_zone1{
+    width:82%;
+    height:82%;
+    top:13.2%;
+    left:9%;
+}
+@else
 #myImage_zone1{
     width:75%;
     height:75%;
     top:13.2%;
     left:12.5%;
 }
+@endif
 .btn-circle {
 				width: 100%;
 				height: 50%;
@@ -199,15 +208,22 @@ function redirectBack(){
 @endif
 
 </script>
+@if($backRoute != "NONE" && $speaker == false)
 <div style="position: fixed; bottom: 3%; left:1%; width:5vw; height:10vw;">
-@if($backRoute != "NONE")
 
 	<button id="backButton" type="button" class="btn btn-primary btn-circle" onclick="redirectBack();"><i class="fa fa-arrow-left"></i>
-@endif
-@if($speaker == false)
 	<button id="homeButton" type="button" class="btn btn-primary btn-circle" onclick="redirectToLobby();"><i class="fa fa-home"></i>
-@endif
+
 </div>
+
+@endif
+@if($backRoute == "NONE" && $speaker == false)
+<div style="position: fixed; bottom: 2%; left:1%; width:5vw; height:5vw;">
+
+	<button id="homeButton" type="button" class="btn btn-primary btn-circle" onclick="redirectToLobby();" style="height: 100% !important;"><i class="fa fa-home"></i>
+
+</div>
+@endif
 @if($backRoute != "NONE" && $backRoute != "breakaway")
 <div class="box">
 	<a id="backButton" href="{{$extra->website}}" target="_blank" class="btn exhibition-button btn-bottom grow">Website</a>
