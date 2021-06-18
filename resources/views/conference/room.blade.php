@@ -232,6 +232,15 @@ s0.parentNode.insertBefore(s1,s0);
 
 
 @endif
+@if($speaker == true && isset($extra->website))
+<div class="box">
+	<a id="backButton" href="{{$extra->website}}" target="_blank" class="btn exhibition-button btn-bottom grow">Website</a>
+	<a id="homeButton" href="{{ asset('ExhibitorData') }}/{{$extra->brochure}}" target="_blank" class="btn exhibition-button btn-bottom grow">Brochure</a>
+	<a id="homeButton" href="mailto:{{$extra->email}}" class="btn exhibition-button btn-bottom grow">Contact Us</a>
+
+
+</div>
+@endif
 @if(Auth::user()->user_roles_id == 1 && $speaker == false)
 
 

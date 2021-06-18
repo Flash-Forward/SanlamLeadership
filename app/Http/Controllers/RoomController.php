@@ -55,24 +55,9 @@ public $rows =	[
 																'designation'	=> 'Chief Executive Officer, Bryte'																					
 															], 
 															[
-																'pic'			=> '/img/schedule/profile/Cloud-Saungweme.jpg',
-																'name'			=> 'Cloud Saungweme', 
-																'designation'	=> 'Chief Claims Officer, Bryte'										
-															],
-															[
-																'pic'			=> '/img/schedule/profile/Ncumisa-Mtshali.jpg',
-																'name'			=> 'Ncumisa Mtshali', 
-																'designation'	=> 'Head: Human Resources, Bryte'
-															],
-															[
-																'pic'			=> '/img/schedule/profile/Chris-Grieve.jpg',
-																'name'			=> 'Chris Grieve', 
-																'designation'	=> 'Executive Head: Broker Distribution, Bryte'													
-															],
-															[
 																'pic'			=> '/img/schedule/profile/Collin-Molepe.jpg',
 																'name'			=> 'Collin Molepe', 
-																'designation'	=> ' Deputy Chief Executive Officer, Bryte'
+																'designation'	=> 'Deputy Chief Executive Officer, Bryte'
 															],
 															[
 																'pic'			=> '/img/schedule/profile/Dziki-Nganunu.jpg',
@@ -80,6 +65,21 @@ public $rows =	[
 																'designation'	=> 'Chief Executive Officer, Bryte Risk Services Botswana'
 															],
 
+															[
+																'pic'			=> '/img/schedule/profile/Cloud-Saungweme.jpg',
+																'name'			=> 'Cloud Saungweme', 
+																'designation'	=> 'Chief Claims Officer, Bryte'										
+															],
+															[
+																'pic'			=> '/img/schedule/profile/Chris-Grieve.jpg',
+																'name'			=> 'Chris Grieve', 
+																'designation'	=> 'Executive Head: Broker Distribution, Bryte'													
+															],
+															[
+																'pic'			=> '/img/schedule/profile/JP-Blignaut.jpg',
+																'name'			=> 'JP Blignaut', 
+																'designation'	=> 'Chief Underwriting Officer, Bryte'
+															],
 															[
 																'pic'			=> '/img/schedule/profile/Yulandi-van-Dyk.jpg',
 																'name'			=> 'Yulandi van Dyk', 
@@ -91,14 +91,19 @@ public $rows =	[
 																'designation'	=> 'Chief Marketing Officer, Bryte'
 															],
 															[
+																'pic'			=> '/img/schedule/profile/Wim-Morland.jpg',
+																'name'			=> 'Wim Morland', 
+																'designation'	=> 'Executive Head: Insurance Partnerships, Bryte'
+															],
+															[
 																'pic'			=> '/img/schedule/profile/Sedick-Isaacs.jpg',
 																'name'			=> 'Sedick Isaacs', 
 																'designation'	=> 'Head: Business Support Service'
 															],
 															[
-																'pic'			=> '/img/schedule/profile/Wim-Morland.jpg',
-																'name'			=> 'Wim Morland', 
-																'designation'	=> 'Executive Head: Insurance Partnerships, Bryte'
+																'pic'			=> '/img/schedule/profile/Ncumisa-Mtshali.jpg',
+																'name'			=> 'Ncumisa Mtshali', 
+																'designation'	=> 'Head: Human Resources, Bryte'
 															],
 															[
 																'pic'			=> '/img/schedule/profile/David-Chow.jpg',
@@ -112,11 +117,6 @@ public $rows =	[
 																'designation'	=> ' Veteran TV and Radio Host'
 															],
 															[
-																'pic'			=> '/img/schedule/profile/Coconut-Kelz.jpg',
-																'name'			=> 'Coconut Kelz', 
-																'designation'	=> 'Comedian and current Co-Host of Trending SA'
-															],
-															[
 																'pic'			=> '/img/schedule/profile/Dr-Thabi-Leoka.png',
 																'name'			=> 'Dr Thabi Leoka', 
 																'designation'	=> 'Independent Economist and Board Member of Corruption Watch'
@@ -126,6 +126,11 @@ public $rows =	[
 																'pic'			=> '/img/schedule/profile/JP-Landman.jpg',
 																'name'			=> 'JP Landman', 
 																'designation'	=> 'Political-Economic Trend Analyst'
+															],
+															[
+																'pic'			=> '/img/schedule/profile/Coconut-Kelz.jpg',
+																'name'			=> 'Coconut Kelz', 
+																'designation'	=> 'Comedian and current Co-Host of Trending SA'
 															],
 
 															[
@@ -251,6 +256,16 @@ public $rows =	[
 																					'pic'			=> '/img/schedule/profile/Moroesi-Mokhabi.jpg',
 																					'name'			=> 'Moroesi Mokhabi', 
 																					'designation'	=> 'Business Consultant'
+																				],
+																				[
+																					'pic'			=> '/img/schedule/profile/mpho.jpg',
+																					'name'			=> 'Mpho Tladinyane', 
+																					'designation'	=> 'Relationship Manager'
+																				],
+																				[
+																					'pic'			=> '/img/schedule/profile/andy.jpg',
+																					'name'			=> 'Andy Khoza', 
+																					'designation'	=> 'Head of Pricing and Analytics'
 																				]
 																		]
 													],
@@ -367,6 +382,16 @@ public $rows =	[
 																					'pic'			=> '/img/schedule/profile/Moroesi-Mokhabi.jpg',
 																					'name'			=> 'Moroesi Mokhabi', 
 																					'designation'	=> 'Business Consultant'
+																				],
+																				[
+																					'pic'			=> '/img/schedule/profile/mpho.jpg',
+																					'name'			=> 'Mpho Tladinyane', 
+																					'designation'	=> 'Relationship Manager'
+																				],
+																				[
+																					'pic'			=> '/img/schedule/profile/andy.jpg',
+																					'name'			=> 'Andy Khoza', 
+																					'designation'	=> 'Head of Pricing and Analytics'
 																				]
 																		]
 													],
@@ -483,6 +508,16 @@ public $rows =	[
 																					'pic'			=> '/img/schedule/profile/Moroesi-Mokhabi.jpg',
 																					'name'			=> 'Moroesi Mokhabi', 
 																					'designation'	=> 'Business Consultant'
+																				],
+																				[
+																					'pic'			=> '/img/schedule/profile/mpho.jpg',
+																					'name'			=> 'Mpho Tladinyane', 
+																					'designation'	=> 'Relationship Manager'
+																				],
+																				[
+																					'pic'			=> '/img/schedule/profile/andy.jpg',
+																					'name'			=> 'Andy Khoza', 
+																					'designation'	=> 'Head of Pricing and Analytics'
 																				]
 																		]
 													],
@@ -707,9 +742,9 @@ public $rows =	[
 		$ctrlId ='room-collapse'.$ridx;
 		$hdrId	='room-heading'.$ridx;
 		if($room['link'] == '/room/99')
-			$onclick = 'onClick="checkRoom(\'room_three_open_time\', \''.$room['link'].'\');"';
+			$onclick = 'onClick="checkRoom(\'room_three_open_time\', \''.$room['link'].'\', event);"';
 		else
-			$onclick = 'onClick="checkRoom(\'room_four_open_time\', \''.$room['link'].'\');"';
+			$onclick = 'onClick="checkRoom(\'room_four_open_time\', \''.$room['link'].'\', event);"';
 		
 		
 		$calDate		= strtotime($eventDate);
@@ -738,51 +773,100 @@ public $rows =	[
 				</script>';
 		$addevent = 'onClick="'.$nm.'.download(\''.$room['room_desc'].' - '.$room['room_name'].'\');"';
 		
-		$html  .='<div class="card room-card">
-					<div style="background: none !important;" class="container-fluid card-header" id="'.$hdrId.'">					
-						<div class="row">
-							<div class="col-sm-2">
-								<div '.$imgAttr.'></div>
-							</div>
-							<div class="col-sm-10 room-strip">
-								<div class="room-fold"></div>
-								<h2 class="mb-0">
-									<a href="#" class="btn-link collapsed room-card" data-toggle="collapse" data-target="#'.$ctrlId.'" 
-									aria-expanded="false" aria-controls="'.$ctrlId.'">									
-										<div class="row">
-											<div class="col-sm-1">&nbsp;</div>
-											<div class="col-sm-6">
-												<div style="padding-left: 5%;">
-													<span>'.$room['room_desc'].'</span>
-													<p class="room-name">'.$room['room_name'].'</p>
-												</div>
-											</div>
-											<div class="col-sm-2 join-link">
-												<div '.$addevent.'>Add To Calendar</div>
-											</div>
-											<div class="col-sm-2 join-link">
-												<div '.$onclick.'>
-													Join '.$room['room_name'].'
-												</div>
-											</div>
-											<div class="col-sm-1">&nbsp;</div>
+		if($idx == 1){
+			$html  .='<div class="card room-card">
+			<div style="background: none !important; margin-top:20;" class="container-fluid card-header" id="'.$hdrId.'">					
+				<div class="row">
+					<div class="col-sm-2">
+						<div '.$imgAttr.'></div>
+					</div>
+					<div class="col-sm-10 room-strip">
+						<div class="room-fold"></div>
+						<h2 class="mb-0">
+							<a href="#" class="btn-link collapsed room-card" data-toggle="collapse" data-target="#'.$ctrlId.'" 
+							aria-expanded="false" aria-controls="'.$ctrlId.'">									
+								<div class="row">
+									<div class="col-sm-1">&nbsp;</div>
+									<div class="col-sm-6">
+										<div style="padding-left: 5%;">
+											<span>'.$room['room_desc'].'</span>
+											<p class="room-name">'.$room['room_name'].'</p>
 										</div>
-									</a>
-								</h2>
-							</div>
-						</div>
-					</div>
-					<div id="'.$ctrlId.'" class="collapse" data-parent="#collapse'.$id.'">
-						<div class="container-fluid card-body">
-							<div class="row">
-								<div class="col-sm-2"></div>
-								<div class="col-sm-10" style="padding:0;">
-							'.$this->getRoomTabs($room, $ridx).'
+									</div>
+									<div class="col-sm-2 join-link">
+										<div '.$addevent.'>Add To Calendar</div>
+									</div>
+									<div class="col-sm-2 join-link">
+										<div '.$onclick.'>
+											Join '.$room['room_name'].'
+										</div>
+									</div>
+									<div class="col-sm-1">&nbsp;</div>
 								</div>
-							</div>
+							</a>
+						</h2>
+					</div>
+				</div>
+			</div>
+			<div id="'.$ctrlId.'" class="collapse" data-parent="#collapse'.$id.'">
+				<div class="container-fluid card-body">
+					<div class="row">
+						<div class="col-sm-2"></div>
+						<div class="col-sm-10" style="padding:0;">
+					'.$this->getRoomTabs($room, $ridx).'
 						</div>
 					</div>
-				</div>';
+				</div>
+			</div>
+		</div>';
+		}else{
+			$html  .='<div class="card room-card">
+			<div style="background: none !important;" class="container-fluid card-header" id="'.$hdrId.'">					
+				<div class="row">
+					<div class="col-sm-2">
+						<div '.$imgAttr.'></div>
+					</div>
+					<div class="col-sm-10 room-strip">
+						<div class="room-fold"></div>
+						<h2 class="mb-0">
+							<a href="#" class="btn-link collapsed room-card" data-toggle="collapse" data-target="#'.$ctrlId.'" 
+							aria-expanded="false" aria-controls="'.$ctrlId.'">									
+								<div class="row">
+									<div class="col-sm-1">&nbsp;</div>
+									<div class="col-sm-6">
+										<div style="padding-left: 5%;">
+											<span>'.$room['room_desc'].'</span>
+											<p class="room-name">'.$room['room_name'].'</p>
+										</div>
+									</div>
+									<div class="col-sm-2 join-link">
+										<div '.$addevent.'>Add To Calendar</div>
+									</div>
+									<div class="col-sm-2 join-link">
+										<div '.$onclick.'>
+											Join '.$room['room_name'].'
+										</div>
+									</div>
+									<div class="col-sm-1">&nbsp;</div>
+								</div>
+							</a>
+						</h2>
+					</div>
+				</div>
+			</div>
+			<div id="'.$ctrlId.'" class="collapse" data-parent="#collapse'.$id.'">
+				<div class="container-fluid card-body">
+					<div class="row">
+						<div class="col-sm-2"></div>
+						<div class="col-sm-10" style="padding:0;">
+					'.$this->getRoomTabs($room, $ridx).'
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>';
+		}
+
 		return $html;
 	}
 
@@ -894,7 +978,7 @@ public $rows =	[
 			$cardCls 	= $session['interval'] ? 'card interval-item' : 'card';
 			$cardImg	= $session['interval'] ? '' : '<div class="card-header-image" style="background-image:url(\''.$image.'\')"></div>';
 
-			$onclick = 'onClick="checkRoom(\'room_four_open_time\', \'/breakaway\');"';
+			$onclick = 'onClick="checkRoom(\'room_four_open_time\', \'/breakaway\', event);"';
 			
 			if ($session['interval'])
 			{

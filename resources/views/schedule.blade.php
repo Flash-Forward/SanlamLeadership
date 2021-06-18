@@ -68,6 +68,10 @@
 		background: #ffffff;
 	}
 
+	.alertBox{
+		box-shadow: 5px 10px;
+	}
+
 		</style>
 	</head>
 	<body>
@@ -86,10 +90,10 @@
       <a class="nav-link" href="{{ route('schedule') }}" style="color: #000000 !important;">Schedule</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link"  onclick="checkRoom('room_two_open_time', '/exhibition');" style="color: #000000 !important;">Exhibition Hall</a>
+      <a class="nav-link"  onclick="checkRoom('room_two_open_time', '/exhibition', event);" style="color: #000000 !important;">Exhibition Hall</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link"  onclick="checkRoom('room_four_open_time', '/breakaway');" style="color: #000000 !important;">Breakaway Rooms</a>
+      <a class="nav-link"  onclick="checkRoom('room_four_open_time', '/breakaway', event);" style="color: #000000 !important;">Breakaway Rooms</a>
     </li>
 		<li class="nav-item">
 		<a class="nav-link"  href="{{ route('logout') }}" style="color: #000000 !important;" onclick="event.preventDefault();
@@ -150,7 +154,8 @@ const swalWithBootstrapButtons = Swal.mixin({
   buttonsStyling: false
 })
 
-function checkRoom(room, route){
+function checkRoom(room, route, event){
+	event.stopImmediatePropagation();
         $.ajax({
             url: '{{ route("room.check") }}?r='+room,
             type: "get",
@@ -161,6 +166,9 @@ function checkRoom(room, route){
                 }else{
                     swalWithBootstrapButtons.fire({
                         title: 'This room opens at '+data,
+						background: "#C1ECFA",
+						padding: "8px",
+						width: "20%",
                         //footer: '<a href>Why do I have this issue?</a>'
                     })
                 }

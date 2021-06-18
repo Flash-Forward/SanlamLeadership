@@ -411,7 +411,7 @@ div.card-break
 .accordion .accordion-wrapper .card:not(.room-card):not(.interval-item)
 {
 	box-shadow: 4px 4px 7px #004d73;
-	margin-bottom: 10px;
+	margin-bottom: 25px;
 	border-radius: 10px;
 	background: none;
 	border: 0;

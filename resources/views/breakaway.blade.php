@@ -244,7 +244,7 @@ li{
         <img src="{{ asset('img') }}/bryte/breakawayroom.png" class="" style="width: 100%;" alt="" />
       </div>
 
-      <button type="button" style="top: 3vh; position: relative;" class="btn bryte-button">{{ __('Enter Room') }}</button>
+      <!-- <button type="button" style="top: 3vh; position: relative;" class="btn bryte-button">{{ __('Enter Room') }}</button> -->
     </div>
     <div id="myImage_zone2" class="divInImage">
       <div class="top-half">
@@ -253,7 +253,7 @@ li{
         <a class="stretch-link" href="{{ route('room', ['order'=>102]) }}"></a>
         <img src="{{ asset('img') }}/bryte/breakawayroom.png" class="" style="width: 100%;" alt="" />
       </div>
-      <button type="button" style="top: 3vh; position: relative;" class="btn bryte-button">{{ __('Enter Room') }}</button>
+      <!-- <button type="button" style="top: 3vh; position: relative;" class="btn bryte-button">{{ __('Enter Room') }}</button> -->
     </div>
     <div id="myImage_zone3" class="divInImage">
       <div class="top-half">
@@ -262,7 +262,7 @@ li{
         <a class="stretch-link" href="{{ route('room', ['order'=>103]) }}"></a>
         <img src="{{ asset('img') }}/bryte/breakawayroom.png" class="" style="width: 100%;" alt="" />
       </div>
-      <button type="button" style="top: 3vh; position: relative;" class="btn bryte-button">{{ __('Enter Room') }}</button>
+      <!-- <button type="button" style="top: 3vh; position: relative;" class="btn bryte-button">{{ __('Enter Room') }}</button> -->
     </div>
     <div id="myImage_zone4" class="divInImage">
       <div class="top-half">
@@ -271,7 +271,7 @@ li{
         <a class="stretch-link" href="{{ route('room', ['order'=>104]) }}"></a>
         <img src="{{ asset('img') }}/bryte/breakawayroom.png" class="" style="width: 100%;" alt="" />
       </div>
-      <button type="button" style="top: 3vh; position: relative;" class="btn bryte-button">{{ __('Enter Room') }}</button>
+      <!-- <button type="button" style="top: 3vh; position: relative;" class="btn bryte-button">{{ __('Enter Room') }}</button> -->
     </div>
     <div id="myImage_zone5" class="divInImage">
     <div class="top-half">
@@ -280,7 +280,7 @@ li{
         <a class="stretch-link" href="{{ route('room', ['order'=>105]) }}"></a>
         <img src="{{ asset('img') }}/bryte/breakawayroom.png" class="" style="width: 100%;" alt="" />
       </div>
-      <button type="button" style="top: 3vh; position: relative;" class="btn bryte-button">{{ __('Enter Room') }}</button>
+      <!-- <button type="button" style="top: 3vh; position: relative;" class="btn bryte-button">{{ __('Enter Room') }}</button> -->
     </div>
     <!-- <a id="myImage_zone2" onclick="event.preventDefault();document.getElementById('login-form').submit();"></a> -->
 </div>
@@ -310,6 +310,9 @@ function checkRoom(room, route){
                 }else{
                   swalWithBootstrapButtons.fire({
                         title: 'This room opens at '+data,
+                        background: "#C1ECFA",
+						padding: "8px",
+						width: "20%",
                         //footer: '<a href>Why do I have this issue?</a>'
                     })
                 }

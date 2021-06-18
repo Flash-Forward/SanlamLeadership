@@ -533,6 +533,9 @@ function checkRoom(room, route){
                 }else{
                     swalWithBootstrapButtons.fire({
                         title: 'This room opens at '+data,
+                        background: "#C1ECFA",
+						padding: "8px",
+						width: "20%",
                         //footer: '<a href>Why do I have this issue?</a>'
                     })
                 }
