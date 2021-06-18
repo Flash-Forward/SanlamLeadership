@@ -272,7 +272,7 @@ public $rows =	[
 													[	//Room 5 - Bryte Risk Services Botswana
 														'room_name'		=> 	'Room 5',
 														'room_desc'		=> 	'Bryte Risk Services Botswana',
-														'room_info'		=> 	'Bryte Botswana CEO Dziki Nganunu and his team share updates about the business, including the launch of a Guarantee product and also share details about claims, underwriting, and operational improvements.',
+														'room_info'		=> 	'Bryte Botswana CEO Dziki Nganunu and his team share updates about the business and Achieving Growth with Bryte Post Covid, they will also share details about claims, underwriting, and operational improvements and Bespoke Solution product offerings.',
 														'link'			=>	'/room/105',
 														'speakers'		=> 	[
 																				[

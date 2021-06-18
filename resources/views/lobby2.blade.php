@@ -66,7 +66,7 @@ body, html {
 }
 #mainRoom{
     width:15.6%;
-    height:14.5%;
+    height:15.5%;
     top:50.5%;
     left:42.3%;
     /* border-radius: 35px; */

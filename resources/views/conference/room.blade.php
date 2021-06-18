@@ -53,11 +53,12 @@ body, html {
     left:12.5%;
 }
 .btn-circle {
-				width: 70px;
-				height: 70px;
-				padding: 10px 16px;
-				border-radius: 35px;
-				font-size: 24px;
+				width: 100%;
+				height: 50%;
+				padding: 10px 20px;
+				border-radius: 50%;
+				font-size: 1.5vw;
+
 				margin: 7px;
 				line-height: 1;
 				display: flex;  
@@ -65,11 +66,11 @@ justify-content: center;
 align-items: center;  
 			}
 			.btn-circle-big {
-				width: 180px;
-				height: 180px;
+				width: 100%;
+				height: 100%;
 				padding: 10px 16px;
-				border-radius: 90px;
-				font-size: 40px;
+				border-radius: 50%;
+				font-size: 2.5vw;
 				margin: 7px;
 				line-height: 1;
 				display: flex;  
@@ -84,7 +85,7 @@ color: #ffffff !important;
 				/* width: 70px; */
 				/* height: 70px; */
 				padding: 10px 16px;
-				font-size: 24px;
+				font-size: 1.5vw;
 				margin: 7px;
 				margin-right: 25px;
 				line-height: 1.33;
@@ -98,6 +99,7 @@ color: #ffffff !important;
   padding: 10px 16px;
   color: #f1f1f1;
   text-align: center;
+  font-size: 3.5vw;
 }
 
 h2{
@@ -108,14 +110,20 @@ h2{
   display: flex;
   align-items: center;
   justify-content: center;
-  position: fixed; bottom: 2%; left:12.5%; width:75%;
+  position: fixed; bottom: 2%; left:20.2%; width:60%; height:8%;
 }
 
 .exhibition-button{
+	display: flex;
+  align-items: center;
+  justify-content: center;
 	background-color: #021f2c;
 	border-color: #021f2c;
 	color: #ffffff;
 	transition: all .2s ease-in-out;
+	width: 33%;
+	height: 100%;
+	font-size: 1.5vw;
 	
 }
 .exhibition-button:hover{
@@ -143,7 +151,7 @@ h2{
     <!-- <a id="myImage_zone2" onclick="event.preventDefault();document.getElementById('login-form').submit();"></a> -->
 </div>
 <div class="header" id="myHeader">
-  <h2>{{$heading}}</h2>
+  <h2 style="font-size: 2.5vw !important;">{{$heading}}</h2>
 </div> 
 <script type='text/javascript'>
 	var _options = {
@@ -191,7 +199,7 @@ function redirectBack(){
 @endif
 
 </script>
-<div style="position: fixed; bottom: 1%; left:1%; width:70px;">
+<div style="position: fixed; bottom: 3%; left:1%; width:5%; height:20%;">
 @if($backRoute != "NONE")
 
 	<button id="backButton" type="button" class="btn btn-primary btn-circle" onclick="redirectBack();"><i class="fa fa-arrow-left"></i>
@@ -210,7 +218,7 @@ function redirectBack(){
 </div>
 @endif
 @if($speaker == true)
-<div style="position: fixed; top: 1%; right:1%;">
+<div style="position: fixed; top: 1%; right:0%; width: 12%; height: 4%;">
 <a id="backButton" onclick="event.preventDefault();
        document.getElementById('logout-form').submit();" class="btn btn-primary btn-bottom">Log Out</a>
 </div>
@@ -226,7 +234,7 @@ s0.parentNode.insertBefore(s1,s0);
 })();
  
 </script>
-<div style="position: fixed; top: 1%; left:1%;">
+<div style="position: fixed; top: 1%; left:1%; width: 10%; height: 20%">
 <a id="backButton" onclick="redirectToLobby();" class="btn btn-primary btn-circle-big">Back To Lobby</a>
 </div>
 
@@ -251,7 +259,7 @@ function redirectToRoom(){
 
 </script>
 
-<div style="position: fixed; top: 1%; left:1%;">
+<div style="position: fixed; top: 1%; left:1%; width: 10%; height: 20%">
 <a id="" onclick="redirectToRoom();" class="btn-primary btn-circle-big">Join My Room / Stand</a>
 </div>
 
