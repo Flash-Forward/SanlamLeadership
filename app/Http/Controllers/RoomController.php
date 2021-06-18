@@ -987,7 +987,7 @@ public $rows =	[
 					<div class="'.$cardHdrCls.'-alert" id="'.$hdrId.'">
 						<div class="row interval-row-alert">
 							<div class="col-sm-4">
-								<div class="card-break"><h2>Breakaway Rooms Open</h2></div>
+								<div class="card-break"><h2>Exhibition Hall Open</h2></div>
 							</div>
 							<div class="col-sm-4">	
 								<h2 class="mb-0" style="color:#ffffff;">
