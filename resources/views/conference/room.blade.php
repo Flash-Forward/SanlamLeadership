@@ -110,7 +110,7 @@ h2{
   display: flex;
   align-items: center;
   justify-content: center;
-  position: fixed; bottom: 2%; left:20.2%; width:60%; height:8%;
+  position: fixed; bottom: 2%; left:20.2%; width:60vw; height:4vw;
 }
 
 .exhibition-button{
@@ -218,7 +218,7 @@ function redirectBack(){
 </div>
 @endif
 @if($speaker == true)
-<div style="position: fixed; top: 1%; right:0%; width: 12%; height: 4%;">
+<div style="position: fixed; top: 1%; right:0%; width: 12vw; height: 6vw;">
 <a id="backButton" onclick="event.preventDefault();
        document.getElementById('logout-form').submit();" class="btn btn-primary btn-bottom">Log Out</a>
 </div>
@@ -234,7 +234,7 @@ s0.parentNode.insertBefore(s1,s0);
 })();
  
 </script>
-<div style="position: fixed; top: 1%; left:1%; width: 10%; height: 20%">
+<div style="position: fixed; top: 1%; left:1%; width: 10vw; height: 10vw">
 <a id="backButton" onclick="redirectToLobby();" class="btn btn-primary btn-circle-big">Back To Lobby</a>
 </div>
 
@@ -259,7 +259,7 @@ function redirectToRoom(){
 
 </script>
 
-<div style="position: fixed; top: 1%; left:1%; width: 10%; height: 20%">
+<div style="position: fixed; top: 1%; left:1%; width: 10vw; height: 10vw">
 <a id="" onclick="redirectToRoom();" class="btn-primary btn-circle-big">Join My Room / Stand</a>
 </div>
 
