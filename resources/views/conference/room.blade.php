@@ -70,7 +70,7 @@ align-items: center;
 				height: 100%;
 				padding: 10px 16px;
 				border-radius: 50%;
-				font-size: 2.5vw;
+				font-size: 2vw;
 				margin: 7px;
 				line-height: 1;
 				display: flex;  
@@ -199,7 +199,7 @@ function redirectBack(){
 @endif
 
 </script>
-<div style="position: fixed; bottom: 3%; left:1%; width:5%; height:20%;">
+<div style="position: fixed; bottom: 3%; left:1%; width:5vw; height:10vw;">
 @if($backRoute != "NONE")
 
 	<button id="backButton" type="button" class="btn btn-primary btn-circle" onclick="redirectBack();"><i class="fa fa-arrow-left"></i>
