@@ -49,15 +49,15 @@
 				font-size: 24px;
 				line-height: 1.33;
 			}
-			li{
+	li{
         cursor: pointer;
     }
 	li:hover{
-        color: #0096FF;
+        color: #0096FF !important;
     }
 
 	main{
-		background-color: #C1ECFA;
+		background-color: #ffffff;
 
 	}
 	.join-link:hover{

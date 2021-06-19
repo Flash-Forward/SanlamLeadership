@@ -445,7 +445,7 @@ div.speaker-pic
     height: 150px;
     margin-top: 12px;
     border-radius: 7px;
-	background-color: rgba(218, 192, 87, 0.5);
+	/* background-color: rgba(218, 192, 87, 0.5); */
 }
 	
 @media only screen and (min-width: 276px) and (max-width: 576px)

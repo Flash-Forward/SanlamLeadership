@@ -242,7 +242,7 @@ public $rows =	[
 																				[
 																					'pic'			=> '/img/schedule/profile/Eddie-Mc-Kenzie.png',
 																					'name'			=> 'Eddie Mc Kenzie', 
-																					'designation'	=> 'BDM Production Underwriter'																					
+																					'designation'	=> 'Business Development Manager: Northern Region'																					
 																				]
 																		]
 													],
@@ -272,7 +272,7 @@ public $rows =	[
 													[	//Room 5 - Bryte Risk Services Botswana
 														'room_name'		=> 	'Room 5',
 														'room_desc'		=> 	'Bryte Risk Services Botswana',
-														'room_info'		=> 	'Bryte Botswana CEO Dziki Nganunu and his team share updates about the business and Achieving Growth with Bryte Post Covid, they will also share details about claims, underwriting, and operational improvements and Bespoke Solution product offerings.',
+														'room_info'		=> 	'Bryte Botswana CEO Dziki Nganunu and his team share updates about the business and achieving growth with Bryte post COVID, they will also share details about claims, underwriting, and operational improvements and bespoke solution product offerings.',
 														'link'			=>	'/room/105',
 														'speakers'		=> 	[
 																				[
@@ -317,7 +317,7 @@ public $rows =	[
 																			[
 																				'pic'			=> '/img/schedule/profile/Ellen-Engelbrecht.jpg',
 																				'name'			=> 'Ellen Engelbrecht', 
-																				'designation'	=> 'Head: Claims Operationsr'																					
+																				'designation'	=> 'Head: Claims Operations'																					
 																			], 
 																			[
 																				'pic'			=> '/img/schedule/profile/Kishore-Maharaj.jpg',
@@ -368,7 +368,7 @@ public $rows =	[
 																				[
 																					'pic'			=> '/img/schedule/profile/Eddie-Mc-Kenzie.png',
 																					'name'			=> 'Eddie Mc Kenzie', 
-																					'designation'	=> 'BDM Production Underwriter'																					
+																					'designation'	=> 'Business Development Manager: Northern Region'																					
 																				]
 																		]
 													],
@@ -398,13 +398,13 @@ public $rows =	[
 													[	//Room 5 - Bryte Risk Services Botswana
 														'room_name'		=> 	'Room 5',
 														'room_desc'		=> 	'Bryte Risk Services Botswana',
-														'room_info'		=> 	'Bryte Botswana CEO Dziki Nganunu and his team share updates about the business, including the launch of a Guarantee product and also share details about claims, underwriting, and operational improvements.',
+														'room_info'		=> 	'Bryte Botswana CEO Dziki Nganunu and his team share updates about the business and achieving growth with Bryte post COVID, they will also share details about claims, underwriting, and operational improvements and bespoke solution product offerings.',
 														'link'			=>	'/room/105',
 														'speakers'		=> 	[
 																				[
 																					'pic'			=> '/img/schedule/profile/Akanyang-Masole.jpg',
 																					'name'			=> 'Akanyang Masole', 
-																					'designation'	=> 'Production Underwriting Manager'
+																					'designation'	=> 'Underwriting Manager: Botswana'
 																				],
 																		]
 													],
@@ -494,7 +494,7 @@ public $rows =	[
 																				[
 																					'pic'			=> '/img/schedule/profile/Eddie-Mc-Kenzie.png',
 																					'name'			=> 'Eddie Mc Kenzie', 
-																					'designation'	=> 'BDM Production Underwriter'																					
+																					'designation'	=> 'Business Development Manager: Northern Region'																					
 																				]
 																		]
 													],
@@ -524,13 +524,13 @@ public $rows =	[
 													[	//Room 5 - Bryte Risk Services Botswana
 														'room_name'		=> 	'Room 5',
 														'room_desc'		=> 	'Bryte Risk Services Botswana',
-														'room_info'		=> 	'Bryte Botswana CEO Dziki Nganunu and his team share updates about the business, including the launch of a Guarantee product and also share details about claims, underwriting, and operational improvements.',
+														'room_info'		=> 	'Bryte Botswana CEO Dziki Nganunu and his team share updates about the business and achieving growth with Bryte post COVID, they will also share details about claims, underwriting, and operational improvements and bespoke solution product offerings.',
 														'link'			=>	'/room/105',
 														'speakers'		=> 	[
 																				[
 																					'pic'			=> '/img/schedule/profile/John-Heldsinger.jpg',
 																					'name'			=> 'John Heldsinger', 
-																					'designation'	=> 'Claims Manager'
+																					'designation'	=> 'Claims Manager: Botswana'
 																				]
 																		]
 													],
