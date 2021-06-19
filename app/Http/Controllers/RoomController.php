@@ -957,7 +957,7 @@ public $rows =	[
 			*/
 			if(isset($session['alert'])){
 				$plainLnk = '	<p></p>
-				<span>'.$session['start_time'].'</span>
+				<span style="bottom: 3; position:relative;">'.$session['start_time'].'</span>
 								<p></p>';	
 			}else{
 				$plainLnk = '	<p></p>
@@ -994,7 +994,7 @@ public $rows =	[
 									'.$expndBtn.'
 								</h2>
 							</div>
-							<div class="col-sm-2 join-link" style="height: 60%; text-align: center;" '.$onclick.'>
+							<div class="col-sm-2 join-link" style="height: 60%; text-align: center; position:relative; bottom:4; display: flex;align-items: center;justify-content: center;" '.$onclick.'>
 							Join
 							</div>
 						</div>
