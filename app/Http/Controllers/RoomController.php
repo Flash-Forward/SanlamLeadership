@@ -978,7 +978,7 @@ public $rows =	[
 			$cardCls 	= $session['interval'] ? 'card interval-item' : 'card';
 			$cardImg	= $session['interval'] ? '' : '<div class="card-header-image" style="background-image:url(\''.$image.'\')"></div>';
 
-			$onclick = 'onClick="checkRoom(\'room_four_open_time\', \'/breakaway\', event);"';
+			$onclick = 'onClick="checkRoom(\'room_two_open_time\', \'/exhibition\', event);"';
 			
 			if ($session['interval'])
 			{
