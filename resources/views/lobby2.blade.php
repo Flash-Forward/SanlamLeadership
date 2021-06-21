@@ -330,7 +330,7 @@ iframe{
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.9); /* Black background with opacity */
+  background-color: rgba(0,0,0,0.2); /* Black background with opacity */
   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
   cursor: pointer; /* Add a pointer on hover */
 }
@@ -400,7 +400,7 @@ color: #ffffff !important;
                                     </form>
 
 <div id="overlay">
-<iframe width="80%" height="80%" src="https://www.youtube.com/embed/Q1S7MvOsNsI" title="YouTube video player" class="yt_player_iframe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe style="width: 60%; height: 60%; position: relative; top: 10%;" src="https://www.youtube.com/embed/Q1S7MvOsNsI" title="YouTube video player" class="yt_player_iframe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   <div style="position: fixed; top: 0; right:1%; width:70px;">
 	<button id="homeButton" type="button" class="btn btn-danger btn-circle" onclick="off();"><i class="fa fa-times"></i>
   </div>
