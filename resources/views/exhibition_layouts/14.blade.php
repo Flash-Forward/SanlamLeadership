@@ -523,11 +523,12 @@ function checkRoom(room, route){
                     
                 }else{
                   swalWithBootstrapButtons.fire({
-                        title: 'This room opens at '+data,
-                        background: "#C1ECFA",
+                        title: '<span style="color:#ffffff">This room opens at '+data+'</span>',
+                        background: "url('{{ asset('img') }}/bryte/background.jpg')",
+                        // html: true,
+
 						padding: "8px",
 						width: "20%",
-            
                         //footer: '<a href>Why do I have this issue?</a>'
                     })
                 }

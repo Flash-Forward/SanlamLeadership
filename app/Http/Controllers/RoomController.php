@@ -986,10 +986,10 @@ public $rows =	[
 					$html .= '	<div class="'.$cardCls.'-alert">
 					<div class="'.$cardHdrCls.'-alert" id="'.$hdrId.'">
 						<div class="row interval-row-alert">
-							<div class="col-sm-4">
+							<div class="col-sm-3">
 								<div class="card-break"><h2>Exhibition Hall Open</h2></div>
 							</div>
-							<div class="col-sm-4">	
+							<div class="col-sm-5">	
 								<h2 class="mb-0" style="color:#ffffff;">
 									'.$expndBtn.'
 								</h2>
