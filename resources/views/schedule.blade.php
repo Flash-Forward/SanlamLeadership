@@ -71,6 +71,17 @@
 	.alertBox{
 		box-shadow: 5px 10px;
 	}
+	.bryte-button {
+            background-color: #004d73 !important;
+            border-color: #004d73 !important;
+            color: #ffffff !important;
+            height: 1.7vw;
+            width: 2.5vw;
+
+            margin-bottom: 2%;
+			padding: 0 !important;
+			border-radius: 10px;
+        }
 
 		</style>
 	</head>
@@ -166,7 +177,7 @@ function checkRoom(room, route, event){
                     
                 }else{
                     swalWithBootstrapButtons.fire({
-                        title: '<span style="color:#ffffff">This room opens at '+data+'</span>',
+                        html: '<span style="color:#ffffff; font-size: 1.2vw;">This room opens at '+data+'</span>',
                         background: "url('{{ asset('img') }}/bryte/background.jpg')",
                         // html: true,
 

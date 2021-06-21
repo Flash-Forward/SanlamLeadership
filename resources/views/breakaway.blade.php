@@ -309,7 +309,7 @@ function checkRoom(room, route){
                     
                 }else{
                   swalWithBootstrapButtons.fire({
-                        title: '<span style="color:#ffffff">This room opens at '+data+'</span>',
+                    html: '<span style="color:#ffffff; font-size: 1.2vw;">This room opens at '+data+'</span>',
                         background: "url('{{ asset('img') }}/bryte/background.jpg')",
                         // html: true,
 
