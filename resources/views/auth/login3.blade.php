@@ -215,43 +215,6 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
         window.location = "/mobile";
 }
 function login(){
-    var email = document.getElementById('email').value;
-    if(email != "ffp@gmail.com" && email != 'wade@atu.co.za' && email != 'cavanzyl@tracker.co.za' && email != 'scrowder@tracker.co.za' && email != 'swatt@tracker.co.za' && email != 'claims@gmail.com' && email != 'main@gmail.com' && email != 'underwriting@gmail.com' && email != 'product@gmail.com' 
-        && email != 'brytelife@gmail.com' && email != 'bryterisk@gmail.com' 
-        && email != 'francois@smartlegal.co.za'  && email != 'rene.stassen@brytesa.com'  
-        && email != 'tracy@smartlegal.co.za'  && email != 'lwandi@smartlegal.co.za' 
-        && email != 'glen@risksolutions.co.za' && email != 'chantelle@risksolutions.co.za'
-         && email != 'sonja@risksolutions.co.za' && email != 'sonja@risksolutions.co.za'
-          && email != 'g.blane@zigora.co.za' && email != 'a.algera@zigora.co.za' 
-          && email != 'mbambo@gilela.co.za' && email != 'zolile@gilela.co.za' 
-          && email != 'siza@gilela.co.za' && email != 'lukas@pcbs.co.za'
-           && email != 'joey@pcbs.co.za' && email != 'jessica.van.der.westhuizen@brytesa.com' 
-           && email != 'lana.mizen@brytesa.com' && email != 'rene.stassen@brytesa.com'
-           && email != 'jeffry.butt@brytesa.com' && email != 'louise@phishield.com'
-           && email != 'jeanne@phishield.com' && email != 'monique@phishield.com'
-           && email != 'catherine@camargueum.co.za' && email != 'vaidah@camargueum.co.za'
-           && email != 'tamlyn@camargueum.co.za' && email != 'jako@vapsure.co.za'
-           && email != 'ross@vapsure.co.za' && email != 'demi@vapsure.co.za'
-           && email != 'roelof@impacuma.co.za' && email != 'riani@impacuma.co.za'
-           && email != 'melanie@taxrisk.co.za' && email != 'willem@taxrisk.co.za'
-           && email != 'marie.mower@brytesa.com' && email != 'michelle.dickson@brytesa.com'
-           && email != 'reynier.rautenbach@brytesa.com' && email != 'ellen.engelbrecht@brytesa.com'
-           && email != 'kishore.maharaj@brytesa.com' && email != 'sedick.isaacs@brytesa.com'
-           && email != 'shupikayi.kasayi@brytesa.com' && email != 'robert.hodgkiss@brytesa.com'
-           && email != 'pieter.pieterse@brytesa.com' && email != 'eddie.mckenzie@brytesa.com'
-           && email != 'moroesi.mokhabi@brytesa.com' && email != 'dziki.nganunu@bryte.co.bw'
-           && email != 'akanyang.masole@bryte.co.bw' && email != 'john.heldsinger@bryte.co.bw'
-           && email != 'jessica@smartlegal.co.za' && email != 'michelle.erasmus@atu.co.za'
-           && email != 'tshireletso@taxrisk.co.za' && email != "ffp1@gmail.com" 
-           && email != 'ffp2@gmail.com' && email != "ffp3@gmail.com" 
-           && email != 'ffp4@gmail.com' && email != "ffp5@gmail.com" 
-           && email != 'ffp6@gmail.com' && email != "ffp7@gmail.com" 
-           && email != 'ffp8@gmail.com' && email != "ffp9@gmail.com"
-           && email != 'kesina@pcbs.co.za' && email != 'ffp10@gmail.com'
-           && email != 'cloud.saungweme@brytesa.com' && email != 'cloud.saungweme@brytesa.com'
-           && email != 'mpho.tladinyane@brytesa.com' && email != 'given.khoza@brytesa.com')
-        alert('THIS EVENT HAS NOT STARTED');
-    else
         document.getElementById('login-form').submit();
 }
 </script>
