@@ -166,26 +166,28 @@ const swalWithBootstrapButtons = Swal.mixin({
   buttonsStyling: false
 })
 
-function checkRoom(room, route, event){
-	event.stopImmediatePropagation();
+function checkRoom(room, route){
         $.ajax({
             url: '{{ route("room.check") }}?r='+room,
             type: "get",
             success: function (data) {
-                if (data == "1") {
-	                window.location.href = route;
+                // if (data == "1") {
+	              //   window.location.href = route;
                     
-                }else{
+                // }else{
                     swalWithBootstrapButtons.fire({
-                        html: '<span style="color:#ffffff; font-size: 1.2vw;">This room opens at '+data+'</span>',
+                        //html: '<span style="color:#ffffff; font-size: 1.2vw;">This room opens at '+data+'</span>',
+                        html: '<span style="color:#ffffff; font-size: 1.2vw;">This room is closed</span>',
+
                         background: "url('{{ asset('img') }}/bryte/background.jpg')",
                         // html: true,
 
 						padding: "8px",
+            margin: "2px",
 						width: "20%",
                         //footer: '<a href>Why do I have this issue?</a>'
                     })
-                }
+               // }
             }
         });
     }
