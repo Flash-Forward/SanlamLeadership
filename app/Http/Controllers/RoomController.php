@@ -160,7 +160,7 @@ public $rows =	[
 						[	//Break 1
 							'title'			=> 'BREAKAWAY OPEN',
 							'image'			=> '/img/schedule/seal-01.jpg',
-							'start_time'	=> '12:00',
+							'start_time'	=> '12:30',
 							'end_time'		=> '00:00',
 							'interval'		=>	true,
 							'alert'         => true
