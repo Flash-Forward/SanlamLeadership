@@ -355,7 +355,6 @@ color: #ffffff !important;
             background-color: #004d73 !important;
             border-color: #004d73 !important;
             color: #ffffff !important;
-            height: 1.7vw;
             margin-bottom: 2%;
         }
 
@@ -402,7 +401,7 @@ color: #ffffff !important;
                                     </form>
 
 <div id="overlay">
-<iframe style="width: 70%; height: 70%; position: relative; top: 5%;" src="https://www.youtube.com/embed/Q1S7MvOsNsI" title="YouTube video player" class="yt_player_iframe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe style="width: 80%; height: 80%;" src="https://www.youtube.com/embed/Q1S7MvOsNsI" title="YouTube video player" class="yt_player_iframe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   <div style="position: fixed; top: 11%; right:11.5%; width:70px;">
 	<button id="homeButton" type="button" class="btn btn-danger btn-circle" onclick="off();"><i class="fa fa-times"></i>
   </div>
