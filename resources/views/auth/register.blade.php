@@ -84,7 +84,7 @@
 							<h1><img src="{{ $logo->value ?? '' }}" class="topLogo" alt=""/></h1>
 							<h1><b>{{$headingContent->value}}</b></h1>
 							<h2><b>{{$subHeadingContent->value}}</b></h2>
-							<h3 style="color: #000000;">{{$mainContent->value}}</h3>
+							<h3 style="color: #000000;">{!! $mainContent->value !!}</h3>
 							<div class="buttons">
 								<a href="{{ route('register.sa') }}" class="btn btn-learn">Register: South Africa</a>
                                 <a href="{{ route('register.ba') }}" class="btn btn-learn">Register: Botswana</a>

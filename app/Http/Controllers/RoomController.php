@@ -1159,6 +1159,12 @@ public $rows =	[
         $room_four_name = $config::where("key", "room_four_name")->first();
         $room_five_name = $config::where("key", "room_five_name")->first();
 
+		$room_one_route = $config::where("key", "room_one_route")->first();
+        $room_two_route = $config::where("key", "room_two_route")->first();
+        $room_three_route = $config::where("key", "room_three_route")->first();
+        $room_four_route = $config::where("key", "room_four_route")->first();
+        $room_five_route = $config::where("key", "room_five_route")->first();
+
 
         $left_banner = $config::where("key", "left_banner")->first();
         $right_banner = $config::where("key", "right_banner")->first();
@@ -1173,6 +1179,11 @@ public $rows =	[
             'room_three_name' => $room_three_name,
             'room_four_name' => $room_four_name,
             'room_five_name' => $room_five_name,
+			'room_one_route' => $room_one_route,
+            'room_two_route' => $room_two_route,
+            'room_three_route' => $room_three_route,
+            'room_four_route' => $room_four_route,
+            'room_five_route' => $room_five_route,
             'left_banner' => $left_banner,
             'right_banner' => $left_banner,
             'middle_banner' => $middle_banner,

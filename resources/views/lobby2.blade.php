@@ -415,7 +415,7 @@ color: #ffffff !important;
             {{$room_three_name->value}}
         </div>
     </div>
-    <a id="mainRoom"  onclick="checkRoom('room_three_open_time', '/room/99');"></a>
+    <a id="mainRoom"  onclick="checkRoom('room_three_open_time', '{{$room_three_route->value}}');"></a>
     @endif
 
     @if($room_two_name->value != "NONE")
@@ -424,7 +424,7 @@ color: #ffffff !important;
         {{$room_two_name->value}}
         </div>
     </div>
-    <a id="exhibitionHall"  onclick="checkRoom('room_two_open_time', '/exhibition');"></a>
+    <a id="exhibitionHall"  onclick="checkRoom('room_two_open_time', '{{$room_two_route->value}}');"></a>
     @endif
 
     @if($room_four_name->value != "NONE")
@@ -433,7 +433,7 @@ color: #ffffff !important;
         {{$room_four_name->value}}
         </div>
     </div>
-    <a id="breakawayRooms" onclick="checkRoom('room_four_open_time', '/breakaway');"></a>
+    <a id="breakawayRooms" onclick="checkRoom('room_four_open_time', '{{$room_four_route->value}}');"></a>
     @endif
 
     @if($room_five_name->value != "NONE")
@@ -442,7 +442,8 @@ color: #ffffff !important;
         {{$room_five_name->value}}
         </div>
     </div>
-    <a id="networkLounges" href="{{ route('networking') }}"></a>
+    <a id="networkLounges" onclick="checkRoom('room_five_open_time', '{{$room_five_route->value}}');"></a>
+
     @endif
 
     @if($room_one_name->value != "NONE")
@@ -451,8 +452,10 @@ color: #ffffff !important;
         {{$room_one_name->value}}
         </div>
     </div>
-    <a id="innovatorsCafe" href="{{ route('networkingroom') }}"></a>
+    <a id="innovatorsCafe" onclick="checkRoom('room_one_open_time', '{{$room_one_route->value}}');"></a>
+
     @endif
+    @if($room_five_name->value == "NONE")
 
     <div id="rightVideo" class="divInImage">
     <img src="{{ asset('img') }}/bryte/screen1.png" class="stretch" alt="" />
@@ -462,6 +465,9 @@ color: #ffffff !important;
     <source src="{{ asset('vid') }}/bryte.mp4" type="video/mp4" />
     </video>
     </div>
+    @endif
+
+    @if($room_one_name->value == "NONE")
 
     <div id="leftVideo" class="divInImage">
     <img src="{{ asset('img') }}/bryte/screen1.png" class="stretch" alt="" />
@@ -471,6 +477,7 @@ color: #ffffff !important;
     <source src="{{ asset('vid') }}/bryte.mp4" type="video/mp4" />
     </video>
     </div>
+    @endif
 
     <div id="leftBannerHolder" class="divInImage">
     <img src="{{ asset('img') }}/bryte/emptybanner.png" class="stretch" alt="" />
@@ -528,13 +535,13 @@ function checkRoom(room, route){
             url: '{{ route("room.check") }}?r='+room,
             type: "get",
             success: function (data) {
-                // if (data == "1") {
-	              //   window.location.href = route;
+                if (data == "1") {
+	                window.location.href = route;
                     
-                // }else{
+                }else{
                     swalWithBootstrapButtons.fire({
-                        //html: '<span style="color:#ffffff; font-size: 1.2vw;">This room opens at '+data+'</span>',
-                        html: '<span style="color:#ffffff; font-size: 1.2vw;">This room is closed</span>',
+                        html: '<span style="color:#ffffff; font-size: 1.2vw;">This room opens at '+data+'</span>',
+                        //html: '<span style="color:#ffffff; font-size: 1.2vw;">This room is closed</span>',
 
                         background: "url('{{ asset('img') }}/bryte/background.jpg')",
                         // html: true,
@@ -544,7 +551,7 @@ function checkRoom(room, route){
 						width: "20%",
                         //footer: '<a href>Why do I have this issue?</a>'
                     })
-               // }
+                }
             }
         });
     }
