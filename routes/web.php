@@ -23,7 +23,25 @@ Route::get('/room/check', [App\Http\Controllers\RoomController::class, 'checkRoo
 //Route::get('/exhibition/test', [App\Http\Controllers\RoomController::class, 'exhibitionHall']);
 //Route::get('/lobby/test', [App\Http\Controllers\RoomController::class, 'mainLobby']);
 
+Route::get('/clickmeeting/webinar', function () {
+    return view('conference.clickmeetinga');
+})->name('clickmeeting.webinar');
 
+Route::get('/clickmeeting/meeting', function () {
+    return view('conference.clickmeetingb');
+})->name('clickmeeting.meeting');
+
+Route::get('/bluejeans/meeting', function () {
+    return view('conference.webinarjam');
+})->name('bluejeans.meeting');
+
+Route::get('/bigmarker/webinar', function () {
+    return view('conference.demio');
+})->name('demio.meeting');
+
+Route::get('/bigmarker/meeting', function () {
+    return view('conference.bigmarker');
+})->name('demio.webinar');
 
 Route::get('/register/sa', function () {
     return view('auth.register2');
