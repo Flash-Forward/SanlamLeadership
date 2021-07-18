@@ -20,6 +20,11 @@
 
   <!-- Main Stylesheet File -->
   <link href="{{ asset('schedule') }}/css/style.css" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.9/dist/sweetalert2.all.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@9.17.2/dist/sweetalert2.min.css">
 <style>
 body, html {
   height: 100%;
@@ -70,9 +75,9 @@ body, html {
   flex-direction: column;
   /* background: url("{{ asset('img') }}/bryte/breakawayroom.png"); */
   background-size: cover;
-  width:80%;
-    height:80%;
-    top:10%;
+  width:80vw;
+    height:88vh;
+    top:8%;
     left:10%;
     border-radius: 35px;
 }
@@ -81,15 +86,185 @@ body, html {
   top:0%;
     left:0%;
   width:100%;
-    height:80%;
+    height:65%;
     border-radius: 10px;
-    opacity: 0.75;
+    opacity: 0.85;
   position: absolute;
     z-index: 2;
 }
 
+.standColor2{
+  background-color: #052b48;
+  border-radius: 25px;
+  top:0%;
+    left:0%;
+  width:100%;
+    height:71%;
+  position: absolute;
+
+    /* border-radius: 10px; */
+
+}
+.standColor3{
+  background-color: #004d73;
+  border-radius: 25px;
+  top:0%;
+    left:0%;
+  width:100%;
+    height:71%;
+  position: absolute;
+
+    /* border-radius: 10px; */
+
+}
+.standColor4{
+  background-color: #4d4b40;
+  border-radius: 25px;
+  top:0%;
+    left:0%;
+  width:100%;
+    height:71%;
+  position: absolute;
+
+    /* border-radius: 10px; */
+
+}
+
+.standColor5{
+  background-color: #0a578a;
+  border-radius: 25px;
+  top:0%;
+    left:0%;
+  width:100%;
+    height:71%;
+  position: absolute;
+
+    /* border-radius: 10px; */
+
+}
+.standColor6{
+  background-color: #a02629;
+  border-radius: 25px;
+  top:0%;
+    left:0%;
+  width:100%;
+    height:71%;
+  position: absolute;
+
+    /* border-radius: 10px; */
+
+}
+.standColor7{
+  background-color: #303048;
+  border-radius: 25px;
+  top:0%;
+    left:0%;
+  width:100%;
+    height:71%;
+  position: absolute;
+
+    /* border-radius: 10px; */
+
+}
+.standColor8{
+  background-color: #00ccff;
+  border-radius: 25px;
+  top:0%;
+    left:0%;
+  width:100%;
+    height:71%;
+  position: absolute;
+
+    /* border-radius: 10px; */
+
+}
+.standColor9{
+  background-color: #4091ae;
+  border-radius: 25px;
+  top:0%;
+    left:0%;
+  width:100%;
+    height:71%;
+  position: absolute;
+
+    /* border-radius: 10px; */
+
+}
+.standColor10{
+  background-color: #1a1062;
+  border-radius: 25px;
+  top:0%;
+    left:0%;
+  width:100%;
+    height:71%;
+  position: absolute;
+
+    /* border-radius: 10px; */
+
+}
+.standColor11{
+  background-color: #006a72;
+  border-radius: 25px;
+  top:0%;
+    left:0%;
+  width:100%;
+    height:71%;
+  position: absolute;
+
+    /* border-radius: 10px; */
+
+}
+.standColor12{
+  background-color: #23c0f0;
+  border-radius: 25px;
+  top:0%;
+    left:0%;
+  width:100%;
+    height:71%;
+  position: absolute;
+
+    /* border-radius: 10px; */
+
+}
+.standColor13{
+  background-color: #0a1760;
+  border-radius: 25px;
+  top:0%;
+    left:0%;
+  width:100%;
+    height:71%;
+  position: absolute;
+
+    /* border-radius: 10px; */
+
+}
+.standColor14{
+  background-color: #dbc059;
+  border-radius: 25px;
+  top:0%;
+    left:0%;
+  width:100%;
+    height:71%;
+  position: absolute;
+
+    /* border-radius: 10px; */
+
+}
+.standColor15{
+  background-color: #e31d1a;
+  border-radius: 25px;
+  top:0%;
+    left:0%;
+  width:100%;
+    height:71%;
+  position: absolute;
+
+    /* border-radius: 10px; */
+
+}
+
 .roundlogo{
-    border-radius: 40px;
+    border-radius: 25px;
 }
 
 .standImage{
@@ -102,57 +277,35 @@ body, html {
   z-index: 3;
 }
 
-#floorSpace{
-  display: grid;
-    grid-template-columns: repeat(30, 1fr);
-    grid-template-rows: repeat(30, 1vw);
-    grid-gap: 15px;
-    position:absolute;
-    /* transform: perspective(600px) rotateX(22deg);
-    backface-visibility: visible;
-  perspective-origin: 150% 150%; */
-top: 15%;
-left: 10%;
-width: 80%;
-height: 83%;
-  /* background-color:rgba(0,0,0,0.5); */
-}
+
 
 #myImage_zone2{
 
-  grid-column-start: 8;
-grid-column-end: 16;
-grid-row-start: 2;
-grid-row-end: 10;
-
-    width: 100%;
-    height: 100%;
-    border-radius: 35px;
+  width: 13.2vw;
+    height: 13.2vw;
+    top:22%;
+    left:32%;
+  border-radius: 35px;
     
 }
 
 #myImage_zone3{
-  grid-column-start: 16;
-grid-column-end: 24;
-grid-row-start: 2;
-grid-row-end: 10;
-
-    width: 100%;
-    height: 100%;
+  width: 13.2vw;
+    height: 13.2vw;
+    top:22%;
+    left:51%;
     border-radius: 35px;
 }
 #myImage_zone4{
-
-grid-column-start: 12;
-grid-column-end: 20;
-grid-row-start: 10;
-grid-row-end: 18;
-
-  width: 100%;
-  height: 100%;
-  border-radius: 35px;
-  
+  width: 13.2vw;
+    height: 13.2vw;
+    top:56%;
+    left:41.5%;
+    border-radius: 35px;
 }
+
+
+
 
 
 
@@ -191,6 +344,28 @@ h2{
     border-color: #004d73 !important;
     color: #ffffff !important;
 }
+.btn-circle-big {
+				width: 180px;
+				height: 180px;
+				padding: 10px 16px;
+				border-radius: 90px;
+				font-size: 40px;
+				margin: 7px;
+				line-height: 1;
+				display: flex;  
+  text-align: center;
+
+justify-content: center;  
+align-items: center; 
+color: #ffffff !important; 
+			}
+      li{
+        cursor: pointer;
+    }
+    li:hover{
+        color: #0096FF;
+    }
+
 </style>
 
 </head>
@@ -205,13 +380,13 @@ h2{
       <a class="nav-link" href="{{ route('lobby') }}">Lobby</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="{{ route('innovator') }}">Schedule</a>
+      <a class="nav-link" href="{{ route('schedule') }}">Schedule</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="{{ route('exhibition') }}">Exhibition Hall</a>
+      <a class="nav-link"  onclick="checkRoom('room_two_open_time', '/exhibition');">Exhibition Hall</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="{{ route('breakaway') }}">Breakaway Rooms</a>
+      <a class="nav-link"  onclick="checkRoom('room_four_open_time', '/breakaway');">Breakaway Rooms</a>
     </li>
 		<li class="nav-item">
 		<a class="nav-link"  href="{{ route('logout') }}" onclick="event.preventDefault();
@@ -228,40 +403,20 @@ h2{
     <img src="{{ asset('img') }}/bryte/background.jpg" class="stretch" alt="" />
 
     <div id="exhibitionHallBg" class="divInImage">
-      <img src="{{ asset('img') }}/bryte/exhall.png" class="stretch" alt="" />
-      <div id="floorSpace">
-        <div id="myImage_zone2" class="divInImage">
-          <a class="stretch standLink" href="{{ route('breakawayroom') }}"></a>
-          <img src="{{ asset('img') }}/bryte/exstand.png" class="stretch standImage" alt="" />
+      <img src="{{ asset('img') }}/bryte/exhall4.png" class="stretch" alt="" />
+      {{$counter = 2}}
+      @foreach($exhibitors as $item)
+        @if($item->order < '99')
+        <div id="myImage_zone{{$counter}}" class="divInImage">
+          <a class="stretch standLink" href="{{ route('room', ['order'=>$item->order]) }}"></a>
+          <img src="{{ asset('img') }}/bryte/exstand3.png" class="stretch standImage" alt="" />
+          <div class="standColor{{$counter++}}"></div>
           <div class="standlogo">
-            <img src="{{ asset('img') }}/bryte/coke.webp" class="stretch roundLogo" alt="" />
+            <img src="{{$item->logo}}" class="stretch roundLogo" alt="" />
           </div>
         </div>
-
-        <div id="myImage_zone3" class="divInImage">
-          <a class="stretch standLink" href="{{ route('breakawayroom') }}"></a>
-          <img src="{{ asset('img') }}/bryte/exstand.png" class="stretch standImage" alt="" />
-          <div class="standlogo">
-            <img src="{{ asset('img') }}/bryte/coke.webp" class="stretch roundLogo" alt="" />
-          </div>
-        </div>
-
-        <div id="myImage_zone4" class="divInImage">
-          <a class="stretch standLink" href="{{ route('breakawayroom') }}"></a>
-          <img src="{{ asset('img') }}/bryte/exstand.png" class="stretch standImage" alt="" />
-          <div class="standlogo">
-            <img src="{{ asset('img') }}/bryte/coke.webp" class="stretch roundLogo" alt="" />
-          </div>
-        </div>
-
-
-
-
-
-
-
-
-      </div>
+        @endif
+      @endforeach
     </div>
 
 
@@ -273,10 +428,58 @@ h2{
 function redirectToLobby(){
 	window.location.href = "{{ route('lobby') }}";
 }
+
+const swalWithBootstrapButtons = Swal.mixin({
+  customClass: {
+    confirmButton: 'btn bryte-button',
+    cancelButton: 'btn bryte-button'
+  },
+  buttonsStyling: false
+})
+
+function checkRoom(room, route){
+        $.ajax({
+            url: '{{ route("room.check") }}?r='+room,
+            type: "get",
+            success: function (data) {
+                // if (data == "1") {
+	              //   window.location.href = route;
+                    
+                // }else{
+                    swalWithBootstrapButtons.fire({
+                        //html: '<span style="color:#ffffff; font-size: 1.2vw;">This room opens at '+data+'</span>',
+                        html: '<span style="color:#ffffff; font-size: 1.2vw;">This room is closed</span>',
+
+                        background: "url('{{ asset('img') }}/bryte/background.jpg')",
+                        // html: true,
+
+						padding: "8px",
+            margin: "2px",
+						width: "20%",
+                        //footer: '<a href>Why do I have this issue?</a>'
+                    })
+               // }
+            }
+        });
+    }
+
 </script>
-<div style="position: fixed; bottom: 0; left:0; width:70px;">
+<div style="position: fixed; bottom: 1%; left:1%; width:70px;">
 	<button id="homeButton" type="button" class="btn btn-primary btn-circle" onclick="redirectToLobby();"><i class="fa fa-home"></i>
 </div>
+@if(Auth::user()->user_roles_id == 1)
+<script>
+function redirectToRoom(){
+	window.location.href = "/speaker/100";
+}
+
+</script>
+
+<div style="position: fixed; top: 8%; left:1%;">
+<a id="" onclick="redirectToRoom();" class="btn-primary btn-circle-big">Join My Room / Stand</a>
+</div>
+
+@endif
 
 </body>
 

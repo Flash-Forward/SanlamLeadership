@@ -598,14 +598,7 @@ public $rows =	[
         ]);
     }
 
-    public function breakawayRoom(config $config)
-    {
-        $bg = $config::where("key", "general_background")->first();
-        //dd($bg->value);
-        return view('breakaway', [
-            'bg' => $bg
-        ]);
-    }
+
 
     private function printDays($rows)
 	{
@@ -1146,9 +1139,23 @@ public $rows =	[
 
     public function exhibitionHall(config $config){
         $stands = $config::where("key", "exhibition_size")->first();
-        $exhibitors = Exhibitor::get();
-        return view('exhibition_layouts.'.$stands->value, [
+        $exhibitors = Exhibitor::where('order', '<', '99')->get();
+		//dd($exhibitors);
+        return view('exhibition_layouts.'.$exhibitors->count(), [
             'exhibitors' => $exhibitors
+        ]);
+    }
+
+	public function breakawayRoom(config $config)
+    {
+        $bg = $config::where("key", "general_background")->first();
+        $rooms = Exhibitor::where('order', '>', 99)->where('order', '<', 200)->get();
+
+        //dd($bg->value);
+        return view('middle_layouts.'.$rooms->count(), [
+            'bg' => $bg,
+			'rooms' => $rooms,
+			'roomType' => 'breakaway'
         ]);
     }
 

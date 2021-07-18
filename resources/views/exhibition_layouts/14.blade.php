@@ -481,12 +481,13 @@ color: #ffffff !important;
 
     <div id="exhibitionHallBg" class="divInImage">
       <img src="{{ asset('img') }}/bryte/exhall4.png" class="stretch" alt="" />
+      {{$counter = 2}}
       @foreach($exhibitors as $item)
         @if($item->order < '99')
-        <div id="myImage_zone{{$item->order + 2}}" class="divInImage">
+        <div id="myImage_zone{{$counter}}" class="divInImage">
           <a class="stretch standLink" href="{{ route('room', ['order'=>$item->order]) }}"></a>
           <img src="{{ asset('img') }}/bryte/exstand3.png" class="stretch standImage" alt="" />
-          <div class="standColor{{$item->order + 2}}"></div>
+          <div class="standColor{{$counter++}}"></div>
           <div class="standlogo">
             <img src="{{$item->logo}}" class="stretch roundLogo" alt="" />
           </div>

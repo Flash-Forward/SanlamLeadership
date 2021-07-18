@@ -19,7 +19,7 @@ class MakeExhibitors extends Migration
             $table->longText('logo');
             $table->string('webinar');
             $table->json('extra');
-            $table->string('order');
+            $table->unsignedInteger('order');
             $table->timestamps();
         });
     }
