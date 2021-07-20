@@ -1220,6 +1220,9 @@ public $rows =	[
         $right_banner = $config::where("key", "right_banner")->first();
         $middle_banner = $config::where("key", "middle_banner")->first();
 
+        $welcome_video = $config::where("key", "welcome_video")->first();
+
+
 
 
 
@@ -1237,6 +1240,7 @@ public $rows =	[
             'left_banner' => $left_banner,
             'right_banner' => $left_banner,
             'middle_banner' => $middle_banner,
+			'welcome_video' => $welcome_video,
         ]);
     }
 }
