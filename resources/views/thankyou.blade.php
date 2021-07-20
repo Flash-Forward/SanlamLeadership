@@ -21,6 +21,13 @@
 		<link rel="stylesheet" href="{{ asset('landing') }}/css/style.css">
 		<link rel="stylesheet" href="{{ asset('landing') }}/css/responsive.css">
 		<style>
+				#banner1 {
+  background: url('{{$bgL->value}}');
+  background-size: cover;
+  padding: 250px 0;
+  position: relative;
+  text-align: center;
+}
 					.topLogo{
 				width: 35%;
 				position: relative; 
@@ -62,12 +69,10 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="block">
-							<h1><img src="{{ asset('img') }}/bryte/logo.png" class="topLogo" alt="" /></h1>
-							<h1><b>Thank you!</b></h1>
-							<h2><b>You have successfully completed your registration for Bryte’s Business Partner Conference 2021.</b></h2>
-							<h3  style="color: #000000;">We have sent you an email confirming
-your registration and advising on the next steps. Remember to check both
-your inbox and spam or junk folders.</h3>
+							<h1><img src="{{ $logo->value ?? '' }}" class="topLogo" alt="" /></h1>
+							<h1><b>{{$headingContent->value}}</b></h1>
+							<h2><b>{{$subHeadingContent->value}}</b></h2>
+							<h3 style="color: #000000;">{!! $mainContent->value !!}</h3>
                         <br>
                         <br>
 

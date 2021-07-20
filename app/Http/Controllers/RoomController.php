@@ -597,6 +597,33 @@ public $rows =	[
 
         ]);
     }
+	public function thankyou(config $config){
+        $bgL = $config::where("key", "thankyou_background")->first();
+
+        $logo = $config::where("key", "thankyou_logo")->first();
+        $headingColor = $config::where("key", "heading_color_ty")->first();
+        $headingContent = $config::where("key", "heading_content_ty")->first();
+
+        $subHeadingColor = $config::where("key", "sub_heading_color_ty")->first();
+        $subHeadingContent = $config::where("key", "sub_heading_content_ty")->first();
+        $mainContent = $config::where("key", "main_content_ty")->first();
+
+
+
+       
+        return view('thankyou', [
+            'bgL' => $bgL,
+            'logo' => $logo,
+            'headingColor' => $headingColor,
+            'headingContent' => $headingContent,
+            'subHeadingColor' => $subHeadingColor,
+            'subHeadingContent' => $subHeadingContent,
+            'mainContent' => $mainContent,
+
+
+
+        ]);
+    }
 
 
 
@@ -1085,9 +1112,12 @@ public $rows =	[
     public function schedule(config $config)
     {
         $bg = $config::where("key", "general_background")->first();
+        $banner = $config::where("key", "reg_bg")->first();
+
         //dd($bg->value);
         return view('schedule', [
             'bg' => $bg,
+			'banner' => $banner,
             'days' =>  $this->printDays($this->rows),
             'schedule' => $this->printSchedule($this->rows),
             'showHelp' => SHOW_EXPAND_HELP

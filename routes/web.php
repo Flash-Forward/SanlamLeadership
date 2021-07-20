@@ -35,9 +35,8 @@ Route::get('/register/ba', function () {
 
 Auth::routes(['verify' => true]);
 
-Route::get('/thankyou', function () {
-    return view('thankyou');
-})->name('thankyou');
+Route::get('/thankyou', [App\Http\Controllers\RoomController::class, 'thankyou'])->name('thankyou');
+
 
 Route::get('/mobile', function () {
     return view('devicenotsupported');
