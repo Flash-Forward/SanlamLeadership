@@ -185,6 +185,21 @@ video {
     left:83%;
     border-radius: 35px;
 }
+
+#rightVideoInner1{
+   width:13.3vw;
+    height:15.2vh;
+    top:66.5%;
+    left:84.5%;
+    border-radius: 35px;
+}
+#rightVideo1{
+   width:16.4vw;
+    height:22vh;
+    top:62.5%;
+    left:83%;
+    border-radius: 35px;
+}
 #leftVideoInner{
   width:13.3vw;
     height:15.2vh;
@@ -196,6 +211,21 @@ video {
   width:16.4vw;
     height:22vh;
     top:36.5%;
+    left:0.8%;
+    border-radius: 35px;
+}
+
+#leftVideoInner1{
+  width:13.3vw;
+    height:15.2vh;
+    top:66.5%;
+    left:2.3%;
+    border-radius: 35px;
+}
+#leftVideo1{
+  width:16.4vw;
+    height:22vh;
+    top:62.5%;
     left:0.8%;
     border-radius: 35px;
 }
@@ -251,14 +281,14 @@ video {
   width:9.031vw;
     height:22.8vw;
     top:12%;
-    left:5.6%;
+    left:6.5%;
 }
 
 #rightBanner{
   width:9.031vw;
     height:22.8vw;
     top:12%;
-    left:5.6%;
+    left:6.5%;
 }
 #rightBannerHolder{
   width:10.331vw;
@@ -465,6 +495,15 @@ color: #ffffff !important;
     <source src="{{ asset('vid') }}/bryte.mp4" type="video/mp4" />
     </video>
     </div>
+    @else
+    <div id="rightVideo1" class="divInImage">
+    <img src="{{ asset('img') }}/bryte/screen1.png" class="stretch" alt="" />
+    </div>
+    <div id="rightVideoInner1" class="divInImage">
+    <video width="100%" height="100%" autoplay loop muted>
+    <source src="{{ asset('vid') }}/bryte.mp4" type="video/mp4" />
+    </video>
+    </div>
     @endif
 
     @if($room_one_name->value == "NONE")
@@ -473,6 +512,15 @@ color: #ffffff !important;
     <img src="{{ asset('img') }}/bryte/screen1.png" class="stretch" alt="" />
     </div>
     <div id="leftVideoInner" class="divInImage">
+    <video width="100%" height="100%" autoplay loop muted>
+    <source src="{{ asset('vid') }}/bryte.mp4" type="video/mp4" />
+    </video>
+    </div>
+    @else
+    <div id="leftVideo1" class="divInImage">
+    <img src="{{ asset('img') }}/bryte/screen1.png" class="stretch" alt="" />
+    </div>
+    <div id="leftVideoInner1" class="divInImage">
     <video width="100%" height="100%" autoplay loop muted>
     <source src="{{ asset('vid') }}/bryte.mp4" type="video/mp4" />
     </video>

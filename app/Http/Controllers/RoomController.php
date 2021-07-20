@@ -1159,6 +1159,19 @@ public $rows =	[
         ]);
     }
 
+	public function networkingLounge(config $config)
+    {
+        $bg = $config::where("key", "general_background")->first();
+        $rooms = Exhibitor::where('order', '>', 200)->where('order', '<', 300)->get();
+
+        //dd($bg->value);
+        return view('middle_layouts.'.$rooms->count(), [
+            'bg' => $bg,
+			'rooms' => $rooms,
+			'roomType' => 'networking'
+        ]);
+    }
+
     public function mainLobby(config $config){
         $room_one_name = $config::where("key", "room_one_name")->first();
         $room_two_name = $config::where("key", "room_two_name")->first();
