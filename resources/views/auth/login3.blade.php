@@ -1,6 +1,7 @@
 <head>
 		<meta charset="UTF-8">
-		<title>BryteSA</title>
+        <title>Africa Careers Network's Entrepreneurs' Launchpad</title>
+
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<!-- google fonts -->
@@ -63,7 +64,7 @@ body, html {
     object-fit: cover; /* Do not scale the image */
   object-position: center; /* Center the image within the element */
     width:100%;
-    height:52vh;
+    height:60vh;
     position: relative;
 }
 #myImage_zone2{
@@ -79,7 +80,7 @@ body, html {
     left:52%;
 }
 .signup-form{
-    margin-top: 4%;
+    margin-top: 2%;
     display: flex;
   justify-content: center;
   align-items: center;
@@ -150,7 +151,7 @@ body, html {
 
 <body>
 <div id="bg">
-<div id="banner"><img src="{{ asset('img') }}/bryte/loginbanners.jpg" class="stretch" alt="" /></div>
+<div id="banner"><img src="{{ asset('img') }}/al/banner.png" class="stretch" alt="" /></div>
 <div id="registration-header"><h1>Login</h1></div>
 <div class="signup-form">
             <form method="POST" class="login-form" id="login-form" action="{{ route('login') }}">

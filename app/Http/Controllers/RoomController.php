@@ -1238,7 +1238,7 @@ public $rows =	[
             'room_four_route' => $room_four_route,
             'room_five_route' => $room_five_route,
             'left_banner' => $left_banner,
-            'right_banner' => $left_banner,
+            'right_banner' => $right_banner,
             'middle_banner' => $middle_banner,
 			'welcome_video' => $welcome_video,
         ]);

@@ -239,20 +239,7 @@ header .navbar {
   line-height: 30px;
   font-weight: 300;
 }
-#banner .block .btn-learn {
-  border: 2px solid #004d73;
-  color: #004d73;
-  border-radius: 25px;
-  margin: 0 7px;
-  padding: 10px 22px;
-  font-size: 14px;
-  transition: 0.3s;
-}
-#banner .block .btn-learn:hover {
-  background-color: #004d73;
-  border-color: #ffffff;
-  color: #ffffff;
-}
+
 #banner .block .buttons {
   margin-top: 40px;
 }

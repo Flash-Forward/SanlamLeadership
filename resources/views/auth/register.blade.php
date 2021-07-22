@@ -2,7 +2,7 @@
 	<html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>BryteSA</title>
+		<title>Africa Careers Network's Entrepreneurs' Launchpad</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<!-- google fonts -->
@@ -21,6 +21,21 @@
 		<link rel="stylesheet" href="{{ asset('landing') }}/css/style.css">
 		<link rel="stylesheet" href="{{ asset('landing') }}/css/responsive.css">
 		<style>
+
+#banner .block .btn-learn {
+  border: 2px solid #79232E;
+  color: #79232E;
+  border-radius: 25px;
+  margin: 0 7px;
+  padding: 10px 22px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+#banner .block .btn-learn:hover {
+  background-color: #79232E;
+  border-color: #BAA768;
+  color: #BAA768;
+}
 		#banner {
   background: url('{{$bgL->value}}');
   background-size: cover;
@@ -86,9 +101,7 @@
 							<h2><b>{{$subHeadingContent->value}}</b></h2>
 							<h3 style="color: #000000;">{!! $mainContent->value !!}</h3>
 							<div class="buttons">
-								<a href="{{ route('register.sa') }}" class="btn btn-learn">Register: South Africa</a>
-                                <a href="{{ route('register.ba') }}" class="btn btn-learn">Register: Botswana</a>
-								
+								<a href="{{ route('login') }}" class="btn btn-learn">Login</a>								
 						  </div>
 						</div>
 					</div>

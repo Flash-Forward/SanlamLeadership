@@ -1,6 +1,6 @@
 <head>
 		<meta charset="UTF-8">
-		<title>BryteSA</title>
+    <title>Africa Careers Network's Entrepreneurs' Launchpad</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<!-- google fonts -->
@@ -492,7 +492,7 @@ color: #ffffff !important;
     </div>
     <div id="rightVideoInner" class="divInImage">
     <video width="100%" height="100%" autoplay loop muted>
-    <source src="{{ asset('vid') }}/bryte.mp4" type="video/mp4" />
+    <source src="{{ asset('vid') }}/al.mp4" type="video/mp4" />
     </video>
     </div>
     @else
@@ -501,7 +501,7 @@ color: #ffffff !important;
     </div>
     <div id="rightVideoInner1" class="divInImage">
     <video width="100%" height="100%" autoplay loop muted>
-    <source src="{{ asset('vid') }}/bryte.mp4" type="video/mp4" />
+    <source src="{{ asset('vid') }}/al.mp4" type="video/mp4" />
     </video>
     </div>
     @endif
@@ -513,7 +513,7 @@ color: #ffffff !important;
     </div>
     <div id="leftVideoInner" class="divInImage">
     <video width="100%" height="100%" autoplay loop muted>
-    <source src="{{ asset('vid') }}/bryte.mp4" type="video/mp4" />
+    <source src="{{ asset('vid') }}/al.mp4" type="video/mp4" />
     </video>
     </div>
     @else
@@ -522,7 +522,7 @@ color: #ffffff !important;
     </div>
     <div id="leftVideoInner1" class="divInImage">
     <video width="100%" height="100%" autoplay loop muted>
-    <source src="{{ asset('vid') }}/bryte.mp4" type="video/mp4" />
+    <source src="{{ asset('vid') }}/al.mp4" type="video/mp4" />
     </video>
     </div>
     @endif
