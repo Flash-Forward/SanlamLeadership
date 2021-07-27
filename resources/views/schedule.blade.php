@@ -72,8 +72,10 @@
 		box-shadow: 5px 10px;
 	}
 	.bryte-button {
-            background-color: #004d73 !important;
-            border-color: #004d73 !important;
+            background-color: #79232E
+ !important;
+            border-color: #79232E
+ !important;
             color: #ffffff !important;
             height: 1.7vw;
             width: 2.5vw;
@@ -118,7 +120,7 @@
 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                         @csrf
                                     </form>
-		<div id="banner"><img src="{{ asset('img') }}/bryte/banner.jpg" class="stretch" alt="" /></div>
+		<div id="banner"><img src="{{ asset('img') }}/al/banner.png" class="stretch" alt="" /></div>
 		<section class="accordion fix">
 			<div class="container">
 				<div class="row ">

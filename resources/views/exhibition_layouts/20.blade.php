@@ -350,8 +350,10 @@ h2{
   text-align: center;
 }
 .bryte-button{
-    background-color: #004d73 !important;
-    border-color: #004d73 !important;
+    background-color: #79232E
+ !important;
+    border-color: #79232E
+ !important;
     color: #ffffff !important;
 }
 </style>

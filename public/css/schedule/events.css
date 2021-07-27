@@ -1,23 +1,27 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Sarabun:400,500,600,700,800|Sen:400,700&display=swap");
 .boxed-btn {
 	background: #fff;
-	color: #004d73 !important;
+	color: #79232E
+ !important;
 	display: inline-block;
 	padding: 18px 44px;
 	font-family: "Arial", "Open Sans", sans-serif;
 	font-size: 14px;
 	font-weight: 400;
 	border: 0;
-	border: 1px solid #004d73;
+	border: 1px solid #79232E
+;
 	letter-spacing: 3px;
 	text-align: center;
 	text-transform: uppercase;
 	cursor: pointer
 }
 .boxed-btn:hover {
-	background: #004d73;
+	background: #79232E
+;
 	color: #fff !important;
-	border: 1px solid #004d73
+	border: 1px solid #79232E
+
 }
 .boxed-btn:focus {
 	outline: none
@@ -72,14 +76,16 @@ body {
 	font-style: normal
 }
 h1,  h3, h4, h5, h6 {
-	color: #004d73;
+	color: #79232E
+;
 	margin-top: 0px;
 	font-style: normal;
 	font-weight: 500;
 	text-transform: normal
 }
 p {
-	color: #004d73;
+	color: #79232E
+;
 	font-size: 16px;
 	line-height: 30px;
 	margin-bottom: 15px;
@@ -274,7 +280,8 @@ hr {
 	background: #ff3500
 }
 .btn {
-	background: #004d73;
+	background: #79232E
+;
 	padding: 27px 44px;
 	color: #fff;
 	cursor: pointer;
@@ -300,7 +307,8 @@ hr {
 	top: 0;
 	width: 101%;
 	height: 101%;
-	background: #004d73;
+	background: #79232E
+;
 	z-index: 1;
 	transition: transform 0.5s;
 	transform-origin: 0 0;
@@ -329,7 +337,8 @@ hr {
 .hero-btn {
 	padding: 30px 39px;
 	background: #fff;
-	color: #004d73 !important
+	color: #79232E
+ !important
 }
 .hero-btn::before {
 	background: #e6c35c
@@ -337,14 +346,16 @@ hr {
 .white-btn {
 	padding: 30px 39px;
 	background: #fff;
-	color: #004d73 !important
+	color: #79232E
+ !important
 }
 .black-btn {
 	padding: 14px 35px;
 	background: #000
 }
 .black-btn::before {
-	background: #004d73
+	background: #79232E
+
 }
 .submit-btn2 {
 	background: #ec5b53;
@@ -399,7 +410,8 @@ hr {
 	top: 0;
 	width: 101%;
 	height: 101%;
-	background: #004d73;
+	background: #79232E
+;
 	z-index: -1;
 	transition: transform 0.5s;
 	transition-timing-function: ease;
@@ -416,7 +428,8 @@ hr {
 	color: #888
 }
 #scrollUp, #back-top {
-	background: #004d73;
+	background: #79232E
+;
 	height: 50px;
 	width: 50px;
 	right: 31px;
@@ -546,7 +559,8 @@ hr {
 	position: relative;
 	border-style: solid;
 	border-width: 1px;
-	border-top-color: #004d73;
+	border-top-color: #79232E
+;
 	border-bottom-color: transparent;
 	border-left-color: transparent;
 	border-right-color: transparent;
@@ -749,7 +763,8 @@ hr {
 	font-weight: 500;
 }
 .accordion .accordion-wrapper .card-header a span {
-	color: #004d73;
+	color: #79232E
+;
 	font-size: 18px;
 	font-weight: 800
 }
@@ -798,7 +813,8 @@ hr {
 	position: absolute;
 	height: 15px;
 	width: 15px;
-	background: #004d73;
+	background: #79232E
+;
 	content: "";
 	left: 0;
 	right: 0;
@@ -812,7 +828,8 @@ hr {
 }
 .accordion .nav-tabs .nav-item {
 	display: block;
-	color: #004d73;
+	color: #79232E
+;
 	font-size: 24px;
 	font-weight: 700
 }
@@ -822,7 +839,8 @@ hr {
 	}
 }
 .accordion .nav-tabs .nav-item.show .nav-link, .accordion .nav-tabs .nav-link.active {
-	background: #004d73;
+	background: #79232E
+;
 	color: #dac057;
 	-webkit-transition: all 0s ease-out 0s;
 	-moz-transition: all 0s ease-out 0s;
@@ -1117,7 +1135,8 @@ hr {
 	font-size: 24px
 }
 b, sup, sub, u, del {
-	color: #004d73
+	color: #79232E
+
 }
 .typography h1, .typography h2, .typography h3, .typography h4, .typography h5, .typography h6 {
 	color: #828bb2

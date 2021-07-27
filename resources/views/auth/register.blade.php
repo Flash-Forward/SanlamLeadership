@@ -23,8 +23,8 @@
 		<style>
 
 #banner .block .btn-learn {
-  border: 2px solid #79232E;
-  color: #79232E;
+  border: 2px solid #F9DF8D;
+  color: #F9DF8D;
   border-radius: 25px;
   margin: 0 7px;
   padding: 10px 22px;
@@ -32,9 +32,9 @@
   transition: 0.3s;
 }
 #banner .block .btn-learn:hover {
-  background-color: #79232E;
+  background-color: #F9DF8D;
   border-color: #BAA768;
-  color: #BAA768;
+  color: #79232E;
 }
 		#banner {
   background: url('{{$bgL->value}}');
@@ -52,7 +52,7 @@
 				width: 55% !important;
 				height: 60% !important;
 				padding: 2%;
-				background-color: rgba(255,255,255,0.80);
+				background-color: rgba(122,39,44,1);
 				border-radius: 10px;
 
 			}

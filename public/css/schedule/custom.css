@@ -327,7 +327,8 @@ when card expanded:
 {
 	content: "\f078";
 	font-size:22px !important;
-	color:#004d73;
+	color:#79232E
+;
 	transform: rotate(-0deg);
 }
 
@@ -345,14 +346,16 @@ when card expanded:
 {
 	content: "\f078";
 	transform: rotate(180deg);
-	color:#004d73;
+	color:#79232E
+;
 	font-size:16px !important;
 	top: 30%;
 }
 
 div.join-link
 {
-	background-color: #004d73;
+	background-color: #79232E
+;
 	color: white !important;
     text-align: center;
     margin: auto;
@@ -363,7 +366,8 @@ div.join-link
 
 div.interval-item
 {
-	color: #004d73;
+	color: #FFFFFF
+;
     font-size: 16px;
     font-weight: 800;
 	padding: 10 30px 25px 0px;
@@ -381,13 +385,14 @@ div.card-break
 
 .accordion>.card>.interval-item
 {
-	background-color: rgba(218, 192, 87, 1);
+	background-color: rgba(28, 38, 47, 1);
     border-radius: 10px;
 }
 .accordion>.card>.interval-item-alert
 {
 	color: #ffffff !important;
-	background-color: #004d73;
+	background-color: #79232E
+;
     border-radius: 10px;
 }
 
@@ -410,7 +415,8 @@ div.card-break
 
 .accordion .accordion-wrapper .card:not(.room-card):not(.interval-item)
 {
-	box-shadow: 4px 4px 7px #004d73;
+	box-shadow: 4px 4px 7px #79232E
+;
 	margin-bottom: 25px;
 	border-radius: 10px;
 	background: none;
