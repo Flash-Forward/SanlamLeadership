@@ -122,14 +122,15 @@ body, html {
     height: inherit !important;
 }
 #bg{
-    background: url("{{ asset('img') }}/bryte/bg3d.jpg");
+    /* background: url("{{ asset('img') }}/bryte/bg3d.jpg"); */
+    background-color: #1c262f;
     background-size: cover;
   height: 100%;
   color: #ffffff;
 }
 .bryte-button{
-    background-color: #004d73 !important;
-    border-color: #004d73 !important;
+    background-color: #79232E !important;
+    border-color: #79232E !important;
     color: #ffffff !important;
 }
 #registration-header > h1
