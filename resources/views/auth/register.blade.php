@@ -44,7 +44,7 @@
   text-align: center;
 }
 			.topLogo{
-				width: 35%;
+				width: 40%;
 				position: relative; 
 				margin-bottom: 2%;
 			}
@@ -58,7 +58,7 @@
 			}
 			#banner .block h1 {
 				padding-bottom: 5px;
-				font-size: 50px;
+				font-size: 40px;
 				font-weight: 100;
 				color: {{$headingColor->value ?? '' }};
 			}
