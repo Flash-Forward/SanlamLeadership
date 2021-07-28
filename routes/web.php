@@ -27,6 +27,10 @@ Route::get('/bluejeans', function () {
     return view('conference.webinarjam');
 })->name('bluejeans');
 
+Route::get('/polls', function () {
+    return view('polls');
+})->name('polls');
+
 Route::get('/register/sa', function () {
     return view('auth.register2');
 })->name('register.sa');
