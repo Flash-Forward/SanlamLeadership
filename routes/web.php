@@ -23,7 +23,9 @@ Route::get('/room/check', [App\Http\Controllers\RoomController::class, 'checkRoo
 //Route::get('/exhibition/test', [App\Http\Controllers\RoomController::class, 'exhibitionHall']);
 //Route::get('/lobby/test', [App\Http\Controllers\RoomController::class, 'mainLobby']);
 
-
+Route::get('/bluejeans', function () {
+    return view('conference.webinarjam');
+})->name('bluejeans');
 
 Route::get('/register/sa', function () {
     return view('auth.register2');

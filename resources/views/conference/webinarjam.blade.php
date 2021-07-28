@@ -84,9 +84,9 @@ h2{
 
 <body>
 <div id="bg">
-    <img src="{{ asset('img') }}/bryte/background.jpg" class="stretch" alt="" />
+    <img src="{{ asset('img') }}/al/bg.png" class="stretch" alt="" />
 	<div id="myImage_zone1" class="divInImage">
-    <iframe src="https://bluejeans.com/322036178/webrtc" allow="camera;microphone" title="description" width="100%" height="100%"></iframe> 
+    <iframe src="https://bluejeans.com/433399859/7380/webrtc" allow="camera;microphone" title="description" width="100%" height="100%"></iframe> 
     </div>
     <!-- <a id="myImage_zone1" href="{{ route('room') }}"></a>
     <a id="myImage_zone2" href="{{ route('exhibition') }}"></a>
