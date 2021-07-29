@@ -2,7 +2,7 @@
 	<html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Africa Careers Network's Entrepreneurs' Launchpad</title>
+		<title>African Leadership For Health Gathering</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<!-- google fonts -->
@@ -44,12 +44,12 @@
   text-align: center;
 }
 			.topLogo{
-				width: 40%;
+				width: 50%;
 				position: relative; 
 				margin-bottom: 2%;
 			}
 			.greyBox{
-				width: 55% !important;
+				width: 65% !important;
 				height: 60% !important;
 				padding: 2%;
 				background-color: rgba(122,39,44,1);
@@ -99,7 +99,7 @@
 							<h1><img src="{{ $logo->value ?? '' }}" class="topLogo" alt=""/></h1>
 							<h1><b>{{$headingContent->value}}</b></h1>
 							<h2><b>{{$subHeadingContent->value}}</b></h2>
-							<h3 style="color: #000000;">{!! $mainContent->value !!}</h3>
+							<h3 style="color: #BAA768;">{!! $mainContent->value !!}</h3>
 							<div class="buttons">
 								<a href="{{ route('login') }}" class="btn btn-learn">Login</a>								
 						  </div>

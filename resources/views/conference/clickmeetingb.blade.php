@@ -1,6 +1,6 @@
 <head>
 		<meta charset="UTF-8">
-    <title>Africa Careers Network's Entrepreneurs' Launchpad</title>
+    <title>African Leadership For Health Gathering</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<!-- google fonts -->
