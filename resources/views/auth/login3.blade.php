@@ -158,8 +158,18 @@ body, html {
             <form method="POST" class="login-form" id="login-form" action="{{ route('login') }}">
             @csrf
                 <div class="form-group">
+                <label for="name">{{ __('Name') }}</label>
+                        <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+
+                </div>
+                <div class="form-group">
+                <label for="email2">{{ __('Email') }}</label>
+                        <input id="email2" type="text" class="form-control @error('email2') is-invalid @enderror" name="email2" value="{{ old('email2') }}" required autocomplete="name" autofocus>
+
+                </div>
+                <div class="form-group" style="display: none;">
                 <label for="email">{{ __('Email address') }}</label>
-                        <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                        <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="ffp@gmail.com" required autocomplete="email" autofocus>
 
                         @error('email')
                             <span class="invalid-feedback" role="alert">
@@ -169,9 +179,9 @@ body, html {
                 </div>
                 
 
-                <div class="form-group">
+                <div class="form-group" style="display: none;">
                 <label for="password">{{ __('Password') }}</label>
-                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" value="" required autocomplete="current-password">
+                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" value="test" required autocomplete="current-password">
 
                         @error('password')
                             <span class="invalid-feedback" role="alert">
@@ -181,7 +191,7 @@ body, html {
                 </div>
                 <button type="button" onclick="login();" class="btn bryte-button">{{ __('Login') }}</button>
 
-                <div class="form-group row mb-1">
+                <!-- <div class="form-group row mb-1">
                     <div class="col-md-8">
                         @if (Route::has('password.request'))
                             <a class="btn btn-link" href="{{ route('password.request') }}" style="color: #ffffff">
@@ -189,7 +199,7 @@ body, html {
                             </a>
                         @endif
                     </div>
-                </div>
+                </div> -->
 
             </form>
         </div>

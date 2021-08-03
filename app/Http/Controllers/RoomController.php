@@ -21,7 +21,7 @@ class RoomController extends Controller
     
 //Assumes that the data here is read from the database and sorted according to date ASCENDING:
 public $rows =	[
-			'title' => 'Africa Careers Network\'s Entrepreneurs\' Launchpad',
+			'title' => 'African Leadership For Health Gathering',
 			'days' =>
 			[
 				//Day 1:
