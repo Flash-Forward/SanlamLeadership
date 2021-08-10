@@ -27,20 +27,20 @@ public $rows =	[
 				//Day 1:
 				[
 					'session_title'		=> 'CONFERENCE PROGRAMME FOR WE-LINK', 	//should not be mandatory
-					'date'				=> '2021-06-22',	//required - let's us know which tab it should be placed in
+					'date'				=> '2021-08-13',	//required - let's us know which tab it should be placed in
 					'sessions'			=>
 					[
 						[	//Row 2
-							'title'			=> 'Entrepreneurship 101',
+							'title'			=> 'Welcome',
 							'image'			=> '/img/schedule/session1.png',
-							'start_time'	=> '12:00',
-							'end_time'		=> '13:30',
+							'start_time'	=> '14:40',
+							'end_time'		=> '15:00',
 							'interval'		=>	false,
 							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Entrepreneurship 101',
-														'room_info'		=> 	'This session will start off with our opening speaker giving students an introductory view of how entrepreneruship looks like in reality. After this intro, students will have a crush course on entrepreneurship, introducing students to the BUILD Model as a way for them to learn how to start approaching their entrepreneurial ideas.',
+														'room_desc'		=> 	'Keynote Speakers Round 1',
+														'room_info'		=> 	'Laurene to welcome and outline conference, Efua to MC and key note speaker to say a few notes.',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
 															/*
@@ -50,14 +50,14 @@ public $rows =	[
 															*/
  
 															[
-																'pic'			=> '/img/schedule/profile/ThokozaMjo.png',
-																'name'			=> 'Thokoza Mjo', 
-																'designation'	=> 'Program Lead, Very Young Entrepreneur Acceleration, Anzisha Prize Program'																					
+																'pic'			=> '/img/schedule/profile/angel.jpg',
+																'name'			=> 'Angel Chelwa', 
+																'designation'	=> 'Forbes 30 under 30; Co-founders, Healthy Learners'																					
 															], 
 															[
-																'pic'			=> '/img/schedule/profile/DaveTait.png',
-																'name'			=> 'David Tait', 
-																'designation'	=> 'HOD Entrepreneurial Leadership, African Leadership Academy'
+																'pic'			=> '/img/schedule/profile/lonnie.jpg',
+																'name'			=> 'Lonnie Hacket', 
+																'designation'	=> 'Forbes 30 under 30; Co-founders, Healthy Learners'
 															],
 
 
@@ -67,826 +67,17 @@ public $rows =	[
 													
 												]
 						],
-
 						[	//Row 2
-							'title'			=> 'Session 2',
+							'title'			=> 'Welcome',
 							'image'			=> '/img/schedule/session2.png',
-							'start_time'	=> '13:30',
-							'end_time'		=> '14:30',
+							'start_time'	=> '15:00',
+							'end_time'		=> '15:20',
 							'interval'		=>	false,
 							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Understanding your Way to Solutions that Work',
-														'room_info'		=> 	'During this session, students will get 15 minutes to brainstorm opportunities or challenges in their environment. This session will happen in the plenary where they will get to brainstorm ideas with a facilitator prompting their thought process. They will get into small groups of 5 each to share their ideas with the goal of sharing ideas and brainstrorming with their peers. During this group conversation, they will also deeply interogate what underlies the challenge / opportunity that they identified so as to strengthen their idea. From this, students will have some time to create a story that will help them solify ideas into business or side hustle. This session will teach students that grappeling with the root cause is at the heart of entrepreneurship and building sustainable solutions, as opposed to finding a solution and then working to fit the problem into it.',
-														'link'			=>	'/room/101',
-														'speakers'		=> 	[	
-																			/*
-																			Ideally also a table and this array should hold the user id's.
-																			Having a table means we have access to any other relevant data if necessary,
-																			such as email, phone no, website, etc.
-																			*/
-
-																			[
-																				'pic'			=> '/img/schedule/profile/DaveTait.png',
-																				'name'			=> 'David Tait', 
-																				'designation'	=> 'HOD Entrepreneurial Leadership, African Leadership Academy'
-																			],
-																			[
-																				'pic'			=> '/img/schedule/profile/OluwabusolaMajekodunmi.png',
-																				'name'			=> 'Busola Majekodunmi', 
-																				'designation'	=> 'Entrepreneurial Leadership Faculty, African Leadership Academy'																					
-																			], 
-																		]
-													],
-													[	//Room 1 - Claims
-														'room_name'		=> 	'Group 1', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Breakaway Room 1',
-														'room_info'		=> 	'During this session, students will get 15 minutes to brainstorm opportunities or challenges in their environment. This session will happen in the plenary where they will get to brainstorm ideas with a facilitator prompting their thought process. They will get into small groups of 5 each to share their ideas with the goal of sharing ideas and brainstrorming with their peers. During this group conversation, they will also deeply interogate what underlies the challenge / opportunity that they identified so as to strengthen their idea. From this, students will have some time to create a story that will help them solify ideas into business or side hustle. This session will teach students that grappeling with the root cause is at the heart of entrepreneurship and building sustainable solutions, as opposed to finding a solution and then working to fit the problem into it.',
-														'link'			=>	'/room/101',
-														'speakers'		=> 	[	
-																			/*
-																			Ideally also a table and this array should hold the user id's.
-																			Having a table means we have access to any other relevant data if necessary,
-																			such as email, phone no, website, etc.
-																			*/
-
-																			[
-																				'pic'			=> '/img/schedule/profile/DaveTait.png',
-																				'name'			=> 'David Tait', 
-																				'designation'	=> 'HOD Entrepreneurial Leadership, African Leadership Academy'
-																			],
-																			[
-																				'pic'			=> '/img/schedule/profile/OluwabusolaMajekodunmi.png',
-																				'name'			=> 'Busola Majekodunmi', 
-																				'designation'	=> 'Entrepreneurial Leadership Faculty, African Leadership Academy'																					
-																			], 
-																		]
-													],
-													[	//Room 1 - Claims
-														'room_name'		=> 	'Group 2', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Breakaway Room 2',
-														'room_info'		=> 	'During this session, students will get 15 minutes to brainstorm opportunities or challenges in their environment. This session will happen in the plenary where they will get to brainstorm ideas with a facilitator prompting their thought process. They will get into small groups of 5 each to share their ideas with the goal of sharing ideas and brainstrorming with their peers. During this group conversation, they will also deeply interogate what underlies the challenge / opportunity that they identified so as to strengthen their idea. From this, students will have some time to create a story that will help them solify ideas into business or side hustle. This session will teach students that grappeling with the root cause is at the heart of entrepreneurship and building sustainable solutions, as opposed to finding a solution and then working to fit the problem into it.',
-														'link'			=>	'/room/101',
-														'speakers'		=> 	[	
-																			/*
-																			Ideally also a table and this array should hold the user id's.
-																			Having a table means we have access to any other relevant data if necessary,
-																			such as email, phone no, website, etc.
-																			*/
-
-																			[
-																				'pic'			=> '/img/schedule/profile/DaveTait.png',
-																				'name'			=> 'David Tait', 
-																				'designation'	=> 'HOD Entrepreneurial Leadership, African Leadership Academy'
-																			],
-																			[
-																				'pic'			=> '/img/schedule/profile/OluwabusolaMajekodunmi.png',
-																				'name'			=> 'Busola Majekodunmi', 
-																				'designation'	=> 'Entrepreneurial Leadership Faculty, African Leadership Academy'																					
-																			], 
-																		]
-													],
-													[	//Room 1 - Claims
-														'room_name'		=> 	'Group 3', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Breakaway Room 3',
-														'room_info'		=> 	'During this session, students will get 15 minutes to brainstorm opportunities or challenges in their environment. This session will happen in the plenary where they will get to brainstorm ideas with a facilitator prompting their thought process. They will get into small groups of 5 each to share their ideas with the goal of sharing ideas and brainstrorming with their peers. During this group conversation, they will also deeply interogate what underlies the challenge / opportunity that they identified so as to strengthen their idea. From this, students will have some time to create a story that will help them solify ideas into business or side hustle. This session will teach students that grappeling with the root cause is at the heart of entrepreneurship and building sustainable solutions, as opposed to finding a solution and then working to fit the problem into it.',
-														'link'			=>	'/room/101',
-														'speakers'		=> 	[	
-																			/*
-																			Ideally also a table and this array should hold the user id's.
-																			Having a table means we have access to any other relevant data if necessary,
-																			such as email, phone no, website, etc.
-																			*/
-
-																			[
-																				'pic'			=> '/img/schedule/profile/DaveTait.png',
-																				'name'			=> 'David Tait', 
-																				'designation'	=> 'HOD Entrepreneurial Leadership, African Leadership Academy'
-																			],
-																			[
-																				'pic'			=> '/img/schedule/profile/OluwabusolaMajekodunmi.png',
-																				'name'			=> 'Busola Majekodunmi', 
-																				'designation'	=> 'Entrepreneurial Leadership Faculty, African Leadership Academy'																					
-																			], 
-																		]
-													],
-													[	//Room 1 - Claims
-														'room_name'		=> 	'Group 4', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Breakaway Room 4',
-														'room_info'		=> 	'During this session, students will get 15 minutes to brainstorm opportunities or challenges in their environment. This session will happen in the plenary where they will get to brainstorm ideas with a facilitator prompting their thought process. They will get into small groups of 5 each to share their ideas with the goal of sharing ideas and brainstrorming with their peers. During this group conversation, they will also deeply interogate what underlies the challenge / opportunity that they identified so as to strengthen their idea. From this, students will have some time to create a story that will help them solify ideas into business or side hustle. This session will teach students that grappeling with the root cause is at the heart of entrepreneurship and building sustainable solutions, as opposed to finding a solution and then working to fit the problem into it.',
-														'link'			=>	'/room/101',
-														'speakers'		=> 	[	
-																			/*
-																			Ideally also a table and this array should hold the user id's.
-																			Having a table means we have access to any other relevant data if necessary,
-																			such as email, phone no, website, etc.
-																			*/
-
-																			[
-																				'pic'			=> '/img/schedule/profile/DaveTait.png',
-																				'name'			=> 'David Tait', 
-																				'designation'	=> 'HOD Entrepreneurial Leadership, African Leadership Academy'
-																			],
-																			[
-																				'pic'			=> '/img/schedule/profile/OluwabusolaMajekodunmi.png',
-																				'name'			=> 'Busola Majekodunmi', 
-																				'designation'	=> 'Entrepreneurial Leadership Faculty, African Leadership Academy'																					
-																			], 
-																		]
-													],
-													[	//Room 1 - Claims
-														'room_name'		=> 	'Group 5', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Breakaway Room 5',
-														'room_info'		=> 	'During this session, students will get 15 minutes to brainstorm opportunities or challenges in their environment. This session will happen in the plenary where they will get to brainstorm ideas with a facilitator prompting their thought process. They will get into small groups of 5 each to share their ideas with the goal of sharing ideas and brainstrorming with their peers. During this group conversation, they will also deeply interogate what underlies the challenge / opportunity that they identified so as to strengthen their idea. From this, students will have some time to create a story that will help them solify ideas into business or side hustle. This session will teach students that grappeling with the root cause is at the heart of entrepreneurship and building sustainable solutions, as opposed to finding a solution and then working to fit the problem into it.',
-														'link'			=>	'/room/101',
-														'speakers'		=> 	[	
-																			/*
-																			Ideally also a table and this array should hold the user id's.
-																			Having a table means we have access to any other relevant data if necessary,
-																			such as email, phone no, website, etc.
-																			*/
-
-																			[
-																				'pic'			=> '/img/schedule/profile/DaveTait.png',
-																				'name'			=> 'David Tait', 
-																				'designation'	=> 'HOD Entrepreneurial Leadership, African Leadership Academy'
-																			],
-																			[
-																				'pic'			=> '/img/schedule/profile/OluwabusolaMajekodunmi.png',
-																				'name'			=> 'Busola Majekodunmi', 
-																				'designation'	=> 'Entrepreneurial Leadership Faculty, African Leadership Academy'																					
-																			], 
-																		]
-													],
-													[	//Room 1 - Claims
-														'room_name'		=> 	'Group 6', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Breakaway Room 6',
-														'room_info'		=> 	'During this session, students will get 15 minutes to brainstorm opportunities or challenges in their environment. This session will happen in the plenary where they will get to brainstorm ideas with a facilitator prompting their thought process. They will get into small groups of 5 each to share their ideas with the goal of sharing ideas and brainstrorming with their peers. During this group conversation, they will also deeply interogate what underlies the challenge / opportunity that they identified so as to strengthen their idea. From this, students will have some time to create a story that will help them solify ideas into business or side hustle. This session will teach students that grappeling with the root cause is at the heart of entrepreneurship and building sustainable solutions, as opposed to finding a solution and then working to fit the problem into it.',
-														'link'			=>	'/room/101',
-														'speakers'		=> 	[	
-																			/*
-																			Ideally also a table and this array should hold the user id's.
-																			Having a table means we have access to any other relevant data if necessary,
-																			such as email, phone no, website, etc.
-																			*/
-
-																			[
-																				'pic'			=> '/img/schedule/profile/DaveTait.png',
-																				'name'			=> 'David Tait', 
-																				'designation'	=> 'HOD Entrepreneurial Leadership, African Leadership Academy'
-																			],
-																			[
-																				'pic'			=> '/img/schedule/profile/OluwabusolaMajekodunmi.png',
-																				'name'			=> 'Busola Majekodunmi', 
-																				'designation'	=> 'Entrepreneurial Leadership Faculty, African Leadership Academy'																					
-																			], 
-																		]
-													],
-													[	//Room 1 - Claims
-														'room_name'		=> 	'Group 7', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Breakaway Room 7',
-														'room_info'		=> 	'During this session, students will get 15 minutes to brainstorm opportunities or challenges in their environment. This session will happen in the plenary where they will get to brainstorm ideas with a facilitator prompting their thought process. They will get into small groups of 5 each to share their ideas with the goal of sharing ideas and brainstrorming with their peers. During this group conversation, they will also deeply interogate what underlies the challenge / opportunity that they identified so as to strengthen their idea. From this, students will have some time to create a story that will help them solify ideas into business or side hustle. This session will teach students that grappeling with the root cause is at the heart of entrepreneurship and building sustainable solutions, as opposed to finding a solution and then working to fit the problem into it.',
-														'link'			=>	'/room/101',
-														'speakers'		=> 	[	
-																			/*
-																			Ideally also a table and this array should hold the user id's.
-																			Having a table means we have access to any other relevant data if necessary,
-																			such as email, phone no, website, etc.
-																			*/
-
-																			[
-																				'pic'			=> '/img/schedule/profile/DaveTait.png',
-																				'name'			=> 'David Tait', 
-																				'designation'	=> 'HOD Entrepreneurial Leadership, African Leadership Academy'
-																			],
-																			[
-																				'pic'			=> '/img/schedule/profile/OluwabusolaMajekodunmi.png',
-																				'name'			=> 'Busola Majekodunmi', 
-																				'designation'	=> 'Entrepreneurial Leadership Faculty, African Leadership Academy'																					
-																			], 
-																		]
-													],
-													[	//Room 1 - Claims
-														'room_name'		=> 	'Group 8', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Breakaway Room 8',
-														'room_info'		=> 	'During this session, students will get 15 minutes to brainstorm opportunities or challenges in their environment. This session will happen in the plenary where they will get to brainstorm ideas with a facilitator prompting their thought process. They will get into small groups of 5 each to share their ideas with the goal of sharing ideas and brainstrorming with their peers. During this group conversation, they will also deeply interogate what underlies the challenge / opportunity that they identified so as to strengthen their idea. From this, students will have some time to create a story that will help them solify ideas into business or side hustle. This session will teach students that grappeling with the root cause is at the heart of entrepreneurship and building sustainable solutions, as opposed to finding a solution and then working to fit the problem into it.',
-														'link'			=>	'/room/101',
-														'speakers'		=> 	[	
-																			/*
-																			Ideally also a table and this array should hold the user id's.
-																			Having a table means we have access to any other relevant data if necessary,
-																			such as email, phone no, website, etc.
-																			*/
-
-																			[
-																				'pic'			=> '/img/schedule/profile/DaveTait.png',
-																				'name'			=> 'David Tait', 
-																				'designation'	=> 'HOD Entrepreneurial Leadership, African Leadership Academy'
-																			],
-																			[
-																				'pic'			=> '/img/schedule/profile/OluwabusolaMajekodunmi.png',
-																				'name'			=> 'Busola Majekodunmi', 
-																				'designation'	=> 'Entrepreneurial Leadership Faculty, African Leadership Academy'																					
-																			], 
-																		]
-													],
-												]
-						],
-						[	//Break 1
-							'title'			=> 'break',
-							'image'			=> '/img/schedule/seal-01.jpg',
-							'start_time'	=> '14:30',
-							'end_time'		=> '14:45',
-							'interval'		=>	true
-						],
-						[	//Row 3
-							'title'			=> 'Session 2',
-							'image'			=> '/img/schedule/session3.png',
-							'start_time'	=> '14:45',
-							'end_time'		=> '16:00',
-							'interval'		=>	false,
-							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
-
-								[	//Room 1 - Claims
-									'room_name'		=> 	'Group 1', //ideally a table and this should be an id referencing that row
-									'room_desc'		=> 	'Breakaway Room 1',
-									'room_info'		=> 	'Students will get into different break out rooms of 5 each and share their challenge / opportunity indepth with their peers, and in the presence of an Anzisha fellow. During this session, students will receive indepth feedback on their problem solving process and well as conclusions andbusiness ideas. This feedback session will provide students with the tools to interogate their problem further, as this will bring them closer to a sustainable solution (idea for a venture)',
-									'link'			=>	'/room/101',
-									'speakers'		=> 	[	
-														/*
-														Ideally also a table and this array should hold the user id's.
-														Having a table means we have access to any other relevant data if necessary,
-														such as email, phone no, website, etc.
-														*/
-
-														[
-															'pic'			=> '/img/schedule/profile/JoshAdler.png',
-															'name'			=> 'Josh Adler', 
-															'designation'	=> 'VP, Growth & Entrepreneurship, African Leadership Academy'
-														],
-														[
-															'pic'			=> '/img/schedule/profile/KissekaSamson.png',
-															'name'			=> 'Kisseka Samson', 
-															'designation'	=> 'Founder, Hello Mushrooms'																					
-														], 
-														[
-															'pic'			=> '/img/schedule/profile/NoahWalakira.png',
-															'name'			=> 'Noah Walakira', 
-															'designation'	=> 'CEO, Namirember Sweater Makers'																					
-														], 
-														[
-															'pic'			=> '/img/schedule/profile/KolawoleOlajide.png',
-															'name'			=> 'Kolawole Olajide', 
-															'designation'	=> 'Founder & CTO, Bridge labs'																					
-														], 
-														[
-															'pic'			=> '/img/schedule/profile/VanessaShemIshimwe.png',
-															'name'			=> 'Vanessa Shem Ishimwe', 
-															'designation'	=> 'Founder, YIDA'																					
-														], 
-														[
-															'pic'			=> '/img/schedule/profile/SalySarr.png',
-															'name'			=> 'Saly Sarr', 
-															'designation'	=> 'Founder, SallyMaaShoes'																					
-														],
-														[
-															'pic'			=> '/img/schedule/profile/AlaaMoatamed.png',
-															'name'			=> 'Alaa Moatamed', 
-															'designation'	=> 'Co-Founder & Head of Sales, Presto'																					
-														],
-														[
-															'pic'			=> '/img/schedule/profile/AlyAbdelazan.png',
-															'name'			=> 'Aly Abdelazan', 
-															'designation'	=> 'Founder, Teens Club'																					
-														],
-														[
-															'pic'			=> '/img/schedule/profile/AseituOliviaKipo.png',
-															'name'			=> 'Aseitu Olivia Kipo', 
-															'designation'	=> 'Founder & CEO, Kobaa-Ok Enterprise'																					
-														], 
-														[
-															'pic'			=> '/img/schedule/profile/Busola.png',
-															'name'			=> 'Busola Majekodunmi', 
-															'designation'	=> 'Entrepreneurial Leadership Faculty, African Leadership Academy'																					
-														], 
-													]
-								],
-								[	//Room 1 - Claims
-									'room_name'		=> 	'Group 2', //ideally a table and this should be an id referencing that row
-									'room_desc'		=> 	'Breakaway Room 2',
-									'room_info'		=> 	'Students will get into different break out rooms of 5 each and share their challenge / opportunity indepth with their peers, and in the presence of an Anzisha fellow. During this session, students will receive indepth feedback on their problem solving process and well as conclusions andbusiness ideas. This feedback session will provide students with the tools to interogate their problem further, as this will bring them closer to a sustainable solution (idea for a venture)',
-									'link'			=>	'/room/101',
-									'speakers'		=> 	[	
-										/*
-										Ideally also a table and this array should hold the user id's.
-										Having a table means we have access to any other relevant data if necessary,
-										such as email, phone no, website, etc.
-										*/
-
-										[
-											'pic'			=> '/img/schedule/profile/JoshAdler.png',
-											'name'			=> 'Josh Adler', 
-											'designation'	=> 'VP, Growth & Entrepreneurship, African Leadership Academy'
-										],
-										[
-											'pic'			=> '/img/schedule/profile/KissekaSamson.png',
-											'name'			=> 'Kisseka Samson', 
-											'designation'	=> 'Founder, Hello Mushrooms'																					
-										], 
-										[
-											'pic'			=> '/img/schedule/profile/NoahWalakira.png',
-											'name'			=> 'Noah Walakira', 
-											'designation'	=> 'CEO, Namirember Sweater Makers'																					
-										], 
-										[
-											'pic'			=> '/img/schedule/profile/KolawoleOlajide.png',
-											'name'			=> 'Kolawole Olajide', 
-											'designation'	=> 'Founder & CTO, Bridge labs'																					
-										], 
-										[
-											'pic'			=> '/img/schedule/profile/VanessaShemIshimwe.png',
-											'name'			=> 'Vanessa Shem Ishimwe', 
-											'designation'	=> 'Founder, YIDA'																					
-										], 
-										[
-											'pic'			=> '/img/schedule/profile/SalySarr.png',
-											'name'			=> 'Saly Sarr', 
-											'designation'	=> 'Founder, SallyMaaShoes'																					
-										],
-										[
-											'pic'			=> '/img/schedule/profile/AlaaMoatamed.png',
-											'name'			=> 'Alaa Moatamed', 
-											'designation'	=> 'Co-Founder & Head of Sales, Presto'																					
-										],
-										[
-											'pic'			=> '/img/schedule/profile/AlyAbdelazan.png',
-											'name'			=> 'Aly Abdelazan', 
-											'designation'	=> 'Founder, Teens Club'																					
-										],
-										[
-											'pic'			=> '/img/schedule/profile/AseituOliviaKipo.png',
-											'name'			=> 'Aseitu Olivia Kipo', 
-											'designation'	=> 'Founder & CEO, Kobaa-Ok Enterprise'																					
-										], 
-										[
-											'pic'			=> '/img/schedule/profile/Busola.png',
-											'name'			=> 'Busola Majekodunmi', 
-											'designation'	=> 'Entrepreneurial Leadership Faculty, African Leadership Academy'																					
-										], 
-									]
-								],
-								[	//Room 1 - Claims
-									'room_name'		=> 	'Group 3', //ideally a table and this should be an id referencing that row
-									'room_desc'		=> 	'Breakaway Room 3',
-									'room_info'		=> 	'Students will get into different break out rooms of 5 each and share their challenge / opportunity indepth with their peers, and in the presence of an Anzisha fellow. During this session, students will receive indepth feedback on their problem solving process and well as conclusions andbusiness ideas. This feedback session will provide students with the tools to interogate their problem further, as this will bring them closer to a sustainable solution (idea for a venture)',
-									'link'			=>	'/room/101',
-									'speakers'		=> 	[	
-										/*
-										Ideally also a table and this array should hold the user id's.
-										Having a table means we have access to any other relevant data if necessary,
-										such as email, phone no, website, etc.
-										*/
-
-										[
-											'pic'			=> '/img/schedule/profile/JoshAdler.png',
-											'name'			=> 'Josh Adler', 
-											'designation'	=> 'VP, Growth & Entrepreneurship, African Leadership Academy'
-										],
-										[
-											'pic'			=> '/img/schedule/profile/KissekaSamson.png',
-											'name'			=> 'Kisseka Samson', 
-											'designation'	=> 'Founder, Hello Mushrooms'																					
-										], 
-										[
-											'pic'			=> '/img/schedule/profile/NoahWalakira.png',
-											'name'			=> 'Noah Walakira', 
-											'designation'	=> 'CEO, Namirember Sweater Makers'																					
-										], 
-										[
-											'pic'			=> '/img/schedule/profile/KolawoleOlajide.png',
-											'name'			=> 'Kolawole Olajide', 
-											'designation'	=> 'Founder & CTO, Bridge labs'																					
-										], 
-										[
-											'pic'			=> '/img/schedule/profile/VanessaShemIshimwe.png',
-											'name'			=> 'Vanessa Shem Ishimwe', 
-											'designation'	=> 'Founder, YIDA'																					
-										], 
-										[
-											'pic'			=> '/img/schedule/profile/SalySarr.png',
-											'name'			=> 'Saly Sarr', 
-											'designation'	=> 'Founder, SallyMaaShoes'																					
-										],
-										[
-											'pic'			=> '/img/schedule/profile/AlaaMoatamed.png',
-											'name'			=> 'Alaa Moatamed', 
-											'designation'	=> 'Co-Founder & Head of Sales, Presto'																					
-										],
-										[
-											'pic'			=> '/img/schedule/profile/AlyAbdelazan.png',
-											'name'			=> 'Aly Abdelazan', 
-											'designation'	=> 'Founder, Teens Club'																					
-										],
-										[
-											'pic'			=> '/img/schedule/profile/AseituOliviaKipo.png',
-											'name'			=> 'Aseitu Olivia Kipo', 
-											'designation'	=> 'Founder & CEO, Kobaa-Ok Enterprise'																					
-										], 
-										[
-											'pic'			=> '/img/schedule/profile/Busola.png',
-											'name'			=> 'Busola Majekodunmi', 
-											'designation'	=> 'Entrepreneurial Leadership Faculty, African Leadership Academy'																					
-										], 
-									]
-								],
-								[	//Room 1 - Claims
-									'room_name'		=> 	'Group 4', //ideally a table and this should be an id referencing that row
-									'room_desc'		=> 	'Breakaway Room 4',
-									'room_info'		=> 	'Students will get into different break out rooms of 5 each and share their challenge / opportunity indepth with their peers, and in the presence of an Anzisha fellow. During this session, students will receive indepth feedback on their problem solving process and well as conclusions andbusiness ideas. This feedback session will provide students with the tools to interogate their problem further, as this will bring them closer to a sustainable solution (idea for a venture)',
-									'link'			=>	'/room/101',
-									'speakers'		=> 	[	
-										/*
-										Ideally also a table and this array should hold the user id's.
-										Having a table means we have access to any other relevant data if necessary,
-										such as email, phone no, website, etc.
-										*/
-
-										[
-											'pic'			=> '/img/schedule/profile/JoshAdler.png',
-											'name'			=> 'Josh Adler', 
-											'designation'	=> 'VP, Growth & Entrepreneurship, African Leadership Academy'
-										],
-										[
-											'pic'			=> '/img/schedule/profile/KissekaSamson.png',
-											'name'			=> 'Kisseka Samson', 
-											'designation'	=> 'Founder, Hello Mushrooms'																					
-										], 
-										[
-											'pic'			=> '/img/schedule/profile/NoahWalakira.png',
-											'name'			=> 'Noah Walakira', 
-											'designation'	=> 'CEO, Namirember Sweater Makers'																					
-										], 
-										[
-											'pic'			=> '/img/schedule/profile/KolawoleOlajide.png',
-											'name'			=> 'Kolawole Olajide', 
-											'designation'	=> 'Founder & CTO, Bridge labs'																					
-										], 
-										[
-											'pic'			=> '/img/schedule/profile/VanessaShemIshimwe.png',
-											'name'			=> 'Vanessa Shem Ishimwe', 
-											'designation'	=> 'Founder, YIDA'																					
-										], 
-										[
-											'pic'			=> '/img/schedule/profile/SalySarr.png',
-											'name'			=> 'Saly Sarr', 
-											'designation'	=> 'Founder, SallyMaaShoes'																					
-										],
-										[
-											'pic'			=> '/img/schedule/profile/AlaaMoatamed.png',
-											'name'			=> 'Alaa Moatamed', 
-											'designation'	=> 'Co-Founder & Head of Sales, Presto'																					
-										],
-										[
-											'pic'			=> '/img/schedule/profile/AlyAbdelazan.png',
-											'name'			=> 'Aly Abdelazan', 
-											'designation'	=> 'Founder, Teens Club'																					
-										],
-										[
-											'pic'			=> '/img/schedule/profile/AseituOliviaKipo.png',
-											'name'			=> 'Aseitu Olivia Kipo', 
-											'designation'	=> 'Founder & CEO, Kobaa-Ok Enterprise'																					
-										], 
-										[
-											'pic'			=> '/img/schedule/profile/Busola.png',
-											'name'			=> 'Busola Majekodunmi', 
-											'designation'	=> 'Entrepreneurial Leadership Faculty, African Leadership Academy'																					
-										], 
-									]
-								],
-								[	//Room 1 - Claims
-									'room_name'		=> 	'Group 5', //ideally a table and this should be an id referencing that row
-									'room_desc'		=> 	'Breakaway Room 5',
-									'room_info'		=> 	'Students will get into different break out rooms of 5 each and share their challenge / opportunity indepth with their peers, and in the presence of an Anzisha fellow. During this session, students will receive indepth feedback on their problem solving process and well as conclusions andbusiness ideas. This feedback session will provide students with the tools to interogate their problem further, as this will bring them closer to a sustainable solution (idea for a venture)',
-									'link'			=>	'/room/101',
-									'speakers'		=> 	[	
-										/*
-										Ideally also a table and this array should hold the user id's.
-										Having a table means we have access to any other relevant data if necessary,
-										such as email, phone no, website, etc.
-										*/
-
-										[
-											'pic'			=> '/img/schedule/profile/JoshAdler.png',
-											'name'			=> 'Josh Adler', 
-											'designation'	=> 'VP, Growth & Entrepreneurship, African Leadership Academy'
-										],
-										[
-											'pic'			=> '/img/schedule/profile/KissekaSamson.png',
-											'name'			=> 'Kisseka Samson', 
-											'designation'	=> 'Founder, Hello Mushrooms'																					
-										], 
-										[
-											'pic'			=> '/img/schedule/profile/NoahWalakira.png',
-											'name'			=> 'Noah Walakira', 
-											'designation'	=> 'CEO, Namirember Sweater Makers'																					
-										], 
-										[
-											'pic'			=> '/img/schedule/profile/KolawoleOlajide.png',
-											'name'			=> 'Kolawole Olajide', 
-											'designation'	=> 'Founder & CTO, Bridge labs'																					
-										], 
-										[
-											'pic'			=> '/img/schedule/profile/VanessaShemIshimwe.png',
-											'name'			=> 'Vanessa Shem Ishimwe', 
-											'designation'	=> 'Founder, YIDA'																					
-										], 
-										[
-											'pic'			=> '/img/schedule/profile/SalySarr.png',
-											'name'			=> 'Saly Sarr', 
-											'designation'	=> 'Founder, SallyMaaShoes'																					
-										],
-										[
-											'pic'			=> '/img/schedule/profile/AlaaMoatamed.png',
-											'name'			=> 'Alaa Moatamed', 
-											'designation'	=> 'Co-Founder & Head of Sales, Presto'																					
-										],
-										[
-											'pic'			=> '/img/schedule/profile/AlyAbdelazan.png',
-											'name'			=> 'Aly Abdelazan', 
-											'designation'	=> 'Founder, Teens Club'																					
-										],
-										[
-											'pic'			=> '/img/schedule/profile/AseituOliviaKipo.png',
-											'name'			=> 'Aseitu Olivia Kipo', 
-											'designation'	=> 'Founder & CEO, Kobaa-Ok Enterprise'																					
-										], 
-										[
-											'pic'			=> '/img/schedule/profile/Busola.png',
-											'name'			=> 'Busola Majekodunmi', 
-											'designation'	=> 'Entrepreneurial Leadership Faculty, African Leadership Academy'																					
-										], 
-									]
-								],
-								[	//Room 1 - Claims
-									'room_name'		=> 	'Group 6', //ideally a table and this should be an id referencing that row
-									'room_desc'		=> 	'Breakaway Room 6',
-									'room_info'		=> 	'Students will get into different break out rooms of 5 each and share their challenge / opportunity indepth with their peers, and in the presence of an Anzisha fellow. During this session, students will receive indepth feedback on their problem solving process and well as conclusions andbusiness ideas. This feedback session will provide students with the tools to interogate their problem further, as this will bring them closer to a sustainable solution (idea for a venture)',
-									'link'			=>	'/room/101',
-									'speakers'		=> 	[	
-										/*
-										Ideally also a table and this array should hold the user id's.
-										Having a table means we have access to any other relevant data if necessary,
-										such as email, phone no, website, etc.
-										*/
-
-										[
-											'pic'			=> '/img/schedule/profile/JoshAdler.png',
-											'name'			=> 'Josh Adler', 
-											'designation'	=> 'VP, Growth & Entrepreneurship, African Leadership Academy'
-										],
-										[
-											'pic'			=> '/img/schedule/profile/KissekaSamson.png',
-											'name'			=> 'Kisseka Samson', 
-											'designation'	=> 'Founder, Hello Mushrooms'																					
-										], 
-										[
-											'pic'			=> '/img/schedule/profile/NoahWalakira.png',
-											'name'			=> 'Noah Walakira', 
-											'designation'	=> 'CEO, Namirember Sweater Makers'																					
-										], 
-										[
-											'pic'			=> '/img/schedule/profile/KolawoleOlajide.png',
-											'name'			=> 'Kolawole Olajide', 
-											'designation'	=> 'Founder & CTO, Bridge labs'																					
-										], 
-										[
-											'pic'			=> '/img/schedule/profile/VanessaShemIshimwe.png',
-											'name'			=> 'Vanessa Shem Ishimwe', 
-											'designation'	=> 'Founder, YIDA'																					
-										], 
-										[
-											'pic'			=> '/img/schedule/profile/SalySarr.png',
-											'name'			=> 'Saly Sarr', 
-											'designation'	=> 'Founder, SallyMaaShoes'																					
-										],
-										[
-											'pic'			=> '/img/schedule/profile/AlaaMoatamed.png',
-											'name'			=> 'Alaa Moatamed', 
-											'designation'	=> 'Co-Founder & Head of Sales, Presto'																					
-										],
-										[
-											'pic'			=> '/img/schedule/profile/AlyAbdelazan.png',
-											'name'			=> 'Aly Abdelazan', 
-											'designation'	=> 'Founder, Teens Club'																					
-										],
-										[
-											'pic'			=> '/img/schedule/profile/AseituOliviaKipo.png',
-											'name'			=> 'Aseitu Olivia Kipo', 
-											'designation'	=> 'Founder & CEO, Kobaa-Ok Enterprise'																					
-										], 
-										[
-											'pic'			=> '/img/schedule/profile/Busola.png',
-											'name'			=> 'Busola Majekodunmi', 
-											'designation'	=> 'Entrepreneurial Leadership Faculty, African Leadership Academy'																					
-										], 
-									]
-								],
-								[	//Room 1 - Claims
-									'room_name'		=> 	'Group 7', //ideally a table and this should be an id referencing that row
-									'room_desc'		=> 	'Breakaway Room 7',
-									'room_info'		=> 	'Students will get into different break out rooms of 5 each and share their challenge / opportunity indepth with their peers, and in the presence of an Anzisha fellow. During this session, students will receive indepth feedback on their problem solving process and well as conclusions andbusiness ideas. This feedback session will provide students with the tools to interogate their problem further, as this will bring them closer to a sustainable solution (idea for a venture)',
-									'link'			=>	'/room/101',
-									'speakers'		=> 	[	
-										/*
-										Ideally also a table and this array should hold the user id's.
-										Having a table means we have access to any other relevant data if necessary,
-										such as email, phone no, website, etc.
-										*/
-
-										[
-											'pic'			=> '/img/schedule/profile/JoshAdler.png',
-											'name'			=> 'Josh Adler', 
-											'designation'	=> 'VP, Growth & Entrepreneurship, African Leadership Academy'
-										],
-										[
-											'pic'			=> '/img/schedule/profile/KissekaSamson.png',
-											'name'			=> 'Kisseka Samson', 
-											'designation'	=> 'Founder, Hello Mushrooms'																					
-										], 
-										[
-											'pic'			=> '/img/schedule/profile/NoahWalakira.png',
-											'name'			=> 'Noah Walakira', 
-											'designation'	=> 'CEO, Namirember Sweater Makers'																					
-										], 
-										[
-											'pic'			=> '/img/schedule/profile/KolawoleOlajide.png',
-											'name'			=> 'Kolawole Olajide', 
-											'designation'	=> 'Founder & CTO, Bridge labs'																					
-										], 
-										[
-											'pic'			=> '/img/schedule/profile/VanessaShemIshimwe.png',
-											'name'			=> 'Vanessa Shem Ishimwe', 
-											'designation'	=> 'Founder, YIDA'																					
-										], 
-										[
-											'pic'			=> '/img/schedule/profile/SalySarr.png',
-											'name'			=> 'Saly Sarr', 
-											'designation'	=> 'Founder, SallyMaaShoes'																					
-										],
-										[
-											'pic'			=> '/img/schedule/profile/AlaaMoatamed.png',
-											'name'			=> 'Alaa Moatamed', 
-											'designation'	=> 'Co-Founder & Head of Sales, Presto'																					
-										],
-										[
-											'pic'			=> '/img/schedule/profile/AlyAbdelazan.png',
-											'name'			=> 'Aly Abdelazan', 
-											'designation'	=> 'Founder, Teens Club'																					
-										],
-										[
-											'pic'			=> '/img/schedule/profile/AseituOliviaKipo.png',
-											'name'			=> 'Aseitu Olivia Kipo', 
-											'designation'	=> 'Founder & CEO, Kobaa-Ok Enterprise'																					
-										], 
-										[
-											'pic'			=> '/img/schedule/profile/Busola.png',
-											'name'			=> 'Busola Majekodunmi', 
-											'designation'	=> 'Entrepreneurial Leadership Faculty, African Leadership Academy'																					
-										], 
-									]
-								],
-								[	//Room 1 - Claims
-									'room_name'		=> 	'Group 8', //ideally a table and this should be an id referencing that row
-									'room_desc'		=> 	'Breakaway Room 8',
-									'room_info'		=> 	'Students will get into different break out rooms of 5 each and share their challenge / opportunity indepth with their peers, and in the presence of an Anzisha fellow. During this session, students will receive indepth feedback on their problem solving process and well as conclusions andbusiness ideas. This feedback session will provide students with the tools to interogate their problem further, as this will bring them closer to a sustainable solution (idea for a venture)',
-									'link'			=>	'/room/101',
-									'speakers'		=> 	[	
-										/*
-										Ideally also a table and this array should hold the user id's.
-										Having a table means we have access to any other relevant data if necessary,
-										such as email, phone no, website, etc.
-										*/
-
-										[
-											'pic'			=> '/img/schedule/profile/JoshAdler.png',
-											'name'			=> 'Josh Adler', 
-											'designation'	=> 'VP, Growth & Entrepreneurship, African Leadership Academy'
-										],
-										[
-											'pic'			=> '/img/schedule/profile/KissekaSamson.png',
-											'name'			=> 'Kisseka Samson', 
-											'designation'	=> 'Founder, Hello Mushrooms'																					
-										], 
-										[
-											'pic'			=> '/img/schedule/profile/NoahWalakira.png',
-											'name'			=> 'Noah Walakira', 
-											'designation'	=> 'CEO, Namirember Sweater Makers'																					
-										], 
-										[
-											'pic'			=> '/img/schedule/profile/KolawoleOlajide.png',
-											'name'			=> 'Kolawole Olajide', 
-											'designation'	=> 'Founder & CTO, Bridge labs'																					
-										], 
-										[
-											'pic'			=> '/img/schedule/profile/VanessaShemIshimwe.png',
-											'name'			=> 'Vanessa Shem Ishimwe', 
-											'designation'	=> 'Founder, YIDA'																					
-										], 
-										[
-											'pic'			=> '/img/schedule/profile/SalySarr.png',
-											'name'			=> 'Saly Sarr', 
-											'designation'	=> 'Founder, SallyMaaShoes'																					
-										],
-										[
-											'pic'			=> '/img/schedule/profile/AlaaMoatamed.png',
-											'name'			=> 'Alaa Moatamed', 
-											'designation'	=> 'Co-Founder & Head of Sales, Presto'																					
-										],
-										[
-											'pic'			=> '/img/schedule/profile/AlyAbdelazan.png',
-											'name'			=> 'Aly Abdelazan', 
-											'designation'	=> 'Founder, Teens Club'																					
-										],
-										[
-											'pic'			=> '/img/schedule/profile/AseituOliviaKipo.png',
-											'name'			=> 'Aseitu Olivia Kipo', 
-											'designation'	=> 'Founder & CEO, Kobaa-Ok Enterprise'																					
-										], 
-										[
-											'pic'			=> '/img/schedule/profile/Busola.png',
-											'name'			=> 'Busola Majekodunmi', 
-											'designation'	=> 'Entrepreneurial Leadership Faculty, African Leadership Academy'																					
-										], 
-									]
-								],
-												]
-						],
-						[	//Break 2
-							'title'			=> 'break',
-							'image'			=> '/img/schedule/seal-01.jpg',
-							'start_time'	=> '16:00',
-							'end_time'		=> '16:45',
-							'interval'		=>	true
-						],						
-						[	//Row 4
-							'title'			=> 'Session 3',
-							'image'			=> '/img/schedule/session4.png',
-							'start_time'	=> '16:45',
-							'end_time'		=> '17:45',
-							'interval'		=>	false,
-							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
-								[	//Room 1 - Claims
-									'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-									'room_desc'		=> 	'The Realities of Starting Your Own Business',
-									'room_info'		=> 	'4 young entrepreneurs talk about their ventures in a moderated conversation.',
-									'link'			=>	'/room/99',
-									'speakers'		=> 	[	
-										/*
-										Ideally also a table and this array should hold the user id's.
-										Having a table means we have access to any other relevant data if necessary,
-										such as email, phone no, website, etc.
-										*/
-
-									
-									[
-										'pic'			=> '/img/schedule/profile/SalySarr.png',
-										'name'			=> 'Saly Sarr', 
-										'designation'	=> 'Founder, SallyMaaShoes'																					
-									],
-									[
-										'pic'			=> '/img/schedule/profile/AlaaMoatamed.png',
-										'name'			=> 'Alaa Moatamed', 
-										'designation'	=> 'Co-Founder & Head of Sales, Presto'																					
-									],
-									[
-										'pic'			=> '/img/schedule/profile/AseituOliviaKipo.png',
-										'name'			=> 'Aseitu Olivia Kipo', 
-										'designation'	=> 'Founder & CEO, Kobaa-Ok Enterprise'																					
-									],
-									[
-										'pic'			=> '/img/schedule/profile/JoshuaArmah.png',
-										'name'			=> 'Joshua Armah', 
-										'designation'	=> 'Founder, PopKing Ghana'																					
-									], 
-
-
-
-									]
-								],
-												]
-						],
-						[	//Row 2
-							'title'			=> 'The Realities of Starting Your Own Business',
-							'image'			=> '/img/schedule/session5.png',
-							'start_time'	=> '18:00',
-							'end_time'		=> '18:45',
-							'interval'		=>	false,
-							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
-													[	//Room 1 - Claims
-														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Keynote',
-														'room_info'		=> 	'The Launchpad will come together with this session during which students will learn about the status of entrepreneurship on the continent and why it\'s important that they want to become entrepreneurs.',
+														'room_desc'		=> 	'Keynote Speakers Round 2',
+														'room_info'		=> 	'Laurene to welcome and outline conference, Efua to MC and key note speaker to say a few notes.',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
 															/*
@@ -896,9 +87,9 @@ public $rows =	[
 															*/
  
 															[
-																'pic'			=> '/img/schedule/profile/JoshuaArmah.png',
-																'name'			=> 'Joshua Armah', 
-																'designation'	=> 'Founder, PopKing Ghana'																					
+																'pic'			=> '/img/schedule/profile/johnn.jpg',
+																'name'			=> 'Dr John Nkengasong, MSc, PhD', 
+																'designation'	=> 'Director, Africa CDC'																					
 															], 
 
 
@@ -908,6 +99,191 @@ public $rows =	[
 													
 												]
 						],
+
+						[	//Row 2
+							'title'			=> 'Session 2',
+							'image'			=> '/img/schedule/session3.png',
+							'start_time'	=> '15:20',
+							'end_time'		=> '16:10',
+							'interval'		=>	false,
+							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
+													[	//Room 1 - Claims
+														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
+														'room_desc'		=> 	'Speaker Session 1: Vaccine Equity - An attainable goal or a myth?',
+														'room_info'		=> 	'How might we adjust Intellectual property laws to allow for faster reaction in the midst of pandemics while still promoting research? 
+														Who is responsible for promoting vaccine confidence and how might lessons from past vaccination efforts guide these decisions? 
+														What is the role of politics in vaccine equity?',
+														'link'			=>	'/room/101',
+														'speakers'		=> 	[	
+																			/*
+																			Ideally also a table and this array should hold the user id's.
+																			Having a table means we have access to any other relevant data if necessary,
+																			such as email, phone no, website, etc.
+																			*/
+
+																			[
+																				'pic'			=> '/img/schedule/profile/Fatima.jpeg',
+																				'name'			=> 'Dr Fatima Hassan', 
+																				'designation'	=> 'Founder & Director, Health Justice Initiative'
+																			],
+																			[
+																				'pic'			=> '/img/schedule/profile/michello.jpg',
+																				'name'			=> 'Michelo Simuyandi, PhD', 
+																				'designation'	=> 'Researcher, Centre for Infectious Disease Research in Zambia'																					
+																			], 
+																			[
+																				'pic'			=> '/img/schedule/profile/nelima.png',
+																				'name'			=> 'Nelima Otipa', 
+																				'designation'	=> 'Data and Project Manager, Nexleaf Analytics'																					
+																			], 
+																			[
+																				'pic'			=> '/img/schedule/profile/mark.jpg',
+																				'name'			=> 'Mark Chilongu', 
+																				'designation'	=> 'Executive Director, Africa Directions'																					
+																			], 
+																		]
+													],
+
+												]
+						],
+
+						[	//Row 3
+							'title'			=> 'Session 2',
+							'image'			=> '/img/schedule/session4.png',
+							'start_time'	=> '16:10',
+							'end_time'		=> '16:40',
+							'interval'		=>	false,
+							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
+
+								[	//Room 1 - Claims
+									'room_name'		=> 	'Room 1', //ideally a table and this should be an id referencing that row
+									'room_desc'		=> 	'Responding to Vaccine Hesitancy',
+									'room_info'		=> 	'What are viable methods to respond to vaccine apprehension and fear?',
+									'link'			=>	'/room/101',
+									'speakers'		=> 	[	
+										[
+											'pic'			=> '/img/schedule/profile/Tharcille.jpg',
+											'name'			=> 'Tharcille Tuyisenge', 
+											'designation'	=> ''																					
+										], 
+
+													]
+								],
+								[	//Room 1 - Claims
+									'room_name'		=> 	'Room 2', //ideally a table and this should be an id referencing that row
+									'room_desc'		=> 	'What are health industry “wins” you’ve seen on a local, national, and international level?',
+									'room_info'		=> 	'How do we scale-up?',
+									'link'			=>	'/room/102',
+									'speakers'		=> 	[	
+										[
+											'pic'			=> '/img/schedule/profile/Joseph.jpg',
+											'name'			=> 'Joseph Jacob Usungu', 
+											'designation'	=> ''																					
+										], 
+ 
+									]
+								],
+								[	//Room 1 - Claims
+									'room_name'		=> 	'Room 3', //ideally a table and this should be an id referencing that row
+									'room_desc'		=> 	'COVID Chronicles.',
+									'room_info'		=> 	'What is your story - as a frontline healthcare worker, university student, entrepreneur - during this pandemic?',
+									'link'			=>	'/room/103',
+									'speakers'		=> 	[	
+										[
+											'pic'			=> '/img/schedule/profile/Maputi.jpg',
+											'name'			=> 'Maputi Bothole', 
+											'designation'	=> ''																					
+										], 
+									]
+								],
+								[	//Room 1 - Claims
+									'room_name'		=> 	'Room 4', //ideally a table and this should be an id referencing that row
+									'room_desc'		=> 	'Workplace, Unraveled',
+									'room_info'		=> 	'Managing a workforce in the middle of disruption - policy change and maintaining an attractive work environment.',
+									'link'			=>	'/room/104',
+									'speakers'		=> 	[	
+										[
+											'pic'			=> '/img/schedule/profile/Michael.jpg',
+											'name'			=> 'Michael Kayemba', 
+											'designation'	=> ''																					
+										],
+									]
+								],
+								[	//Room 1 - Claims
+									'room_name'		=> 	'Room 5', //ideally a table and this should be an id referencing that row
+									'room_desc'		=> 	'Pursuits for Justice',
+									'room_info'		=> 	'Staying informed on social and health justice movements in our communities',
+									'link'			=>	'/room/105',
+									'speakers'		=> 	[	
+										[
+											'pic'			=> '/img/schedule/profile/Courage.jpg',
+											'name'			=> 'Courage Matiza', 
+											'designation'	=> ''																					
+										],
+									]
+								],
+								
+
+												]
+						],
+						[	//Break 2
+							'title'			=> 'break',
+							'image'			=> '/img/schedule/seal-01.jpg',
+							'start_time'	=> '16:40',
+							'end_time'		=> '17:00',
+							'interval'		=>	true
+						],
+						[	//Row 2
+							'title'			=> 'Session 2',
+							'image'			=> '/img/schedule/session5.png',
+							'start_time'	=> '17:00',
+							'end_time'		=> '17:45',
+							'interval'		=>	false,
+							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
+													[	//Room 1 - Claims
+														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
+														'room_desc'		=> 	'Panel discussion: Disease Equity -Maintaining a long term perspective in the midst of reactionary pandemic measures.',
+														'room_info'		=> 	'How has the pandemic affected research programs that for a long time provided support to combat infectious diseases in Africa?',
+														'link'			=>	'/room/101',
+														'speakers'		=> 	[	
+																			/*
+																			Ideally also a table and this array should hold the user id's.
+																			Having a table means we have access to any other relevant data if necessary,
+																			such as email, phone no, website, etc.
+																			*/
+
+																			[
+																				'pic'			=> '/img/schedule/profile/Mohammed.jpeg',
+																				'name'			=> 'Dr Mohammed Lamorde', 
+																				'designation'	=> 'Head of Global Health Security Programme, Infectious Diseases Institute'
+																			],
+																			[
+																				'pic'			=> '/img/schedule/profile/richard.jpg',
+																				'name'			=> 'Richard Brough, PhD', 
+																				'designation'	=> 'Former Executive Director, Infectious Diseases Institute'																					
+																			], 
+																			[
+																				'pic'			=> '/img/schedule/profile/tobi.jpg',
+																				'name'			=> 'Dr Tobi Nagel', 
+																				'designation'	=> 'Founder and Director, Phages for Global Health'																					
+																			], 
+																			[
+																				'pic'			=> '/img/schedule/profile/thumbi.png',
+																				'name'			=> 'Prof Thumbi Ndung’u', 
+																				'designation'	=> 'Deputy Director (Science), Africa Health Research Institute'																					
+																			],
+																			[
+																				'pic'			=> '/img/schedule/profile/Caroline.png',
+																				'name'			=> 'Caroline Njoroge', 
+																				'designation'	=> 'South Sudan Health Coordinator, Medicos Del Mundo'																					
+																			], 
+																		]
+													],
+
+												]
+						],						
+
+
 					
 					]
 				],
