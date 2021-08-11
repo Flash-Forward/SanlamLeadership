@@ -275,9 +275,6 @@ function redirectToRoom(){
 
 </script>
 
-/* <div style="position: fixed; top: 1%; left:1%; width: 10vw; height: 10vw">
-<a id="" onclick="redirectToRoom();" class="btn-primary btn-circle-big">Join My Room / Stand</a>
-</div> */
 
 
 @endif

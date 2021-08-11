@@ -1,6 +1,6 @@
 <head>
 		<meta charset="UTF-8">
-        <title>African Leadership For Health Gathering</title>
+        <title>Africa Careers Network's Entrepreneurs' Launchpad</title>
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
@@ -18,6 +18,9 @@
   <link href="{{ asset('schedule') }}/lib/animate/animate.min.css" rel="stylesheet">
   <link href="{{ asset('schedule') }}/lib/venobox/venobox.css" rel="stylesheet">
   <link href="{{ asset('schedule') }}/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.9/dist/sweetalert2.all.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@9.17.2/dist/sweetalert2.min.css">
 
   <!-- Main Stylesheet File -->
   <link href="{{ asset('schedule') }}/css/style.css" rel="stylesheet">
@@ -149,6 +152,34 @@ body, html {
 </style>
 
 </head>
+<script>
+const swalWithBootstrapButtons = Swal.mixin({
+  customClass: {
+    confirmButton: 'btn bryte-button',
+    cancelButton: 'btn bryte-button'
+  },
+  buttonsStyling: false
+})
+
+function loginFail(){
+
+                    swalWithBootstrapButtons.fire({
+                        html: '<span style="color:#ffffff; font-size: 1.2vw;">Your email does not match our records or you have entered your password incorrectly. Please contact support by clicking on the blue icon on the bottom right of the screen.</span>',
+                        //html: '<span style="color:#ffffff; font-size: 1.2vw;">This room is closed</span>',
+
+                        background: "url('{{ asset('img') }}/bryte/background.jpg')",
+                        // html: true,
+
+						padding: "8px",
+            margin: "2px",
+						width: "30%",
+                        //footer: '<a href>Why do I have this issue?</a>'
+                    })
+
+    }
+
+    
+</script>
 
 <body>
 <div id="bg">
@@ -157,15 +188,12 @@ body, html {
 <div class="signup-form">
             <form method="POST" class="login-form" id="login-form" action="{{ route('login') }}">
             @csrf
-
-                <div class="form-group"">
+                <div class="form-group">
                 <label for="email">{{ __('Email address') }}</label>
-                        <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="" required autocomplete="email" autofocus>
+                        <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
                         @error('email')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
+                            <script>loginFail();</script>
                         @enderror
                 </div>
                 
@@ -220,4 +248,6 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 function login(){
         document.getElementById('login-form').submit();
 }
+
+
 </script>
