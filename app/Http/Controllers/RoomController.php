@@ -419,6 +419,11 @@ public $rows =	[
 																				'pic'			=> '/img/schedule/profile/al.png',
 																				'name'			=> 'Fanice Nyatigo', 
 																				'designation'	=> 'CEO, MamaTips'																					
+																			],
+																			[
+																				'pic'			=> '/img/schedule/profile/al.png',
+																				'name'			=> 'Shamira Lukomwa', 
+																				'designation'	=> 'Associate Program Officer, The ELMA Philanthropies'																					
 																			], 
 
 																		]
