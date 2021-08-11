@@ -161,11 +161,7 @@ public $rows =	[
 									'room_info'		=> 	'What are viable methods to respond to vaccine apprehension and fear?',
 									'link'			=>	'/room/101',
 									'speakers'		=> 	[	
-										[
-											'pic'			=> '/img/schedule/profile/Tharcille.jpg',
-											'name'			=> 'Tharcille Tuyisenge', 
-											'designation'	=> ''																					
-										], 
+
 
 													]
 								],
@@ -175,11 +171,7 @@ public $rows =	[
 									'room_info'		=> 	'How do we scale-up?',
 									'link'			=>	'/room/102',
 									'speakers'		=> 	[	
-										[
-											'pic'			=> '/img/schedule/profile/Joseph.jpg',
-											'name'			=> 'Joseph Jacob Usungu', 
-											'designation'	=> ''																					
-										], 
+
  
 									]
 								],
@@ -189,11 +181,7 @@ public $rows =	[
 									'room_info'		=> 	'What is your story - as a frontline healthcare worker, university student, entrepreneur - during this pandemic?',
 									'link'			=>	'/room/103',
 									'speakers'		=> 	[	
-										[
-											'pic'			=> '/img/schedule/profile/Maputi.jpg',
-											'name'			=> 'Maputi Bothole', 
-											'designation'	=> ''																					
-										], 
+
 									]
 								],
 								[	//Room 1 - Claims
@@ -202,11 +190,7 @@ public $rows =	[
 									'room_info'		=> 	'Managing a workforce in the middle of disruption - policy change and maintaining an attractive work environment.',
 									'link'			=>	'/room/104',
 									'speakers'		=> 	[	
-										[
-											'pic'			=> '/img/schedule/profile/Michael.jpg',
-											'name'			=> 'Michael Kayemba', 
-											'designation'	=> ''																					
-										],
+
 									]
 								],
 								[	//Room 1 - Claims
@@ -215,11 +199,7 @@ public $rows =	[
 									'room_info'		=> 	'Staying informed on social and health justice movements in our communities',
 									'link'			=>	'/room/105',
 									'speakers'		=> 	[	
-										[
-											'pic'			=> '/img/schedule/profile/Courage.jpg',
-											'name'			=> 'Courage Matiza', 
-											'designation'	=> ''																					
-										],
+
 									]
 								],
 								
@@ -244,7 +224,7 @@ public $rows =	[
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
 														'room_desc'		=> 	'Panel discussion: Disease Equity -Maintaining a long term perspective in the midst of reactionary pandemic measures.',
 														'room_info'		=> 	'How has the pandemic affected research programs that for a long time provided support to combat infectious diseases in Africa?',
-														'link'			=>	'/room/101',
+														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
 																			/*
 																			Ideally also a table and this array should hold the user id's.
@@ -281,7 +261,264 @@ public $rows =	[
 													],
 
 												]
-						],						
+						],
+						[	//Row 3
+							'title'			=> 'Session 2',
+							'image'			=> '/img/schedule/session6.png',
+							'start_time'	=> '17:45',
+							'end_time'		=> '18:25',
+							'interval'		=>	false,
+							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
+
+								[	//Room 1 - Claims
+									'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
+									'room_desc'		=> 	'Reproductive Health Equity',
+									'room_info'		=> 	'Breaking norms and taking ownership of our health.',
+									'link'			=>	'/room/99',
+									'speakers'		=> 	[	
+										[
+											'pic'			=> '/img/schedule/profile/sol.jpg',
+											'name'			=> 'Solange Impanoyimana', 
+											'designation'	=> 'Executive Director and Co-Founder, Generation Rise'																					
+										], 
+										[
+											'pic'			=> '/img/schedule/profile/bon.jpg',
+											'name'			=> 'Bonita Beatrice Nanziri', 
+											'designation'	=> 'Founder, Afrigal Tech'																					
+										],
+										[
+											'pic'			=> '/img/schedule/profile/bland.jpg',
+											'name'			=> 'Blandine Umuziranenge', 
+											'designation'	=> 'Founder and CEO , Kosmotive'																					
+										], 
+
+													]
+								],
+								[	//Room 1 - Claims
+									'room_name'		=> 	'Room 2', //ideally a table and this should be an id referencing that row
+									'room_desc'		=> 	'Staying Hot in Health',
+									'room_info'		=> 	'Valuable healthcare skill sets and expertise sharing among attendees -how do you stay in-demand as a professional?',
+									'link'			=>	'/room/102',
+									'speakers'		=> 	[	
+
+ 
+									]
+								],
+								[	//Room 1 - Claims
+									'room_name'		=> 	'Room 3', //ideally a table and this should be an id referencing that row
+									'room_desc'		=> 	'Challenges',
+									'room_info'		=> 	'What are health industry “challenges” you’ve seen on a local, national, and international level? How can we respond?',
+									'link'			=>	'/room/103',
+									'speakers'		=> 	[	
+
+									]
+								],
+								[	//Room 1 - Claims
+									'room_name'		=> 	'Room 4', //ideally a table and this should be an id referencing that row
+									'room_desc'		=> 	'Taking Action',
+									'room_info'		=> 	'building viable projects post-Gathering and how to do it best',
+									'link'			=>	'/room/104',
+									'speakers'		=> 	[	
+
+									]
+								],
+								[	//Room 1 - Claims
+									'room_name'		=> 	'Room 5', //ideally a table and this should be an id referencing that row
+									'room_desc'		=> 	'Health 4.0',
+									'room_info'		=> 	'How can technology be leveraged in the fight for health equity?',
+									'link'			=>	'/room/105',
+									'speakers'		=> 	[	
+
+									]
+								],
+								
+
+												]
+						],
+						[	//Break 2
+							'title'			=> 'break',
+							'image'			=> '/img/schedule/seal-01.jpg',
+							'start_time'	=> '18:25',
+							'end_time'		=> '18:50',
+							'interval'		=>	true
+						],
+						[	//Row 2
+							'title'			=> 'Session 2',
+							'image'			=> '/img/schedule/session7.png',
+							'start_time'	=> '18:50',
+							'end_time'		=> '19:35',
+							'interval'		=>	false,
+							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
+													[	//Room 1 - Claims
+														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
+														'room_desc'		=> 	'Speaker Session 2: Equitable Access to Quality Healthcare',
+														'room_info'		=> 	'Can grassroots movements and community-based organizations accelerate a bottom-up approach?',
+														'link'			=>	'/room/99',
+														'speakers'		=> 	[	
+																			/*
+																			Ideally also a table and this array should hold the user id's.
+																			Having a table means we have access to any other relevant data if necessary,
+																			such as email, phone no, website, etc.
+																			*/
+
+																			[
+																				'pic'			=> '/img/schedule/profile/hil.jpg',
+																				'name'			=> 'Hillary Omala', 
+																				'designation'	=> 'Executive Director, Carolina for Kibera'
+																			],
+																			[
+																				'pic'			=> '/img/schedule/profile/peace.jpg',
+																				'name'			=> 'Dr Peace Amaraegbulam', 
+																				'designation'	=> 'Founder, The Straight Child Foundation'																					
+																			], 
+																			[
+																				'pic'			=> '/img/schedule/profile/lyda.jpg',
+																				'name'			=> 'Dr Lynda Toussaint', 
+																				'designation'	=> 'CEO, Unjani Clinics NPC'																					
+																			],  
+																		]
+													],
+
+												]
+						],
+						[	//Row 2
+							'title'			=> 'Session 2',
+							'image'			=> '/img/schedule/session8.png',
+							'start_time'	=> '19:35',
+							'end_time'		=> '20:20',
+							'interval'		=>	false,
+							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
+													[	//Room 1 - Claims
+														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
+														'room_desc'		=> 	'“Little Bets” Pitches',
+														'room_info'		=> 	'Winner pitch ideas, audience ask questions through moderator. Audience votes and the winner is announced',
+														'link'			=>	'/room/99',
+														'speakers'		=> 	[	
+																			/*
+																			Ideally also a table and this array should hold the user id's.
+																			Having a table means we have access to any other relevant data if necessary,
+																			such as email, phone no, website, etc.
+																			*/
+
+																			[
+																				'pic'			=> '/img/schedule/profile/maia.jpg',
+																				'name'			=> 'Maia Matshikiza', 
+																				'designation'	=> ''
+																			],
+																			[
+																				'pic'			=> '/img/schedule/profile/peace.jpg',
+																				'name'			=> 'Dr Peace Amaraegbulam', 
+																				'designation'	=> 'Founder, The Straight Child Foundation'																					
+																			], 
+																			[
+																				'pic'			=> '/img/schedule/profile/Marion.jpg',
+																				'name'			=> 'Marion Ntiiru', 
+																				'designation'	=> ''																					
+																			],  
+																		]
+													],
+
+												]
+						],
+						[	//Row 2
+							'title'			=> 'Session 2',
+							'image'			=> '/img/schedule/session9.png',
+							'start_time'	=> '20:20',
+							'end_time'		=> '20:30',
+							'interval'		=>	false,
+							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
+													[	//Room 1 - Claims
+														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
+														'room_desc'		=> 	'Closing note',
+														'room_info'		=> 	'Closing',
+														'link'			=>	'/room/99',
+														'speakers'		=> 	[	
+																			/*
+																			Ideally also a table and this array should hold the user id's.
+																			Having a table means we have access to any other relevant data if necessary,
+																			such as email, phone no, website, etc.
+																			*/
+
+																			[
+																				'pic'			=> '/img/schedule/profile/efua.jpg',
+																				'name'			=> 'Efua Adabie', 
+																				'designation'	=> 'MC'
+																			],
+																			[
+																				'pic'			=> '/img/schedule/profile/laurene.png',
+																				'name'			=> 'Laurene Amoit', 
+																				'designation'	=> 'AL Health Sector Leader'																					
+																			],   
+																		]
+													],
+
+												]
+						],
+						[	//Row 2
+							'title'			=> 'Session 2',
+							'image'			=> '/img/schedule/session10.png',
+							'start_time'	=> '20:30',
+							'end_time'		=> '21:00',
+							'interval'		=>	false,
+							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
+													[	//Room 1 - Claims
+														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
+														'room_desc'		=> 	'Music, networking, and attendees leave at own pleasure',
+														'room_info'		=> 	'Attendees that pre-select those they want to interview with would be matched. Attendees that opt to have a randomly selected attendee would also be matched based on their preference',
+														'link'			=>	'/room/99',
+														'speakers'		=> 	[	
+  
+																		]
+													],
+
+													[	//Room 1 - Claims
+														'room_name'		=> 	'Room 1', //ideally a table and this should be an id referencing that row
+														'room_desc'		=> 	'Room 1',
+														'room_info'		=> 	'',
+														'link'			=>	'/room/101',
+														'speakers'		=> 	[	
+  
+																		]
+													],
+													[	//Room 1 - Claims
+														'room_name'		=> 	'Room 2', //ideally a table and this should be an id referencing that row
+														'room_desc'		=> 	'Room 2',
+														'room_info'		=> 	'',
+														'link'			=>	'/room/102',
+														'speakers'		=> 	[	
+  
+																		]
+													],
+													[	//Room 1 - Claims
+														'room_name'		=> 	'Room 3', //ideally a table and this should be an id referencing that row
+														'room_desc'		=> 	'Room 3',
+														'room_info'		=> 	'',
+														'link'			=>	'/room/103',
+														'speakers'		=> 	[	
+  
+																		]
+													],
+													[	//Room 1 - Claims
+														'room_name'		=> 	'Room 4', //ideally a table and this should be an id referencing that row
+														'room_desc'		=> 	'Room 4',
+														'room_info'		=> 	'',
+														'link'			=>	'/room/104',
+														'speakers'		=> 	[	
+  
+																		]
+													],
+													[	//Room 1 - Claims
+														'room_name'		=> 	'Room 5', //ideally a table and this should be an id referencing that row
+														'room_desc'		=> 	'Room 5',
+														'room_info'		=> 	'',
+														'link'			=>	'/room/105',
+														'speakers'		=> 	[	
+  
+																		]
+													],
+
+												]
+						],				
 
 
 					

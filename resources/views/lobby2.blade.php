@@ -665,9 +665,9 @@ function redirectToRoom(){
 
 </script>
 
-<div style="position: fixed; top: 8%; left:1%;">
+<!-- <div style="position: fixed; top: 8%; left:1%;">
 <a id="" onclick="redirectToRoom();" class="btn-primary btn-circle-big">Join My Room / Stand</a>
-</div>
+</div> -->
 @endif
 
 </body>

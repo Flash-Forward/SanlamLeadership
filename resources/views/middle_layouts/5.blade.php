@@ -238,9 +238,8 @@ li{
     <img src="{{ $bg->value ?? '' }}" class="stretch" alt="" />
     {{$counter = 1}}
     @foreach($rooms as $item)
-        <div id="myImage_zone{{$counter}}" class="divInImage">
-        <h2 class="room-heading"><b>ROOM {{$counter++}}</b></h2>
-        <span style="color:#ffffff;"><b>{{$item->name}}</b></span>
+        <div id="myImage_zone{{$counter++}}" class="divInImage">
+        <h2 class="room-heading"><b>{{$item->name}}</b></h2>
         <a class="stretch-link" href="{{ route('room', ['order'=>$item->order]) }}"></a>
         @if($roomType == "breakaway")
         <img src="{{ asset('img') }}/bryte/breakawayroom.png" class="" style="width: 100%;" alt="" />
@@ -276,13 +275,13 @@ function checkRoom(room, route){
             url: '{{ route("room.check") }}?r='+room,
             type: "get",
             success: function (data) {
-                // if (data == "1") {
-	              //   window.location.href = route;
+                if (data == "1") {
+	                window.location.href = route;
                     
-                // }else{
+                }else{
                     swalWithBootstrapButtons.fire({
-                        //html: '<span style="color:#ffffff; font-size: 1.2vw;">This room opens at '+data+'</span>',
-                        html: '<span style="color:#ffffff; font-size: 1.2vw;">This room is closed</span>',
+                        html: '<span style="color:#ffffff; font-size: 1.2vw;">This room opens at '+data+'</span>',
+                        //html: '<span style="color:#ffffff; font-size: 1.2vw;">This room is closed</span>',
 
                         background: "url('{{ asset('img') }}/bryte/background.jpg')",
                         // html: true,
@@ -292,7 +291,7 @@ function checkRoom(room, route){
 						width: "20%",
                         //footer: '<a href>Why do I have this issue?</a>'
                     })
-               // }
+                }
             }
         });
     }
@@ -309,9 +308,9 @@ function redirectToRoom(){
 
 </script>
 
-<div style="position: fixed; top: 8%; left:1%;">
+<!-- <div style="position: fixed; top: 8%; left:1%;">
 <a id="" onclick="redirectToRoom();" class="btn-primary btn-circle-big">Join My Room / Stand</a>
-</div>
+</div> -->
 @endif
 
 </body>

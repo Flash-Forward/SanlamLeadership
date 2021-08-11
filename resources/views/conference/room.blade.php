@@ -165,7 +165,7 @@ h2{
 <script type='text/javascript'>
 	var _options = {
 		'_license_key':'{{$webinar}}',
-@if($speaker == false)
+@if(Auth::user()->user_roles_id == 2)
 
 		'_role_token':'',
 @else
@@ -250,9 +250,9 @@ s0.parentNode.insertBefore(s1,s0);
 })();
  
 </script>
-<div style="position: fixed; top: 1%; left:1%; width: 10vw; height: 10vw">
+/* <div style="position: fixed; top: 1%; left:1%; width: 10vw; height: 10vw">
 <a id="backButton" onclick="redirectToLobby();" class="btn btn-primary btn-circle-big">Back To Lobby</a>
-</div>
+</div> */
 
 
 @endif
@@ -275,9 +275,9 @@ function redirectToRoom(){
 
 </script>
 
-<div style="position: fixed; top: 1%; left:1%; width: 10vw; height: 10vw">
+/* <div style="position: fixed; top: 1%; left:1%; width: 10vw; height: 10vw">
 <a id="" onclick="redirectToRoom();" class="btn-primary btn-circle-big">Join My Room / Stand</a>
-</div>
+</div> */
 
 
 @endif

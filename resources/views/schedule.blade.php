@@ -173,13 +173,13 @@ function checkRoom(room, route){
             url: '{{ route("room.check") }}?r='+room,
             type: "get",
             success: function (data) {
-                // if (data == "1") {
-	              //   window.location.href = route;
+                if (data == "1") {
+	                window.location.href = route;
                     
-                // }else{
+                }else{
                     swalWithBootstrapButtons.fire({
-                        //html: '<span style="color:#ffffff; font-size: 1.2vw;">This room opens at '+data+'</span>',
-                        html: '<span style="color:#ffffff; font-size: 1.2vw;">This room is closed</span>',
+                        html: '<span style="color:#ffffff; font-size: 1.2vw;">This room opens at '+data+'</span>',
+                        //html: '<span style="color:#ffffff; font-size: 1.2vw;">This room is closed</span>',
 
                         background: "url('{{ asset('img') }}/bryte/background.jpg')",
                         // html: true,
@@ -189,7 +189,7 @@ function checkRoom(room, route){
 						width: "20%",
                         //footer: '<a href>Why do I have this issue?</a>'
                     })
-               // }
+                }
             }
         });
     }

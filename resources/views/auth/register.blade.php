@@ -52,7 +52,7 @@
 				width: 65% !important;
 				height: 60% !important;
 				padding: 2%;
-				background-color: rgba(122,39,44,1);
+				background-color: rgba(11,14,18,1);
 				border-radius: 10px;
 
 			}
