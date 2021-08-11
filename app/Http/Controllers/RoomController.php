@@ -109,7 +109,7 @@ public $rows =	[
 							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Speaker Session 1: Vaccine Equity - An attainable goal or a myth?',
+														'room_desc'		=> 	'Vaccine Equity: An attainable goal or a myth?',
 														'room_info'		=> 	'How might we adjust Intellectual property laws to allow for faster reaction in the midst of pandemics while still promoting research? 
 														Who is responsible for promoting vaccine confidence and how might lessons from past vaccination efforts guide these decisions? 
 														What is the role of politics in vaccine equity?',
