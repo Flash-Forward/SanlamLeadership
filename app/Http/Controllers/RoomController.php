@@ -401,7 +401,7 @@ public $rows =	[
 																			*/
 
 																			[
-																				'pic'			=> '/img/schedule/profile/maia.jpg',
+																				'pic'			=> '/img/schedule/profile/maia.png',
 																				'name'			=> 'Maia Matshikiza', 
 																				'designation'	=> ''
 																			],
@@ -409,12 +409,18 @@ public $rows =	[
 																				'pic'			=> '/img/schedule/profile/peace.jpg',
 																				'name'			=> 'Dr Peace Amaraegbulam', 
 																				'designation'	=> 'Founder, The Straight Child Foundation'																					
-																			], 
+																			],
 																			[
-																				'pic'			=> '/img/schedule/profile/Marion.jpg',
-																				'name'			=> 'Marion Ntiiru', 
+																				'pic'			=> '/img/schedule/profile/al.png',
+																				'name'			=> 'Halle Rubera', 
 																				'designation'	=> ''																					
-																			],  
+																			],
+																			[
+																				'pic'			=> '/img/schedule/profile/al.png',
+																				'name'			=> 'Fanice Nyatigo', 
+																				'designation'	=> ''																					
+																			], 
+
 																		]
 													],
 
@@ -440,7 +446,7 @@ public $rows =	[
 																			*/
 
 																			[
-																				'pic'			=> '/img/schedule/profile/efua.jpg',
+																				'pic'			=> '/img/schedule/profile/al.png',
 																				'name'			=> 'Efua Adabie', 
 																				'designation'	=> 'MC'
 																			],
