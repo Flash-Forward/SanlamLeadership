@@ -775,7 +775,7 @@ public $rows =	[
 					var '.$nm.' = ics();
 					var strt_'.$nm.' = new Date('.$eY.', '.$em.', '.$ed.', '.$sH.', '.$si.', 0, 0);
 					var end_'.$nm.'  = new Date('.$eY.', '.$em.', '.$ed.', '.$eH.', '.$eM.', 0, 0);
-					'.$nm.'.addEvent(\''.$room['room_desc'].'\', \''.$room['room_info'].'\', \'https://bryte.welink.live'.$room['link'].'\', strt_'.$nm.', end_'.$nm.');
+					'.$nm.'.addEvent(\''.$room['room_desc'].'\', \''.$room['room_info'].'\', \'https://alhealth.welink.live'.$room['link'].'\', strt_'.$nm.', end_'.$nm.');
 				</script>';
 		$addevent = 'onClick="'.$nm.'.download(\''.$room['room_desc'].' - '.$room['room_name'].'\');"';
 		
