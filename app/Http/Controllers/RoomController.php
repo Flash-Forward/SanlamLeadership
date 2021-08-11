@@ -316,7 +316,7 @@ public $rows =	[
 								[	//Room 1 - Claims
 									'room_name'		=> 	'Room 4', //ideally a table and this should be an id referencing that row
 									'room_desc'		=> 	'Taking Action',
-									'room_info'		=> 	'building viable projects post-Gathering and how to do it best',
+									'room_info'		=> 	'Building viable projects post-Gathering and how to do it best',
 									'link'			=>	'/room/104',
 									'speakers'		=> 	[	
 
@@ -764,8 +764,8 @@ public $rows =	[
 		$calEndTime 	= strtotime($endTime);
 		
 		//calendar event START date & time:
-		$em = 5; 	//month
-		$ed = 22;	//day
+		$em = 7; 	//month
+		$ed = 13;	//day
 		$eY = 2021;	//year
 		
 		$sH = date('H', $calStrtTime); 	//Hour
