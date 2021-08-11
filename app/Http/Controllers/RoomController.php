@@ -403,7 +403,7 @@ public $rows =	[
 																			[
 																				'pic'			=> '/img/schedule/profile/maia.png',
 																				'name'			=> 'Maia Matshikiza', 
-																				'designation'	=> ''
+																				'designation'	=> 'Chief Network Officer, ALA'
 																			],
 																			[
 																				'pic'			=> '/img/schedule/profile/peace.jpg',
@@ -413,12 +413,12 @@ public $rows =	[
 																			[
 																				'pic'			=> '/img/schedule/profile/al.png',
 																				'name'			=> 'Halle Rubera', 
-																				'designation'	=> ''																					
+																				'designation'	=> 'Analyst, Dalberg'																					
 																			],
 																			[
 																				'pic'			=> '/img/schedule/profile/al.png',
 																				'name'			=> 'Fanice Nyatigo', 
-																				'designation'	=> ''																					
+																				'designation'	=> 'CEO, MamaTips'																					
 																			], 
 
 																		]
