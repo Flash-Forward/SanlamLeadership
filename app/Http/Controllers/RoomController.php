@@ -113,7 +113,7 @@ public $rows =	[
 														'room_info'		=> 	'How might we adjust Intellectual property laws to allow for faster reaction in the midst of pandemics while still promoting research? 
 														Who is responsible for promoting vaccine confidence and how might lessons from past vaccination efforts guide these decisions? 
 														What is the role of politics in vaccine equity?',
-														'link'			=>	'/room/101',
+														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
 																			/*
 																			Ideally also a table and this array should hold the user id's.
@@ -123,7 +123,7 @@ public $rows =	[
 
 																			[
 																				'pic'			=> '/img/schedule/profile/Fatima.jpeg',
-																				'name'			=> 'Dr Fatima Hassan', 
+																				'name'			=> 'Fatima Hassan', 
 																				'designation'	=> 'Founder & Director, Health Justice Initiative'
 																			],
 																			[
@@ -234,7 +234,7 @@ public $rows =	[
 
 																			[
 																				'pic'			=> '/img/schedule/profile/Mohammed.jpeg',
-																				'name'			=> 'Dr Mohammed Lamorde', 
+																				'name'			=> 'Mohammed Lamorde', 
 																				'designation'	=> 'Head of Global Health Security Programme, Infectious Diseases Institute'
 																			],
 																			[
@@ -244,12 +244,12 @@ public $rows =	[
 																			], 
 																			[
 																				'pic'			=> '/img/schedule/profile/tobi.jpg',
-																				'name'			=> 'Dr Tobi Nagel', 
+																				'name'			=> 'Tobi Nagel', 
 																				'designation'	=> 'Founder and Director, Phages for Global Health'																					
 																			], 
 																			[
 																				'pic'			=> '/img/schedule/profile/thumbi.png',
-																				'name'			=> 'Prof Thumbi Ndung’u', 
+																				'name'			=> 'Thumbi Ndung’u', 
 																				'designation'	=> 'Deputy Director (Science), Africa Health Research Institute'																					
 																			],
 																			[
@@ -368,12 +368,12 @@ public $rows =	[
 																			],
 																			[
 																				'pic'			=> '/img/schedule/profile/peace.jpg',
-																				'name'			=> 'Dr Peace Amaraegbulam', 
+																				'name'			=> 'Peace Amaraegbulam', 
 																				'designation'	=> 'Founder, The Straight Child Foundation'																					
 																			], 
 																			[
 																				'pic'			=> '/img/schedule/profile/lyda.jpg',
-																				'name'			=> 'Dr Lynda Toussaint', 
+																				'name'			=> 'Lynda Toussaint', 
 																				'designation'	=> 'CEO, Unjani Clinics NPC'																					
 																			],  
 																		]
