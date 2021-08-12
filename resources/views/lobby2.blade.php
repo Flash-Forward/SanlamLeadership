@@ -610,7 +610,13 @@ function checkRoom(room, route){
             url: '{{ route("room.check") }}?r='+room,
             type: "get",
             success: function (data) {
-                if (data == "1") {
+              @if(Auth::user()->user_roles_id == 1)
+                if (true) 
+              @else
+                if (data == "1") 
+
+              @endif
+              {
 	                window.location.href = route;
                     
                 }else{
