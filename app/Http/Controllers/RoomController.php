@@ -759,7 +759,7 @@ public $rows =	[
 		$ctrlId ='room-collapse'.$ridx;
 		$hdrId	='room-heading'.$ridx;
 		if($room['link'] == '/room/99')
-			$onclick = 'onClick="checkRoom(\'room_three_open_time\', \''.$room['link'].'\', event);"';
+			$onclick = 'onClick="checkRoom(\'room_two_open_time\', \''.$room['link'].'\', event);"';
 		else
 			$onclick = 'onClick="checkRoom(\'room_four_open_time\', \''.$room['link'].'\', event);"';
 		
