@@ -162,6 +162,24 @@ h2{
 <div class="header" id="myHeader">
   <h2 style="font-size: 2.5vw !important;">{{$heading}}</h2>
 </div> 
+@if(str_contains($webinar, "http"))
+
+<div id="myImage_zone1" class="divInImage">
+@if(Auth::user()->user_roles_id == 2)
+<iframe src="{{$webinar}}" allowfullscreen="true" allowusermedia="true" allow="microphone; camera; accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; display-capture" title="description" width="100%" height="100%" id="iframeHolder"></iframe> 
+
+@else
+<iframe src="{{$extra->presToken}}" allowfullscreen="true" allowusermedia="true" allow="microphone; camera; accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; display-capture" title="description" width="100%" height="100%" id="iframeHolder"></iframe> 
+
+@endif 
+    </div>
+
+	<div id="myImage_zone1i" class="divInImage">
+
+<img src="{{ asset('img') }}/al/acn.png" style="position: fixed; width: 10vw;" alt="" />
+</div>
+
+@else
 <script type='text/javascript'>
 	var _options = {
 		'_license_key':'{{$webinar}}',
@@ -197,6 +215,7 @@ h2{
 		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ab, s);
 	})();
 </script>
+@endif
 <script>
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
