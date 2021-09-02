@@ -2,7 +2,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>African Leadership For Health Gathering</title>
+        <title>Sanlam Connect</title>
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.9/dist/sweetalert2.all.min.js"></script>
@@ -120,7 +120,7 @@
 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                         @csrf
                                     </form>
-		<div id="banner"><img src="{{ asset('img') }}/al/banner.png" class="stretch" alt="" /></div>
+		<div id="banner"><img src="{{ asset('img') }}/sanlam/banner.jpg" class="stretch" alt="" /></div>
 		<section class="accordion fix">
 			<div class="container">
 				<div class="row ">

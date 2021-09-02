@@ -1,6 +1,6 @@
 <head>
 		<meta charset="UTF-8">
-    <title>African Leadership For Health Gathering</title>
+    <title>Sanlam Connect</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<!-- google fonts -->
@@ -512,28 +512,28 @@ color: #ffffff !important;
     @endif
     @if($room_five_name->value == "NONE")
 
-    <div id="rightVideo" class="divInImage">
+    <!-- <div id="rightVideo" class="divInImage">
     <img src="{{ asset('img') }}/bryte/screen1.png" class="stretch" alt="" />
     <div id="rightVideoInner" class="divInImage">
     <video width="100%" height="100%" autoplay loop muted>
     <source src="{{ asset('vid') }}/al.mp4" type="video/mp4" />
     </video>
     </div>
-    </div>
+    </div> -->
 
     @else
-    <div id="rightVideo1" class="divInImage">
+    <!-- <div id="rightVideo1" class="divInImage">
     <img src="{{ asset('img') }}/bryte/screen1.png" class="stretch" alt="" />
     </div>
     <div id="rightVideoInner1" class="divInImage">
     <video width="100%" height="100%" autoplay loop muted>
     <source src="{{ asset('vid') }}/al.mp4" type="video/mp4" />
     </video>
-    </div>
+    </div> -->
     @endif
 
     @if($room_one_name->value == "NONE")
-
+<!-- 
     <div id="leftVideo" class="divInImage">
     <img src="{{ asset('img') }}/bryte/screen1.png" class="stretch" alt="" />
     <div id="leftVideoInner" class="divInImage">
@@ -541,20 +541,20 @@ color: #ffffff !important;
     <source src="{{ asset('vid') }}/al.mp4" type="video/mp4" />
     </video>
     </div>                                                                      
-    </div>
+    </div> -->
 
     @else
-    <div id="leftVideo1" class="divInImage">
+    <!-- <div id="leftVideo1" class="divInImage">
     <img src="{{ asset('img') }}/bryte/screen1.png" class="stretch" alt="" />
     </div>
     <div id="leftVideoInner1" class="divInImage">
     <video width="100%" height="100%" autoplay loop muted>
     <source src="{{ asset('vid') }}/al.mp4" type="video/mp4" />
     </video>
-    </div>
+    </div> -->
     @endif
 
-    <div id="leftBannerHolder" class="divInImage">
+    <!-- <div id="leftBannerHolder" class="divInImage">
     <img src="{{ asset('img') }}/bryte/emptybanner.png" class="stretch" alt="" />
       <div id="leftBanner" class="divInImage">
       <img src="{{ $left_banner->value ?? '' }}" class="stretch" alt="" />
@@ -568,7 +568,7 @@ color: #ffffff !important;
       <div id="rightBanner" class="divInImage">
       <img src="{{ $right_banner->value ?? '' }}" class="stretch" alt="" />
       </div>
-    </div>
+    </div> -->
 
 
 

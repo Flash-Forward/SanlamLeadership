@@ -2,7 +2,7 @@
 	<html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>African Leadership For Health Gathering</title>
+		<title>Sanlam Connect</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<!-- google fonts -->
@@ -37,7 +37,8 @@
   color: #79232E;
 }
 		#banner {
-  background: url('{{$bgL->value}}');
+  background: none;
+  background-color: #313f4a;
   background-size: cover;
   padding: 250px 0;
   position: relative;

@@ -1,6 +1,6 @@
 <head>
 		<meta charset="UTF-8">
-        <title>Africa Careers Network's Entrepreneurs' Launchpad</title>
+        <title>Sanlam Connect</title>
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
@@ -126,14 +126,14 @@ body, html {
 }
 #bg{
     /* background: url("{{ asset('img') }}/bryte/bg3d.jpg"); */
-    background-color: #1c262f;
+    background-color: #313f4a;
     background-size: cover;
   height: 100%;
   color: #ffffff;
 }
 .bryte-button{
-    background-color: #79232E !important;
-    border-color: #79232E !important;
+    background-color: #0074c9 !important;
+    border-color: #0074c9 !important;
     color: #ffffff !important;
 }
 #registration-header > h1
@@ -183,7 +183,7 @@ function loginFail(){
 
 <body>
 <div id="bg">
-<div id="banner"><img src="{{ asset('img') }}/al/banner.png" class="stretch" alt="" /></div>
+<div id="banner"><img src="{{ asset('img') }}/sanlam/banner.jpg" class="stretch" alt="" /></div>
 <div id="registration-header"><h1>Login</h1></div>
 <div class="signup-form">
             <form method="POST" class="login-form" id="login-form" action="{{ route('login') }}">
