@@ -106,7 +106,7 @@ body, html {
 
 }
 .standColor3{
-  background-color: #79232E
+  background-color: #0074c9
 ;
   border-radius: 25px;
   top:0%;
@@ -354,9 +354,9 @@ h2{
   text-align: center;
 }
 .bryte-button{
-    background-color: #79232E
+    background-color: #0074c9
  !important;
-    border-color: #79232E
+    border-color: #0074c9
  !important;
     color: #ffffff !important;
 }

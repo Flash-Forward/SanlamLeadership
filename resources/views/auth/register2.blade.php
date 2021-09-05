@@ -50,7 +50,7 @@
             font-weight: bold;
             text-align: center;
             padding: 10px 0;
-            background-color: #79232E
+            background-color: #0074c9
  !important;
             mix-blend-mode: normal !important;
             width: 100%;
@@ -236,9 +236,9 @@
         }
 
         .bryte-button {
-            background-color: #79232E
+            background-color: #0074c9
  !important;
-            border-color: #79232E
+            border-color: #0074c9
  !important;
             color: #ffffff !important;
         }
@@ -310,9 +310,9 @@
         }
 
         .inputGroup input:checked~label:after {
-            background-color: #79232E
+            background-color: #0074c9
 ;
-            border-color: #79232E
+            border-color: #0074c9
 ;
         }
 
@@ -413,7 +413,7 @@ h2.question
 	font-weight: bold;
 	text-align: center;
 	padding: 10px 0;
-	background-color: #79232E
+	background-color: #0074c9
  !important;
 	mix-blend-mode: normal !important;
 	width: 100%;

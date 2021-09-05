@@ -307,7 +307,7 @@ header .navbar {
     padding-bottom: 5px;
     font-size: 50px;
     font-weight: 100;
-    color: #79232E
+    color: #0074c9
 ;
 }
 #banner1 .block h2 {
@@ -331,9 +331,9 @@ header .navbar {
   transition: 0.3s;
 }
 #banner1 .block .btn-learn:hover {
-  border-color: #79232E
+  border-color: #0074c9
 ;
-  color: #79232E
+  color: #0074c9
 ;
 }
 #banner1 .block .buttons {

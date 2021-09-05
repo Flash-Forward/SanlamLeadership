@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Sarabun:400,500,600,700,800|Sen:400,700&display=swap");
 .boxed-btn {
 	background: #fff;
-	color: #79232E
+	color: #0074c9
  !important;
 	display: inline-block;
 	padding: 18px 44px;
@@ -9,7 +9,7 @@
 	font-size: 14px;
 	font-weight: 400;
 	border: 0;
-	border: 1px solid #79232E
+	border: 1px solid #0074c9
 ;
 	letter-spacing: 3px;
 	text-align: center;
@@ -17,10 +17,10 @@
 	cursor: pointer
 }
 .boxed-btn:hover {
-	background: #79232E
+	background: #0074c9
 ;
 	color: #fff !important;
-	border: 1px solid #79232E
+	border: 1px solid #0074c9
 
 }
 .boxed-btn:focus {
@@ -76,7 +76,7 @@ body {
 	font-style: normal
 }
 h1,  h3, h4, h5, h6 {
-	color: #79232E
+	color: #0074c9
 ;
 	margin-top: 0px;
 	font-style: normal;
@@ -84,7 +84,7 @@ h1,  h3, h4, h5, h6 {
 	text-transform: normal
 }
 p {
-	color: #79232E
+	color: #0074c9
 ;
 	font-size: 16px;
 	line-height: 30px;
@@ -280,7 +280,7 @@ hr {
 	background: #ff3500
 }
 .btn {
-	background: #79232E
+	background: #0074c9
 ;
 	padding: 27px 44px;
 	color: #fff;
@@ -307,7 +307,7 @@ hr {
 	top: 0;
 	width: 101%;
 	height: 101%;
-	background: #79232E
+	background: #0074c9
 ;
 	z-index: 1;
 	transition: transform 0.5s;
@@ -337,7 +337,7 @@ hr {
 .hero-btn {
 	padding: 30px 39px;
 	background: #fff;
-	color: #79232E
+	color: #0074c9
  !important
 }
 .hero-btn::before {
@@ -346,7 +346,7 @@ hr {
 .white-btn {
 	padding: 30px 39px;
 	background: #fff;
-	color: #79232E
+	color: #0074c9
  !important
 }
 .black-btn {
@@ -354,7 +354,7 @@ hr {
 	background: #000
 }
 .black-btn::before {
-	background: #79232E
+	background: #0074c9
 
 }
 .submit-btn2 {
@@ -410,7 +410,7 @@ hr {
 	top: 0;
 	width: 101%;
 	height: 101%;
-	background: #79232E
+	background: #0074c9
 ;
 	z-index: -1;
 	transition: transform 0.5s;
@@ -428,7 +428,7 @@ hr {
 	color: #888
 }
 #scrollUp, #back-top {
-	background: #79232E
+	background: #0074c9
 ;
 	height: 50px;
 	width: 50px;
@@ -559,7 +559,7 @@ hr {
 	position: relative;
 	border-style: solid;
 	border-width: 1px;
-	border-top-color: #79232E
+	border-top-color: #0074c9
 ;
 	border-bottom-color: transparent;
 	border-left-color: transparent;
@@ -763,7 +763,7 @@ hr {
 	font-weight: 500;
 }
 .accordion .accordion-wrapper .card-header a span {
-	color: #79232E
+	color: #0074c9
 ;
 	font-size: 18px;
 	font-weight: 800
@@ -813,7 +813,7 @@ hr {
 	position: absolute;
 	height: 15px;
 	width: 15px;
-	background: #79232E
+	background: #0074c9
 ;
 	content: "";
 	left: 0;
@@ -828,7 +828,7 @@ hr {
 }
 .accordion .nav-tabs .nav-item {
 	display: block;
-	color: #79232E
+	color: #0074c9
 ;
 	font-size: 24px;
 	font-weight: 700
@@ -839,7 +839,7 @@ hr {
 	}
 }
 .accordion .nav-tabs .nav-item.show .nav-link, .accordion .nav-tabs .nav-link.active {
-	background: #79232E
+	background: #0074c9
 ;
 	color: #dac057;
 	-webkit-transition: all 0s ease-out 0s;
@@ -1135,7 +1135,7 @@ hr {
 	font-size: 24px
 }
 b, sup, sub, u, del {
-	color: #79232E
+	color: #0074c9
 
 }
 .typography h1, .typography h2, .typography h3, .typography h4, .typography h5, .typography h6 {

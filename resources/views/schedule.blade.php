@@ -72,9 +72,9 @@
 		box-shadow: 5px 10px;
 	}
 	.bryte-button {
-            background-color: #79232E
+            background-color: #0074c9
  !important;
-            border-color: #79232E
+            border-color: #0074c9
  !important;
             color: #ffffff !important;
             height: 1.7vw;

@@ -327,7 +327,7 @@ when card expanded:
 {
 	content: "\f078";
 	font-size:22px !important;
-	color:#79232E
+	color:#0074c9
 ;
 	transform: rotate(-0deg);
 }
@@ -346,7 +346,7 @@ when card expanded:
 {
 	content: "\f078";
 	transform: rotate(180deg);
-	color:#79232E
+	color:#0074c9
 ;
 	font-size:16px !important;
 	top: 30%;
@@ -354,7 +354,7 @@ when card expanded:
 
 div.join-link
 {
-	background-color: #79232E
+	background-color: #0074c9
 ;
 	color: white !important;
     text-align: center;
@@ -391,7 +391,7 @@ div.card-break
 .accordion>.card>.interval-item-alert
 {
 	color: #ffffff !important;
-	background-color: #79232E
+	background-color: #0074c9
 ;
     border-radius: 10px;
 }
@@ -415,7 +415,7 @@ div.card-break
 
 .accordion .accordion-wrapper .card:not(.room-card):not(.interval-item)
 {
-	box-shadow: 4px 4px 7px #79232E
+	box-shadow: 4px 4px 7px #0074c9
 ;
 	margin-bottom: 25px;
 	border-radius: 10px;

@@ -34,11 +34,11 @@
 #banner .block .btn-learn:hover {
   background-color: #F9DF8D;
   border-color: #BAA768;
-  color: #79232E;
+  color: #0074c9;
 }
 		#banner {
-  background: none;
-  background-color: #313f4a;
+  background:  url('{{$bgL->value}}');
+  /* background-color: #313f4a; */
   background-size: cover;
   padding: 250px 0;
   position: relative;
