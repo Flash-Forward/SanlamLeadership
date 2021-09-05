@@ -132,7 +132,7 @@ color: #ffffff !important;
 
 h2{
 	font-size: 2vw !important;
-  color: #f1f1f1 !important;
+  color: #0074c9 !important;
 }
 .header {
 	width: 100%;
@@ -208,7 +208,7 @@ li{
     @foreach($rooms as $item)
         <div id="myImage_zone{{$counter}}" class="divInImage">
         <h2 class="room-heading"><b>ROOM {{$counter++}}</b></h2>
-        <span style="color:#ffffff;"><b>{{$item->name}}</b></span>
+        <span style="color:#000;"><b>{{$item->name}}</b></span>
         <a class="stretch-link" href="{{ route('room', ['order'=>$item->order]) }}"></a>
         @if($roomType == "breakaway")
         <img src="{{ asset('img') }}/bryte/breakawayroom.png" class="" style="width: 100%;" alt="" />

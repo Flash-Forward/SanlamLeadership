@@ -106,7 +106,7 @@ color: #ffffff !important;
 	top: 4%;
 	
   padding: 10px 16px;
-  color: #f1f1f1;
+  color: #0074c9;
   text-align: center;
   font-size: 3.5vw;
 }

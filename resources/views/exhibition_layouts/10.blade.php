@@ -378,7 +378,7 @@ body, html {
 }
 h2{
 	font-size: 48px !important;
-  color: #f1f1f1 !important;
+  color: #0074c9 !important;
 }
 .header {
 	width: 100%;
@@ -452,7 +452,7 @@ color: #ffffff !important;
                                         @csrf
                                     </form>
 <div id="bg">
-    <img src="{{ asset('img') }}/bryte/background.jpg" class="stretch" alt="" />
+    <img src="{{ $bg->value ?? '' }}" class="stretch" alt="" />
 
     <div id="exhibitionHallBg" class="divInImage">
       <img src="{{ asset('img') }}/bryte/exhall4.png" class="stretch" alt="" />
