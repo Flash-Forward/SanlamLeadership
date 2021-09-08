@@ -183,7 +183,7 @@ function loginFail(){
 
 <body>
 <div id="bg">
-<div id="banner"><img src="{{ asset('img') }}/sanlam/banner.jpg" class="stretch" alt="" /></div>
+<div id="banner"><img src="{{ asset('img') }}/sanlam/banner.png" class="stretch" alt="" /></div>
 <div id="registration-header"><h1>Login</h1></div>
 <div class="signup-form">
             <form method="POST" class="login-form" id="login-form" action="{{ route('login') }}">

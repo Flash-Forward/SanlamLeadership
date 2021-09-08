@@ -120,7 +120,7 @@
 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                         @csrf
                                     </form>
-		<div id="banner"><img src="{{ asset('img') }}/sanlam/banner.jpg" class="stretch" alt="" /></div>
+		<div id="banner"><img src="{{ asset('img') }}/sanlam/banner.png" class="stretch" alt="" /></div>
 		<section class="accordion fix">
 			<div class="container">
 				<div class="row ">
