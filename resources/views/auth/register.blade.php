@@ -21,28 +21,31 @@
 		<link rel="stylesheet" href="{{ asset('landing') }}/css/style.css">
 		<link rel="stylesheet" href="{{ asset('landing') }}/css/responsive.css">
 		<style>
+.btn-learn {
+  border: 2px solid #323d48 !important;
+  background-color: #323d48 !important;
 
-#banner .block .btn-learn {
-  border: 2px solid #F9DF8D;
-  color: #F9DF8D;
+  color: #ffffff !important;;
   border-radius: 25px;
   margin: 0 7px;
   padding: 10px 22px;
   font-size: 14px;
   transition: 0.3s;
 }
-#banner .block .btn-learn:hover {
-  background-color: #F9DF8D;
-  border-color: #BAA768;
-  color: #0074c9;
+.btn-learn:hover {
+  background-color: #323d48 !important;;
+  border-color: #323d48 !important;;
+  color: #0074c9 !important;;
 }
 		#banner {
-  background:  url('{{$bgL->value}}');
+  background:  url('{{ asset("img") }}/sanlam/landing.png');
   /* background-color: #313f4a; */
   background-size: cover;
   padding: 250px 0;
   position: relative;
   text-align: center;
+  height: 100vh;
+  width: 100vw;
 }
 			.topLogo{
 				width: 50%;
@@ -70,6 +73,17 @@
 			color: {{$subHeadingColor->value ?? '' }};
 			}
 
+			#loginButton{
+				position: relative;
+				text-align: center;
+				font-size: 62px;
+				width: 30vw;
+				height: 6vw;
+				left: 19%;
+				top: 53%;
+				z-index: 1500;
+			}
+
 			@media only screen 
             and (max-width : 500px) {
 				.greyBox{
@@ -93,22 +107,8 @@
 	
 	<div class="wrapper">
 		<section id="banner">
-			<div class="container greyBox">
-				<div class="row justify-content-center">
-					<div class="col-md-12">
-						<div class="block">
-							<h1><img src="{{ $logo->value ?? '' }}" class="topLogo" alt=""/></h1>
-							<h1><b>{{$headingContent->value}}</b></h1>
-							<h2><b>{{$subHeadingContent->value}}</b></h2>
-							<h3 style="color: #BAA768;">{!! $mainContent->value !!}</h3>
-							<div class="buttons">
-								<a href="{{ route('login') }}" class="btn btn-learn">Login</a>								
-						  </div>
-						</div>
-					</div>
-				</div>
-			</div>
-			
+
+				<a href="{{ route('login') }}" id="loginButton" class="btn btn-learn">Login</a>								
 		</section>
 		
 		<footer>

@@ -291,6 +291,18 @@ video {
     top:0.5%;
     left:19.2%;
 }
+#leftBannerHolder1{
+  width:6.331vw;
+    height:16.5vw;
+    top:0.5%;
+    left:10%;
+}
+#leftBanner1{
+  width:5.531vw;
+    height:14.1vw;
+    top:12%;
+    left:6.5%;
+}
 
 #leftBanner{
   width:9.031vw;
@@ -310,6 +322,18 @@ video {
     height:26.5vw;
     top:0.5%;
     left:69.6%;
+}
+#rightBannerHolder1{
+  width:6.331vw;
+    height:16.5vw;
+    top:0.5%;
+    left:82.8%;
+}
+#rightBanner1{
+  width:5.531vw;
+    height:14.1vw;
+    top:12%;
+    left:6.5%;
 }
 #middleBanner:after, 
 #middleBanner:before {
@@ -554,7 +578,7 @@ color: #ffffff !important;
     </div> -->
     @endif
 
-    <!-- <div id="leftBannerHolder" class="divInImage">
+    <div id="leftBannerHolder" class="divInImage">
     <img src="{{ asset('img') }}/bryte/emptybanner.png" class="stretch" alt="" />
       <div id="leftBanner" class="divInImage">
       <img src="{{ $left_banner->value ?? '' }}" class="stretch" alt="" />
@@ -568,7 +592,23 @@ color: #ffffff !important;
       <div id="rightBanner" class="divInImage">
       <img src="{{ $right_banner->value ?? '' }}" class="stretch" alt="" />
       </div>
-    </div> -->
+    </div>
+
+    <div id="leftBannerHolder1" class="divInImage">
+    <img src="{{ asset('img') }}/bryte/emptybanner.png" class="stretch" alt="" />
+      <div id="leftBanner1" class="divInImage">
+      <img src="{{ asset('img') }}/sanlam/blue.jpg" class="stretch" alt="" />
+      </div>
+    </div>
+
+
+
+    <div id="rightBannerHolder1" class="divInImage">
+    <img src="{{ asset('img') }}/bryte/emptybanner.png" class="stretch" alt="" />
+      <div id="rightBanner1" class="divInImage">
+      <img src="{{ asset('img') }}/sanlam/blue.jpg" class="stretch" alt="" />
+      </div>
+    </div>
 
 
 
