@@ -142,7 +142,7 @@ color: #ffffff !important;
 
 h2{
 	font-size: 2vw !important;
-  color: #0074c9 !important;
+  color: #000 !important;
 }
 .header {
 	width: 100%;
@@ -150,7 +150,7 @@ h2{
 	top: 10%;
 	
   padding: 10px 16px;
-  color: #0074c9 !important;
+  color: #000 !important;
   text-align: center;
 }
 .bryte-button{

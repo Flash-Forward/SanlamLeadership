@@ -76,10 +76,10 @@
 			#loginButton{
 				position: relative;
 				text-align: center;
-				font-size: 62px;
-				width: 30vw;
-				height: 6vw;
-				left: 19%;
+				font-size: 2vw;
+				width: 25vw;
+				height: 4vw;
+				left: 17%;
 				top: 53%;
 				z-index: 1500;
 			}
