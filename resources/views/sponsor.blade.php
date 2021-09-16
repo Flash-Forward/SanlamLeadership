@@ -1,0 +1,177 @@
+<html class="no-js" lang="en-za">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>SanlamConnect</title>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.9/dist/sweetalert2.all.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@9.17.2/dist/sweetalert2.min.css">
+		<meta name="description" content="Flash Forward ">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="{{ asset('css') }}/schedule/bootstrap.min.css">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+		<style>
+		.interval-row{
+			height: 70;
+		}
+		.interval-row-alert{
+			height: 50;
+		}
+		.h2, h2 {
+			font-size: 1.5rem;
+		}
+		.room-fold
+		{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 10%;
+			height: 95%;
+			background-image: url('{{ asset("img") }}/schedule/room-fold-02.png');
+			background-position: 0 60%;
+			background-repeat: no-repeat;
+			background-size: cover;
+			/* border: thin red solid; */
+			z-index: 999 !important;
+			/* transform: rotate(-90deg);*/
+		}
+
+		.btn-circle {
+				width: 70px;
+				height: 70px;
+				padding: 10px 16px;
+        margin: 7px;
+				border-radius: 35px;
+				font-size: 24px;
+				line-height: 1.33;
+			}
+	#mainNav li{
+        cursor: pointer;
+    }
+	#mainNav li:hover{
+        color: #0096FF !important;
+    }
+
+	main{
+		background-color: #ffffff;
+
+	}
+	.join-link:hover{
+        cursor: pointer;
+
+	}
+	.room-card{
+		background: #ffffff;
+	}
+
+	.alertBox{
+		box-shadow: 5px 10px;
+	}
+	.bryte-button {
+            background-color: #0074c9
+ !important;
+            border-color: #0074c9
+ !important;
+            color: #ffffff !important;
+            height: 1.7vw;
+            width: 2.5vw;
+
+            margin-bottom: 2%;
+			padding: 0 !important;
+			border-radius: 10px;
+        }
+        .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+		</style>
+	</head>
+	<body>
+	<script src="{{ asset('js') }}/schedule/ics.deps.min.js"></script>
+	<script src="{{ asset('js') }}/schedule/ics.min.js"></script>		
+	<nav class="navbar navbar-expand-sm bg-light" style="color: #000000 !important;">
+
+<!-- Links -->
+<a href="#" class="navbar-left" style="margin-right: 3%; margin-left: 3%;"><img src="{{ asset('img') }}/bryte/logo3.png"></a>
+<ul class="navbar-nav ml-auto" id="mainNav">
+  <li class="nav-item active" onMouseOver="this.style.color='#0096FF'">
+	<a class="nav-link" href="{{ route('lobby') }}" style="color: #000000 !important;"  onMouseOver="this.style.color='#0096FF'" onMouseOut="this.style.color='#000000'">Lobby</a>
+  </li>
+  <li class="nav-item">
+	<a class="nav-link" href="{{ route('schedule') }}" style="color: #000000 !important;"  onMouseOver="this.style.color='#0096FF'" onMouseOut="this.style.color='#000000'">Schedule</a>
+  </li>
+  <li class="nav-item">
+	<a class="nav-link"  onclick="checkRoom('room_two_open_time', '/room/99', event);" style="color: #000000 !important;"  onMouseOver="this.style.color='#0096FF'" onMouseOut="this.style.color='#000000'">Main Room</a>
+  </li>
+  <li class="nav-item">
+	<a class="nav-link"  onclick="checkRoom('room_four_open_time', '/breakaway', event);" style="color: #000000 !important;"  onMouseOver="this.style.color='#0096FF'" onMouseOut="this.style.color='#000000'">Breakaway Rooms</a>
+  </li>
+	  <li class="nav-item">
+	  <a class="nav-link"  onMouseOver="this.style.color='#0096FF'" onMouseOut="this.style.color='#000000'"  href="{{ route('logout') }}" style="color: #000000 !important;" onclick="event.preventDefault();
+	 document.getElementById('logout-form').submit();">Log Out</a>
+	  </li>
+</ul>
+
+
+</nav>
+<img src="{{ asset('img') }}/sanlam/logo.png" alt="Sanlam" class="center" style="width: 40vw"> 
+<ul class="nav nav-tabs" id="myTab" role="tablist" style="background: #0074c9;">
+    <li class="nav-item" role="presentation" style="width: 33.33%;">
+    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true" style="width: 100%; color:#000">About Us</button>
+    </li>
+    <li class="nav-item" role="presentation" style="width: 33.33%;">
+    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false" style="width: 100%; color:#000">Media</button>
+    </li>
+    <li class="nav-item" role="presentation" style="width: 33.33%;">
+    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false" style="width: 100%; color:#000">Contact</button>
+    </li>
+</ul>
+<div class="tab-content" id="myTabContent" style="background: #ccc; height: 70%;">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab" style="color: #000">
+    
+    
+    </div>
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="height: 100%;">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img class="d-block w-100" src="https://www.adweek.com/files/2015_May/iStock-Unfinished-Business-6.jpg" alt="First slide" style="max-height: 60%; width: auto !important; height: 80%;">
+                </div>
+                <div class="carousel-item">
+                <img class="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAJQYnWluCv8VWzRTxkZQe6kHwL3Zwmra_ng&usqp=CAU" alt="Second slide" style="height: 80%;">
+                </div>
+                <div class="carousel-item">
+                <img class="d-block w-100" src="https://images.unsplash.com/photo-1560932684-8f7cbcaf5751?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3RvY2slMjBwaG90b2dyYXBoeXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="Third slide" style="height: 80%;">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators"  data-target="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators"  data-target="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    
+    </div>
+    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+    
+    
+    
+    </div>
+</div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>

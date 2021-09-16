@@ -21,7 +21,7 @@ class RoomController extends Controller
     
 //Assumes that the data here is read from the database and sorted according to date ASCENDING:
 public $rows =	[
-			'title' => 'Sanlam Connect',
+			'title' => '',
 			'days' =>
 			[
 				//Day 1:
@@ -30,17 +30,33 @@ public $rows =	[
 					'date'				=> '2021-08-13',	//required - let's us know which tab it should be placed in
 					'sessions'			=>
 					[
+						[	//Break 1
+							'title'			=> 'EXHIBITION HALL OPEN',
+							'image'			=> '/img/schedule/seal-01.jpg',
+							'start_time'	=> '11:30',
+							'end_time'		=> '00:00',
+							'interval'		=>	true,
+							'alert'         => true
+						],
+						[	//Break 1
+							'title'			=> 'NETWORKING LOUNGES OPEN',
+							'image'			=> '/img/schedule/seal-01.jpg',
+							'start_time'	=> '11:30',
+							'end_time'		=> '00:00',
+							'interval'		=>	true,
+							'alert'         => true
+						],
 						[	//Row 2
 							'title'			=> 'Welcome',
 							'image'			=> '/img/schedule/session1.png',
-							'start_time'	=> '14:40',
-							'end_time'		=> '15:00',
+							'start_time'	=> '13:00',
+							'end_time'		=> '14:35',
 							'interval'		=>	false,
 							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Keynote Speakers Round 1',
-														'room_info'		=> 	'Laurene to welcome and outline conference, Efua to MC and key note speaker to say a few notes.',
+														'room_desc'		=> 	'Opening & Welcome',
+														'room_info'		=> 	'',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
 															/*
@@ -50,34 +66,107 @@ public $rows =	[
 															*/
  
 															[
-																'pic'			=> '/img/schedule/profile/angel.jpg',
-																'name'			=> 'Angel Chelwa', 
-																'designation'	=> 'Forbes 30 under 30; Co-founders, Healthy Learners'																					
+																'pic'			=> '/img/schedule/profile/sanlam.webp',
+																'name'			=> 'Nasrat Edoo Sirkissoon', 
+																'designation'	=> ''																					
 															], 
-															[
-																'pic'			=> '/img/schedule/profile/lonnie.jpg',
-																'name'			=> 'Lonnie Hacket', 
-																'designation'	=> 'Forbes 30 under 30; Co-founders, Healthy Learners'
-															],
 
+
+														]
+													],
+													[	//Room 1 - Claims
+														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
+														'room_desc'		=> 	'State of the BlueStar Nation',
+														'room_info'		=> 	'',
+														'link'			=>	'/room/99',
+														'speakers'		=> 	[	
+															/*
+															Ideally also a table and this array should hold the user id's.
+															Having a table means we have access to any other relevant data if necessary,
+															such as email, phone no, website, etc.
+															*/
+ 
+															[
+																'pic'			=> '/img/schedule/profile/sanlam.webp',
+																'name'			=> 'Heinrich Punt', 
+																'designation'	=> ''																					
+															], 
+
+
+														]
+													],
+													[	//Room 1 - Claims
+														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
+														'room_desc'		=> 	'Futuristic Overview',
+														'room_info'		=> 	'',
+														'link'			=>	'/room/99',
+														'speakers'		=> 	[	
+															/*
+															Ideally also a table and this array should hold the user id's.
+															Having a table means we have access to any other relevant data if necessary,
+															such as email, phone no, website, etc.
+															*/
+ 
+															[
+																'pic'			=> '/img/schedule/profile/sanlam.webp',
+																'name'			=> 'Dion Chang', 
+																'designation'	=> ''																					
+															], 
+
+
+														]
+													],
+													[	//Room 1 - Claims
+														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
+														'room_desc'		=> 	'Economic Overview',
+														'room_info'		=> 	'',
+														'link'			=>	'/room/99',
+														'speakers'		=> 	[	
+															/*
+															Ideally also a table and this array should hold the user id's.
+															Having a table means we have access to any other relevant data if necessary,
+															such as email, phone no, website, etc.
+															*/
+ 
+															[
+																'pic'			=> '/img/schedule/profile/sanlam.webp',
+																'name'			=> 'Nazmeera Moola', 
+																'designation'	=> ''																					
+															], 
 
 
 														]
 													],
 													
 												]
+						],
+						[	//Break 1
+							'title'			=> 'EXHIBITION HALL OPEN',
+							'image'			=> '/img/schedule/seal-01.jpg',
+							'start_time'	=> '14:35',
+							'end_time'		=> '00:00',
+							'interval'		=>	true,
+							'alert'         => true
+						],
+						[	//Break 1
+							'title'			=> 'NETWORKING LOUNGES OPEN',
+							'image'			=> '/img/schedule/seal-01.jpg',
+							'start_time'	=> '14:35',
+							'end_time'		=> '00:00',
+							'interval'		=>	true,
+							'alert'         => true
 						],
 						[	//Row 2
 							'title'			=> 'Welcome',
 							'image'			=> '/img/schedule/session2.png',
-							'start_time'	=> '15:00',
-							'end_time'		=> '15:20',
+							'start_time'	=> '14:50',
+							'end_time'		=> '16:00',
 							'interval'		=>	false,
 							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Keynote Speakers Round 2',
-														'room_info'		=> 	'Laurene to welcome and outline conference, Efua to MC and key note speaker to say a few notes.',
+														'room_desc'		=> 	'SA Overview',
+														'room_info'		=> 	'',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
 															/*
@@ -87,9 +176,53 @@ public $rows =	[
 															*/
  
 															[
-																'pic'			=> '/img/schedule/profile/johnn.jpg',
-																'name'			=> 'Dr John Nkengasong, MSc, PhD', 
-																'designation'	=> 'Director, Africa CDC'																					
+																'pic'			=> '/img/schedule/profile/sanlam.webp',
+																'name'			=> 'TBC', 
+																'designation'	=> ''																					
+															], 
+
+
+
+														]
+													],
+													[	//Room 1 - Claims
+														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
+														'room_desc'		=> 	'Divergent Thinking',
+														'room_info'		=> 	'',
+														'link'			=>	'/room/99',
+														'speakers'		=> 	[	
+															/*
+															Ideally also a table and this array should hold the user id's.
+															Having a table means we have access to any other relevant data if necessary,
+															such as email, phone no, website, etc.
+															*/
+ 
+															[
+																'pic'			=> '/img/schedule/profile/sanlam.webp',
+																'name'			=> 'Fortune Gamanya', 
+																'designation'	=> ''																					
+															], 
+
+
+
+														]
+													],
+													[	//Room 1 - Claims
+														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
+														'room_desc'		=> 	'Close',
+														'room_info'		=> 	'',
+														'link'			=>	'/room/99',
+														'speakers'		=> 	[	
+															/*
+															Ideally also a table and this array should hold the user id's.
+															Having a table means we have access to any other relevant data if necessary,
+															such as email, phone no, website, etc.
+															*/
+ 
+															[
+																'pic'			=> '/img/schedule/profile/sanlam.webp',
+																'name'			=> 'Sipho Mncwabe', 
+																'designation'	=> ''																					
 															], 
 
 
@@ -100,15 +233,662 @@ public $rows =	[
 												]
 						],
 
+						
+						
+						
+										
 
 
-
-						[	//Break 2
-							'title'			=> 'break',
+					
+					]
+				],
+				[
+					'session_title'		=> 'CONFERENCE PROGRAMME FOR WE-LINK', 	//should not be mandatory
+					'date'				=> '2021-08-14',	//required - let's us know which tab it should be placed in
+					'sessions'			=>
+					[
+						[	//Break 1
+							'title'			=> 'EXHIBITION HALL OPEN',
 							'image'			=> '/img/schedule/seal-01.jpg',
-							'start_time'	=> '16:40',
+							'start_time'	=> '12:00',
+							'end_time'		=> '00:00',
+							'interval'		=>	true,
+							'alert'         => true
+						],
+						[	//Break 1
+							'title'			=> 'NETWORKING LOUNGES OPEN',
+							'image'			=> '/img/schedule/seal-01.jpg',
+							'start_time'	=> '12:00',
+							'end_time'		=> '00:00',
+							'interval'		=>	true,
+							'alert'         => true
+						],
+						[	//Row 2
+							'title'			=> 'Welcome',
+							'image'			=> '/img/schedule/session1.png',
+							'start_time'	=> '13:00',
+							'end_time'		=> '13:45',
+							'interval'		=>	false,
+							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
+													[	//Room 1 - Claims
+														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
+														'room_desc'		=> 	'Opening & Welcome',
+														'room_info'		=> 	'',
+														'link'			=>	'/room/99',
+														'speakers'		=> 	[	
+															/*
+															Ideally also a table and this array should hold the user id's.
+															Having a table means we have access to any other relevant data if necessary,
+															such as email, phone no, website, etc.
+															*/
+ 
+															[
+																'pic'			=> '/img/schedule/profile/sanlam.webp',
+																'name'			=> 'Tashlin Naidoo', 
+																'designation'	=> ''																					
+															], 
+
+														]
+													],
+													[	//Room 1 - Claims
+														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
+														'room_desc'		=> 	'World Class Financial Planning',
+														'room_info'		=> 	'',
+														'link'			=>	'/room/99',
+														'speakers'		=> 	[	
+															/*
+															Ideally also a table and this array should hold the user id's.
+															Having a table means we have access to any other relevant data if necessary,
+															such as email, phone no, website, etc.
+															*/
+ 
+															[
+																'pic'			=> '/img/schedule/profile/sanlam.webp',
+																'name'			=> 'TBC', 
+																'designation'	=> ''																					
+															], 
+
+														]
+													],
+													
+												]
+						],
+						[	//Break 1
+							'title'			=> 'EXHIBITION HALL OPEN',
+							'image'			=> '/img/schedule/seal-01.jpg',
+							'start_time'	=> '13:45',
+							'end_time'		=> '00:00',
+							'interval'		=>	true,
+							'alert'         => true
+						],
+						[	//Break 1
+							'title'			=> 'NETWORKING LOUNGES OPEN',
+							'image'			=> '/img/schedule/seal-01.jpg',
+							'start_time'	=> '13:45',
+							'end_time'		=> '00:00',
+							'interval'		=>	true,
+							'alert'         => true
+						],
+						[	//Row 2
+							'title'			=> 'Welcome',
+							'image'			=> '/img/schedule/session2.png',
+							'start_time'	=> '13:45',
+							'end_time'		=> '14:50',
+							'interval'		=>	false,
+							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
+													[	//Room 1 - Claims
+														'room_name'		=> 	'Room 1', //ideally a table and this should be an id referencing that row
+														'room_desc'		=> 	'Glacier',
+														'room_info'		=> 	'',
+														'link'			=>	'/room/101',
+														'speakers'		=> 	[	
+															/*
+															Ideally also a table and this array should hold the user id's.
+															Having a table means we have access to any other relevant data if necessary,
+															such as email, phone no, website, etc.
+															*/
+ 
+															[
+																'pic'			=> '/img/schedule/profile/sanlam.webp',
+																'name'			=> 'TBC', 
+																'designation'	=> ''																					
+															], 
+
+														]
+													],
+													[	//Room 1 - Claims
+														'room_name'		=> 	'Room 2', //ideally a table and this should be an id referencing that row
+														'room_desc'		=> 	'Sanlam Individual Life',
+														'room_info'		=> 	'',
+														'link'			=>	'/room/102',
+														'speakers'		=> 	[	
+															/*
+															Ideally also a table and this array should hold the user id's.
+															Having a table means we have access to any other relevant data if necessary,
+															such as email, phone no, website, etc.
+															*/
+ 
+															[
+																'pic'			=> '/img/schedule/profile/sanlam.webp',
+																'name'			=> 'TBC', 
+																'designation'	=> ''																					
+															], 
+
+														]
+													],
+													[	//Room 1 - Claims
+														'room_name'		=> 	'Room 3', //ideally a table and this should be an id referencing that row
+														'room_desc'		=> 	'Santam',
+														'room_info'		=> 	'',
+														'link'			=>	'/room/103',
+														'speakers'		=> 	[	
+															/*
+															Ideally also a table and this array should hold the user id's.
+															Having a table means we have access to any other relevant data if necessary,
+															such as email, phone no, website, etc.
+															*/
+ 
+															[
+																'pic'			=> '/img/schedule/profile/sanlam.webp',
+																'name'			=> 'TBC', 
+																'designation'	=> ''																					
+															], 
+
+														]
+													],
+													[	//Room 1 - Claims
+														'room_name'		=> 	'Room 4', //ideally a table and this should be an id referencing that row
+														'room_desc'		=> 	'EB BlueStar',
+														'room_info'		=> 	'',
+														'link'			=>	'/room/104',
+														'speakers'		=> 	[	
+															/*
+															Ideally also a table and this array should hold the user id's.
+															Having a table means we have access to any other relevant data if necessary,
+															such as email, phone no, website, etc.
+															*/
+ 
+															[
+																'pic'			=> '/img/schedule/profile/sanlam.webp',
+																'name'			=> 'TBC', 
+																'designation'	=> ''																					
+															], 
+
+														]
+													],
+													[	//Room 1 - Claims
+														'room_name'		=> 	'Room 5', //ideally a table and this should be an id referencing that row
+														'room_desc'		=> 	'Medical',
+														'room_info'		=> 	'',
+														'link'			=>	'/room/105',
+														'speakers'		=> 	[	
+															/*
+															Ideally also a table and this array should hold the user id's.
+															Having a table means we have access to any other relevant data if necessary,
+															such as email, phone no, website, etc.
+															*/
+ 
+															[
+																'pic'			=> '/img/schedule/profile/sanlam.webp',
+																'name'			=> 'TBC', 
+																'designation'	=> ''																					
+															], 
+
+														]
+													],
+													[	//Room 1 - Claims
+														'room_name'		=> 	'Room 6', //ideally a table and this should be an id referencing that row
+														'room_desc'		=> 	'Sanlam Investements',
+														'room_info'		=> 	'',
+														'link'			=>	'/room/106',
+														'speakers'		=> 	[	
+															/*
+															Ideally also a table and this array should hold the user id's.
+															Having a table means we have access to any other relevant data if necessary,
+															such as email, phone no, website, etc.
+															*/
+ 
+															[
+																'pic'			=> '/img/schedule/profile/sanlam.webp',
+																'name'			=> 'TBC', 
+																'designation'	=> ''																					
+															], 
+
+														]
+													],
+
+													
+												]
+						],
+						[	//Row 2
+							'title'			=> 'Welcome',
+							'image'			=> '/img/schedule/session3.png',
+							'start_time'	=> '14:50',
+							'end_time'		=> '15:25',
+							'interval'		=>	false,
+							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
+													[	//Room 1 - Claims
+														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
+														'room_desc'		=> 	'Digital Transformation',
+														'room_info'		=> 	'',
+														'link'			=>	'/room/99',
+														'speakers'		=> 	[	
+															/*
+															Ideally also a table and this array should hold the user id's.
+															Having a table means we have access to any other relevant data if necessary,
+															such as email, phone no, website, etc.
+															*/
+ 
+															[
+																'pic'			=> '/img/schedule/profile/sanlam.webp',
+																'name'			=> 'Sharron McPherson', 
+																'designation'	=> ''																					
+															], 
+
+														]
+													],
+	
+													
+												]
+						],
+						[	//Break 1
+							'title'			=> 'EXHIBITION HALL OPEN',
+							'image'			=> '/img/schedule/seal-01.jpg',
+							'start_time'	=> '15:25',
+							'end_time'		=> '00:00',
+							'interval'		=>	true,
+							'alert'         => true
+						],
+						[	//Break 1
+							'title'			=> 'NETWORKING LOUNGES OPEN',
+							'image'			=> '/img/schedule/seal-01.jpg',
+							'start_time'	=> '15:25',
+							'end_time'		=> '00:00',
+							'interval'		=>	true,
+							'alert'         => true
+						],
+						[	//Row 2
+							'title'			=> 'Welcome',
+							'image'			=> '/img/schedule/session4.png',
+							'start_time'	=> '15:45',
 							'end_time'		=> '17:00',
-							'interval'		=>	true
+							'interval'		=>	false,
+							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
+													[	//Room 1 - Claims
+														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
+														'room_desc'		=> 	'Awards Ceremony',
+														'room_info'		=> 	'',
+														'link'			=>	'/room/99',
+														'speakers'		=> 	[	
+															/*
+															Ideally also a table and this array should hold the user id's.
+															Having a table means we have access to any other relevant data if necessary,
+															such as email, phone no, website, etc.
+															*/
+ 
+															[
+																'pic'			=> '/img/schedule/profile/sanlam.webp',
+																'name'			=> 'TBC', 
+																'designation'	=> ''																					
+															], 
+
+														]
+													],
+	
+													
+												]
+						],
+						
+						
+						
+										
+
+
+					
+					]
+				],
+				[
+					'session_title'		=> 'CONFERENCE PROGRAMME FOR WE-LINK', 	//should not be mandatory
+					'date'				=> '2021-08-15',	//required - let's us know which tab it should be placed in
+					'sessions'			=>
+					[
+						[	//Break 1
+							'title'			=> 'EXHIBITION HALL OPEN',
+							'image'			=> '/img/schedule/seal-01.jpg',
+							'start_time'	=> '09:00',
+							'end_time'		=> '00:00',
+							'interval'		=>	true,
+							'alert'         => true
+						],
+						[	//Break 1
+							'title'			=> 'NETWORKING LOUNGES OPEN',
+							'image'			=> '/img/schedule/seal-01.jpg',
+							'start_time'	=> '09:00',
+							'end_time'		=> '00:00',
+							'interval'		=>	true,
+							'alert'         => true
+						],
+						[	//Row 2
+							'title'			=> 'Welcome',
+							'image'			=> '/img/schedule/session1.png',
+							'start_time'	=> '10:00',
+							'end_time'		=> '11:30',
+							'interval'		=>	false,
+							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
+													[	//Room 1 - Claims
+														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
+														'room_desc'		=> 	'Opening & Welcome',
+														'room_info'		=> 	'',
+														'link'			=>	'/room/99',
+														'speakers'		=> 	[	
+															/*
+															Ideally also a table and this array should hold the user id's.
+															Having a table means we have access to any other relevant data if necessary,
+															such as email, phone no, website, etc.
+															*/
+ 
+															[
+																'pic'			=> '/img/schedule/profile/sanlam.webp',
+																'name'			=> 'Thesen Naicker', 
+																'designation'	=> ''																					
+															], 
+
+
+														]
+													],
+													[	//Room 1 - Claims
+														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
+														'room_desc'		=> 	'Workshop Storyline',
+														'room_info'		=> 	'',
+														'link'			=>	'/room/99',
+														'speakers'		=> 	[	
+															/*
+															Ideally also a table and this array should hold the user id's.
+															Having a table means we have access to any other relevant data if necessary,
+															such as email, phone no, website, etc.
+															*/
+ 
+															[
+																'pic'			=> '/img/schedule/profile/sanlam.webp',
+																'name'			=> 'Heinrich Punt', 
+																'designation'	=> ''																					
+															], 
+
+
+														]
+													],
+													[	//Room 1 - Claims
+														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
+														'room_desc'		=> 	'Money EQ reports',
+														'room_info'		=> 	'',
+														'link'			=>	'/room/99',
+														'speakers'		=> 	[	
+															/*
+															Ideally also a table and this array should hold the user id's.
+															Having a table means we have access to any other relevant data if necessary,
+															such as email, phone no, website, etc.
+															*/
+ 
+															[
+																'pic'			=> '/img/schedule/profile/sanlam.webp',
+																'name'			=> 'Hendrik Crafford', 
+																'designation'	=> ''																					
+															], 
+
+
+														]
+													],
+													[	//Room 1 - Claims
+														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
+														'room_desc'		=> 	'Value and Service segmentation model',
+														'room_info'		=> 	'',
+														'link'			=>	'/room/99',
+														'speakers'		=> 	[	
+															/*
+															Ideally also a table and this array should hold the user id's.
+															Having a table means we have access to any other relevant data if necessary,
+															such as email, phone no, website, etc.
+															*/
+ 
+															[
+																'pic'			=> '/img/schedule/profile/sanlam.webp',
+																'name'			=> 'Nasrat Edoo Sirkissoon', 
+																'designation'	=> ''																					
+															], 
+
+
+														]
+													],
+													[	//Room 1 - Claims
+														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
+														'room_desc'		=> 	'CX Overlay on Segmentation & VP',
+														'room_info'		=> 	'',
+														'link'			=>	'/room/99',
+														'speakers'		=> 	[	
+															/*
+															Ideally also a table and this array should hold the user id's.
+															Having a table means we have access to any other relevant data if necessary,
+															such as email, phone no, website, etc.
+															*/
+ 
+															[
+																'pic'			=> '/img/schedule/profile/sanlam.webp',
+																'name'			=> 'Sonja Sanders', 
+																'designation'	=> ''																					
+															], 
+															[
+																'pic'			=> '/img/schedule/profile/sanlam.webp',
+																'name'			=> 'René Roux', 
+																'designation'	=> ''																					
+															], 
+
+
+														]
+													],
+													
+												]
+						],
+						[	//Break 1
+							'title'			=> 'EXHIBITION HALL OPEN',
+							'image'			=> '/img/schedule/seal-01.jpg',
+							'start_time'	=> '11:30',
+							'end_time'		=> '00:00',
+							'interval'		=>	true,
+							'alert'         => true
+						],
+						[	//Break 1
+							'title'			=> 'NETWORKING LOUNGES OPEN',
+							'image'			=> '/img/schedule/seal-01.jpg',
+							'start_time'	=> '11:30',
+							'end_time'		=> '00:00',
+							'interval'		=>	true,
+							'alert'         => true
+						],
+						[	//Row 2
+							'title'			=> 'Welcome',
+							'image'			=> '/img/schedule/session2.png',
+							'start_time'	=> '11:50',
+							'end_time'		=> '12:30',
+							'interval'		=>	false,
+							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
+													[	//Room 1 - Claims
+														'room_name'		=> 	'Room 1', //ideally a table and this should be an id referencing that row
+														'room_desc'		=> 	'Glacier',
+														'room_info'		=> 	'',
+														'link'			=>	'/room/101',
+														'speakers'		=> 	[	
+															/*
+															Ideally also a table and this array should hold the user id's.
+															Having a table means we have access to any other relevant data if necessary,
+															such as email, phone no, website, etc.
+															*/
+ 
+															[
+																'pic'			=> '/img/schedule/profile/sanlam.webp',
+																'name'			=> 'TBC', 
+																'designation'	=> ''																					
+															], 
+
+														]
+													],
+													[	//Room 1 - Claims
+														'room_name'		=> 	'Room 2', //ideally a table and this should be an id referencing that row
+														'room_desc'		=> 	'Sanlam Individual Life',
+														'room_info'		=> 	'',
+														'link'			=>	'/room/102',
+														'speakers'		=> 	[	
+															/*
+															Ideally also a table and this array should hold the user id's.
+															Having a table means we have access to any other relevant data if necessary,
+															such as email, phone no, website, etc.
+															*/
+ 
+															[
+																'pic'			=> '/img/schedule/profile/sanlam.webp',
+																'name'			=> 'TBC', 
+																'designation'	=> ''																					
+															], 
+
+														]
+													],
+													[	//Room 1 - Claims
+														'room_name'		=> 	'Room 3', //ideally a table and this should be an id referencing that row
+														'room_desc'		=> 	'Santam',
+														'room_info'		=> 	'',
+														'link'			=>	'/room/103',
+														'speakers'		=> 	[	
+															/*
+															Ideally also a table and this array should hold the user id's.
+															Having a table means we have access to any other relevant data if necessary,
+															such as email, phone no, website, etc.
+															*/
+ 
+															[
+																'pic'			=> '/img/schedule/profile/sanlam.webp',
+																'name'			=> 'TBC', 
+																'designation'	=> ''																					
+															], 
+
+														]
+													],
+													[	//Room 1 - Claims
+														'room_name'		=> 	'Room 4', //ideally a table and this should be an id referencing that row
+														'room_desc'		=> 	'EB BlueStar',
+														'room_info'		=> 	'',
+														'link'			=>	'/room/104',
+														'speakers'		=> 	[	
+															/*
+															Ideally also a table and this array should hold the user id's.
+															Having a table means we have access to any other relevant data if necessary,
+															such as email, phone no, website, etc.
+															*/
+ 
+															[
+																'pic'			=> '/img/schedule/profile/sanlam.webp',
+																'name'			=> 'TBC', 
+																'designation'	=> ''																					
+															], 
+
+														]
+													],
+													[	//Room 1 - Claims
+														'room_name'		=> 	'Room 5', //ideally a table and this should be an id referencing that row
+														'room_desc'		=> 	'Medical',
+														'room_info'		=> 	'',
+														'link'			=>	'/room/105',
+														'speakers'		=> 	[	
+															/*
+															Ideally also a table and this array should hold the user id's.
+															Having a table means we have access to any other relevant data if necessary,
+															such as email, phone no, website, etc.
+															*/
+ 
+															[
+																'pic'			=> '/img/schedule/profile/sanlam.webp',
+																'name'			=> 'TBC', 
+																'designation'	=> ''																					
+															], 
+
+														]
+													],
+													[	//Room 1 - Claims
+														'room_name'		=> 	'Room 6', //ideally a table and this should be an id referencing that row
+														'room_desc'		=> 	'Sanlam Investements',
+														'room_info'		=> 	'',
+														'link'			=>	'/room/106',
+														'speakers'		=> 	[	
+															/*
+															Ideally also a table and this array should hold the user id's.
+															Having a table means we have access to any other relevant data if necessary,
+															such as email, phone no, website, etc.
+															*/
+ 
+															[
+																'pic'			=> '/img/schedule/profile/sanlam.webp',
+																'name'			=> 'TBC', 
+																'designation'	=> ''																					
+															], 
+
+														]
+													],
+
+													
+												]
+						],
+
+
+
+
+						[	//Row 2
+							'title'			=> 'Welcome',
+							'image'			=> '/img/schedule/session3.png',
+							'start_time'	=> '12:30',
+							'end_time'		=> '13:10',
+							'interval'		=>	false,
+							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
+													[	//Room 1 - Claims
+														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
+														'room_desc'		=> 	'Motivational Speaker',
+														'room_info'		=> 	'',
+														'link'			=>	'/room/99',
+														'speakers'		=> 	[	
+															/*
+															Ideally also a table and this array should hold the user id's.
+															Having a table means we have access to any other relevant data if necessary,
+															such as email, phone no, website, etc.
+															*/
+ 
+															[
+																'pic'			=> '/img/schedule/profile/sanlam.webp',
+																'name'			=> 'TBC', 
+																'designation'	=> ''																					
+															], 
+
+														]
+													],
+													[	//Room 1 - Claims
+														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
+														'room_desc'		=> 	'Close',
+														'room_info'		=> 	'',
+														'link'			=>	'/room/99',
+														'speakers'		=> 	[	
+															/*
+															Ideally also a table and this array should hold the user id's.
+															Having a table means we have access to any other relevant data if necessary,
+															such as email, phone no, website, etc.
+															*/
+ 
+															[
+																'pic'			=> '/img/schedule/profile/sanlam.webp',
+																'name'			=> 'Thesen Naicker', 
+																'designation'	=> ''																					
+															], 
+
+														]
+													],
+	
+													
+												]
 						],
 						
 						
@@ -588,7 +1368,7 @@ public $rows =	[
 					<div class="'.$cardHdrCls.'-alert" id="'.$hdrId.'">
 						<div class="row interval-row-alert">
 							<div class="col-sm-3">
-								<div class="card-break"><h2>Exhibition Hall Open</h2></div>
+								<div class="card-break"><h2 style="font-size: 20px;">'.$session['title'].'</h2></div>
 							</div>
 							<div class="col-sm-5">	
 								<h2 class="mb-0" style="color:#ffffff;">

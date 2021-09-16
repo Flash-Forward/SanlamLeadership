@@ -52,6 +52,10 @@ Route::get('/lobby2', function () {
     return view('lobby2');
 })->name('lobby2');
 
+Route::get('/sponsor/1', function () {
+    return view('sponsor');
+})->name('sponsor');
+
 // Route::get('/exhibition', function () {
 //     return view('exhibition');
 // })->name('exhibition');

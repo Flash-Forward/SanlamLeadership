@@ -1,6 +1,6 @@
 <head>
 		<meta charset="UTF-8">
-    <title>Sanlam Connect</title>
+    <title>SanlamConnect</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<!-- google fonts -->
@@ -286,52 +286,52 @@ video {
 }
 
 #leftBannerHolder{
-  width:10.331vw;
-    height:26.5vw;
+  width:7vw;
+    height:17.9557vw;
     top:0.5%;
-    left:19.2%;
+    left:23.6%;
 }
 #leftBannerHolder1{
-  width:6.331vw;
-    height:16.5vw;
+  width:7vw;
+    height:17.9557vw;
     top:0.5%;
-    left:10%;
+    left:14.5%;
 }
 #leftBanner1{
-  width:5.531vw;
-    height:14.1vw;
+  width:6.1vw;
+    height:15.4vw;
     top:12%;
     left:6.5%;
 }
 
 #leftBanner{
-  width:9.031vw;
-    height:22.8vw;
+  width:6.1vw;
+    height:15.4vw;
     top:12%;
     left:6.5%;
 }
 
 #rightBanner{
-  width:9.031vw;
-    height:22.8vw;
+  width:6.1vw;
+    height:15.4vw;
     top:12%;
     left:6.5%;
 }
 #rightBannerHolder{
-  width:10.331vw;
-    height:26.5vw;
+  width:7vw;
+    height:17.9557vw;
     top:0.5%;
     left:69.6%;
 }
 #rightBannerHolder1{
-  width:6.331vw;
-    height:16.5vw;
+  width:7vw;
+    height:17.9557vw;
     top:0.5%;
-    left:82.8%;
+    left:78.8%;
 }
 #rightBanner1{
-  width:5.531vw;
-    height:14.1vw;
+  width:6.1vw;
+    height:15.4vw;
     top:12%;
     left:6.5%;
 }
