@@ -67,7 +67,7 @@ body, html {
     object-fit: cover; /* Do not scale the image */
   object-position: center; /* Center the image within the element */
     width:100%;
-    /* height:60vh; */
+    height:65vh;
     position: relative;
 }
 #myImage_zone2{
