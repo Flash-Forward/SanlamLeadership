@@ -597,7 +597,7 @@ color: #ffffff !important;
     <div id="leftBannerHolder1" class="divInImage">
     <img src="{{ asset('img') }}/bryte/emptybanner.png" class="stretch" alt="" />
       <div id="leftBanner1" class="divInImage">
-      <img src="{{ asset('img') }}/sanlam/blue.jpg" class="stretch" alt="" />
+      <img src="{{ asset('img') }}/sanlam/side.png" class="stretch" alt="" />
       </div>
     </div>
 
@@ -606,7 +606,7 @@ color: #ffffff !important;
     <div id="rightBannerHolder1" class="divInImage">
     <img src="{{ asset('img') }}/bryte/emptybanner.png" class="stretch" alt="" />
       <div id="rightBanner1" class="divInImage">
-      <img src="{{ asset('img') }}/sanlam/blue.jpg" class="stretch" alt="" />
+      <img src="{{ asset('img') }}/sanlam/side.png" class="stretch" alt="" />
       </div>
     </div>
 
