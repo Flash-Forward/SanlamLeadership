@@ -171,6 +171,19 @@ video {
   line-height: 1.00;
     color: #f8f8f8;
 }
+#rightVideoInner2{
+  width:13.45vw;
+  height:7.35vw;
+    top:18.8%;
+    left:8.8%;
+}
+#rightVideo2{
+  width:16.4vw;
+    height:10.7vw;
+    top:0.7%;
+    left:84.5%;
+    border-radius: 35px;
+}
 #rightVideoInner{
   width:13.5vw;
   height:7.48vw;
@@ -475,6 +488,15 @@ color: #ffffff !important;
 </div> 
 <div id="bg">
     <img src="{{ asset('img') }}/bryte/lobbyb.jpg" class="stretch" alt="" />
+    <div id="rightVideo2" class="divInImage">
+    <img src="{{ asset('img') }}/bryte/screen1.png" class="stretch" alt="" />
+
+    <div id="rightVideoInner2" class="divInImage">
+    <img src="{{ asset('img') }}/sanlam/sponsors.png" class="stretch" alt="" />
+    </div>
+    <a id="rightVideoInner2"  onclick="checkRoom('room_two_open_time', '{{$room_two_route->value}}');"></a>
+
+    </div>
 
     @if($room_three_name->value != "NONE")
     <div id="mainRoomHeadingArea" class="divInImage">
