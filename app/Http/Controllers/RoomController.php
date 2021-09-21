@@ -1609,6 +1609,18 @@ public $rows =	[
             'exhibitors' => $exhibitors
         ]);
     }
+	public function sponsorsMiddle(config $config){
+        $bg = $config::where("key", "general_background")->first();
+
+        $stands = $config::where("key", "exhibition_size")->first();
+        $exhibitors = Exhibitor::where('order', '<', '99')->get();
+		//dd($exhibitors);
+        return view('sponsorsMiddle', [
+            'bg' => $bg,
+
+            'rooms' => $exhibitors
+        ]);
+    }
 
 	public function breakawayRoom(config $config)
     {

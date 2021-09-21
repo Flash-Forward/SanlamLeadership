@@ -494,7 +494,7 @@ color: #ffffff !important;
     <div id="rightVideoInner2" class="divInImage">
     <img src="{{ asset('img') }}/sanlam/sponsors.png" class="stretch" alt="" />
     </div>
-    <a id="rightVideoInner2"  onclick="checkRoom('room_two_open_time', '{{$room_two_route->value}}');"></a>
+    <a id="rightVideoInner2"  href="/sponsors"></a>
 
     </div>
 

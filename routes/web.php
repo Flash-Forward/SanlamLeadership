@@ -64,6 +64,9 @@ Route::get('/exhibition/layouts', function () {
     return view('exhibitionLayouts');
 })->name('exhibitionLayouts');
 
+Route::get('/sponsors', [App\Http\Controllers\RoomController::class, 'sponsorsMiddle'])->name('sponsors');
+
+
 
 Route::get('/exhibition/layouts/{stands}', [App\Http\Controllers\RoomController::class, 'exhibitionHallTest'])->name('exhibition.layouts');
 
