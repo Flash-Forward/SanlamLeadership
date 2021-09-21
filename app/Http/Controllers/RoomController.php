@@ -50,13 +50,13 @@ public $rows =	[
 							'title'			=> 'Welcome',
 							'image'			=> '/img/schedule/session1.png',
 							'start_time'	=> '13:00',
-							'end_time'		=> '14:35',
+							'end_time'		=> '13:10',
 							'interval'		=>	false,
 							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
 														'room_desc'		=> 	'Opening & Welcome',
-														'room_info'		=> 	'',
+														'room_info'		=> 	'Opening & Welcome',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
 															/*
@@ -74,10 +74,20 @@ public $rows =	[
 
 														]
 													],
+							]
+													
+						],
+						[	//Row 2
+							'title'			=> 'Welcome',
+							'image'			=> '/img/schedule/session2.png',
+							'start_time'	=> '13:10',
+							'end_time'		=> '13:30',
+							'interval'		=>	false,
+							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
 														'room_desc'		=> 	'State of the BlueStar Nation',
-														'room_info'		=> 	'',
+														'room_info'		=> 	'State of the BlueStar Nation',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
 															/*
@@ -95,10 +105,20 @@ public $rows =	[
 
 														]
 													],
+							]
+
+						],
+						[	//Row 2
+							'title'			=> 'Welcome',
+							'image'			=> '/img/schedule/session3.png',
+							'start_time'	=> '13:30',
+							'end_time'		=> '14:00',
+							'interval'		=>	false,
+							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Futuristic Overview',
-														'room_info'		=> 	'',
+														'room_desc'		=> 	'Futuristic Overview ',
+														'room_info'		=> 	'Futuristic Overview ',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
 															/*
@@ -116,10 +136,20 @@ public $rows =	[
 
 														]
 													],
+							]
+
+						],
+						[	//Row 2
+							'title'			=> 'Welcome',
+							'image'			=> '/img/schedule/session4.png',
+							'start_time'	=> '13:30',
+							'end_time'		=> '14:00',
+							'interval'		=>	false,
+							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Economic Overview',
-														'room_info'		=> 	'',
+														'room_desc'		=> 	'Economic overview ',
+														'room_info'		=> 	'Economic overview ',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
 															/*
@@ -137,8 +167,8 @@ public $rows =	[
 
 														]
 													],
-													
-												]
+							]
+
 						],
 						[	//Break 1
 							'title'			=> 'EXHIBITION HALL OPEN',
@@ -158,15 +188,15 @@ public $rows =	[
 						],
 						[	//Row 2
 							'title'			=> 'Welcome',
-							'image'			=> '/img/schedule/session2.png',
+							'image'			=> '/img/schedule/session5.png',
 							'start_time'	=> '14:50',
-							'end_time'		=> '16:00',
+							'end_time'		=> '15:20',
 							'interval'		=>	false,
 							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
 														'room_desc'		=> 	'SA Overview',
-														'room_info'		=> 	'',
+														'room_info'		=> 	'SA Overview',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
 															/*
@@ -185,10 +215,21 @@ public $rows =	[
 
 														]
 													],
+													
+													
+												]
+						],
+						[	//Row 2
+							'title'			=> 'Welcome',
+							'image'			=> '/img/schedule/session6.png',
+							'start_time'	=> '15:20',
+							'end_time'		=> '15:50',
+							'interval'		=>	false,
+							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Divergent Thinking',
-														'room_info'		=> 	'',
+														'room_desc'		=> 	'Divergent Thinking ',
+														'room_info'		=> 	'Divergent Thinking ',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
 															/*
@@ -207,10 +248,21 @@ public $rows =	[
 
 														]
 													],
+													
+													
+												]
+						],
+						[	//Row 2
+							'title'			=> 'Welcome',
+							'image'			=> '/img/schedule/session7.png',
+							'start_time'	=> '15:20',
+							'end_time'		=> '15:50',
+							'interval'		=>	false,
+							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Close',
-														'room_info'		=> 	'',
+														'room_desc'		=> 	'Close ',
+														'room_info'		=> 	'Close ',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
 															/*
@@ -221,7 +273,7 @@ public $rows =	[
  
 															[
 																'pic'			=> '/img/schedule/profile/sanlam.webp',
-																'name'			=> 'Sipho Mncwabe', 
+																'name'			=> 'Sipho Mncwabe ', 
 																'designation'	=> ''																					
 															], 
 
@@ -229,6 +281,7 @@ public $rows =	[
 
 														]
 													],
+													
 													
 												]
 						],
@@ -267,7 +320,7 @@ public $rows =	[
 							'title'			=> 'Welcome',
 							'image'			=> '/img/schedule/session1.png',
 							'start_time'	=> '13:00',
-							'end_time'		=> '13:45',
+							'end_time'		=> '13:15',
 							'interval'		=>	false,
 							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
@@ -290,10 +343,22 @@ public $rows =	[
 
 														]
 													],
+
+													
+												]
+						],
+						[	//Row 2
+							'title'			=> 'Welcome',
+							'image'			=> '/img/schedule/session2.png',
+							'start_time'	=> '13:15',
+							'end_time'		=> '13:45',
+							'interval'		=>	false,
+							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
+
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
 														'room_desc'		=> 	'World Class Financial Planning',
-														'room_info'		=> 	'',
+														'room_info'		=> 	'World Class Financial Planning',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
 															/*
@@ -331,7 +396,7 @@ public $rows =	[
 						],
 						[	//Row 2
 							'title'			=> 'Welcome',
-							'image'			=> '/img/schedule/session2.png',
+							'image'			=> '/img/schedule/session3.png',
 							'start_time'	=> '13:45',
 							'end_time'		=> '14:50',
 							'interval'		=>	false,
@@ -462,7 +527,7 @@ public $rows =	[
 						],
 						[	//Row 2
 							'title'			=> 'Welcome',
-							'image'			=> '/img/schedule/session3.png',
+							'image'			=> '/img/schedule/session4.png',
 							'start_time'	=> '14:50',
 							'end_time'		=> '15:25',
 							'interval'		=>	false,
@@ -509,7 +574,7 @@ public $rows =	[
 						],
 						[	//Row 2
 							'title'			=> 'Welcome',
-							'image'			=> '/img/schedule/session4.png',
+							'image'			=> '/img/schedule/session5.png',
 							'start_time'	=> '15:45',
 							'end_time'		=> '17:00',
 							'interval'		=>	false,
