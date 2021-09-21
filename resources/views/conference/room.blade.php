@@ -252,7 +252,7 @@ function redirectBack(){
 
 </div>
 @endif
-@if($backRoute != "NONE" && $backRoute != "breakaway")
+@if($backRoute != "NONE" && $backRoute != "breakaway"  && $backRoute != "networking")
 <div class="box">
 	<a id="backButton" href="{{$extra->website}}" target="_blank" class="btn exhibition-button btn-bottom grow">Website</a>
 	<a id="homeButton" href="{{ asset('ExhibitorData') }}/{{$extra->brochure}}" target="_blank" class="btn exhibition-button btn-bottom grow">Brochure</a>

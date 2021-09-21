@@ -141,7 +141,7 @@ body, html {
 	font-weight: bold;
 	text-align: center;
 	padding: 10px 0;
-	/* background-color: #eee; */
+	/* background-color: #eee; 285D82*/
 	/* mix-blend-mode: multiply; */
 	width: 100%;
 	position: relative;
