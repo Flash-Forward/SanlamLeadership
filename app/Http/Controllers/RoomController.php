@@ -1550,6 +1550,12 @@ public $rows =	[
         ]);
     }
 
+	public function sponsor(Exhibitor $sponsor){
+        return view('sponsor', [
+            'sponsor' => $sponsor,
+        ]);
+	}
+
     public function conference(config $config, $order)
     {        
 		$backRoute = "NONE";
@@ -1615,7 +1621,7 @@ public $rows =	[
         $bg = $config::where("key", "general_background")->first();
 
         $stands = $config::where("key", "exhibition_size")->first();
-        $exhibitors = Exhibitor::where('order', '<', '99')->get();
+        $exhibitors = Exhibitor::where('sponsor', '=', '1')->get();
 		//dd($exhibitors);
         return view('sponsorsMiddle', [
             'bg' => $bg,

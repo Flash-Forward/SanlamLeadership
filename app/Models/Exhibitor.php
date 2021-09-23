@@ -14,6 +14,10 @@ class Exhibitor extends Model
         'logo',
         'webinar',
         'extra',
-        'order'
+        'order',
+        'sponsor',
+        'content'
+
+
     ];
 }

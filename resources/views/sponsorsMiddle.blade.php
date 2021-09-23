@@ -281,6 +281,9 @@ li{
       <a class="nav-link" href="{{ route('schedule') }}">Schedule</a>
     </li>
     <li class="nav-item">
+      <a class="nav-link" href="/sponsors">Sponsors</a>
+    </li>
+    <li class="nav-item">
       <a class="nav-link"  onclick="checkRoom('room_two_open_time', '/exhibition');">Exhibition Hall</a>
     </li>
     <li class="nav-item">
@@ -303,7 +306,7 @@ li{
     @foreach($rooms as $item)
         <div id="myImage_zone{{$counter++}}" class="divInImage">
         <span style="color:#ffffff;"><b>{{$item->name}}</b></span>
-        <a class="stretch-link" href="/sponsor/1"></a>
+        <a class="stretch-link" href="/sponsor/{{$item->id}}"></a>
         <img src="{{$item->logo}}" class="stretch" style="width: 100%; border-radius: 35px" alt="" />
 
         </div>

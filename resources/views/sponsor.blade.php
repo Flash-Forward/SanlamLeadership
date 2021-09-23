@@ -106,6 +106,9 @@
 	<a class="nav-link" href="{{ route('schedule') }}" style="color: #000000 !important;"  onMouseOver="this.style.color='#0096FF'" onMouseOut="this.style.color='#000000'">Schedule</a>
   </li>
   <li class="nav-item">
+      <a class="nav-link" href="/sponsors"  style="color: #000000 !important;"  onMouseOver="this.style.color='#0096FF'" onMouseOut="this.style.color='#000000'">Sponsors</a>
+    </li>
+  <li class="nav-item">
 	<a class="nav-link"  onclick="checkRoom('room_two_open_time', '/room/99', event);" style="color: #000000 !important;"  onMouseOver="this.style.color='#0096FF'" onMouseOut="this.style.color='#000000'">Main Room</a>
   </li>
   <li class="nav-item">
@@ -119,7 +122,7 @@
 
 
 </nav>
-<img src="{{ asset('img') }}/sanlam/logo.png" alt="Sanlam" class="center" style="width: 40vw"> 
+<img src="{{$sponsor->logo}}" alt="Sanlam" class="center" style="width: 40vw"> 
 <ul class="nav nav-tabs" id="myTab" role="tablist" style="background: #0074c9;">
     <li class="nav-item" role="presentation" style="width: 33.33%;">
     <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true" style="width: 100%; color:#000">About Us</button>
@@ -133,8 +136,9 @@
 </ul>
 <div class="tab-content" id="myTabContent" style="background: #ccc; height: 70%;">
     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab" style="color: #000">
-    
-    
+		<div style="position:relative; left: 10%; width: 80%; text-align: center; font-size: 25px;">
+		{{$sponsor->content}}
+		</div>
     </div>
     <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="height: 100%;">

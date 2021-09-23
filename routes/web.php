@@ -52,9 +52,6 @@ Route::get('/lobby2', function () {
     return view('lobby2');
 })->name('lobby2');
 
-Route::get('/sponsor/1', function () {
-    return view('sponsor');
-})->name('sponsor');
 
 // Route::get('/exhibition', function () {
 //     return view('exhibition');
@@ -64,7 +61,6 @@ Route::get('/exhibition/layouts', function () {
     return view('exhibitionLayouts');
 })->name('exhibitionLayouts');
 
-Route::get('/sponsors', [App\Http\Controllers\RoomController::class, 'sponsorsMiddle'])->name('sponsors');
 
 
 
@@ -78,6 +74,9 @@ Route::group(['middleware' => ['auth', 'role:1']], function() {
 });
 Route::group(['middleware' => ['auth']], function() {
     Route::get('/room/{order?}', [App\Http\Controllers\RoomController::class, 'conference'])->name('room');
+    Route::get('/sponsor/{sponsor?}', [App\Http\Controllers\RoomController::class, 'sponsor'])->name('sponsor');
+
+    Route::get('/sponsors', [App\Http\Controllers\RoomController::class, 'sponsorsMiddle'])->name('sponsors');
 
     Route::get('/breakawayroom', function () {
         return view('conference.breakaway');
