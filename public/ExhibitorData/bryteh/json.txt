@@ -1,5 +1,0 @@
-{
-  "website": "https://www.brytesa.com/our-products/specialist-insurance/hospitality-insurance/",
-  "email": "Jessica.Van.Der.Westhuizen@brytesa.com,Rene.Stassen@brytesa.com,lana.mizen@brytesa.com",
-  "brochure": "bryteh/bryteh.pdf"
-}

@@ -1,5 +1,0 @@
-{
-  "website": "www.tracker.co.za",
-  "email": "cavanzyl@tracker.co.za,scrowder@tracker.co.za,swatt@tracker.co.za",
-  "brochure": "tracker/tracker.pdf"
-}

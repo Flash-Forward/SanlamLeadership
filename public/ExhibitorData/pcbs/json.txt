@@ -1,5 +1,0 @@
-{
-  "website": "www.pcbs.co.za",
-  "email": "lukas@pcbs.co.za,joey@pcbs.co.za",
-  "brochure": "pcbs/pcbs.pdf"
-}

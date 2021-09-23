@@ -1,5 +1,0 @@
-{
-  "website": "https://risksolutions.co.za/",
-  "email": "glen@risksolutions.co.za,chantelle@risksolutions.co.za,sonja@risksolutions.co.za",
-  "brochure": "rsi/rsi.pdf"
-}

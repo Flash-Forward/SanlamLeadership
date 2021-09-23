@@ -1,4 +1,0 @@
-{
-  "website": "www.brytesa.com",
-  "email": "marie.mower@brytesa.com,jeffry.butt@brytesa.com,michelle.dickson@brytesa.com"
-}

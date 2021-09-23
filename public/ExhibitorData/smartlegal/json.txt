@@ -1,5 +1,0 @@
-{
-  "website": "www.smartlegal.co.za",
-  "email": "francois@smartlegal.co.za,tracy@smartlegal.co.za,lwandi@smartlegal.co.za",
-  "brochure": "smartlegal/smartlegal.pdf"
-}

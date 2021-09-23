@@ -1,5 +1,0 @@
-{
-  "website": "www.vapsure.co.za",
-  "email": "jako@vapsure.co.za,ross@vapsure.co.za,demi@vapsure.co.za",
-  "brochure": "vap/vap.pdf"
-}

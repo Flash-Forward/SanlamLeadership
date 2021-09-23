@@ -1,4 +1,0 @@
-{
-  "website": "https://www.camargueum.co.za/",
-  "email": "catherine@camargueum.co.za,vaidah@camargueum.co.za,Tamlyn@camargueum.co.za"
-}

@@ -1,5 +1,0 @@
-{
-  "website": "https://www.impaccropsure.co.za/",
-  "email": "roelof@impacuma.co.za,riani@impacuma.co.za",
-  "brochure": "impac/impac.jpg"
-}
