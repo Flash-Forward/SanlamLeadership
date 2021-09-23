@@ -1585,6 +1585,8 @@ public $rows =	[
         return view('conference.room', [
 			'biggerScreen' => $biggerScreen,
             'bg' => $bg,
+            'exhibitor' => $exhibitor,
+
             'heading' => $heading,
             'webinar' => $webinar,
             'extra' => $extra,

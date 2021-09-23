@@ -151,7 +151,13 @@ h2{
                                         @csrf
                                     </form>
 <div id="bg">
-    <img src="{{ $bg->value ?? '' }}" class="stretch" alt="" />
+@if($backRoute != "NONE" )
+<img src="{{ $exhibitor->bg ?? '' }}" class="stretch" alt="" />
+
+@else
+<img src="{{ $bg->value ?? '' }}" class="stretch" alt="" />
+
+@endif
 	<div id="myImage_zone1" class="divInImage"></div>
 
     <!-- <a id="myImage_zone1" href="{{ route('room') }}"></a>

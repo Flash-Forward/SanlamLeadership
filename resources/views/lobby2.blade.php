@@ -463,6 +463,9 @@ color: #ffffff !important;
       <a class="nav-link" href="{{ route('schedule') }}">Schedule</a>
     </li>
     <li class="nav-item">
+      <a class="nav-link" href="/sponsors">Sponsors</a>
+    </li>
+    <li class="nav-item">
       <a class="nav-link"  onclick="checkRoom('room_two_open_time', '/room/99');">Main Room</a>
     </li>
     <li class="nav-item">
@@ -488,7 +491,7 @@ color: #ffffff !important;
 </div> 
 <div id="bg">
     <img src="{{ asset('img') }}/bryte/lobbyb.jpg" class="stretch" alt="" />
-    <div id="rightVideo2" class="divInImage">
+    <!-- <div id="rightVideo2" class="divInImage">
     <img src="{{ asset('img') }}/bryte/screen1.png" class="stretch" alt="" />
 
     <div id="rightVideoInner2" class="divInImage">
@@ -496,7 +499,7 @@ color: #ffffff !important;
     </div>
     <a id="rightVideoInner2"  href="/sponsors"></a>
 
-    </div>
+    </div> -->
 
     @if($room_three_name->value != "NONE")
     <div id="mainRoomHeadingArea" class="divInImage">
@@ -558,46 +561,47 @@ color: #ffffff !important;
     @endif
     @if($room_five_name->value == "NONE")
 
-    <!-- <div id="rightVideo" class="divInImage">
+    <div id="rightVideo" class="divInImage">
     <img src="{{ asset('img') }}/bryte/screen1.png" class="stretch" alt="" />
     <div id="rightVideoInner" class="divInImage">
     <video width="100%" height="100%" autoplay loop muted>
-    <source src="{{ asset('vid') }}/al.mp4" type="video/mp4" />
+    <source src="{{ asset('vid') }}/sanlam.mp4" type="video/mp4" />
     </video>
     </div>
-    </div> -->
+    </div>
 
     @else
-    <!-- <div id="rightVideo1" class="divInImage">
+    <div id="rightVideo1" class="divInImage">
     <img src="{{ asset('img') }}/bryte/screen1.png" class="stretch" alt="" />
     </div>
     <div id="rightVideoInner1" class="divInImage">
     <video width="100%" height="100%" autoplay loop muted>
-    <source src="{{ asset('vid') }}/al.mp4" type="video/mp4" />
+    <source src="{{ asset('vid') }}/sanlam.mp4" type="video/mp4" />
     </video>
-    </div> -->
+    </div>
     @endif
 
     @if($room_one_name->value == "NONE")
-<!-- 
+
     <div id="leftVideo" class="divInImage">
     <img src="{{ asset('img') }}/bryte/screen1.png" class="stretch" alt="" />
     <div id="leftVideoInner" class="divInImage">
     <video width="100%" height="100%" autoplay loop muted>
-    <source src="{{ asset('vid') }}/al.mp4" type="video/mp4" />
+    <source src="{{ asset('vid') }}/sanlam.mp4" type="video/mp4" />
     </video>
     </div>                                                                      
-    </div> -->
+    </div>
 
     @else
-    <!-- <div id="leftVideo1" class="divInImage">
+    <div id="leftVideo1" class="divInImage">
     <img src="{{ asset('img') }}/bryte/screen1.png" class="stretch" alt="" />
-    </div>
     <div id="leftVideoInner1" class="divInImage">
     <video width="100%" height="100%" autoplay loop muted>
-    <source src="{{ asset('vid') }}/al.mp4" type="video/mp4" />
+    <source src="{{ asset('vid') }}/sanlam.mp4" type="video/mp4" />
     </video>
-    </div> -->
+    </div>
+    </div>
+
     @endif
 
     <div id="leftBannerHolder" class="divInImage">
@@ -619,7 +623,7 @@ color: #ffffff !important;
     <div id="leftBannerHolder1" class="divInImage">
     <img src="{{ asset('img') }}/bryte/emptybanner.png" class="stretch" alt="" />
       <div id="leftBanner1" class="divInImage">
-      <img src="{{ asset('img') }}/sanlam/side.png" class="stretch" alt="" />
+      <img src="{{ asset('img') }}/sanlam/side2.jpg" class="stretch" alt="" />
       </div>
     </div>
 

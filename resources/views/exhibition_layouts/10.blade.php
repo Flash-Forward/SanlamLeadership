@@ -435,6 +435,9 @@ color: #ffffff !important;
       <a class="nav-link" href="{{ route('schedule') }}">Schedule</a>
     </li>
     <li class="nav-item">
+      <a class="nav-link" href="/sponsors">Sponsors</a>
+    </li>
+    <li class="nav-item">
       <a class="nav-link"  onclick="checkRoom('room_two_open_time', '/exhibition');">Exhibition Hall</a>
     </li>
     <li class="nav-item">

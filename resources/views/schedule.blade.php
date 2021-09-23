@@ -102,6 +102,9 @@
 	<a class="nav-link" href="{{ route('schedule') }}" style="color: #000000 !important;"  onMouseOver="this.style.color='#0096FF'" onMouseOut="this.style.color='#000000'">Schedule</a>
   </li>
   <li class="nav-item">
+      <a class="nav-link" href="/sponsors" style="color: #000000 !important;"  onMouseOver="this.style.color='#0096FF'" onMouseOut="this.style.color='#000000'">Sponsors</a>
+    </li>
+  <li class="nav-item">
 	<a class="nav-link"  onclick="checkRoom('room_two_open_time', '/room/99', event);" style="color: #000000 !important;"  onMouseOver="this.style.color='#0096FF'" onMouseOut="this.style.color='#000000'">Main Room</a>
   </li>
   <li class="nav-item">
