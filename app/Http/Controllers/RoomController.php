@@ -27,7 +27,7 @@ public $rows =	[
 				//Day 1:
 				[
 					'session_title'		=> 'CONFERENCE PROGRAMME FOR WE-LINK', 	//should not be mandatory
-					'date'				=> '2021-08-13',	//required - let's us know which tab it should be placed in
+					'date'				=> '2021-10-06',	//required - let's us know which tab it should be placed in
 					'sessions'			=>
 					[
 						[	//Break 1
@@ -1198,8 +1198,8 @@ public $rows =	[
 		$calEndTime 	= strtotime($endTime);
 		
 		//calendar event START date & time:
-		$em = 7; 	//month
-		$ed = 13;	//day
+		$em = 8; 	//month
+		$ed = 6;	//day
 		$eY = 2021;	//year
 		
 		$sH = date('H', $calStrtTime); 	//Hour
@@ -1215,7 +1215,7 @@ public $rows =	[
 					var '.$nm.' = ics();
 					var strt_'.$nm.' = new Date('.$eY.', '.$em.', '.$ed.', '.$sH.', '.$si.', 0, 0);
 					var end_'.$nm.'  = new Date('.$eY.', '.$em.', '.$ed.', '.$eH.', '.$eM.', 0, 0);
-					'.$nm.'.addEvent(\''.$room['room_desc'].'\', \''.$room['room_info'].'\', \'https://alhealth.welink.live'.$room['link'].'\', strt_'.$nm.', end_'.$nm.');
+					'.$nm.'.addEvent(\''.$room['room_desc'].'\', \''.$room['room_info'].'\', \'https://sanlam.welink.live'.$room['link'].'\', strt_'.$nm.', end_'.$nm.');
 				</script>';
 		$addevent = 'onClick="'.$nm.'.download(\''.$room['room_desc'].' - '.$room['room_name'].'\');"';
 		

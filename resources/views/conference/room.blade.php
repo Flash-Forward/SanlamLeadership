@@ -165,9 +165,11 @@ h2{
     <a id="myImage_zone3"></a> -->
     <!-- <a id="myImage_zone2" onclick="event.preventDefault();document.getElementById('login-form').submit();"></a> -->
 </div>
+@if($exhibitor->heading != 0)
 <div class="header" id="myHeader">
-  <h2 style="font-size: 2.5vw !important;">{{$heading}}</h2>
-</div> 
+  <h2 style="font-size: 2.5vw !important; color: {{$exhibitor->headingColor}} !important;">{{$heading}}</h2>
+</div>
+@endif
 @if(str_contains($webinar, "http"))
 
 <div id="myImage_zone1" class="divInImage">
