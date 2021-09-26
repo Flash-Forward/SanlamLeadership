@@ -81,7 +81,7 @@ body, html {
   background-size: cover;
   width:18.2%;
     height:20%;
-    top:15.5%;
+    top:20.5%;
     left:1.4%;
     border-radius: 35px;
 }
@@ -93,7 +93,7 @@ body, html {
   flex-direction: column;
   width:18.2%;
     height:20%;
-    top:15.5%;
+    top:20.5%;
     left:21%;
     border-radius: 35px;
 }
@@ -105,7 +105,7 @@ body, html {
   flex-direction: column;
   width:18.2%;
     height:20%;
-    top:15.5%;
+    top:20.5%;
     left:40.6%;
     border-radius: 35px;
 }
@@ -117,7 +117,7 @@ body, html {
   background-size: cover;
   width:18.2%;
     height:20%;
-    top:15.5%;
+    top:20.5%;
     left:60.2%;
     border-radius: 35px;
 }
@@ -130,7 +130,7 @@ body, html {
   background-size: cover;
   width:18.2%;
     height:20%;
-    top:15.5%;
+    top:20.5%;
     left:79.8%;
     border-radius: 35px;
 }

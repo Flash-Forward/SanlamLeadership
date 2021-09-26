@@ -1551,8 +1551,18 @@ public $rows =	[
     }
 
 	public function sponsor(Exhibitor $sponsor){
+        $extra = json_decode($sponsor->extra);
+		$files[0] = json_decode($sponsor->file1);
+		$files[1] = json_decode($sponsor->file2);
+		$files[2] = json_decode($sponsor->file3);
+		$files[3] = json_decode($sponsor->file4);
+
         return view('sponsor', [
             'sponsor' => $sponsor,
+            'extra' => $extra,
+            'files' => $files,
+
+
         ]);
 	}
 

@@ -89,7 +89,43 @@
   width: 50%;
 }
 
+ /* Style all font awesome icons */
+ .fa {
+  padding: 20px;
+  width: 65px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+} 
+
+/* Twitter */
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+} 
+
 		</style>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
 	<script src="{{ asset('js') }}/schedule/ics.deps.min.js"></script>
@@ -122,56 +158,74 @@
 
 
 </nav>
-<img src="{{$sponsor->logo}}" alt="Sanlam" class="center" style="width: 40vw"> 
-<ul class="nav nav-tabs" id="myTab" role="tablist" style="background: #0074c9;">
+<img src="{{$sponsor->logo}}" alt="Sanlam" class="center" style="width: 30vw"> 
+<ul class="nav nav-tabs" id="myTab" role="tablist" style="background: {{$sponsor->color}};">
     <li class="nav-item" role="presentation" style="width: 33.33%;">
     <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true" style="width: 100%; color:#000">About Us</button>
     </li>
     <li class="nav-item" role="presentation" style="width: 33.33%;">
-    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false" style="width: 100%; color:#000">Media</button>
+    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false" style="width: 100%; color:#000">Downloadable Content</button>
     </li>
     <li class="nav-item" role="presentation" style="width: 33.33%;">
-    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false" style="width: 100%; color:#000">Contact</button>
+    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false" style="width: 100%; color:#000">Contact Us</button>
     </li>
 </ul>
 <div class="tab-content" id="myTabContent" style="background: #ccc; height: 70%;">
     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab" style="color: #000">
 		<div style="position:relative; left: 10%; width: 80%; text-align: center; font-size: 25px;">
+		<h1>About Us</h1>
+		<hr>
 		{{$sponsor->content}}
 		</div>
     </div>
     <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="height: 100%;">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                <img class="d-block w-100" src="https://www.adweek.com/files/2015_May/iStock-Unfinished-Business-6.jpg" alt="First slide" style="max-height: 60%; width: auto !important; height: 80%;">
-                </div>
-                <div class="carousel-item">
-                <img class="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAJQYnWluCv8VWzRTxkZQe6kHwL3Zwmra_ng&usqp=CAU" alt="Second slide" style="height: 80%;">
-                </div>
-                <div class="carousel-item">
-                <img class="d-block w-100" src="https://images.unsplash.com/photo-1560932684-8f7cbcaf5751?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3RvY2slMjBwaG90b2dyYXBoeXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="Third slide" style="height: 80%;">
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators"  data-target="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators"  data-target="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-    
+		<div style="position:relative; left: 10%; width: 80%; text-align: center; font-size: 25px;">
+		<h1>Downloadable Content</h1>
+		<hr>
+		<div class="row">
+				@for ($i = 0; $i < $sponsor->numfiles; $i++)
+					<div class="col-md-{{12/$sponsor->numfiles}}">
+					<span class="material-icons" style="font-size: 60px;">description</span>
+					<h2>{{ $files[$i]->name }}<h2>
+					<a href="{{ asset('ExhibitorData') }}/{{ $files[$i]->path }}" target="_blank" class="btn" style="background: {{$sponsor->color}};">Download</a>
+					</div>
+				@endfor
+			</div>
+		</div>
     </div>
     <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-    
-    
+		<div style="position:relative; left: 10%; width: 80%; text-align: center;">
+			<h1>Contact Us</h1>
+			<hr>
+			<div class="row">
+				<div class="col-md-4">
+				<span class="material-icons" style="font-size: 60px;">web</span>
+				<h2>Website<h2>
+				<a href="{{$extra->website}}">{{$extra->website}}</a>
+				</div>
+				<div class="col-md-4">
+				<span class="material-icons" style="font-size: 60px;">email</span>
+				<h2>Email<h2>
+				<a href="mailto:{{$extra->email}}">{{$extra->email}}</a>
+
+				</div>
+				<div class="col-md-4">
+				<span class="material-icons" style="font-size: 60px;">groups</span>
+				<h2>Social Media<h2>
+				<div class="row justify-content-center">
+					<div class="col-md-2">
+					<a href="{{$sponsor->facebook}}" target="_blank" class="fa fa-facebook"></a>
+					</div>
+					<div class="col-md-2">
+					<a href="{{$sponsor->twitter}}" target="_blank" class="fa fa-twitter"></a>
+					</div>
+					<div class="col-md-2">
+					<a href="{{$sponsor->linkedin}}" target="_blank" class="fa fa-linkedin"></a>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
     
     </div>
 </div>
