@@ -179,7 +179,7 @@
 		</div>
     </div>
     <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-		<div style="position:relative; left: 10%; width: 80%; text-align: center; font-size: 25px;">
+		<div style="position:relative; left: 10%; width: 80%; text-align: center; font-size: 3vw;">
 		<h1>Downloadable Content</h1>
 		<hr>
 		<div class="row">
