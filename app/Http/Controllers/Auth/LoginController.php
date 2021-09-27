@@ -38,6 +38,10 @@ class LoginController extends Controller
            // Auth::logout();
             return '/lobby';
             break; 
+            case '3':
+              // Auth::logout();
+               return '/lobby';
+               break; 
       
           default:
             return '/home'; 

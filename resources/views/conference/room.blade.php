@@ -169,7 +169,7 @@ h2{
 @if(str_contains($webinar, "http"))
 
 <div id="myImage_zone1" class="divInImage">
-@if(Auth::user()->user_roles_id == 2)
+@if(Auth::user()->user_roles_id != 1 )
 <iframe src="{{$webinar}}" allowfullscreen="true" allowusermedia="true" allow="microphone; camera; accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; display-capture" title="description" width="100%" height="100%" id="iframeHolder"></iframe> 
 
 @else
@@ -187,7 +187,7 @@ h2{
 <script type='text/javascript'>
 	var _options = {
 		'_license_key':'{{$webinar}}',
-@if(Auth::user()->user_roles_id == 2)
+@if(Auth::user()->user_roles_id != 1)
 
 		'_role_token':'',
 @else

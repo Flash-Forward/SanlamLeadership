@@ -683,7 +683,28 @@ function checkRoom(room, route){
 
               @endif
               {
+                if(route == "/room/500"){
+                  @if(Auth::user()->user_roles_id == 3)
+	                  window.location.href = route;
+
+                  @else
+                  swalWithBootstrapButtons.fire({
+                        html: '<span style="color:#ffffff; font-size: 1.2vw;">This room is reserved for VIP users</span>',
+                        //html: '<span style="color:#ffffff; font-size: 1.2vw;">This room is closed</span>',
+
+                        background: "url('{{ asset('img') }}/bryte/background.jpg')",
+                        // html: true,
+
+                    padding: "8px",
+                    margin: "2px",
+                    width: "20%",
+                                //footer: '<a href>Why do I have this issue?</a>'
+                            })
+                  @endif
+                }else{
 	                window.location.href = route;
+
+                }
                     
                 }else{
                     swalWithBootstrapButtons.fire({
