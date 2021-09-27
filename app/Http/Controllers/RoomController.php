@@ -1198,7 +1198,7 @@ public $rows =	[
 		$calEndTime 	= strtotime($endTime);
 		
 		//calendar event START date & time:
-		$em = 8; 	//month
+		$em = 9; 	//month
 		$ed = 6;	//day
 		$eY = 2021;	//year
 		
