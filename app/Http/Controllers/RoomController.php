@@ -36,7 +36,11 @@ public $rows =	[
 							'start_time'	=> '11:30',
 							'end_time'		=> '00:00',
 							'interval'		=>	true,
-							'alert'         => true
+							'alert'         => true,
+							'route'         => 'exhibition',
+							'route_time'         => 'room_two_open_time'
+
+
 						],
 						[	//Break 1
 							'title'			=> 'NETWORKING LOUNGES OPEN',
@@ -44,7 +48,9 @@ public $rows =	[
 							'start_time'	=> '11:30',
 							'end_time'		=> '00:00',
 							'interval'		=>	true,
-							'alert'         => true
+							'alert'         => true,
+							'route'         => 'networking',
+							'route_time'         => 'room_five_open_time'
 						],
 						[	//Row 2
 							'title'			=> 'Welcome',
@@ -182,7 +188,9 @@ public $rows =	[
 							'start_time'	=> '14:30',
 							'end_time'		=> '00:00',
 							'interval'		=>	true,
-							'alert'         => true
+							'alert'         => true,
+							'route'         => 'exhibition',
+							'route_time'         => 'room_two_open_time'
 						],
 						[	//Break 1
 							'title'			=> 'NETWORKING LOUNGES OPEN',
@@ -190,7 +198,9 @@ public $rows =	[
 							'start_time'	=> '14:30',
 							'end_time'		=> '00:00',
 							'interval'		=>	true,
-							'alert'         => true
+							'alert'         => true,
+							'route'         => 'networking',
+							'route_time'         => 'room_five_open_time'
 						],
 						[	//Row 2
 							'title'			=> 'Welcome',
@@ -303,7 +313,7 @@ public $rows =	[
 				],
 				[
 					'session_title'		=> 'CONFERENCE PROGRAMME FOR WE-LINK', 	//should not be mandatory
-					'date'				=> '2021-08-14',	//required - let's us know which tab it should be placed in
+					'date'				=> '2021-10-07',	//required - let's us know which tab it should be placed in
 					'sessions'			=>
 					[
 						[	//Break 1
@@ -312,7 +322,9 @@ public $rows =	[
 							'start_time'	=> '12:00',
 							'end_time'		=> '00:00',
 							'interval'		=>	true,
-							'alert'         => true
+							'alert'         => true,
+							'route'         => 'exhibition',
+							'route_time'         => 'room_two_open_time'
 						],
 						[	//Break 1
 							'title'			=> 'NETWORKING LOUNGES OPEN',
@@ -320,7 +332,9 @@ public $rows =	[
 							'start_time'	=> '12:00',
 							'end_time'		=> '00:00',
 							'interval'		=>	true,
-							'alert'         => true
+							'alert'         => true,
+							'route'         => 'networking',
+							'route_time'         => 'room_five_open_time'
 						],
 						[	//Row 2
 							'title'			=> 'Welcome',
@@ -719,7 +733,9 @@ public $rows =	[
 							'start_time'	=> '15:45',
 							'end_time'		=> '00:00',
 							'interval'		=>	true,
-							'alert'         => true
+							'alert'         => true,
+							'route'         => 'exhibition',
+							'route_time'         => 'room_two_open_time'
 						],
 						[	//Break 1
 							'title'			=> 'NETWORKING LOUNGES OPEN',
@@ -727,7 +743,9 @@ public $rows =	[
 							'start_time'	=> '15:45',
 							'end_time'		=> '00:00',
 							'interval'		=>	true,
-							'alert'         => true
+							'alert'         => true,
+							'route'         => 'networking',
+							'route_time'         => 'room_five_open_time'
 						],
 						[	//Row 2
 							'title'			=> 'Welcome',
@@ -802,7 +820,7 @@ public $rows =	[
 				],
 				[
 					'session_title'		=> 'CONFERENCE PROGRAMME FOR WE-LINK', 	//should not be mandatory
-					'date'				=> '2021-08-15',	//required - let's us know which tab it should be placed in
+					'date'				=> '2021-10-08',	//required - let's us know which tab it should be placed in
 					'sessions'			=>
 					[
 						[	//Break 1
@@ -811,7 +829,9 @@ public $rows =	[
 							'start_time'	=> '09:00',
 							'end_time'		=> '00:00',
 							'interval'		=>	true,
-							'alert'         => true
+							'alert'         => true,
+							'route'         => 'exhibition',
+							'route_time'         => 'room_two_open_time'
 						],
 						[	//Break 1
 							'title'			=> 'NETWORKING LOUNGES OPEN',
@@ -819,7 +839,9 @@ public $rows =	[
 							'start_time'	=> '09:00',
 							'end_time'		=> '00:00',
 							'interval'		=>	true,
-							'alert'         => true
+							'alert'         => true,
+							'route'         => 'networking',
+							'route_time'         => 'room_five_open_time'
 						],
 						[	//Row 2
 							'title'			=> 'Welcome',
@@ -1001,7 +1023,9 @@ public $rows =	[
 							'start_time'	=> '11:25',
 							'end_time'		=> '00:00',
 							'interval'		=>	true,
-							'alert'         => true
+							'alert'         => true,
+							'route'         => 'exhibition',
+							'route_time'         => 'room_two_open_time'
 						],
 						[	//Break 1
 							'title'			=> 'NETWORKING LOUNGES OPEN',
@@ -1009,7 +1033,9 @@ public $rows =	[
 							'start_time'	=> '11:25',
 							'end_time'		=> '00:00',
 							'interval'		=>	true,
-							'alert'         => true
+							'alert'         => true,
+							'route'         => 'networking',
+							'route_time'         => 'room_five_open_time'
 						],
 						[	//Row 2
 							'title'			=> 'Welcome',
@@ -1451,9 +1477,9 @@ public $rows =	[
 		$calEndTime 	= strtotime($endTime);
 		
 		//calendar event START date & time:
-		$em = 9; 	//month
-		$ed = 6;	//day
-		$eY = 2021;	//year
+		$em = date('m', $calDate)-1; 	//month
+		$ed = date('d', $calDate);	//day
+		$eY = date('Y', $calDate);	//year
 		
 		$sH = date('H', $calStrtTime); 	//Hour
 		$si = date('i', $calStrtTime); 	//minute
@@ -1681,8 +1707,10 @@ public $rows =	[
 			
 			if ($session['interval'])
 			{
+				$onclick = 'onClick="checkRoom(\''.$session['route_time'].'\', \'/'.$session['route'].'\', event);"';
+
 				if(isset($session['alert'])){
-					$html .= '	<div class="'.$cardCls.'-alert">
+					$html .= '	<div class="'.$cardCls.'-alert" style="margin-bottom: 40px; margin-top: 40px;">
 					<div class="'.$cardHdrCls.'-alert" id="'.$hdrId.'">
 						<div class="row interval-row-alert">
 							<div class="col-sm-3">

@@ -285,7 +285,7 @@ body, html {
   width: 9.2vw;
     height: 9.2vw;
     top:20%;
-    left:29%;
+    left:27%;
   border-radius: 35px;
     
 }
@@ -301,7 +301,7 @@ body, html {
   width: 9.2vw;
     height: 9.2vw;
     top:20%;
-    left:57%;
+    left:59%;
     border-radius: 35px;
 }
 
@@ -309,7 +309,7 @@ body, html {
   width: 9.2vw;
     height: 9.2vw;
     top:43%;
-    left:29%;
+    left:27%;
     border-radius: 35px;
 }
 
@@ -326,7 +326,7 @@ body, html {
   width: 9.2vw;
     height: 9.2vw;
     top:43%;
-    left:57%;
+    left:59%;
   border-radius: 35px;
   
 }
@@ -335,7 +335,7 @@ body, html {
   width: 9.2vw;
     height: 9.2vw;
     top:66%;
-    left:29%;
+    left:27%;
     border-radius: 35px;
 }
 #myImage_zone9{
@@ -350,7 +350,7 @@ body, html {
   width: 9.2vw;
     height: 9.2vw;
     top:66%;
-    left:57%;
+    left:59%;
     border-radius: 35px;
 }
 
