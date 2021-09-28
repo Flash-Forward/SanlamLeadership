@@ -50,7 +50,7 @@ public $rows =	[
 							'title'			=> 'Welcome',
 							'image'			=> '/img/schedule/session1.png',
 							'start_time'	=> '13:00',
-							'end_time'		=> '13:10',
+							'end_time'		=> '13:15',
 							'interval'		=>	false,
 							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
@@ -67,7 +67,7 @@ public $rows =	[
  
 															[
 																'pic'			=> '/img/schedule/profile/sanlam.webp',
-																'name'			=> 'Nasrat Edoo Sirkissoon', 
+																'name'			=> 'Sipho Mncwabe', 
 																'designation'	=> ''																					
 															], 
 
@@ -80,14 +80,14 @@ public $rows =	[
 						[	//Row 2
 							'title'			=> 'Welcome',
 							'image'			=> '/img/schedule/session2.png',
-							'start_time'	=> '13:10',
+							'start_time'	=> '13:15',
 							'end_time'		=> '13:30',
 							'interval'		=>	false,
 							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'State of the BlueStar Nation',
-														'room_info'		=> 	'State of the BlueStar Nation',
+														'room_desc'		=> 	'Our BlueStar world',
+														'room_info'		=> 	'Our BlueStar world',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
 															/*
@@ -99,6 +99,12 @@ public $rows =	[
 															[
 																'pic'			=> '/img/schedule/profile/sanlam.webp',
 																'name'			=> 'Heinrich Punt', 
+																'designation'	=> ''																					
+															],
+															 
+															[
+																'pic'			=> '/img/schedule/profile/sanlam.webp',
+																'name'			=> 'Theesan Moodley', 
 																'designation'	=> ''																					
 															], 
 
@@ -117,8 +123,8 @@ public $rows =	[
 							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Futuristic Overview ',
-														'room_info'		=> 	'Futuristic Overview ',
+														'room_desc'		=> 	'The state we are in',
+														'room_info'		=> 	'The state we are in',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
 															/*
@@ -142,8 +148,8 @@ public $rows =	[
 						[	//Row 2
 							'title'			=> 'Welcome',
 							'image'			=> '/img/schedule/session4.png',
-							'start_time'	=> '13:30',
-							'end_time'		=> '14:00',
+							'start_time'	=> '14:00',
+							'end_time'		=> '14:30',
 							'interval'		=>	false,
 							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
@@ -160,7 +166,7 @@ public $rows =	[
  
 															[
 																'pic'			=> '/img/schedule/profile/sanlam.webp',
-																'name'			=> 'Nazmeera Moola', 
+																'name'			=> 'Jeremy Gardner', 
 																'designation'	=> ''																					
 															], 
 
@@ -173,7 +179,7 @@ public $rows =	[
 						[	//Break 1
 							'title'			=> 'EXHIBITION HALL OPEN',
 							'image'			=> '/img/schedule/seal-01.jpg',
-							'start_time'	=> '14:35',
+							'start_time'	=> '14:30',
 							'end_time'		=> '00:00',
 							'interval'		=>	true,
 							'alert'         => true
@@ -181,7 +187,7 @@ public $rows =	[
 						[	//Break 1
 							'title'			=> 'NETWORKING LOUNGES OPEN',
 							'image'			=> '/img/schedule/seal-01.jpg',
-							'start_time'	=> '14:35',
+							'start_time'	=> '14:30',
 							'end_time'		=> '00:00',
 							'interval'		=>	true,
 							'alert'         => true
@@ -195,8 +201,8 @@ public $rows =	[
 							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'SA Overview',
-														'room_info'		=> 	'SA Overview',
+														'room_desc'		=> 	'My upside of down talk',
+														'room_info'		=> 	'My upside of down talk',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
 															/*
@@ -207,7 +213,7 @@ public $rows =	[
  
 															[
 																'pic'			=> '/img/schedule/profile/sanlam.webp',
-																'name'			=> 'TBC', 
+																'name'			=> 'Bruce Whitfield', 
 																'designation'	=> ''																					
 															], 
 
@@ -228,8 +234,8 @@ public $rows =	[
 							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Divergent Thinking ',
-														'room_info'		=> 	'Divergent Thinking ',
+														'room_desc'		=> 	'Diversity and Inclusion, a case for robust problem solving and superior client experience',
+														'room_info'		=> 	'Diversity and Inclusion, a case for robust problem solving and superior client experience',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
 															/*
@@ -261,8 +267,8 @@ public $rows =	[
 							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Close ',
-														'room_info'		=> 	'Close ',
+														'room_desc'		=> 	'Closing',
+														'room_info'		=> 	'Closing',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
 															/*
@@ -325,8 +331,8 @@ public $rows =	[
 							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Opening & Welcome',
-														'room_info'		=> 	'',
+														'room_desc'		=> 	'Welcome and overviewof day 1',
+														'room_info'		=> 	'Welcome and overviewof day 1',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
 															/*
@@ -338,6 +344,11 @@ public $rows =	[
 															[
 																'pic'			=> '/img/schedule/profile/sanlam.webp',
 																'name'			=> 'Tashlin Naidoo', 
+																'designation'	=> ''																					
+															], 
+															[
+																'pic'			=> '/img/schedule/profile/sanlam.webp',
+																'name'			=> 'Nasrat Edoo Sirkissoon', 
 																'designation'	=> ''																					
 															], 
 
@@ -357,8 +368,8 @@ public $rows =	[
 
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'World Class Financial Planning',
-														'room_info'		=> 	'World Class Financial Planning',
+														'room_desc'		=> 	'Healthy plans for healthy clients',
+														'room_info'		=> 	'Healthy plans for healthy clients',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
 															/*
@@ -369,7 +380,7 @@ public $rows =	[
  
 															[
 																'pic'			=> '/img/schedule/profile/sanlam.webp',
-																'name'			=> 'TBC', 
+																'name'			=> 'Dr Frank Magwegwe', 
 																'designation'	=> ''																					
 															], 
 
@@ -378,33 +389,17 @@ public $rows =	[
 													
 												]
 						],
-						[	//Break 1
-							'title'			=> 'EXHIBITION HALL OPEN',
-							'image'			=> '/img/schedule/seal-01.jpg',
-							'start_time'	=> '13:45',
-							'end_time'		=> '00:00',
-							'interval'		=>	true,
-							'alert'         => true
-						],
-						[	//Break 1
-							'title'			=> 'NETWORKING LOUNGES OPEN',
-							'image'			=> '/img/schedule/seal-01.jpg',
-							'start_time'	=> '13:45',
-							'end_time'		=> '00:00',
-							'interval'		=>	true,
-							'alert'         => true
-						],
 						[	//Row 2
 							'title'			=> 'Welcome',
 							'image'			=> '/img/schedule/session3.png',
 							'start_time'	=> '13:45',
-							'end_time'		=> '14:50',
+							'end_time'		=> '14:20',
 							'interval'		=>	false,
 							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Room 1', //ideally a table and this should be an id referencing that row
 														'room_desc'		=> 	'Glacier',
-														'room_info'		=> 	'',
+														'room_info'		=> 	'Product House Thought Leadership breakaways',
 														'link'			=>	'/room/101',
 														'speakers'		=> 	[	
 															/*
@@ -415,7 +410,7 @@ public $rows =	[
  
 															[
 																'pic'			=> '/img/schedule/profile/sanlam.webp',
-																'name'			=> 'TBC', 
+																'name'			=> 'Francis Marais', 
 																'designation'	=> ''																					
 															], 
 
@@ -424,7 +419,7 @@ public $rows =	[
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Room 2', //ideally a table and this should be an id referencing that row
 														'room_desc'		=> 	'Sanlam Individual Life',
-														'room_info'		=> 	'',
+														'room_info'		=> 	'Product House Thought Leadership breakaways',
 														'link'			=>	'/room/102',
 														'speakers'		=> 	[	
 															/*
@@ -435,7 +430,7 @@ public $rows =	[
  
 															[
 																'pic'			=> '/img/schedule/profile/sanlam.webp',
-																'name'			=> 'TBC', 
+																'name'			=> 'Dr Marion Morkel', 
 																'designation'	=> ''																					
 															], 
 
@@ -444,7 +439,7 @@ public $rows =	[
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Room 3', //ideally a table and this should be an id referencing that row
 														'room_desc'		=> 	'Santam',
-														'room_info'		=> 	'',
+														'room_info'		=> 	'Product House Thought Leadership breakaways',
 														'link'			=>	'/room/103',
 														'speakers'		=> 	[	
 															/*
@@ -455,7 +450,7 @@ public $rows =	[
  
 															[
 																'pic'			=> '/img/schedule/profile/sanlam.webp',
-																'name'			=> 'TBC', 
+																'name'			=> 'Andrew Coutts', 
 																'designation'	=> ''																					
 															], 
 
@@ -464,7 +459,7 @@ public $rows =	[
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Room 4', //ideally a table and this should be an id referencing that row
 														'room_desc'		=> 	'EB BlueStar',
-														'room_info'		=> 	'',
+														'room_info'		=> 	'Product House Thought Leadership breakaways',
 														'link'			=>	'/room/104',
 														'speakers'		=> 	[	
 															/*
@@ -475,7 +470,7 @@ public $rows =	[
  
 															[
 																'pic'			=> '/img/schedule/profile/sanlam.webp',
-																'name'			=> 'TBC', 
+																'name'			=> 'David Gluckman', 
 																'designation'	=> ''																					
 															], 
 
@@ -483,8 +478,8 @@ public $rows =	[
 													],
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Room 5', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Medical',
-														'room_info'		=> 	'',
+														'room_desc'		=> 	'Sanlam Health Solutions',
+														'room_info'		=> 	'Product House Thought Leadership breakaways',
 														'link'			=>	'/room/105',
 														'speakers'		=> 	[	
 															/*
@@ -495,7 +490,7 @@ public $rows =	[
  
 															[
 																'pic'			=> '/img/schedule/profile/sanlam.webp',
-																'name'			=> 'TBC', 
+																'name'			=> 'Dr Lungi Nyathi', 
 																'designation'	=> ''																					
 															], 
 
@@ -504,7 +499,7 @@ public $rows =	[
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Room 6', //ideally a table and this should be an id referencing that row
 														'room_desc'		=> 	'Sanlam Investements',
-														'room_info'		=> 	'',
+														'room_info'		=> 	'Product House Thought Leadership breakaways',
 														'link'			=>	'/room/106',
 														'speakers'		=> 	[	
 															/*
@@ -515,7 +510,7 @@ public $rows =	[
  
 															[
 																'pic'			=> '/img/schedule/profile/sanlam.webp',
-																'name'			=> 'TBC', 
+																'name'			=> 'Gielie de Swardt', 
 																'designation'	=> ''																					
 															], 
 
@@ -528,14 +523,45 @@ public $rows =	[
 						[	//Row 2
 							'title'			=> 'Welcome',
 							'image'			=> '/img/schedule/session4.png',
-							'start_time'	=> '14:50',
-							'end_time'		=> '15:25',
+							'start_time'	=> '14:20',
+							'end_time'		=> '14:30',
 							'interval'		=>	false,
 							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Digital Transformation',
-														'room_info'		=> 	'',
+														'room_desc'		=> 	'Our digital BlueStar journey',
+														'room_info'		=> 	'Our digital BlueStar journey',
+														'link'			=>	'/room/99',
+														'speakers'		=> 	[	
+															/*
+															Ideally also a table and this array should hold the user id's.
+															Having a table means we have access to any other relevant data if necessary,
+															such as email, phone no, website, etc.
+															*/
+ 
+															[
+																'pic'			=> '/img/schedule/profile/sanlam.webp',
+																'name'			=> 'Danelle', 
+																'designation'	=> ''																					
+															], 
+
+														]
+													],
+	
+													
+												]
+						],
+						[	//Row 2
+							'title'			=> 'Welcome',
+							'image'			=> '/img/schedule/session5.png',
+							'start_time'	=> '14:30',
+							'end_time'		=> '15:45',
+							'interval'		=>	false,
+							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
+													[	//Room 1 - Claims
+														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
+														'room_desc'		=> 	'DX as a Strategy for Disruption',
+														'room_info'		=> 	'DX as a Strategy for Disruption',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
 															/*
@@ -556,10 +582,141 @@ public $rows =	[
 													
 												]
 						],
+						[	//Row 2
+							'title'			=> 'Welcome',
+							'image'			=> '/img/schedule/session6.png',
+							'start_time'	=> '15:25',
+							'end_time'		=> '15:45',
+							'interval'		=>	false,
+							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
+													[	//Room 1 - Claims
+														'room_name'		=> 	'Room 1', //ideally a table and this should be an id referencing that row
+														'room_desc'		=> 	'Glacier',
+														'room_info'		=> 	'Product house lucky draw winner',
+														'link'			=>	'/room/101',
+														'speakers'		=> 	[	
+															/*
+															Ideally also a table and this array should hold the user id's.
+															Having a table means we have access to any other relevant data if necessary,
+															such as email, phone no, website, etc.
+															*/
+ 
+															[
+																'pic'			=> '/img/schedule/profile/sanlam.webp',
+																'name'			=> 'Francis Marais', 
+																'designation'	=> ''																					
+															], 
+
+														]
+													],
+													[	//Room 1 - Claims
+														'room_name'		=> 	'Room 2', //ideally a table and this should be an id referencing that row
+														'room_desc'		=> 	'Sanlam Individual Life',
+														'room_info'		=> 	'Product house lucky draw winner',
+														'link'			=>	'/room/102',
+														'speakers'		=> 	[	
+															/*
+															Ideally also a table and this array should hold the user id's.
+															Having a table means we have access to any other relevant data if necessary,
+															such as email, phone no, website, etc.
+															*/
+ 
+															[
+																'pic'			=> '/img/schedule/profile/sanlam.webp',
+																'name'			=> 'Dr Marion Morkel', 
+																'designation'	=> ''																					
+															], 
+
+														]
+													],
+													[	//Room 1 - Claims
+														'room_name'		=> 	'Room 3', //ideally a table and this should be an id referencing that row
+														'room_desc'		=> 	'Santam',
+														'room_info'		=> 	'Product house lucky draw winner',
+														'link'			=>	'/room/103',
+														'speakers'		=> 	[	
+															/*
+															Ideally also a table and this array should hold the user id's.
+															Having a table means we have access to any other relevant data if necessary,
+															such as email, phone no, website, etc.
+															*/
+ 
+															[
+																'pic'			=> '/img/schedule/profile/sanlam.webp',
+																'name'			=> 'Andrew Coutts', 
+																'designation'	=> ''																					
+															], 
+
+														]
+													],
+													[	//Room 1 - Claims
+														'room_name'		=> 	'Room 4', //ideally a table and this should be an id referencing that row
+														'room_desc'		=> 	'EB BlueStar',
+														'room_info'		=> 	'Product house lucky draw winner',
+														'link'			=>	'/room/104',
+														'speakers'		=> 	[	
+															/*
+															Ideally also a table and this array should hold the user id's.
+															Having a table means we have access to any other relevant data if necessary,
+															such as email, phone no, website, etc.
+															*/
+ 
+															[
+																'pic'			=> '/img/schedule/profile/sanlam.webp',
+																'name'			=> 'David Gluckman', 
+																'designation'	=> ''																					
+															], 
+
+														]
+													],
+													[	//Room 1 - Claims
+														'room_name'		=> 	'Room 5', //ideally a table and this should be an id referencing that row
+														'room_desc'		=> 	'Sanlam Health Solutions',
+														'room_info'		=> 	'Product house lucky draw winner',
+														'link'			=>	'/room/105',
+														'speakers'		=> 	[	
+															/*
+															Ideally also a table and this array should hold the user id's.
+															Having a table means we have access to any other relevant data if necessary,
+															such as email, phone no, website, etc.
+															*/
+ 
+															[
+																'pic'			=> '/img/schedule/profile/sanlam.webp',
+																'name'			=> 'Dr Lungi Nyathi', 
+																'designation'	=> ''																					
+															], 
+
+														]
+													],
+													[	//Room 1 - Claims
+														'room_name'		=> 	'Room 6', //ideally a table and this should be an id referencing that row
+														'room_desc'		=> 	'Sanlam Investements',
+														'room_info'		=> 	'Product house lucky draw winner',
+														'link'			=>	'/room/106',
+														'speakers'		=> 	[	
+															/*
+															Ideally also a table and this array should hold the user id's.
+															Having a table means we have access to any other relevant data if necessary,
+															such as email, phone no, website, etc.
+															*/
+ 
+															[
+																'pic'			=> '/img/schedule/profile/sanlam.webp',
+																'name'			=> 'Gielie de Swardt', 
+																'designation'	=> ''																					
+															], 
+
+														]
+													],
+
+													
+												]
+						],
 						[	//Break 1
 							'title'			=> 'EXHIBITION HALL OPEN',
 							'image'			=> '/img/schedule/seal-01.jpg',
-							'start_time'	=> '15:25',
+							'start_time'	=> '15:45',
 							'end_time'		=> '00:00',
 							'interval'		=>	true,
 							'alert'         => true
@@ -567,22 +724,22 @@ public $rows =	[
 						[	//Break 1
 							'title'			=> 'NETWORKING LOUNGES OPEN',
 							'image'			=> '/img/schedule/seal-01.jpg',
-							'start_time'	=> '15:25',
+							'start_time'	=> '15:45',
 							'end_time'		=> '00:00',
 							'interval'		=>	true,
 							'alert'         => true
 						],
 						[	//Row 2
 							'title'			=> 'Welcome',
-							'image'			=> '/img/schedule/session5.png',
-							'start_time'	=> '15:45',
-							'end_time'		=> '17:00',
+							'image'			=> '/img/schedule/session7.png',
+							'start_time'	=> '16:00',
+							'end_time'		=> '16:55',
 							'interval'		=>	false,
 							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Awards Ceremony',
-														'room_info'		=> 	'',
+														'room_desc'		=> 	'BlueStar of the Year Awards Ceremony',
+														'room_info'		=> 	'BlueStar of the Year Awards Ceremony',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
 															/*
@@ -593,7 +750,38 @@ public $rows =	[
  
 															[
 																'pic'			=> '/img/schedule/profile/sanlam.webp',
-																'name'			=> 'TBC', 
+																'name'			=> 'Heinrich Punt', 
+																'designation'	=> ''																					
+															], 
+
+														]
+													],
+	
+													
+												]
+						],
+						[	//Row 2
+							'title'			=> 'Welcome',
+							'image'			=> '/img/schedule/session8.png',
+							'start_time'	=> '16:55',
+							'end_time'		=> '17:00',
+							'interval'		=>	false,
+							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
+													[	//Room 1 - Claims
+														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
+														'room_desc'		=> 	'Closing',
+														'room_info'		=> 	'Closing',
+														'link'			=>	'/room/99',
+														'speakers'		=> 	[	
+															/*
+															Ideally also a table and this array should hold the user id's.
+															Having a table means we have access to any other relevant data if necessary,
+															such as email, phone no, website, etc.
+															*/
+ 
+															[
+																'pic'			=> '/img/schedule/profile/sanlam.webp',
+																'name'			=> 'Heinrich Punt', 
 																'designation'	=> ''																					
 															], 
 
@@ -637,13 +825,13 @@ public $rows =	[
 							'title'			=> 'Welcome',
 							'image'			=> '/img/schedule/session1.png',
 							'start_time'	=> '10:00',
-							'end_time'		=> '11:30',
+							'end_time'		=> '10:10',
 							'interval'		=>	false,
 							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Opening & Welcome',
-														'room_info'		=> 	'',
+														'room_desc'		=> 	'Opening & Overview',
+														'room_info'		=> 	'Opening & Overview',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
 															/*
@@ -661,10 +849,22 @@ public $rows =	[
 
 														]
 													],
+
+													
+												]
+						],
+						[	//Row 2
+							'title'			=> 'Welcome',
+							'image'			=> '/img/schedule/session2.png',
+							'start_time'	=> '10:10',
+							'end_time'		=> '10:30',
+							'interval'		=>	false,
+							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
+
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Workshop Storyline',
-														'room_info'		=> 	'',
+														'room_desc'		=> 	'In Sanlam client relationships are important',
+														'room_info'		=> 	'In Sanlam client relationships are important',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
 															/*
@@ -675,17 +875,29 @@ public $rows =	[
  
 															[
 																'pic'			=> '/img/schedule/profile/sanlam.webp',
-																'name'			=> 'Heinrich Punt', 
+																'name'			=> 'Jurie Strydom', 
 																'designation'	=> ''																					
 															], 
 
 
 														]
 													],
+													
+													
+												]
+						],
+						[	//Row 2
+							'title'			=> 'Welcome',
+							'image'			=> '/img/schedule/session3.png',
+							'start_time'	=> '10:30',
+							'end_time'		=> '10:50',
+							'interval'		=>	false,
+							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
+
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Money EQ reports',
-														'room_info'		=> 	'',
+														'room_desc'		=> 	'Money EQ reports ',
+														'room_info'		=> 	'Money EQ reports ',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
 															/*
@@ -703,10 +915,22 @@ public $rows =	[
 
 														]
 													],
+													
+													
+												]
+						],
+						[	//Row 2
+							'title'			=> 'Welcome',
+							'image'			=> '/img/schedule/session4.png',
+							'start_time'	=> '10:50',
+							'end_time'		=> '11:10',
+							'interval'		=>	false,
+							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
+
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Value and Service segmentation model',
-														'room_info'		=> 	'',
+														'room_desc'		=> 	'Value and Service segmentation model for BlueStar',
+														'room_info'		=> 	'Value and Service segmentation model for BlueStar',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
 															/*
@@ -720,14 +944,31 @@ public $rows =	[
 																'name'			=> 'Nasrat Edoo Sirkissoon', 
 																'designation'	=> ''																					
 															], 
+															[
+																'pic'			=> '/img/schedule/profile/sanlam.webp',
+																'name'			=> 'Heinrich Punt', 
+																'designation'	=> ''																					
+															], 
 
 
 														]
 													],
+													
+													
+												]
+						],
+						[	//Row 2
+							'title'			=> 'Welcome',
+							'image'			=> '/img/schedule/session5.png',
+							'start_time'	=> '11:10',
+							'end_time'		=> '11:25',
+							'interval'		=>	false,
+							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
+
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
 														'room_desc'		=> 	'CX Overlay on Segmentation & VP',
-														'room_info'		=> 	'',
+														'room_info'		=> 	'CX Overlay on Segmentation & VP',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
 															/*
@@ -751,12 +992,13 @@ public $rows =	[
 														]
 													],
 													
+													
 												]
 						],
 						[	//Break 1
 							'title'			=> 'EXHIBITION HALL OPEN',
 							'image'			=> '/img/schedule/seal-01.jpg',
-							'start_time'	=> '11:30',
+							'start_time'	=> '11:25',
 							'end_time'		=> '00:00',
 							'interval'		=>	true,
 							'alert'         => true
@@ -764,22 +1006,22 @@ public $rows =	[
 						[	//Break 1
 							'title'			=> 'NETWORKING LOUNGES OPEN',
 							'image'			=> '/img/schedule/seal-01.jpg',
-							'start_time'	=> '11:30',
+							'start_time'	=> '11:25',
 							'end_time'		=> '00:00',
 							'interval'		=>	true,
 							'alert'         => true
 						],
 						[	//Row 2
 							'title'			=> 'Welcome',
-							'image'			=> '/img/schedule/session2.png',
-							'start_time'	=> '11:50',
+							'image'			=> '/img/schedule/session6.png',
+							'start_time'	=> '11:45',
 							'end_time'		=> '12:30',
 							'interval'		=>	false,
 							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Room 1', //ideally a table and this should be an id referencing that row
 														'room_desc'		=> 	'Glacier',
-														'room_info'		=> 	'',
+														'room_info'		=> 	'Client segmentation and experience workshop',
 														'link'			=>	'/room/101',
 														'speakers'		=> 	[	
 															/*
@@ -799,7 +1041,7 @@ public $rows =	[
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Room 2', //ideally a table and this should be an id referencing that row
 														'room_desc'		=> 	'Sanlam Individual Life',
-														'room_info'		=> 	'',
+														'room_info'		=> 	'Client segmentation and experience workshop',
 														'link'			=>	'/room/102',
 														'speakers'		=> 	[	
 															/*
@@ -819,7 +1061,7 @@ public $rows =	[
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Room 3', //ideally a table and this should be an id referencing that row
 														'room_desc'		=> 	'Santam',
-														'room_info'		=> 	'',
+														'room_info'		=> 	'Client segmentation and experience workshop',
 														'link'			=>	'/room/103',
 														'speakers'		=> 	[	
 															/*
@@ -839,7 +1081,7 @@ public $rows =	[
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Room 4', //ideally a table and this should be an id referencing that row
 														'room_desc'		=> 	'EB BlueStar',
-														'room_info'		=> 	'',
+														'room_info'		=> 	'Client segmentation and experience workshop',
 														'link'			=>	'/room/104',
 														'speakers'		=> 	[	
 															/*
@@ -859,7 +1101,7 @@ public $rows =	[
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Room 5', //ideally a table and this should be an id referencing that row
 														'room_desc'		=> 	'Medical',
-														'room_info'		=> 	'',
+														'room_info'		=> 	'Client segmentation and experience workshop',
 														'link'			=>	'/room/105',
 														'speakers'		=> 	[	
 															/*
@@ -879,7 +1121,7 @@ public $rows =	[
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Room 6', //ideally a table and this should be an id referencing that row
 														'room_desc'		=> 	'Sanlam Investements',
-														'room_info'		=> 	'',
+														'room_info'		=> 	'Client segmentation and experience workshop',
 														'link'			=>	'/room/106',
 														'speakers'		=> 	[	
 															/*
@@ -906,15 +1148,15 @@ public $rows =	[
 
 						[	//Row 2
 							'title'			=> 'Welcome',
-							'image'			=> '/img/schedule/session3.png',
+							'image'			=> '/img/schedule/session7.png',
 							'start_time'	=> '12:30',
-							'end_time'		=> '13:10',
+							'end_time'		=> '12:55',
 							'interval'		=>	false,
 							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Motivational Speaker',
-														'room_info'		=> 	'',
+														'room_desc'		=> 	'A whole new world',
+														'room_info'		=> 	'A whole new world',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
 															/*
@@ -925,16 +1167,27 @@ public $rows =	[
  
 															[
 																'pic'			=> '/img/schedule/profile/sanlam.webp',
-																'name'			=> 'TBC', 
+																'name'			=> 'Theesan Moodley', 
 																'designation'	=> ''																					
 															], 
 
 														]
 													],
+	
+													
+												]
+						],
+						[	//Row 2
+							'title'			=> 'Welcome',
+							'image'			=> '/img/schedule/session7.png',
+							'start_time'	=> '12:55',
+							'end_time'		=> '13:00',
+							'interval'		=>	false,
+							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Close',
-														'room_info'		=> 	'',
+														'room_desc'		=> 	'Closing',
+														'room_info'		=> 	'Closing',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
 															/*
@@ -945,7 +1198,7 @@ public $rows =	[
  
 															[
 																'pic'			=> '/img/schedule/profile/sanlam.webp',
-																'name'			=> 'Thesen Naicker', 
+																'name'			=> 'Theesan Moodley', 
 																'designation'	=> ''																					
 															], 
 
