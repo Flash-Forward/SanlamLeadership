@@ -1179,7 +1179,7 @@ public $rows =	[
 						],
 						[	//Row 2
 							'title'			=> 'Welcome',
-							'image'			=> '/img/schedule/session7.png',
+							'image'			=> '/img/schedule/session8.png',
 							'start_time'	=> '12:55',
 							'end_time'		=> '13:00',
 							'interval'		=>	false,
