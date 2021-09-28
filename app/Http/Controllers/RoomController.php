@@ -1209,7 +1209,7 @@ public $rows =	[
 		$eH = date('H', $calEndTime); 	//Hour
 		$eM = date('i', $calEndTime); 	//minute	
 		
-		$nm = 'cal_single_'.str_replace('-', '_', $hdrId); //js variable name.
+		$nm = 'cal_single_'.str_replace('-', '_', $hdrId).rand(0, 1000); //js variable name.
 			
 		$html = '<script>    
 					var '.$nm.' = ics();

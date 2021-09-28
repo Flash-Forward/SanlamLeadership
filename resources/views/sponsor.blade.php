@@ -123,6 +123,16 @@
   color: white;
 } 
 
+.btn-circle {
+				width: 70px;
+				height: 70px;
+				padding: 10px 16px;
+        margin: 7px;
+				border-radius: 35px;
+				font-size: 24px;
+				line-height: 1.33;
+			}
+
 		</style>
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -175,11 +185,14 @@
 		<div style="position:relative; left: 10%; width: 80%; text-align: center; font-size: 25px;">
 		<h1>About Us</h1>
 		<hr>
+		<span style="font-size: 1vmax;">
 		{{$sponsor->content}}
+		</span>
+
 		</div>
     </div>
     <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-		<div style="position:relative; left: 10%; width: 80%; text-align: center; font-size: 3vw;">
+		<div style="position:relative; left: 10%; width: 80%; text-align: center; font-size: 25px;">
 		<h1>Downloadable Content</h1>
 		<hr>
 		<div class="row">
@@ -201,12 +214,12 @@
 				<div class="col-md-4">
 				<span class="material-icons" style="font-size: 60px;">web</span>
 				<h2>Website<h2>
-				<a href="{{$extra->website}}">{{$extra->website}}</a>
+				<a style="font-size: 1vmax;" href="{{$extra->website}}">{{$extra->website}}</a>
 				</div>
 				<div class="col-md-4">
 				<span class="material-icons" style="font-size: 60px;">email</span>
 				<h2>Email<h2>
-				<a href="mailto:{{$extra->email}}">{{$extra->email}}</a>
+				<a style="font-size: 1vmax;" href="mailto:{{$extra->email}}">{{$extra->email}}</a>
 
 				</div>
 				<div class="col-md-4">
@@ -229,7 +242,12 @@
     
     </div>
 </div>
+<div style="position: fixed; bottom: 3%; left:1%; width:5vw; height:10vw;">
 
+	<a id="backButton" type="button" class="btn btn-primary btn-circle" href="{{route('sponsors')}}"><i class="fa fa-arrow-left" style="padding:0; width: auto; top: 13px; position:relative;"></i></a>
+	<a id="homeButton" type="button" class="btn btn-primary btn-circle" href="{{route('lobby')}}"><i class="fa fa-home" style="padding:0; width: auto; top: 13px; position:relative;"></i></a>
+
+</div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>

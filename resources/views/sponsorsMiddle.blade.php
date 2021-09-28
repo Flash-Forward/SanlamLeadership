@@ -317,6 +317,9 @@ li{
 <div class="header" id="myHeader">
   <h2>SPONSORS</h2>
 </div> 
+<div style="position: fixed; bottom: 0; left:0; width:70px;">
+	<button id="homeButton" type="button" class="btn btn-primary btn-circle" onclick="redirectToLobby();"><i class="fa fa-home"></i>
+</div>
 <script>
 function redirectToLobby(){
 	window.location.href = "{{ route('lobby') }}";

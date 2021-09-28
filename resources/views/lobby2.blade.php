@@ -597,7 +597,7 @@ color: #ffffff !important;
     <img src="{{ asset('img') }}/bryte/screen1.png" class="stretch" alt="" />
     <div id="leftVideoInner1" class="divInImage">
     <video width="100%" height="100%" autoplay loop muted>
-    <source src="{{ asset('vid') }}/sanlam.mp4" type="video/mp4" />
+    <source src="{{ asset('vid') }}/sanlam2.mp4" type="video/mp4" />
     </video>
     </div>
     </div>
@@ -689,7 +689,7 @@ function checkRoom(room, route){
 
                   @else
                   swalWithBootstrapButtons.fire({
-                        html: '<span style="color:#ffffff; font-size: 1.2vw;">This room is reserved for VIP users</span>',
+                        html: '<span style="color:#ffffff; font-size: 1.2vw;">This Room is Reserved</span>',
                         //html: '<span style="color:#ffffff; font-size: 1.2vw;">This room is closed</span>',
 
                         background: "url('{{ asset('img') }}/bryte/background.jpg')",
