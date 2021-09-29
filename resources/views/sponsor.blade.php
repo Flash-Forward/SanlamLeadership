@@ -133,6 +133,13 @@
 				line-height: 1.33;
 			}
 
+.content-bg{
+	background-image: url('{{ asset('img') }}/bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 70%;
+}
+
 		</style>
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -180,7 +187,7 @@
     <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false" style="width: 100%; color:#000">Contact Us</button>
     </li>
 </ul>
-<div class="tab-content" id="myTabContent" style="background: #ccc; height: 70%;">
+<div class="tab-content content-bg" id="myTabContent">
     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab" style="color: #000">
 		<div style="position:relative; left: 10%; width: 80%; text-align: center; font-size: 25px;">
 		<h1>About Us</h1>

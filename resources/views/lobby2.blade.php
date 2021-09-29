@@ -138,7 +138,7 @@ body, html {
 #breakawayRoomsHeadingText{
     text-shadow: 0px 1px, 1px 0px #f8f8f8, 2px 1.5px #131313;
   font-weight: 450;
-  font-size: 1.8vw !important;
+  font-size: 1.7vw !important;
   text-align: center;
   line-height: 1.05;
     color: #f8f8f8;
@@ -202,14 +202,14 @@ video {
 #middleVideoInner{
   width:13.5vw;
   height:7.48vw;
-    top:18.8%;
+    top:18.3%;
     left:8.8%;
     border-radius: 35px;
 }
 #middleVideo{
   width:16.4vw;
     height:10.7vw;
-    top:46.5%;
+    top:65.5%;
     left:42%;
     border-radius: 35px;
 }
@@ -278,7 +278,7 @@ video {
 #networkLoungesHeadingText{
     text-shadow: 0px 1px, 1px 0px #f8f8f8, 2px 1.5px #131313;
   font-weight: 450;
-  font-size: 2.5vw !important;
+  font-size: 2.2vw !important;
   text-align: center;
   line-height: 1.00;
     color: #f8f8f8;
@@ -521,6 +521,15 @@ color: #ffffff !important;
     </div>
 
     @endif
+
+    <div id="middleVideo" class="divInImage">
+    <img src="{{ asset('img') }}/bryte/screen1.png" class="stretch" alt="" />
+    <div id="middleVideoInner" class="divInImage">
+    <video width="100%" height="100%" autoplay loop muted>
+    <source src="{{ asset('vid') }}/sanlam3.mp4" type="video/mp4" />
+    </video>
+    </div>
+    </div>
 
     @if($room_two_name->value != "NONE")
     <div id="exhibitionHallHeadingArea" class="divInImage">

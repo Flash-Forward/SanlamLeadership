@@ -1870,10 +1870,13 @@ public $rows =	[
         //dd($extra);
         
         if($order >= 101){
+			$biggerScreen = true;
             $backRoute = "breakaway";
 
 		}
 		if($order >= 201){
+			$biggerScreen = true;
+
             $backRoute = "networking";
 
 		}

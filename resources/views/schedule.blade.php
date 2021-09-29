@@ -20,6 +20,7 @@
 		}
 		.interval-row-alert{
 			height: 50;
+			margin: 10;
 		}
 		.h2, h2 {
 			font-size: 1.5rem;
