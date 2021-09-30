@@ -226,7 +226,10 @@
 				<div class="col-md-4">
 				<span class="material-icons" style="font-size: 60px;">email</span>
 				<h2>Email<h2>
-				<a style="font-size: 1vmax;" href="mailto:{{$extra->email}}">{{$extra->email}}</a>
+				@for ($i = 0; $i < count($emails); $i++)
+					<a style="font-size: 1vmax;" href="mailto:{{$emails[$i]}}">{{$emails[$i]}}</a>
+
+				@endfor
 
 				</div>
 				<div class="col-md-4">

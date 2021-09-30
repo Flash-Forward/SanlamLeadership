@@ -284,7 +284,7 @@ body, html {
 
   width: 9.2vw;
     height: 9.2vw;
-    top:20%;
+    top:19%;
     left:27%;
   border-radius: 35px;
     
@@ -293,14 +293,14 @@ body, html {
 #myImage_zone3{
   width: 9.2vw;
     height: 9.2vw;
-    top:20%;
+    top:19%;
     left:43%;
     border-radius: 35px;
 }
 #myImage_zone4{
   width: 9.2vw;
     height: 9.2vw;
-    top:20%;
+    top:19%;
     left:59%;
     border-radius: 35px;
 }
@@ -308,7 +308,7 @@ body, html {
 #myImage_zone5{
   width: 9.2vw;
     height: 9.2vw;
-    top:43%;
+    top:42%;
     left:27%;
     border-radius: 35px;
 }
@@ -316,7 +316,7 @@ body, html {
 #myImage_zone6{
   width: 9.2vw;
     height: 9.2vw;
-    top:43%;
+    top:42%;
     left:43%;
     border-radius: 35px;
 }
@@ -325,7 +325,7 @@ body, html {
 
   width: 9.2vw;
     height: 9.2vw;
-    top:43%;
+    top:42%;
     left:59%;
   border-radius: 35px;
   
@@ -334,14 +334,14 @@ body, html {
 #myImage_zone8{
   width: 9.2vw;
     height: 9.2vw;
-    top:66%;
+    top:65%;
     left:27%;
     border-radius: 35px;
 }
 #myImage_zone9{
   width: 9.2vw;
     height: 9.2vw;
-    top:66%;
+    top:65%;
     left:43%;
     border-radius: 35px;
 }
@@ -349,7 +349,7 @@ body, html {
 #myImage_zone10{
   width: 9.2vw;
     height: 9.2vw;
-    top:66%;
+    top:65%;
     left:59%;
     border-radius: 35px;
 }

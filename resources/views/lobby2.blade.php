@@ -209,7 +209,7 @@ video {
 #middleVideo{
   width:16.4vw;
     height:10.7vw;
-    top:65.5%;
+    top:62.5%;
     left:42%;
     border-radius: 35px;
 }

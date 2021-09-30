@@ -1838,10 +1838,13 @@ public $rows =	[
 		$files[2] = json_decode($sponsor->file3);
 		$files[3] = json_decode($sponsor->file4);
 
+		$emails = explode(";", $extra->email);
+
         return view('sponsor', [
             'sponsor' => $sponsor,
             'extra' => $extra,
             'files' => $files,
+			'emails' => $emails,
 
 
         ]);
