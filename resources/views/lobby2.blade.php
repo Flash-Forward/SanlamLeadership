@@ -222,8 +222,8 @@ video {
     border-radius: 35px;
 }
 #rightVideo1{
-   width:16.4vw;
-    height:22vh;
+  width:16.4vw;
+    height:10.7vw;
     top:64.5%;
     left:83%;
     border-radius: 35px;
