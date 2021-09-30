@@ -209,22 +209,22 @@ video {
 #middleVideo{
   width:16.4vw;
     height:10.7vw;
-    top:62.5%;
+    top:64.5%;
     left:42%;
     border-radius: 35px;
 }
 
 #rightVideoInner1{
-   width:13.3vw;
-    height:15.2vh;
-    top:66.5%;
-    left:84.5%;
+  width:13.5vw;
+  height:7.48vw;
+    top:18.3%;
+    left:8.8%;
     border-radius: 35px;
 }
 #rightVideo1{
    width:16.4vw;
     height:22vh;
-    top:62.5%;
+    top:64.5%;
     left:83%;
     border-radius: 35px;
 }
@@ -246,14 +246,14 @@ video {
 #leftVideoInner1{
   width:13.5vw;
   height:7.48vw;
-    top:18.8%;
+    top:18.3%;
     left:8.8%;
     border-radius: 35px;
 }
 #leftVideo1{
   width:16.4vw;
     height:10.7vw;
-    top:62.5%;
+    top:64.5%;
     left:0.8%;
     border-radius: 35px;
 }
@@ -582,12 +582,13 @@ color: #ffffff !important;
     @else
     <div id="rightVideo1" class="divInImage">
     <img src="{{ asset('img') }}/bryte/screen1.png" class="stretch" alt="" />
-    </div>
     <div id="rightVideoInner1" class="divInImage">
     <video width="100%" height="100%" autoplay loop muted>
     <source src="{{ asset('vid') }}/sanlam.mp4" type="video/mp4" />
     </video>
     </div>
+    </div>
+
     @endif
 
     @if($room_one_name->value == "NONE")
