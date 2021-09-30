@@ -53,6 +53,11 @@ body, html {
     top:13.2%;
     left:9%;
 }
+#myImage_zone1i{
+    width:10vw;
+    top:13.2%;
+    left:9%;
+}
 @else
 #myImage_zone1{
     width:75%;
@@ -180,7 +185,7 @@ h2{
 
 	<div id="myImage_zone1i" class="divInImage">
 
-<img src="{{ asset('img') }}/al/acn.png" style="position: fixed; width: 10vw;" alt="" />
+<img src="{{ asset('img') }}/sanlam/logo.png" style="position: fixed; width: 10vw;" alt="" />
 </div>
 
 @else
