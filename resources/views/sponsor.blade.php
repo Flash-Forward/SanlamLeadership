@@ -221,7 +221,7 @@
 				<div class="col-md-4">
 				<span class="material-icons" style="font-size: 60px;">web</span>
 				<h2>Website<h2>
-				<a style="font-size: 1vmax; width:80%; display: inline-block;" href="{{$extra->website}}">{{$extra->website}}</a>
+				<a style="font-size: 1vmax; width:70%; display: inline-block; white-space:normal;" href="{{$extra->website}}">{{$extra->website}}</a>
 				</div>
 				<div class="col-md-4">
 				<span class="material-icons" style="font-size: 60px;">email</span>
