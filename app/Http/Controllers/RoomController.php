@@ -172,7 +172,7 @@ public $rows =	[
  
 															[
 																'pic'			=> '/img/schedule/profile/sanlam.webp',
-																'name'			=> 'Jeremy Gardner', 
+																'name'			=> 'Jeremy Gardiner', 
 																'designation'	=> ''																					
 															], 
 
@@ -345,8 +345,8 @@ public $rows =	[
 							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Welcome and overviewof day 1',
-														'room_info'		=> 	'Welcome and overviewof day 1',
+														'room_desc'		=> 	'Welcome and overview of day 1',
+														'room_info'		=> 	'Welcome and overview of day 1',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
 															/*
@@ -412,7 +412,7 @@ public $rows =	[
 							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Room 1', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Glacier',
+														'room_desc'		=> 	'Glacier - Francis Marais',
 														'room_info'		=> 	'Product House Thought Leadership breakaways',
 														'link'			=>	'/room/101',
 														'speakers'		=> 	[	
@@ -432,7 +432,7 @@ public $rows =	[
 													],
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Room 2', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Sanlam Individual Life',
+														'room_desc'		=> 	'Sanlam Individual Life - Dr Marion Morkel',
 														'room_info'		=> 	'Product House Thought Leadership breakaways',
 														'link'			=>	'/room/102',
 														'speakers'		=> 	[	
@@ -452,7 +452,7 @@ public $rows =	[
 													],
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Room 3', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Santam',
+														'room_desc'		=> 	'Santam - Andrew Coutts',
 														'room_info'		=> 	'Product House Thought Leadership breakaways',
 														'link'			=>	'/room/103',
 														'speakers'		=> 	[	
@@ -472,7 +472,7 @@ public $rows =	[
 													],
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Room 4', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'EB BlueStar',
+														'room_desc'		=> 	'Employee Benefits BlueStar - David Gluckman',
 														'room_info'		=> 	'Product House Thought Leadership breakaways',
 														'link'			=>	'/room/104',
 														'speakers'		=> 	[	
@@ -492,7 +492,7 @@ public $rows =	[
 													],
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Room 5', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Sanlam Health Solutions',
+														'room_desc'		=> 	'Sanlam Health Solutions - Dr Lungi Nyathi',
 														'room_info'		=> 	'Product House Thought Leadership breakaways',
 														'link'			=>	'/room/105',
 														'speakers'		=> 	[	
@@ -512,7 +512,7 @@ public $rows =	[
 													],
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Room 6', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Sanlam Investements',
+														'room_desc'		=> 	'Sanlam Investements - Gielie de Swardt',
 														'room_info'		=> 	'Product House Thought Leadership breakaways',
 														'link'			=>	'/room/106',
 														'speakers'		=> 	[	
@@ -604,8 +604,8 @@ public $rows =	[
 							'interval'		=>	false,
 							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
-														'room_name'		=> 	'Room 1', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Glacier',
+														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
+														'room_desc'		=> 	'Product house lucky draw winner',
 														'room_info'		=> 	'Product house lucky draw winner',
 														'link'			=>	'/room/101',
 														'speakers'		=> 	[	
@@ -617,7 +617,7 @@ public $rows =	[
  
 															[
 																'pic'			=> '/img/schedule/profile/sanlam.webp',
-																'name'			=> 'Spnosors', 
+																'name'			=> 'Sponsors', 
 																'designation'	=> ''																					
 															], 
 
@@ -1268,18 +1268,18 @@ public $rows =	[
 		//debug($session);
 		//First add the tabs we need:
 		//General
-		$tabId			= 'inner-tab-'.$id;
-		$tabNavId		= 'room-tab-'.$id;
+		$tabId			= 'inner-tab-'.$id.rand(0, 1000);
+		$tabNavId		= 'room-tab-'.$id.rand(0, 1000);
 		//speakers
-		$speakerTabId 	= 'speaker-tab-'.$id;
-		$speakerRefId	= 'speaker-ref-'.$id;
-		$speakerAccrd	= 'speaker-acc-'.$id;
-		$speakerCard	= 'speaker-crd-'.$id;
+		$speakerTabId 	= 'speaker-tab-'.$id.rand(0, 1000);
+		$speakerRefId	= 'speaker-ref-'.$id.rand(0, 1000);
+		$speakerAccrd	= 'speaker-acc-'.$id.rand(0, 1000);
+		$speakerCard	= 'speaker-crd-'.$id.rand(0, 1000);
 		//topics
-		$topicTabId 	= 'topic-tab-'.$id;
-		$topicRefId		= 'topic-ref-'.$id;
-		$topicAccrd		= 'topic-acc-'.$id;
-		$topicCard		= 'topic-crd-'.$id;
+		$topicTabId 	= 'topic-tab-'.$id.rand(0, 1000);
+		$topicRefId		= 'topic-ref-'.$id.rand(0, 1000);
+		$topicAccrd		= 'topic-acc-'.$id.rand(0, 1000);
+		$topicCard		= 'topic-crd-'.$id.rand(0, 1000);
 		
 		
 		$html  = '<nav class="inner-tab">
@@ -1787,6 +1787,16 @@ public $rows =	[
 		}
         if($order < 99)
             $backRoute = "exhibition";
+
+
+		if(\Auth::user()->user_roles_id == 1 && $order != 100){
+			$exhibitor = Exhibitor::where('order', $order)->first();
+			$speaker1 = Speaker::where('users_id', \Auth::user()->id)->where('exhibitors_id', $exhibitor->id)->first();
+			if($speaker1){
+				$speaker = true;
+
+			}
+		}
         return view('conference.room', [
 			'biggerScreen' => $biggerScreen,
             'bg' => $bg,
