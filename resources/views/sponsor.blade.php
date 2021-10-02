@@ -221,7 +221,7 @@
 				<div class="col-md-4">
 				<span class="material-icons" style="font-size: 60px;">web</span>
 				<h2>Website<h2>
-				<a style="font-size: 1vmax; width:70%; display: inline-block; white-space:normal;" href="{{$extra->website}}">{{$extra->website}}</a>
+				<a href="{{$extra->website}}" target="_blank" class="btn" style="background: {{$sponsor->color}};">Visit</a>
 				</div>
 				<div class="col-md-4">
 				<span class="material-icons" style="font-size: 60px;">email</span>
