@@ -1818,6 +1818,12 @@ public $rows =	[
             $backRoute = "networking";
 
 		}
+		if($order >= 499){
+			$biggerScreen = true;
+
+            $backRoute = "NONE";
+
+		}
         if($order < 99)
             $backRoute = "exhibition";
 
