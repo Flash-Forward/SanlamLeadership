@@ -694,7 +694,7 @@ function checkRoom(room, route){
               @endif
               {
                 if(route == "/room/500"){
-                  @if(Auth::user()->user_roles_id == 3)
+                  @if(Auth::user()->vip == 1)
 	                  window.location.href = route;
 
                   @else
