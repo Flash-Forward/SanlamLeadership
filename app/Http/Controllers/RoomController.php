@@ -412,7 +412,7 @@ public $rows =	[
 							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Room 1', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Glacier - Francis Marais',
+														'room_desc'		=> 	'Glacier by Sanlam - Francis Marais',
 														'room_info'		=> 	'Product House Thought Leadership breakaways',
 														'link'			=>	'/room/101',
 														'speakers'		=> 	[	
@@ -948,7 +948,7 @@ public $rows =	[
 							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Room 1', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Glacier',
+														'room_desc'		=> 	'Glacier by Sanlam',
 														'room_info'		=> 	'Client segmentation and experience workshop',
 														'link'			=>	'/room/101',
 														'speakers'		=> 	[	
@@ -960,7 +960,12 @@ public $rows =	[
  
 															[
 																'pic'			=> '/img/schedule/profile/sanlam.webp',
-																'name'			=> 'TBC', 
+																'name'			=> 'Thuthuka Gumede', 
+																'designation'	=> ''																					
+															], 
+															[
+																'pic'			=> '/img/schedule/profile/sanlam.webp',
+																'name'			=> 'Janine Hinrichsen', 
 																'designation'	=> ''																					
 															], 
 
@@ -980,7 +985,12 @@ public $rows =	[
  
 															[
 																'pic'			=> '/img/schedule/profile/sanlam.webp',
-																'name'			=> 'TBC', 
+																'name'			=> 'Kallie Jansen van Vuuren', 
+																'designation'	=> ''																					
+															], 
+															[
+																'pic'			=> '/img/schedule/profile/sanlam.webp',
+																'name'			=> 'Lauren Arendse', 
 																'designation'	=> ''																					
 															], 
 
@@ -1000,7 +1010,13 @@ public $rows =	[
  
 															[
 																'pic'			=> '/img/schedule/profile/sanlam.webp',
-																'name'			=> 'TBC', 
+																'name'			=> 'Jacques van der Heever ', 
+																'designation'	=> ''																					
+															],
+															 
+															[
+																'pic'			=> '/img/schedule/profile/sanlam.webp',
+																'name'			=> 'Mariette van Dyk', 
 																'designation'	=> ''																					
 															], 
 
@@ -1008,7 +1024,7 @@ public $rows =	[
 													],
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Room 4', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'EB BlueStar',
+														'room_desc'		=> 	'Employee Benefits BlueStar',
 														'room_info'		=> 	'Client segmentation and experience workshop',
 														'link'			=>	'/room/104',
 														'speakers'		=> 	[	
@@ -1020,7 +1036,12 @@ public $rows =	[
  
 															[
 																'pic'			=> '/img/schedule/profile/sanlam.webp',
-																'name'			=> 'TBC', 
+																'name'			=> 'Edmund April', 
+																'designation'	=> ''																					
+															], 
+															[
+																'pic'			=> '/img/schedule/profile/sanlam.webp',
+																'name'			=> 'Mannie Kambourakis', 
 																'designation'	=> ''																					
 															], 
 
@@ -1028,7 +1049,7 @@ public $rows =	[
 													],
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Room 5', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Medical',
+														'room_desc'		=> 	'Sanlam Health Solutions',
 														'room_info'		=> 	'Client segmentation and experience workshop',
 														'link'			=>	'/room/105',
 														'speakers'		=> 	[	
@@ -1040,7 +1061,13 @@ public $rows =	[
  
 															[
 																'pic'			=> '/img/schedule/profile/sanlam.webp',
-																'name'			=> 'TBC', 
+																'name'			=> 'Gert Bezuidenhout', 
+																'designation'	=> ''																					
+															],
+															 
+															[
+																'pic'			=> '/img/schedule/profile/sanlam.webp',
+																'name'			=> 'Andile Tsawu', 
 																'designation'	=> ''																					
 															], 
 
@@ -1060,7 +1087,13 @@ public $rows =	[
  
 															[
 																'pic'			=> '/img/schedule/profile/sanlam.webp',
-																'name'			=> 'TBC', 
+																'name'			=> 'Karl Parks', 
+																'designation'	=> ''																					
+															], 
+															 
+															[
+																'pic'			=> '/img/schedule/profile/sanlam.webp',
+																'name'			=> 'Thinesh Pather', 
 																'designation'	=> ''																					
 															], 
 
