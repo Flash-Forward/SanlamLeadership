@@ -61,7 +61,7 @@ public $rows =	[
 							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Opening & Welcome',
+														'room_desc'		=> 	'Opening & Welcome - Sipho Mncwabe',
 														'room_info'		=> 	'Opening & Welcome',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
@@ -92,7 +92,7 @@ public $rows =	[
 							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Our BlueStar world',
+														'room_desc'		=> 	'Our BlueStar world - Heinrich Punt, Theesan Moodley',
 														'room_info'		=> 	'Our BlueStar world',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
@@ -129,7 +129,7 @@ public $rows =	[
 							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'The state we are in',
+														'room_desc'		=> 	'The state we are in - Dion Chang',
 														'room_info'		=> 	'The state we are in',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
@@ -160,7 +160,7 @@ public $rows =	[
 							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Economic overview ',
+														'room_desc'		=> 	'The Ultimate Winter Of Discontent - Jeremy Gardiner',
 														'room_info'		=> 	'Economic overview ',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
@@ -211,7 +211,7 @@ public $rows =	[
 							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'My upside of down talk',
+														'room_desc'		=> 	'My upside of down talk - Bruce Whitfield',
 														'room_info'		=> 	'My upside of down talk',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
@@ -244,7 +244,7 @@ public $rows =	[
 							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Diversity and Inclusion, a case for robust problem solving and superior client experience',
+														'room_desc'		=> 	'Diversity and Inclusion, a case for robust problem solving and superior client experience - Fortune Gamanya',
 														'room_info'		=> 	'Diversity and Inclusion, a case for robust problem solving and superior client experience',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
@@ -277,7 +277,7 @@ public $rows =	[
 							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Closing',
+														'room_desc'		=> 	'Closing - Sipho Mncwabe',
 														'room_info'		=> 	'Closing',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
@@ -345,7 +345,7 @@ public $rows =	[
 							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Welcome and overview of day 1',
+														'room_desc'		=> 	'Welcome and overview of day 1 - Tashlin Naidoo, Nasrat Edoo Sirkissoon',
 														'room_info'		=> 	'Welcome and overview of day 1',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
@@ -382,7 +382,7 @@ public $rows =	[
 
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Healthy plans for healthy clients',
+														'room_desc'		=> 	'Healthy plans for healthy clients - Dr Frank Magwegwe',
 														'room_info'		=> 	'Healthy plans for healthy clients',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
@@ -543,7 +543,7 @@ public $rows =	[
 							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Our digital BlueStar journey',
+														'room_desc'		=> 	'Our digital BlueStar journey - Danelle Esterhuizen',
 														'room_info'		=> 	'Our digital BlueStar journey',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
@@ -574,7 +574,7 @@ public $rows =	[
 							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'DX as a Strategy for Disruption',
+														'room_desc'		=> 	'DX as a Strategy for Disruption - Sharron McPherson',
 														'room_info'		=> 	'DX as a Strategy for Disruption',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
@@ -605,7 +605,7 @@ public $rows =	[
 							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Product house lucky draw winner',
+														'room_desc'		=> 	'Product house lucky draw winner - Sponsors',
 														'room_info'		=> 	'Product house lucky draw winner',
 														'link'			=>	'/room/101',
 														'speakers'		=> 	[	
@@ -657,7 +657,7 @@ public $rows =	[
 							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'BlueStar of the Year Awards Ceremony',
+														'room_desc'		=> 	'BlueStar of the Year Awards Ceremony - Heinrich Punt',
 														'room_info'		=> 	'BlueStar of the Year Awards Ceremony',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
@@ -688,7 +688,7 @@ public $rows =	[
 							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Closing',
+														'room_desc'		=> 	'Closing - Heinrich Punt',
 														'room_info'		=> 	'Closing',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
@@ -753,7 +753,7 @@ public $rows =	[
 							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Opening & Overview',
+														'room_desc'		=> 	'Opening & Overview - Thesen Naicker',
 														'room_info'		=> 	'Opening & Overview',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
@@ -786,7 +786,7 @@ public $rows =	[
 
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'In Sanlam client relationships are important',
+														'room_desc'		=> 	'In Sanlam client relationships are important - Jurie Strydom',
 														'room_info'		=> 	'In Sanlam client relationships are important',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
@@ -819,7 +819,7 @@ public $rows =	[
 
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'The tapestry of data',
+														'room_desc'		=> 	'The tapestry of data - Nasrat Edoo Sirkissoon, Heinrich Punt',
 														'room_info'		=> 	'The tapestry of data',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
@@ -857,7 +857,7 @@ public $rows =	[
 
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Money EQ reports ',
+														'room_desc'		=> 	'Money EQ reports - Hendrik Crafford',
 														'room_info'		=> 	'Money EQ reports ',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
@@ -890,7 +890,7 @@ public $rows =	[
 
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Delivering relevant Client experiences',
+														'room_desc'		=> 	'Delivering relevant Client experiences - Sonja Sanders, René Roux',
 														'room_info'		=> 	'Delivering relevant Client experiences',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
@@ -948,7 +948,7 @@ public $rows =	[
 							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Room 1', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Glacier by Sanlam',
+														'room_desc'		=> 	'Glacier by Sanlam - BlueStar 1 - Thuthuka Gumede, Janine Hinrichsen',
 														'room_info'		=> 	'Client segmentation and experience workshop',
 														'link'			=>	'/room/101',
 														'speakers'		=> 	[	
@@ -973,7 +973,7 @@ public $rows =	[
 													],
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Room 2', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Sanlam Individual Life',
+														'room_desc'		=> 	'Sanlam Individual Life - BlueStar 2 - Kallie Jansen van Vuuren, Lauren Arendse',
 														'room_info'		=> 	'Client segmentation and experience workshop',
 														'link'			=>	'/room/102',
 														'speakers'		=> 	[	
@@ -998,7 +998,7 @@ public $rows =	[
 													],
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Room 3', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Santam',
+														'room_desc'		=> 	'Santam - BlueStar 3 - Jacques van der Heever, Mariette van Dyk',
 														'room_info'		=> 	'Client segmentation and experience workshop',
 														'link'			=>	'/room/103',
 														'speakers'		=> 	[	
@@ -1024,7 +1024,7 @@ public $rows =	[
 													],
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Room 4', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Employee Benefits BlueStar',
+														'room_desc'		=> 	'Employee Benefits BlueStar - BlueStar 4 - Edmund April, Mannie Kambourakis',
 														'room_info'		=> 	'Client segmentation and experience workshop',
 														'link'			=>	'/room/104',
 														'speakers'		=> 	[	
@@ -1049,7 +1049,7 @@ public $rows =	[
 													],
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Room 5', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Sanlam Health Solutions',
+														'room_desc'		=> 	'Sanlam Health Solutions - MO BlueStar 1 - Gert Bezuidenhout, Andile Tsawu',
 														'room_info'		=> 	'Client segmentation and experience workshop',
 														'link'			=>	'/room/105',
 														'speakers'		=> 	[	
@@ -1075,7 +1075,7 @@ public $rows =	[
 													],
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Room 6', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Sanlam Investements',
+														'room_desc'		=> 	'Sanlam Investements - MO BlueStar 2 - Karl Parks, Thinesh Pather',
 														'room_info'		=> 	'Client segmentation and experience workshop',
 														'link'			=>	'/room/106',
 														'speakers'		=> 	[	
@@ -1116,7 +1116,7 @@ public $rows =	[
 							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'A whole new world',
+														'room_desc'		=> 	'A whole new world - Theesan Moodley',
 														'room_info'		=> 	'A whole new world',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
@@ -1147,7 +1147,7 @@ public $rows =	[
 							'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Closing',
+														'room_desc'		=> 	'Closing - Theesan Moodley',
 														'room_info'		=> 	'Closing',
 														'link'			=>	'/room/99',
 														'speakers'		=> 	[	
