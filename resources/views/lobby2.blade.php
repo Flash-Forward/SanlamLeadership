@@ -397,11 +397,14 @@ iframe{
   text-align:center;
   vertical-align: middle;
   
-  display: flex;
   justify-content: center;
   align-items: center;
   position: fixed; /* Sit on top of the page content */
+  @if(session('startvideo', '0') == '0')
+  display: block; /* Hidden by default */
+  @else
   display: none;
+  @endif
   width: 100%; /* Full width (cover the whole page) */
   height: 100%; /* Full height (cover the whole page) */
   top: 0;

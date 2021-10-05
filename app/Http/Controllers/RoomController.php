@@ -1024,7 +1024,7 @@ public $rows =	[
 													],
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Room 4', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Employee Benefits BlueStar - BlueStar 4 - Edmund April, Mannie Kambourakis',
+														'room_desc'		=> 	'Sanlam Investements - BlueStar 4 - Karl Parks, Thinesh Pather',
 														'room_info'		=> 	'Client segmentation and experience workshop',
 														'link'			=>	'/room/104',
 														'speakers'		=> 	[	
@@ -1036,12 +1036,13 @@ public $rows =	[
  
 															[
 																'pic'			=> '/img/schedule/profile/sanlam.webp',
-																'name'			=> 'Edmund April', 
+																'name'			=> 'Karl Parks', 
 																'designation'	=> ''																					
 															], 
+															 
 															[
 																'pic'			=> '/img/schedule/profile/sanlam.webp',
-																'name'			=> 'Mannie Kambourakis', 
+																'name'			=> 'Thinesh Pather', 
 																'designation'	=> ''																					
 															], 
 
@@ -1073,9 +1074,10 @@ public $rows =	[
 
 														]
 													],
+
 													[	//Room 1 - Claims
 														'room_name'		=> 	'Room 6', //ideally a table and this should be an id referencing that row
-														'room_desc'		=> 	'Sanlam Investements - MO BlueStar 2 - Karl Parks, Thinesh Pather',
+														'room_desc'		=> 	'Employee Benefits BlueStar - MO BlueStar 2 - Edmund April, Mannie Kambourakis',
 														'room_info'		=> 	'Client segmentation and experience workshop',
 														'link'			=>	'/room/106',
 														'speakers'		=> 	[	
@@ -1087,13 +1089,12 @@ public $rows =	[
  
 															[
 																'pic'			=> '/img/schedule/profile/sanlam.webp',
-																'name'			=> 'Karl Parks', 
+																'name'			=> 'Edmund April', 
 																'designation'	=> ''																					
 															], 
-															 
 															[
 																'pic'			=> '/img/schedule/profile/sanlam.webp',
-																'name'			=> 'Thinesh Pather', 
+																'name'			=> 'Mannie Kambourakis', 
 																'designation'	=> ''																					
 															], 
 
