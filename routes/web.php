@@ -19,6 +19,8 @@ Route::get('/', [App\Http\Controllers\RoomController::class, 'landingPage'])->na
 
 Route::get('/register/check', [App\Http\Controllers\RoomController::class, 'checkEmail'])->name('email.check');
 Route::get('/room/check', [App\Http\Controllers\RoomController::class, 'checkRoom'])->name('room.check');
+Route::post('/openLogin', [App\Http\Controllers\RoomController::class, 'openLogin'])->name('openLogin');
+
 
 //Route::get('/exhibition/test', [App\Http\Controllers\RoomController::class, 'exhibitionHall']);
 //Route::get('/lobby/test', [App\Http\Controllers\RoomController::class, 'mainLobby']);
@@ -42,6 +44,8 @@ Route::get('/register/ba', function () {
 Auth::routes(['verify' => true]);
 
 Route::get('/thankyou', [App\Http\Controllers\RoomController::class, 'thankyou'])->name('thankyou');
+Route::get('/login', [App\Http\Controllers\RoomController::class, 'login'])->name('login');
+
 
 
 Route::get('/mobile', function () {
@@ -91,6 +95,8 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('/lobby', [App\Http\Controllers\RoomController::class, 'mainLobby'])->name('lobby');
     Route::get('/breakaway', [App\Http\Controllers\RoomController::class, 'breakawayRoom'])->name('breakaway');
     Route::get('/networking', [App\Http\Controllers\RoomController::class, 'networkingLounge'])->name('networking');
+    Route::get('/instructions', [App\Http\Controllers\RoomController::class, 'instructions'])->name('instructions');
+
 
     Route::get('/exhibition', [App\Http\Controllers\RoomController::class, 'exhibitionHall'])->name('exhibition');
     Route::get('/innovator', function () {

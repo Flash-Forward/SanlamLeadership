@@ -1190,7 +1190,59 @@ public $rows =	[
 			return "1";
 		return $time;
 	}
+
+	public function instructions(Request $request){
+		$message = Config::where("key", "popup_message")->first()->value;
+		$redirect = Config::where("key", "redirect")->first()->value;
+
+		$retObj["message"] = $message;
+		$retObj["redirect"] = $redirect;
+
+        return response()->json($retObj);
+
+	}
 	
+	public function openLogin(Request $request){
+        $data = $request->all();
+		$user = User::where('email', $data['email'])->first();
+		if(!$user){
+			$user = User::create([
+				'name' => $data['name'] . " " . $data['last_name'],
+				'email' => $data['email'],
+				'password' => "test",
+				'position' => "test",
+				'company' => "test",
+				'contact_no' => "test",
+				'extra' => "{}",
+				'user_roles_id' => 2,
+			]);
+		}
+		// if($user->user_roles_id == 2){
+		// 	\Session::put('status', 1);
+		// 	return redirect()->route('login');
+		// }else{
+		// 	\Auth::login($user, true);
+		// 	return redirect()->route('lobby');
+		// }
+		\Auth::login($user, true);
+		return redirect()->route('lobby');
+
+
+	}
+
+	public function login(config $config){
+        $type = $config::where("key", "login_type")->first();
+		switch($type->value){
+			case "OPEN":
+				return view('auth.openLogin');
+				break;
+			case "CLOSED":
+				return view('auth.login3');
+
+				break;
+		}
+
+	}
 
     public function checkEmail(Request $request){
 
