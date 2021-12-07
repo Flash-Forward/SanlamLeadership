@@ -2,7 +2,7 @@
 	<html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>SanlamConnect</title>
+		<title>African Leadership For Health Gathering</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<!-- google fonts -->
@@ -21,31 +21,27 @@
 		<link rel="stylesheet" href="{{ asset('landing') }}/css/style.css">
 		<link rel="stylesheet" href="{{ asset('landing') }}/css/responsive.css">
 		<style>
-.btn-learn {
-  border: 2px solid #323d48 !important;
-  background-color: #323d48 !important;
 
-  color: #ffffff !important;;
+#banner .block .btn-learn {
+  border: 2px solid #F9DF8D;
+  color: #F9DF8D;
   border-radius: 25px;
   margin: 0 7px;
   padding: 10px 22px;
   font-size: 14px;
   transition: 0.3s;
 }
-.btn-learn:hover {
-  background-color: #323d48 !important;;
-  border-color: #323d48 !important;;
-  color: #0074c9 !important;;
+#banner .block .btn-learn:hover {
+  background-color: #F9DF8D;
+  border-color: #BAA768;
+  color: #79232E;
 }
 		#banner {
-  background:  url('{{ asset("img") }}/sanlam/landing.png');
-  /* background-color: #313f4a; */
+  background: url('{{$bgL->value}}');
   background-size: cover;
   padding: 250px 0;
   position: relative;
   text-align: center;
-  height: 100vh;
-  width: 100vw;
 }
 			.topLogo{
 				width: 50%;
@@ -56,7 +52,7 @@
 				width: 65% !important;
 				height: 60% !important;
 				padding: 2%;
-				background-color: rgba(28,38,47,1);
+				background: url('{{$bgC->value}}');
 				border-radius: 10px;
 
 			}
@@ -73,15 +69,8 @@
 			color: {{$subHeadingColor->value ?? '' }};
 			}
 
-			#loginButton{
-				position: relative;
-				text-align: center;
-				font-size: 2vw;
-				width: 25vw;
-				height: 4vw;
-				left: 17%;
-				top: 53%;
-				z-index: 1500;
+			#banner .block h3 {
+			color: {{$conColor->value ?? '' }};
 			}
 
 			@media only screen 
@@ -107,8 +96,22 @@
 	
 	<div class="wrapper">
 		<section id="banner">
-
-				<a href="{{ route('login') }}" id="loginButton" class="btn btn-learn">Login</a>								
+			<div class="container greyBox">
+				<div class="row justify-content-center">
+					<div class="col-md-12">
+						<div class="block">
+							<h1><img src="{{ $logo->value ?? '' }}" class="topLogo" alt=""/></h1>
+							<h1><b>{{$headingContent->value}}</b></h1>
+							<h2><b>{{$subHeadingContent->value}}</b></h2>
+							<h3>{!! $mainContent->value !!}</h3>
+							<div class="buttons">
+								<a href="{{ route('login') }}" class="btn btn-learn">Login</a>								
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
 		</section>
 		
 		<footer>
