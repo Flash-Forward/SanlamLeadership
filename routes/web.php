@@ -34,10 +34,8 @@ Route::get('/bluejeans', function () {
 Route::get('/polls', function () {
     return view('polls');
 })->name('polls');
+Route::get('/register/1', [App\Http\Controllers\RoomController::class, 'registration'])->name('registration');
 
-Route::get('/register/sa', function () {
-    return view('auth.register2');
-})->name('register.sa');
 
 Route::get('/register/ba', function () {
     return view('auth.register3');

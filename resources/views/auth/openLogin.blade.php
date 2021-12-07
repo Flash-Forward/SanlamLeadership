@@ -126,7 +126,7 @@ body, html {
 }
 #bg{
     /* background: url("{{ asset('img') }}/bryte/bg3d.jpg"); */
-    background-color: #313f4a;
+    background: url('{{$bg->value }}');
     background-size: cover;
   height: 100%;
   color: #ffffff;
@@ -183,7 +183,7 @@ function loginFail(){
 
 <body>
 <div id="bg">
-<div id="banner"><img src="{{ asset('img') }}/sanlam/banner.png" class="stretch" alt="" /></div>
+<div id="banner"><img src="{{$banner->value }}" class="stretch" alt="" /></div>
 <div id="registration-header"><h1>Login</h1></div>
 <div class="signup-form">
 <form method="POST" class="login-form" id="login-form" action="{{ route('openLogin') }}">

@@ -23,8 +23,8 @@
 		<style>
 
 #banner .block .btn-learn {
-  border: 2px solid #F9DF8D;
-  color: #F9DF8D;
+  border: 2px solid {{$secColor->value}};
+  color: {{$secColor->value}};
   border-radius: 25px;
   margin: 0 7px;
   padding: 10px 22px;
@@ -32,9 +32,9 @@
   transition: 0.3s;
 }
 #banner .block .btn-learn:hover {
-  background-color: #F9DF8D;
-  border-color: #BAA768;
-  color: #79232E;
+  background-color: {{$secColor->value}};
+  border-color: {{$secColor->value}};
+  color: {{$primColor->value}};
 }
 		#banner {
   background: url('{{$bgL->value}}');
@@ -105,7 +105,13 @@
 							<h2><b>{{$subHeadingContent->value}}</b></h2>
 							<h3>{!! $mainContent->value !!}</h3>
 							<div class="buttons">
+								@if ($regStatus->value == "DISABLE")
 								<a href="{{ route('login') }}" class="btn btn-learn">Login</a>								
+									
+								@else
+								<a href="{{ route('registration') }}" class="btn btn-learn">Register</a>								
+									
+								@endif
 						  </div>
 						</div>
 					</div>

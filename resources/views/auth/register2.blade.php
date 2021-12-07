@@ -1,6 +1,6 @@
 <head>
     <meta charset="UTF-8">
-    <title>BryteSA</title>
+    <title>WeLink Reg</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- google fonts -->
@@ -62,7 +62,7 @@
 
         #bg {
             position: relative;
-            background-image: url("{{ asset('img') }}/bryte/bg2.jpg");
+            background-image: url("{{$bgL->value}}");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center center;
@@ -128,7 +128,7 @@
             /* display: flex; */
             /* justify-content: center; */
             /* align-items: center; */
-            background-color: rgba(255, 255, 255, 0.70);
+            background: url('{{$container->value}}');
             padding-top: 2%;
             padding-right: 2%;
             padding-left: 2%;
@@ -146,7 +146,7 @@
             /* display: flex; */
             /* justify-content: center; */
             /* align-items: center; */
-            background-color: rgba(255, 255, 255, 0.70);
+            background: url('{{$container->value}}');
             padding-top: 1%;
             padding-right: 1%;
             padding-left: 1%;
@@ -347,7 +347,7 @@
 
                 #bg {
             position: relative;
-            background-image: url("{{ asset('img') }}/bryte/bg2.jpg");
+            background-image: url("{{$bgL->value}}");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center center;
@@ -364,7 +364,7 @@
             /* display: flex; */
             /* justify-content: center; */
             /* align-items: center; */
-            background-color: rgba(255, 255, 255, 0.70);
+            background: url('{{$container->value}}');
             padding-top: 2%;
             padding-right: 2%;
             padding-left: 2%;
@@ -382,7 +382,7 @@
             /* display: flex; */
             /* justify-content: center; */
             /* align-items: center; */
-            background-color: rgba(255, 255, 255, 0.70);
+            background: url('{{$container->value}}');
             padding-top: 1%;
             padding-right: 1%;
             padding-left: 1%;
@@ -429,7 +429,7 @@ h2.question
 
                 #bg {
             position: relative;
-            background-image: url("{{ asset('img') }}/bryte/bg2.jpg");
+            background-image: url("{{$bgL->value}}");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center center;
@@ -446,7 +446,7 @@ h2.question
 </head>
 
 <body>
-    <div id="banner"><img src="{{ asset('img') }}/bryte/banner.jpg" class="stretch" alt="" /></div>
+    <div id="banner"><img src="{{$banner->value}}" class="stretch" alt="" /></div>
     <div id="bg">
         <div id="registration-header">
             <h1>Registration</h1>
@@ -458,38 +458,20 @@ h2.question
                 <div id="page1">
                     <div class="container-fluid">
                         <!-- First Row - First Name & Surname -->
-                        <div class="row">
-                            <div class="col-sm-6 form-group">
-                                <label for="edtName">First name</label>
-                                <input type="text" class="form-control" placeholder="First name" id="edtName" name="edtName" />
-                            </div>
-                            <div class="col-sm-6 form-group">
-                                <label for="edtSurname">Surname</label>
-                                <input type="text" class="form-control" placeholder="Surname" id="edtSurname" name="edtSurname" />
 
-                            </div>
-                        </div>
+                        @foreach($fields as $item)
                         <div class="row">
                             <div class="col-sm-12 form-group">
-                                <label for="edtCName">Company name</label>
-                                <input type="text" class="form-control" placeholder="Company name" id="edtCName" name="edtCName" />
+                            @php
+                                $idName = preg_replace('/\s*/', '', $item->name);
+                                $idName = strtolower($idName);
+                            @endphp     
+                                <label for="edtC{{$idName}}">{{$item->name}}</label>
+                                <input type="text" class="form-control" placeholder="{{$item->name}}" id="edtC{{$idName}}" name="edtC{{$idName}}" />
 
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-sm-12 form-group">
-                                <label for="edtMNum">Mobile number</label>
-                                <input type="text" class="form-control" placeholder="Mobile number" id="edtMNum" name="edtMNum" />
-
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-12 form-group">
-                                <label for="edtEmail">Email address</label>
-                                <input type="email" class="form-control" placeholder="Email address" id="edtEmail" name="edtEmail" />
-
-                            </div>
-                        </div>
+                        @endforeach
                         <div class="row">
                             <div class="col-sm-12 form-group">
                                 <label for="edtPass">Password</label>
@@ -500,7 +482,7 @@ h2.question
                         <input type="text" name="country" id="country" value="sa" style="display: none"/>
                         <div class="row">
                             <div class="col-sm-4 form-group">
-                                <button type="button" onclick="checkEmail();" class="btn bryte-button">{{ __('Next') }}</button>
+                                <button type="submit" class="btn bryte-button">{{ __('Submit') }}</button>
 
                             </div>
                         </div>
@@ -509,149 +491,7 @@ h2.question
 
 
                 </div>
-                <div id="page2">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-sm-12 form-group">
-                                <h2 class="question" style="color: #fff;">Would you like a lunch voucher?</h2>
-                            </div>
-                        </div>
-                        <!-- <div class="row justify-content-center"> -->
-                        <div class="inputGroup">
-                            <input id="voucherRadio1" name="voucherRadio" type="radio" onclick="showVoucherOptions()" value="YES"/>
-                            <label for="voucherRadio1">Yes</label>
-                        </div>
-
-                        <!-- </div> -->
-                        <!-- <div class="row justify-content-center"> -->
-                        <div class="inputGroup">
-                            <input id="voucherRadio2" name="voucherRadio" type="radio" onclick="showVoucherOptions()" value="NO"/>
-                            <label for="voucherRadio2">No</label>
-                        </div>
-                        <div id="voucherOptions" style="display:none">
-                            <div class="row">
-                                <div class="col-sm-12 form-group">
-                                    <h2 class="question" style="color: #fff; margin-top: 3%;">Which lunch voucher would you prefer?</h2>
-                                </div>
-                            </div>
-                            <div class="inputGroup">
-                                <input id="uberEats" name="voucherChoiceRadio" type="radio"  onclick="showNextAfterVoucherPick()" value="UBER"/>
-                                <label for="uberEats">Uber Eats</label>
-                            </div>
-
-                            <!-- </div> -->
-                            <!-- <div class="row justify-content-center"> -->
-                            <div class="inputGroup">
-                                <input id="mrDFood" name="voucherChoiceRadio" type="radio"  onclick="showNextAfterVoucherPick()" value="MRD"/>
-                                <label for="mrDFood">Mr D Food</label>
-                            </div>
-                            <div class="inputGroup">
-                                <input id="noVoucher" name="voucherChoiceRadio" type="radio"  onclick="showNextAfterVoucherPick()" value="NEITHER"/>
-                                <label for="noVoucher">Neither is available in my area</label>
-                            </div>
-                        </div>
-                        <!-- </div> -->
-                        <div class="row justify-content-center" style="margin-top:3.5%;">
-                            <div class="form-group">
-                                <button type="button" onclick="showPage1();" class="btn bryte-button">{{ __('Back') }}</button>
-                                <button id="page2Next" type="button" onclick="showPage3();" class="btn bryte-button" style="display: none;">{{ __('Next') }}</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="page3">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-sm-12 form-group">
-                                <h2 class="question" style="color: #fff;">Which of our breakaway rooms would you be interested in visiting?</h2>
-                            </div>
-                        </div>
-                        <!-- <div class="row justify-content-center"> -->
-                        <div class="inputGroup">
-                            <input id="lifeRoom" name="lifeRoom" type="checkbox" />
-                            <label for="lifeRoom">Life</label>
-                        </div>
-
-                        <!-- </div> -->
-                        <!-- <div class="row justify-content-center"> -->
-                        <div class="inputGroup">
-                            <input id="underwritingRoom" name="underwritingRoom" type="checkbox" />
-                            <label for="underwritingRoom">Underwriting</label>
-                        </div>
-                        <div class="inputGroup">
-                            <input id="claimsRoom" name="claimsRoom" type="checkbox" />
-                            <label for="claimsRoom">Claims</label>
-                        </div>
-                        <div class="inputGroup">
-                            <input id="productRoom" name="productRoom" type="checkbox" />
-                            <label for="productRoom">Product</label>
-                        </div>
-                        <!-- </div> -->
-                        <div class="row justify-content-center" style="margin-top:3.5%;">
-                            <div class="form-group">
-                                <button type="button" onclick="showPage2();" class="btn bryte-button">{{ __('Back') }}</button>
-                                <button type="button" onclick="showPage4();" class="btn bryte-button">{{ __('Next') }}</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="page4">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-sm-12 form-group">
-                                <h2 class="question" style="color: #fff;">Would you like to extend this invitation to any colleagues within your organisation?</h2>
-                            </div>
-                        </div>
-                        <!-- <div class="row justify-content-center"> -->
-                        <div class="inputGroup">
-                            <input id="radio3" name="radio" type="radio" onclick="showInvite()" />
-                            <label for="radio3">Yes</label>
-                        </div>
-
-                        <!-- </div> -->
-                        <!-- <div class="row justify-content-center"> -->
-                        <div class="inputGroup">
-                            <input id="radio4" name="radio" type="radio" onclick="showInvite()" />
-                            <label for="radio4">No</label>
-                        </div>
-                        <!-- </div> -->
-
-                        <div id="invitationExtend" style="display:none">
-                            <div class="row">
-                                <div class="col-sm-12 form-group">
-                                    <h2 class="question" style="color: #fff; margin-top: 3%;">Please provide us with your colleagues details:</h2>
-                                </div>
-                            </div>
-                            <div id="inviteDetails">
-                                <div class="row">
-                                    <div class="col-sm-6 form-group">
-                                        <label for="edtName1">Full name</label>
-                                        <input type="text" class="form-control" placeholder="Full name" id="edtName1" name="edtName1" />
-
-                                    </div>
-                                    <div class="col-sm-6 form-group">
-                                        <label for="edtSurname1">Email address</label>
-                                        <input type="text" class="form-control" placeholder="Email address" id="edtSurname1" name="edtSurname1" />
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row justify-content-center">
-                                <div class="form-group">
-                                    <button type="button" onclick="addInvite();" class="btn bryte-button">{{ __('Add Invite') }}</button>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center" style="margin-top:3.5%;">
-                            <div class="form-group">
-                                <button type="button" onclick="showPage3();" class="btn bryte-button">{{ __('Back') }}</button>
-                                <button type="submit"  class="btn bryte-button">{{ __('Submit') }}</button>
-                            </div>
-                        </div>
-                    </div>
+                
                 </div>
                 <br>
             </form>

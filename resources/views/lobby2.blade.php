@@ -224,8 +224,8 @@ video {
 #rightVideo1{
   width:16.4vw;
     height:10.7vw;
-    top:64.5%;
-    left:83%;
+    top:57.5%;
+    left:83.8%;
     border-radius: 35px;
 }
 #leftVideoInner{
@@ -253,8 +253,8 @@ video {
 #leftVideo1{
   width:16.4vw;
     height:10.7vw;
-    top:64.5%;
-    left:0.8%;
+    top:57.5%;
+    left:0%;
     border-radius: 35px;
 }
 
@@ -525,14 +525,7 @@ color: #ffffff !important;
 
     @endif
 
-    <div id="middleVideo" class="divInImage">
-    <img src="{{ asset('img') }}/bryte/screen1.png" class="stretch" alt="" />
-    <div id="middleVideoInner" class="divInImage">
-    <video width="100%" height="100%" autoplay loop muted>
-    <source src="{{ asset('vid') }}/sanlam3.mp4" type="video/mp4" />
-    </video>
-    </div>
-    </div>
+
 
     @if($room_two_name->value != "NONE")
     <div id="exhibitionHallHeadingArea" class="divInImage">

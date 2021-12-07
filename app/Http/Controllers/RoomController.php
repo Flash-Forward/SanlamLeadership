@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\DB;
+
+
 use App\Models\config;
 use App\Models\RegisterWhitelist;
 use App\Models\User;
@@ -76,12 +79,21 @@ class RoomController extends Controller
 
 	public function login(config $config){
         $type = $config::where("key", "login_type")->first();
+        $banner = $config::where("key", "login_banner")->first();
+        $bg = $config::where("key", "login_background")->first();
+		
 		switch($type->value){
 			case "OPEN":
-				return view('auth.openLogin');
+				return view('auth.openLogin', [
+					'banner' => $banner,
+					'bg' => $bg,
+				]);
 				break;
 			case "CLOSED":
-				return view('auth.login3');
+				return view('auth.login3', [
+					'banner' => $banner,
+					'bg' => $bg,
+				]);
 
 				break;
 		}
@@ -110,6 +122,8 @@ class RoomController extends Controller
     public function landingPage(config $config){
         $bgL = $config::where("key", "landing_background")->first();
         $bgC = $config::where("key", "landing_container")->first();
+        $regStatus = $config::where("key", "reg_status")->first();
+
 
 
         $logo = $config::where("key", "landing_logo")->first();
@@ -125,15 +139,25 @@ class RoomController extends Controller
 
         $subHeadingColor = $config::where("key", "sub_heading_color")->first();
 
+        $primColor = $config::where("key", "primary_color")->first();
+        $secColor = $config::where("key", "secondary_color")->first();
+
+
 
        
         return view('auth.register', [
             'bgL' => $bgL,
             'bgC' => $bgC,
+            'regStatus' => $regStatus,
+
 
             'logo' => $logo,
             'headingColor' => $headingColor,
             'conColor' => $conColor,
+
+            'primColor' => $primColor,
+            'secColor' => $secColor,
+
 
             'headingContent' => $headingContent,
             'subHeadingColor' => $subHeadingColor,
@@ -144,6 +168,28 @@ class RoomController extends Controller
 
         ]);
     }
+	public function registration(config $config){
+        $bgL = $config::where("key", "reg_bg")->first();
+        $bgC = $config::where("key", "reg_bg")->first();
+        $banner = $config::where("key", "reg_banner")->first();
+        $container = $config::where("key", "reg_container")->first();
+
+
+
+
+		$fields = DB::table('registration_fields')->orderBy('order')->get();
+
+        return view('auth.register2', [
+            'bgL' => $bgL,
+            'bgC' => $bgC,
+            'banner' => $banner,
+            'container' => $container,
+
+
+            'fields' => $fields,
+
+        ]);
+	}
 	public function thankyou(config $config){
         $bgL = $config::where("key", "thankyou_background")->first();
 
