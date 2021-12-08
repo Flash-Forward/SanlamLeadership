@@ -237,7 +237,8 @@ li{
 <div id="bg">
     <img src="{{ $bg->value ?? '' }}" class="stretch" alt="" />
 
-    <!-- <img src="{{ asset('img') }}/bryte/background.jpg" class="stretch" alt="" /> -->
+    <!--     <img src="{{$bg->value}}" class="stretch" alt="" />
+ -->
     <div id="myImage_zone1" class="divInImage">
       <div class="top-half">
         <h2 class="room-heading"><b>ROOM 1</b></h2>

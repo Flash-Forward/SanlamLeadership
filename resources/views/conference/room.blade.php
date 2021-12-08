@@ -156,7 +156,7 @@ h2{
                                         @csrf
                                     </form>
 <div id="bg">
-<img src="{{ $exhibitor->bg ?? '' }}" class="stretch" alt="" />
+<img src="{{ $exhibitor->bg ? $exhibitor->bg : $bg->value }}" class="stretch" alt="" />
 
 
 	<div id="myImage_zone1" class="divInImage"></div>
@@ -166,7 +166,7 @@ h2{
     <a id="myImage_zone3"></a> -->
     <!-- <a id="myImage_zone2" onclick="event.preventDefault();document.getElementById('login-form').submit();"></a> -->
 </div>
-@if($exhibitor->heading != 0)
+@if($exhibitor->heading != 0 || $exhibitor->heading == NULL)
 <div class="header" id="myHeader">
   <h2 style="font-size: 2.5vw !important; color: {{$exhibitor->headingColor}} !important;">{{$heading}}</h2>
 </div>

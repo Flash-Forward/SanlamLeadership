@@ -84,7 +84,8 @@ h2{
 
 <body>
 <div id="bg">
-    <img src="{{ asset('img') }}/bryte/background.jpg" class="stretch" alt="" />
+        <img src="{{$bg->value}}" class="stretch" alt="" />
+
 	<div id="myImage_zone1" class="divInImage">
     <iframe id="bigmarker_embed_conference_room" src="https://www.bigmarker.com/conferences/8908b8140723/bigroom" allow="camera;microphone" width="100%" height="100%" allowfullscreen="allowfullscreen" frameborder="0"></iframe>    
     </div>

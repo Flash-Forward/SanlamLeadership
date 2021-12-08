@@ -351,7 +351,8 @@ h2{
                                         @csrf
                                     </form>
 <div id="bg">
-    <img src="{{ asset('img') }}/bryte/background.jpg" class="stretch" alt="" />
+        <img src="{{$bg->value}}" class="stretch" alt="" />
+
 
     <div id="exhibitionHallBg" class="divInImage">
       <img src="{{ asset('img') }}/bryte/exhall.png" class="stretch" alt="" />

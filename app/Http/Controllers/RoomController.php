@@ -874,10 +874,16 @@ class RoomController extends Controller
 
 
         $left_banner = $config::where("key", "left_banner")->first();
+        $left_banner1 = $config::where("key", "left_banner1")->first();
+
         $right_banner = $config::where("key", "right_banner")->first();
+        $right_banner1 = $config::where("key", "right_banner1")->first();
+
         $middle_banner = $config::where("key", "middle_banner")->first();
 
         $welcome_video = $config::where("key", "welcome_video")->first();
+        $extra_banners = $config::where("key", "extra_banners")->first();
+
 
 
 
@@ -895,9 +901,15 @@ class RoomController extends Controller
             'room_four_route' => $room_four_route,
             'room_five_route' => $room_five_route,
             'left_banner' => $left_banner,
+            'left_banner1' => $left_banner1,
+
             'right_banner' => $right_banner,
+            'right_banner1' => $right_banner1,
+
             'middle_banner' => $middle_banner,
 			'welcome_video' => $welcome_video,
+			'extra_banners' => $extra_banners,
+
         ]);
     }
 }

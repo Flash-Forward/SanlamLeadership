@@ -191,7 +191,8 @@ h2{
                                         @csrf
                                     </form>
 <div id="bg">
-    <img src="{{ asset('img') }}/bryte/background.jpg" class="stretch" alt="" />
+        <img src="{{$bg->value}}" class="stretch" alt="" />
+
     <div id="myImage_zone1" class="divInImage">
     <h2><b>LOUNGE 1</b></h2>
       <a class="stretch" href="{{ route('breakawayroom') }}"></a>

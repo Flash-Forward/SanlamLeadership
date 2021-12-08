@@ -297,13 +297,60 @@ video {
     top:61%;
     left:71.6%;
 }
-
+@if ($extra_banners->value == "ENABLE")
 #leftBannerHolder{
   width:7vw;
     height:17.9557vw;
     top:0.5%;
     left:23.6%;
 }
+#leftBanner{
+  width:6.1vw;
+    height:15.4vw;
+    top:12%;
+    left:6.5%;
+}
+#rightBanner{
+  width:6.1vw;
+    height:15.4vw;
+    top:12%;
+    left:6.5%;
+}
+#rightBannerHolder{
+  width:7vw;
+    height:17.9557vw;
+    top:0.5%;
+    left:69.6%;
+}
+@else
+#leftBannerHolder{
+  width:10.331vw;
+    height:26.5vw;
+    top:0.5%;
+    left:19.2%;
+}
+
+#leftBanner{
+  width:9.031vw;
+    height:22.8vw;
+    top:12%;
+    left:6.5%;
+}
+
+#rightBanner{
+  width:9.031vw;
+    height:22.8vw;
+    top:12%;
+    left:6.5%;
+}
+#rightBannerHolder{
+  width:10.331vw;
+    height:26.5vw;
+    top:0.5%;
+    left:69.6%;
+}
+@endif
+
 #leftBannerHolder1{
   width:7vw;
     height:17.9557vw;
@@ -317,25 +364,9 @@ video {
     left:6.5%;
 }
 
-#leftBanner{
-  width:6.1vw;
-    height:15.4vw;
-    top:12%;
-    left:6.5%;
-}
 
-#rightBanner{
-  width:6.1vw;
-    height:15.4vw;
-    top:12%;
-    left:6.5%;
-}
-#rightBannerHolder{
-  width:7vw;
-    height:17.9557vw;
-    top:0.5%;
-    left:69.6%;
-}
+
+
 #rightBannerHolder1{
   width:7vw;
     height:17.9557vw;
@@ -487,7 +518,7 @@ color: #ffffff !important;
                                     </form>
 
 <div id="overlay">
-<iframe style="width: 80%; height: 80%;" src="https://player.vimeo.com/video/624360487?h=061b015b65&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" title="YouTube video player" class="yt_player_iframe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe style="width: 80%; height: 80%;" src="{{$welcome_video->value}}" title="YouTube video player" class="yt_player_iframe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   <div style="position: fixed; top: 11%; right:11.5%; width:70px;">
 	<button id="homeButton" type="button" class="btn btn-danger btn-circle" onclick="off();"><i class="fa fa-times"></i>
   </div>
@@ -626,10 +657,12 @@ color: #ffffff !important;
       </div>
     </div>
 
+
+    @if ($extra_banners->value == "ENABLE")
     <div id="leftBannerHolder1" class="divInImage">
     <img src="{{ asset('img') }}/bryte/emptybanner.png" class="stretch" alt="" />
       <div id="leftBanner1" class="divInImage">
-      <img src="{{ asset('img') }}/sanlam/side2.jpg" class="stretch" alt="" />
+      <img src="{{ $left_banner1->value ?? '' }}" class="stretch" alt="" />
       </div>
     </div>
 
@@ -638,9 +671,11 @@ color: #ffffff !important;
     <div id="rightBannerHolder1" class="divInImage">
     <img src="{{ asset('img') }}/bryte/emptybanner.png" class="stretch" alt="" />
       <div id="rightBanner1" class="divInImage">
-      <img src="{{ asset('img') }}/sanlam/side.png" class="stretch" alt="" />
+      <img src="{{ $right_banner1->value ?? '' }}" class="stretch" alt="" />
       </div>
     </div>
+    @endif
+
 
 
 

@@ -83,7 +83,8 @@ h2{
 
 <body>
 <div id="bg">
-    <img src="{{ asset('img') }}/bryte/background.jpg" class="stretch" alt="" />
+        <img src="{{$bg->value}}" class="stretch" alt="" />
+
 	<div id="myImage_zone1" class="divInImage"></div>
     <!-- <a id="myImage_zone1" href="{{ route('room') }}"></a>
     <a id="myImage_zone2" href="{{ route('exhibition') }}"></a>

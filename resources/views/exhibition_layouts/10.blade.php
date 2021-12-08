@@ -465,7 +465,8 @@ color: #ffffff !important;
         <div id="myImage_zone{{$counter}}" class="divInImage">
           <a class="stretch standLink" href="{{ route('room', ['order'=>$item->order]) }}"></a>
           <img src="{{ asset('img') }}/bryte/exstand3.png" class="stretch standImage" alt="" />
-          <div class="standColor{{$counter++}}"></div>
+          <div class="standColor{{$counter++}}" style="background-color: {{$item->color}} !important;"></div>
+
           <div class="standlogo">
             <img src="{{$item->logo}}" class="stretch roundLogo" alt="" />
           </div>
