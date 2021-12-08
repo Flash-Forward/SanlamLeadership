@@ -549,7 +549,7 @@ color: #ffffff !important;
     <img src="{{ asset('img') }}/bryte/screen1.png" class="stretch" alt="" />
     <div id="middleVideoInner" class="divInImage">
     <video width="100%" height="100%" autoplay loop muted>
-    <source src="{{ asset('vid') }}/al.mp4" type="video/mp4" />
+    <source src="{{ asset('vid') }}" type="video/mp4" />
     </video>
     </div>
     </div>
@@ -601,7 +601,7 @@ color: #ffffff !important;
     <img src="{{ asset('img') }}/bryte/screen1.png" class="stretch" alt="" />
     <div id="rightVideoInner" class="divInImage">
     <video width="100%" height="100%" autoplay loop muted>
-    <source src="{{ asset('vid') }}/sanlam.mp4" type="video/mp4" />
+    <source src="{{ $right_video->value }}" type="video/mp4" />
     </video>
     </div>
     </div>
@@ -611,7 +611,7 @@ color: #ffffff !important;
     <img src="{{ asset('img') }}/bryte/screen1.png" class="stretch" alt="" />
     <div id="rightVideoInner1" class="divInImage">
     <video width="100%" height="100%" autoplay loop muted>
-    <source src="{{ asset('vid') }}/sanlam.mp4" type="video/mp4" />
+    <source src="{{ $right_video->value }}" type="video/mp4" />
     </video>
     </div>
     </div>
@@ -624,7 +624,7 @@ color: #ffffff !important;
     <img src="{{ asset('img') }}/bryte/screen1.png" class="stretch" alt="" />
     <div id="leftVideoInner" class="divInImage">
     <video width="100%" height="100%" autoplay loop muted>
-    <source src="{{ asset('vid') }}/sanlam.mp4" type="video/mp4" />
+    <source src="{{ $left_video->value }}" type="video/mp4" />
     </video>
     </div>                                                                      
     </div>
@@ -634,7 +634,7 @@ color: #ffffff !important;
     <img src="{{ asset('img') }}/bryte/screen1.png" class="stretch" alt="" />
     <div id="leftVideoInner1" class="divInImage">
     <video width="100%" height="100%" autoplay loop muted>
-    <source src="{{ asset('vid') }}/sanlam2.mp4" type="video/mp4" />
+    <source src="{{ $left_video->value }}" type="video/mp4" />
     </video>
     </div>
     </div>

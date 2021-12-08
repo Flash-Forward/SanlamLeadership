@@ -873,6 +873,10 @@ class RoomController extends Controller
         $room_five_route = $config::where("key", "room_five_route")->first();
 
 
+        $left_video = $config::where("key", "left_video")->first();
+        $right_video = $config::where("key", "right_video")->first();
+
+
         $left_banner = $config::where("key", "left_banner")->first();
         $left_banner1 = $config::where("key", "left_banner1")->first();
 
@@ -902,6 +906,10 @@ class RoomController extends Controller
             'room_five_route' => $room_five_route,
             'left_banner' => $left_banner,
             'left_banner1' => $left_banner1,
+
+            'left_video' => $left_video,
+            'right_video' => $right_video,
+
 
             'right_banner' => $right_banner,
             'right_banner1' => $right_banner1,
