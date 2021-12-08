@@ -87,6 +87,69 @@
         }
 
 		</style>
+
+<style>
+.accordion > .card > .interval-item-alert {
+    color: #ffffff !important;
+    background-color: {{$primColor->value}};
+    border-radius: 10px;
+}
+
+div.join-link {
+    background-color: {{$primColor->value}};
+    color: white !important;
+    text-align: center;
+    margin: auto;
+    border-radius: 8px;
+    padding: 5px 0;
+    border: 2px #eee solid;
+}
+
+.accordion .accordion-wrapper .card:not(.room-card):not(.interval-item) {
+    box-shadow: 4px 4px 7px {{$primColor->value}};
+    margin-bottom: 25px;
+    border-radius: 10px;
+    background: none;
+    border: 0;
+}
+
+.accordion .accordion-wrapper .card-header a span {
+    color: {{$primColor->value}};
+    font-size: 18px;
+    font-weight: 800;
+}
+.accordion .nav-tabs .nav-link.active {
+    background: {{$primColor->value}};
+    color: {{$secColor->value}};
+    -webkit-transition: all 0s ease-out 0s;
+    -moz-transition: all 0s ease-out 0s;
+    -ms-transition: all 0s ease-out 0s;
+    -o-transition: all 0s ease-out 0s;
+    transition: all 0s ease-out 0s;
+}
+.accordion .nav-tabs .nav-item {
+    display: block;
+    color: {{$primColor->value}};
+    font-size: 24px;
+    font-weight: 700;
+}
+.accordion .nav-tabs .nav-link::after {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background: {{$primColor->value}};
+    content: "";
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -8px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    opacity: 0;
+    visibility: hidden;
+}
+</style>
 	</head>
 	<body>
 	<script src="{{ asset('js') }}/schedule/ics.deps.min.js"></script>

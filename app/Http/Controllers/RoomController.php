@@ -711,9 +711,16 @@ class RoomController extends Controller
         $scheduleData = $config::where("key", "schedule_data")->first();
 		$scheduleObj = json_decode($scheduleData->value, true);
 
+
+        $primColor = $config::where("key", "primary_color")->first();
+        $secColor = $config::where("key", "secondary_color")->first();
+
         //dd($bg->value);
         return view('schedule', [
             'bg' => $bg,
+            'primColor' => $primColor,
+            'secColor' => $secColor,
+
 			'banner' => $banner,
             'days' =>  $this->printDays($scheduleObj),
             'schedule' => $this->printSchedule($scheduleObj),
