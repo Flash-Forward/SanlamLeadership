@@ -458,7 +458,38 @@ h2.question
                 <div id="page1">
                     <div class="container-fluid">
                         <!-- First Row - First Name & Surname -->
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <label for="edtName">First name</label>
+                                <input type="text" class="form-control" placeholder="First name" id="edtName" name="edtName" />
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <label for="edtSurname">Surname</label>
+                                <input type="text" class="form-control" placeholder="Surname" id="edtSurname" name="edtSurname" />
 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 form-group" style="display:none">
+                                <label for="edtCName">Company name</label>
+                                <input type="text" class="form-control" placeholder="Company name" id="edtCName" name="edtCName" value="TEST" />
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 form-group" style="display:none">
+                                <label for="edtMNum">Mobile number</label>
+                                <input type="text" class="form-control" placeholder="Mobile number" id="edtMNum" name="edtMNum"  value="TEST"/>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label for="edtEmail">Email address</label>
+                                <input type="email" class="form-control" placeholder="Email address" id="edtEmail" name="edtEmail" />
+
+                            </div>
+                        </div>
                         @foreach($fields as $item)
                         <div class="row">
                             <div class="col-sm-12 form-group">
