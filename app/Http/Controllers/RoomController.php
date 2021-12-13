@@ -192,6 +192,7 @@ class RoomController extends Controller
 	}
 	public function thankyou(config $config){
         $bgL = $config::where("key", "thankyou_background")->first();
+        $bgC = $config::where("key", "ty_container")->first();
 
         $logo = $config::where("key", "thankyou_logo")->first();
         $headingColor = $config::where("key", "heading_color_ty")->first();
@@ -201,15 +202,23 @@ class RoomController extends Controller
         $subHeadingContent = $config::where("key", "sub_heading_content_ty")->first();
         $mainContent = $config::where("key", "main_content_ty")->first();
 
+        $conColor = $config::where("key", "con_color_ty")->first();
+
+
+
 
 
        
         return view('thankyou', [
             'bgL' => $bgL,
+            'bgC' => $bgC,
+
             'logo' => $logo,
             'headingColor' => $headingColor,
             'headingContent' => $headingContent,
             'subHeadingColor' => $subHeadingColor,
+            'conColor' => $conColor,
+
             'subHeadingContent' => $subHeadingContent,
             'mainContent' => $mainContent,
 

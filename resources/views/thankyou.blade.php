@@ -21,6 +21,22 @@
 		<link rel="stylesheet" href="{{ asset('landing') }}/css/style.css">
 		<link rel="stylesheet" href="{{ asset('landing') }}/css/responsive.css">
 		<style>
+					#banner1 .block h1 {
+				padding-bottom: 5px;
+				font-size: 40px;
+				font-weight: 100;
+				color: {{$headingColor->value ?? '' }};
+			}
+			#banner1 .block h2 {
+			padding-bottom: 25px;
+			font-size: 30px;
+			font-weight: 100;
+			color: {{$subHeadingColor->value ?? '' }};
+			}
+
+			#banner1 .block h3 {
+			color: {{$conColor->value ?? '' }};
+			}
 				#banner1 {
   background: url('{{$bgL->value}}');
   background-size: cover;
@@ -37,7 +53,7 @@
 				width: 55% !important;
 				height: 60% !important;
 				padding: 2%;
-				background-color: rgba(255,255,255,0.60);
+				background: url('{{$bgC->value}}');
 				border-radius: 10px;
 
 			}
@@ -48,7 +64,7 @@
 				width: 80% !important;
 				height: 60% !important;
 				padding: 2%;
-				background-color: rgba(255,255,255,0.50);
+				background: url('{{$bgC->value}}');
 				border-radius: 10px;
 
 			}
@@ -72,7 +88,7 @@
 							<h1><img src="{{ $logo->value ?? '' }}" class="topLogo" alt="" /></h1>
 							<h1><b>{{$headingContent->value}}</b></h1>
 							<h2><b>{{$subHeadingContent->value}}</b></h2>
-							<h3 style="color: #000000;">{!! $mainContent->value !!}</h3>
+							<h3>{!! $mainContent->value !!}</h3>
                         <br>
                         <br>
 
