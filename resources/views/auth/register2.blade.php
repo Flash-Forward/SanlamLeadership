@@ -513,7 +513,7 @@ h2.question
                         <input type="text" name="country" id="country" value="sa" style="display: none"/>
                         <div class="row">
                             <div class="col-sm-4 form-group">
-                                <button type="submit" class="btn bryte-button">{{ __('Submit') }}</button>
+                                <button type="button" onclick="submitReg()" class="btn bryte-button">{{ __('Submit') }}</button>
 
                             </div>
                         </div>
@@ -543,17 +543,15 @@ const swalWithBootstrapButtons = Swal.mixin({
   },
   buttonsStyling: false
 })
-    function checkEmail(){
+    function submitReg(){
+        @if ($whitelist_switch->value == "ON")
         var Email = document.getElementById("edtEmail");
         $.ajax({
             url: '{{ route("email.check") }}?e='+Email.value,
             type: "get",
             success: function (data) {
-                if (showPage2() && data == "1") {
-                    document.getElementById("page2").style.display = "block";
-                    document.getElementById("page1").style.display = "none";
-                    document.getElementById("page3").style.display = "none";
-                    document.getElementById("sign-up-form-div").className = "signup-form-steps";
+                if (data == "1") {
+                    document.getElementById("login-form").submit(); 
                 }else{
                     swalWithBootstrapButtons.fire({
                         icon: 'error',
@@ -564,6 +562,11 @@ const swalWithBootstrapButtons = Swal.mixin({
                 }
             }
         });
+        @else
+        document.getElementById("login-form").submit(); 
+
+        @endif
+
     }
 
     function showNextAfterVoucherPick(){

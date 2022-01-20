@@ -31,6 +31,13 @@ Route::get('/bluejeans', function () {
     return view('conference.webinarjam');
 })->name('bluejeans');
 
+Route::get('/zoom', function () {
+    return view('conference.zoom');
+})->name('zoom');
+
+Route::post('/zoomSignature', [App\Http\Controllers\RoomController::class, 'zoomSignature'])->name('zoomSignature')->withoutMiddleware([\App\Http\Middleware\VerifyCsrfToken::class]);
+
+
 Route::get('/polls', function () {
     return view('polls');
 })->name('polls');
