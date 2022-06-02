@@ -2,7 +2,7 @@
 	<html lang="en">
 	<head>
 		<meta charset="UTF-8">
-    <title>SanlamConnect</title>
+    <title>Edulink Virtual Roadshow</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<!-- google fonts -->
