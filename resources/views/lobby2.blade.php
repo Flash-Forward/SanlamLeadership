@@ -424,6 +424,7 @@ video {
 iframe{
   margin-top: 5%;
 }
+
 #overlay {
   text-align:center;
   vertical-align: middle;
@@ -493,17 +494,12 @@ color: #ffffff !important;
     <li class="nav-item active">
       <a class="nav-link" href="{{ route('lobby') }}">Lobby</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link" href="{{ route('schedule') }}">Schedule</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="/sponsors">Sponsors</a>
-    </li>
+
     <li class="nav-item">
       <a class="nav-link"  onclick="checkRoom('room_two_open_time', '/room/99');">Main Room</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link"  onclick="checkRoom('room_four_open_time', '/breakaway');">Breakaway Rooms</a>
+      <a class="nav-link"  onclick="checkRoom('room_four_open_time', '/exhibition');">Exhibition Hall</a>
     </li>
 		<li class="nav-item">
 		<a class="nav-link"  href="{{ route('logout') }}" onclick="event.preventDefault();
@@ -689,7 +685,10 @@ color: #ffffff !important;
 
     
     <a id="helpDesk" onclick="Tawk_API.toggle();"></a>
-    <a id="schedule" style="background: url('{{ asset('img') }}/bb.jpg')" href="{{ route('schedule') }}"></a>
+    <div id="schedule" class="divInImage" href="{{ route('schedule') }}">
+    <img src="{{ asset('img') }}/bb.jpg" class="stretch" alt="" />
+    
+    </div>
     <!-- <a id="myImage_zone2" onclick="event.preventDefault();document.getElementById('login-form').submit();"></a> -->
 </div>
 

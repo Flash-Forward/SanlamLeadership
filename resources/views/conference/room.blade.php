@@ -183,10 +183,7 @@ h2{
 @endif 
     </div>
 
-	<div id="myImage_zone1i" class="divInImage">
 
-<img src="{{ asset('img') }}/sanlam/logo.png" style="position: fixed; width: 10vw;" alt="" />
-</div>
 
 @else
 <script type='text/javascript'>
@@ -263,11 +260,7 @@ function redirectBack(){
 @endif
 @if($backRoute != "NONE" && $backRoute != "breakaway"  && $backRoute != "networking")
 <div class="box">
-	<a id="backButton" href="{{$extra->website}}" target="_blank" class="btn exhibition-button btn-bottom grow">Website</a>
-	<a id="homeButton" href="{{ asset('ExhibitorData') }}/{{$extra->brochure}}" target="_blank" class="btn exhibition-button btn-bottom grow">Brochure</a>
-	<a id="homeButton" href="mailto:{{str_replace(",",";",$extra->email)}}" class="btn exhibition-button btn-bottom grow">Contact Us</a>
-
-
+	<a id="backButton" href="" target="_blank" class="btn exhibition-button btn-bottom grow">I'm Interested</a>
 </div>
 @endif
 @if($speaker == true)
