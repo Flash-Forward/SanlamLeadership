@@ -86,7 +86,7 @@ h2{
 <div id="bg">
     <img src="{{ asset('img') }}/al/bg.png" class="stretch" alt="" />
 	<div id="myImage_zone1" class="divInImage">
-    <iframe src="https://bluejeans.com/433399859/7380/webrtc" allow="camera;microphone" title="description" width="100%" height="100%"></iframe> 
+    <iframe src="https://www.youtube-nocookie.com/embed/vb6RRN_J8N8?autoplay=1&controls=0" allow="camera;microphone" title="description" width="100%" height="100%"></iframe> 
     </div>
     <!-- <a id="myImage_zone1" href="{{ route('room') }}"></a>
     <a id="myImage_zone2" href="{{ route('exhibition') }}"></a>
@@ -94,7 +94,7 @@ h2{
     <!-- <a id="myImage_zone2" onclick="event.preventDefault();document.getElementById('login-form').submit();"></a> -->
 </div>
 <div class="header" id="myHeader">
-  <h2>Bluejeans Meeting</h2>
+  <h2>Example Stream</h2>
 </div> 
 
 <script>

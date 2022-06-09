@@ -27,7 +27,7 @@ Route::post('/openLogin', [App\Http\Controllers\RoomController::class, 'openLogi
 //Route::get('/exhibition/test', [App\Http\Controllers\RoomController::class, 'exhibitionHall']);
 //Route::get('/lobby/test', [App\Http\Controllers\RoomController::class, 'mainLobby']);
 
-Route::get('/bluejeans', function () {
+Route::get('/sanlamTest', function () {
     return view('conference.webinarjam');
 })->name('bluejeans');
 
