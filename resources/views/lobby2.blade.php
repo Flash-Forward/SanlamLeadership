@@ -686,7 +686,7 @@ color: #ffffff !important;
     
     <a id="helpDesk" onclick="Tawk_API.toggle();"></a>
     <div id="schedule" class="divInImage" href="{{ route('schedule') }}">
-    <img src="{{ asset('img') }}/bb.jpg" class="stretch" alt="" />
+    <img src="{{ asset('img') }}/bb.png" class="stretch" alt="" />
     
     </div>
     <!-- <a id="myImage_zone2" onclick="event.preventDefault();document.getElementById('login-form').submit();"></a> -->

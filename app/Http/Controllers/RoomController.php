@@ -1199,6 +1199,10 @@ class RoomController extends Controller
 		return $time;
 	}
 
+	public function contenthub(){
+		return view('contenthub');
+	}
+
 	public function instructions(Request $request){
 		$message = Config::where("key", "popup_message")->first()->value;
 		$redirect = Config::where("key", "redirect")->first()->value;

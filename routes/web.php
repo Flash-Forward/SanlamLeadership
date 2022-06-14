@@ -103,6 +103,8 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('/breakaway', [App\Http\Controllers\RoomController::class, 'breakawayRoom'])->name('breakaway');
     Route::get('/networking', [App\Http\Controllers\RoomController::class, 'networkingLounge'])->name('networking');
     Route::get('/instructions', [App\Http\Controllers\RoomController::class, 'instructions'])->name('instructions');
+    Route::get('/contenthub', [App\Http\Controllers\RoomController::class, 'contenthub'])->name('contenthub');
+
 
 
     Route::get('/exhibition', [App\Http\Controllers\RoomController::class, 'exhibitionHall'])->name('exhibition');
