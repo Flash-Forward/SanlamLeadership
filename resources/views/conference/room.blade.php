@@ -180,10 +180,10 @@ h2{
 
 
 
-@elseif (str_contains($webinar, "clickmeeting"))
+@elseif ($exhibitor->clickmeeting == 1)
 <div id="myImage_zone1" class="divInImage">
 
-<script type="text/javascript" src="https://embed.clickmeeting.com/embed_conference.html?r=1718192506650304&w=100%&h=100%"></script>
+<iframe src="{{$webinar}}" allowfullscreen="true" allowusermedia="true" allow="microphone; camera; accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; display-capture" title="description" width="100%" height="100%" id="iframeHolder"></iframe> 
 </div>
 
 @else

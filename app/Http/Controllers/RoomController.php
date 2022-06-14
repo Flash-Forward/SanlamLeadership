@@ -11,6 +11,8 @@ use App\Models\User;
 use App\Models\Exhibitor;
 use App\Models\Speaker;
 
+use App\Classes\ClickMeetingRestClient;
+
 
 define('NO_IMAGE', url('/').'/img/schedule/nopic.png');
 define ('SHOW_EXPAND_HELP', false);
@@ -2006,6 +2008,26 @@ class RoomController extends Controller
 
 			}
 		}
+
+		if($exhibitor->clickmeeting == 1){
+			$params = array(
+				'email' => \Auth::user()->email, // email address
+				'nickname' => \Auth::user()->name, // user nickname
+				'role' => 'listener', // user role, other: presenter, host
+			); 
+			$client = new ClickMeetingRestClient($params);
+	
+			$hash = $client->conferenceAutologinHash(6650304, $params);
+
+			$hash = json_decode($hash);
+
+			$autologin_hash = $hash->autologin_hash;
+			$webinar = "https://kylehansen239.clickmeeting.com/917633112?skipPlatformChoice=1&l=".$autologin_hash;
+
+		}
+
+
+
         return view('conference.room', [
 			'biggerScreen' => $biggerScreen,
             'bg' => $bg,

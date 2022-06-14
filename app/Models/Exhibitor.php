@@ -16,6 +16,8 @@ class Exhibitor extends Model
         'extra',
         'order',
         'sponsor',
+        'clickmeeting',
+
         'content'
 
 
