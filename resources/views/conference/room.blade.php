@@ -171,19 +171,20 @@ h2{
   <h2 style="font-size: 2.5vw !important; color: {{$exhibitor->headingColor}} !important;">{{$heading}}</h2>
 </div>
 @endif
-@if(str_contains($webinar, "http"))
+@if(str_contains($webinar, "youtube"))
 
 <div id="myImage_zone1" class="divInImage">
-@if($speaker == false )
 <iframe src="{{$webinar}}" allowfullscreen="true" allowusermedia="true" allow="microphone; camera; accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; display-capture" title="description" width="100%" height="100%" id="iframeHolder"></iframe> 
 
-@else
-<iframe src="{{$extra->presToken}}" allowfullscreen="true" allowusermedia="true" allow="microphone; camera; accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; display-capture" title="description" width="100%" height="100%" id="iframeHolder"></iframe> 
-
-@endif 
     </div>
 
 
+
+@elseif (str_contains($webinar, "clickmeeting"))
+<div id="myImage_zone1" class="divInImage">
+
+<script type="text/javascript" src="https://embed.clickmeeting.com/embed_conference.html?r=1718192506650304&w=100%&h=100%"></script>
+</div>
 
 @else
 <script type='text/javascript'>
