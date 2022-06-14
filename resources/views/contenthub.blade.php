@@ -169,7 +169,7 @@ div a:hover {
                                         @csrf
                                     </form>
 <div id="overlay" class="">
-<iframe style="width: 80%; height: 80%; top: 10%; left: 10%; position: absolute;" src="https://www.youtube.com/embed/WptKvof-cC0" title="YouTube video player" class="yt_player_iframe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe id="conIframe" style="width: 80%; height: 80%; top: 10%; left: 10%; position: absolute;" src="https://www.youtube.com/embed/WptKvof-cC0" title="YouTube video player" class="yt_player_iframe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   <div style="position: fixed; top: 11%; right:11.5%; width:70px;">
 	<button id="homeButton" type="button" class="btn btn-danger btn-circle" onclick="off();"><i class="fa fa-times"></i>
   </div>
@@ -183,84 +183,86 @@ div a:hover {
             <img src="{{ asset('img') }}/chub/edu.jpg" class="stretch" style="width: 100%; border-radius: 35px" alt="" />
         </div>
         <div class="col-md-4">
-        <a class="stretch-link" onclick="on('https://www.youtube.com/embed/WptKvof-cC0');"></a>
+        <a class="stretch-link" onclick="on('https://www.youtube.com/embed/3Z4Bzu8O92k');"></a>
             <img src="{{ asset('img') }}/chub/trin.jpg" class="stretch" style="width: 100%; border-radius: 35px" alt="" />
         </div>
         <div class="col-md-4">
-        <a class="stretch-link" onclick="on('https://www.youtube.com/embed/WptKvof-cC0');"></a>
+        <a class="stretch-link" onclick="on('https://www.youtube.com/embed/oYq55hDYIig');"></a>
             <img src="{{ asset('img') }}/chub/durh.jpg" class="stretch" style="width: 100%; border-radius: 35px" alt="" />
         </div>
     </div>
     <div class="row">
         <div class="col-md-4">
-            <a class="stretch-link" onclick="on('https://www.youtube.com/embed/WptKvof-cC0');"></a>
+            <a class="stretch-link" onclick="on('https://www.youtube.com/embed/BbAEb6mC4lc');"></a>
             <img src="{{ asset('img') }}/chub/buck.jpg" class="stretch" style="width: 100%; border-radius: 35px" alt="" />
         </div>
         <div class="col-md-4">
-        <a class="stretch-link" onclick="on('https://www.youtube.com/embed/WptKvof-cC0');"></a>
+        <a class="stretch-link" onclick="on('https://www.youtube.com/embed/SA91V4yFTL4');"></a>
             <img src="{{ asset('img') }}/chub/bourn.jpg" class="stretch" style="width: 100%; border-radius: 35px" alt="" />
         </div>
         <div class="col-md-4">
-        <a class="stretch-link" onclick="on('https://www.youtube.com/embed/WptKvof-cC0');"></a>
+        <a class="stretch-link" onclick="on('https://www.youtube.com/embed/_yprPQZRh0A');"></a>
             <img src="{{ asset('img') }}/chub/cove.jpg" class="stretch" style="width: 100%; border-radius: 35px" alt="" />
         </div>
     </div>
     <div class="row">
         <div class="col-md-4">
-            <a class="stretch-link" onclick="on('https://www.youtube.com/embed/WptKvof-cC0');"></a>
+            <a class="stretch-link" onclick="on('https://www.youtube.com/embed/lEAX4U65bQ8');"></a>
             <img src="{{ asset('img') }}/chub/newc.jpg" class="stretch" style="width: 100%; border-radius: 35px" alt="" />
         </div>
         <div class="col-md-4">
-        <a class="stretch-link" onclick="on('https://www.youtube.com/embed/WptKvof-cC0');"></a>
+        <a class="stretch-link" onclick="on('https://www.youtube.com/embed/lkVz9lphy8M');"></a>
             <img src="{{ asset('img') }}/chub/uk.jpg" class="stretch" style="width: 100%; border-radius: 35px" alt="" />
         </div>
         <div class="col-md-4">
-        <a class="stretch-link" onclick="on('https://www.youtube.com/embed/WptKvof-cC0');"></a>
+        <a class="stretch-link" onclick="on('https://www.youtube.com/embed/icjdVT26IY0');"></a>
             <img src="{{ asset('img') }}/chub/study.jpg" class="stretch" style="width: 100%; border-radius: 35px" alt="" />
         </div>
     </div>
     <div class="row">
         <div class="col-md-4">
-            <a class="stretch-link" onclick="on('https://www.youtube.com/embed/WptKvof-cC0');"></a>
+            <a class="stretch-link" onclick="on('https://www.youtube.com/embed/HYWPtB7A4iw');"></a>
             <img src="{{ asset('img') }}/chub/bhms.jpg" class="stretch" style="width: 100%; border-radius: 35px" alt="" />
         </div>
         <div class="col-md-4">
-        <a class="stretch-link" onclick="on('https://www.youtube.com/embed/WptKvof-cC0');"></a>
+        <a class="stretch-link" onclick="on('https://www.youtube.com/embed/Y9Ks7P92zsE');"></a>
             <img src="{{ asset('img') }}/chub/debr.jpg" class="stretch" style="width: 100%; border-radius: 35px" alt="" />
         </div>
         <div class="col-md-4">
-        <a class="stretch-link" onclick="on('https://www.youtube.com/embed/WptKvof-cC0');"></a>
+        <a class="stretch-link" onclick="on('https://www.youtube.com/embed/yn8JQATqiTw');"></a>
             <img src="{{ asset('img') }}/chub/icla.jpg" class="stretch" style="width: 100%; border-radius: 35px" alt="" />
         </div>
     </div>
     <div class="row">
         <div class="col-md-4">
-            <a class="stretch-link" onclick="on('https://www.youtube.com/embed/WptKvof-cC0');"></a>
+            <a class="stretch-link" onclick="on('https://www.youtube.com/embed/eEx5OE7xGvc');"></a>
             <img src="{{ asset('img') }}/chub/east.jpg" class="stretch" style="width: 100%; border-radius: 35px" alt="" />
         </div>
         <div class="col-md-4">
-        <a class="stretch-link" onclick="on('https://www.youtube.com/embed/WptKvof-cC0');"></a>
+        <a class="stretch-link" onclick="on('https://www.youtube.com/embed/bytyPtn4Rho');"></a>
             <img src="{{ asset('img') }}/chub/georg.jpg" class="stretch" style="width: 100%; border-radius: 35px" alt="" />
         </div>
         <div class="col-md-4">
-        <a class="stretch-link" onclick="on('https://www.youtube.com/embed/WptKvof-cC0');"></a>
+        <a class="stretch-link" onclick="on('https://www.youtube.com/embed/D885s5H8PEg');"></a>
             <img src="{{ asset('img') }}/chub/alte.jpg" class="stretch" style="width: 100%; border-radius: 35px" alt="" />
         </div>
     </div>
     <div class="row justify-content-center">
         <div class="col-md-4">
-            <a class="stretch-link" onclick="on('https://www.youtube.com/embed/WptKvof-cC0');"></a>
+            <a class="stretch-link" onclick="on('https://www.youtube.com/embed/RWcRYjm-iEQ');"></a>
             <img src="{{ asset('img') }}/chub/vet.jpg" class="stretch" style="width: 100%; border-radius: 35px" alt="" />
         </div>
         <div class="col-md-4">
-        <a class="stretch-link" onclick="on('https://www.youtube.com/embed/WptKvof-cC0');"></a>
+        <a class="stretch-link" onclick="on('https://www.youtube.com/embed/rNx80jyDF8I');"></a>
             <img src="{{ asset('img') }}/chub/linc.jpg" class="stretch" style="width: 100%; border-radius: 35px" alt="" />
         </div>
 
     </div>
 	<script>
-    function on() {
+    function on(url) {
   document.getElementById("overlay").style.display = "block";
+  document.getElementById("conIframe").src = url;
+
 }
 
 function off() {
