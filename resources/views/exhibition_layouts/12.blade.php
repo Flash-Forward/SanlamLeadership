@@ -475,7 +475,13 @@ color: #ffffff !important;
       @foreach($exhibitors as $item)
         @if($item->order < '99')
         <div id="myImage_zone{{$counter}}" class="divInImage">
-          <a class="stretch standLink" href="{{ route('room', ['order'=>$item->order]) }}"></a>
+        @if ($counter == 3)
+        <a class="stretch standLink" onclick="checkRoom(99, '/room/99')"></a>
+          
+        @else
+        <a class="stretch standLink" href="{{ route('room', ['order'=>$item->order]) }}"></a>
+          
+        @endif
           <img src="{{ asset('img') }}/bryte/exstand3.png" class="stretch standImage" alt="" />
           <div class="standColor{{$counter++}}" style="background-color: {{$item->color}} !important;"></div>
 
@@ -506,17 +512,9 @@ const swalWithBootstrapButtons = Swal.mixin({
 })
 
 function checkRoom(room, route){
-        $.ajax({
-            url: '{{ route("room.check") }}?r='+room,
-            type: "get",
-            success: function (data) {
-                // if (data == "1") {
-	              //   window.location.href = route;
-                    
-                // }else{
-                    swalWithBootstrapButtons.fire({
+  swalWithBootstrapButtons.fire({
                         //html: '<span style="color:#ffffff; font-size: 1.2vw;">This room opens at '+data+'</span>',
-                        html: '<span style="color:#ffffff; font-size: 1.2vw;">This room is closed</span>',
+                        html: '<span style="color:#ffffff; font-size: 1.2vw;">This room is at capacity</span>',
 
                         background: "url('{{ asset('img') }}/bryte/background.jpg')",
                         // html: true,
@@ -526,9 +524,6 @@ function checkRoom(room, route){
 						width: "20%",
                         //footer: '<a href>Why do I have this issue?</a>'
                     })
-               // }
-            }
-        });
     }
 
 </script>
