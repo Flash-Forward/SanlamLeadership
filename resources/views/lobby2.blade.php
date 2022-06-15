@@ -138,7 +138,7 @@ body, html {
 #breakawayRoomsHeadingText{
     text-shadow: 0px 1px, 1px 0px #f8f8f8, 2px 1.5px #131313;
   font-weight: 450;
-  font-size: 1.7vw !important;
+  font-size: 1.8vw !important;
   text-align: center;
   line-height: 1.05;
     color: #f8f8f8;

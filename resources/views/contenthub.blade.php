@@ -239,7 +239,7 @@ div a:hover {
             <img src="{{ asset('img') }}/chub/east.jpg" class="stretch" style="width: 100%; border-radius: 35px" alt="" />
         </div>
         <div class="col-md-4">
-        <a class="stretch-link" onclick="on('https://www.youtube.com/embed/bytyPtn4Rho');"></a>
+        <a class="stretch-link" onclick="on('https://www.youtube.com/embed/ZE3wlDkvsTs');"></a>
             <img src="{{ asset('img') }}/chub/georg.jpg" class="stretch" style="width: 100%; border-radius: 35px" alt="" />
         </div>
         <div class="col-md-4">

@@ -76,8 +76,8 @@ body, html {
   /* background: url("{{ asset('img') }}/bryte/breakawayroom.png"); */
   background-size: cover;
   width:80vw;
-    height:80vh;
-    top:10%;
+    height:103vh;
+    top:0%;
     left:10%;
     border-radius: 35px;
 }
@@ -263,6 +263,43 @@ body, html {
     /* border-radius: 10px; */
 
 }
+.standColor16{
+  background-color: #e31d1a;
+  border-radius: 25px;
+  top:0%;
+    left:0%;
+  width:100%;
+    height:71%;
+  position: absolute;
+
+    /* border-radius: 10px; */
+
+}
+
+.standColor17{
+  background-color: #e31d1a;
+  border-radius: 25px;
+  top:0%;
+    left:0%;
+  width:100%;
+    height:71%;
+  position: absolute;
+
+    /* border-radius: 10px; */
+
+}
+.standColor18{
+  background-color: #e31d1a;
+  border-radius: 25px;
+  top:0%;
+    left:0%;
+  width:100%;
+    height:71%;
+  position: absolute;
+
+    /* border-radius: 10px; */
+
+}
 
 .roundlogo{
     border-radius: 25px;
@@ -325,7 +362,7 @@ body, html {
 
   width: 8.2vw;
     height: 8.2vw;
-    top:43%;
+    top:37%;
     left:20.5%;
   border-radius: 35px;
   
@@ -334,14 +371,14 @@ body, html {
 #myImage_zone8{
   width: 8.2vw;
     height: 8.2vw;
-    top:43%;
+    top:37%;
     left:32.2%;
     border-radius: 35px;
 }
 #myImage_zone9{
   width: 8.2vw;
     height: 8.2vw;
-    top:43%;
+    top:37%;
     left:44%;
     border-radius: 35px;
 }
@@ -349,7 +386,7 @@ body, html {
 #myImage_zone10{
   width: 8.2vw;
     height: 8.2vw;
-    top:43%;
+    top:37%;
     left:55.8%;
     border-radius: 35px;
 }
@@ -357,7 +394,7 @@ body, html {
 #myImage_zone11{
   width: 8.2vw;
     height: 8.2vw;
-    top:43%;
+    top:37%;
     left:67.6%;
     border-radius: 35px;
 }
@@ -365,14 +402,14 @@ body, html {
 #myImage_zone12{
   width: 8.2vw;
     height: 8.2vw;
-    top:66%;
+    top:54%;
     left:20.5%;
   border-radius: 35px;
 }
 #myImage_zone13{
   width: 8.2vw;
     height: 8.2vw;
-    top:66%;
+    top:54%;
     left:32.2%;
   border-radius: 35px;
 }
@@ -380,7 +417,7 @@ body, html {
 #myImage_zone14{
   width: 8.2vw;
     height: 8.2vw;
-    top:66%;
+    top:54%;
     left:44%;
   border-radius: 35px;
 }
@@ -388,7 +425,7 @@ body, html {
 #myImage_zone15{
   width: 8.2vw;
     height: 8.2vw;
-    top:66%;
+    top:54%;
     left:55.8%;
   border-radius: 35px;
 }
@@ -396,8 +433,25 @@ body, html {
 #myImage_zone16{
   width: 8.2vw;
     height: 8.2vw;
-    top:66%;
+    top:54%;
     left:67.6%;
+    
+  border-radius: 35px;
+}
+
+#myImage_zone17{
+  width: 8.2vw;
+    height: 8.2vw;
+    top:71%;
+    left:38.1%;
+    
+  border-radius: 35px;
+}
+#myImage_zone18{
+  width: 8.2vw;
+    height: 8.2vw;
+    top:71%;
+    left:49.9%;
     
   border-radius: 35px;
 }
@@ -414,7 +468,7 @@ body, html {
     color: #000000;
 }
 h2{
-	font-size: 48px !important;
+	font-size: 24px !important;
   color: #f1f1f1 !important;
 }
 .header {
