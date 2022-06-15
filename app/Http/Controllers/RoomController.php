@@ -2017,12 +2017,12 @@ class RoomController extends Controller
 			); 
 			$client = new ClickMeetingRestClient($params);
 	
-			$hash = $client->conferenceAutologinHash(6650304, $params);
+			$hash = $client->conferenceAutologinHash($exhibitor->room_id, $params);
 
 			$hash = json_decode($hash);
 
 			$autologin_hash = $hash->autologin_hash;
-			$webinar = "https://kylehansen239.clickmeeting.com/917633112?skipPlatformChoice=1&l=".$autologin_hash;
+			$webinar = "https://kylehansen239.clickmeeting.com/".$exhibitor->webinar."?skipPlatformChoice=1&l=".$autologin_hash;
 
 		}
 
