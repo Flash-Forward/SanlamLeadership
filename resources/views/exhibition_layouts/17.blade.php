@@ -522,14 +522,12 @@ color: #ffffff !important;
     <li class="nav-item active">
       <a class="nav-link" href="{{ route('lobby') }}">Lobby</a>
     </li>
+
     <li class="nav-item">
-      <a class="nav-link" href="{{ route('schedule') }}">Schedule</a>
+      <a class="nav-link"  onclick="checkRoom('room_two_open_time', '/room/99');">Main Room</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link"  onclick="checkRoom('room_two_open_time', '/exhibition');">Exhibition Hall</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link"  onclick="checkRoom('room_four_open_time', '/breakaway');">Breakaway Rooms</a>
+      <a class="nav-link"  onclick="checkRoom('room_four_open_time', '/exhibition');">Exhibition Hall</a>
     </li>
 		<li class="nav-item">
 		<a class="nav-link"  href="{{ route('logout') }}" onclick="event.preventDefault();
