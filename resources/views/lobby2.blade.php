@@ -1,6 +1,6 @@
 <head>
 		<meta charset="UTF-8">
-    <title>Edulink Virtual Roadshow</title>
+    <title>Sanlam Leadership</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<!-- google fonts -->
@@ -166,7 +166,7 @@ video {
 #innovatorsCafeHeadingText{
     text-shadow: 0px 1px, 1px 0px #f8f8f8, 2px 1.5px #131313;
   font-weight: 450;
-  font-size: 2.5vw !important;
+  font-size: 2.2vw !important;
   text-align: center;
   line-height: 1.00;
     color: #f8f8f8;
@@ -685,10 +685,9 @@ color: #ffffff !important;
 
     
     <a id="helpDesk" onclick="Tawk_API.toggle();"></a>
-    <div id="schedule" class="divInImage" href="{{ route('schedule') }}">
-    <img src="{{ asset('img') }}/bb.png" class="stretch" alt="" />
+    <a id="schedule"  href="{{ route('schedule') }}">
     
-    </div>
+    </a>
     <!-- <a id="myImage_zone2" onclick="event.preventDefault();document.getElementById('login-form').submit();"></a> -->
 </div>
 

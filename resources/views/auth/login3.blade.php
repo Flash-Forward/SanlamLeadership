@@ -1,6 +1,6 @@
 <head>
 		<meta charset="UTF-8">
-        <title>Edulink Virtual Roadshow</title>
+        <title>Sanlam Leadership</title>
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
@@ -241,7 +241,7 @@ s0.parentNode.insertBefore(s1,s0);
 
 <script>
             swalWithBootstrapButtons.fire({
-                        html: '<span style="color:#ffffff; font-size: 1.2vw;">Please note that delegates will only be able to login on the 22nd of June</span>',
+                        html: '<span style="color:#ffffff; font-size: 1.2vw;">Please note that delegates will only be able to login on the 21st of June</span>',
                         //html: '<span style="color:#ffffff; font-size: 1.2vw;">This room is closed</span>',
 
                         background: "url('{{ asset('img') }}/bryte/background.jpg')",
