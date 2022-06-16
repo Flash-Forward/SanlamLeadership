@@ -591,51 +591,7 @@ color: #ffffff !important;
     <a id="innovatorsCafe" onclick="checkRoom('room_one_open_time', '{{$room_one_route->value}}');"></a>
 
     @endif
-    @if($room_five_name->value == "NONE")
 
-    <div id="rightVideo" class="divInImage">
-    <img src="{{ asset('img') }}/bryte/screen1.png" class="stretch" alt="" />
-    <div id="rightVideoInner" class="divInImage">
-    <video width="100%" height="100%" autoplay loop muted>
-    <source src="{{ $right_video->value }}" type="video/mp4" />
-    </video>
-    </div>
-    </div>
-
-    @else
-    <div id="rightVideo1" class="divInImage">
-    <img src="{{ asset('img') }}/bryte/screen1.png" class="stretch" alt="" />
-    <div id="rightVideoInner1" class="divInImage">
-    <video width="100%" height="100%" autoplay loop muted>
-    <source src="{{ $right_video->value }}" type="video/mp4" />
-    </video>
-    </div>
-    </div>
-
-    @endif
-
-    @if($room_one_name->value == "NONE")
-
-    <div id="leftVideo" class="divInImage">
-    <img src="{{ asset('img') }}/bryte/screen1.png" class="stretch" alt="" />
-    <div id="leftVideoInner" class="divInImage">
-    <video width="100%" height="100%" autoplay loop muted>
-    <source src="{{ $left_video->value }}" type="video/mp4" />
-    </video>
-    </div>                                                                      
-    </div>
-
-    @else
-    <div id="leftVideo1" class="divInImage">
-    <img src="{{ asset('img') }}/bryte/screen1.png" class="stretch" alt="" />
-    <div id="leftVideoInner1" class="divInImage">
-    <video width="100%" height="100%" autoplay loop muted>
-    <source src="{{ $left_video->value }}" type="video/mp4" />
-    </video>
-    </div>
-    </div>
-
-    @endif
 
     <div id="leftBannerHolder" class="divInImage">
     <img src="{{ asset('img') }}/bryte/emptybanner.png" class="stretch" alt="" />

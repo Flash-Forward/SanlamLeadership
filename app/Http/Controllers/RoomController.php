@@ -1918,8 +1918,7 @@ class RoomController extends Controller
     {
         $bg = $config::where("key", "general_background")->first();
         $banner = $config::where("key", "reg_bg")->first();
-        $scheduleData = $config::where("key", "schedule_data")->first();
-		$scheduleObj = json_decode($scheduleData->value, true);
+		$scheduleObj = $this->rows;
 
 
         $primColor = $config::where("key", "primary_color")->first();
@@ -2086,7 +2085,20 @@ class RoomController extends Controller
 	public function networkingLounge(config $config)
     {
         $bg = $config::where("key", "general_background")->first();
-        $rooms = Exhibitor::where('order', '>', 200)->where('order', '<', 300)->get();
+        $rooms = Exhibitor::where('order', '>', 199)->where('order', '<', 210)->get();
+
+        //dd($bg->value);
+        return view('middle_layouts.'.$rooms->count(), [
+            'bg' => $bg,
+			'rooms' => $rooms,
+			'roomType' => 'networking'
+        ]);
+    }
+
+	public function networkingLounge2(config $config)
+    {
+        $bg = $config::where("key", "general_background")->first();
+        $rooms = Exhibitor::where('order', '>', 209)->where('order', '<', 220)->get();
 
         //dd($bg->value);
         return view('middle_layouts.'.$rooms->count(), [
