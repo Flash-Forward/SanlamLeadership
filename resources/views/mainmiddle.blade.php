@@ -132,12 +132,12 @@ color: #ffffff !important;
 
 h2{
 	font-size: 2vw !important;
-  color: #0074c9 !important;
+  color: #000000 !important;
 }
 .header {
 	width: 100%;
 	position: fixed; 
-	top: 10%;
+	top: 13%;
 	
   padding: 10px 16px;
   color: #f1f1f1 !important;
@@ -205,13 +205,13 @@ li{
 
         <div id="myImage_zone1" class="divInImage">
         <h2 class="room-heading"><b>Main Room</b></h2>
-        <span style="color:#000;"><b>English</b></span>
+        <span style="color:#000; font-size: 23px;"><b>English</b></span>
         <a class="stretch-link" href="{{ route('room', ['order'=>99]) }}"></a>
         <img src="{{ asset('img') }}/bryte/breakawayroom.png" class="" style="width: 100%;" alt="" />
         </div>
         <div id="myImage_zone2" class="divInImage">
         <h2 class="room-heading"><b>Main Room</b></h2>
-        <span style="color:#000;"><b>French</b></span>
+        <span style="color:#000; font-size: 23px;"><b>French</b></span>
         <a class="stretch-link" href="{{ route('room', ['order'=>101]) }}"></a>
         <img src="{{ asset('img') }}/bryte/breakawayroom.png" class="" style="width: 100%;" alt="" />
         </div>
@@ -220,7 +220,7 @@ li{
    
 </div>
 <div class="header" id="myHeader">
-  <h2>Please Choose Your Preffered Language</h2>
+  <h2>Please Select Your Preffered Language</h2>
 
 </div> 
 <script>

@@ -227,12 +227,12 @@ color: #ffffff !important;
 
 h2{
 	font-size: 2vw !important;
-  color: #f1f1f1 !important;
+  color: #000000 !important;
 }
 .header {
 	width: 100%;
 	position: fixed; 
-	top: 10%;
+	top: 13%;
 	
   padding: 10px 16px;
   color: #f1f1f1 !important;

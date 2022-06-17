@@ -1437,8 +1437,12 @@ class RoomController extends Controller
         ]);
 	}
 
-	public function mainMiddle(){
-		return view('mainmiddle');
+	public function mainMiddle(config $config){
+        $bg = $config::where("key", "general_background")->first();
+
+		return view('mainmiddle', [
+			'bg' => $bg
+		]);
 	}
 
     public function conference(config $config, $order)
@@ -1504,7 +1508,33 @@ class RoomController extends Controller
 				'email' => \Auth::user()->email, // email address
 				'nickname' => \Auth::user()->name, // user nickname
 				'role' => 'listener', // user role, other: presenter, host
-			); 
+			);
+			if(\Auth::user()->user_roles_id == 1){
+				$exhibitor = Exhibitor::where('order', $order)->first();
+				if($order != 100){
+					$speaker1 = Speaker::where('users_id', \Auth::user()->id)->where('exhibitors_id', $exhibitor->id)->first();
+					if($speaker1){
+						$speaker = true;
+						$params = array(
+							'email' => \Auth::user()->email, // email address
+							'nickname' => \Auth::user()->name, // user nickname
+							'role' => 'presenter', // user role, other: presenter, host
+						);
+					}
+				}else{
+					$backRoute = "NONE";
+					$speaker = Speaker::where('users_id', \Auth::user()->id)->first();
+					$exhibitor = Exhibitor::where('id', $speaker->exhibitors_id)->first();
+					$speaker = true;
+					$params = array(
+						'email' => \Auth::user()->email, // email address
+						'nickname' => \Auth::user()->name, // user nickname
+						'role' => 'presenter', // user role, other: presenter, host
+					);
+				}
+
+			}
+
 			$client = new ClickMeetingRestClient($params);
 	
 			$hash = $client->conferenceAutologinHash($exhibitor->room_id, $params);
