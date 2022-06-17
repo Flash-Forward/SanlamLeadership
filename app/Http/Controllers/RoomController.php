@@ -1446,7 +1446,7 @@ class RoomController extends Controller
 		$backRoute = "NONE";
 		$biggerScreen = false;
 		$speaker = false;
-		if($order == '99')
+		if($order == '99' || $order == '101')
 			$biggerScreen = true;
         if($order == '100'){
             $backRoute = "NONE";
@@ -1463,7 +1463,7 @@ class RoomController extends Controller
         $extra = json_decode($exhibitor->extra);
         //dd($extra);
         
-        if($order >= 101){
+        if($order >= 102){
 			$biggerScreen = true;
             $backRoute = "breakaway";
 

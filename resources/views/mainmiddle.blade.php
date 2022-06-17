@@ -212,7 +212,7 @@ li{
         <div id="myImage_zone2" class="divInImage">
         <h2 class="room-heading"><b>Main Room</b></h2>
         <span style="color:#000;"><b>French</b></span>
-        <a class="stretch-link" href="{{ route('room', ['order'=>100]) }}"></a>
+        <a class="stretch-link" href="{{ route('room', ['order'=>101]) }}"></a>
         <img src="{{ asset('img') }}/bryte/breakawayroom.png" class="" style="width: 100%;" alt="" />
         </div>
 
