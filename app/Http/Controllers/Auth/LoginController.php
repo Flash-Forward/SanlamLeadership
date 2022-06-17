@@ -35,7 +35,7 @@ class LoginController extends Controller
             return '/lobby';
             break;
           case '2':
-            if(Auth::user()->email != "ffp@gmail.com" && Auth::user()->email != "edulink@gmail.com")
+            if(Auth::user()->email != "ffp@gmail.com" && Auth::user()->email != "sanlam@gmail.com")
               Auth::logout();
             return '/lobby';
             break; 
