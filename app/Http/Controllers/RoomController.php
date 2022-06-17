@@ -66,7 +66,7 @@ class RoomController extends Controller
 													'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
 													'room_desc'		=> 	'Welcoming',
 													'room_info'		=> 	'Welcoming',
-													'link'			=>	'/room/99',
+													'link'			=>	'/mainmid',
 													'speakers'		=> 	[	
 														/*
 														Ideally also a table and this array should hold the user id's.
@@ -97,7 +97,7 @@ class RoomController extends Controller
 													'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
 													'room_desc'		=> 	'Strategy Review - Sanlam Group Strategy',
 													'room_info'		=> 	'Strategy Review - Sanlam Group Strategy',
-													'link'			=>	'/room/99',
+													'link'			=>	'/mainmid',
 													'speakers'		=> 	[	
 														/*
 														Ideally also a table and this array should hold the user id's.
@@ -129,7 +129,7 @@ class RoomController extends Controller
 													'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
 													'room_desc'		=> 	'Strategy Review - Business Unit Strategies',
 													'room_info'		=> 	'Strategy Review - Business Unit Strategies',
-													'link'			=>	'/room/99',
+													'link'			=>	'/mainmid',
 													'speakers'		=> 	[	
 														/*
 														Ideally also a table and this array should hold the user id's.
@@ -190,7 +190,7 @@ class RoomController extends Controller
 													'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
 													'room_desc'		=> 	'Growing our People',
 													'room_info'		=> 	'Growing our People',
-													'link'			=>	'/room/99',
+													'link'			=>	'/mainmid',
 													'speakers'		=> 	[	
 														/*
 														Ideally also a table and this array should hold the user id's.
@@ -221,7 +221,7 @@ class RoomController extends Controller
 													'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
 													'room_desc'		=> 	'Growing our People - Investing in our People and Culture',
 													'room_info'		=> 	'Growing our People - Investing in our People and Culture',
-													'link'			=>	'/room/99',
+													'link'			=>	'/mainmid',
 													'speakers'		=> 	[	
 														/*
 														Ideally also a table and this array should hold the user id's.
@@ -280,7 +280,7 @@ class RoomController extends Controller
 													'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
 													'room_desc'		=> 	'Growing our Communities & Environment',
 													'room_info'		=> 	'Growing our Communities & Environment',
-													'link'			=>	'/room/99',
+													'link'			=>	'/mainmid',
 													'speakers'		=> 	[	
 														/*
 														Ideally also a table and this array should hold the user id's.
@@ -313,7 +313,7 @@ class RoomController extends Controller
 													'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
 													'room_desc'		=> 	'Growing our Communities & Environment - Foundation Showcase',
 													'room_info'		=> 	'Growing our Communities & Environment - Foundation Showcase',
-													'link'			=>	'/room/99',
+													'link'			=>	'/mainmid',
 													'speakers'		=> 	[	
 														/*
 														Ideally also a table and this array should hold the user id's.
@@ -351,7 +351,7 @@ class RoomController extends Controller
 													'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
 													'room_desc'		=> 	'Growing our Communities & Environment - Living Our Purpose',
 													'room_info'		=> 	'Growing our Communities & Environment - Living Our Purpose',
-													'link'			=>	'/room/99',
+													'link'			=>	'/mainmid',
 													'speakers'		=> 	[	
 														/*
 														Ideally also a table and this array should hold the user id's.
@@ -415,7 +415,7 @@ class RoomController extends Controller
 													'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
 													'room_desc'		=> 	'Growing Our Business',
 													'room_info'		=> 	'Growing Our Business',
-													'link'			=>	'/room/99',
+													'link'			=>	'/mainmid',
 													'speakers'		=> 	[	
 														/*
 														Ideally also a table and this array should hold the user id's.
@@ -449,7 +449,7 @@ class RoomController extends Controller
 													'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
 													'room_desc'		=> 	'Growing Our Business - Partnership for growth',
 													'room_info'		=> 	'Growing Our Business - Partnership for growth',
-													'link'			=>	'/room/99',
+													'link'			=>	'/mainmid',
 													'speakers'		=> 	[	
 														/*
 														Ideally also a table and this array should hold the user id's.
@@ -511,7 +511,7 @@ class RoomController extends Controller
 													'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
 													'room_desc'		=> 	'Growing Our Business - MTN Partnership',
 													'room_info'		=> 	'Growing Our Business - MTN Partnership',
-													'link'			=>	'/room/99',
+													'link'			=>	'/mainmid',
 													'speakers'		=> 	[	
 														/*
 														Ideally also a table and this array should hold the user id's.
@@ -573,7 +573,7 @@ class RoomController extends Controller
 													'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
 													'room_desc'		=> 	'Growing Our Business - Allianz Partnership',
 													'room_info'		=> 	'Growing Our Business - Allianz Partnership',
-													'link'			=>	'/room/99',
+													'link'			=>	'/mainmid',
 													'speakers'		=> 	[	
 														/*
 														Ideally also a table and this array should hold the user id's.
@@ -629,7 +629,7 @@ class RoomController extends Controller
 													'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
 													'room_desc'		=> 	'CEO Closing remarks',
 													'room_info'		=> 	'CEO Closing remarks',
-													'link'			=>	'/room/99',
+													'link'			=>	'/mainmid',
 													'speakers'		=> 	[	
 														/*
 														Ideally also a table and this array should hold the user id's.
@@ -1045,7 +1045,7 @@ class RoomController extends Controller
 
 		$ctrlId ='room-collapse'.$ridx;
 		$hdrId	='room-heading'.$ridx;
-		if($room['link'] == '/room/99')
+		if($room['link'] == '/mainmid')
 			$onclick = 'onClick="checkRoom(\'room_two_open_time\', \''.$room['link'].'\', event);"';
 		else
 			$onclick = 'onClick="checkRoom(\'room_four_open_time\', \''.$room['link'].'\', event);"';
@@ -1435,6 +1435,10 @@ class RoomController extends Controller
 
 
         ]);
+	}
+
+	public function mainMiddle(){
+		return view('mainmiddle');
 	}
 
     public function conference(config $config, $order)
