@@ -2021,7 +2021,7 @@ class RoomController extends Controller
 			$hash = json_decode($hash);
 
 			$autologin_hash = $hash->autologin_hash;
-			$webinar = "https://kylehansen239.clickmeeting.com/".$exhibitor->webinar."?skipPlatformChoice=1&l=".$autologin_hash;
+			$webinar = "https://kyle789.clickmeeting.com/".$exhibitor->webinar."?skipPlatformChoice=1&l=".$autologin_hash;
 
 		}
 
