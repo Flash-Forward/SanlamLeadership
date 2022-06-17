@@ -166,7 +166,7 @@ h2{
     <a id="myImage_zone3"></a> -->
     <!-- <a id="myImage_zone2" onclick="event.preventDefault();document.getElementById('login-form').submit();"></a> -->
 </div>
-@if($exhibitor->heading != 0 || $exhibitor->heading == NULL)
+@if($exhibitor->heading != 0)
 <div class="header" id="myHeader">
   <h2 style="font-size: 2.5vw !important; color: {{$exhibitor->headingColor}} !important;">{{$heading}}</h2>
 </div>
