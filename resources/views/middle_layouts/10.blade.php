@@ -283,9 +283,7 @@ li{
     <li class="nav-item">
       <a class="nav-link"  onclick="checkRoom('room_two_open_time', '/exhibition');">Exhibition Hall</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link"  onclick="checkRoom('room_four_open_time', '/breakaway');">Breakaway Rooms</a>
-    </li>
+
 		<li class="nav-item">
 		<a class="nav-link"  href="{{ route('logout') }}" onclick="event.preventDefault();
        document.getElementById('logout-form').submit();">Log Out</a>

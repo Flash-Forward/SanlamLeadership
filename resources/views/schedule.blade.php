@@ -165,15 +165,11 @@ div.join-link {
   <li class="nav-item">
 	<a class="nav-link" href="{{ route('schedule') }}" style="color: #000000 !important;"  onMouseOver="this.style.color='#0096FF'" onMouseOut="this.style.color='#000000'">Schedule</a>
   </li>
-  <li class="nav-item">
-      <a class="nav-link" href="/sponsors" style="color: #000000 !important;"  onMouseOver="this.style.color='#0096FF'" onMouseOut="this.style.color='#000000'">Sponsors</a>
-    </li>
+
   <li class="nav-item">
 	<a class="nav-link"  onclick="checkRoom('room_two_open_time', '/room/99', event);" style="color: #000000 !important;"  onMouseOver="this.style.color='#0096FF'" onMouseOut="this.style.color='#000000'">Main Room</a>
   </li>
-  <li class="nav-item">
-	<a class="nav-link"  onclick="checkRoom('room_four_open_time', '/breakaway', event);" style="color: #000000 !important;"  onMouseOver="this.style.color='#0096FF'" onMouseOut="this.style.color='#000000'">Breakaway Rooms</a>
-  </li>
+
 	  <li class="nav-item">
 	  <a class="nav-link"  onMouseOver="this.style.color='#0096FF'" onMouseOut="this.style.color='#000000'"  href="{{ route('logout') }}" style="color: #000000 !important;" onclick="event.preventDefault();
 	 document.getElementById('logout-form').submit();">Log Out</a>
