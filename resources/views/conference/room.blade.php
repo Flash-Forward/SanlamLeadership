@@ -259,7 +259,7 @@ function redirectBack(){
 
 </div>
 @endif
-@if($backRoute != "NONE" && $backRoute != "breakaway"  && $backRoute != "networking")
+@if($backRoute != "NONE" && $backRoute != "breakaway"  && $backRoute != "networking" && $backRoute != "networking.2")
 <div class="box">
 	<a id="backButton" href="" target="_blank" class="btn exhibition-button btn-bottom grow">I'm Interested</a>
 </div>
