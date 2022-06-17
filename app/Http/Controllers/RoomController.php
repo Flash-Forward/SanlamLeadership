@@ -1983,10 +1983,16 @@ class RoomController extends Controller
             $backRoute = "breakaway";
 
 		}
-		if($order >= 201){
+		if($order >= 200){
 			$biggerScreen = true;
 
             $backRoute = "networking";
+
+		}
+		if($order >= 210){
+			$biggerScreen = true;
+
+            $backRoute = "networking.2";
 
 		}
 		if($order >= 499){
