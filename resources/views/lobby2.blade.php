@@ -156,7 +156,7 @@ body, html {
   align-items: center;
   width:17%;
     height:15%;
-    top:39.0%;
+    top:38.0%;
     left:0%;
     border-radius: 35px;
 }
@@ -271,7 +271,7 @@ video {
   align-items: center;
   width:17%;
     height:15%;
-    top:39.0%;
+    top:38.0%;
     left:83%;
     border-radius: 35px;
 }
@@ -489,7 +489,7 @@ color: #ffffff !important;
 <nav class="navbar navbar-expand-sm bg-light">
 
   <!-- Links -->
-  <a href="#" class="navbar-left" style="margin-right: 3%; margin-left: 3%;"><img src="{{ asset('img') }}/bryte/logo3.png"></a>
+  <a href="#" class="navbar-left" style="margin-right: 3%; margin-left: 3%;"><img src="{{ asset('img') }}/slogo.png"></a>
   <ul class="navbar-nav ml-auto">
     <li class="nav-item active">
       <a class="nav-link" href="{{ route('lobby') }}">Lobby</a>

@@ -201,7 +201,7 @@ class RoomController extends Controller
 														[
 															'pic'			=> '/img/schedule/profile/sanlam.webp',
 															'name'			=> 'Portia Mogale', 
-															'designation'	=> 'Santam: Human Resources'																					
+															'designation'	=> 'Head: Change Management • Santam: Human Resources'																					
 														], 
 
 
@@ -343,7 +343,7 @@ class RoomController extends Controller
 					[	//Row 2
 						'title'			=> 'Welcome',
 						'image'			=> '/img/schedule/session8.png',
-						'start_time'	=> '11:10',
+						'start_time'	=> '12:10',
 						'end_time'		=> '13:00',
 						'interval'		=>	false,
 						'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
@@ -361,7 +361,7 @@ class RoomController extends Controller
 
 														[
 															'pic'			=> '/img/schedule/profile/tin.png',
-															'name'			=> 'Tinyiko Ribis', 
+															'name'			=> 'Tinyiko Ribisi', 
 															'designation'	=> 'Chief Legal Officer: Santam Limited Group'																					
 														], 
 														[

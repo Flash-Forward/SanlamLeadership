@@ -157,7 +157,7 @@ div.join-link {
 	<nav class="navbar navbar-expand-sm bg-light" style="color: #000000 !important;">
 
 <!-- Links -->
-<a href="#" class="navbar-left" style="margin-right: 3%; margin-left: 3%;"><img src="{{ asset('img') }}/bryte/logo3.png"></a>
+<a href="#" class="navbar-left" style="margin-right: 3%; margin-left: 3%;"><img src="{{ asset('img') }}/slogo.png"></a>
 <ul class="navbar-nav ml-auto">
   <li class="nav-item active" onMouseOver="this.style.color='#0096FF'">
 	<a class="nav-link" href="{{ route('lobby') }}" style="color: #000000 !important;"  onMouseOver="this.style.color='#0096FF'" onMouseOut="this.style.color='#000000'">Lobby</a>
