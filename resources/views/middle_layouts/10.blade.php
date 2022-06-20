@@ -301,7 +301,13 @@ li{
     @foreach($rooms as $item)
         <div id="myImage_zone{{$counter++}}" class="divInImage">
         <h2 class="room-heading"><b>{{$item->name}}</b></h2>
+        @if ($counter == 3)
+        <a class="stretch-link" onclick="blockPop();"></a>
+
+         @else 
         <a class="stretch-link" href="{{ route('room', ['order'=>$item->order]) }}"></a>
+
+        @endif
         @if($roomType == "breakaway")
         <img src="{{ asset('img') }}/bryte/breakawayroom.png" class="" style="width: 100%;" alt="" />
         @else
@@ -355,6 +361,22 @@ function checkRoom(room, route){
                // }
             }
         });
+    }
+    function blockPop(){
+
+                    swalWithBootstrapButtons.fire({
+                        //html: '<span style="color:#ffffff; font-size: 1.2vw;">This room opens at '+data+'</span>',
+                        html: '<span style="color:#ffffff; font-size: 1.2vw;">This lounge is currently at capacity. Please join a different lounge</span>',
+
+                        background: "url('{{ asset('img') }}/bryte/background.jpg')",
+                        // html: true,
+
+						padding: "8px",
+            margin: "2px",
+						width: "20%",
+                        //footer: '<a href>Why do I have this issue?</a>'
+                    })
+
     }
 </script>
 <div style="position: fixed; bottom: 0; left:0; width:70px;">
