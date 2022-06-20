@@ -71,7 +71,7 @@ body, html {
     object-fit: cover; /* Do not scale the image */
   object-position: center; /* Center the image within the element */
     width:100%;
-    height:65vh;
+    height:35vh;
     position: relative;
 }
 #myImage_zone2{
@@ -133,7 +133,7 @@ body, html {
     background: url('{{$bg->value }}');
     background-size: cover;
   height: 100%;
-  color: #ffffff;
+  color: #000;
 }
 .bryte-button{
     background-color: #0074c9 !important;
@@ -151,7 +151,7 @@ body, html {
 	position: relative;
 	top: 15px;
 	text-transform: uppercase;
-    color: #ffffff;
+    color: #000;
 }
 </style>
 
@@ -188,6 +188,10 @@ function loginFail(){
 <body>
 <div id="bg">
 <div id="banner"><img src="{{$banner->value }}" class="stretch" alt="" /></div>
+<br>
+<br>
+<br>
+
 <div id="registration-header"><h1>Login</h1></div>
 <div class="signup-form">
 <form method="POST" class="login-form" id="login-form" action="{{ route('openLogin') }}">
