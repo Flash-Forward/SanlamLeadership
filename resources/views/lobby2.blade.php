@@ -491,6 +491,9 @@ color: #ffffff !important;
   <!-- Links -->
   <a href="#" class="navbar-left" style="margin-right: 3%; margin-left: 3%;"><img src="{{ asset('img') }}/slogo.png"></a>
   <ul class="navbar-nav ml-auto">
+  <li class="nav-item">
+      <a class="nav-link"  onclick="on();">Welcome Video</a>
+    </li>
     <li class="nav-item active">
       <a class="nav-link" href="{{ route('lobby') }}">Lobby</a>
     </li>

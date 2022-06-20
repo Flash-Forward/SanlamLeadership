@@ -367,7 +367,7 @@ class RoomController extends Controller
 														[
 															'pic'			=> '/img/schedule/profile/the.png',
 															'name'			=> 'Thabiso Rulashe', 
-															'designation'	=> 'Group Strategic & Market Inteligence Manager'																					
+															'designation'	=> 'Group Strategic & Market Intelligence Manager'																					
 														],
 														[
 															'pic'			=> '/img/schedule/profile/teb.png',
