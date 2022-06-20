@@ -264,7 +264,7 @@ function redirectBack(){
 <a id="homeButton" href="{{$extra->brochure}}" target="_blank" class="btn exhibition-button btn-bottom grow">Product</a>
 
 <a id="backButton" href="{{$extra->website}}" target="_blank" class="btn exhibition-button btn-bottom grow">Website</a>
-	<a id="homeButton" href="mailto:{{str_replace(",",";",$extra->email)}}" class="btn exhibition-button btn-bottom grow">Contact Us</a></div>
+	<a id="homeButton" href="mailto:{{str_replace(",",";",$extra->email)}}" class="btn exhibition-button btn-bottom grow">Ask A Question</a></div>
 @endif
 @if($speaker == true)
 <div style="position: fixed; top: 1%; right:0%; width: 12vw; height: 6vw;">
