@@ -791,7 +791,7 @@ class RoomController extends Controller
         
         $res = RegisterWhitelist::where("email", $email)->first();
         if(!$res)
-            return "Please note that the event will commence at 7 am on the 21st of June 2022. The conference will begin at 9 am";
+            return "This email does not appear to be on the invite list. Please contact the Group Events Team on groupevents@sanlam.co.za";
         
         return "1";
 
