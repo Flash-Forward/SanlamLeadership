@@ -27,7 +27,7 @@
 <body>
 <div class="bg">
 <div class="jumbotron text-center message">
-  <h1 class="display-3">Please attend this event from a desktop device.</h1>
+  <h1 class="display-3">Please attend this event from a desktop device or laptop device.</h1>
   <p class="lead"><strong>Mobile is currently</strong> not supported.</p>
   <hr>
 
