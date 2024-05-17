@@ -73,7 +73,7 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
         $extra = json_encode($data);
-        \Mailchimp::subscribe('c9fcb9f448', $data['edtEmail'], ['FNAME' => $data['edtName'], 'LNAME' => $data['edtSurname']], false);
+        //\Mailchimp::subscribe('c9fcb9f448', $data['edtEmail'], ['FNAME' => $data['edtName'], 'LNAME' => $data['edtSurname']], false);
 
         $user = User::create([
             'name' => $data['edtName'] . " " . $data['edtSurname'],
