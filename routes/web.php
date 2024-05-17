@@ -17,7 +17,7 @@ Route::get('/schedule/1', [App\Http\Controllers\RoomController::class, 'schedule
 Route::get('/schedule/store', [App\Http\Controllers\RoomController::class, 'storeSchedule'])->name('storeSchedule');
 
 
-Route::get('/', [App\Http\Controllers\RoomController::class, 'login'])->name('landing');
+Route::get('/', [App\Http\Controllers\RoomController::class, 'landingPage'])->name('landing');
 
 Route::get('/register/check', [App\Http\Controllers\RoomController::class, 'checkEmail'])->name('email.check');
 Route::get('/room/check', [App\Http\Controllers\RoomController::class, 'checkRoom'])->name('room.check');
