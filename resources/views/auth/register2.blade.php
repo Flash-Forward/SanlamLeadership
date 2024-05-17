@@ -1,6 +1,6 @@
 <head>
     <meta charset="UTF-8">
-    <title>Reigistration</title>
+    <title>Registration</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- google fonts -->
@@ -449,7 +449,7 @@ h2.question
     <div id="banner"><img src="{{$banner->value}}" class="stretch" alt="" /></div>
     <div id="bg">
         <div id="registration-header">
-            <h1 style='color: #ffffff'>Registration</h1>
+            <h1 style='color: #ffffff !important;'>Registration</h1>
         </div>
         <div id="sign-up-form-div" class="signup-form">
 
@@ -503,10 +503,10 @@ h2.question
                             </div>
                         </div>
                         @endforeach
-                        <div class="row">
+                        <div class="row"  style="display: none">
                             <div class="col-sm-12 form-group">
                                 <label for="edtPass" style='color: #ffffff'>Password</label>
-                                <input type="password" class="form-control" placeholder="Please create a password that you will use on the day of the event to login to the Virtual Platform" id="edtPass" name="edtPass" />
+                                <input type="password" class="form-control" placeholder="Please create a password that you will use on the day of the event to login to the Virtual Platform" id="edtPass" name="edtPass" value='password8' />
 
                             </div>
                         </div>
