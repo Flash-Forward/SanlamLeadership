@@ -2,7 +2,7 @@
 	<html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>African Leadership For Health Gathering</title>
+		<title>Lexis Internal Launch</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<!-- google fonts -->
