@@ -19,20 +19,7 @@ class RedirectIfAuthenticated
      */
     public function handle($request, Closure $next, $guard = null) {
         if (Auth::guard($guard)->check()) {
-          $role = Auth::user()->user_roles_id; 
-      
-          switch ($role) {
-            case '1':
-              return '/lobby';
-              break;
-            case '2':
-              return '/lobby';
-              break; 
-        
-            default:
-              return '/lobby'; 
-            break;
-          }
+          redirect('/lobby');
         }
         return $next($request);
       }
