@@ -104,7 +104,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="block">
-						  <p>All rights reserved © 2021</p>
+						  <p>All rights reserved © 2024</p>
 						</div>
 					</div>
 				</div>
