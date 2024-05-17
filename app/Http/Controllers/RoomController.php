@@ -29,7 +29,7 @@ class RoomController extends Controller
 		[
 			//Day 1:
 			[
-				'session_title'		=> 'Sanlam Leadership', 	//should not be mandatory
+				'session_title'		=> 'Lexis Internal Launch', 	//should not be mandatory
 				'date'				=> '2022-06-21',	//required - let's us know which tab it should be placed in
 				'sessions'			=>
 				[
