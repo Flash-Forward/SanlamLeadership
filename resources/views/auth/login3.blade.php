@@ -129,7 +129,7 @@ body, html {
     background: url('{{$bg->value }}');
     background-size: cover;
   height: 100%;
-  color: #000000;
+  color: #ffffff;
 }
 .bryte-button{
     background-color: #0074c9 !important;
@@ -147,7 +147,7 @@ body, html {
 	position: relative;
 	top: 15px;
 	text-transform: uppercase;
-    color: #000000;
+    color: #ffffff;
 }
 </style>
 
@@ -188,12 +188,12 @@ function loginFail(){
 <br>
 <br>
 
-<div id="registration-header"><h1>Login</h1></div>
+<div id="registration-header"><h1 style='color: #ffffff !important;'>Login</h1></div>
 <div class="signup-form">
             <form method="POST" class="login-form" id="login-form" action="{{ route('login') }}">
             @csrf
                 <div class="form-group">
-                <label for="email">{{ __('Email address') }}</label>
+                <label for="email"  style='color: #ffffff !important;'>{{ __('Email address') }}</label>
                         <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
                         @error('email')
@@ -203,7 +203,7 @@ function loginFail(){
                 
 
                 <div class="form-group">
-                <label for="password">{{ __('Password') }}</label>
+                <label for="password"  style='color: #ffffff !important;'>{{ __('Password') }}</label>
                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" value="" required autocomplete="current-password">
 
                         @error('password')
