@@ -470,7 +470,7 @@ h2.question
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-sm-12 form-group" style="display:none">
+                            <div class="col-sm-12 form-group">
                                 <label for="edtCName" style='color: #ffffff'>Department</label>
                                 <input type="text" class="form-control" placeholder="Department" id="edtCName" name="edtCName"  />
 
