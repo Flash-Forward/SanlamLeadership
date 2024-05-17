@@ -245,7 +245,7 @@ s0.parentNode.insertBefore(s1,s0);
 
 <script>
             swalWithBootstrapButtons.fire({
-                        html: '<span style="color:#ffffff; font-size: 1.2vw;">Please note that the event will commence at 7 am on the 21st of June 2022</span>',
+                        html: '<span style="color:#ffffff; font-size: 1.2vw;">Please note that the event will commence on the 6th of June 2024</span>',
                         //html: '<span style="color:#ffffff; font-size: 1.2vw;">This room is closed</span>',
 
                         background: "url('{{ asset('img') }}/bryte/background.jpg')",
