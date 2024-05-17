@@ -1,6 +1,6 @@
 <head>
     <meta charset="UTF-8">
-    <title>WeLink Reg</title>
+    <title>Reigistration</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- google fonts -->
@@ -449,7 +449,7 @@ h2.question
     <div id="banner"><img src="{{$banner->value}}" class="stretch" alt="" /></div>
     <div id="bg">
         <div id="registration-header">
-            <h1>Registration</h1>
+            <h1 style='color: #ffffff'>Registration</h1>
         </div>
         <div id="sign-up-form-div" class="signup-form">
 
@@ -460,32 +460,32 @@ h2.question
                         <!-- First Row - First Name & Surname -->
                         <div class="row">
                             <div class="col-sm-6 form-group">
-                                <label for="edtName">First name</label>
+                                <label for="edtName" style='color: #ffffff' >First name</label>
                                 <input type="text" class="form-control" placeholder="First name" id="edtName" name="edtName" />
                             </div>
                             <div class="col-sm-6 form-group">
-                                <label for="edtSurname">Surname</label>
+                                <label for="edtSurname" style='color: #ffffff'>Surname</label>
                                 <input type="text" class="form-control" placeholder="Surname" id="edtSurname" name="edtSurname" />
 
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-12 form-group" style="display:none">
-                                <label for="edtCName">Company name</label>
+                                <label for="edtCName" style='color: #ffffff'>Company name</label>
                                 <input type="text" class="form-control" placeholder="Company name" id="edtCName" name="edtCName" value="TEST" />
 
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-12 form-group" style="display:none">
-                                <label for="edtMNum">Mobile number</label>
+                                <label for="edtMNum" style='color: #ffffff'>Mobile number</label>
                                 <input type="text" class="form-control" placeholder="Mobile number" id="edtMNum" name="edtMNum"  value="TEST"/>
 
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-12 form-group">
-                                <label for="edtEmail">Email address</label>
+                                <label for="edtEmail" style='color: #ffffff'>Email address</label>
                                 <input type="email" class="form-control" placeholder="Email address" id="edtEmail" name="edtEmail" />
 
                             </div>
@@ -497,7 +497,7 @@ h2.question
                                 $idName = preg_replace('/\s*/', '', $item->name);
                                 $idName = strtolower($idName);
                             @endphp     
-                                <label for="edtC{{$idName}}">{{$item->name}}</label>
+                                <label for="edtC{{$idName}}" style='color: #ffffff'>{{$item->name}}</label>
                                 <input type="text" class="form-control" placeholder="{{$item->name}}" id="edtC{{$idName}}" name="edtC{{$idName}}" />
 
                             </div>
@@ -505,7 +505,7 @@ h2.question
                         @endforeach
                         <div class="row">
                             <div class="col-sm-12 form-group">
-                                <label for="edtPass">Password</label>
+                                <label for="edtPass" style='color: #ffffff'>Password</label>
                                 <input type="password" class="form-control" placeholder="Please create a password that you will use on the day of the event to login to the Virtual Platform" id="edtPass" name="edtPass" />
 
                             </div>
