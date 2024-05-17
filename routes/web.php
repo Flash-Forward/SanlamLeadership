@@ -48,7 +48,7 @@ Route::get('/register/ba', function () {
     return view('auth.register3');
 })->name('register.ba');
 
-Auth::routes(['verify' => true]);
+Auth::routes(['verify' => true])->withoutMiddleware([\App\Http\Middleware\VerifyCsrfToken::class]);
 
 Route::get('/thankyou', [App\Http\Controllers\RoomController::class, 'thankyou'])->name('thankyou');
 Route::get('/login', [App\Http\Controllers\RoomController::class, 'login'])->name('login');
