@@ -464,15 +464,15 @@ h2.question
                                 <input type="text" class="form-control" placeholder="First name" id="edtName" name="edtName" />
                             </div>
                             <div class="col-sm-6 form-group">
-                                <label for="edtSurname" style='color: #ffffff'>Surname</label>
-                                <input type="text" class="form-control" placeholder="Surname" id="edtSurname" name="edtSurname" />
+                                <label for="edtSurname" style='color: #ffffff'>Last Name</label>
+                                <input type="text" class="form-control" placeholder="Last Name" id="edtSurname" name="edtSurname" />
 
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-12 form-group" style="display:none">
-                                <label for="edtCName" style='color: #ffffff'>Company name</label>
-                                <input type="text" class="form-control" placeholder="Company name" id="edtCName" name="edtCName" value="TEST" />
+                                <label for="edtCName" style='color: #ffffff'>Department</label>
+                                <input type="text" class="form-control" placeholder="Department" id="edtCName" name="edtCName"  />
 
                             </div>
                         </div>
