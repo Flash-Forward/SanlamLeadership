@@ -500,7 +500,8 @@
 2. Password: <b>Lexis+2024</b>
 <br>
 
-3. This link to take you to the event 
+3. Click on the link below to join the event 
+<br>
 <br>
 
 <a href='https://lexisinternallaunch.welink.live/login'>https://lexisinternallaunch.welink.live/login</a>
