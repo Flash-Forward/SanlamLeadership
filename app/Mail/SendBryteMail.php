@@ -36,16 +36,16 @@ class SendBryteMail extends Mailable  implements ShouldQueue
 
         $filename = "invite.ics";
         $meeting_duration = (3600 / 2); // 2 hours
-        $meetingstamp = strtotime("2021-06-22 10:00:00" . " UTC");
-        $meetingstampEnd = strtotime("2021-06-22 16:00:00" . " UTC");
+        $meetingstamp = strtotime("2024-06-06 10:00:00" . " UTC");
+        $meetingstampEnd = strtotime("2024-06-06 16:00:00" . " UTC");
         $dtstart = gmdate('Ymd\THis\Z', $meetingstamp);
         $dtend =  gmdate('Ymd\THis\Z', $meetingstampEnd);
         $todaystamp = gmdate('Ymd\THis\Z');
         $uid = date('Ymd') . 'T' . date('His') . '-' . rand() . '@flash-forward.co.za';
-        $description = 'Please click here to login to the Bryte Business Partner Conference"\n" https://bryte.welink.live/login';
-        $location = "https://bryte.welink.live/login";
-        $titulo_invite = "Bryte: Business Partner Conference";
-        $organizer = "CN=WeLink:bryte@flash-forward.co.za";
+        $description = 'Please click here to login to the Lexis Internal Launch"\n" https://lexisinternallaunch.welink.live/login';
+        $location = "https://lexisinternallaunch.welink.live/login";
+        $titulo_invite = "Lexis Internal Launch";
+        $organizer = "CN=WeLink:lexis@welink.live";
 
         // ICS
         $mail[0]  = "BEGIN:VCALENDAR";
