@@ -358,8 +358,8 @@ video {
     left:14.5%;
 }
 #leftBanner1{
-  width:6.1vw;
-    height:15.4vw;
+  width:4.1vw;
+    height:6.4vw;
     top:12%;
     left:6.5%;
 }
@@ -374,8 +374,8 @@ video {
     left:78.8%;
 }
 #rightBanner1{
-  width:6.1vw;
-    height:15.4vw;
+  width:4.1vw;
+    height:6.4vw;
     top:12%;
     left:6.5%;
 }
@@ -479,7 +479,34 @@ color: #ffffff !important;
     li:hover{
         color: #0096FF;
     }
+    #farLeft{
+  width:3.5vw;
+    height:9vw;
+    top:18.9%;
+    left:3.4%;
+}
 
+#farRight{
+  width:3.5vw;
+    height:9vw;
+    top:18.9%;
+    right:4.2%;
+}
+
+
+#rightLogo{
+  width:13vw;
+    height:4vw;
+    top:41.4%;
+    right:1.2%;
+}
+
+#leftLogo{
+  width:13vw;
+    height:4vw;
+    top:41.4%;
+    left:1.2%;
+}
 </style>
 
 </head>
@@ -647,6 +674,25 @@ color: #ffffff !important;
     <a id="schedule"  href="{{ route('schedule') }}">
     
     </a>
+    <div id="farLeft" class="divInImage">
+      <div id="leftBanner1" class="divInImage">
+      <img src="{{ $left_banner1->value ?? '' }}" class="stretch" alt="" />
+      </div>
+    </div>
+
+    <div id="farRight" class="divInImage">
+      <div id="rightBanner1" class="divInImage">
+      <img src="{{ $right_banner1->value ?? '' }}" class="stretch" alt="" />
+      </div>
+    </div>
+
+    <div id="rightLogo" class="divInImage">
+      <img src="{{ asset('img') }}/ll.png"  class="stretch" alt="" />
+    </div>
+
+    <div id="leftLogo" class="divInImage">
+      <img src="{{ asset('img') }}/ll.png"  class="stretch" alt="" />
+    </div>
     <!-- <a id="myImage_zone2" onclick="event.preventDefault();document.getElementById('login-form').submit();"></a> -->
 </div>
 

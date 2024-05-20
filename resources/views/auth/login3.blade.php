@@ -67,7 +67,7 @@ body, html {
     object-fit: cover; /* Do not scale the image */
   object-position: center; /* Center the image within the element */
     width:100%;
-    height:35vh;
+    height:43vh;
     position: relative;
 }
 #myImage_zone2{
@@ -145,7 +145,7 @@ body, html {
 	/* mix-blend-mode: multiply; */
 	width: 100%;
 	position: relative;
-	top: 15px;
+	top: 10px;
 	text-transform: uppercase;
     color: #ffffff;
 }
