@@ -147,7 +147,7 @@ class RegisterController extends Controller
         // } catch (\Exception $e) {
         //     //Log::error($e->getMessage());
         // }
-        $mail_template = "email.".$data['country'];
+        $mail_template = "email.sa";
         dispatch(new SendEmailJob($data["edtEmail"], $data["edtName"], $mail_template));
     }
 }

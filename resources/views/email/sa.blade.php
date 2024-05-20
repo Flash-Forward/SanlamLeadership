@@ -443,7 +443,7 @@
                             <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
                                 
                                     
-                                        <img align="center" alt="" src="https://mcusercontent.com/83682d906178bfbbf4c18e34f/images/b317a266-bcf1-4fbc-a7be-c1a67f83bda0.jpg" width="564" style="max-width:1199px; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
+                                        <img align="center" alt="" src="https://lexisinternallaunch.welink.live/img/head.jpg" width="564" style="max-width:1199px; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
                                     
                                 
                             </td>
@@ -474,23 +474,21 @@
                         
                             <div style="text-align: center;"><span style="font-size:16px"><font face="arial, helvetica neue, helvetica, sans-serif">Dear&nbsp;{{ $name }}</font></span><br>
 							<br>
-Thank you for registering to attend the <strong>Bryte Business Partner Conference</strong> on <strong>Tuesday,</strong> <strong>22 June. </strong><br>
-&nbsp;<br>
-We are excited to host you at our annual event. From <strong>10:00 – 12:30</strong>, we will be sharing robust, expert insights and discussing trends that will shape the insurance landscape in 2021.<br>
-&nbsp;<br>
-<strong>From 12:30</strong>, you will have access to various breakaway rooms where you can engage our claims, product and underwriting teams on a range of topics. Our exhibitor stands will provide an opportunity for seamless engagement with our UMA partners and specialist lines experts.<br>
-&nbsp;<br>
-Below is the link you will use to access the platform on <strong>22 June 2021</strong>. You will need to install either Google Chrome or Mozilla Firefox browsers to access the platform.<br>
-&nbsp;<br>
-<strong>Please keep this email as you will need the link below to join</strong>. We ask that you access the platform at least 15 minutes ahead of the official start time. Ahead of the event, you will also receive a video user guide to help you navigate the virtual platform.<br>
-&nbsp;<br>
-<a href="https://bryte.welink.live/login">https://bryte.welink.live/login</a><br>
+							Thank you for registering for the Lexis+ Internal Launch!
+							<br>
+							We're thrilled to have you join us for this exciting occasion as we unveil the future of our organisation with Lexis+. We look forward to seeing you there to share and celebrate this milestone with you.
+							<br>
+							On the day you will use the following:
+							<br>
+1. Your email address
 <br>
-&nbsp;<strong>Please note that your invite is unique to you, so if any of your colleagues would like to attend, please contact </strong><a href="mailto:events@brytesa.com"><strong>events@brytesa.com</strong></a><strong> to extend an invitation to them</strong>.<br>
-&nbsp;<br>
-Remember, lunch is on us! We will be sending your lunch voucher and hope you will join us at our virtual lunch table.<br>
-&nbsp;<br>
-We can't wait to see you there!</div>
+
+2. This password: Lexis+2024 
+<br>
+
+3. This link to take you to the event <a href='https://lexisinternallaunch.welink.live/login'>https://lexisinternallaunch.welink.live/login</a>
+<br>
+
 
                         </td>
                     </tr>
@@ -529,11 +527,7 @@ We can't wait to see you there!</div>
                         
                         <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
                         
-						Bryte Insurance Company Limited (17703) and Bryte Life Company Limited (17705) are licensed insurers and authorised FSPs<br>
-<br>
-<strong>Our mailing address is:</strong><br>
-events@brytesa.com<br>
-<br>
+
 Want to change how you receive these emails?<br>
 You can <a href="*|UPDATE_PROFILE|*">update your preferences</a> or <a href="*|UNSUB|*">unsubscribe from this list</a>.<br>
 &nbsp;
