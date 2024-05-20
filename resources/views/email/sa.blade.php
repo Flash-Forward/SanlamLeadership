@@ -476,13 +476,15 @@
 							<br>
 							Thank you for registering for the Lexis+ Internal Launch!
 							<br>
+							<br>
+
 							We're thrilled to have you join us for this exciting occasion as we unveil the future of our organisation with Lexis+. We look forward to seeing you there to share and celebrate this milestone with you.
 							<br>
 							<br>
-							Date: 6 June 2024
+							<b>Date: 6 June 2024</b>
 							<br>
 
-							Time: 1:30PM
+							<b>Time: 13:30</b>
 
 							<br>
 							<br>
@@ -498,7 +500,10 @@
 2. This password: <b>Lexis+2024</b>
 <br>
 
-3. This link to take you to the event <a href='https://lexisinternallaunch.welink.live/login'>https://lexisinternallaunch.welink.live/login</a>
+3. This link to take you to the event 
+<br>
+
+<a href='https://lexisinternallaunch.welink.live/login'>https://lexisinternallaunch.welink.live/login</a>
 <br>
 
 
