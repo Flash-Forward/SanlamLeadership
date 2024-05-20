@@ -36,8 +36,8 @@ class SendBryteMail extends Mailable  implements ShouldQueue
 
         $filename = "invite.ics";
         $meeting_duration = (3600 / 2); // 2 hours
-        $meetingstamp = strtotime("2024-06-06 10:00:00" . " UTC");
-        $meetingstampEnd = strtotime("2024-06-06 16:00:00" . " UTC");
+        $meetingstamp = strtotime("2024-06-06 13:30:00" . " UTC");
+        $meetingstampEnd = strtotime("2024-06-06 16:30:00" . " UTC");
         $dtstart = gmdate('Ymd\THis\Z', $meetingstamp);
         $dtend =  gmdate('Ymd\THis\Z', $meetingstampEnd);
         $todaystamp = gmdate('Ymd\THis\Z');
