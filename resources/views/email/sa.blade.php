@@ -494,10 +494,10 @@
 							<br>
 							<br>
 
-1. Your email address
+1. The email address you used to register
 <br>
 
-2. This password: <b>Lexis+2024</b>
+2. Password: <b>Lexis+2024</b>
 <br>
 
 3. This link to take you to the event 
