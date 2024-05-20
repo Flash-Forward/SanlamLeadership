@@ -448,9 +448,7 @@ h2.question
 <body>
     <div id="banner"><img src="{{$banner->value}}" class="stretch" alt="" /></div>
     <div id="bg">
-        <div id="registration-header">
-            <h1 style='color: #ffffff !important;'>Registration</h1>
-        </div>
+
         <div id="sign-up-form-div" class="signup-form">
 
             <form method="POST" class="login-form" id="login-form" action="{{ route('register') }}">

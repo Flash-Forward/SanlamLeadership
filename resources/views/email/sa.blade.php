@@ -478,12 +478,16 @@
 							<br>
 							We're thrilled to have you join us for this exciting occasion as we unveil the future of our organisation with Lexis+. We look forward to seeing you there to share and celebrate this milestone with you.
 							<br>
+							<br>
+
 							On the day you will use the following:
 							<br>
+							<br>
+
 1. Your email address
 <br>
 
-2. This password: Lexis+2024 
+2. This password: <b>Lexis+2024</b>
 <br>
 
 3. This link to take you to the event <a href='https://lexisinternallaunch.welink.live/login'>https://lexisinternallaunch.welink.live/login</a>
