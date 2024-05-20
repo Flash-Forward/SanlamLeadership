@@ -479,6 +479,14 @@
 							We're thrilled to have you join us for this exciting occasion as we unveil the future of our organisation with Lexis+. We look forward to seeing you there to share and celebrate this milestone with you.
 							<br>
 							<br>
+							Date: 6 June 2024
+							<br>
+
+							Time: 1:30PM
+
+							<br>
+							<br>
+
 
 							On the day you will use the following:
 							<br>
