@@ -14,7 +14,7 @@ class ClickMeetingRestClient
      * API key
      * @var string
      */
-    protected $api_key = 'us723f368bc0228176dd591a4b1b22e12e9c840ec4';
+    protected $api_key = 'us8d244f61d3243dcfbfa3ca69f76bfe28e6f574b3';
 
     /**
      * Format
