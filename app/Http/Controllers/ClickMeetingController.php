@@ -134,6 +134,7 @@ class ClickMeetingRestClient
 
         if (isset($this->http_errors[$http_code]))
         {
+            dd($http_code);
             throw new \Exception($response, $http_code);
         }
         elseif (!in_array($http_code, array(200,201)))
