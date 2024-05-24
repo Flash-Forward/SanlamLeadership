@@ -40,7 +40,7 @@ class RoomController extends Controller
 						'end_time'		=> '00:00',
 						'interval'		=>	true,
 						'alert'         => true,
-						'route'         => 'exhibition',
+						'route'         => '/room/99',
 						'route_time'         => 'room_two_open_time'
 
 
@@ -110,17 +110,17 @@ class RoomController extends Controller
 
 					],
 					[	//Row 2
-						'title'			=> 'Welcome',
+						'title'			=> 'The acceleration of technology change in the legal industry',
 						'image'			=> '/img/schedule/session3.png',
-						'start_time'	=> '09:30',
-						'end_time'		=> '10:15',
+						'start_time'	=> '15:00',
+						'end_time'		=> '15:35',
 						'interval'		=>	false,
 						'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 												[	//Room 1 - Claims
 													'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-													'room_desc'		=> 	'Strategy Review - Business Unit Strategies',
-													'room_info'		=> 	'Strategy Review - Business Unit Strategies',
-													'link'			=>	'/mainmid',
+													'room_desc'		=> 	'The acceleration of technology change in the legal industry',
+													'room_info'		=> 	'The acceleration of technology change in the legal industry',
+													'link'			=>	'/room/99',
 													'speakers'		=> 	[	
 														/*
 														Ideally also a table and this array should hold the user id's.
@@ -129,40 +129,36 @@ class RoomController extends Controller
 														*/
 
 														[
-															'pic'			=> '/img/schedule/profile/paul.png',
-															'name'			=> 'Paul Hanratty', 
-															'designation'	=> 'Sanlam Group Chief Executive Officer'																					
+															'pic'			=> '/img/schedule/profile/def.jpg',
+															'name'			=> 'George Findlay', 
+															'designation'	=> 'Sales Manager: BFSI\'s'																					
 														],
 														[
-															'pic'			=> '/img/schedule/profile/kan.png',
-															'name'			=> 'Kanyisa Mkhize', 
-															'designation'	=> 'Chief Executive: Sanlam Corporate'																					
+															'pic'			=> '/img/schedule/profile/des.jpg',
+															'name'			=> 'Desigan Naidoo', 
+															'designation'	=> 'Executive Manager: Technology'																					
 														],
 														[
-															'pic'			=> '/img/schedule/profile/ant.png',
-															'name'			=> 'Anton Gildenhuys', 
-															'designation'	=> 'Chief Executive: Retail Affluent'																					
+															'pic'			=> '/img/schedule/profile/kof.jpg',
+															'name'			=> 'Kofi Kei', 
+															'designation'	=> 'Sales Director'																					
 														],
 														[
-															'pic'			=> '/img/schedule/profile/bon.png',
-															'name'			=> 'Bongani Madikiza', 
-															'designation'	=> 'Chief Executive: SA Retail Mass'																					
+															'pic'			=> '/img/schedule/profile/rev.jpg',
+															'name'			=> 'Revona Govender', 
+															'designation'	=> 'Operations Executive'																					
 														],
 														[
-															'pic'			=> '/img/schedule/profile/carl.png',
-															'name'			=> 'Carl Roothman', 
-															'designation'	=> 'Chief Executive: Sanlam Investment Group'																					
+															'pic'			=> '/img/schedule/profile/def.jpg',
+															'name'			=> 'Lizanne Engelbrecht', 
+															'designation'	=> 'Senior Manager: Content'																					
 														],
 														[
-															'pic'			=> '/img/schedule/profile/hei.png',
-															'name'			=> 'Heinie Werth', 
-															'designation'	=> 'Chief Executive: Sanlam Emerging Markets'																					
+															'pic'			=> '/img/schedule/profile/def.jpg',
+															'name'			=> 'Parusha Bachan', 
+															'designation'	=> 'Product Manager: PMG LIC'																					
 														],
-														[
-															'pic'			=> '/img/schedule/profile/tava.png',
-															'name'			=> 'Tavaziva Madzinga', 
-															'designation'	=> 'Chief Executive: Santam'																					
-														],
+
 
 
 													]
@@ -170,479 +166,21 @@ class RoomController extends Controller
 						]
 
 					],
-					[	//Row 2
-						'title'			=> 'Welcome',
-						'image'			=> '/img/schedule/session4.png',
-						'start_time'	=> '10:15',
-						'end_time'		=> '10:20',
-						'interval'		=>	false,
-						'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
-												[	//Room 1 - Claims
-													'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-													'room_desc'		=> 	'Growing our People',
-													'room_info'		=> 	'Growing our People',
-													'link'			=>	'/mainmid',
-													'speakers'		=> 	[	
-														/*
-														Ideally also a table and this array should hold the user id's.
-														Having a table means we have access to any other relevant data if necessary,
-														such as email, phone no, website, etc.
-														*/
-
-														[
-															'pic'			=> '/img/schedule/profile/sanlam.webp',
-															'name'			=> 'Portia Mogale', 
-															'designation'	=> 'Head: Change Management • Santam: Human Resources'																					
-														], 
 
 
-													]
-												],
-						]
-
-					],
-					[	//Row 2
-						'title'			=> 'Welcome',
-						'image'			=> '/img/schedule/session5.png',
-						'start_time'	=> '10:20',
-						'end_time'		=> '11:00',
-						'interval'		=>	false,
-						'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
-												[	//Room 1 - Claims
-													'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-													'room_desc'		=> 	'Growing our People - Investing in our People and Culture',
-													'room_info'		=> 	'Growing our People - Investing in our People and Culture',
-													'link'			=>	'/mainmid',
-													'speakers'		=> 	[	
-														/*
-														Ideally also a table and this array should hold the user id's.
-														Having a table means we have access to any other relevant data if necessary,
-														such as email, phone no, website, etc.
-														*/
-
-														[
-															'pic'			=> '/img/schedule/profile/sanlam.webp',
-															'name'			=> 'Jeanett Modise', 
-															'designation'	=> 'Sanlam Group Human Capital Director'																					
-														], 
-														[
-															'pic'			=> '/img/schedule/profile/khw.png',
-															'name'			=> 'Khwathelani Tshikovh', 
-															'designation'	=> 'Head: Santam Experience Senior Management'																					
-														],
-														[
-															'pic'			=> '/img/schedule/profile/gaf.png',
-															'name'			=> 'Gaffar Hassam', 
-															'designation'	=> 'Regional Executive SEM'																					
-														], 
-														[
-															'pic'			=> '/img/schedule/profile/dum.png',
-															'name'			=> 'Dumisani Gumbi', 
-															'designation'	=> 'Governance Architect SGT'																					
-														], 
-
-
-
-													]
-												],
-												
-												
-											]
-					],
 					[	//Break 2
-						'title'			=> 'break',
+						'title'			=> 'BREAKAWAYS OPEN',
 						'image'			=> '/img/schedule/seal-01.jpg',
-						'start_time'	=> '11:00',
-						'end_time'		=> '11:25',
-						'route_time'	=> '11:25',
-						'route'	=> 'networking',
-
-
-						'interval'		=>	true
-					],
-					[	//Row 2
-						'title'			=> 'Welcome',
-						'image'			=> '/img/schedule/session6.png',
-						'start_time'	=> '11:25',
-						'end_time'		=> '11:30',
-						'interval'		=>	false,
-						'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
-												[	//Room 1 - Claims
-													'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-													'room_desc'		=> 	'Growing our Communities & Environment',
-													'room_info'		=> 	'Growing our Communities & Environment',
-													'link'			=>	'/mainmid',
-													'speakers'		=> 	[	
-														/*
-														Ideally also a table and this array should hold the user id's.
-														Having a table means we have access to any other relevant data if necessary,
-														such as email, phone no, website, etc.
-														*/
-
-														[
-															'pic'			=> '/img/schedule/profile/sanlam.webp',
-															'name'			=> 'Karima Midra', 
-															'designation'	=> 'Communication Digital Manager, Santam'																					
-														], 
-
-
-
-													]
-												],
-												
-												
-											]
-					],
-					[	//Row 2
-						'title'			=> 'Welcome',
-						'image'			=> '/img/schedule/session7.png',
-						'start_time'	=> '11:30',
-						'end_time'		=> '12:10',
-						'interval'		=>	false,
-						'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
-												[	//Room 1 - Claims
-													'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-													'room_desc'		=> 	'Growing our Communities & Environment - Foundation Showcase',
-													'room_info'		=> 	'Growing our Communities & Environment - Foundation Showcase',
-													'link'			=>	'/mainmid',
-													'speakers'		=> 	[	
-														/*
-														Ideally also a table and this array should hold the user id's.
-														Having a table means we have access to any other relevant data if necessary,
-														such as email, phone no, website, etc.
-														*/
-
-														[
-															'pic'			=> '/img/schedule/profile/noz.png',
-															'name'			=> 'Nozizwe Vundla', 
-															'designation'	=> 'Head: Sanlam Foundation'																					
-														], 
-														[
-															'pic'			=> '/img/schedule/profile/aic.png',
-															'name'			=> 'Aicha Lebsir', 
-															'designation'	=> 'Head Ennajah Foundation (Saham)'																					
-														], 
-
-
-
-													]
-												],
-												
-												
-											]
-					],
-					[	//Row 2
-						'title'			=> 'Welcome',
-						'image'			=> '/img/schedule/session8.png',
-						'start_time'	=> '12:10',
-						'end_time'		=> '13:00',
-						'interval'		=>	false,
-						'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
-												[	//Room 1 - Claims
-													'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-													'room_desc'		=> 	'Growing our Communities & Environment - Living Our Purpose',
-													'room_info'		=> 	'Growing our Communities & Environment - Living Our Purpose',
-													'link'			=>	'/mainmid',
-													'speakers'		=> 	[	
-														/*
-														Ideally also a table and this array should hold the user id's.
-														Having a table means we have access to any other relevant data if necessary,
-														such as email, phone no, website, etc.
-														*/
-
-														[
-															'pic'			=> '/img/schedule/profile/tin.png',
-															'name'			=> 'Tinyiko Ribisi', 
-															'designation'	=> 'Chief Legal Officer: Santam Limited Group'																					
-														], 
-														[
-															'pic'			=> '/img/schedule/profile/the.png',
-															'name'			=> 'Thabiso Rulashe', 
-															'designation'	=> 'Group Strategic & Market Intelligence Manager'																					
-														],
-														[
-															'pic'			=> '/img/schedule/profile/teb.png',
-															'name'			=> 'Teboho Makhabane', 
-															'designation'	=> 'ESG & Impact Implementation Specialist: Sanlam Investment Group'																					
-														],
-														[
-															'pic'			=> '/img/schedule/profile/sanlam.webp',
-															'name'			=> 'Mark Moorhouse', 
-															'designation'	=> 'Head of Infrastructure Finance • SSF: Equities & Debt: Debt'																					
-														],
-														[
-															'pic'			=> '/img/schedule/profile/and.png',
-															'name'			=> 'Andrew Johnstone', 
-															'designation'	=> 'CEO Climate Fund Managers'																					
-														], 
-
-
-
-													]
-												],
-												
-												
-											]
-					],
-					[	//Break 2
-						'title'			=> 'break',
-						'image'			=> '/img/schedule/seal-01.jpg',
-						'start_time'	=> '13:00',
-						'end_time'		=> '13:45',
-						'route_time'	=> '11:25',
-						'route'	=> 'networking',
-
-
-						'interval'		=>	true
-					],
-					[	//Row 2
-						'title'			=> 'Welcome',
-						'image'			=> '/img/schedule/session9.png',
-						'start_time'	=> '13:45',
-						'end_time'		=> '13:50',
-						'interval'		=>	false,
-						'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
-												[	//Room 1 - Claims
-													'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-													'room_desc'		=> 	'Growing Our Business',
-													'room_info'		=> 	'Growing Our Business',
-													'link'			=>	'/mainmid',
-													'speakers'		=> 	[	
-														/*
-														Ideally also a table and this array should hold the user id's.
-														Having a table means we have access to any other relevant data if necessary,
-														such as email, phone no, website, etc.
-														*/
-
-														[
-															'pic'			=> '/img/schedule/profile/sanlam.webp',
-															'name'			=> 'Atang Matebesi', 
-															'designation'	=> 'Senior Consultant • Group: Group Strategy'																					
-														], 
-
-
-
-
-													]
-												],
-												
-												
-											]
-					],
-					[	//Row 2
-						'title'			=> 'Welcome',
-						'image'			=> '/img/schedule/session10.png',
-						'start_time'	=> '13:50',
-						'end_time'		=> '14:40',
-						'interval'		=>	false,
-						'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
-												[	//Room 1 - Claims
-													'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-													'room_desc'		=> 	'Growing Our Business - Partnership for growth',
-													'room_info'		=> 	'Growing Our Business - Partnership for growth',
-													'link'			=>	'/mainmid',
-													'speakers'		=> 	[	
-														/*
-														Ideally also a table and this array should hold the user id's.
-														Having a table means we have access to any other relevant data if necessary,
-														such as email, phone no, website, etc.
-														*/
-
-														[
-															'pic'			=> '/img/schedule/profile/nat.png',
-															'name'			=> 'Natalie Jabangwe', 
-															'designation'	=> 'Group Digital Transformation Officer, Sanlam Group'																					
-														],
-														[
-															'pic'			=> '/img/schedule/profile/sanlam.webp',
-															'name'			=> 'Charles Savage', 
-															'designation'	=> 'CEO Easy Equities'																					
-														],
-														[
-															'pic'			=> '/img/schedule/profile/bur.png',
-															'name'			=> 'Burton Naicker', 
-															'designation'	=> 'CEO MiWay'																					
-														],
-														[
-															'pic'			=> '/img/schedule/profile/pie.png',
-															'name'			=> 'Piet van Der Walt', 
-															'designation'	=> 'Business Head: Sanlam Retail Credit'																					
-														],
-														[
-															'pic'			=> '/img/schedule/profile/edw.png',
-															'name'			=> 'Edwin Theron', 
-															'designation'	=> 'Head: Sanlam Indie'																					
-														],
-														[
-															'pic'			=> '/img/schedule/profile/nee.png',
-															'name'			=> 'Neelan Narasimulu', 
-															'designation'	=> 'Head: Multi Data'																					
-														],
-
-
-
-
-
-
-													]
-												],
-												
-												
-											]
-					],
-
-					[	//Row 2
-						'title'			=> 'Welcome',
-						'image'			=> '/img/schedule/session11.png',
-						'start_time'	=> '14:40',
-						'end_time'		=> '15:25',
-						'interval'		=>	false,
-						'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
-												[	//Room 1 - Claims
-													'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-													'room_desc'		=> 	'Growing Our Business - MTN Partnership',
-													'room_info'		=> 	'Growing Our Business - MTN Partnership',
-													'link'			=>	'/mainmid',
-													'speakers'		=> 	[	
-														/*
-														Ideally also a table and this array should hold the user id's.
-														Having a table means we have access to any other relevant data if necessary,
-														such as email, phone no, website, etc.
-														*/
-
-														[
-															'pic'			=> '/img/schedule/profile/ger.png',
-															'name'			=> 'Gerrit Van Heerde', 
-															'designation'	=> 'Executive: Strategic Ventures, Sanlam Pan Africa Life'																					
-														], 
-
-														[
-															'pic'			=> '/img/schedule/profile/ser.png',
-															'name'			=> 'Serigne Dioum', 
-															'designation'	=> 'Chief Digital and Fintech Officer, MTN Group'																					
-														], 
-														[
-															'pic'			=> '/img/schedule/profile/sanlam.webp',
-															'name'			=> 'Ebenezer Asante', 
-															'designation'	=> 'Senior Vice President, Markets. MTN Group'																					
-														],
-														[
-															'pic'			=> '/img/schedule/profile/mar.png',
-															'name'			=> 'Marius Botha', 
-															'designation'	=> 'CEO, aYo Holdings'																					
-														],
-
-
-
-
-
-													]
-												],
-												
-												
-											]
-					],
-					[	//Break 2
-						'title'			=> 'break',
-						'image'			=> '/img/schedule/seal-01.jpg',
-						'start_time'	=> '15:25',
-						'end_time'		=> '15:50',
-						'route_time'	=> '11:25',
-						'route'	=> 'networking',
-
-
-						'interval'		=>	true
-					],
-					[	//Row 2
-						'title'			=> 'Welcome',
-						'image'			=> '/img/schedule/session12.png',
-						'start_time'	=> '15:50',
-						'end_time'		=> '16:30',
-						'interval'		=>	false,
-						'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
-												[	//Room 1 - Claims
-													'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-													'room_desc'		=> 	'Growing Our Business - Allianz Partnership',
-													'room_info'		=> 	'Growing Our Business - Allianz Partnership',
-													'link'			=>	'/mainmid',
-													'speakers'		=> 	[	
-														/*
-														Ideally also a table and this array should hold the user id's.
-														Having a table means we have access to any other relevant data if necessary,
-														such as email, phone no, website, etc.
-														*/
-
-														[
-															'pic'			=> '/img/schedule/profile/tha.png',
-															'name'			=> 'Thabied Majal', 
-															'designation'	=> 'Group Executive: Corporate Affairs and Services of Sanlam Emerging Markets'																					
-														], 
-
-														[
-															'pic'			=> '/img/schedule/profile/hei.png',
-															'name'			=> 'Heinie Werth', 
-															'designation'	=> 'CEO Sanlam Emerging Markets'																					
-														], 
-														[
-															'pic'			=> '/img/schedule/profile/tava.png',
-															'name'			=> 'Tavaziva Madzinga', 
-															'designation'	=> 'CEO Santam'																					
-														],
-														[
-															'pic'			=> '/img/schedule/profile/chr.png',
-															'name'			=> 'Christopher Townsend', 
-															'designation'	=> 'Member of the Board of Management Allianz SE, Global Insurance Lines, Anglophone markets, Reinsurance, ME/A'																					
-														],
-														[
-															'pic'			=> '/img/schedule/profile/del.png',
-															'name'			=> 'Delphine Traore', 
-															'designation'	=> 'Regional CEO, Allianz Africa'																					
-														],
-
-
-
-
-
-													]
-												],
-												
-												
-											]
-					],
-					[	//Row 2
-						'title'			=> 'Welcome',
-						'image'			=> '/img/schedule/session13.png',
-						'start_time'	=> '16:30',
+						'start_time'	=> '15:35',
 						'end_time'		=> '16:50',
-						'interval'		=>	false,
-						'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
-												[	//Room 1 - Claims
-													'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-													'room_desc'		=> 	'CEO Closing remarks',
-													'room_info'		=> 	'CEO Closing remarks',
-													'link'			=>	'/mainmid',
-													'speakers'		=> 	[	
-														/*
-														Ideally also a table and this array should hold the user id's.
-														Having a table means we have access to any other relevant data if necessary,
-														such as email, phone no, website, etc.
-														*/
-
-														[
-															'pic'			=> '/img/schedule/profile/paul.png',
-															'name'			=> 'Paul Hanratty', 
-															'designation'	=> 'Sanlam Group Chief Executive'																					
-														], 
+						'route_time'	=> '11:25',
+						'route'	=> 'breakaway',
 
 
-
-
-													]
-												],
-												
-												
-											]
+						'interval'		=>	true
 					],
+
+
 
 					
 					
