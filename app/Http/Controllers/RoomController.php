@@ -1538,7 +1538,7 @@ class RoomController extends Controller
 			$client = new ClickMeetingRestClient($params);
 	
 			$hash = $client->conferenceAutologinHash($exhibitor->room_id, $params);
-			dd($hash);
+			//dd($hash);
 			$hash = json_decode($hash);
 
 			$autologin_hash = $hash->autologin_hash;
