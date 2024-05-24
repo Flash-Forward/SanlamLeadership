@@ -228,7 +228,7 @@ li{
     {{$counter = 1}}
     @foreach($rooms as $item)
         <div id="myImage_zone{{$counter}}" class="divInImage">
-        <h2 class="room-heading" style='color: #ffffff !important;'><b>{{$item->name}}</b></h2>
+        <h2 class="room-heading"><b>{{$item->name}}</b></h2>
         <span style="color:#000;"><b>{{$item->name}}</b></span>
         <a class="stretch-link" href="{{ route('room', ['order'=>$item->order]) }}"></a>
         @if($roomType == "breakaway")
@@ -243,7 +243,7 @@ li{
 </div>
 <div class="header" id="myHeader">
 @if($roomType == "breakaway")
-  <h2><b>BREAKAWAY ROOMS<b></h2>
+  <h2>BREAKAWAY ROOMS</h2>
   @else
   <h2>NETWORKING LOUNGES</h2>
 @endif
