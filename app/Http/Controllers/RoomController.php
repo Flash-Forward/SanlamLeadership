@@ -167,18 +167,19 @@ class RoomController extends Controller
 
 					],
 
-
-					[	//Break 2
+					[	//Break 1
 						'title'			=> 'BREAKAWAYS OPEN',
 						'image'			=> '/img/schedule/seal-01.jpg',
 						'start_time'	=> '15:35',
 						'end_time'		=> '16:50',
-						'route_time'	=> '11:25',
-						'route'	=> 'breakaway',
+						'interval'		=>	true,
+						'alert'         => true,
+						'route'         => '/breakaway',
+						'route_time'         => 'room_two_open_time'
 
 
-						'interval'		=>	true
 					],
+
 
 
 
