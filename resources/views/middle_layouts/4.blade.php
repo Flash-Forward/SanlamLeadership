@@ -229,7 +229,6 @@ li{
     @foreach($rooms as $item)
         <div id="myImage_zone{{$counter++}}" class="divInImage">
         <h2 class="room-heading" style='color: #ffffff !important;'><b>{{$item->name}}</b></h2>
-        <span style="color:#000;"><b>{{$item->name}}</b></span>
         <a class="stretch-link" href="{{ route('room', ['order'=>$item->order]) }}"></a>
         @if($roomType == "breakaway")
         <img src="{{ asset('img') }}/bryte/breakawayroom.png" class="" style="width: 100%;" alt="" />
