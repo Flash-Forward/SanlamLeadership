@@ -78,17 +78,17 @@ class RoomController extends Controller
 												
 					],
 					[	//Row 2
-						'title'			=> 'Welcome',
+						'title'			=> 'The Future of Law',
 						'image'			=> '/img/schedule/session2.png',
-						'start_time'	=> '09:10',
-						'end_time'		=> '09:30',
+						'start_time'	=> '14:20',
+						'end_time'		=> '15:00',
 						'interval'		=>	false,
 						'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 												[	//Room 1 - Claims
 													'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-													'room_desc'		=> 	'Strategy Review - Sanlam Group Strategy',
-													'room_info'		=> 	'Strategy Review - Sanlam Group Strategy',
-													'link'			=>	'/mainmid',
+													'room_desc'		=> 	'The Future of Law',
+													'room_info'		=> 	'The Future of Law is AI-Powered: How is Technology and Artificial intelligence Transforming the Legal Sector?',
+													'link'			=>	'/room/99',
 													'speakers'		=> 	[	
 														/*
 														Ideally also a table and this array should hold the user id's.
@@ -97,9 +97,9 @@ class RoomController extends Controller
 														*/
 
 														[
-															'pic'			=> '/img/schedule/profile/paul.png',
-															'name'			=> 'Paul Hanratty', 
-															'designation'	=> 'Sanlam Group Chief Executive Officer'																					
+															'pic'			=> '/img/schedule/profile/ter.jpg',
+															'name'			=> 'Terrance Naidoo', 
+															'designation'	=> 'Chief Product Officer'																					
 														],
 														 
 
