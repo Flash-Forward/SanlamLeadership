@@ -1450,6 +1450,7 @@ class RoomController extends Controller
 		$backRoute = "NONE";
 		$biggerScreen = false;
 		$speaker = false;
+		$api_key = 'us8d244f61d3243dcfbfa3ca69f76bfe28e6f574b3';
 		if($order == '99' || $order == '101')
 			$biggerScreen = true;
         if($order == '100'){
@@ -1468,6 +1469,8 @@ class RoomController extends Controller
         //dd($extra);
         
         if($order >= 102){
+			$api_key = 'us2ea485738582cb48f7deed922dca9fbdb9f7ae84';
+
 			$biggerScreen = true;
             $backRoute = "breakaway";
 
@@ -1508,6 +1511,8 @@ class RoomController extends Controller
 				'email' => \Auth::user()->email, // email address
 				'nickname' => \Auth::user()->name, // user nickname
 				'role' => 'listener', // user role, other: presenter, host
+				'api_key' => $api_key, // user role, other: presenter, host
+
 			);
 			if(\Auth::user()->user_roles_id == 1){
 				$exhibitor = Exhibitor::where('order', $order)->first();
@@ -1519,6 +1524,8 @@ class RoomController extends Controller
 							'email' => \Auth::user()->email, // email address
 							'nickname' => \Auth::user()->name, // user nickname
 							'role' => 'presenter', // user role, other: presenter, host
+				'api_key' => $api_key, // user role, other: presenter, host
+
 						);
 					}
 				}else{
@@ -1530,6 +1537,8 @@ class RoomController extends Controller
 						'email' => \Auth::user()->email, // email address
 						'nickname' => \Auth::user()->name, // user nickname
 						'role' => 'presenter', // user role, other: presenter, host
+				'api_key' => $api_key, // user role, other: presenter, host
+
 					);
 				}
 
