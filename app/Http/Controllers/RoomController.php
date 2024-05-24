@@ -30,13 +30,13 @@ class RoomController extends Controller
 			//Day 1:
 			[
 				'session_title'		=> 'Lexis Internal Launch', 	//should not be mandatory
-				'date'				=> '2022-06-21',	//required - let's us know which tab it should be placed in
+				'date'				=> '2024-06-13',	//required - let's us know which tab it should be placed in
 				'sessions'			=>
 				[
 					[	//Break 1
-						'title'			=> 'EXHIBITION HALL OPEN',
+						'title'			=> 'MAIN ROOM OPEN',
 						'image'			=> '/img/schedule/seal-01.jpg',
-						'start_time'	=> '07:00',
+						'start_time'	=> '13:30',
 						'end_time'		=> '00:00',
 						'interval'		=>	true,
 						'alert'         => true,
@@ -45,28 +45,19 @@ class RoomController extends Controller
 
 
 					],
-					[	//Break 1
-						'title'			=> 'NETWORKING LOUNGES OPEN',
-						'image'			=> '/img/schedule/seal-01.jpg',
-						'start_time'	=> '07:00',
-						'end_time'		=> '00:00',
-						'interval'		=>	true,
-						'alert'         => true,
-						'route'         => 'networking',
-						'route_time'         => 'room_five_open_time'
-					],
+
 					[	//Row 2
-						'title'			=> 'Welcome',
+						'title'			=> 'Welcome Address',
 						'image'			=> '/img/schedule/session1.png',
-						'start_time'	=> '09:00',
-						'end_time'		=> '09:10',
+						'start_time'	=> '14:00',
+						'end_time'		=> '14:20',
 						'interval'		=>	false,
 						'rooms'			=> 	[	//Should have a value that determines the number of rooms available.
 												[	//Room 1 - Claims
 													'room_name'		=> 	'Main Room', //ideally a table and this should be an id referencing that row
-													'room_desc'		=> 	'Welcoming',
-													'room_info'		=> 	'Welcoming',
-													'link'			=>	'/mainmid',
+													'room_desc'		=> 	'Welcome Address',
+													'room_info'		=> 	'Welcome Address',
+													'link'			=>	'/room/99',
 													'speakers'		=> 	[	
 														/*
 														Ideally also a table and this array should hold the user id's.
@@ -75,9 +66,9 @@ class RoomController extends Controller
 														*/
 
 														[
-															'pic'			=> '/img/schedule/profile/sanlam.webp',
-															'name'			=> 'Luna Sibanyoni', 
-															'designation'	=> 'SSF: Strategic Implementation'																					
+															'pic'			=> '/img/schedule/profile/ian.jpg',
+															'name'			=> 'Ian Andrews', 
+															'designation'	=> 'Acting Managing Director'																					
 														], 
 
 
