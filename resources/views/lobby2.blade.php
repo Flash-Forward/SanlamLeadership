@@ -496,15 +496,15 @@ color: #ffffff !important;
 
 #rightLogo{
   width:13vw;
-    height:4vw;
-    top:41.4%;
+    height:3vw;
+    top:42.4%;
     right:1.2%;
 }
 
 #leftLogo{
   width:13vw;
-    height:4vw;
-    top:41.4%;
+    height:3vw;
+    top:42.4%;
     left:1.2%;
 }
 </style>
