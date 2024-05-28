@@ -40,7 +40,7 @@ class RoomController extends Controller
 						'end_time'		=> '00:00',
 						'interval'		=>	true,
 						'alert'         => true,
-						'route'         => '/room/99',
+						'route'         => 'room/99',
 						'route_time'         => 'room_two_open_time'
 
 
@@ -174,7 +174,7 @@ class RoomController extends Controller
 						'end_time'		=> '16:50',
 						'interval'		=>	true,
 						'alert'         => true,
-						'route'         => '/breakaway',
+						'route'         => 'breakaway',
 						'route_time'         => 'room_two_open_time'
 
 
