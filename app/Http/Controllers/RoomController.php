@@ -987,6 +987,10 @@ class RoomController extends Controller
             $backRoute = "NONE";
             $speaker = Speaker::where('users_id', \Auth::user()->id)->first();
             $exhibitor = Exhibitor::where('id', $speaker->exhibitors_id)->first();
+			if($speaker->exhibitors_id != 1){
+				return redirect()->route('breakaway');
+
+			}
 			$speaker = true;
         }else{
             $exhibitor = Exhibitor::where('order', $order)->first();
