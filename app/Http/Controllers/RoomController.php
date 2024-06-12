@@ -140,7 +140,7 @@ class RoomController extends Controller
 														],
 														[
 															'pic'			=> '/img/schedule/profile/kof.jpg',
-															'name'			=> 'Kofi Kei', 
+															'name'			=> 'Kofi Kyei', 
 															'designation'	=> 'Sales Director'																					
 														],
 														[
