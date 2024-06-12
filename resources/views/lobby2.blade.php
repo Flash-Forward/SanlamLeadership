@@ -708,48 +708,7 @@ const swalWithBootstrapButtons = Swal.mixin({
 })
 var first_time = 1;
 var redirectPrep = 0;
-(function worker() {
-  $.ajax({
-    url: '{{ route("instructions") }}', 
-    success: function(data) {
-		console.log(data);
-      if(data["message"] != "NONE"){
-			  if(first_time == 1){
-          swalWithBootstrapButtons.fire({
-                        html: '<span style="color:#ffffff; font-size: 1.2vw;">'+data["message"]+'</span>',
-                        //html: '<span style="color:#ffffff; font-size: 1.2vw;">This room is closed</span>',
 
-                        background: "url('{{ asset('img') }}/bryte/background.jpg')",
-                        // html: true,
-
-                    padding: "8px",
-                    margin: "2px",
-                    width: "20%",
-                                //footer: '<a href>Why do I have this issue?</a>'
-                            })
-				  first_time = 0;
-			  }
-      }else{
-				  first_time = 1;
-
-      }
-
-      if(data["redirect"] == "PREP"){
-        redirectPrep = 1;
-      }
-      if(data["redirect"] != "PREP" && data["redirect"] != "NONE"){
-			  if(redirectPrep == 1){
-          // Simulate a mouse click:
-          window.location.href = data["redirect"];
-			  }
-      }
-		},
-    complete: function() {
-      // Schedule the next request when the current one's complete
-      setTimeout(worker, 2000);
-    }
-  });
-})();
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
 var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
