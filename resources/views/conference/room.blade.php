@@ -154,6 +154,7 @@ h2{
 
 	</head>
 
+	<script src="//code.tidio.co/5puboven9ywgte1qljfxnzfhipwor5vy.js" async></script>
 
 <body>
 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
@@ -228,15 +229,7 @@ h2{
 </script>
 @endif
 <script>
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/604a277a385de407571f14a6/1f0gqkdv1';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
+
 function redirectToLobby(){
 	window.location.href = "{{ route('lobby') }}";
 }
@@ -275,18 +268,7 @@ function redirectBack(){
 <a id="backButton" onclick="event.preventDefault();
        document.getElementById('logout-form').submit();" class="btn btn-primary btn-bottom">Log Out</a>
 </div>
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/604a277a385de407571f14a6/1f0gqkdv1';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
- 
-</script>
+
 /* <div style="position: fixed; top: 1%; left:1%; width: 10vw; height: 10vw">
 <a id="backButton" onclick="redirectToLobby();" class="btn btn-primary btn-circle-big">Back To Lobby</a>
 </div> */
