@@ -90,6 +90,14 @@ class RegisterController extends Controller
         return $user;
     }
 
+    public function changePass(){
+        $users = User::where('user_roles_id', 2)->get();
+        foreach($users as $user){
+            $user->password = Hash::make('Lexis+2024');
+            $user->save();
+        }
+    }
+
     public function speaker()
     {
         return view('auth.speaker');

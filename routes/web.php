@@ -14,6 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/schedule/1', [App\Http\Controllers\RoomController::class, 'schedule'])->name('schedule');
+
+
+Route::get('/changepass', [App\Http\Controllers\Auth\RegisterController::class, 'changePass'])->name('changePass');
+
 Route::get('/schedule/store', [App\Http\Controllers\RoomController::class, 'storeSchedule'])->name('storeSchedule');
 
 
